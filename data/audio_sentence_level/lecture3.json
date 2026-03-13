@@ -1,0 +1,5186 @@
+[
+  {
+    "timestamp": 194.424,
+    "text": "Shalee. Let's go ahead and get the start. Recording in progress.",
+    "start_ms": 194424,
+    "end_ms": 199856,
+    "duration_ms": 5432,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 206.584,
+    "text": "Welcome, date of 100, another content lecture. This is our um...",
+    "start_ms": 206584,
+    "end_ms": 211584,
+    "duration_ms": 5000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 212.088,
+    "text": "Third lecture of the semester and the second panda's lecture.",
+    "start_ms": 212088,
+    "end_ms": 215488,
+    "duration_ms": 3400,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 215.928,
+    "text": "So what did we see in the previous lecture? In the previous lecture, we went ahead and talked a lot about different tools that you can use in the data science life cycle.",
+    "start_ms": 215928,
+    "end_ms": 225928,
+    "duration_ms": 10000,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 225.928,
+    "text": "What we started talking about was what are different data structures and pandas we saw.",
+    "start_ms": 225928,
+    "end_ms": 231928,
+    "duration_ms": 6000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 232.28,
+    "text": "We saw what, what is the 2D data structure that we saw in the previous lecture?",
+    "start_ms": 232280,
+    "end_ms": 237280,
+    "duration_ms": 5000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 238.168,
+    "text": "Data Frame Data frame. What was the two, one, the data structures that we had seen, there was series and there was index object.",
+    "start_ms": 238168,
+    "end_ms": 247562,
+    "duration_ms": 9394,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 247.562,
+    "text": "So we saw how you're connected together. At the end of the lecture, what we started doing was actually data extraction.",
+    "start_ms": 247562,
+    "end_ms": 254396,
+    "duration_ms": 6834,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 254.396,
+    "text": "And I didn't have time to complete that part, so I'm going to continue from where we left off in the previous lecture.",
+    "start_ms": 254396,
+    "end_ms": 260425,
+    "duration_ms": 6029,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 260.425,
+    "text": "We're going to talk about how we can do data extraction using integer position, using square brackets, brackets and then we're going to go a little bit deeper into more fun things.",
+    "start_ms": 260425,
+    "end_ms": 271296,
+    "duration_ms": 10871,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 271.296,
+    "text": "So today is going to be getting more practice in terms of what are additional functionalities that are available in pandas so that we can do different fun things with a data frame.",
+    "start_ms": 271296,
+    "end_ms": 281816,
+    "duration_ms": 10520,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 281.816,
+    "text": "How can we add data? How can we modify data?",
+    "start_ms": 281816,
+    "end_ms": 284216,
+    "duration_ms": 2400,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 284.216,
+    "text": "How can we add rows? And how can we make conditional selection?",
+    "start_ms": 284216,
+    "end_ms": 287656,
+    "duration_ms": 3440,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 287.656,
+    "text": "So we're going to go a little bit. Deeper into pandas and a little bit of a content warning for today is that there's gonna be a lot of different functionalities Of pandas coming your way so again, it might sound overwhelming because we're covering too much But you don't need to memorize everything as long as you remember the logic of how to use this stuff and how to make sure that There is a function that does this certain thing so that you don't need to loop over the entire data frame that you have the whole The whole purpose of us going through this API is that you know that everything can be handled in a vectorized way and you don't need to actually loop any time during any of the homeworks and projects that you're working on.",
+    "start_ms": 287656,
+    "end_ms": 331008,
+    "duration_ms": 43352,
+    "word_count": 141,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 331.008,
+    "text": "So just knowing that those functionalities exist is the job of us in today's lecture and then we're going to go a little bit deeper into more complex stuff next week on Tuesday but then you have the weekend to just get some rest and then have all of this content make sense to you before you come back on Tuesday.",
+    "start_ms": 331008,
+    "end_ms": 347688,
+    "duration_ms": 16680,
+    "word_count": 61,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 348.216,
+    "text": "So let's dive in with what we wrapped up the previous lecture.",
+    "start_ms": 348216,
+    "end_ms": 353816,
+    "duration_ms": 5600,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 353.816,
+    "text": "Remember the lock operator lock. You can think about it as label based extraction that we're doing.",
+    "start_ms": 353816,
+    "end_ms": 364016,
+    "duration_ms": 10200,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 364.016,
+    "text": "So we said that lock this L. You can remember it as is working.",
+    "start_ms": 364016,
+    "end_ms": 371104,
+    "duration_ms": 7088,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 371.512,
+    "text": "Um You can think about lock as label-based extraction. And you will see later why I keep like highlighting that L in lock, because you will see eye lock.",
+    "start_ms": 371512,
+    "end_ms": 386656,
+    "duration_ms": 15144,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 386.656,
+    "text": "So with lock we're doing label-based extraction. What was label?",
+    "start_ms": 386656,
+    "end_ms": 389656,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 389.656,
+    "text": "Label is all of those bolded text that you see on all of the rows and all of the columns.",
+    "start_ms": 389656,
+    "end_ms": 395656,
+    "duration_ms": 6000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 395.656,
+    "text": "Where are they? So here we have all of the labels on these rows, and we have all of the labels on all of these columns.",
+    "start_ms": 395656,
+    "end_ms": 401656,
+    "duration_ms": 6000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 401.656,
+    "text": "Labels are the ways that we are referring to each one of those columns and rows.",
+    "start_ms": 401656,
+    "end_ms": 405656,
+    "duration_ms": 4000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 405.656,
+    "text": "We can manually provide label, we can manually provide label and index different rows that we have, or we could actually not provide names and labels and then pandas is going to automatically label stuff for us.",
+    "start_ms": 405656,
+    "end_ms": 419416,
+    "duration_ms": 13760,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 419.416,
+    "text": "So for example here, all of the labels are manually provided.",
+    "start_ms": 419416,
+    "end_ms": 423136,
+    "duration_ms": 3720,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 423.136,
+    "text": "We said that okay there is the column, here there is the column, candidate and this was the election data set that we have been working on from the previous lecture that these are all the candidates who ran for the presidency of the United States over the years starting from 1824, all the way to 2020, that's the latest result that we have.",
+    "start_ms": 423136,
+    "end_ms": 443096,
+    "duration_ms": 19960,
+    "word_count": 64,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 443.096,
+    "text": "And if we can also choose to not provide the labels manually and then Pandas is going to automatically label the stuff that's starting from zero, all the way to however many raise.",
+    "start_ms": 443096,
+    "end_ms": 455196,
+    "duration_ms": 12100,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 454.909,
+    "text": "that you have. So this is what we started seeing.",
+    "start_ms": 454909,
+    "end_ms": 458616,
+    "duration_ms": 3707,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 458.616,
+    "text": "With label-based extraction, we should specifically provide reference to the labels.",
+    "start_ms": 458616,
+    "end_ms": 462425,
+    "duration_ms": 3809,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 462.425,
+    "text": "Labels under rose labels on the columns and then the intersection of that is going to be retrieved and be extracted for us.",
+    "start_ms": 462425,
+    "end_ms": 470212,
+    "duration_ms": 7787,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 470.212,
+    "text": "So we talked about different ways of doing it. We said that, okay, if you're providing the labels for rose and columns, you can provide those labels as a list.",
+    "start_ms": 470212,
+    "end_ms": 479776,
+    "duration_ms": 9564,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 479.776,
+    "text": "So you can provide the list of rows, the list of column labels, and then it will do the extraction for you.",
+    "start_ms": 479776,
+    "end_ms": 485928,
+    "duration_ms": 6152,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 485.928,
+    "text": "We talked about we can do the same extraction using a slice, right?",
+    "start_ms": 485928,
+    "end_ms": 489288,
+    "duration_ms": 3360,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 489.288,
+    "text": "So with the slice, we're providing a range of rows and a range of columns, and then it will do the extraction for us.",
+    "start_ms": 489288,
+    "end_ms": 496848,
+    "duration_ms": 7560,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 496.848,
+    "text": "There was one major thing that I wanted you to remember from the previous lecture was that when we're providing a slice to the lock operator, it is inclusive of the right hand side, which is unusual with pandas, right?",
+    "start_ms": 496848,
+    "end_ms": 510888,
+    "duration_ms": 14040,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 510.888,
+    "text": "Or python, generally. So it's always exclusive of the right hand side.",
+    "start_ms": 510888,
+    "end_ms": 515048,
+    "duration_ms": 4160,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 515.048,
+    "text": "This is the only place that is inclusive of the right hand side.",
+    "start_ms": 515048,
+    "end_ms": 518208,
+    "duration_ms": 3160,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 518.584,
+    "text": "And we also talked about, okay, there is also an interest in just doing a single eye-dem extraction, meaning that a single roller is single column and then we would be able to do the extraction.",
+    "start_ms": 518584,
+    "end_ms": 529584,
+    "duration_ms": 11000,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 529.848,
+    "text": "using that. So with iLogg We're following exactly a similar thing.",
+    "start_ms": 529848,
+    "end_ms": 535246,
+    "duration_ms": 5398,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 535.246,
+    "text": "The only difference is that now there is this i here, which refers to integer-based extraction.",
+    "start_ms": 535246,
+    "end_ms": 541792,
+    "duration_ms": 6546,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 541.792,
+    "text": "So what does integer-based extraction means? Integer means that we are looking at the location of the item.",
+    "start_ms": 541792,
+    "end_ms": 548835,
+    "duration_ms": 7043,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 548.835,
+    "text": "What is the integer position? So if you don't know the labels and you don't want to bother with the labels and you just want to, for example, go ahead and get the item at row 10.",
+    "start_ms": 548835,
+    "end_ms": 558792,
+    "duration_ms": 9957,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 559.32,
+    "text": "You don't need to know what label is associated with your attend.",
+    "start_ms": 559320,
+    "end_ms": 562320,
+    "duration_ms": 3000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 562.32,
+    "text": "So you can just go ahead and extract that. Or column the same way.",
+    "start_ms": 562320,
+    "end_ms": 565320,
+    "duration_ms": 3000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 565.32,
+    "text": "If you know that there is something interesting happening in column two, you can go ahead and say that, okay, get me the second column.",
+    "start_ms": 565320,
+    "end_ms": 572320,
+    "duration_ms": 7000,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 572.32,
+    "text": "And the way that we can do it is exactly the same kind of principle that we followed last time.",
+    "start_ms": 572320,
+    "end_ms": 578320,
+    "duration_ms": 6000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 578.32,
+    "text": "We can provide a list. We can provide this list.",
+    "start_ms": 578320,
+    "end_ms": 581320,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 581.32,
+    "text": "Now it's list is working nicely similar to what we're expecting in Python.",
+    "start_ms": 581320,
+    "end_ms": 586320,
+    "duration_ms": 5000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 586.32,
+    "text": "that it is exclusive of the right-hand side and then a single value.",
+    "start_ms": 586320,
+    "end_ms": 590653,
+    "duration_ms": 4333,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 590.653,
+    "text": "So let's see some examples. If I want to provide a list, so I have to provide a list for both rows and the columns.",
+    "start_ms": 590653,
+    "end_ms": 598144,
+    "duration_ms": 7491,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 598.144,
+    "text": "So what is the list of rows that I'm providing and providing the list of integer position 1, 2, and 3?",
+    "start_ms": 598144,
+    "end_ms": 606144,
+    "duration_ms": 8000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 606.144,
+    "text": "So these are the rows that are integer position 1, 2, and 3.",
+    "start_ms": 606144,
+    "end_ms": 611144,
+    "duration_ms": 5000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 611.144,
+    "text": "And it happens that integer position aligns with the label.",
+    "start_ms": 611144,
+    "end_ms": 615144,
+    "duration_ms": 4000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 615.144,
+    "text": "Again, it's because our integer position is starched from 0.",
+    "start_ms": 615144,
+    "end_ms": 620144,
+    "duration_ms": 5000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 620.144,
+    "text": "And then the automatic indexing also started initially automatically labeled at zero.",
+    "start_ms": 620144,
+    "end_ms": 624544,
+    "duration_ms": 4400,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 624.544,
+    "text": "So it happens that when it is automatically labeled, the integer position and label values are going to be exactly this thing.",
+    "start_ms": 624544,
+    "end_ms": 632304,
+    "duration_ms": 7760,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 632.304,
+    "text": "So don't confuse that. And then if you're saying that okay one column at integer position 0, 1 and 2, again indexing or integer position starts from 0, that means that column 1, column 2 and column 3, or the first column, second column, and the third column that you're seeing here that.",
+    "start_ms": 632304,
+    "end_ms": 650504,
+    "duration_ms": 18200,
+    "word_count": 53,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 651.128,
+    "text": "The first column was here, second column was candidate, and the third column was party.",
+    "start_ms": 651128,
+    "end_ms": 655128,
+    "duration_ms": 4000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 655.128,
+    "text": "So the intersection of these two is going to be extracted for us using the two list items that we provide.",
+    "start_ms": 655128,
+    "end_ms": 661128,
+    "duration_ms": 6000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 661.912,
+    "text": "One reminder from previous lecture, we said that all these labels or the items that you're extracting and the rows are mandatory.",
+    "start_ms": 661912,
+    "end_ms": 671072,
+    "duration_ms": 9160,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 671.072,
+    "text": "So you have to provide what you want to extract.",
+    "start_ms": 671072,
+    "end_ms": 673552,
+    "duration_ms": 2480,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 673.552,
+    "text": "If you don't want to extract or if you don't want to filter the rows, you have to specify that I'm extracting all.",
+    "start_ms": 673552,
+    "end_ms": 679832,
+    "duration_ms": 6280,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 679.832,
+    "text": "So you provide the column and then you provide whatever list of columns that you want to extract.",
+    "start_ms": 679832,
+    "end_ms": 688152,
+    "duration_ms": 8320,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 688.152,
+    "text": "Here is also the same thing with everything that we're covering.",
+    "start_ms": 688152,
+    "end_ms": 691992,
+    "duration_ms": 3840,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 691.992,
+    "text": "It's that either we explicitly say that I want all of the rows by providing column, because that's also another way that we can specify that I want everything starting from the beginning up until the end.",
+    "start_ms": 691992,
+    "end_ms": 706032,
+    "duration_ms": 14040,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 706.032,
+    "text": "Or you provide the list of or the list of or the single row that you want to extract.",
+    "start_ms": 706032,
+    "end_ms": 711072,
+    "duration_ms": 5040,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 711.072,
+    "text": "And you can't skip rows. But you can skip columns.",
+    "start_ms": 711072,
+    "end_ms": 715192,
+    "duration_ms": 4120,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 715.192,
+    "text": "So here I can skip columns and then say that, okay, row at integer position 1, 2 and 3, but then I don't want to provide a selection on the number under columns and it will automatically assume that you want all and it will extract all for you.",
+    "start_ms": 715192,
+    "end_ms": 730192,
+    "duration_ms": 15000,
+    "word_count": 49,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 730.192,
+    "text": "So this is the difference between how we treat rows and columns.",
+    "start_ms": 730192,
+    "end_ms": 733192,
+    "duration_ms": 3000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 733.192,
+    "text": "So this again works similarly between lock and unlock operator.",
+    "start_ms": 733192,
+    "end_ms": 738192,
+    "duration_ms": 5000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 739.032,
+    "text": "So this life works exactly the same way. So in this example here I'm saying that, okay, what I want is that same rows at integer position.",
+    "start_ms": 739032,
+    "end_ms": 748632,
+    "duration_ms": 9600,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 749.016,
+    "text": "One, one, two, three, meaning that second row, third row, and the fourth row that I have right here.",
+    "start_ms": 749016,
+    "end_ms": 756136,
+    "duration_ms": 7120,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 756.136,
+    "text": "And then what it also says is that I want to extract a slice of the columns.",
+    "start_ms": 756136,
+    "end_ms": 762976,
+    "duration_ms": 6840,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 762.976,
+    "text": "Why do we want to use a slice that not like enumerate over that entire list because sometimes our column list or the row list is going to be very large and we don't want to keep typing everything.",
+    "start_ms": 762976,
+    "end_ms": 774456,
+    "duration_ms": 11480,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 774.456,
+    "text": "So we can just say that it starts from the, from zero go all the way to three and not inclusive of tree.",
+    "start_ms": 774456,
+    "end_ms": 779255,
+    "duration_ms": 4799,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 779.255,
+    "text": "So here it is extracting. Bro, a column zero, column one and column two and not inclusive of three and that's where we're going to end.",
+    "start_ms": 779255,
+    "end_ms": 789648,
+    "duration_ms": 10393,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 789.464,
+    "text": "So I can use the slice for both rows, you can use the slice for columns, and then there is also another thing that we discussed that if you don't provide the lower bound of this wrench, it starts from beginning, if you don't provide the upper bound, it will go all the way to the end, and that's why when we provide only the colon thing, it means that everything is start from the beginning go all the way to the end, and that's what's happening here, that for the rows, we're specifically saying that give me everything, and this This is actually everything.",
+    "start_ms": 789464,
+    "end_ms": 818144,
+    "duration_ms": 28680,
+    "word_count": 105,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 818.144,
+    "text": "It starts from zero, goes all the way to the 2020 row at integer position, 181.",
+    "start_ms": 818144,
+    "end_ms": 825824,
+    "duration_ms": 7680,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 825.824,
+    "text": "Actually, that's yeah. And then also, it says that for the columns, I'm going to do this election at integer position zero, one and two are going to be selected and then three is not going to be selected.",
+    "start_ms": 825824,
+    "end_ms": 839704,
+    "duration_ms": 13880,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 840.472,
+    "text": "A reminder from previous lecture that when you see a love says that means that there are more rows that are not going to be shown to you because it's just going to be a very messy output.",
+    "start_ms": 840472,
+    "end_ms": 849472,
+    "duration_ms": 9000,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 850.232,
+    "text": "So, a single value. You might want to get a single column.",
+    "start_ms": 850232,
+    "end_ms": 853660,
+    "duration_ms": 3428,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 853.66,
+    "text": "You might want to get a single row, right? Kind of seeing how much you remember from Herbys lecture is that...",
+    "start_ms": 853660,
+    "end_ms": 861232,
+    "duration_ms": 7572,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 861.848,
+    "text": "When I provide a single label, say that, okay, I want a single column.",
+    "start_ms": 861848,
+    "end_ms": 866448,
+    "duration_ms": 4600,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 866.448,
+    "text": "What should be the output type? series. Yes, because a data frame is made up of different series objects, right?",
+    "start_ms": 866448,
+    "end_ms": 873976,
+    "duration_ms": 7528,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 873.976,
+    "text": "When I'm only referring to one column here in this example, I'm saying that give me column at integer position 1, which is technically the second column.",
+    "start_ms": 873976,
+    "end_ms": 882153,
+    "duration_ms": 8177,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 882.153,
+    "text": "It basically says that give me the underlying data structure.",
+    "start_ms": 882153,
+    "end_ms": 885441,
+    "duration_ms": 3288,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 885.441,
+    "text": "However, you stored it and it will say that yes.",
+    "start_ms": 885441,
+    "end_ms": 888616,
+    "duration_ms": 3175,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 888.616,
+    "text": "Here is the output that we're providing you. This is a subset of that column because we also did filtering based on the rows.",
+    "start_ms": 888616,
+    "end_ms": 895980,
+    "duration_ms": 7364,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 895.98,
+    "text": "So this is only rows at integer position 1, 2, and You can just double check that it says that this is a subset of the candidate column and then the Data type of the objects the data type of the items in that series.",
+    "start_ms": 895980,
+    "end_ms": 911696,
+    "duration_ms": 15716,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 911.696,
+    "text": "It's object because it's it's a string Someone came up to me at the end of the previous lecture.",
+    "start_ms": 911696,
+    "end_ms": 917736,
+    "duration_ms": 6040,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 917.736,
+    "text": "Ask your really good question that I want to repeat here.",
+    "start_ms": 917736,
+    "end_ms": 919936,
+    "duration_ms": 2200,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 920.28,
+    "text": "They ask that remember that I was saying that every time Pandas creates a copy of the stuff when we're doing any kind of operation and it's not going to override the stuff over to the data frame.",
+    "start_ms": 920280,
+    "end_ms": 932720,
+    "duration_ms": 12440,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 932.72,
+    "text": "Would that be the case with lock and eye lock?",
+    "start_ms": 932720,
+    "end_ms": 935480,
+    "duration_ms": 2760,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 935.48,
+    "text": "And the answer is that yes. So everything that we're doing the extraction here is just going to give you a copy of you but it's going to create a temporary variable and then if you're printing that and plotting that and whatnot, it will basically be...",
+    "start_ms": 935480,
+    "end_ms": 951008,
+    "duration_ms": 15528,
+    "word_count": 47,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 951.352,
+    "text": "a different variable that you're looking at. It's not going to be over then, over to your original data frame.",
+    "start_ms": 951352,
+    "end_ms": 957752,
+    "duration_ms": 6400,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 957.752,
+    "text": "So that's how it works. If you want to intentionally filter the data frame and override your original data frame, you have to specifically say that elections equal to this selection over the elections data frame.",
+    "start_ms": 957752,
+    "end_ms": 970532,
+    "duration_ms": 12780,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 970.532,
+    "text": "That's the only way that we can actually make things permanent.",
+    "start_ms": 970532,
+    "end_ms": 974312,
+    "duration_ms": 3780,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 975.256,
+    "text": "So I can also have a single value provided for both selecting rows and columns.",
+    "start_ms": 975256,
+    "end_ms": 981016,
+    "duration_ms": 5760,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 981.016,
+    "text": "So here I'm saying that row at integer position. Zera, which is the first row and then the second column at integer position 1 is the name column so it happens that in 1824 Andrew Jackson was the first candidate that was listed in our data frame and that's what is going to be returned and the data type is obviously going to be string because that's the value that we're extracted.",
+    "start_ms": 981016,
+    "end_ms": 1006272,
+    "duration_ms": 25256,
+    "word_count": 72,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1007.256,
+    "text": "So luck, we talk about I like why do we care about them so much on which one should be used.",
+    "start_ms": 1007256,
+    "end_ms": 1013716,
+    "duration_ms": 6460,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1013.716,
+    "text": "Again remember luck was label-based extraction. I like is integer-based extraction.",
+    "start_ms": 1013716,
+    "end_ms": 1019576,
+    "duration_ms": 5860,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1019.832,
+    "text": "Which one is easier to use? Most of the time you will use law.",
+    "start_ms": 1019832,
+    "end_ms": 1023832,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1024.568,
+    "text": "So you will lose lock because it's easier to make sense of columns.",
+    "start_ms": 1024568,
+    "end_ms": 1028488,
+    "duration_ms": 3920,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1028.488,
+    "text": "Instead of thinking about which column was candidate column and start counting from zero and this is integer position two or not, you can directly say candidate, go ahead and go ahead and find it and then grab me the candidate column.",
+    "start_ms": 1028488,
+    "end_ms": 1044008,
+    "duration_ms": 15520,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1044.008,
+    "text": "And that would be much easier. So a lot of time you will use lock again because it makes more sense.",
+    "start_ms": 1044008,
+    "end_ms": 1050408,
+    "duration_ms": 6400,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1050.408,
+    "text": "And also a lot of times... It is more readable, right?",
+    "start_ms": 1050408,
+    "end_ms": 1055304,
+    "duration_ms": 4896,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1055.304,
+    "text": "So not only that, that it's easier, that you don't need to inspect your data frame before writing code, it is also easier.",
+    "start_ms": 1055304,
+    "end_ms": 1062344,
+    "duration_ms": 7040,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1062.344,
+    "text": "So you can directly write, for example, in this case, that I'm doing label-based extraction, grabbing all of the rows and then grabbing year and candidate.",
+    "start_ms": 1062344,
+    "end_ms": 1071944,
+    "duration_ms": 9600,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1071.944,
+    "text": "So that's the way of doing it with labels, but with the, sorry, here is also extracting results.",
+    "start_ms": 1071944,
+    "end_ms": 1079064,
+    "duration_ms": 7120,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1079.064,
+    "text": "But then instead if you wanted to do it eye lock, you should do exactly the same thing.",
+    "start_ms": 1079064,
+    "end_ms": 1083624,
+    "duration_ms": 4560,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1083.624,
+    "text": "And then you have to go find out what does.",
+    "start_ms": 1083624,
+    "end_ms": 1086144,
+    "duration_ms": 2520,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1086.52,
+    "text": "into your positions where those columns are. And it might get tricky sometimes because in...",
+    "start_ms": 1086520,
+    "end_ms": 1093520,
+    "duration_ms": 7000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1094.2,
+    "text": "In public data sets that you're working on someone might wake up one day and try to like reshuffle columns And then all of your indexes are going to be messed up and like you want to get resolved that you're gonna get the party Right, so you don't want that so a lot of times it's more reliable to use luck not only that it's easier But I like is also helpful because we didn't waste your time talking about I like for like five minutes here.",
+    "start_ms": 1094200,
+    "end_ms": 1119176,
+    "duration_ms": 24976,
+    "word_count": 88,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1119.176,
+    "text": "I like is helpful in a case that you have a stored a data frame in a certain way.",
+    "start_ms": 1119176,
+    "end_ms": 1123736,
+    "duration_ms": 4560,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1123.736,
+    "text": "So say for example you have a data set of moving or moving earnings and then you have earnings or movies sorted by the earning and you want to find that for example what is the median earning of all of the movies in your data set.",
+    "start_ms": 1123736,
+    "end_ms": 1136736,
+    "duration_ms": 13000,
+    "word_count": 47,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1136.736,
+    "text": "You would just directly index into the middle of the the data frame, grab that earning or grab that movie and then your B on your way.",
+    "start_ms": 1136736,
+    "end_ms": 1143256,
+    "duration_ms": 6520,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1143.736,
+    "text": "So things can be easier. Every time that you see me asking you an exam or a discussion and other whatever that.",
+    "start_ms": 1143736,
+    "end_ms": 1151576,
+    "duration_ms": 7840,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1151.64,
+    "text": "Go ahead and find like the median of something. Go ahead and find minimum or maximum.",
+    "start_ms": 1151640,
+    "end_ms": 1156640,
+    "duration_ms": 5000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1156.64,
+    "text": "One of the ways that you can do it is just to think about into your basic extraction and then the data frame has to be sorted in some way.",
+    "start_ms": 1156640,
+    "end_ms": 1163640,
+    "duration_ms": 7000,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1163.64,
+    "text": "So that doing extracting minimum or extracting maximum is easy.",
+    "start_ms": 1163640,
+    "end_ms": 1168140,
+    "duration_ms": 4500,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1168.14,
+    "text": "That is either the first row or the last row and the median is going to be always in the middle.",
+    "start_ms": 1168140,
+    "end_ms": 1172140,
+    "duration_ms": 4000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1172.76,
+    "text": "So that's a very kind of interesting use case. So, it was all making sense, now I'm gonna...",
+    "start_ms": 1172760,
+    "end_ms": 1179336,
+    "duration_ms": 6576,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1179.704,
+    "text": "Actually introduce a new thing that's going to be very complicated.",
+    "start_ms": 1179704,
+    "end_ms": 1183704,
+    "duration_ms": 4000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1183.704,
+    "text": "But because as data scientists and computer scientists we are often lazy As even though riding code, we always like sharp hands for things.",
+    "start_ms": 1183704,
+    "end_ms": 1192044,
+    "duration_ms": 8340,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1192.312,
+    "text": "So there was a thought about, okay, you have luck, you have all luck, you can do all of these extractions, and there were six different ways that we could use it, right?",
+    "start_ms": 1192312,
+    "end_ms": 1202512,
+    "duration_ms": 10200,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1202.512,
+    "text": "There is eye-like and luck that you can pick from, and there was three options for each one of them.",
+    "start_ms": 1202512,
+    "end_ms": 1207712,
+    "duration_ms": 5200,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1207.712,
+    "text": "List, this, slice, and a single value, right? So two times three is six different options, and they sat down and they talked about, okay, Which one of these six are most useful for people to use?",
+    "start_ms": 1207712,
+    "end_ms": 1221672,
+    "duration_ms": 13960,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1221.672,
+    "text": "And like how they're using it. Actually, it's more than six.",
+    "start_ms": 1221672,
+    "end_ms": 1226072,
+    "duration_ms": 4400,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1226.072,
+    "text": "It's 12, and I'm going to tell you why. Because you have the option of choosing each one of those for columns of rows.",
+    "start_ms": 1226072,
+    "end_ms": 1233352,
+    "duration_ms": 7280,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1233.352,
+    "text": "It's two times three times two. Sorry, this is like me doing the calculation on a fly.",
+    "start_ms": 1233352,
+    "end_ms": 1239336,
+    "duration_ms": 5984,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1239.336,
+    "text": "But anyhow, there are 12 different options you have. The most useful ones are the times, or the most frequently used ones are the times that you want to extract rows based on the number.",
+    "start_ms": 1239336,
+    "end_ms": 1251016,
+    "duration_ms": 11680,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1251.016,
+    "text": "Why number? Because a lot of time we don't care about the labels for the rows.",
+    "start_ms": 1251016,
+    "end_ms": 1254736,
+    "duration_ms": 3720,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1254.736,
+    "text": "We would, for example, say that go ahead and extract the top 10 rows or go ahead and extract the row from 10 to 20.",
+    "start_ms": 1254736,
+    "end_ms": 1263256,
+    "duration_ms": 8520,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1263.256,
+    "text": "So you care about the ordering when you're talking about the rose.",
+    "start_ms": 1263256,
+    "end_ms": 1266856,
+    "duration_ms": 3600,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1266.856,
+    "text": "So that's why a lot of time when we're talking about using a slice, we would say that we want to slice the row numbers, not row labels.",
+    "start_ms": 1266856,
+    "end_ms": 1276775,
+    "duration_ms": 9919,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1276.775,
+    "text": "Right? When we want to extract a number of features, say I'm interested in candidate and I'm interested in results that I see who won the election and who lost the election.",
+    "start_ms": 1276775,
+    "end_ms": 1288216,
+    "duration_ms": 11441,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1288.216,
+    "text": "There are two things that I want to extract and two columns that I want to extract.",
+    "start_ms": 1288216,
+    "end_ms": 1292296,
+    "duration_ms": 4080,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1292.296,
+    "text": "So every time that we are going to look at a list, we're looking at a list of column labels.",
+    "start_ms": 1292296,
+    "end_ms": 1299736,
+    "duration_ms": 7440,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1299.736,
+    "text": "Probably you care less about providing list of rows, right?",
+    "start_ms": 1299736,
+    "end_ms": 1303795,
+    "duration_ms": 4059,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1303.795,
+    "text": "You'd want probably one have a row 10 or a row, for example, 20 and then 25.",
+    "start_ms": 1303795,
+    "end_ms": 1311456,
+    "duration_ms": 7661,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1311.456,
+    "text": "That's like very unusual and not frequently used. But it is very frequently used that you want to extract a certain number of columns with the label.",
+    "start_ms": 1311456,
+    "end_ms": 1321096,
+    "duration_ms": 9640,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1321.336,
+    "text": "And also the same thing with a single column, a single label.",
+    "start_ms": 1321336,
+    "end_ms": 1325936,
+    "duration_ms": 4600,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1325.936,
+    "text": "Every time that you're providing a single value, not a range, not a list, it's more likely than not that you want to extract an entire column, an entire feature as opposed to getting one row.",
+    "start_ms": 1325936,
+    "end_ms": 1337776,
+    "duration_ms": 11840,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1337.776,
+    "text": "If you wanted to get one row, you would just simply do I like block and then get that single row and be on your way.",
+    "start_ms": 1337776,
+    "end_ms": 1343416,
+    "duration_ms": 5640,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1343.416,
+    "text": "So with the content, with the, it's for bracket notation or operator that we're using here.",
+    "start_ms": 1343416,
+    "end_ms": 1350176,
+    "duration_ms": 6760,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1350.176,
+    "text": "It can only accept these three inputs. Again, the three inputs are exactly the same thing that we had before.",
+    "start_ms": 1350176,
+    "end_ms": 1357096,
+    "duration_ms": 6920,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1357.096,
+    "text": "It's either a slice or is a list or is a single value, but it's context dependent.",
+    "start_ms": 1357096,
+    "end_ms": 1363536,
+    "duration_ms": 6440,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1363.536,
+    "text": "When it is a slice, we would say that... You have to provide row numbers.",
+    "start_ms": 1363536,
+    "end_ms": 1369572,
+    "duration_ms": 6036,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1369.572,
+    "text": "When it's actually a list, it's a list of column labels.",
+    "start_ms": 1369572,
+    "end_ms": 1373272,
+    "duration_ms": 3700,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1373.272,
+    "text": "When it's a single value, it's again column labels. So kind of remembering this is going to take some practice, but a lot of times, a lot of us in practice use this because it's much easier to use it this way.",
+    "start_ms": 1373272,
+    "end_ms": 1385252,
+    "duration_ms": 11980,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1385.252,
+    "text": "So it's context sensitive, and we're going to see some example of that.",
+    "start_ms": 1385252,
+    "end_ms": 1389792,
+    "duration_ms": 4540,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1390.328,
+    "text": "So, how would this slice of row integers work? So, for example, we would say that in elections, I want to get this slice of rows starting from tree all the way to seven and not including seven, and this is going to be the result.",
+    "start_ms": 1390328,
+    "end_ms": 1404808,
+    "duration_ms": 14480,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1404.808,
+    "text": "So, I don't want to specifically say which columns to provide a lot of times is that you want to look at what's happening in a certain range of rows.",
+    "start_ms": 1404808,
+    "end_ms": 1413488,
+    "duration_ms": 8680,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1413.488,
+    "text": "And that's why you would just directly use this square bracket notation without lock, without I like and simply just using a square bracket, providing that around able to automatically extract those for you.",
+    "start_ms": 1413488,
+    "end_ms": 1426048,
+    "duration_ms": 12560,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1426.232,
+    "text": "What happens if you start like? Giving a wrench that is not in your list, you will probably get an error, right?",
+    "start_ms": 1426232,
+    "end_ms": 1433784,
+    "duration_ms": 7552,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1433.784,
+    "text": "So you have to make sure that this wrench is like within the wrench of the elements that you have and the capacity or the size or the number of rows of your data frame you have to have figure it out or like check that beforehand.",
+    "start_ms": 1433784,
+    "end_ms": 1453144,
+    "duration_ms": 19360,
+    "word_count": 47,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1453.1,
+    "text": "for example here, you're seeing that I have just this context dependent extraction.",
+    "start_ms": 1453100,
+    "end_ms": 1458672,
+    "duration_ms": 5572,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1458.84,
+    "text": "And then inside it, I have this entire list. So this is how I'm going to like...",
+    "start_ms": 1458840,
+    "end_ms": 1464640,
+    "duration_ms": 5800,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1465.176,
+    "text": "Uh. Explain this entire thing that there's two square brackets.",
+    "start_ms": 1465176,
+    "end_ms": 1470298,
+    "duration_ms": 5122,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1470.298,
+    "text": "One is for the less one is for the context dependent extraction and what's happening is that it's gonna go ahead grab all the rows because you didn't care about the rows and then you need to You specify that you won't hear candidate and result So a question for you.",
+    "start_ms": 1470298,
+    "end_ms": 1488414,
+    "duration_ms": 18116,
+    "word_count": 51,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1488.414,
+    "text": "What happens here if I go ahead and say, okay, elections?",
+    "start_ms": 1488414,
+    "end_ms": 1494904,
+    "duration_ms": 6490,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1495.32,
+    "text": "And then I would say this is a square bracket notation and I would say that okay, let me try give the labels for the rows and I would go ahead and say I won these three rows.",
+    "start_ms": 1495320,
+    "end_ms": 1504460,
+    "duration_ms": 9140,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1504.46,
+    "text": "One, two. Sorry, one, two, and three. What's going to happen there?",
+    "start_ms": 1504460,
+    "end_ms": 1510472,
+    "duration_ms": 6012,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1512.6,
+    "text": "Make a wide guess. That was a good guess, another one.",
+    "start_ms": 1512600,
+    "end_ms": 1521704,
+    "duration_ms": 9104,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1522.584,
+    "text": "Anyone else? Yes. the rose one to tree. So the trick here, but contacts dependent extraction, or this is square bracket notation, is that if you provide anything that's not a label in your column, it will just go ahead and it will try to do the key extraction or key lookup in a dictionary.",
+    "start_ms": 1522584,
+    "end_ms": 1548920,
+    "duration_ms": 26336,
+    "word_count": 55,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1548.92,
+    "text": "Remember that our columns were dictionary? It will say that, okay, you give me key one.",
+    "start_ms": 1548920,
+    "end_ms": 1552920,
+    "duration_ms": 4000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1552.92,
+    "text": "Let me go ahead and see if you have that key in your dictionary of columns.",
+    "start_ms": 1552920,
+    "end_ms": 1556920,
+    "duration_ms": 4000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1556.92,
+    "text": "and it will go ahead and search over all of the columns, even find it, it will throw a key error.",
+    "start_ms": 1556920,
+    "end_ms": 1561800,
+    "duration_ms": 4880,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1562.072,
+    "text": "So you won't get anything. So that's why it's context dependent.",
+    "start_ms": 1562072,
+    "end_ms": 1565632,
+    "duration_ms": 3560,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1565.632,
+    "text": "And that's why it's really important that you know the use case of each one of them.",
+    "start_ms": 1565632,
+    "end_ms": 1569472,
+    "duration_ms": 3840,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1569.472,
+    "text": "When it's a slice, it's row integer. It expects integers.",
+    "start_ms": 1569472,
+    "end_ms": 1573592,
+    "duration_ms": 4120,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1573.592,
+    "text": "You can't provide anything else. If you're providing a list, it always has to be labels in your labels of the columns.",
+    "start_ms": 1573592,
+    "end_ms": 1580832,
+    "duration_ms": 7240,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1580.832,
+    "text": "Otherwise, it will throw an error. And then another thing is that a single value when you're providing, that's a single column.",
+    "start_ms": 1580832,
+    "end_ms": 1588992,
+    "duration_ms": 8160,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1588.992,
+    "text": "Right? Again, same thing. If you provide any other label or any other value thinking that I would be able to extract a row, you will get a key error because that key doesn't exist in your list of columns.",
+    "start_ms": 1588992,
+    "end_ms": 1600752,
+    "duration_ms": 11760,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1600.752,
+    "text": "In this case, obviously, we know that because we're extracting a column, the data type is going to be.",
+    "start_ms": 1600752,
+    "end_ms": 1608232,
+    "duration_ms": 7480,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1607.973,
+    "text": "serious object and will be on our way. Okay, how are we feeling so far?",
+    "start_ms": 1607973,
+    "end_ms": 1614280,
+    "duration_ms": 6307,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1614.648,
+    "text": "Good. Not sure. Bad doesn't make sense. I need to see all hands up before I move onto the next system.",
+    "start_ms": 1614648,
+    "end_ms": 1622480,
+    "duration_ms": 7832,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1623.608,
+    "text": "Good sideways down. a lot of good. All right, so I am also monitoring questions here.",
+    "start_ms": 1623608,
+    "end_ms": 1631565,
+    "duration_ms": 7957,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1631.565,
+    "text": "So if you have questions, send us those questions on Slido, you can log in with that QR code and they code.",
+    "start_ms": 1631565,
+    "end_ms": 1638611,
+    "duration_ms": 7046,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1638.611,
+    "text": "So that would be the easiest way for us to take questions.",
+    "start_ms": 1638611,
+    "end_ms": 1641851,
+    "duration_ms": 3240,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1641.851,
+    "text": "Your wonderful fees are here to answer them and that's going to be very efficient.",
+    "start_ms": 1641851,
+    "end_ms": 1647136,
+    "duration_ms": 5285,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1647.136,
+    "text": "So why we use the square bracket notation or this context of an extraction because it's short, because we're lazy, because typing time adds up.",
+    "start_ms": 1647136,
+    "end_ms": 1657536,
+    "duration_ms": 10400,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1657.536,
+    "text": "So for example, if I wanted to say that, okay, I wanted to extract one column.",
+    "start_ms": 1657536,
+    "end_ms": 1663176,
+    "duration_ms": 5640,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1663.176,
+    "text": "So elections candidate, easily you'll get that series, you'll be good.",
+    "start_ms": 1663176,
+    "end_ms": 1667456,
+    "duration_ms": 4280,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1667.456,
+    "text": "If you wanted to do it with lock or I lock, say for example with lock, you should say lock.",
+    "start_ms": 1667456,
+    "end_ms": 1673136,
+    "duration_ms": 5680,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1673.136,
+    "text": "You know that you had to provide all of the rows, otherwise you will get an error.",
+    "start_ms": 1673136,
+    "end_ms": 1677416,
+    "duration_ms": 4280,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1677.416,
+    "text": "So you have to say all the rows, comma, and then provide the column name or the column label.",
+    "start_ms": 1677416,
+    "end_ms": 1683736,
+    "duration_ms": 6320,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1683.736,
+    "text": "So it's always longer. They do exactly the same thing, but it's always easier to use that context-dependent extraction that we have.",
+    "start_ms": 1683736,
+    "end_ms": 1691736,
+    "duration_ms": 8000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1692.024,
+    "text": "Alright, your turn. So which one of these following statements correctly returns the value blue fish in this state of frame that we're creating.",
+    "start_ms": 1692024,
+    "end_ms": 1702868,
+    "duration_ms": 10844,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1704.312,
+    "text": "The Scandic Hero Code if you're not on slide already.",
+    "start_ms": 1704312,
+    "end_ms": 1707312,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1728.824,
+    "text": "33, 42. Let me say which one of the following?",
+    "start_ms": 1728824,
+    "end_ms": 1734596,
+    "duration_ms": 5772,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1734.596,
+    "text": "That's the hint that there might be more don't run so just look at all of that please.",
+    "start_ms": 1734596,
+    "end_ms": 1743496,
+    "duration_ms": 8900,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1767.832,
+    "text": "These are your ups. Last time the maximum participation was 860, I think.",
+    "start_ms": 1767832,
+    "end_ms": 1794260,
+    "duration_ms": 26428,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1794.26,
+    "text": "I'm hoping that at least this time of nutrition we have 600, so I'm going to wait until 600.",
+    "start_ms": 1794260,
+    "end_ms": 1799880,
+    "duration_ms": 5620,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1800.472,
+    "text": "and then all the time. Hopefully you all keep coming to synchronous lecture and to the lecture to make things fun for others like.",
+    "start_ms": 1800472,
+    "end_ms": 1808680,
+    "duration_ms": 8208,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1808.952,
+    "text": "CS go over do this stuff. and then muster according afterwards.",
+    "start_ms": 1808952,
+    "end_ms": 1812808,
+    "duration_ms": 3856,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1814.616,
+    "text": "Alright, 600. So let's take a look at this weird data frame.",
+    "start_ms": 1814616,
+    "end_ms": 1818681,
+    "duration_ms": 4065,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1818.681,
+    "text": "So this weird data frame, we're creating it using a dictionary.",
+    "start_ms": 1818681,
+    "end_ms": 1822536,
+    "duration_ms": 3855,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1822.536,
+    "text": "So the dictionary has two columns because that's how we created a data frame using a dictionary.",
+    "start_ms": 1822536,
+    "end_ms": 1828296,
+    "duration_ms": 5760,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1828.296,
+    "text": "The labels for the columns, we're providing A and B and it is shown as A and B and then for each one of those columns, the values that are stored in that column are listed here.",
+    "start_ms": 1828296,
+    "end_ms": 1839296,
+    "duration_ms": 11000,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1839.296,
+    "text": "So for the first column, we're expecting one fish to fish for the second column we're expecting red fish blue fish and we're interested in like finding out different ways that we can extract blue fish So let's take a look at what's going to happen here.",
+    "start_ms": 1839296,
+    "end_ms": 1854268,
+    "duration_ms": 14972,
+    "word_count": 47,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1854.268,
+    "text": "When I do eye lock. That's integer basic extraction, right?",
+    "start_ms": 1854268,
+    "end_ms": 1858550,
+    "duration_ms": 4282,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1858.55,
+    "text": "So I will basically go ahead and say that. I'd like at integer position one for the row is going to be...",
+    "start_ms": 1858550,
+    "end_ms": 1867408,
+    "duration_ms": 8858,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1867.864,
+    "text": "This row and then for the column it's also one so starting from zero this is column zero This is column one so we should be able to get blue fish running it we're getting blue fish right So what's happening here?",
+    "start_ms": 1867864,
+    "end_ms": 1882688,
+    "duration_ms": 14824,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1882.688,
+    "text": "Lock one in one. What's going to be the output?",
+    "start_ms": 1882688,
+    "end_ms": 1887144,
+    "duration_ms": 4456,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1887.128,
+    "text": "Yes, brave person. Exactly. And can you tell me what was the name of the error really loudly?",
+    "start_ms": 1887128,
+    "end_ms": 1901528,
+    "duration_ms": 14400,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1903.0,
+    "text": "Key error. So we're going to get key error because we're doing lock.",
+    "start_ms": 1903000,
+    "end_ms": 1906623,
+    "duration_ms": 3623,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1906.623,
+    "text": "We're saying that, okay, this is a label for the row.",
+    "start_ms": 1906623,
+    "end_ms": 1909676,
+    "duration_ms": 3053,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1909.676,
+    "text": "So we have the label refined and this is a label for the column.",
+    "start_ms": 1909676,
+    "end_ms": 1913504,
+    "duration_ms": 3828,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1913.504,
+    "text": "But do you see that label in the column? No.",
+    "start_ms": 1913504,
+    "end_ms": 1916024,
+    "duration_ms": 2520,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1916.024,
+    "text": "So it's going to give me a big key error error here.",
+    "start_ms": 1916024,
+    "end_ms": 1919071,
+    "duration_ms": 3047,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1919.071,
+    "text": "So this is kind of easy for you to figure out every time that you've got a key error, what's going on?",
+    "start_ms": 1919071,
+    "end_ms": 1925013,
+    "duration_ms": 5942,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1925.013,
+    "text": "There's like some label thing that you're not doing get properly.",
+    "start_ms": 1925013,
+    "end_ms": 1929680,
+    "duration_ms": 4667,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1929.88,
+    "text": "So, what about this third one? So I'd like we're doing it on the second row, we're extracting second row, and then what are we extracting here?",
+    "start_ms": 1929880,
+    "end_ms": 1940520,
+    "duration_ms": 10640,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1941.016,
+    "text": "Restracting is the slice of columns, which is like all the columns.",
+    "start_ms": 1941016,
+    "end_ms": 1945816,
+    "duration_ms": 4800,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1945.976,
+    "text": "So technically, here in Alphad is the series. I've like thinking about like grabbing a bro as a series object and this is a series object with like all the elements in the second row two fish and then blue fish But we only want a blue fish so that's not gonna work out.",
+    "start_ms": 1945976,
+    "end_ms": 1965196,
+    "duration_ms": 19220,
+    "word_count": 54,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1965.196,
+    "text": "So that's not correct option Then lock one and B is this what we want?",
+    "start_ms": 1965196,
+    "end_ms": 1970176,
+    "duration_ms": 4980,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1971.256,
+    "text": "That is what we want. So one is correct. We're going to go to the second row and then be the label for the second column as exactly what we want.",
+    "start_ms": 1971256,
+    "end_ms": 1979227,
+    "duration_ms": 7971,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1979.227,
+    "text": "So we have bluefish. With this one work, I like one and zero.",
+    "start_ms": 1979227,
+    "end_ms": 1983256,
+    "duration_ms": 4029,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1984.44,
+    "text": "So that's an easy no because like the indexing is not going to be an error but we're saying 1 and 0.",
+    "start_ms": 1984440,
+    "end_ms": 1991880,
+    "duration_ms": 7440,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1991.88,
+    "text": "So 1 goes here and then 0 goes to the first column.",
+    "start_ms": 1991880,
+    "end_ms": 1995864,
+    "duration_ms": 3984,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1995.864,
+    "text": "So that's going to give 2 fish hopefully. Yes, and that is not what we wanted.",
+    "start_ms": 1995864,
+    "end_ms": 2001902,
+    "duration_ms": 6038,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2001.902,
+    "text": "So we have 2 correct options. which not what I had there.",
+    "start_ms": 2001902,
+    "end_ms": 2012280,
+    "duration_ms": 10378,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2012.28,
+    "text": "I think this was changed. But anyhow, you got the explanation, right?",
+    "start_ms": 2012280,
+    "end_ms": 2016968,
+    "duration_ms": 4688,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2016.968,
+    "text": "I think Sarah maybe would change the options at some point.",
+    "start_ms": 2016968,
+    "end_ms": 2020534,
+    "duration_ms": 3566,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2020.534,
+    "text": "But anyhow, this is like my version of Thanks. Question.",
+    "start_ms": 2020534,
+    "end_ms": 2024128,
+    "duration_ms": 3594,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2026.104,
+    "text": "There are more options. We can investigate them, but now you have the correct responses.",
+    "start_ms": 2026104,
+    "end_ms": 2033104,
+    "duration_ms": 7000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2033.104,
+    "text": "Sorry, the poll was changed after I created the code.",
+    "start_ms": 2033104,
+    "end_ms": 2036437,
+    "duration_ms": 3333,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2036.437,
+    "text": "But you get the sense of why you might get here, how to use log, how to use i log, and then how to use integer-based extraction and whatnot.",
+    "start_ms": 2036437,
+    "end_ms": 2046104,
+    "duration_ms": 9667,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2046.104,
+    "text": "So on to the next topic. So you might be asking me that, now I guess, we're interested in like doing label-based extraction, integer-based extraction or everything.",
+    "start_ms": 2046104,
+    "end_ms": 2057448,
+    "duration_ms": 11344,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2057.448,
+    "text": "But what if there is a condition that I want to select rows or columns based on, or values based on a certain condition?",
+    "start_ms": 2057448,
+    "end_ms": 2064408,
+    "duration_ms": 6960,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2064.824,
+    "text": "We have seen this in a series. So in the series scenario we said that we can use Boolean expression in order to say that okay.",
+    "start_ms": 2064824,
+    "end_ms": 2073250,
+    "duration_ms": 8426,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2073.25,
+    "text": "The rows that would correspond are the elements that have the Boolean value corresponding to true are going to be included in the output and then everything with false is going to be excluded from the output.",
+    "start_ms": 2073250,
+    "end_ms": 2085624,
+    "duration_ms": 12374,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2085.848,
+    "text": "The way that we can use it is that we can use the same kind of scenario that we have all of those Boolean values and we can provide those Boolean values as indices to the rows and then do the extraction using either context dependent extraction, square brackets, or dot block.",
+    "start_ms": 2085848,
+    "end_ms": 2103448,
+    "duration_ms": 17600,
+    "word_count": 52,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2103.448,
+    "text": "And we're going to take a look at that. And again, all the Res with True Valley are going to be included and I'll put everything else is going to be excluded.",
+    "start_ms": 2103448,
+    "end_ms": 2110760,
+    "duration_ms": 7312,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2111.544,
+    "text": "So in this case, I'm going to switch to a new dataset.",
+    "start_ms": 2111544,
+    "end_ms": 2116864,
+    "duration_ms": 5320,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2116.864,
+    "text": "So this is a new dataset of baby names. This is the dataset from social security that has the name of the babies who were born in California and the original dataset has all these dates but we're looking at only California from different from different years you're seeing and then the state we have here we have also the name of those babies and we have the count of how many babies with that a specific name was registered and then we also have the sign sex at birth that is also reported on those babies so this is kind of an aggregate data set and multiple different features and then they're counting how many of those occurrences of those combinations we have of go over the rest of the topics here, I'm going to not look at the entire dataset but I'm doing a selection of only the top 10 roads.",
+    "start_ms": 2116864,
+    "end_ms": 2171892,
+    "duration_ms": 55028,
+    "word_count": 153,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2171.892,
+    "text": "So I call the top 10 roads to be baby names.",
+    "start_ms": 2171892,
+    "end_ms": 2175192,
+    "duration_ms": 3300,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2175.896,
+    "text": "First ten rows and then I'm saying that I'm doing the lock getting all the columns and then getting rows It's starting from the beginning all the way to nine and inclusive of nine because this is a lock And it gives me like all of those the the first top ten rows and then assume that I want to Filter out or extract data in a way that every other row is included in the output.",
+    "start_ms": 2175896,
+    "end_ms": 2202328,
+    "duration_ms": 26432,
+    "word_count": 77,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2202.328,
+    "text": "So the first row is included, second row is not included, the third row is included and so on and so forth.",
+    "start_ms": 2202328,
+    "end_ms": 2206928,
+    "duration_ms": 4600,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2206.928,
+    "text": "So I want this to be there, not be there, not be there, and then all the way.",
+    "start_ms": 2206928,
+    "end_ms": 2211428,
+    "duration_ms": 4500,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2212.024,
+    "text": "So one way to do it is that I can provide some kind of an Ebullian array object, which can be series, which can be list, and I can provide true Ebullian means that the values are true and false, right?",
+    "start_ms": 2212024,
+    "end_ms": 2225306,
+    "duration_ms": 13282,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2225.306,
+    "text": "So here I would say that I'm providing all of this true false values and at every entry that you have true value you would go ahead and say that this entry is going to be included.",
+    "start_ms": 2225306,
+    "end_ms": 2236264,
+    "duration_ms": 10958,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2236.264,
+    "text": "At every entry that there is false value, that value is going to be x, collided, and so on and so forth.",
+    "start_ms": 2236264,
+    "end_ms": 2242224,
+    "duration_ms": 5960,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2242.224,
+    "text": "In this way, this Boolean list is going to help us to do this selection.",
+    "start_ms": 2242224,
+    "end_ms": 2247264,
+    "duration_ms": 5040,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2247.264,
+    "text": "It will do this selection, and then the output here in this case is going to be the filtered version or the extraction of those rows that I wanted in the original data frame.",
+    "start_ms": 2247264,
+    "end_ms": 2256984,
+    "duration_ms": 9720,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2257.432,
+    "text": "Right? So we will follow exactly the same thing, but we want to do it a little bit more efficiently.",
+    "start_ms": 2257432,
+    "end_ms": 2263432,
+    "duration_ms": 6000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2263.736,
+    "text": "But before I move on to show you how we can do it more efficiently, I want to show you how we can do it with also the lock operator.",
+    "start_ms": 2263736,
+    "end_ms": 2271936,
+    "duration_ms": 8200,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2271.936,
+    "text": "Because here I did it with the context dependent square bracket extraction and I provided this entire list.",
+    "start_ms": 2271936,
+    "end_ms": 2280936,
+    "duration_ms": 9000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2281.336,
+    "text": "So think about the list that I provided that has the all of those Boolean values and it is passed to the square bracket operator I can do exactly the same thing with lock so if it lock I can say that there is the lock operator and then this is Just the square brackets for the lock operator We're saying that for the rows go ahead and grab the rows based on this lung condition of all of those riffles values used that for indexing their rows and then additionally I'm saying that I want all the colors.",
+    "start_ms": 2281336,
+    "end_ms": 2310755,
+    "duration_ms": 29419,
+    "word_count": 99,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2311.64,
+    "text": "And that's optional. I could just skip. Now providing Colin and it would give me all the columns too.",
+    "start_ms": 2311640,
+    "end_ms": 2316944,
+    "duration_ms": 5304,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2317.432,
+    "text": "Right, so two ways of actually providing a Boolean array type object and then it will basically do the filtering for us based on the truffles values.",
+    "start_ms": 2317432,
+    "end_ms": 2326552,
+    "duration_ms": 9120,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2327.768,
+    "text": "or want to sit down and then just do true false, true false, true false, and manual checking all of those values, I can automatically calculate that.",
+    "start_ms": 2327768,
+    "end_ms": 2337760,
+    "duration_ms": 9992,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2337.76,
+    "text": "And we had seen an example of how we can do it on a series object.",
+    "start_ms": 2337760,
+    "end_ms": 2341920,
+    "duration_ms": 4160,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2341.92,
+    "text": "So in this case, I'm saying that what if I automatically create this Boolean series object with the condition that the sex of the baby be equal to f?",
+    "start_ms": 2341920,
+    "end_ms": 2352240,
+    "duration_ms": 10320,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2352.76,
+    "text": "So extracting all of those female babies and then I'll have a logical, I'll restore all of those values in this variable that is a series object.",
+    "start_ms": 2352760,
+    "end_ms": 2363300,
+    "duration_ms": 10540,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2363.3,
+    "text": "And what you can see is that for all the rows, automatically this Boolean expression is going to be applied, each one of those rows is going to get either true or false and then the result is going to be something like this.",
+    "start_ms": 2363300,
+    "end_ms": 2375300,
+    "duration_ms": 12000,
+    "word_count": 44,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2375.3,
+    "text": "Right? It will tell me that the data type is Boolean.",
+    "start_ms": 2375300,
+    "end_ms": 2378820,
+    "duration_ms": 3520,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2378.82,
+    "text": "So now we know that we can use that as a Boolean array type object that I can pass to either a square bracket or dot lock in order to filter those rows.",
+    "start_ms": 2378820,
+    "end_ms": 2387820,
+    "duration_ms": 9000,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2388.6,
+    "text": "So what I can do is now I would say that now I'm going to do the indexing.",
+    "start_ms": 2388600,
+    "end_ms": 2393200,
+    "duration_ms": 4600,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2393.2,
+    "text": "I'll go ahead and say that on baby names, data frame initially.",
+    "start_ms": 2393200,
+    "end_ms": 2397800,
+    "duration_ms": 4600,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2397.8,
+    "text": "This is the entire data frame, right? Do the context dependent extraction?",
+    "start_ms": 2397800,
+    "end_ms": 2402700,
+    "duration_ms": 4900,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2402.7,
+    "text": "And I'm providing you a Boolean series object that is going to be calculated using this expression that we already verified that is going to have all of those true false values.",
+    "start_ms": 2402700,
+    "end_ms": 2413820,
+    "duration_ms": 11120,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2414.232,
+    "text": "So in this case, again, the inside thing is going to be a series of lengths, 400,000 something.",
+    "start_ms": 2414232,
+    "end_ms": 2422352,
+    "duration_ms": 8120,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2422.352,
+    "text": "And then the output of this is going to be the filter version of the data frame, which only will have 233,000 rows.",
+    "start_ms": 2422352,
+    "end_ms": 2431292,
+    "duration_ms": 8940,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2431.768,
+    "text": "Including all of those babies with the sex being equal to F.",
+    "start_ms": 2431768,
+    "end_ms": 2435768,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2436.696,
+    "text": "Right, so this is the filtered version. We can verify the number of rows.",
+    "start_ms": 2436696,
+    "end_ms": 2440336,
+    "duration_ms": 3640,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2440.336,
+    "text": "We can verify the number of columns. All the columns are extracted, but all of the entries here have this condition in common.",
+    "start_ms": 2440336,
+    "end_ms": 2447816,
+    "duration_ms": 7480,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2449.656,
+    "text": "This is a live-a-complicated, so that's why I'm going to go quickly to the code and try to do a certain thing.",
+    "start_ms": 2449656,
+    "end_ms": 2458656,
+    "duration_ms": 9000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2458.656,
+    "text": "So here's how I load the data and I'm showing you the head of the data.",
+    "start_ms": 2458656,
+    "end_ms": 2463456,
+    "duration_ms": 4800,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2463.456,
+    "text": "Remember dot head.tail was the handy thing that we would quickly take a look at the top few rows and the bottom few rows.",
+    "start_ms": 2463456,
+    "end_ms": 2470656,
+    "duration_ms": 7200,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2470.656,
+    "text": "In this case, I'm calling head and not providing any argument and therefore it's just going to give me the top five.",
+    "start_ms": 2470656,
+    "end_ms": 2477656,
+    "duration_ms": 7000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2478.04,
+    "text": "And what I'm going to do is I'm just going to do something similar, but I'm going to just double check for the name of a baby.",
+    "start_ms": 2478040,
+    "end_ms": 2487040,
+    "duration_ms": 9000,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2487.04,
+    "text": "So I would say that, okay. I'm going to create...",
+    "start_ms": 2487040,
+    "end_ms": 2492200,
+    "duration_ms": 5160,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2493.912,
+    "text": "a series object that is going to be a Boolean series object.",
+    "start_ms": 2493912,
+    "end_ms": 2497726,
+    "duration_ms": 3814,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2497.726,
+    "text": "Actually let me not name it. Let me just briefly say that I want from baby names.",
+    "start_ms": 2497726,
+    "end_ms": 2503732,
+    "duration_ms": 6006,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2503.732,
+    "text": "I want to go ahead and say that the name.",
+    "start_ms": 2503732,
+    "end_ms": 2507512,
+    "duration_ms": 3780,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2510.04,
+    "text": "Call the... name column. Be equal to... Stay Joey. And I want to see the result.",
+    "start_ms": 2510040,
+    "end_ms": 2518555,
+    "duration_ms": 8515,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2518.555,
+    "text": "So you're seeing that here I have a bunch of false and true values and you are not seeing all the true values here because it just gave us a snapshot of the first few Resinnd of the last few was not everything.",
+    "start_ms": 2518555,
+    "end_ms": 2531532,
+    "duration_ms": 12977,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2531.532,
+    "text": "But I'm going to do is I would say that I'm going to call this joy condition.",
+    "start_ms": 2531532,
+    "end_ms": 2536972,
+    "duration_ms": 5440,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2539.224,
+    "text": "I'm going to store it. What I'll do is I'll say that okay.",
+    "start_ms": 2539224,
+    "end_ms": 2546816,
+    "duration_ms": 7592,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2547.16,
+    "text": "Now let's go ahead and take it like it to Joy condition.",
+    "start_ms": 2547160,
+    "end_ms": 2549920,
+    "duration_ms": 2760,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2549.92,
+    "text": "It's still the same thing, but now I have stored all of those series, all of those Boolean values in a variable that I'm calling it Joy condition.",
+    "start_ms": 2549920,
+    "end_ms": 2558520,
+    "duration_ms": 8600,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2558.968,
+    "text": "Are we sure that there is all true and false values in it?",
+    "start_ms": 2558968,
+    "end_ms": 2563968,
+    "duration_ms": 5000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2563.968,
+    "text": "So right now we're only seeing false. We're not sure if there's any baby named Joey at all or not.",
+    "start_ms": 2563968,
+    "end_ms": 2570568,
+    "duration_ms": 6600,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2570.568,
+    "text": "One function that we'll see later today is calling unique.",
+    "start_ms": 2570568,
+    "end_ms": 2575168,
+    "duration_ms": 4600,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2575.168,
+    "text": "Unique is going to give you what are unique entries that you're seeing in this series.",
+    "start_ms": 2575168,
+    "end_ms": 2580968,
+    "duration_ms": 5800,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2580.968,
+    "text": "So one thing is that before sure, see false. But I want to say that if the number of unique items is too meaning that I have also true listed here or not.",
+    "start_ms": 2580968,
+    "end_ms": 2591468,
+    "duration_ms": 10500,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2591.468,
+    "text": "So here you're seeing that the number of unique elements is in fact true and false.",
+    "start_ms": 2591468,
+    "end_ms": 2596368,
+    "duration_ms": 4900,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2596.368,
+    "text": "So I have some increase that are true, but I just am not able to see that, which is good.",
+    "start_ms": 2596368,
+    "end_ms": 2601168,
+    "duration_ms": 4800,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2602.008,
+    "text": "So I'm going to go back. Now we have this joy condition and then what I'll do is I'll say that okay give me all the baby names.",
+    "start_ms": 2602008,
+    "end_ms": 2609768,
+    "duration_ms": 7760,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2609.768,
+    "text": "I'm doing this selection based on the condition that I had.",
+    "start_ms": 2609768,
+    "end_ms": 2613112,
+    "duration_ms": 3344,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2613.112,
+    "text": "So the rows that are going to be selected are the rows that are meeting this condition or this condition is equal to true.",
+    "start_ms": 2613112,
+    "end_ms": 2620408,
+    "duration_ms": 7296,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2620.408,
+    "text": "So I would do this, run it. And you're saying that, oh, in fact, we had some joys and over different years.",
+    "start_ms": 2620408,
+    "end_ms": 2631224,
+    "duration_ms": 10816,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2631.224,
+    "text": "And then this is the count of how many we have.",
+    "start_ms": 2631224,
+    "end_ms": 2633424,
+    "duration_ms": 2200,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2633.656,
+    "text": "Right, so this is like a very powerful way of doing, of us doing the filtering based on the based on different conditions.",
+    "start_ms": 2633656,
+    "end_ms": 2642656,
+    "duration_ms": 9000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2643.384,
+    "text": "Obviously we could do exactly the same thing with lock and then also say that okay now we are going to get all of the columns or a selection of columns and so on and so forth so it would basically filter it for us in the same base.",
+    "start_ms": 2643384,
+    "end_ms": 2656224,
+    "duration_ms": 12840,
+    "word_count": 49,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2656.224,
+    "text": "So here's the condition that the silver filtering based on the sex of the baby being equal to F.",
+    "start_ms": 2656224,
+    "end_ms": 2661344,
+    "duration_ms": 5120,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2662.712,
+    "text": "So one thing that you might be wondering is that, okay, what happens if I don't have a very straightforward condition such as like a name being Joey or like the sex being a certain thing or not, but if I have multiple conditions, we can create compound Boolean expressions as well, using bitwise operators.",
+    "start_ms": 2662712,
+    "end_ms": 2682112,
+    "duration_ms": 19400,
+    "word_count": 55,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2682.112,
+    "text": "So this ampersand here is going to be an amp operator and then this vertical bar here is going to be our OR operator.",
+    "start_ms": 2682112,
+    "end_ms": 2691096,
+    "duration_ms": 8984,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2691.096,
+    "text": "So we can do AND and OR also on the expression.",
+    "start_ms": 2691096,
+    "end_ms": 2694440,
+    "duration_ms": 3344,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2694.44,
+    "text": "So you will have two separate conditions. You combine them using AND OR and hopefully you know what the result of AND OR.",
+    "start_ms": 2694440,
+    "end_ms": 2701512,
+    "duration_ms": 7072,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2701.88,
+    "text": "is when you are applying it to two different conditions.",
+    "start_ms": 2701880,
+    "end_ms": 2704880,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2705.688,
+    "text": "So what's happening in this case? Let's take a look.",
+    "start_ms": 2705688,
+    "end_ms": 2708888,
+    "duration_ms": 3200,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2708.888,
+    "text": "So I have a data frame baby names. I'm doing a selection, so that's my selection operator.",
+    "start_ms": 2708888,
+    "end_ms": 2715305,
+    "duration_ms": 6417,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2715.305,
+    "text": "And what's inside that's being selected or filtering my data is actually two Boolean expressions that are or together.",
+    "start_ms": 2715305,
+    "end_ms": 2725288,
+    "duration_ms": 9983,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2725.288,
+    "text": "So there's or between two expressions. What are those expressions?",
+    "start_ms": 2725288,
+    "end_ms": 2729002,
+    "duration_ms": 3714,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2729.002,
+    "text": "There's one expression here that says baby names, sex equal to F.",
+    "start_ms": 2729002,
+    "end_ms": 2733688,
+    "duration_ms": 4686,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2733.688,
+    "text": "So these are all the female baby names. And then the second condition is that the year be less than 2000.",
+    "start_ms": 2733688,
+    "end_ms": 2739928,
+    "duration_ms": 6240,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2740.44,
+    "text": "So if either of those options are true that the entry is going to be in the output and you're going to see it here that we have gated some of the conditions that the sex column is f or the sex column is n but the year is before 2000 and all of those are selected.",
+    "start_ms": 2740440,
+    "end_ms": 2757000,
+    "duration_ms": 16560,
+    "word_count": 57,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2757.0,
+    "text": "So you can get creative, write different conditions the different way.",
+    "start_ms": 2757000,
+    "end_ms": 2760360,
+    "duration_ms": 3360,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2760.36,
+    "text": "only take away or like a Why is point that I want to tell you is that make sure that you're always including all of those Boolean expressions that you're writing in parenthesis so that like they don't get mixed up and you don't need to deal with the operator precedence and whatnot and remembering that.",
+    "start_ms": 2760360,
+    "end_ms": 2780800,
+    "duration_ms": 20440,
+    "word_count": 56,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2780.8,
+    "text": "So in this case it's super easy and clean and you first Calculate those two expressions then you take or and then everything is clean.",
+    "start_ms": 2780800,
+    "end_ms": 2788536,
+    "duration_ms": 7736,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2789.272,
+    "text": "There are different bitwise operators. We can indicate... Ebullian expression.",
+    "start_ms": 2789272,
+    "end_ms": 2794710,
+    "duration_ms": 5438,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2794.71,
+    "text": "So say for example if you have a bullion Valley or a bullion array that's P you can negate it using this tilde So you can say tilde P if it's true it's gonna be false if it's false it's gonna be true Or, and we already talked about it, and this is a carrot operator, not carrot vegetable, this is carrot C-A-R-E-T, and this is bitwise, this is exclusive or.",
+    "start_ms": 2794710,
+    "end_ms": 2822968,
+    "duration_ms": 28258,
+    "word_count": 71,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2822.968,
+    "text": "So it's either piece true or Q is true and not both.",
+    "start_ms": 2822968,
+    "end_ms": 2827288,
+    "duration_ms": 4320,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2827.704,
+    "text": "So when both are true or both are false, the output is going to be false, but this is exclusive or between P and Q.",
+    "start_ms": 2827704,
+    "end_ms": 2833544,
+    "duration_ms": 5840,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2833.544,
+    "text": "And you might want to use it in different places.",
+    "start_ms": 2833544,
+    "end_ms": 2835968,
+    "duration_ms": 2424,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2835.968,
+    "text": "But this is kind of a basic set of the stuff that you need in order to write any condition that you want.",
+    "start_ms": 2835968,
+    "end_ms": 2841544,
+    "duration_ms": 5576,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2841.544,
+    "text": "Then you can do you can do extracts based on a certain condition that you have.",
+    "start_ms": 2841544,
+    "end_ms": 2847344,
+    "duration_ms": 5800,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2848.184,
+    "text": "So let's just spend some time on this. Hopefully the options for this one hasn't changed.",
+    "start_ms": 2848184,
+    "end_ms": 2852984,
+    "duration_ms": 4800,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2852.984,
+    "text": "If you did get a chance to respond to the previous one, make sure to respond to this one as well.",
+    "start_ms": 2852984,
+    "end_ms": 2857784,
+    "duration_ms": 4800,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2858.84,
+    "text": "And what we're interested in is to find out the first three baby names with the count greater than 250 and the hint for us is that that's the output in the right hand side.",
+    "start_ms": 2858840,
+    "end_ms": 2871240,
+    "duration_ms": 12400,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2871.24,
+    "text": "So grab the right hand side. Data frame, however you want.",
+    "start_ms": 2871240,
+    "end_ms": 2875720,
+    "duration_ms": 4480,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2899.064,
+    "text": "We are all locked in so I am going to go here so you can see the options.",
+    "start_ms": 2899064,
+    "end_ms": 2906064,
+    "duration_ms": 7000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2935.736,
+    "text": "We'll keep, but we'll start explaining. So I have this.",
+    "start_ms": 2935736,
+    "end_ms": 2941336,
+    "duration_ms": 5600,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2941.784,
+    "text": "Baby names they defend that we're all familiar with. I want to get somehow to this output.",
+    "start_ms": 2941784,
+    "end_ms": 2946584,
+    "duration_ms": 4800,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2946.584,
+    "text": "And it happens that this output is that the top tree or the first tree babies or the baby names with...",
+    "start_ms": 2946584,
+    "end_ms": 2954384,
+    "duration_ms": 7800,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2955.16,
+    "text": "with the occurrences of or with the count being greater than 260.",
+    "start_ms": 2955160,
+    "end_ms": 2960160,
+    "duration_ms": 5000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2960.92,
+    "text": "So, practice with lock and eye lock again. So, when I say that I'm doing eye lock, that's integer-based extraction, right?",
+    "start_ms": 2960920,
+    "end_ms": 2970420,
+    "duration_ms": 9500,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2970.42,
+    "text": "So, the integer position happened to be aligned with the labels.",
+    "start_ms": 2970420,
+    "end_ms": 2973920,
+    "duration_ms": 3500,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2973.92,
+    "text": "So, that makes my life easier. So, I'm saying that row at integer position is 0, 233, and then 484, that's correct.",
+    "start_ms": 2973920,
+    "end_ms": 2983620,
+    "duration_ms": 9700,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2983.62,
+    "text": "And then for the columns, this is, we're saying that integer position 3 and 4.",
+    "start_ms": 2983620,
+    "end_ms": 2988580,
+    "duration_ms": 4960,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2988.58,
+    "text": "Let's take a look. This is 0, 1, 2, 3, and 4.",
+    "start_ms": 2988580,
+    "end_ms": 2993140,
+    "duration_ms": 4560,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2993.14,
+    "text": "So 3 and 4 is going to give me name and count.",
+    "start_ms": 2993140,
+    "end_ms": 2995500,
+    "duration_ms": 2360,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2995.5,
+    "text": "So that's. That seems to be right and that's exactly the same alphabet as you want.",
+    "start_ms": 2995500,
+    "end_ms": 3000491,
+    "duration_ms": 4991,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3000.491,
+    "text": "This is one correct option. But what about the rest?",
+    "start_ms": 3000491,
+    "end_ms": 3004028,
+    "duration_ms": 3537,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3004.028,
+    "text": "So this should be an easy no because we only wanted to have name and count and here There is no selection on the columns the only selection that we have is on the rows, right?",
+    "start_ms": 3004028,
+    "end_ms": 3015168,
+    "duration_ms": 11140,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3015.168,
+    "text": "And then with this selection that we have on the rows, we're getting exactly the same rows But we get way too many columns that we don't want With the lock here, I'm also writing the condition here.",
+    "start_ms": 3015168,
+    "end_ms": 3027360,
+    "duration_ms": 12192,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3027.36,
+    "text": "So the condition is that I want to, for the rows to be filtered, to be only the rows with the counting greater than 250, which is exactly what is the condition that you wanted.",
+    "start_ms": 3027360,
+    "end_ms": 3039360,
+    "duration_ms": 12000,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3040.152,
+    "text": "Because it's lock, we can also provide a list of labels for the columns of I want to extract, which is name and count, so that's also good.",
+    "start_ms": 3040152,
+    "end_ms": 3049152,
+    "duration_ms": 9000,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3049.152,
+    "text": "But I didn't want everything under the baby name, filtered version, but I only wanted the top tree.",
+    "start_ms": 3049152,
+    "end_ms": 3058152,
+    "duration_ms": 9000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3058.152,
+    "text": "So the dot head tree is going to give me the top tree, so this is a correct option.",
+    "start_ms": 3058152,
+    "end_ms": 3063152,
+    "duration_ms": 5000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3064.376,
+    "text": "This last one is very similar. So there's lock, there is the same condition, there is the same list of columns that we're extracting, but we're doing dot i-lock here.",
+    "start_ms": 3064376,
+    "end_ms": 3074536,
+    "duration_ms": 10160,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3074.536,
+    "text": "So this is how like you can in practice you'll keep like applying these functions back to back and keep like filtering in multiple different levels.",
+    "start_ms": 3074536,
+    "end_ms": 3083176,
+    "duration_ms": 8640,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3083.176,
+    "text": "So that's pretty normal that I have this line line of code.",
+    "start_ms": 3083176,
+    "end_ms": 3087496,
+    "duration_ms": 4320,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3087.496,
+    "text": "But then i'm like zero to tree. that get me all of the columns.",
+    "start_ms": 3087496,
+    "end_ms": 3093742,
+    "duration_ms": 6246,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3093.742,
+    "text": "I'm happy with getting all of the columns because right now my columns are already name and count.",
+    "start_ms": 3093742,
+    "end_ms": 3099196,
+    "duration_ms": 5454,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3099.196,
+    "text": "So that's the good part. But the issue is with the i-lock doing the range of 0 to 2.",
+    "start_ms": 3099196,
+    "end_ms": 3105270,
+    "duration_ms": 6074,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3105.27,
+    "text": "And i-lock was exclusive of the right hand side. So meaning that here is going to give me row at integer position 1 and 2.",
+    "start_ms": 3105270,
+    "end_ms": 3113409,
+    "duration_ms": 8139,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3113.409,
+    "text": "And that's about it. Right. So this in this case you're seeing that I don't get enough rows unless the issue.",
+    "start_ms": 3113409,
+    "end_ms": 3122064,
+    "duration_ms": 8655,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3122.064,
+    "text": "But otherwise mostly was under right track. So, and you got it right.",
+    "start_ms": 3122064,
+    "end_ms": 3128872,
+    "duration_ms": 6808,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3129.08,
+    "text": "And moving on. So I'm going to now go deeper into a lot of different functions.",
+    "start_ms": 3129080,
+    "end_ms": 3135200,
+    "duration_ms": 6120,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3135.2,
+    "text": "So every slide, almost from this point on, is going to be a new function.",
+    "start_ms": 3135200,
+    "end_ms": 3138771,
+    "duration_ms": 3571,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3138.771,
+    "text": "It's not going to be logic. So it's just throwing different functions and different kind of options at you.",
+    "start_ms": 3138771,
+    "end_ms": 3144760,
+    "duration_ms": 5989,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3145.368,
+    "text": "So say I want to write a condition, I want to compound this condition that I want to select names that not only Joey but I want to get like Bella Alex the least on Narrages and say that this list can be long.",
+    "start_ms": 3145368,
+    "end_ms": 3159568,
+    "duration_ms": 14200,
+    "word_count": 44,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3159.864,
+    "text": "So it's really hard to write the condition and like, spell out all of those different options that you have, but Pandas has different kinds of easier way of implementing similar stuff.",
+    "start_ms": 3159864,
+    "end_ms": 3172104,
+    "duration_ms": 12240,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3172.408,
+    "text": "So the first function that I'm going to show you is dot is in.",
+    "start_ms": 3172408,
+    "end_ms": 3176168,
+    "duration_ms": 3760,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3176.168,
+    "text": "So dot is in the, as you can see from the name, and pandas is really readable, and the API is really kind of...",
+    "start_ms": 3176168,
+    "end_ms": 3183048,
+    "duration_ms": 6880,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3183.64,
+    "text": "Velh, chosen those function names really Velh, it basically says that it's going to check whether something is in something else, right?",
+    "start_ms": 3183640,
+    "end_ms": 3193120,
+    "duration_ms": 9480,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3193.12,
+    "text": "So how can I make use of this? The way that I can make use of this is that I can say that I'm going to put all of those names that I wanted, remember Bella, Alex, Nargis and Lisa, into a list.",
+    "start_ms": 3193120,
+    "end_ms": 3204920,
+    "duration_ms": 11800,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3205.304,
+    "text": "And then what I can do is I can go ahead and say that on the baby names.",
+    "start_ms": 3205304,
+    "end_ms": 3209904,
+    "duration_ms": 4600,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3210.2,
+    "text": "Name column on that series object Check whether those elements are in The name's the list that I have.",
+    "start_ms": 3210200,
+    "end_ms": 3219304,
+    "duration_ms": 9104,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3220.472,
+    "text": "So very simple, the output is going to be, again, the inner side is going to basically check whether it is in or not, true false, true false, true false, and then I can pass it to the context dependent extraction.",
+    "start_ms": 3220472,
+    "end_ms": 3234072,
+    "duration_ms": 13600,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3234.072,
+    "text": "This is square bracket operator and then it will do the actual task of filtering for us.",
+    "start_ms": 3234072,
+    "end_ms": 3239872,
+    "duration_ms": 5800,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3240.536,
+    "text": "So that's also another easier, higher level way of checking condition or creating more complex condition.",
+    "start_ms": 3240536,
+    "end_ms": 3247536,
+    "duration_ms": 7000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3248.632,
+    "text": "There are also a lot of string functions. So I'm going to just show you, I think a couple of string functions today, because a lot of times you have string values in the columns and you want to process them some way.",
+    "start_ms": 3248632,
+    "end_ms": 3261152,
+    "duration_ms": 12520,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3261.152,
+    "text": "But we have a whole lecture on how to process the strings, which I think is going to be lecture.",
+    "start_ms": 3261152,
+    "end_ms": 3266812,
+    "duration_ms": 5660,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3267.544,
+    "text": "6. If I'm remembering it correctly. But here, a third of the starts with, it basically says that I'm getting...",
+    "start_ms": 3267544,
+    "end_ms": 3276728,
+    "duration_ms": 9184,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3279.16,
+    "text": "I'm telling you that this column is of type of string, dot the stair is saying that now I want to invoke a string function, because you think that this is an object, but I'm telling you that this is a string, and then in the stair kind of library, or the stair library, but there is a function that is called starts with.",
+    "start_ms": 3279160,
+    "end_ms": 3301720,
+    "duration_ms": 22560,
+    "word_count": 64,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3302.008,
+    "text": "And then it starts with it's going to check whether the string, each one of those strings and that series is start with n or not.",
+    "start_ms": 3302008,
+    "end_ms": 3309288,
+    "duration_ms": 7280,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3309.288,
+    "text": "And the output here, as you can imagine, the inside is going to be a Boolean series, which then I can index and get the full list of all of the names that is start with n.",
+    "start_ms": 3309288,
+    "end_ms": 3320368,
+    "duration_ms": 11080,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3320.368,
+    "text": "So there is a whole set of functions that are available in this third library that we can use and we're going to go over them later.",
+    "start_ms": 3320368,
+    "end_ms": 3329928,
+    "duration_ms": 9560,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3331.224,
+    "text": "So you might be asking that you are talking about selection, you're talking about filtering and whatnot, you did not tell us how we can modify it.",
+    "start_ms": 3331224,
+    "end_ms": 3339864,
+    "duration_ms": 8640,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3339.864,
+    "text": "So if someone hands us a data, we're just basically limited to just filtering it and just taking a look at the filtered version.",
+    "start_ms": 3339864,
+    "end_ms": 3346544,
+    "duration_ms": 6680,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3346.544,
+    "text": "You didn't talk about how we can modify it. And in fact, there are different easy ways to modify a data frame.",
+    "start_ms": 3346544,
+    "end_ms": 3352792,
+    "duration_ms": 6248,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3352.792,
+    "text": "We can easily add a column. So adding a column is as easy as adding a key value pair in a dictionary.",
+    "start_ms": 3352792,
+    "end_ms": 3362472,
+    "duration_ms": 9680,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3362.472,
+    "text": "So how did you add a key value pair in a dictionary?",
+    "start_ms": 3362472,
+    "end_ms": 3364712,
+    "duration_ms": 2240,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3364.712,
+    "text": "You would just automatically say that I have this key and then provide the value.",
+    "start_ms": 3364712,
+    "end_ms": 3370072,
+    "duration_ms": 5360,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3370.072,
+    "text": "So it works exactly the same way here. We would say that I am creating this new column.",
+    "start_ms": 3370072,
+    "end_ms": 3376232,
+    "duration_ms": 6160,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3376.44,
+    "text": "Just provide the key, provide the name. And I'm saying that the values that you're going to store in this column is going to be coming from this series object.",
+    "start_ms": 3376440,
+    "end_ms": 3386640,
+    "duration_ms": 10200,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3386.64,
+    "text": "So you have to provide kind of an array type value of the same length as the length of the initial data frame and then it will automatically append that to the entire data frame that you have.",
+    "start_ms": 3386640,
+    "end_ms": 3396640,
+    "duration_ms": 10000,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3397.048,
+    "text": "But where did that baby name underscore? Langs came from.",
+    "start_ms": 3397048,
+    "end_ms": 3401048,
+    "duration_ms": 4000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3401.048,
+    "text": "This is what I calculated at the top here. And the way that I calculated is basically that I got the name column.",
+    "start_ms": 3401048,
+    "end_ms": 3409030,
+    "duration_ms": 7982,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3409.03,
+    "text": "I said that this name column is a string and get me the Langs of each individual one of them.",
+    "start_ms": 3409030,
+    "end_ms": 3414528,
+    "duration_ms": 5498,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3414.528,
+    "text": "So this function is going to go through the name column, get calculated lengths of each one of them.",
+    "start_ms": 3414528,
+    "end_ms": 3420123,
+    "duration_ms": 5595,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3420.123,
+    "text": "It creates a series object. It stores the series object into this baby name, underscore, Lenses.",
+    "start_ms": 3420123,
+    "end_ms": 3427528,
+    "duration_ms": 7405,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3427.528,
+    "text": "And what I just need to do is to make sure that there is the correct reference added to the data frame.",
+    "start_ms": 3427528,
+    "end_ms": 3433648,
+    "duration_ms": 6120,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3433.648,
+    "text": "I'm just directly saying that create a new key, and this is its value, and it will automatically be added as an additional column to the baby names, data frame, and you can see that it's added to the right-hand side.",
+    "start_ms": 3433648,
+    "end_ms": 3446688,
+    "duration_ms": 13040,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3447.032,
+    "text": "It's always by default is going to depend from the end.",
+    "start_ms": 3447032,
+    "end_ms": 3449432,
+    "duration_ms": 2400,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3449.848,
+    "text": "so that it knows how many columns you add that if you don't provide and then it basically goes from there and you can also There are different ways that you can shuffle columns if you want to but there's no point because you're always referring to them most of the time with labels and that's all that matters So, you add a column, so that's good.",
+    "start_ms": 3449848,
+    "end_ms": 3469860,
+    "duration_ms": 20012,
+    "word_count": 67,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3469.86,
+    "text": "What if you have a data frame, you add it a column or not, but now you want to modify it.",
+    "start_ms": 3469860,
+    "end_ms": 3474560,
+    "duration_ms": 4700,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3474.56,
+    "text": "You want to say that, oh, I calculated the name lengths, but maybe the name lengths that I calculated has a space in it.",
+    "start_ms": 3474560,
+    "end_ms": 3482160,
+    "duration_ms": 7600,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3482.16,
+    "text": "So I need to remove one from each one of those values that I had.",
+    "start_ms": 3482160,
+    "end_ms": 3488660,
+    "duration_ms": 6500,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3488.66,
+    "text": "So in the same way, we can do exactly the same thing.",
+    "start_ms": 3488660,
+    "end_ms": 3491660,
+    "duration_ms": 3000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3491.66,
+    "text": "We can say that, okay, now, remember that I had this Name Lenses.",
+    "start_ms": 3491660,
+    "end_ms": 3497400,
+    "duration_ms": 5740,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3497.208,
+    "text": "Call them. Go ahead and grab the value for it from the value that I already had just reduced it by one.",
+    "start_ms": 3497208,
+    "end_ms": 3504776,
+    "duration_ms": 7568,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3505.624,
+    "text": "So again, every time that you're referring to a column like this.",
+    "start_ms": 3505624,
+    "end_ms": 3509624,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3509.592,
+    "text": "If it doesn't exist, it will create one. It will assign the value from whatever you're providing in the right hand side.",
+    "start_ms": 3509592,
+    "end_ms": 3515592,
+    "duration_ms": 6000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3515.96,
+    "text": "If it does exist, whatever you're providing in the right hand side is going to overwrite its existing content.",
+    "start_ms": 3515960,
+    "end_ms": 3521800,
+    "duration_ms": 5840,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3521.8,
+    "text": "Right? So that's exactly how dictionaries work. And this is exactly how it works in pandas.",
+    "start_ms": 3521800,
+    "end_ms": 3528760,
+    "duration_ms": 6960,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3528.76,
+    "text": "So here all of the name blanks is reduced by one and you can verify because mere is for characters and now it says trees so we correctly modified it.",
+    "start_ms": 3528760,
+    "end_ms": 3536800,
+    "duration_ms": 8040,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3537.88,
+    "text": "What if I give you a data frame or you create a name for a data frame or a column and you're not happy with the name that we gave to that column.",
+    "start_ms": 3537880,
+    "end_ms": 3548000,
+    "duration_ms": 10120,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3548.0,
+    "text": "Maybe the label is too long. You don't want to keep typing name, underscore, and length.",
+    "start_ms": 3548000,
+    "end_ms": 3553160,
+    "duration_ms": 5160,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3553.16,
+    "text": "And you want to rename it to something else. You can use dot rename and you can provide a dictionary that dictionary is structured as all of those previous names or old names that you had and then the corresponding current name that you want to assign it to.",
+    "start_ms": 3553160,
+    "end_ms": 3571008,
+    "duration_ms": 17848,
+    "word_count": 49,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3571.008,
+    "text": "So for example here I would say that okay I have baby names, I want to rename it and then and what I'm renaming is that I'm renaming columns.",
+    "start_ms": 3571008,
+    "end_ms": 3580368,
+    "duration_ms": 9360,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3580.408,
+    "text": "And then the previous value that I had for one column was named underscore Lenses and the new value that I want to sign or the new label is going to be Lenses.",
+    "start_ms": 3580408,
+    "end_ms": 3590408,
+    "duration_ms": 10000,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3589.912,
+    "text": "or likes. And you can rename multiple columns at the same time.",
+    "start_ms": 3589912,
+    "end_ms": 3594112,
+    "duration_ms": 4200,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3594.112,
+    "text": "So you just add another element to this dictionary, and then you should be able to rename multiple columns all at once.",
+    "start_ms": 3594112,
+    "end_ms": 3600112,
+    "duration_ms": 6000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3600.112,
+    "text": "In this case, the output is just going to be that now I have length column instead of...",
+    "start_ms": 3600112,
+    "end_ms": 3605312,
+    "duration_ms": 5200,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3605.944,
+    "text": "Name underscored lenses. Okay, what if I want to drop a row or I want to drop a colon?",
+    "start_ms": 3605944,
+    "end_ms": 3613264,
+    "duration_ms": 7320,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3613.656,
+    "text": "By default, pandas things that you want to drop a row.",
+    "start_ms": 3613656,
+    "end_ms": 3617256,
+    "duration_ms": 3600,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3617.256,
+    "text": "So you call .drop. It will go ahead and drop a row for you.",
+    "start_ms": 3617256,
+    "end_ms": 3621256,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3621.256,
+    "text": "And you will specify which row you want to drop.",
+    "start_ms": 3621256,
+    "end_ms": 3623656,
+    "duration_ms": 2400,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3623.864,
+    "text": "If you want to drop a column, you should specifically say that the axis that I'm dropping is the column axis.",
+    "start_ms": 3623864,
+    "end_ms": 3632424,
+    "duration_ms": 8560,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3632.424,
+    "text": "And then this way you can drop a column. So again, you can drop a row, you can drop a column, and this is a way that you can remove content from your data frame.",
+    "start_ms": 3632424,
+    "end_ms": 3641064,
+    "duration_ms": 8640,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3641.064,
+    "text": "So here I would say .drop. And I'm saying that the label that you're dropping is lengths.",
+    "start_ms": 3641064,
+    "end_ms": 3647102,
+    "duration_ms": 6038,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3647.102,
+    "text": "Remember that this was a column. But if I don't say that this is from the columns axis, it will try to remove it using a label from a row.",
+    "start_ms": 3647102,
+    "end_ms": 3656580,
+    "duration_ms": 9478,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3656.58,
+    "text": "You can find it, it will give you a key error.",
+    "start_ms": 3656580,
+    "end_ms": 3658738,
+    "duration_ms": 2158,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3658.738,
+    "text": "So that's why you have to make sure that you tell it that this is a column that then dropping, because the default goes by rows.",
+    "start_ms": 3658738,
+    "end_ms": 3664592,
+    "duration_ms": 5854,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3664.592,
+    "text": "If you want to drop a row, you pass a label for the row, and then it will be able to drop a row, or you can also drop multiple rows at the same time.",
+    "start_ms": 3664592,
+    "end_ms": 3673422,
+    "duration_ms": 8830,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3673.422,
+    "text": "So in this case, I'm dropping the row, or dropping that column and you're seeing the result under right hand select.",
+    "start_ms": 3673422,
+    "end_ms": 3681512,
+    "duration_ms": 8090,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3682.04,
+    "text": "I have a kind of example here is that notice here that I did everything in the right hand side and I reassigned it to baby names.",
+    "start_ms": 3682040,
+    "end_ms": 3691940,
+    "duration_ms": 9900,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3691.94,
+    "text": "This is because every time that I modify or drop the stuff is going to be saved into a copy.",
+    "start_ms": 3691940,
+    "end_ms": 3698620,
+    "duration_ms": 6680,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3698.62,
+    "text": "It's not going to overwrite my original data frame. So I had to specifically say that overwrite my baby names with this new version that has that column drop and then it will do that for me.",
+    "start_ms": 3698620,
+    "end_ms": 3711740,
+    "duration_ms": 13120,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3711.74,
+    "text": "device will create a copy and what you're seeing is that if you say dot drop and then you print or plot whatever the content is, you will still see it existing there.",
+    "start_ms": 3711740,
+    "end_ms": 3723300,
+    "duration_ms": 11560,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3723.3,
+    "text": "So either you re-assigned directly in the same way that we did before or you could say in place.",
+    "start_ms": 3723300,
+    "end_ms": 3730280,
+    "duration_ms": 6980,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3731.192,
+    "text": "be called to true. If you say in place, if all to true, that means that like do it in place.",
+    "start_ms": 3731192,
+    "end_ms": 3735912,
+    "duration_ms": 4720,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3735.912,
+    "text": "I know what I'm doing. Otherwise, they won't trust you.",
+    "start_ms": 3735912,
+    "end_ms": 3738192,
+    "duration_ms": 2280,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3739.608,
+    "text": "Cool. Okay, hopefully logically everything makes sense, it's just so much things.",
+    "start_ms": 3739608,
+    "end_ms": 3745624,
+    "duration_ms": 6016,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3745.624,
+    "text": "But you have the weekend, too. Just then look over them one more time.",
+    "start_ms": 3745624,
+    "end_ms": 3751688,
+    "duration_ms": 6064,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3751.688,
+    "text": "So now this is the promised two minutes break. We're going to go into more complex stuff.",
+    "start_ms": 3751688,
+    "end_ms": 3757048,
+    "duration_ms": 5360,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3757.048,
+    "text": "So stay for the second half and then we're going to see more interesting things coming up.",
+    "start_ms": 3757048,
+    "end_ms": 3762488,
+    "duration_ms": 5440,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3872.344,
+    "text": "3 Okay, next piece, some utility functions, as if I haven't covered enough of a different functions.",
+    "start_ms": 3872344,
+    "end_ms": 3882016,
+    "duration_ms": 9672,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3882.016,
+    "text": "Now I'm going to talk about what are the different utility functions that are available in pandas.",
+    "start_ms": 3882016,
+    "end_ms": 3886376,
+    "duration_ms": 4360,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3886.376,
+    "text": "All the fun things. NumPy, everything NumPy is available to you.",
+    "start_ms": 3886376,
+    "end_ms": 3890216,
+    "duration_ms": 3840,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3890.216,
+    "text": "So say for example, here I would go ahead and just look at all of the babies with name Yash.",
+    "start_ms": 3890216,
+    "end_ms": 3896656,
+    "duration_ms": 6440,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3896.656,
+    "text": "How did I do that? Here I am doing the context.",
+    "start_ms": 3896656,
+    "end_ms": 3899616,
+    "duration_ms": 2960,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3900.024,
+    "text": "I'm doing the Boolean expression here that the name is equal to Yash, so it gives me all of those Yash babies, right?",
+    "start_ms": 3900024,
+    "end_ms": 3907824,
+    "duration_ms": 7800,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3907.824,
+    "text": "And it's a data frame with all of those. And I'm only interested in the count of them.",
+    "start_ms": 3907824,
+    "end_ms": 3913104,
+    "duration_ms": 5280,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3913.104,
+    "text": "So that's why you see that I concadred this additional selection that if you think about this as a data frame on top of that now, I'm also indexing and getting only one column.",
+    "start_ms": 3913104,
+    "end_ms": 3924504,
+    "duration_ms": 11400,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3924.504,
+    "text": "So this is context dependent extraction and extracting only a single value which was extracting a column.",
+    "start_ms": 3924504,
+    "end_ms": 3930528,
+    "duration_ms": 6024,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3930.528,
+    "text": "This is the first time that you're seeing two escrow brackets next to each other.",
+    "start_ms": 3930528,
+    "end_ms": 3934294,
+    "duration_ms": 3766,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3934.294,
+    "text": "This is not like a 2D array thing that you'd seen in different places or like in Java or things like that.",
+    "start_ms": 3934294,
+    "end_ms": 3940034,
+    "duration_ms": 5740,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3940.034,
+    "text": "But this is like that. I created a data frame.",
+    "start_ms": 3940034,
+    "end_ms": 3942592,
+    "duration_ms": 2558,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3942.592,
+    "text": "Now I have a 9, keep indexing into it, indexing into it.",
+    "start_ms": 3942592,
+    "end_ms": 3946139,
+    "duration_ms": 3547,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3946.139,
+    "text": "So you can keep adding those escrow brackets next to each other or like dot lock and dot i lock back to back.",
+    "start_ms": 3946139,
+    "end_ms": 3953944,
+    "duration_ms": 7805,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3954.36,
+    "text": "But anyhow, so I have a series object with all of those counts.",
+    "start_ms": 3954360,
+    "end_ms": 3959760,
+    "duration_ms": 5400,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3959.76,
+    "text": "And we know that those counts are counts of all of those entries with baby name equal to Yash.",
+    "start_ms": 3959760,
+    "end_ms": 3965120,
+    "duration_ms": 5360,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3965.12,
+    "text": "So I named it as Yash count. So we can do all the NumPy stuff that you were doing in data 8, those who are coming from data 8.",
+    "start_ms": 3965120,
+    "end_ms": 3972280,
+    "duration_ms": 7160,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3972.28,
+    "text": "I can say that Np.mean passed a series object and then will automatically calculate the mean.",
+    "start_ms": 3972280,
+    "end_ms": 3978080,
+    "duration_ms": 5800,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3978.08,
+    "text": "I can get them max. I can do anything under the moon that you've seen in NumPy.",
+    "start_ms": 3978080,
+    "end_ms": 3983040,
+    "duration_ms": 4960,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3983.04,
+    "text": "so everything can be calculated. There are other utility functions.",
+    "start_ms": 3983040,
+    "end_ms": 3987011,
+    "duration_ms": 3971,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3987.011,
+    "text": "There is size, shape and all of those things. Some of them you've seen.",
+    "start_ms": 3987011,
+    "end_ms": 3991880,
+    "duration_ms": 4869,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3991.88,
+    "text": "I gave you kind of a blurb of unique. I gave you the blurb of, I think, shape once.",
+    "start_ms": 3991880,
+    "end_ms": 3998489,
+    "duration_ms": 6609,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3998.489,
+    "text": "But let's take a look at them quickly. If I have a data frame when I say dot size, that dot shape, it will give you the number of rows.",
+    "start_ms": 3998489,
+    "end_ms": 4008528,
+    "duration_ms": 10039,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4008.76,
+    "text": "and it will give you the number of columns. Right?",
+    "start_ms": 4008760,
+    "end_ms": 4012836,
+    "duration_ms": 4076,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4012.836,
+    "text": "So that's easy for you to figure out how many rows do you have if you want to provide this slice and like get this slice and making sure that you're within the range.",
+    "start_ms": 4012836,
+    "end_ms": 4021484,
+    "duration_ms": 8648,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4021.484,
+    "text": "So that's an easy way to get the dimensions or have a sense of the dimensions or the size of the data.",
+    "start_ms": 4021484,
+    "end_ms": 4027000,
+    "duration_ms": 5516,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4027.544,
+    "text": "If you're interested in just knowing how many entries could possibly be in your data frame, you could just call that size.",
+    "start_ms": 4027544,
+    "end_ms": 4033744,
+    "duration_ms": 6200,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4033.744,
+    "text": "That size is technically the capacity of the data frame.",
+    "start_ms": 4033744,
+    "end_ms": 4036604,
+    "duration_ms": 2860,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4036.604,
+    "text": "It's number of rows times number of columns. And if you don't trust me, if you multiply 5 by that 400,000 thing, this is the number that you'll get.",
+    "start_ms": 4036604,
+    "end_ms": 4045904,
+    "duration_ms": 9300,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4045.904,
+    "text": "So it just doesn't care about the values that the restore just is a capacity thing.",
+    "start_ms": 4045904,
+    "end_ms": 4050984,
+    "duration_ms": 5080,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4052.216,
+    "text": "Describe is going to give you when I call this scribe on a data frame.",
+    "start_ms": 4052216,
+    "end_ms": 4057841,
+    "duration_ms": 5625,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4057.841,
+    "text": "It's going to only look at the numerical columns. So here the numerical columns that I have is year and account.",
+    "start_ms": 4057841,
+    "end_ms": 4065116,
+    "duration_ms": 7275,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4065.116,
+    "text": "Right? And it will give me some summary statistic about those columns.",
+    "start_ms": 4065116,
+    "end_ms": 4069016,
+    "duration_ms": 3900,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4069.016,
+    "text": "So it will give me okay. What's the count? How many actual values do I have?",
+    "start_ms": 4069016,
+    "end_ms": 4074216,
+    "duration_ms": 5200,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4074.216,
+    "text": "do I have because you might have missing values. It will give me like average standard deviation minimum maximum.",
+    "start_ms": 4074216,
+    "end_ms": 4080824,
+    "duration_ms": 6608,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4080.824,
+    "text": "It will also give me quartiles. I'm going to come back and talk about all quartels, I think, lecture 7 and 8.",
+    "start_ms": 4080824,
+    "end_ms": 4088864,
+    "duration_ms": 8040,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4088.864,
+    "text": "So when we are doing visualization, we want to visualize distributions that's going to be fun time, that we can visualize mid-max on all the quartets.",
+    "start_ms": 4088864,
+    "end_ms": 4096864,
+    "duration_ms": 8000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4096.696,
+    "text": "But anyhow, we're only looking at the year and count because those are the numerical columns and then we get some information.",
+    "start_ms": 4096696,
+    "end_ms": 4103196,
+    "duration_ms": 6500,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4103.196,
+    "text": "You can always get really useful information from this script.",
+    "start_ms": 4103196,
+    "end_ms": 4106196,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4106.196,
+    "text": "I think I used it in the demo in the first lecture where we were looking at...",
+    "start_ms": 4106196,
+    "end_ms": 4111196,
+    "duration_ms": 5000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4112.6,
+    "text": "I think, uh... I don't think that I used it, but anyhow.",
+    "start_ms": 4112600,
+    "end_ms": 4119384,
+    "duration_ms": 6784,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4119.384,
+    "text": "So here in this case with the year if you're looking at the maximum, you would be able to tell how updated this data set is.",
+    "start_ms": 4119384,
+    "end_ms": 4125904,
+    "duration_ms": 6520,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4125.904,
+    "text": "So you're not at the latest update on this data set, but it's the year 2022.",
+    "start_ms": 4125904,
+    "end_ms": 4129784,
+    "duration_ms": 3880,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4129.784,
+    "text": "So any baby was born after that is not included in this data set.",
+    "start_ms": 4129784,
+    "end_ms": 4132824,
+    "duration_ms": 3040,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4132.824,
+    "text": "So these are all the sanity checkers stuff that we want to do before getting into feature in generating and modeling and whatnot.",
+    "start_ms": 4132824,
+    "end_ms": 4139984,
+    "duration_ms": 7160,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4140.792,
+    "text": "If I call dot describe on a series object, so here I'm getting the series object only one column and just calling the dot describe in this case, but I have is Something is slightly different, but it just describes something and that's how pandas is implemented So what you're seeing here What you are seeing?",
+    "start_ms": 4140792,
+    "end_ms": 4163432,
+    "duration_ms": 22640,
+    "word_count": 56,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4163.352,
+    "text": "Okay, this is a work. time maybe. It tells me how many elements I have.",
+    "start_ms": 4163352,
+    "end_ms": 4169003,
+    "duration_ms": 5651,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4169.003,
+    "text": "It still gives me count. It tells me how many unique elements I got there.",
+    "start_ms": 4169003,
+    "end_ms": 4174484,
+    "duration_ms": 5481,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4174.484,
+    "text": "And then it will tell me what is the top frequency of those unique things that I have.",
+    "start_ms": 4174484,
+    "end_ms": 4179164,
+    "duration_ms": 4680,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4179.164,
+    "text": "We know that it's F and M. And it tells me that F or female babies are more frequent in the data frame.",
+    "start_ms": 4179164,
+    "end_ms": 4186145,
+    "duration_ms": 6981,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4186.145,
+    "text": "And then it will tell me that the frequency of female babies is this much.",
+    "start_ms": 4186145,
+    "end_ms": 4190984,
+    "duration_ms": 4839,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4190.984,
+    "text": "So that's how it's implemented. We can also sample from a data frame.",
+    "start_ms": 4190984,
+    "end_ms": 4196008,
+    "duration_ms": 5024,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4196.008,
+    "text": "So there is a whole set of lectures that we're going to talk about sampling a data frame and just looking at the distribution and whatnot.",
+    "start_ms": 4196008,
+    "end_ms": 4203656,
+    "duration_ms": 7648,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4203.656,
+    "text": "So in order to sample data from a data frame, we can use .sample.",
+    "start_ms": 4203656,
+    "end_ms": 4210244,
+    "duration_ms": 6588,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4210.244,
+    "text": "So very creative. Without sample it always assumes that sampling is without replacement.",
+    "start_ms": 4210244,
+    "end_ms": 4216616,
+    "duration_ms": 6372,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4217.144,
+    "text": "So there is a chance that you sample multiple times back to back and then you will be able to sample the same thing or you sample five entries and then you get one entry twice.",
+    "start_ms": 4217144,
+    "end_ms": 4225824,
+    "duration_ms": 8680,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4225.824,
+    "text": "So it is with replacement by D for it is without replace sorry it's not a rear on if it's without replacement.",
+    "start_ms": 4225824,
+    "end_ms": 4235184,
+    "duration_ms": 9360,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4235.184,
+    "text": "That means that you won't get the same int or same same data multiple times.",
+    "start_ms": 4235184,
+    "end_ms": 4241144,
+    "duration_ms": 5960,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4241.144,
+    "text": "but you can set that replace equal to true so you make it with replacement, which in that case you should be able to extract same entry multiple points.",
+    "start_ms": 4241144,
+    "end_ms": 4250144,
+    "duration_ms": 9000,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4250.68,
+    "text": "Then you can also apply a lock and I like and all those things on top of that and then get more useful information.",
+    "start_ms": 4250680,
+    "end_ms": 4257820,
+    "duration_ms": 7140,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4257.82,
+    "text": "So if I call dot sample randomly we'll give me one sample.",
+    "start_ms": 4257820,
+    "end_ms": 4262240,
+    "duration_ms": 4420,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4262.24,
+    "text": "If I call dot sample 5 and provide an argument here this means that I've won five elements.",
+    "start_ms": 4262240,
+    "end_ms": 4269400,
+    "duration_ms": 7160,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4269.4,
+    "text": "So sample 5 entries for me. And then on top of that, I'm saying that, okay, now that you gave me this data frame, but five samples, I want to index into it.",
+    "start_ms": 4269400,
+    "end_ms": 4278416,
+    "duration_ms": 9016,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4278.416,
+    "text": "I want to index into it and then say that I want all the rows, so keep all of those five entries that you gave me, and then give me columns, starting from column at integer position 2 all the way to the end.",
+    "start_ms": 4278416,
+    "end_ms": 4290376,
+    "duration_ms": 11960,
+    "word_count": 44,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4290.376,
+    "text": "Which technically means that if this is 0, this is 1, this is 2 all the way to the end means year, name and count are going to be included as you're seeing here.",
+    "start_ms": 4290376,
+    "end_ms": 4299416,
+    "duration_ms": 9040,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4299.96,
+    "text": "We can go more complex and keep adding stuff on top of each other.",
+    "start_ms": 4299960,
+    "end_ms": 4303560,
+    "duration_ms": 3600,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4303.56,
+    "text": "I can say that let's first go ahead and filter these babies so that I'm only looking at the interest in the year 2000, right?",
+    "start_ms": 4303560,
+    "end_ms": 4311720,
+    "duration_ms": 8160,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4311.72,
+    "text": "And then sample from the babies in the year 2000.",
+    "start_ms": 4311720,
+    "end_ms": 4314680,
+    "duration_ms": 2960,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4314.68,
+    "text": "So a lot of time when we tell you a certain condition, you need to think about what makes sense and what order you should apply stuff, right?",
+    "start_ms": 4314680,
+    "end_ms": 4322600,
+    "duration_ms": 7920,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4322.6,
+    "text": "So that you're sampling from the right distribution. So if you were like doing the filtering afterwards.",
+    "start_ms": 4322600,
+    "end_ms": 4328600,
+    "duration_ms": 6000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4328.952,
+    "text": "Then your sampling was not going to be correct. So here in order to make sure that my sampling frame is correct, I'm filtering based on getting the year equal to 2000.",
+    "start_ms": 4328952,
+    "end_ms": 4339872,
+    "duration_ms": 10920,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4339.872,
+    "text": "Then what I'm doing is that I'm saying that sample for instances would for me and then replacement is allowed in this case.",
+    "start_ms": 4339872,
+    "end_ms": 4347672,
+    "duration_ms": 7800,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4347.672,
+    "text": "So it does it with replacement. After you're done, after you gave me four samples from the year 2000, then I'm doing an additional thing where I'm saying that, Give me all of those rows, but only give me the same columns, the year name and count, and this is how it's going to look like.",
+    "start_ms": 4347672,
+    "end_ms": 4364672,
+    "duration_ms": 17000,
+    "word_count": 56,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4365.08,
+    "text": "Okay, so we can keep adding these functions together. I think I've sped it enough.",
+    "start_ms": 4365080,
+    "end_ms": 4369365,
+    "duration_ms": 4285,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4369.365,
+    "text": "You know what? We do it. Value accounts. So a value account applies to series objects.",
+    "start_ms": 4369365,
+    "end_ms": 4376831,
+    "duration_ms": 7466,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4376.831,
+    "text": "So when we're calling value accounts on a specific column, the way that it will work is that it will calculate The frequency of each unique occurrences in your in-dad the specific series object.",
+    "start_ms": 4376831,
+    "end_ms": 4391936,
+    "duration_ms": 15105,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4391.936,
+    "text": "So for example when I say name.value accounts, it will basically go ahead and calculate or find out all of the unique names that we have.",
+    "start_ms": 4391936,
+    "end_ms": 4400616,
+    "duration_ms": 8680,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4400.616,
+    "text": "So these are all unique. You can see it two rows with the same name.",
+    "start_ms": 4400616,
+    "end_ms": 4404856,
+    "duration_ms": 4240,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4404.856,
+    "text": "And then it will tell me that what is the frequency of each one of them, each one of those values?",
+    "start_ms": 4404856,
+    "end_ms": 4409696,
+    "duration_ms": 4840,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4410.36,
+    "text": "There is a note that this frequency thing is different than count, right?",
+    "start_ms": 4410360,
+    "end_ms": 4415200,
+    "duration_ms": 4840,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4415.2,
+    "text": "Every row which had a count is counted as one occurrence.",
+    "start_ms": 4415200,
+    "end_ms": 4419440,
+    "duration_ms": 4240,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4419.44,
+    "text": "And then we're just counting how many times they appear, which technically here means that I think it means that how many years was it that a baby with this name?",
+    "start_ms": 4419440,
+    "end_ms": 4431760,
+    "duration_ms": 12320,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4432.28,
+    "text": "BuzzForn. Right? Kind of sort of. because that 223 is a very large number.",
+    "start_ms": 4432280,
+    "end_ms": 4439026,
+    "duration_ms": 6746,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4439.026,
+    "text": "But anyhow, we can also be seen unique, unique as just that, like if you don't care about the frequencies and you care about the values, you should just call unique and then it will give you an array with all of those unique names.",
+    "start_ms": 4439026,
+    "end_ms": 4452184,
+    "duration_ms": 13158,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4452.184,
+    "text": "So that's what I did when I wanted to make sure that there is a true instance there that the babies our name Joy for Frank and then we moved on.",
+    "start_ms": 4452184,
+    "end_ms": 4461064,
+    "duration_ms": 8880,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4461.88,
+    "text": "We can actually go ahead and sort values. So remember that I said with the movie earning thing, if you sort them then you can get the median earning.",
+    "start_ms": 4461880,
+    "end_ms": 4470880,
+    "duration_ms": 9000,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4470.88,
+    "text": "So a lot of time if you want to do something like that.",
+    "start_ms": 4470880,
+    "end_ms": 4473880,
+    "duration_ms": 3000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4474.904,
+    "text": "And if they tell you that the data is sorted, you just sorted again, don't trust them.",
+    "start_ms": 4474904,
+    "end_ms": 4479904,
+    "duration_ms": 5000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4479.904,
+    "text": "Or if it's not sorted, you still sorted and do your own thing.",
+    "start_ms": 4479904,
+    "end_ms": 4482904,
+    "duration_ms": 3000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4482.904,
+    "text": "So, sort value, when it's called on series, it's very straightforward.",
+    "start_ms": 4482904,
+    "end_ms": 4487461,
+    "duration_ms": 4557,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4487.461,
+    "text": "It will automatically sort all of those values based on the expectation of how sorting works for that data type.",
+    "start_ms": 4487461,
+    "end_ms": 4495464,
+    "duration_ms": 8003,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4495.464,
+    "text": "So for example, for it, a string sorting works in alphabetical ordering.",
+    "start_ms": 4495464,
+    "end_ms": 4499454,
+    "duration_ms": 3990,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4499.454,
+    "text": "So all of those letters are going to be ordered alphabetically in alphabetical ordering.",
+    "start_ms": 4499454,
+    "end_ms": 4504241,
+    "duration_ms": 4787,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4504.241,
+    "text": "So here sort values you see, we're starting from Aidan and then go all the way to the names that are starting with Z.",
+    "start_ms": 4504241,
+    "end_ms": 4511646,
+    "duration_ms": 7405,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4511.646,
+    "text": "So by default the order is in ascending order, not in the sending order.",
+    "start_ms": 4511646,
+    "end_ms": 4518714,
+    "duration_ms": 7068,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4518.714,
+    "text": "And if you want the order to be descending you have to set the Set the parameter that you have say ascending false so that it source them descendingly.",
+    "start_ms": 4518714,
+    "end_ms": 4531176,
+    "duration_ms": 12462,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4531.96,
+    "text": "If we want to sort a data frame, that's a little bit complicated.",
+    "start_ms": 4531960,
+    "end_ms": 4535480,
+    "duration_ms": 3520,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4535.48,
+    "text": "Again, here's when the logic is going to be very helpful.",
+    "start_ms": 4535480,
+    "end_ms": 4539560,
+    "duration_ms": 4080,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4539.56,
+    "text": "If you want to sort a data frame, how would you want to sort it?",
+    "start_ms": 4539560,
+    "end_ms": 4542360,
+    "duration_ms": 2800,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4542.36,
+    "text": "You just need to stay sort by what? Right? Because you have a bunch of different columns.",
+    "start_ms": 4542360,
+    "end_ms": 4546200,
+    "duration_ms": 3840,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4546.456,
+    "text": "So that's the only difference. Here you should say, sort by what?",
+    "start_ms": 4546456,
+    "end_ms": 4549756,
+    "duration_ms": 3300,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4549.756,
+    "text": "And then it will go ahead and sort by that thing that you said.",
+    "start_ms": 4549756,
+    "end_ms": 4552516,
+    "duration_ms": 2760,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4552.516,
+    "text": "So here I'm saying that, baby names is my data frame.",
+    "start_ms": 4552516,
+    "end_ms": 4554996,
+    "duration_ms": 2480,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4554.996,
+    "text": "Sort values. Sort by the count column. You can provide two columns.",
+    "start_ms": 4554996,
+    "end_ms": 4560636,
+    "duration_ms": 5640,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4560.636,
+    "text": "You say, sort by this person. Sort by this other one second.",
+    "start_ms": 4560636,
+    "end_ms": 4564036,
+    "duration_ms": 3400,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4564.036,
+    "text": "That can be complicated, but there is functionality in pandas.",
+    "start_ms": 4564036,
+    "end_ms": 4567516,
+    "duration_ms": 3480,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4567.516,
+    "text": "And then here we're saying that the sending files. I don't want it to sending.",
+    "start_ms": 4567516,
+    "end_ms": 4570476,
+    "duration_ms": 2960,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4570.476,
+    "text": "I want it to be descending so that at the top I see the most frequent kind of years that any name.",
+    "start_ms": 4570476,
+    "end_ms": 4577276,
+    "duration_ms": 6800,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4577.528,
+    "text": "had appeared which looks like that there was a substantial number of babies named Michael in 1950s and that's the maximum like frequency kind of at least.",
+    "start_ms": 4577528,
+    "end_ms": 4588528,
+    "duration_ms": 11000,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4589.08,
+    "text": "So you can do all these fancy stuff with the with data frames and all of those functionalities.",
+    "start_ms": 4589080,
+    "end_ms": 4596312,
+    "duration_ms": 7232,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4596.312,
+    "text": "Again, we don't want you to remember them, but we just want you to have heard about them so that you can keep using them in the lava homework and then you will.",
+    "start_ms": 4596312,
+    "end_ms": 4604392,
+    "duration_ms": 8080,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4604.856,
+    "text": "You know that they exist. You can go back to the API, find them and then use them.",
+    "start_ms": 4604856,
+    "end_ms": 4609496,
+    "duration_ms": 4640,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4610.104,
+    "text": "So I want to quickly show you that we can get creative.",
+    "start_ms": 4610104,
+    "end_ms": 4613893,
+    "duration_ms": 3789,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4613.893,
+    "text": "We do not need to rely on the on pandas to do all the things for us.",
+    "start_ms": 4613893,
+    "end_ms": 4618961,
+    "duration_ms": 5068,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4618.961,
+    "text": "We can say that, okay, I want to do custom sorts.",
+    "start_ms": 4618961,
+    "end_ms": 4622104,
+    "duration_ms": 3143,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4622.104,
+    "text": "I don't want to do sorting a sending layer, but same for example, I want to sort by the length of a name.",
+    "start_ms": 4622104,
+    "end_ms": 4629104,
+    "duration_ms": 7000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4629.368,
+    "text": "and sort all of those values based on that. So I'm going to just show you, these are like not...",
+    "start_ms": 4629368,
+    "end_ms": 4635768,
+    "duration_ms": 6400,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4635.832,
+    "text": "things that you haven't seen before, like there's a couple things that you haven't seen before, but these are mostly techniques.",
+    "start_ms": 4635832,
+    "end_ms": 4643392,
+    "duration_ms": 7560,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4643.392,
+    "text": "So if I want to say that I want to sort my data frame based on the links, but I can do is that go ahead, create a column, name links, and calculate all of those name links values.",
+    "start_ms": 4643392,
+    "end_ms": 4655832,
+    "duration_ms": 12440,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4655.832,
+    "text": "How do I do that? You had seen it before.",
+    "start_ms": 4655832,
+    "end_ms": 4657832,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4657.832,
+    "text": "I said that go ahead, grab the name column, assume that it's a string, calculate the the length of the story in a series object.",
+    "start_ms": 4657832,
+    "end_ms": 4667209,
+    "duration_ms": 9377,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4667.209,
+    "text": "Now we run ahead and create it. and then assign those values to that column and then here we're just sorting the data frame by that column that we created.",
+    "start_ms": 4667209,
+    "end_ms": 4677984,
+    "duration_ms": 10775,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4677.984,
+    "text": "Very simple. So this is like for you to think about what functionalities did you know and then how can you create them?",
+    "start_ms": 4677984,
+    "end_ms": 4686072,
+    "duration_ms": 8088,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4686.072,
+    "text": "And then once you're done with this column you can drop it afterwards.",
+    "start_ms": 4686072,
+    "end_ms": 4689212,
+    "duration_ms": 3140,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4689.212,
+    "text": "Once you sort of everything you can drop that column and then reassign the values.",
+    "start_ms": 4689212,
+    "end_ms": 4694112,
+    "duration_ms": 4900,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4694.2,
+    "text": "We can also use a key argument. So here we would say that I want you to sort values and I'm telling you that sort by name.",
+    "start_ms": 4694200,
+    "end_ms": 4703200,
+    "duration_ms": 9000,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4703.2,
+    "text": "But don't start by name based on the data type of a string that sort's based on alphabetical ordering or the encoding of those strings.",
+    "start_ms": 4703200,
+    "end_ms": 4711200,
+    "duration_ms": 8000,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4711.2,
+    "text": "But instead I want you to sort it based on this key argument.",
+    "start_ms": 4711200,
+    "end_ms": 4715200,
+    "duration_ms": 4000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4715.672,
+    "text": "This key argument says that every time that you saw an instance, the order of this instant is going to be calculated based on that lambda function that we're creating on the life.",
+    "start_ms": 4715672,
+    "end_ms": 4726172,
+    "duration_ms": 10500,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4725.944,
+    "text": "That Lambda function says that... Once you have a string, once you have a series object, what you're going to do is that assume that it's a string, get the lengths, and that's going to be the priority or order of this string value or that entry.",
+    "start_ms": 4725944,
+    "end_ms": 4742768,
+    "duration_ms": 16824,
+    "word_count": 47,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4742.768,
+    "text": "And then it will basically try to sort the entire data frame by the name using the priority that this key argument provided.",
+    "start_ms": 4742768,
+    "end_ms": 4751328,
+    "duration_ms": 8560,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4751.328,
+    "text": "So think about key as providing the priority that overrides the initial data type priority.",
+    "start_ms": 4751328,
+    "end_ms": 4757568,
+    "duration_ms": 6240,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4758.328,
+    "text": "And the last fancy way of doing it, which I think is going to have appear in only one of the homeworks, but it will appear somewhere that you don't expect.",
+    "start_ms": 4758328,
+    "end_ms": 4768328,
+    "duration_ms": 10000,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4768.328,
+    "text": "But it's something that you really need to remember. Is that I can actually go ahead and create a column.",
+    "start_ms": 4768328,
+    "end_ms": 4775848,
+    "duration_ms": 7520,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4775.848,
+    "text": "So here I'm creating a column, say, DR underscore EA count, because I want to count how many instances of DR and EA exist in each one of those names.",
+    "start_ms": 4775848,
+    "end_ms": 4786608,
+    "duration_ms": 10760,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4786.608,
+    "text": "And then sort names based on the frequency of the RNA in that, which is kind of crazy, but it's kind of a made up thing to go over this complicated example.",
+    "start_ms": 4786608,
+    "end_ms": 4796068,
+    "duration_ms": 9460,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4796.472,
+    "text": "So I'm creating this column. I'm saying that the values in this column should be calculated using the name column, initial name, and then what I'll say is that go ahead and use all of those values and apply the function we are underscored EA Count.",
+    "start_ms": 4796472,
+    "end_ms": 4815384,
+    "duration_ms": 18912,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4815.96,
+    "text": "What is that function? That function basically says that, okay, when you get on a string here, go ahead and count dr, go ahead and count EA, return that value.",
+    "start_ms": 4815960,
+    "end_ms": 4826630,
+    "duration_ms": 10670,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4826.63,
+    "text": "So what it does, that line of code, is that every instance in each one of the rows, it will go ahead, get that a string, pass it to the function, map that function into that string, Get the corresponding value, store that value into the column that I created.",
+    "start_ms": 4826630,
+    "end_ms": 4844160,
+    "duration_ms": 17530,
+    "word_count": 50,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4844.16,
+    "text": "So then I'll have this DREA count that the only thing that I need to do afterwards is just go ahead and say, So, the short values by this, in the sending and sending, and we'll be on our way.",
+    "start_ms": 4844160,
+    "end_ms": 4855440,
+    "duration_ms": 11280,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4856.888,
+    "text": "Alright, cool. I mean, we still have three minutes, but I'm going to let you go and we're going to go ahead and talk about group pink in the next lecture.",
+    "start_ms": 4856888,
+    "end_ms": 4866488,
+    "duration_ms": 9600,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4866.488,
+    "text": "Thank you all for coming along. We'll see you on Tuesday.",
+    "start_ms": 4866488,
+    "end_ms": 4869488,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4887.608,
+    "text": "Recall.",
+    "start_ms": 4887608,
+    "end_ms": 4888108,
+    "duration_ms": 500,
+    "word_count": 1,
+    "avg_confidence": 90
+  }
+]

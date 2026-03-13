@@ -1,0 +1,5600 @@
+[
+  {
+    "timestamp": 7.448,
+    "text": "Good morning, data 100 welcome to the largest upper division course at UC Berkeley.",
+    "start_ms": 7448,
+    "end_ms": 13919,
+    "duration_ms": 6471,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 13.919,
+    "text": "This is very exciting. Before we get started, I would like to ask everyone to either find a seat or please leave the lecture hall because of the fire code.",
+    "start_ms": 13919,
+    "end_ms": 24048,
+    "duration_ms": 10129,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 24.048,
+    "text": "And you should be able to join over Zoom and then watch us synchronously with us.",
+    "start_ms": 24048,
+    "end_ms": 29253,
+    "duration_ms": 5205,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 29.253,
+    "text": "And maybe next time we'll try to find a way to accommodate most people.",
+    "start_ms": 29253,
+    "end_ms": 33808,
+    "duration_ms": 4555,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 33.808,
+    "text": "There are some seats over here, there's some in the back, and I see like a cluster of small number of seats here.",
+    "start_ms": 33808,
+    "end_ms": 39768,
+    "duration_ms": 5960,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 39.768,
+    "text": "So either find a seat or please leave the lecture, and I'm sorry about that.",
+    "start_ms": 39768,
+    "end_ms": 44528,
+    "duration_ms": 4760,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 44.528,
+    "text": "This is kind of one part of the perk of having a large force, and this is the largest kind of lecture hall that we could get.",
+    "start_ms": 44528,
+    "end_ms": 51088,
+    "duration_ms": 6560,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 51.288,
+    "text": "All right. So you saw few QR codes that was posted online.",
+    "start_ms": 51288,
+    "end_ms": 56488,
+    "duration_ms": 5200,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 56.488,
+    "text": "Please go ahead. Scan this QR code. This is a Slido platform that we're using for kind of doing lecture attendance.",
+    "start_ms": 56488,
+    "end_ms": 66788,
+    "duration_ms": 10300,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 66.788,
+    "text": "If you're on your phone, scan it. If you're on your laptop, just go to Slido.com and then type in those digits.",
+    "start_ms": 66788,
+    "end_ms": 72288,
+    "duration_ms": 5500,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 72.288,
+    "text": "And you should be able to get in and then see all the polls that were posting.",
+    "start_ms": 72288,
+    "end_ms": 76788,
+    "duration_ms": 4500,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 76.788,
+    "text": "This is also where you can ask questions. And our wonderful TA's are here for responding to questions that you might have in kind of in a synchronous way.",
+    "start_ms": 76788,
+    "end_ms": 88748,
+    "duration_ms": 11960,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 88.748,
+    "text": "So let's see if that's been working or not. What emoji best describes your mood today?",
+    "start_ms": 88748,
+    "end_ms": 94428,
+    "duration_ms": 5680,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 94.428,
+    "text": "Give me something exciting. Not so excited, well like something that looks happy.",
+    "start_ms": 94428,
+    "end_ms": 101464,
+    "duration_ms": 7036,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 104.056,
+    "text": "Oh, it's not showing, um, alright. La Bina. Make sure that you can see the pole results.",
+    "start_ms": 104056,
+    "end_ms": 112848,
+    "duration_ms": 8792,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 118.424,
+    "text": "1. 100. We are nearly like this. you No. Okay, sometimes they might not cooperate, but we'll try to...",
+    "start_ms": 118424,
+    "end_ms": 160848,
+    "duration_ms": 42424,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 161.56,
+    "text": "What's going on? Next slide. I'm a newborns. Which was going to be for science.",
+    "start_ms": 161560,
+    "end_ms": 172200,
+    "duration_ms": 10640,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 173.464,
+    "text": "Okay, good. So we're here. and let's give this a try.",
+    "start_ms": 173464,
+    "end_ms": 180376,
+    "duration_ms": 6912,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 181.112,
+    "text": "One more time. I know. I thought I was working fine.",
+    "start_ms": 181112,
+    "end_ms": 196616,
+    "duration_ms": 15504,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 196.348,
+    "text": "you should be able to see the results on your phone and your on your laptop and just trying to fix this Wonderful, it's rendering technology So you should be able to see that.",
+    "start_ms": 196348,
+    "end_ms": 211456,
+    "duration_ms": 15108,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 211.456,
+    "text": "Give me one sec. Anyhow, so you're seeing that under left hand side there is 11 participants still typing and under right hand side you're seeing that 637 of you are really responded to this.",
+    "start_ms": 211456,
+    "end_ms": 240376,
+    "duration_ms": 28920,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 240.376,
+    "text": "This is how we're going to do class participation. So in any of the lectures, if you respond to one of the polls that accounts for like you being present synchronously and I'm going to talk about what's the general lecture participation policy is a little bit later.",
+    "start_ms": 240376,
+    "end_ms": 256856,
+    "duration_ms": 16480,
+    "word_count": 48,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 256.856,
+    "text": "So in all of the slides that you will see in data 100, the QR code and the code for a slider is going to be on the top right.",
+    "start_ms": 256856,
+    "end_ms": 263376,
+    "duration_ms": 6520,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 263.376,
+    "text": "So anytime that you join in the lecture, you don't need to be here in the beginning, but you should be able to sign in and sign out anytime that you want during your lecture to ask questions.",
+    "start_ms": 263376,
+    "end_ms": 272816,
+    "duration_ms": 9440,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 272.816,
+    "text": "So the plan for today is that we're going to do intro.",
+    "start_ms": 272816,
+    "end_ms": 276176,
+    "duration_ms": 3360,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 276.176,
+    "text": "We're going to go over what data science is. We're going to go over data science lifecycle.",
+    "start_ms": 276176,
+    "end_ms": 280136,
+    "duration_ms": 3960,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 280.136,
+    "text": "We're going to see a quick demo and then you'll get a sense of what are the students that We have in data 100 and kind of see the majors, see the names and whatnot, and the data is kind of anonymized, but we'll be able to see a fun demo.",
+    "start_ms": 280136,
+    "end_ms": 294776,
+    "duration_ms": 14640,
+    "word_count": 51,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 294.776,
+    "text": "And we're gonna go over some non-kind of fun things that we're gonna go over some logistics, and we'll read the syllabus, at least part of the syllabus together.",
+    "start_ms": 294776,
+    "end_ms": 304896,
+    "duration_ms": 10120,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 304.896,
+    "text": "So before I hand it over to Joey, let me introduce myself.",
+    "start_ms": 304896,
+    "end_ms": 308496,
+    "duration_ms": 3600,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 308.496,
+    "text": "My name is Nara Gessner, who is the assistant teaching professor in the EECS department.",
+    "start_ms": 308496,
+    "end_ms": 313976,
+    "duration_ms": 5480,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 313.976,
+    "text": "I joined Berkeley in 2012 before that I was at Santa Cruz as a faculty member since 2017.",
+    "start_ms": 313976,
+    "end_ms": 321016,
+    "duration_ms": 7040,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 321.016,
+    "text": "And before that, I did my PhD at University of Toronto in artificial perception lab.",
+    "start_ms": 321016,
+    "end_ms": 327096,
+    "duration_ms": 6080,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 327.096,
+    "text": "So my training is mostly in a statistical signal processing applied to machine learning and in biomedical domain.",
+    "start_ms": 327096,
+    "end_ms": 335176,
+    "duration_ms": 8080,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 335.176,
+    "text": "Since I joined Berkeley, I switched years a little bit and now I'm more focused on intelligent AI tutoring systems and how we can incorporate AI in education.",
+    "start_ms": 335176,
+    "end_ms": 345735,
+    "duration_ms": 10559,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 345.735,
+    "text": "So this semester I'm teaching data 100. This is the first time that I'm teaching the course.",
+    "start_ms": 345735,
+    "end_ms": 350856,
+    "duration_ms": 5121,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 350.856,
+    "text": "And then I'm also teaching to other research seminar course in EES, yes.",
+    "start_ms": 350856,
+    "end_ms": 354895,
+    "duration_ms": 4039,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 354.895,
+    "text": "So that's what I'll be doing. And then what I have is also that I hold office hours, both in my office and also in Barn Hall.",
+    "start_ms": 354895,
+    "end_ms": 362816,
+    "duration_ms": 7921,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 362.816,
+    "text": "So I'm looking forward to meeting you all in either of the office hours to chat and get to know you all a little bit better.",
+    "start_ms": 362816,
+    "end_ms": 370096,
+    "duration_ms": 7280,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 370.096,
+    "text": "I'll come back in the second half and I'll hand it over to Joy.",
+    "start_ms": 370096,
+    "end_ms": 373456,
+    "duration_ms": 3360,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 383.32,
+    "text": "Can we lower that? Alright, can you hear me now?",
+    "start_ms": 383320,
+    "end_ms": 395176,
+    "duration_ms": 11856,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 399.576,
+    "text": "lecture run. It's fine. Good night. Big tune. Hello everyone.",
+    "start_ms": 399576,
+    "end_ms": 409859,
+    "duration_ms": 10283,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 409.859,
+    "text": "That's better. All right. We need these to be recorded.",
+    "start_ms": 409859,
+    "end_ms": 412638,
+    "duration_ms": 2779,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 412.638,
+    "text": "So I have two mics on me. So hi, my name is Joey Gonzalez.",
+    "start_ms": 412638,
+    "end_ms": 417410,
+    "duration_ms": 4772,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 417.41,
+    "text": "I'm one of the coin structures of data 100. A little bit of my background.",
+    "start_ms": 417410,
+    "end_ms": 422226,
+    "duration_ms": 4816,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 422.226,
+    "text": "So I did my undergraduate studies at Caltech long ago.",
+    "start_ms": 422226,
+    "end_ms": 426932,
+    "duration_ms": 4706,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 426.932,
+    "text": "Maybe before some of you were born, no, that's crazy.",
+    "start_ms": 426932,
+    "end_ms": 430646,
+    "duration_ms": 3714,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 430.646,
+    "text": "A long time ago. Different, different environment. But a lot of of what we will do in this class has, you know, the same kind of underpinnings of the sciences that you will see in data science.",
+    "start_ms": 430646,
+    "end_ms": 441544,
+    "duration_ms": 10898,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 441.544,
+    "text": "I did my PhD at Carnegie Mellon, again, really long ago.",
+    "start_ms": 441544,
+    "end_ms": 445000,
+    "duration_ms": 3456,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 445.0,
+    "text": "My research has been in the study of parallel and distributed algorithms for statistical inference.",
+    "start_ms": 445000,
+    "end_ms": 450679,
+    "duration_ms": 5679,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 450.679,
+    "text": "We saw what it was. I came to Berkeley, 2015-2016, and since then, I've run a couple of major labs at Berkeley that work at the intersection of AI and systems.",
+    "start_ms": 450679,
+    "end_ms": 462104,
+    "duration_ms": 11425,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 462.104,
+    "text": "So my focus, if you can call that, is AI systems.",
+    "start_ms": 462104,
+    "end_ms": 465143,
+    "duration_ms": 3039,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 465.143,
+    "text": "I put links to a lot of different kinds of research projects I do on this slide.",
+    "start_ms": 465143,
+    "end_ms": 470024,
+    "duration_ms": 4881,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 470.024,
+    "text": "I will say my office hours, half my office hours, people come in and don't talk about the class at all.",
+    "start_ms": 470024,
+    "end_ms": 475384,
+    "duration_ms": 5360,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 475.384,
+    "text": "Instead, they talk about research, what's going on in Gen AI.",
+    "start_ms": 475384,
+    "end_ms": 478184,
+    "duration_ms": 2800,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 478.184,
+    "text": "I do a lot of work in Gen AI today.",
+    "start_ms": 478184,
+    "end_ms": 480343,
+    "duration_ms": 2159,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 480.343,
+    "text": "My lab runs some of the biggest open Gen AI programs in the world.",
+    "start_ms": 480343,
+    "end_ms": 483944,
+    "duration_ms": 3601,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 483.944,
+    "text": "So we run the systems that everyone now goes to.",
+    "start_ms": 483944,
+    "end_ms": 486584,
+    "duration_ms": 2640,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 486.584,
+    "text": "To figure out what is the best model today, so the chatbot arena.",
+    "start_ms": 486584,
+    "end_ms": 489944,
+    "duration_ms": 3360,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 489.944,
+    "text": "We run this software framework to serve. Most of the open source models in production.",
+    "start_ms": 489944,
+    "end_ms": 495708,
+    "duration_ms": 5764,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 496.248,
+    "text": "We also, in my group, do a lot of research in computer vision, interaction of Genai and kind of reasoning about things like human behavior.",
+    "start_ms": 496248,
+    "end_ms": 504395,
+    "duration_ms": 8147,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 504.395,
+    "text": "So a lot of really cool stuff the Genie Eye space.",
+    "start_ms": 504395,
+    "end_ms": 508668,
+    "duration_ms": 4273,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 508.792,
+    "text": "I also have some entrepreneurial activities outside of Berkeley, so I click out a few companies and my advisors to serve others working in AI and data science.",
+    "start_ms": 508792,
+    "end_ms": 517192,
+    "duration_ms": 8400,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 517.192,
+    "text": "And actually this on-error stuff that I've been doing has been a lot of fun because I got to speak to hundreds of data scientists in the past five years in a broad array of industries to understand what they are doing and what we are teaching and how it aligns.",
+    "start_ms": 517192,
+    "end_ms": 528818,
+    "duration_ms": 11626,
+    "word_count": 51,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 528.818,
+    "text": "And the good news, I say, I can say confidence when we're teaching this class is very relevant to what people are doing in the real world today.",
+    "start_ms": 528818,
+    "end_ms": 536552,
+    "duration_ms": 7734,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 536.792,
+    "text": "Alright, so I also teach data 100. I taught the first one.",
+    "start_ms": 536792,
+    "end_ms": 539618,
+    "duration_ms": 2826,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 539.618,
+    "text": "In fact, they created the first data 100. It was a disaster.",
+    "start_ms": 539618,
+    "end_ms": 543096,
+    "duration_ms": 3478,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 543.096,
+    "text": "That was V0. V1 was also not great. V2 got better.",
+    "start_ms": 543096,
+    "end_ms": 546880,
+    "duration_ms": 3784,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 546.88,
+    "text": "And over time, it improved. I took a break and professionals know what they're doing took over the class, and it is now a much better class.",
+    "start_ms": 546880,
+    "end_ms": 553773,
+    "duration_ms": 6893,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 553.773,
+    "text": "So I got to teach again with Professor Norezzi last semester, and it has come a very long way.",
+    "start_ms": 553773,
+    "end_ms": 559832,
+    "duration_ms": 6059,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 559.832,
+    "text": "It is a well-organized, efficient class students learn, learn well and I generally enjoy the class so our teaching reviews have gone out substantially since the early days of day 100.",
+    "start_ms": 559832,
+    "end_ms": 569149,
+    "duration_ms": 9317,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 569.149,
+    "text": "I also teach a graduate systems class and for the first time ever I'm teaching both at the same time so my office hour is I'm going to make open to some of the graduate students coming in too so they might also come in and talk about some of the research that they're doing in AI systems.",
+    "start_ms": 569149,
+    "end_ms": 588632,
+    "duration_ms": 19483,
+    "word_count": 58,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 588.587,
+    "text": "pick them up at five o'clock sharp or the daycare gets really mad at me.",
+    "start_ms": 588587,
+    "end_ms": 592208,
+    "duration_ms": 3621,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 592.208,
+    "text": "And so in off-sour as nice and gotta go, I really gotta go and in fact this I'm there and it's five o'clock and I haven't left you need to tell me you gotta go.",
+    "start_ms": 592208,
+    "end_ms": 600208,
+    "duration_ms": 8000,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 600.208,
+    "text": "So it's off-sour as ends at a five o'clock sharp.",
+    "start_ms": 600208,
+    "end_ms": 603208,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 604.856,
+    "text": "Okay. So what is data science? When we started teaching this class, that was the big question, actually.",
+    "start_ms": 604856,
+    "end_ms": 610232,
+    "duration_ms": 5376,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 610.232,
+    "text": "You're like, what is it to teach data science? What is the curriculum?",
+    "start_ms": 610232,
+    "end_ms": 613657,
+    "duration_ms": 3425,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 613.657,
+    "text": "What does it really mean to be a data scientist?",
+    "start_ms": 613657,
+    "end_ms": 616192,
+    "duration_ms": 2535,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 616.192,
+    "text": "There are all these comical definitions. I think for us, it was helpful to start thinking about what people were doing.",
+    "start_ms": 616192,
+    "end_ms": 623352,
+    "duration_ms": 7160,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 623.352,
+    "text": "They were called data scientists. And when I do that, I think we also see where the field has evolved over the years that we've been building this class.",
+    "start_ms": 623352,
+    "end_ms": 630292,
+    "duration_ms": 6940,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 630.292,
+    "text": "And also maybe where you are all are headed when you graduate.",
+    "start_ms": 630292,
+    "end_ms": 633832,
+    "duration_ms": 3540,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 634.808,
+    "text": "So when we started this journey of building a data science program at Berkeley.",
+    "start_ms": 634808,
+    "end_ms": 638808,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 639.416,
+    "text": "The hot things that data science were doing were transforming how people interacted with content, with advertising, all of Google, Facebook, I guess, Meta, Netflix, were driven by algorithms that were making decisions on what to see.",
+    "start_ms": 639416,
+    "end_ms": 653136,
+    "duration_ms": 13720,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 653.136,
+    "text": "Still true today, things like TikTok rely heavily on these algorithms, and that people designing these technologies are often the data scientists.",
+    "start_ms": 653136,
+    "end_ms": 659256,
+    "duration_ms": 6120,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 659.704,
+    "text": "So that's where we started. We had, in date eight, DJ Patel has a lecture.",
+    "start_ms": 659704,
+    "end_ms": 668536,
+    "duration_ms": 8832,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 668.536,
+    "text": "DJ is one of the people who actually coined the term, a scientist.",
+    "start_ms": 668536,
+    "end_ms": 672656,
+    "duration_ms": 4120,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 672.656,
+    "text": "He coined it to try to define the kind of scientific essence of what they were doing at Lincoln at the time, studying large amounts of data, trying to make decisions about who's, you should work for who, building connections in a big social graph.",
+    "start_ms": 672656,
+    "end_ms": 684456,
+    "duration_ms": 11800,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 684.664,
+    "text": "He was then the first data scientist for the US government who is hired by the Obama administration to run data science.",
+    "start_ms": 684664,
+    "end_ms": 691664,
+    "duration_ms": 7000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 691.664,
+    "text": "And linked to the video lecture he gave, it's amazing.",
+    "start_ms": 691664,
+    "end_ms": 695664,
+    "duration_ms": 4000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 695.664,
+    "text": "So data scientists became the first responders for the Obama administration.",
+    "start_ms": 695664,
+    "end_ms": 700664,
+    "duration_ms": 5000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 702.04,
+    "text": "Something goes wrong, who are you gonna call? Got the Army?",
+    "start_ms": 702040,
+    "end_ms": 707112,
+    "duration_ms": 5072,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 706.949,
+    "text": "police, the data scientists. Why? Why would Obama pull a data scientist first?",
+    "start_ms": 706949,
+    "end_ms": 711704,
+    "duration_ms": 4755,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 713.272,
+    "text": "What's wrong? It was often a hard question of like, I don't understand the problem.",
+    "start_ms": 713272,
+    "end_ms": 718272,
+    "duration_ms": 5000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 719.224,
+    "text": "There's a virus, there's a wildfire, there's a national disaster, there's a flood.",
+    "start_ms": 719224,
+    "end_ms": 723704,
+    "duration_ms": 4480,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 723.704,
+    "text": "This scientist were called into, look at what we know about that place, what data we have, and what things do we need to prioritize right away.",
+    "start_ms": 723704,
+    "end_ms": 730184,
+    "duration_ms": 6480,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 730.488,
+    "text": "And so they decided we're put into the emergency situation frequently which is kind of crazy.",
+    "start_ms": 730488,
+    "end_ms": 736988,
+    "duration_ms": 6500,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 737.272,
+    "text": "So, you know, as a data scientist, you might think you're a simple kind of computer and think slowly.",
+    "start_ms": 737272,
+    "end_ms": 740772,
+    "duration_ms": 3500,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 740.772,
+    "text": "You might be, you know, the first responder for the next national disaster.",
+    "start_ms": 740772,
+    "end_ms": 744272,
+    "duration_ms": 3500,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 748.376,
+    "text": "Spinium disasters. Another place where this science plays a big role in California is in wildfire management.",
+    "start_ms": 748376,
+    "end_ms": 755384,
+    "duration_ms": 7008,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 755.672,
+    "text": "So there's a big fire. be surprised how little information we actually have about where the fire is or where it's going.",
+    "start_ms": 755672,
+    "end_ms": 761740,
+    "duration_ms": 6068,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 761.74,
+    "text": "We have, you know, aggregate weather reports, but if we really want to be able to predict where we need to route first responders, where we need to apply water or fire suppressant, we need to understand a terrain, we need to understand how fire propagates these different kinds of trees.",
+    "start_ms": 761740,
+    "end_ms": 773940,
+    "duration_ms": 12200,
+    "word_count": 51,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 773.94,
+    "text": "These are complex questions that take the data we've collected over time to make very important decisions about how to manage a fire.",
+    "start_ms": 773940,
+    "end_ms": 786420,
+    "duration_ms": 12480,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 786.424,
+    "text": "Black holes. The design is also helping us see what a black hole looks like.",
+    "start_ms": 786424,
+    "end_ms": 790688,
+    "duration_ms": 4264,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 790.688,
+    "text": "What does a black hole look like? It's hard to see.",
+    "start_ms": 790688,
+    "end_ms": 793368,
+    "duration_ms": 2680,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 793.368,
+    "text": "You know, light doesn't leave it. So there's a bunch of technology developed to take.",
+    "start_ms": 793368,
+    "end_ms": 797528,
+    "duration_ms": 4160,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 797.848,
+    "text": "Sparse data. signals from a black hole or signals around around a black hole.",
+    "start_ms": 797848,
+    "end_ms": 803352,
+    "duration_ms": 5504,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 803.352,
+    "text": "And then using ideas that we'll actually cover in this class.",
+    "start_ms": 803352,
+    "end_ms": 806352,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 806.84,
+    "text": "Deloping algorithms to take those signals and turn them into the first picture of a black hole.",
+    "start_ms": 806840,
+    "end_ms": 811480,
+    "duration_ms": 4640,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 813.624,
+    "text": "So the sparse recovery items that we will cover here are the same kinds of techniques being used to solve these problems.",
+    "start_ms": 813624,
+    "end_ms": 818224,
+    "duration_ms": 4600,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 818.872,
+    "text": "That's kind of neat about this is we have to use our parent knowledge because we don't have all the information.",
+    "start_ms": 818872,
+    "end_ms": 823872,
+    "duration_ms": 5000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 824.504,
+    "text": "So this day was saying, you know, I assume black holes were actually snowmen.",
+    "start_ms": 824504,
+    "end_ms": 827864,
+    "duration_ms": 3360,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 827.864,
+    "text": "What would happen if I ran that actual image through these algorithms?",
+    "start_ms": 827864,
+    "end_ms": 832264,
+    "duration_ms": 4400,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 832.264,
+    "text": "And some algorithms, you know, have this paradox, it should be a hole, and they inject a hole in the picture even though there isn't one.",
+    "start_ms": 832264,
+    "end_ms": 838064,
+    "duration_ms": 5800,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 838.064,
+    "text": "Others try to preserve the underlying signal. There's a big question in data science how we use our assumptions, but it's also critical in fundamental science how we use our assumptions.",
+    "start_ms": 838064,
+    "end_ms": 847480,
+    "duration_ms": 9416,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 847.48,
+    "text": "And this is what we do, I guess, every day with data science.",
+    "start_ms": 847480,
+    "end_ms": 854344,
+    "duration_ms": 6864,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 854.207,
+    "text": "place to use data science. Alright. At this point, having talked to many people in data science, no matter what industry you're in, if you're selling...",
+    "start_ms": 854207,
+    "end_ms": 860608,
+    "duration_ms": 6401,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 861.08,
+    "text": "Fancy soap that talk to data scientists that work at that company if you're selling routing systems for managing drones in the future data scientists working at that company too If you're doing stuff that works with data today you likely will have someone in a data science capacity at that organization So it's a pretty exciting high impact area.",
+    "start_ms": 861080,
+    "end_ms": 881128,
+    "duration_ms": 20048,
+    "word_count": 60,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 885.56,
+    "text": "Why is it matter? The world is complicated and we often have to make these kinds of hard decisions with limited information.",
+    "start_ms": 885560,
+    "end_ms": 892768,
+    "duration_ms": 7208,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 895.064,
+    "text": "Data science is used in all of these settings to help make these decisions.",
+    "start_ms": 895064,
+    "end_ms": 899064,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 899.064,
+    "text": "In science, as there says, black holes in medicine, we're trying to treat a disease or understand how a treatment is working.",
+    "start_ms": 899064,
+    "end_ms": 905064,
+    "duration_ms": 6000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 905.56,
+    "text": "You can get a science. Social Sciences. The foundation of the Science Games for the studying social networks.",
+    "start_ms": 905560,
+    "end_ms": 911408,
+    "duration_ms": 5848,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 911.896,
+    "text": "Engineering. designing a new product and you want to know failure modes and what you can say about the signals you've heard from the field is the product broken.",
+    "start_ms": 911896,
+    "end_ms": 920560,
+    "duration_ms": 8664,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 921.624,
+    "text": "Sports. Anyone betting on sports? The whole field of sports today relies on data science to make decisions about, you know, who to invest in.",
+    "start_ms": 921624,
+    "end_ms": 930312,
+    "duration_ms": 8688,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 930.312,
+    "text": "What programs are working, what are not? One of the things that's kind of neat, and maybe also a little bit dangerous, is today, a lot of people say, well, the data says.",
+    "start_ms": 930312,
+    "end_ms": 943776,
+    "duration_ms": 13464,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 944.216,
+    "text": "That's like, well, how do you want to get the data?",
+    "start_ms": 944216,
+    "end_ms": 945776,
+    "duration_ms": 1560,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 945.776,
+    "text": "That it says something, it must be true. But the data doesn't really get to say much at all.",
+    "start_ms": 945776,
+    "end_ms": 951012,
+    "duration_ms": 5236,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 951.012,
+    "text": "It's what we interpret from the data. It's not always easy to tell what the data says.",
+    "start_ms": 951012,
+    "end_ms": 956128,
+    "duration_ms": 5116,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 956.128,
+    "text": "And through this class, hopefully you will build the skills to go, well, I'm going to ask the data myself.",
+    "start_ms": 956128,
+    "end_ms": 961128,
+    "duration_ms": 5000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 961.432,
+    "text": "I want to try to understand what the data is trying to say.",
+    "start_ms": 961432,
+    "end_ms": 964712,
+    "duration_ms": 3280,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 965.72,
+    "text": "And it may not always be what others tell you the data says.",
+    "start_ms": 965720,
+    "end_ms": 968260,
+    "duration_ms": 2540,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 968.26,
+    "text": "So we live in a world that depends so heavily on data, understanding how to read about that data is critical.",
+    "start_ms": 968260,
+    "end_ms": 973400,
+    "duration_ms": 5140,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 976.664,
+    "text": "I need this slide. I think it's the fourth time I taught this class.",
+    "start_ms": 976664,
+    "end_ms": 980024,
+    "duration_ms": 3360,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 980.024,
+    "text": "Maybe 2020. Yeah, 2021. As we get into the evolution of technology of the whole field.",
+    "start_ms": 980024,
+    "end_ms": 992024,
+    "duration_ms": 12000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 991.899,
+    "text": "your office. It was all about the box. Then the software industry came along and I think we don't need boxes.",
+    "start_ms": 991899,
+    "end_ms": 996712,
+    "duration_ms": 4813,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 996.712,
+    "text": "You know, it's really about the software. It's a disk now.",
+    "start_ms": 996712,
+    "end_ms": 999558,
+    "duration_ms": 2846,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 999.558,
+    "text": "We'll put that in your computer. We'll sell that. of all swore, we built on top of that software, the internet.",
+    "start_ms": 999558,
+    "end_ms": 1005464,
+    "duration_ms": 5906,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1005.528,
+    "text": "Who needs software? Who's installed software? Maybe you occasionally download some apps, but the reality is you're downloading it from the internet and you're interacting with the extra world.",
+    "start_ms": 1005528,
+    "end_ms": 1013528,
+    "duration_ms": 8000,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1013.528,
+    "text": "So, for instance, about what's on your box or on your phone, it's what's in the web.",
+    "start_ms": 1013528,
+    "end_ms": 1018168,
+    "duration_ms": 4640,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1019.416,
+    "text": "and then open up this data industry. Everyone's now connected to your photos.",
+    "start_ms": 1019416,
+    "end_ms": 1023016,
+    "duration_ms": 3600,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1023.016,
+    "text": "Everything you're doing is being put online. So that gave us a callous data.",
+    "start_ms": 1023016,
+    "end_ms": 1027336,
+    "duration_ms": 4320,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1027.336,
+    "text": "And that is what created the whole data science excitement is now it all have all of this data.",
+    "start_ms": 1027336,
+    "end_ms": 1032336,
+    "duration_ms": 5000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1032.336,
+    "text": "What can we say? So what is 2020 gonna be?",
+    "start_ms": 1032336,
+    "end_ms": 1035880,
+    "duration_ms": 3544,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1037.88,
+    "text": "Please, thanks. I made a big bet at 2021. This is going to be the decade of AI.",
+    "start_ms": 1037880,
+    "end_ms": 1043752,
+    "duration_ms": 5872,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1044.344,
+    "text": "And we're so rich. is the day. A.I. much more than we maybe had saw it more than I had saw it at that point in time.",
+    "start_ms": 1044344,
+    "end_ms": 1050744,
+    "duration_ms": 6400,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1051.096,
+    "text": "So AI is changing everything. What's kind of crazy about AI, especially the AI that we're using now in the shared models, is they're built on...",
+    "start_ms": 1051096,
+    "end_ms": 1058336,
+    "duration_ms": 7240,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1059.352,
+    "text": "Basic ideas from here. Just push much bigger, much, much bigger.",
+    "start_ms": 1059352,
+    "end_ms": 1063208,
+    "duration_ms": 3856,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1064.28,
+    "text": "And they're also transforming the role of the algorithm isn't as critical anymore.",
+    "start_ms": 1064280,
+    "end_ms": 1067880,
+    "duration_ms": 3600,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1067.88,
+    "text": "There's one magic black box and it's the data again that matters.",
+    "start_ms": 1067880,
+    "end_ms": 1071880,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1071.88,
+    "text": "And it's how we interpret the connection that box to the data that matters.",
+    "start_ms": 1071880,
+    "end_ms": 1075080,
+    "duration_ms": 3200,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1075.08,
+    "text": "So it's putting a lot more power back in this kind of interaction with the data and the understanding that it might reveal.",
+    "start_ms": 1075080,
+    "end_ms": 1081080,
+    "duration_ms": 6000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1082.776,
+    "text": "So we'll talk about Genie I towards the end of the class.",
+    "start_ms": 1082776,
+    "end_ms": 1085056,
+    "duration_ms": 2280,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1085.056,
+    "text": "As I said, I'm happy to talk about it as much as you all want in all shows.",
+    "start_ms": 1085056,
+    "end_ms": 1088456,
+    "duration_ms": 3400,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1089.72,
+    "text": "The professor of Risen is also doing a lot of the space.",
+    "start_ms": 1089720,
+    "end_ms": 1091720,
+    "duration_ms": 2000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1091.72,
+    "text": "She should talk to her about it as well, not as others.",
+    "start_ms": 1091720,
+    "end_ms": 1093720,
+    "duration_ms": 2000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1097.048,
+    "text": "When we started teaching this class, there was also a fear.",
+    "start_ms": 1097048,
+    "end_ms": 1099848,
+    "duration_ms": 2800,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1100.344,
+    "text": "Around. the downsides of data science? It's a pretty good book to talk about the weapons of math destruction.",
+    "start_ms": 1100344,
+    "end_ms": 1107624,
+    "duration_ms": 7280,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1108.344,
+    "text": "And it pointed out a problem that was emerging. We're building these really complex things.",
+    "start_ms": 1108344,
+    "end_ms": 1113160,
+    "duration_ms": 4816,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1114.264,
+    "text": "They're hard to understand how to reason about and they're making big decisions.",
+    "start_ms": 1114264,
+    "end_ms": 1117544,
+    "duration_ms": 3280,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1119.608,
+    "text": "Stock market crashing because we're in back securities. We don't understand.",
+    "start_ms": 1119608,
+    "end_ms": 1123904,
+    "duration_ms": 4296,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1124.984,
+    "text": "Teaching scores. teaching scores, job achievement, all these things being evaluated by algorithms that were opaque.",
+    "start_ms": 1124984,
+    "end_ms": 1130616,
+    "duration_ms": 5632,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1131.672,
+    "text": "And so how do I improve my teaching if I don't know what's going on?",
+    "start_ms": 1131672,
+    "end_ms": 1134672,
+    "duration_ms": 3000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1134.968,
+    "text": "I don't invest in a market that I don't understand.",
+    "start_ms": 1134968,
+    "end_ms": 1136968,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1139.352,
+    "text": "Sentencing. You know, decisions about who stays in jail and who doesn't.",
+    "start_ms": 1139352,
+    "end_ms": 1142632,
+    "duration_ms": 3280,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1143.704,
+    "text": "This is Black Box Things, be closer to STEM. Is that okay to use all this technology that really maybe could make a difference, maybe make better decisions, but also makes it harder to see what's going on that makes the I process more of it.",
+    "start_ms": 1143704,
+    "end_ms": 1159048,
+    "duration_ms": 15344,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1160.28,
+    "text": "As Dinoscience today, your job isn't just to make it a good decision, it's to communicate why that decision makes sense.",
+    "start_ms": 1160280,
+    "end_ms": 1167320,
+    "duration_ms": 7040,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1167.928,
+    "text": "This to provide clarity in these technologies. You're going to use things that are going to see opaque, which you need to be able to communicate.",
+    "start_ms": 1167928,
+    "end_ms": 1175416,
+    "duration_ms": 7488,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1175.512,
+    "text": "Why those things may help you make a decision you made.",
+    "start_ms": 1175512,
+    "end_ms": 1178812,
+    "duration_ms": 3300,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1180.952,
+    "text": "So talk about that in this class as well. The Ethics of Data Science, and These Technologies.",
+    "start_ms": 1180952,
+    "end_ms": 1185468,
+    "duration_ms": 4516,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1189.016,
+    "text": "But I signed in to the class anyways, I decided to push the program anyways.",
+    "start_ms": 1189016,
+    "end_ms": 1192696,
+    "duration_ms": 3680,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1192.696,
+    "text": "And that's because I'm very optimistic these technologies, these ideas are very empowering.",
+    "start_ms": 1192696,
+    "end_ms": 1197096,
+    "duration_ms": 4400,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1197.816,
+    "text": "So there's immense potential to address a challenge of facing society and you won't need those skills.",
+    "start_ms": 1197816,
+    "end_ms": 1202416,
+    "duration_ms": 4600,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1203.352,
+    "text": "So the future is in your hands and you will use this knowledge these skills for good.",
+    "start_ms": 1203352,
+    "end_ms": 1207352,
+    "duration_ms": 4000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1208.312,
+    "text": "So that's why I am excited to teach data 100 and why the data 100 program I think has been very successful.",
+    "start_ms": 1208312,
+    "end_ms": 1214312,
+    "duration_ms": 6000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1219.8,
+    "text": "Where the kind of neat things about the science differentiates it from a lot of the other engineering disciplines is it's also very human-centric.",
+    "start_ms": 1219800,
+    "end_ms": 1226800,
+    "duration_ms": 7000,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1227.448,
+    "text": "We understand not just the technology, the algorithms, the systems, the compute, the math.",
+    "start_ms": 1227448,
+    "end_ms": 1234088,
+    "duration_ms": 6640,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1234.584,
+    "text": "We also need to understand its connection to suicide. When is it due this by thinking critically?",
+    "start_ms": 1234584,
+    "end_ms": 1239432,
+    "duration_ms": 4848,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1240.152,
+    "text": "So to quantify things to understand things reliably, we need to be able to find real information that means understanding the problem domain, not just, you know, the database.",
+    "start_ms": 1240152,
+    "end_ms": 1256072,
+    "duration_ms": 15920,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1255.192,
+    "text": "Often, funnabit. It means asking the right questions. Someone says, how do I increase?",
+    "start_ms": 1255192,
+    "end_ms": 1260232,
+    "duration_ms": 5040,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1261.176,
+    "text": "Success of our product when you might go well. It's not the product that's the issue it's support.",
+    "start_ms": 1261176,
+    "end_ms": 1265448,
+    "duration_ms": 4272,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1266.68,
+    "text": "Let's rock support. to ask the right questions as critical and that again requires understanding the domain.",
+    "start_ms": 1266680,
+    "end_ms": 1271616,
+    "duration_ms": 4936,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1273.08,
+    "text": "You're going to have to make assumptions. Making sure there's assumptions are reasonable.",
+    "start_ms": 1273080,
+    "end_ms": 1277672,
+    "duration_ms": 4592,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1279.512,
+    "text": "How do you conduct appropriate analysis? We'll teach you some of those techniques in this class, but you'll have to learn more.",
+    "start_ms": 1279512,
+    "end_ms": 1284688,
+    "duration_ms": 5176,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1284.688,
+    "text": "How you analyze things will change. You'll depend on what you're doing.",
+    "start_ms": 1284688,
+    "end_ms": 1287512,
+    "duration_ms": 2824,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1289.112,
+    "text": "I said this for earlier, but it's critical. You can't just go.",
+    "start_ms": 1289112,
+    "end_ms": 1293112,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1293.08,
+    "text": "The P value is this. Here is the number. You need to explain.",
+    "start_ms": 1293080,
+    "end_ms": 1298856,
+    "duration_ms": 5776,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1299.256,
+    "text": "How did you come in those conclusions? What does that say?",
+    "start_ms": 1299256,
+    "end_ms": 1301756,
+    "duration_ms": 2500,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1302.232,
+    "text": "synthesize what you have and provide insights that other people can understand.",
+    "start_ms": 1302232,
+    "end_ms": 1306232,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1306.936,
+    "text": "This whole thing relies on critical thinking, skepticism, and understanding of the main.",
+    "start_ms": 1306936,
+    "end_ms": 1311336,
+    "duration_ms": 4400,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1311.992,
+    "text": "and also understanding how that decision you make will affect others.",
+    "start_ms": 1311992,
+    "end_ms": 1315192,
+    "duration_ms": 3200,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1316.792,
+    "text": "Because those trade-offs will affect your assumptions and how you approach both the technical side of the problem and also how you communicate the results.",
+    "start_ms": 1316792,
+    "end_ms": 1323592,
+    "duration_ms": 6800,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1327.96,
+    "text": "old claim, but after this course should be able to take data and produce useful insights.",
+    "start_ms": 1327960,
+    "end_ms": 1332560,
+    "duration_ms": 4600,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1332.56,
+    "text": "The world's most challenging problems and the most challenging and biggest problems.",
+    "start_ms": 1332560,
+    "end_ms": 1336560,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1336.56,
+    "text": "That is true. I'll talk about that in a moment.",
+    "start_ms": 1336560,
+    "end_ms": 1339290,
+    "duration_ms": 2730,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1339.29,
+    "text": "We built this course to make sure that it would be useful to you.",
+    "start_ms": 1339290,
+    "end_ms": 1342624,
+    "duration_ms": 3334,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1343.064,
+    "text": "on several dimensions. Alright, so I still haven't said what data science is, because I, you know, this is silly thing to ask, but let's do it.",
+    "start_ms": 1343064,
+    "end_ms": 1351848,
+    "duration_ms": 8784,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1351.848,
+    "text": "What is data science? The going definition, which a pictorial definition, this is the Drew Conway's Venn diagram of data science, is that it's the combination of a few sets of skills.",
+    "start_ms": 1351848,
+    "end_ms": 1362848,
+    "duration_ms": 11000,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1362.848,
+    "text": "I'll call this statistics, mathematics, since statistics. Hacking skills, that's offensive.",
+    "start_ms": 1362848,
+    "end_ms": 1368292,
+    "duration_ms": 5444,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1368.292,
+    "text": "Computer science over here, and then substantive expertise. So knowing the domain.",
+    "start_ms": 1368292,
+    "end_ms": 1373992,
+    "duration_ms": 5700,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1374.296,
+    "text": "I'm applying data science and fashion. I need to understand fashion.",
+    "start_ms": 1374296,
+    "end_ms": 1377296,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1377.688,
+    "text": "I can't just be the computer scientist or the statistician.",
+    "start_ms": 1377688,
+    "end_ms": 1380488,
+    "duration_ms": 2800,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1381.304,
+    "text": "There's some jokes that if you understand the domain and computer science could understand statistics that's pretty dangerous.",
+    "start_ms": 1381304,
+    "end_ms": 1387510,
+    "duration_ms": 6206,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1387.51,
+    "text": "That's true. You understand the consequences of uncertainty in your data.",
+    "start_ms": 1387510,
+    "end_ms": 1391304,
+    "duration_ms": 3794,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1391.304,
+    "text": "For a while, the people who did statistics and computer science were new nothing else, we're machine learning experts.",
+    "start_ms": 1391304,
+    "end_ms": 1397304,
+    "duration_ms": 6000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1397.176,
+    "text": "And then traditional research people, people who have been hired as an analyst in the past, you know, had a statistics background in the domain, but didn't have the computational skills to really dig into the data at the scale and, you know, the sophistication that a modern data scientist would.",
+    "start_ms": 1397176,
+    "end_ms": 1411016,
+    "duration_ms": 13840,
+    "word_count": 51,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1412.824,
+    "text": "So I wrote my own definition. I like this one and then everyone keeps using my picture on the slide but all right data science is the application of data centric, computational and inferential thinking.",
+    "start_ms": 1412824,
+    "end_ms": 1425352,
+    "duration_ms": 12528,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1425.816,
+    "text": "She explained that in a moment to understand the world.",
+    "start_ms": 1425816,
+    "end_ms": 1428816,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1429.912,
+    "text": "Science and the solve products. There was an engineering and a science, two data science.",
+    "start_ms": 1429912,
+    "end_ms": 1436252,
+    "duration_ms": 6340,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1436.6,
+    "text": "I will cover both in this class. I will talk about what it means to be data-centric thinking.",
+    "start_ms": 1436600,
+    "end_ms": 1441192,
+    "duration_ms": 4592,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1441.192,
+    "text": "I have a problem. What's the data? Data-centric thinking. Contational thinking.",
+    "start_ms": 1441192,
+    "end_ms": 1445178,
+    "duration_ms": 3986,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1445.178,
+    "text": "How can I use computation to manage my uncertainty to understand the data better?",
+    "start_ms": 1445178,
+    "end_ms": 1449672,
+    "duration_ms": 4494,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1450.36,
+    "text": "In due to efficiently inferential thinking, understanding what I don't understand and trying to draw conclusions about what I don't understand from what I do.",
+    "start_ms": 1450360,
+    "end_ms": 1458460,
+    "duration_ms": 8100,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1462.68,
+    "text": "an out-of-date picture of it still relatively accurate. What do data scientists do?",
+    "start_ms": 1462680,
+    "end_ms": 1466800,
+    "duration_ms": 4120,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1467.16,
+    "text": "I just zoom in on this, but I'll just point at some high points.",
+    "start_ms": 1467160,
+    "end_ms": 1470540,
+    "duration_ms": 3380,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1470.54,
+    "text": "This is a survey of 2016 data scientists. And at that point in time, and I still think this is true today, most data scientists were doing things like exploratory data analysis, which they large part of this class.",
+    "start_ms": 1470540,
+    "end_ms": 1482300,
+    "duration_ms": 11760,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1482.3,
+    "text": "How do I take a big set of data and understand?",
+    "start_ms": 1482300,
+    "end_ms": 1484620,
+    "duration_ms": 2320,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1485.144,
+    "text": "What it's telling me what it wants to tell me maybe what I should have asked with data missing.",
+    "start_ms": 1485144,
+    "end_ms": 1489344,
+    "duration_ms": 4200,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1489.544,
+    "text": "A lot of interview questions to have the flavor of his laptop with some interesting data on this folder coming something.",
+    "start_ms": 1489544,
+    "end_ms": 1494844,
+    "duration_ms": 5300,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1496.088,
+    "text": "You have 30 minutes. What do you do? do you go through that process?",
+    "start_ms": 1496088,
+    "end_ms": 1501512,
+    "duration_ms": 5424,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1502.584,
+    "text": "Data cleaning is a big part of data science technology is coming along.",
+    "start_ms": 1502584,
+    "end_ms": 1505944,
+    "duration_ms": 3360,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1505.944,
+    "text": "You'll do some data cleaning but the reality is that data is getting easier and easier to work with from the beginning.",
+    "start_ms": 1505944,
+    "end_ms": 1510584,
+    "duration_ms": 4640,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1510.584,
+    "text": "Which is great news. All this cool machine learning stuff, you know, 39% of people said they were doing some degree of, or I guess here, 36% of people said they were doing some degree of this machine learning work.",
+    "start_ms": 1510584,
+    "end_ms": 1522952,
+    "duration_ms": 12368,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1523.288,
+    "text": "on a daily basis. I think now you'll probably use more and more machine learning because it's become so much easier.",
+    "start_ms": 1523288,
+    "end_ms": 1528888,
+    "duration_ms": 5600,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1529.464,
+    "text": "So you'll see more of that and we'll cover that in this class.",
+    "start_ms": 1529464,
+    "end_ms": 1532464,
+    "duration_ms": 3000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1535.896,
+    "text": "So a good question. Why is data cleaning less relevant?",
+    "start_ms": 1535896,
+    "end_ms": 1538296,
+    "duration_ms": 2400,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1538.296,
+    "text": "We'll get to more of that in the course, but short answer is that the technologies we use to manage data have come a long way and people become better at adopting more principal data management strategies for all of our data.",
+    "start_ms": 1538296,
+    "end_ms": 1550056,
+    "duration_ms": 11760,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1550.456,
+    "text": "You'll see I talk about the database side of the world too, I do some working in the database system, so no leak into the class.",
+    "start_ms": 1550456,
+    "end_ms": 1556456,
+    "duration_ms": 6000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1556.456,
+    "text": "My apologies. But this slide up because there's a lot of excitement from the engineering club.",
+    "start_ms": 1556456,
+    "end_ms": 1565735,
+    "duration_ms": 9279,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1565.735,
+    "text": "That's me about data science is all about these really cool algorithms and software and systems.",
+    "start_ms": 1565735,
+    "end_ms": 1570520,
+    "duration_ms": 4785,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1572.344,
+    "text": "and computing and it is you do need to understand these technologies important to be able to use these skills.",
+    "start_ms": 1572344,
+    "end_ms": 1578344,
+    "duration_ms": 6000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1578.84,
+    "text": "I'm... only as good as the insights you draw, isn't just about the numbers.",
+    "start_ms": 1578840,
+    "end_ms": 1584888,
+    "duration_ms": 6048,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1587.096,
+    "text": "So you're going to have to do thinking YouTube. It's not just gonna be about computer.",
+    "start_ms": 1587096,
+    "end_ms": 1591080,
+    "duration_ms": 3984,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1592.056,
+    "text": "They move a lot of computer. So in the past we went deeper on the kinds of questions you kind of explored as a scientist.",
+    "start_ms": 1592056,
+    "end_ms": 1599470,
+    "duration_ms": 7414,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1599.47,
+    "text": "Maybe I'll just tell it a few you guys can read this on your own.",
+    "start_ms": 1599470,
+    "end_ms": 1602328,
+    "duration_ms": 2858,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1603.368,
+    "text": "You know as a business we were a hit on what things should I recommend.",
+    "start_ms": 1603368,
+    "end_ms": 1607038,
+    "duration_ms": 3670,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1607.038,
+    "text": "Businesses are like heavily on data science to understand how their business is going, how it's performing, where to improve things now like sales support.",
+    "start_ms": 1607038,
+    "end_ms": 1613786,
+    "duration_ms": 6748,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1613.786,
+    "text": "All that is now analyzed by data science teams. Governments are hiring get assignments around the world to answer big questions.",
+    "start_ms": 1613786,
+    "end_ms": 1620942,
+    "duration_ms": 7156,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1620.942,
+    "text": "Again, they have data from many different sources. That is, Messier, bringing all that data together and trying to answer questions about where their connois are going, where they need to make investments is critical.",
+    "start_ms": 1620942,
+    "end_ms": 1631368,
+    "duration_ms": 10426,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1632.216,
+    "text": "I think you might use data science every day life.",
+    "start_ms": 1632216,
+    "end_ms": 1634523,
+    "duration_ms": 2307,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1634.523,
+    "text": "I am not joking, but my daughter was born. I didn't have a name for her.",
+    "start_ms": 1634523,
+    "end_ms": 1638216,
+    "duration_ms": 3693,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1638.216,
+    "text": "Because I was busy working in a Jupiter notebook trying to find what girl's name would be good, short, but not too common.",
+    "start_ms": 1638216,
+    "end_ms": 1646216,
+    "duration_ms": 8000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1646.216,
+    "text": "And so I had a whole statistical model of like, well, the distribution of names.",
+    "start_ms": 1646216,
+    "end_ms": 1650216,
+    "duration_ms": 4000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1650.216,
+    "text": "We can never ignore her, which I was excited about as short.",
+    "start_ms": 1650216,
+    "end_ms": 1653644,
+    "duration_ms": 3428,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1653.644,
+    "text": "It was relatively kind of, but not too common. Unfortunately, if you came more common, we're right after you picked it.",
+    "start_ms": 1653644,
+    "end_ms": 1660216,
+    "duration_ms": 6572,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1660.44,
+    "text": "I'll be back to the future. you might use data science in your everyday life.",
+    "start_ms": 1660440,
+    "end_ms": 1664584,
+    "duration_ms": 4144,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1664.584,
+    "text": "And hopefully after this class, that'll be some of you.",
+    "start_ms": 1664584,
+    "end_ms": 1666184,
+    "duration_ms": 1600,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1666.184,
+    "text": "Yeah, I'll go look at the data and figure that out.",
+    "start_ms": 1666184,
+    "end_ms": 1668184,
+    "duration_ms": 2000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1671.096,
+    "text": "What will you learn in this class? So, principles and techniques are pretty much something to do.",
+    "start_ms": 1671096,
+    "end_ms": 1677060,
+    "duration_ms": 5964,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1677.304,
+    "text": "for your future big ideas and a lot of Here's how to do it.",
+    "start_ms": 1677304,
+    "end_ms": 1682056,
+    "duration_ms": 4752,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1681.804,
+    "text": "in the units. These course goals, we wrote before we came into the curriculum for the class.",
+    "start_ms": 1681804,
+    "end_ms": 1689256,
+    "duration_ms": 7452,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1689.496,
+    "text": "Bye. And I stand by them. There are three. I think all is being matter.",
+    "start_ms": 1689496,
+    "end_ms": 1694392,
+    "duration_ms": 4896,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1694.616,
+    "text": "First, prepare. We want to prepare students for advanced Berkeley courses in data management, machine learning statistics.",
+    "start_ms": 1694616,
+    "end_ms": 1701164,
+    "duration_ms": 6548,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1702.392,
+    "text": "And human context ethics we've got to do this. by providing the necessary condition and context.",
+    "start_ms": 1702392,
+    "end_ms": 1708360,
+    "duration_ms": 5968,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1708.664,
+    "text": "This is critical, and all the upper div classes like you need to make sure they cover these things in your class.",
+    "start_ms": 1708664,
+    "end_ms": 1713664,
+    "duration_ms": 5000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1713.848,
+    "text": "And so we've tried our best to make sure that we built the tools that you need to go on and take upper division classes and do well.",
+    "start_ms": 1713848,
+    "end_ms": 1719348,
+    "duration_ms": 5500,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1721.24,
+    "text": "This was important for me. want to enable students to start careers as a scientist by providing experience, working with real world data tools and techniques.",
+    "start_ms": 1721240,
+    "end_ms": 1729848,
+    "duration_ms": 8608,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1730.552,
+    "text": "After this class, you should be able to do stuff.",
+    "start_ms": 1730552,
+    "end_ms": 1732552,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1733.272,
+    "text": "Is not just a theory class. And I've actually heard many students take his class went on to internships or go off, you know, take no other classes and go off in the industry and become data scientists.",
+    "start_ms": 1733272,
+    "end_ms": 1743549,
+    "duration_ms": 10277,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1743.549,
+    "text": "This class was helpful for them. Hopefully it will remain helpful for you.",
+    "start_ms": 1743549,
+    "end_ms": 1748128,
+    "duration_ms": 4579,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1749.048,
+    "text": "An empower. Like this one. Empower students to apply computational differential thinking to address real-world problems.",
+    "start_ms": 1749048,
+    "end_ms": 1756248,
+    "duration_ms": 7200,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1756.792,
+    "text": "and their lives as well. So you should come away from this class going, yeah, I'm going to do that.",
+    "start_ms": 1756792,
+    "end_ms": 1762088,
+    "duration_ms": 5296,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1762.808,
+    "text": "I'm not going to just stand by and let the data speak to someone else.",
+    "start_ms": 1762808,
+    "end_ms": 1765944,
+    "duration_ms": 3136,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1765.944,
+    "text": "I will talk to you to myself. Here's a ten-and-a-lest of topics.",
+    "start_ms": 1765944,
+    "end_ms": 1771576,
+    "duration_ms": 5632,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1772.024,
+    "text": "This is... Not 10 if we're going to cover these topics that I'm not going to change in the class in the past that make changes in the class has always been bad So we're going to just stick with the topics that are on the slide.",
+    "start_ms": 1772024,
+    "end_ms": 1781133,
+    "duration_ms": 9109,
+    "word_count": 47,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1781.133,
+    "text": "I think it's pretty accurate Bye. We have a slide up, is it working now?",
+    "start_ms": 1781133,
+    "end_ms": 1786056,
+    "duration_ms": 4923,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1786.904,
+    "text": "We'll restart it. This is always fun. What? Which of these topics exciting most?",
+    "start_ms": 1786904,
+    "end_ms": 1790964,
+    "duration_ms": 4060,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1790.964,
+    "text": "Please rank. I assume you see them, I'm gonna refresh this.",
+    "start_ms": 1790964,
+    "end_ms": 1793992,
+    "duration_ms": 3028,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1813.304,
+    "text": "and slide up. This is really a lot of fun.",
+    "start_ms": 1813304,
+    "end_ms": 1831816,
+    "duration_ms": 18512,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1833.784,
+    "text": "Let me try it. Can we just go to all who click magic?",
+    "start_ms": 1833784,
+    "end_ms": 1839216,
+    "duration_ms": 5432,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1842.328,
+    "text": "Alright, so what do people learn? Applications of data science?",
+    "start_ms": 1842328,
+    "end_ms": 1845268,
+    "duration_ms": 2940,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1846.808,
+    "text": "We'll cover that. Data visualization techniques and do a lot of that.",
+    "start_ms": 1846808,
+    "end_ms": 1849832,
+    "duration_ms": 3024,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1849.832,
+    "text": "Export to the analysis and do all of that. There's anything here we're not doing.",
+    "start_ms": 1849832,
+    "end_ms": 1853832,
+    "duration_ms": 4000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1854.424,
+    "text": "You mentioned our reduction. We're going to do that. I do that in the past and it's complicated.",
+    "start_ms": 1854424,
+    "end_ms": 1857592,
+    "duration_ms": 3168,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1857.592,
+    "text": "We'll make it less complicated this time. We'll do a fair amount of linear regression.",
+    "start_ms": 1857592,
+    "end_ms": 1862312,
+    "duration_ms": 4720,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1862.808,
+    "text": "Classification. excellent. So your expectations align very much with what you will be doing throughout the process well.",
+    "start_ms": 1862808,
+    "end_ms": 1868744,
+    "duration_ms": 5936,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1868.744,
+    "text": "This is a pretty good balance of the amount of focus in the material.",
+    "start_ms": 1868744,
+    "end_ms": 1872744,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1873.656,
+    "text": "Do it again. Alright, thank you all. Thank you. You're more time and all.",
+    "start_ms": 1873656,
+    "end_ms": 1891016,
+    "duration_ms": 17360,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1891.512,
+    "text": "Thank you. I'll log in. So let's go over some less fun things and then we'll basically afterwards switch to the most fun part of the lecture.",
+    "start_ms": 1891512,
+    "end_ms": 1910336,
+    "duration_ms": 18824,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1910.336,
+    "text": "We're gonna see a quick demo. So, let's see, pre-rex for the course.",
+    "start_ms": 1910336,
+    "end_ms": 1916664,
+    "duration_ms": 6328,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1916.664,
+    "text": "So, you know that data 100 will enforce pre-rex strictly.",
+    "start_ms": 1916664,
+    "end_ms": 1921224,
+    "duration_ms": 4560,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1921.224,
+    "text": "So, as soon as we're in data 100, they come with data A, the snoozing data 200, 200, as 200 A, you can just enroll in the course without taking data A.",
+    "start_ms": 1921224,
+    "end_ms": 1932184,
+    "duration_ms": 10960,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1932.184,
+    "text": "There are other pre-rex like there's programming pre-rex that you have to satisfy and there is also a linear algebra requirement.",
+    "start_ms": 1932184,
+    "end_ms": 1941224,
+    "duration_ms": 9040,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1941.224,
+    "text": "So with the linear algebra requirement, you all know that it's a co-reck with the course, not a prereg.",
+    "start_ms": 1941224,
+    "end_ms": 1948343,
+    "duration_ms": 7119,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1948.343,
+    "text": "So the way that the course is structured is that we need linear algebra in kind of the second half of the course.",
+    "start_ms": 1948343,
+    "end_ms": 1956104,
+    "duration_ms": 7761,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1956.104,
+    "text": "So by the time that we hit linear algebra stuff, you have learned enough in your linear algebra course that you should be comfortable.",
+    "start_ms": 1956104,
+    "end_ms": 1962423,
+    "duration_ms": 6319,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1962.423,
+    "text": "But there are also resources that be shared on ed that you can go ahead, and study ahead of your linear algebra course so that you're more comfortable with data 100 stuff.",
+    "start_ms": 1962423,
+    "end_ms": 1973664,
+    "duration_ms": 11241,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1973.624,
+    "text": "So let's go over some course overview. Before I go into more logistics, I want to introduce our wonderful staff.",
+    "start_ms": 1973624,
+    "end_ms": 1982224,
+    "duration_ms": 8600,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1982.224,
+    "text": "This huge course obviously doesn't run itself, so we have wonderful leads in the course.",
+    "start_ms": 1982224,
+    "end_ms": 1988184,
+    "duration_ms": 5960,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1988.184,
+    "text": "I would like to introduce your head T.A.s, Shreya and Angela, Stand Up Wave.",
+    "start_ms": 1988184,
+    "end_ms": 1994664,
+    "duration_ms": 6480,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1994.664,
+    "text": "They have started working on the course about a month before.",
+    "start_ms": 1994664,
+    "end_ms": 2000624,
+    "duration_ms": 5960,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2000.624,
+    "text": "So everything that you're seeing only for a structure that are set up is the great work of all of the head tiers and the leads that we have.",
+    "start_ms": 2000624,
+    "end_ms": 2007654,
+    "duration_ms": 7030,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2007.654,
+    "text": "Thank you so much. We also have Sarah who is the lecturer lead here.",
+    "start_ms": 2007654,
+    "end_ms": 2012624,
+    "duration_ms": 4970,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2012.624,
+    "text": "And niche is our students support lead. I don't know if I'm niche is here.",
+    "start_ms": 2012624,
+    "end_ms": 2018393,
+    "duration_ms": 5769,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2018.393,
+    "text": "Malavita is not here, but she is our infrastructure lead Abby.",
+    "start_ms": 2018393,
+    "end_ms": 2022624,
+    "duration_ms": 4231,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2022.624,
+    "text": "Stand up please. Wonderful. So Abby is our data scholars lead.",
+    "start_ms": 2022624,
+    "end_ms": 2027224,
+    "duration_ms": 4600,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2027.224,
+    "text": "And then I don't think then wonderful. Then is our staff support lead.",
+    "start_ms": 2027224,
+    "end_ms": 2031984,
+    "duration_ms": 4760,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2031.984,
+    "text": "So we have a lead that leads all the UCS ones and make kind of the coordination of the course much easier.",
+    "start_ms": 2031984,
+    "end_ms": 2040784,
+    "duration_ms": 8800,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2040.784,
+    "text": "Rose and Jessica are our graduate student, graduate student TAs who are going to work with data 200 students and also with the content team.",
+    "start_ms": 2040784,
+    "end_ms": 2051984,
+    "duration_ms": 11200,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2051.984,
+    "text": "Brandon is here, Brandon is working on exams and some resources that you can use for exams.",
+    "start_ms": 2051984,
+    "end_ms": 2057324,
+    "duration_ms": 5340,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2057.324,
+    "text": "And Sam, I don't think that Sam is here. Sam, you're gonna see Sam a lot on Earth.",
+    "start_ms": 2057324,
+    "end_ms": 2062444,
+    "duration_ms": 5120,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2062.444,
+    "text": "He's handling all the logistics of the course, which is a lot.",
+    "start_ms": 2062444,
+    "end_ms": 2066404,
+    "duration_ms": 3960,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2066.404,
+    "text": "So, and Crablin is our content lead. I miss Crablin, Crablin is not here.",
+    "start_ms": 2066404,
+    "end_ms": 2071804,
+    "duration_ms": 5400,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2071.804,
+    "text": "So most of our staff are returning staff, so they're pretty experienced and super dependable staff that we have this semester.",
+    "start_ms": 2071804,
+    "end_ms": 2080844,
+    "duration_ms": 9040,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2081.336,
+    "text": "We also have UCS2, so UCS2 is going to meet with them in discussions and in some office hours.",
+    "start_ms": 2081336,
+    "end_ms": 2088816,
+    "duration_ms": 7480,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2088.816,
+    "text": "So their names are also listed here, and we also have a group of UCS1.",
+    "start_ms": 2088816,
+    "end_ms": 2094416,
+    "duration_ms": 5600,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2094.416,
+    "text": "I think at least Menaccia is here. Menaccia is going to, you're going to see Menaccia in lecture and then you're going to also see her on Ed a lot.",
+    "start_ms": 2094416,
+    "end_ms": 2102056,
+    "duration_ms": 7640,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2102.056,
+    "text": "And we also have a large team of UCS1 that you'll see them in office hours, and you're also going to see them on it as well.",
+    "start_ms": 2102056,
+    "end_ms": 2111095,
+    "duration_ms": 9039,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2111.512,
+    "text": "So a little bit about course logistics. So what I'm gonna do is I'm gonna actually...",
+    "start_ms": 2111512,
+    "end_ms": 2116952,
+    "duration_ms": 5440,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2117.432,
+    "text": "fly through the syllabus pretty quickly. It's going to be fast, but if you give it a read another time, it will all make sense to you.",
+    "start_ms": 2117432,
+    "end_ms": 2126615,
+    "duration_ms": 9183,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2126.615,
+    "text": "So about data 100 and the goal of data 100 and learning objectives and all of those things you're already familiar with it, there is a specific language around postcard and of course culture.",
+    "start_ms": 2126615,
+    "end_ms": 2138034,
+    "duration_ms": 11419,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2138.034,
+    "text": "Data 100 is the most diverse and one of the largest upper division courses in campus.",
+    "start_ms": 2138034,
+    "end_ms": 2143733,
+    "duration_ms": 5699,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2143.733,
+    "text": "So we would like to ask you to be mindful when you're interacting with your fellow classmates and with the TAs and be respectful in all of your interactions.",
+    "start_ms": 2143733,
+    "end_ms": 2153672,
+    "duration_ms": 9939,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2153.672,
+    "text": "If any issues came up, please reach out to us and please also reach out to DSUS, office and all of those information and the Google forms that you can fill out and report things anonymously is linked on the syllabus here as well.",
+    "start_ms": 2153672,
+    "end_ms": 2169592,
+    "duration_ms": 15920,
+    "word_count": 44,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2170.104,
+    "text": "So I'm gonna scroll over and then get to the course component.",
+    "start_ms": 2170104,
+    "end_ms": 2174664,
+    "duration_ms": 4560,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2174.664,
+    "text": "So what you're seeing here is a pretty standard week in data 100.",
+    "start_ms": 2174664,
+    "end_ms": 2178629,
+    "duration_ms": 3965,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2178.629,
+    "text": "How would your week look like? Let's say from Friday, from tomorrow.",
+    "start_ms": 2178629,
+    "end_ms": 2182424,
+    "duration_ms": 3795,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2182.424,
+    "text": "So what you're gonna get is you're gonna get a homework and a lab, a homework or project of some weeks and one lab.",
+    "start_ms": 2182424,
+    "end_ms": 2190664,
+    "duration_ms": 8240,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2190.904,
+    "text": "So all of these are going to be kind of released, meet day and Friday, depending on when everything is ready to be shipped.",
+    "start_ms": 2190904,
+    "end_ms": 2198464,
+    "duration_ms": 7560,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2198.464,
+    "text": "But then when their due is a little bit different.",
+    "start_ms": 2198464,
+    "end_ms": 2201704,
+    "duration_ms": 3240,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2201.704,
+    "text": "So labs are due on Tuesdays and homeworks and projects are due on Thursdays.",
+    "start_ms": 2201704,
+    "end_ms": 2207264,
+    "duration_ms": 5560,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2207.264,
+    "text": "So you have a little bit more time, but homeworks and projects because they're more substantial.",
+    "start_ms": 2207264,
+    "end_ms": 2211744,
+    "duration_ms": 4480,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2211.744,
+    "text": "And then you have less time with the labs because labs are expected to be completed in like one or two hours they come with a pre-recorded video voucher that you can just watch the video do the lab and then get ready to do the homework that's how they're structured do the lab first and then you should be able to do the homework using the information that you'll learn.",
+    "start_ms": 2211744,
+    "end_ms": 2232344,
+    "duration_ms": 20600,
+    "word_count": 71,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2232.344,
+    "text": "So again the first lab and homework is going to be released tomorrow and then we're going to start this schedule pretty quickly.",
+    "start_ms": 2232344,
+    "end_ms": 2239020,
+    "duration_ms": 6676,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2239.02,
+    "text": "We also have a scattered office hours throughout the week.",
+    "start_ms": 2239020,
+    "end_ms": 2242709,
+    "duration_ms": 3689,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2242.709,
+    "text": "So we have office hours and Monday to give you help for the labs and then we also have office hours and Wednesday, Thursday and Friday.",
+    "start_ms": 2242709,
+    "end_ms": 2252234,
+    "duration_ms": 9525,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2252.234,
+    "text": "Moist to give help for the homework as well. We have discussion sections, so you have received information about discussion sections and I'm going to go over the logistics of discussion sections in a little bit, but you should have received a pre-semester form that you can decide whether you want to go to discussion or not And if you want to go to the discussion, what's your schedule?",
+    "start_ms": 2252234,
+    "end_ms": 2274103,
+    "duration_ms": 21869,
+    "word_count": 69,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2274.103,
+    "text": "And then they'll allocate a specific discussion time. Either on Tuesday after the lectures or on Wednesday, I think we have the sessions scattered throughout the day on Wednesday.",
+    "start_ms": 2274103,
+    "end_ms": 2285144,
+    "duration_ms": 11041,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2285.144,
+    "text": "And obviously, the lectures are on Tuesday Thursday, and there will be a live from here.",
+    "start_ms": 2285144,
+    "end_ms": 2290103,
+    "duration_ms": 4959,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2290.103,
+    "text": "And then, synchronously, you can join Zoom and then participate in the lecture, as you probably have figured so far.",
+    "start_ms": 2290103,
+    "end_ms": 2296904,
+    "duration_ms": 6801,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2297.784,
+    "text": "So lecture attendance is mandatory in a sense that you have to either come to each lecture synchronously and then respond to at least one poll.",
+    "start_ms": 2297784,
+    "end_ms": 2306784,
+    "duration_ms": 9000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2306.784,
+    "text": "So if you respond to one poll, you're good. So you don't need to worry about missing any of the polls.",
+    "start_ms": 2306784,
+    "end_ms": 2311784,
+    "duration_ms": 5000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2311.784,
+    "text": "If you at least responded to one poll. And if you are going to not come to the lecture, you're expected to watch the lecture within one week and then respond to all of the questions that we had in the lecture and submit that true survey.",
+    "start_ms": 2311784,
+    "end_ms": 2326784,
+    "duration_ms": 15000,
+    "word_count": 47,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2326.784,
+    "text": "So we're going to share the link to that survey, which has all of the questions a few hours after lecture concludes usually.",
+    "start_ms": 2326784,
+    "end_ms": 2334584,
+    "duration_ms": 7800,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2334.584,
+    "text": "So watch out for that. And then we'll also release the recordings, I think by the end of Tuesday and Thursday after each lecture.",
+    "start_ms": 2334584,
+    "end_ms": 2342384,
+    "duration_ms": 7800,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2342.384,
+    "text": "So that's where 5% of your horse grade is going to go.",
+    "start_ms": 2342384,
+    "end_ms": 2346944,
+    "duration_ms": 4560,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2346.944,
+    "text": "There is also anticipation that after you were sick, you were traveling, there was something coming up one week, and you missed one of the lectures, or a number of lectures, there is also a drop that was built in and you can use your drops if you miss any of those lectures.",
+    "start_ms": 2346944,
+    "end_ms": 2361384,
+    "duration_ms": 14440,
+    "word_count": 53,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2361.384,
+    "text": "If you complete all of the lectures and you come to all of the lectures, there is a very small bonus percentage that you will receive.",
+    "start_ms": 2361384,
+    "end_ms": 2369184,
+    "duration_ms": 7800,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2369.184,
+    "text": "So if you're trying to collect all of those bonus points, this is a great opportunity for you.",
+    "start_ms": 2369184,
+    "end_ms": 2374504,
+    "duration_ms": 5320,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2374.904,
+    "text": "So discussions. As you saw on Ed, we have two discussion formats this semester.",
+    "start_ms": 2374904,
+    "end_ms": 2380767,
+    "duration_ms": 5863,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2380.767,
+    "text": "First of all, data 200 and 200 SN200A students, graduate students don't need to go to discussion.",
+    "start_ms": 2380767,
+    "end_ms": 2387064,
+    "duration_ms": 6297,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2387.064,
+    "text": "This only applies to undergraduate students, data 100. So there are two versions of grading for data 100.",
+    "start_ms": 2387064,
+    "end_ms": 2394424,
+    "duration_ms": 7360,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2394.424,
+    "text": "Grade at the session and ungraded the session. What the grade at the session, 5% of your your grade is for you to go to discussions, work on a worksheet with your TA and just is based on the participation or attendance to those discussions that you'll receive credit.",
+    "start_ms": 2394424,
+    "end_ms": 2412344,
+    "duration_ms": 17920,
+    "word_count": 49,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2412.344,
+    "text": "There's also, I think, tree drops that we built in.",
+    "start_ms": 2412344,
+    "end_ms": 2415055,
+    "duration_ms": 2711,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2415.055,
+    "text": "I'm going to show you the exact numbers. Tree drops that built in that you can miss up to three discussions and still be able to get full credit on the discussion attendance.",
+    "start_ms": 2415055,
+    "end_ms": 2424199,
+    "duration_ms": 9144,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2424.199,
+    "text": "If you choose to not bother with the discussions, We're still expected to read the discussion worksheet and just know the problems that we've worked on for the final exam.",
+    "start_ms": 2424199,
+    "end_ms": 2435143,
+    "duration_ms": 10944,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2435.143,
+    "text": "So it's still going to be within what's covered in the course.",
+    "start_ms": 2435143,
+    "end_ms": 2438464,
+    "duration_ms": 3321,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2438.464,
+    "text": "Somebody can use it as problem sets to get ready for the meet-term and final exam.",
+    "start_ms": 2438464,
+    "end_ms": 2444024,
+    "duration_ms": 5560,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2444.024,
+    "text": "But then that 5% is going to be reallocated to homeworks.",
+    "start_ms": 2444024,
+    "end_ms": 2448624,
+    "duration_ms": 4600,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2448.624,
+    "text": "So homeworks are going to have a higher percentage. So it, again, depends on how you like to manage your own time, whether you want to go to the sessions are not this very flexible.",
+    "start_ms": 2448624,
+    "end_ms": 2457704,
+    "duration_ms": 9080,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2458.136,
+    "text": "With the Pre-Sumester Survey, it's very important. The Pre-Sumester Survey is going to close tomorrow at noon.",
+    "start_ms": 2458136,
+    "end_ms": 2464136,
+    "duration_ms": 6000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2464.136,
+    "text": "So you have to tell us whether you want to go to discussion or not go to discussion.",
+    "start_ms": 2464136,
+    "end_ms": 2469136,
+    "duration_ms": 5000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2469.136,
+    "text": "If you choose that you don't want a discussion, discussion will not be assigned to you.",
+    "start_ms": 2469136,
+    "end_ms": 2473136,
+    "duration_ms": 4000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2473.136,
+    "text": "You cannot opt in later. If you choose that you want a discussion, you'll assign a discussion to you.",
+    "start_ms": 2473136,
+    "end_ms": 2480136,
+    "duration_ms": 7000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2479.928,
+    "text": "You can still go to the first week of this session.",
+    "start_ms": 2479928,
+    "end_ms": 2483228,
+    "duration_ms": 3300,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2483.228,
+    "text": "Say if you still want to continue or you want to opt up, opt out.",
+    "start_ms": 2483228,
+    "end_ms": 2486828,
+    "duration_ms": 3600,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2486.828,
+    "text": "So you have one week to opt out if you originally opt it.",
+    "start_ms": 2486828,
+    "end_ms": 2490828,
+    "duration_ms": 4000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2490.828,
+    "text": "So you know, it's a live, complicated, but ask questions on it and will be here to help you.",
+    "start_ms": 2490828,
+    "end_ms": 2496128,
+    "duration_ms": 5300,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2496.128,
+    "text": "This is kind of to make improvement over the process that we had last semester.",
+    "start_ms": 2496128,
+    "end_ms": 2500628,
+    "duration_ms": 4500,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2500.628,
+    "text": "And hopefully it will give you more flexibility on your week to week schedule as well.",
+    "start_ms": 2500628,
+    "end_ms": 2505828,
+    "duration_ms": 5200,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2505.828,
+    "text": "Read all of those details. The op-out deadline is September 6th.",
+    "start_ms": 2505828,
+    "end_ms": 2509727,
+    "duration_ms": 3899,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2509.727,
+    "text": "This gives you one week to go to discussion and experiment.",
+    "start_ms": 2509727,
+    "end_ms": 2513627,
+    "duration_ms": 3900,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2513.627,
+    "text": "But if you're sure that you never want to go to discussion because you're busy and Tuesday or Wednesdays, just don't sign up initially.",
+    "start_ms": 2513627,
+    "end_ms": 2521028,
+    "duration_ms": 7401,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2521.912,
+    "text": "homeworks and projects. There are 12 different pieces of homeworks and projects.",
+    "start_ms": 2521912,
+    "end_ms": 2526412,
+    "duration_ms": 4500,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2526.412,
+    "text": "Every week there will be something that will be released to you.",
+    "start_ms": 2526412,
+    "end_ms": 2530912,
+    "duration_ms": 4500,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2530.912,
+    "text": "Either homework or projects that projects are kind of homeworks but they're longer homeworks that are broken broken down into two pieces.",
+    "start_ms": 2530912,
+    "end_ms": 2539083,
+    "duration_ms": 8171,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2539.083,
+    "text": "So we have two piece projects and two of them throughout the course.",
+    "start_ms": 2539083,
+    "end_ms": 2543912,
+    "duration_ms": 4829,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2543.912,
+    "text": "So you will receive one actual like a kind of an assignment every every week to work on and we're gonna Talk about this a little bit more.",
+    "start_ms": 2543912,
+    "end_ms": 2552910,
+    "duration_ms": 8998,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2552.91,
+    "text": "Labs. I said it comes with walkthrough. They're gonna be released together.",
+    "start_ms": 2552910,
+    "end_ms": 2556335,
+    "duration_ms": 3425,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2556.335,
+    "text": "So you have Upon until Tuesday to work on labs up until turns day to work on homework and project Exams.",
+    "start_ms": 2556335,
+    "end_ms": 2563130,
+    "duration_ms": 6795,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2563.13,
+    "text": "So as you might have seen, data 100 is not offering all hundred exams.",
+    "start_ms": 2563130,
+    "end_ms": 2568539,
+    "duration_ms": 5409,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2568.539,
+    "text": "So if you have a conflict with this area that I'm highlighting, October 23rd for the midterm, this is an outside of the class midterm 7 to 9 p.m.",
+    "start_ms": 2568539,
+    "end_ms": 2579744,
+    "duration_ms": 11205,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2579.744,
+    "text": "or with the final exam, which is on December 18th, 8 to 11 a.m.",
+    "start_ms": 2579744,
+    "end_ms": 2586744,
+    "duration_ms": 7000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2586.744,
+    "text": "If you have a conflict, you need to resolve that at your counts like ASAP.",
+    "start_ms": 2586744,
+    "end_ms": 2590744,
+    "duration_ms": 4000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2590.744,
+    "text": "Do not reach out to us. We're not able to accommodate any alternate exam in a class of this size.",
+    "start_ms": 2590744,
+    "end_ms": 2597744,
+    "duration_ms": 7000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2597.744,
+    "text": "All of the exams are going to be in person except for the data 200s.",
+    "start_ms": 2597744,
+    "end_ms": 2602744,
+    "duration_ms": 5000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2602.744,
+    "text": "Actually, a 200s doesn't have a metro final. to extract that.",
+    "start_ms": 2602744,
+    "end_ms": 2606494,
+    "duration_ms": 3750,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2606.494,
+    "text": "All of the exams are going to be in person for everyone who needs to take exam.",
+    "start_ms": 2606494,
+    "end_ms": 2610744,
+    "duration_ms": 4250,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2611.768,
+    "text": "Office hours are mostly scheduled in Barring Hall. All this stuff office hour in Barring Hall 101B.",
+    "start_ms": 2611768,
+    "end_ms": 2619008,
+    "duration_ms": 7240,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2619.008,
+    "text": "It's a really fun area for those who are coming from day to day.",
+    "start_ms": 2619008,
+    "end_ms": 2622328,
+    "duration_ms": 3320,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2622.328,
+    "text": "If you know that there's homework parties always doing on there, and there are students that you can hang out with, so please go there.",
+    "start_ms": 2622328,
+    "end_ms": 2628448,
+    "duration_ms": 6120,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2628.448,
+    "text": "I'm trying to hold one of my office hours there, so you might see me just hanging out there from time to time.",
+    "start_ms": 2628448,
+    "end_ms": 2634848,
+    "duration_ms": 6400,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2634.848,
+    "text": "But the schedule of office hours, you should be able to see them.",
+    "start_ms": 2634848,
+    "end_ms": 2638648,
+    "duration_ms": 3800,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2638.648,
+    "text": "And I don't think that we have released it yet.",
+    "start_ms": 2638648,
+    "end_ms": 2640608,
+    "duration_ms": 1960,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2640.608,
+    "text": "But if you go to the calendar page, on the calendar page, you should be able to see one calendar for instructor office hours.",
+    "start_ms": 2640608,
+    "end_ms": 2648608,
+    "duration_ms": 8000,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2648.608,
+    "text": "You see there is nothing this week, but there might be some next week and then some more also next week so on.",
+    "start_ms": 2648608,
+    "end_ms": 2655248,
+    "duration_ms": 6640,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2655.248,
+    "text": "And so of course, these are all office hours and then there is also the schedule for the lecture, discussions and special events, such as meet and then final exam, should be on this other calendar.",
+    "start_ms": 2655248,
+    "end_ms": 2665368,
+    "duration_ms": 10120,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2665.368,
+    "text": "I'm very in the middle of the lecture. So we know that this calendar, LA still hard has been accurate.",
+    "start_ms": 2665368,
+    "end_ms": 2670488,
+    "duration_ms": 5120,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2671.064,
+    "text": "So consult with the calendar if you're going to office hours, our instructor office hours or TA office hours as well and that would be great.",
+    "start_ms": 2671064,
+    "end_ms": 2680453,
+    "duration_ms": 9389,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2680.453,
+    "text": "So let's go back to Berriber. We were looking Office hours.",
+    "start_ms": 2680453,
+    "end_ms": 2687936,
+    "duration_ms": 7483,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2687.936,
+    "text": "And we're done with that. Now we can go and take a look at your rating scheme.",
+    "start_ms": 2687936,
+    "end_ms": 2693096,
+    "duration_ms": 5160,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2693.464,
+    "text": "So find your section. Take a look at the breakdown.",
+    "start_ms": 2693464,
+    "end_ms": 2697440,
+    "duration_ms": 3976,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2697.44,
+    "text": "You see that there are homeworks that all of the sections need to complete.",
+    "start_ms": 2697440,
+    "end_ms": 2701640,
+    "duration_ms": 4200,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2701.64,
+    "text": "You see two columns for data 100 with the session data 100 with no discussions.",
+    "start_ms": 2701640,
+    "end_ms": 2706640,
+    "duration_ms": 5000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2706.64,
+    "text": "So you see that the waiting for the homework is 5% more.",
+    "start_ms": 2706640,
+    "end_ms": 2710640,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2710.64,
+    "text": "Everything else is the same between the two data 100 streams except for discussion is 5% discussion does not exist.",
+    "start_ms": 2710640,
+    "end_ms": 2719640,
+    "duration_ms": 9000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2719.64,
+    "text": "Moonsta the graduate of students are in data 200 or 200A, which this column would apply to you for students from MSSE program, then you're enrolled in 200S, just double check your rating scheme as well.",
+    "start_ms": 2719640,
+    "end_ms": 2733800,
+    "duration_ms": 14160,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2733.8,
+    "text": "And you can also see the drops here that for the labs we're dropping the two lois for the discussion and lecture we're dropping tree lois, which means that you can miss tree lectures and up to three discussion sections as well.",
+    "start_ms": 2733800,
+    "end_ms": 2748720,
+    "duration_ms": 14920,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2748.72,
+    "text": "There's no drop for homeworks and projects. And historically, students complain about it, but we have a way of making you happy.",
+    "start_ms": 2748720,
+    "end_ms": 2756000,
+    "duration_ms": 7280,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2756.0,
+    "text": "And I'm gonna talk about that a little bit here, which is true slip days.",
+    "start_ms": 2756000,
+    "end_ms": 2762120,
+    "duration_ms": 6120,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2762.12,
+    "text": "Although you cannot, we don't have drops, but because there are 12 different homework or project deliverables, we are offering 12 total slip days.",
+    "start_ms": 2762120,
+    "end_ms": 2772040,
+    "duration_ms": 9920,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2772.04,
+    "text": "So you can use your slip days based on your own schedule.",
+    "start_ms": 2772040,
+    "end_ms": 2775560,
+    "duration_ms": 3520,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2775.56,
+    "text": "If there is any extent, circumstances that's happening so you can directly use your slip days without contacting us.",
+    "start_ms": 2775560,
+    "end_ms": 2781534,
+    "duration_ms": 5974,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2781.534,
+    "text": "This is for you to use. We'll basically take a look at the submission time of your homework and be able to automatically calculate how many slip days you use, right?",
+    "start_ms": 2781534,
+    "end_ms": 2791442,
+    "duration_ms": 9908,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2791.442,
+    "text": "If you use a slip day you can decide that I don't want to use a slip day and go in like great an earlier submission that I had.",
+    "start_ms": 2791442,
+    "end_ms": 2799530,
+    "duration_ms": 8088,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2799.53,
+    "text": "As soon as you use it you use that and it will be the doctor from the 12 total It's the days that you have.",
+    "start_ms": 2799530,
+    "end_ms": 2806280,
+    "duration_ms": 6750,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2806.584,
+    "text": "Important note, on every single homework or project you can use up to four slip days.",
+    "start_ms": 2806584,
+    "end_ms": 2813864,
+    "duration_ms": 7280,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2813.864,
+    "text": "So you can just use 12 of them all together and one homework.",
+    "start_ms": 2813864,
+    "end_ms": 2817304,
+    "duration_ms": 3440,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2817.304,
+    "text": "This is mainly because we need to stay on schedule for grading your homework so that we grade it and we release the solutions so that all students can see the solution.",
+    "start_ms": 2817304,
+    "end_ms": 2825704,
+    "duration_ms": 8400,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2825.704,
+    "text": "If they're getting ready for the next project for the meet-term for final exam, we have to stay on a certain schedule.",
+    "start_ms": 2825704,
+    "end_ms": 2832104,
+    "duration_ms": 6400,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2832.728,
+    "text": "There was one more thing here that... If you require any additional accommodation, if there is anything that's happening that's beyond all of these slip days and drops and everything that's happening, we have a form that's called additional accommodation form.",
+    "start_ms": 2832728,
+    "end_ms": 2852668,
+    "duration_ms": 19940,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2852.952,
+    "text": "Fill it out and remember of our staff is going to be able to reach out to you within two business days.",
+    "start_ms": 2852952,
+    "end_ms": 2858112,
+    "duration_ms": 5160,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2858.112,
+    "text": "Don't expect a live staff responding to immediately. So wait for two business days and then they'll respond to your request.",
+    "start_ms": 2858112,
+    "end_ms": 2868152,
+    "duration_ms": 10040,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2868.536,
+    "text": "DSP accommodation. We have received most of the DSP accommodations that we're expecting.",
+    "start_ms": 2868536,
+    "end_ms": 2874296,
+    "duration_ms": 5760,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2874.296,
+    "text": "If you are expecting to get an accommodation, please have the DSP office send it to us ASAP so that we can calculate or be able to accommodate different pieces of your support.",
+    "start_ms": 2874296,
+    "end_ms": 2888056,
+    "duration_ms": 13760,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2888.056,
+    "text": "For DSP students, you're going to automatically get DSP students with assignment or homework extension accommodation.",
+    "start_ms": 2888056,
+    "end_ms": 2895932,
+    "duration_ms": 7876,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2895.932,
+    "text": "You're going to automatically get today's extension. You don't need to request for it.",
+    "start_ms": 2895932,
+    "end_ms": 2900570,
+    "duration_ms": 4638,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2900.57,
+    "text": "If you need anything beyond two days, fill out the additional accommodation form and then we'll be able to help you figure out how we can accommodate your situation.",
+    "start_ms": 2900570,
+    "end_ms": 2910793,
+    "duration_ms": 10223,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2910.793,
+    "text": "For DSP students, we're not able to accommodate an extension beyond seven days.",
+    "start_ms": 2910793,
+    "end_ms": 2915041,
+    "duration_ms": 4248,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2915.041,
+    "text": "This is again because we're going to release solutions, so submitting a homework after that seven days is not practically possible, So again, reach out to us, we'll try to figure out how we can best navigate it.",
+    "start_ms": 2915041,
+    "end_ms": 2927736,
+    "duration_ms": 12695,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2928.44,
+    "text": "One more important fact that is new this semester is that for all of the students there is a requirement of Completing 50% of exams or the project.",
+    "start_ms": 2928440,
+    "end_ms": 2942352,
+    "duration_ms": 13912,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2942.352,
+    "text": "So, project applies to data 200, 200 S's students. But for everybody else, the average of your midterm and final exam, the average percent should be less greater than or equal to 50%.",
+    "start_ms": 2942352,
+    "end_ms": 2955752,
+    "duration_ms": 13400,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2955.752,
+    "text": "This is just to make sure that the amount of supervised work that you're doing in front of us in the Procure exam is reasonable with the whole chat GPT stuff that might go around for homeworks and last.",
+    "start_ms": 2955752,
+    "end_ms": 2969792,
+    "duration_ms": 14040,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2969.792,
+    "text": "So this is new semester. Historically, there shouldn't be an issue.",
+    "start_ms": 2969792,
+    "end_ms": 2975592,
+    "duration_ms": 5800,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2975.592,
+    "text": "Meet terms and final exams are pretty standard. You can see the historical trends.",
+    "start_ms": 2975592,
+    "end_ms": 2980752,
+    "duration_ms": 5160,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2980.752,
+    "text": "So this generally is not an issue for students. And should it not have been an issue if we had this policy prior to the semester as well.",
+    "start_ms": 2980752,
+    "end_ms": 2989672,
+    "duration_ms": 8920,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2990.584,
+    "text": "I think that's about it so I'm gonna go back to um and talk about different resources that we have in the course.",
+    "start_ms": 2990584,
+    "end_ms": 3001472,
+    "duration_ms": 10888,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3001.472,
+    "text": "So obviously you know the course website. The course website is at ds.org is slash fall 24.",
+    "start_ms": 3001472,
+    "end_ms": 3007524,
+    "duration_ms": 6052,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3007.524,
+    "text": "So you should be able to find all of the resources that we have there.",
+    "start_ms": 3007524,
+    "end_ms": 3011472,
+    "duration_ms": 3948,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3011.472,
+    "text": "You will also work on your homework some projects and labs on data hub.",
+    "start_ms": 3011472,
+    "end_ms": 3015569,
+    "duration_ms": 4097,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3015.569,
+    "text": "So there is an a version of data hub for data 100 and the link is linked on the website and it's also linked here as well.",
+    "start_ms": 3015569,
+    "end_ms": 3023472,
+    "duration_ms": 7903,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3023.472,
+    "text": "So if I go to the website and I show you okay.",
+    "start_ms": 3023472,
+    "end_ms": 3027712,
+    "duration_ms": 4240,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3028.152,
+    "text": "So you'll be able to get access to all of these links and these forms that you need.",
+    "start_ms": 3028152,
+    "end_ms": 3034872,
+    "duration_ms": 6720,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3034.872,
+    "text": "There is ed for the course, there is data hub length, there is braidscope, there is the link to the playlist of lecture videos, the additional accommodation form, and we will also utilize Office RECU for office hours in Voron Hall that we will be holding.",
+    "start_ms": 3034872,
+    "end_ms": 3052672,
+    "duration_ms": 17800,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3053.272,
+    "text": "So it's not from that there is a lecture note, which is like there is one lecture note that is a transprone version of everything that we teach every lecture.",
+    "start_ms": 3053272,
+    "end_ms": 3061672,
+    "duration_ms": 8400,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3061.672,
+    "text": "So it's a really good reading resource for you as well.",
+    "start_ms": 3061672,
+    "end_ms": 3064422,
+    "duration_ms": 2750,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3064.422,
+    "text": "It's also linked here so you can go here and then see that.",
+    "start_ms": 3064422,
+    "end_ms": 3067672,
+    "duration_ms": 3250,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3067.672,
+    "text": "Okay, so here we have introduction. Lecture this lecture that we have everything is transcribed and explained and so on and so forth.",
+    "start_ms": 3067672,
+    "end_ms": 3077895,
+    "duration_ms": 10223,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3077.895,
+    "text": "So this is again, a really good reading resource for you all as well.",
+    "start_ms": 3077895,
+    "end_ms": 3082916,
+    "duration_ms": 5021,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3083.96,
+    "text": "And there is a textbook that Joey is a collatera.",
+    "start_ms": 3083960,
+    "end_ms": 3087560,
+    "duration_ms": 3600,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3087.56,
+    "text": "It's a good resource. It's not aligned with the lecture, but if you have extra time read it.",
+    "start_ms": 3087560,
+    "end_ms": 3092660,
+    "duration_ms": 5100,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3092.66,
+    "text": "If you don't have extra time, just read the course notes.",
+    "start_ms": 3092660,
+    "end_ms": 3095760,
+    "duration_ms": 3100,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3095.76,
+    "text": "The course notes are very close related to this version of Data 100, that we're teaching.",
+    "start_ms": 3095760,
+    "end_ms": 3101260,
+    "duration_ms": 5500,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3101.848,
+    "text": "The programming environment that you're using is Jupyter Lab. It's similar to Jupyter notebooks that you'd seen in Data Aid, but now it has all of these file management area that you have here and you should be able to load your data, take a look at your data, and be able to create files, and then manage kind of how you want to structure everything that you have.",
+    "start_ms": 3101848,
+    "end_ms": 3122648,
+    "duration_ms": 20800,
+    "word_count": 69,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3122.648,
+    "text": "And then you can also have kind of a mini computer thing that you can have multiple windows and then be able to see what's going on in the notebook that you're working on at that given point in time.",
+    "start_ms": 3122648,
+    "end_ms": 3133648,
+    "duration_ms": 11000,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3134.072,
+    "text": "If you are in data 200, 200, 800, 800 s and you haven't seen Jupyter Notebooks before, these are some good resources for you that you can quickly go over and then get used to how this infrastructure is going to work out in data 100.",
+    "start_ms": 3134072,
+    "end_ms": 3150712,
+    "duration_ms": 16640,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3151.8,
+    "text": "In Lab 1 you will actually learn a bunch of shortcuts on how to professionally use Jupyter Lab so that's going to be a really great resource for you and that's going to be your Lab 1.",
+    "start_ms": 3151800,
+    "end_ms": 3162360,
+    "duration_ms": 10560,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3162.36,
+    "text": "So just learning how to play with Jupyter Lab. So now I'm going to turn over and talk a little bit about data science life cycle.",
+    "start_ms": 3162360,
+    "end_ms": 3171208,
+    "duration_ms": 8848,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3171.208,
+    "text": "Um, because we're going to go over this data science life cycle and then see different elements of the course from the perspective of which stage of data science life cycle were in.",
+    "start_ms": 3171208,
+    "end_ms": 3181368,
+    "duration_ms": 10160,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3181.656,
+    "text": "Is there a question? Yeah. Question is, what's the difference between Jupyter Notebook and Jupyter Lab?",
+    "start_ms": 3181656,
+    "end_ms": 3201656,
+    "duration_ms": 20000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3201.656,
+    "text": "I would summarize it as Jupyter Notebook is a simplified version of Jupyter Lab for beginners.",
+    "start_ms": 3201656,
+    "end_ms": 3207016,
+    "duration_ms": 5360,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3207.016,
+    "text": "So in Jupyter Notebook, you're not going to mess around with files and managing everything yourself.",
+    "start_ms": 3207016,
+    "end_ms": 3212091,
+    "duration_ms": 5075,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3212.091,
+    "text": "So there's less functionality. So you have like a plain notebook that you can run through cells and write text cell and put cell and whatnot.",
+    "start_ms": 3212091,
+    "end_ms": 3219425,
+    "duration_ms": 7334,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3219.425,
+    "text": "But Jupyter Lab, you have more functionality available to you.",
+    "start_ms": 3219425,
+    "end_ms": 3222584,
+    "duration_ms": 3159,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3222.584,
+    "text": "As I said, like mostly that file system thing, managing all the windows that you can see and you will have a terminal in the same kind of environment so you should be able to also use command line if you need.",
+    "start_ms": 3222584,
+    "end_ms": 3236456,
+    "duration_ms": 13872,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3237.336,
+    "text": "You probably will not use all-defense functionalities in jupiter lab anyways, but we also wanted you to see the most professional industry standard kind of framework and infrastructure that we need to use as a data scientist.",
+    "start_ms": 3237336,
+    "end_ms": 3252336,
+    "duration_ms": 15000,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3252.336,
+    "text": "Good question. If there are any more questions, please feel free to ask questions on the slide.",
+    "start_ms": 3252336,
+    "end_ms": 3258336,
+    "duration_ms": 6000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3258.336,
+    "text": "Because we're a little bit running short on time. Thank you.",
+    "start_ms": 3258336,
+    "end_ms": 3262002,
+    "duration_ms": 3666,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3262.002,
+    "text": "Okay. What is data science lifecycle? So imagine if you go ahead and Google data science lifecycle and then figure out like what data science lifecycle is and you're going to get all of these colorful flow charts and whatnot.",
+    "start_ms": 3262002,
+    "end_ms": 3275336,
+    "duration_ms": 13334,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3275.336,
+    "text": "Most of them are correct. Most of them are explaining the life cycle that any data scientist or data engineer is going through on a daily basis or in a project.",
+    "start_ms": 3275336,
+    "end_ms": 3286416,
+    "duration_ms": 11080,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3286.416,
+    "text": "But what we're going to work on in data 100 is remembering this workflow.",
+    "start_ms": 3286416,
+    "end_ms": 3292456,
+    "duration_ms": 6040,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3292.456,
+    "text": "This is a data science life cycle workflow in data 100, which is kind of a high level description of a data science workflow.",
+    "start_ms": 3292456,
+    "end_ms": 3301736,
+    "duration_ms": 9280,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3301.736,
+    "text": "So the way that this workflow works is that it has two entry points.",
+    "start_ms": 3301736,
+    "end_ms": 3305616,
+    "duration_ms": 3880,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3305.616,
+    "text": "So you see these two entry points right here. So a project generally for data scientists would start either when you have a question.",
+    "start_ms": 3305616,
+    "end_ms": 3313696,
+    "duration_ms": 8080,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3313.944,
+    "text": "And you have a research question and then the next step for you is to go and find the data, obtain the data that is stage two right there, or that you have an stakeholder that is going to present a data to you and then say that, oh, we have this data, would you be able to extract this information for us or help us analyze this data?",
+    "start_ms": 3313944,
+    "end_ms": 3332112,
+    "duration_ms": 18168,
+    "word_count": 69,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3332.112,
+    "text": "That's a second entry point. That you don't have a research question, you might want to ask your words, go ahead and formulate a question, but then the initial work list starts with obtaining the data.",
+    "start_ms": 3332112,
+    "end_ms": 3343984,
+    "duration_ms": 11872,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3343.984,
+    "text": "And then it goes around the cycle, you can see that there are arrows forward and backward.",
+    "start_ms": 3343984,
+    "end_ms": 3348984,
+    "duration_ms": 5000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3348.984,
+    "text": "And this kind of shows that this life cycle is pretty iterative.",
+    "start_ms": 3348984,
+    "end_ms": 3352984,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3352.984,
+    "text": "And it's kind of very important for us that everything that we teach in data 100 we're going to tell you which stage we're in.",
+    "start_ms": 3352984,
+    "end_ms": 3359984,
+    "duration_ms": 7000,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3359.984,
+    "text": "And it will make sense to you why we're going around the cycle and why this cycle is actually.",
+    "start_ms": 3359984,
+    "end_ms": 3365984,
+    "duration_ms": 6000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3366.52,
+    "text": "It's her though. So the first step, so what is asking a question?",
+    "start_ms": 3366520,
+    "end_ms": 3371211,
+    "duration_ms": 4691,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3371.211,
+    "text": "So when we say that we want to start a life cycle by asking a question, that means that we want to form a hypothesis.",
+    "start_ms": 3371211,
+    "end_ms": 3377864,
+    "duration_ms": 6653,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3377.864,
+    "text": "What is a research question that we have? Do we know what kind of metrics we have so that once we start the life cycle, we know at what point do we end this lifestyle?",
+    "start_ms": 3377864,
+    "end_ms": 3388008,
+    "duration_ms": 10144,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3388.008,
+    "text": "So these are all the good questions that we can ask.",
+    "start_ms": 3388008,
+    "end_ms": 3390941,
+    "duration_ms": 2933,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3390.941,
+    "text": "When we want to start a life cycle with the hypnosis or with the research question.",
+    "start_ms": 3390941,
+    "end_ms": 3395847,
+    "duration_ms": 4906,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3396.472,
+    "text": "The second stage of the painting the data as I said, so you need to make sure that you have the data and you understand what kind of data you have and Identify whether you're ready to move forward to the next stage or not.",
+    "start_ms": 3396472,
+    "end_ms": 3409388,
+    "duration_ms": 12916,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3409.388,
+    "text": "So for example in the painting data step We're basically taking a look at do we have the all the relevant data that we want?",
+    "start_ms": 3409388,
+    "end_ms": 3417352,
+    "duration_ms": 7964,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3417.352,
+    "text": "What are the attributes that we have in our data?",
+    "start_ms": 3417352,
+    "end_ms": 3419752,
+    "duration_ms": 2400,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3419.912,
+    "text": "Whether the bias is that my de-existing the data kind of making sure that the data is relevant and the data has all the attributes that you would need for modeling, and then you're ready to move forward with understanding it a little bit deeper.",
+    "start_ms": 3419912,
+    "end_ms": 3432712,
+    "duration_ms": 12800,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3432.952,
+    "text": "So understanding that I love it deeper and understanding the data is the part that we call it exploratory data analysis.",
+    "start_ms": 3432952,
+    "end_ms": 3439380,
+    "duration_ms": 6428,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3439.38,
+    "text": "We'll spend roughly two weeks in data 100 doing exploratory data analysis or EDA.",
+    "start_ms": 3439380,
+    "end_ms": 3445477,
+    "duration_ms": 6097,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3445.477,
+    "text": "This is the part that you will visualize data, you will transform data, you will take a look at whether again your data has all the attributes that you want or not.",
+    "start_ms": 3445477,
+    "end_ms": 3453992,
+    "duration_ms": 8515,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3453.992,
+    "text": "If not, you'll take that arrow back to obtaining the data, you will obtain more data and then you you'll come back.",
+    "start_ms": 3453992,
+    "end_ms": 3461047,
+    "duration_ms": 7055,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3461.047,
+    "text": "So this is the part that you will calculate whether your data is enough and whether your data is in the right format for you to do the modeling and move onto the modeling phase.",
+    "start_ms": 3461047,
+    "end_ms": 3471947,
+    "duration_ms": 10900,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3471.947,
+    "text": "This is not modeling yet. And then understanding the word is the part that we have modeling and modeling which is prediction and inference.",
+    "start_ms": 3471947,
+    "end_ms": 3481480,
+    "duration_ms": 9533,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3481.48,
+    "text": "In a prediction task we would design a model that then we can basically use that model in similar settings and similar datasets and be able to figure out how the model is performing and how we can predict on the same task.",
+    "start_ms": 3481480,
+    "end_ms": 3495800,
+    "duration_ms": 14320,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3495.8,
+    "text": "So for example, if we're going to predict Based on some characteristics, whether there's going to be fire in a certain area or not, we could basically use similar data in future and similar neighborhoods that we had data for to be able to do the same kind of prediction.",
+    "start_ms": 3495800,
+    "end_ms": 3514712,
+    "duration_ms": 18912,
+    "word_count": 50,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3515.352,
+    "text": "In France is a slightly different. In France is not going to be the topic that we're going to cover in data 100, but in France basically is that, okay, if you have a certain understanding of how the word works, how would you make a generalizable kind of statement and apply the same kind of modeling that you have in a more general generalized setting.",
+    "start_ms": 3515352,
+    "end_ms": 3539352,
+    "duration_ms": 24000,
+    "word_count": 66,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3539.352,
+    "text": "So it's kind of taking one step further and instead of just doing prediction on the same path, you're doing the inference on relevant path and looking at the implication of your prediction on other domains.",
+    "start_ms": 3539352,
+    "end_ms": 3552072,
+    "duration_ms": 12720,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3552.072,
+    "text": "Data 102 is gonna be the next course, to data 100 which covers more about inference.",
+    "start_ms": 3552072,
+    "end_ms": 3557871,
+    "duration_ms": 5799,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3557.871,
+    "text": "In data 100, we're gonna see a lot of modeling that we'll be using, clustering, regression, classification and things like that, which is in the area of prediction paths.",
+    "start_ms": 3557871,
+    "end_ms": 3568552,
+    "duration_ms": 10681,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3569.304,
+    "text": "So, hopefully this will work this time. This is the last slide of the day.",
+    "start_ms": 3569304,
+    "end_ms": 3575544,
+    "duration_ms": 6240,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3575.544,
+    "text": "So if you haven't responded to any of the previous falls, make sure that you responded this one, and let's give this a try.",
+    "start_ms": 3575544,
+    "end_ms": 3582424,
+    "duration_ms": 6880,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3582.424,
+    "text": "Why do you think data science life cycle is iterative, based on the explanation that I gave about all the four stages?",
+    "start_ms": 3582424,
+    "end_ms": 3588744,
+    "duration_ms": 6320,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3600.6,
+    "text": "new insights more questions. Exactly once you have new data you might form new hypotheses.",
+    "start_ms": 3600600,
+    "end_ms": 3606280,
+    "duration_ms": 5680,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3606.84,
+    "text": "Then based on the new hypothesis you might run as the oh do I have enough data or not and then select more data?",
+    "start_ms": 3606840,
+    "end_ms": 3612840,
+    "duration_ms": 6000,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3613.56,
+    "text": "And all of those things will go around this cycle and then you will iterate enough up until the point that you're confident and it recorded you're generating at the end after the prediction task is going to be solid and kind of Accurate and dependable.",
+    "start_ms": 3613560,
+    "end_ms": 3633032,
+    "duration_ms": 19472,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3633.72,
+    "text": "Cool. 62 people are still participating. So I'll wait for that number to settle a bit, given that this is the last, this light of the day.",
+    "start_ms": 3633720,
+    "end_ms": 3643096,
+    "duration_ms": 9376,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3644.536,
+    "text": "and then the next step is seeing a fundamental. Let me go next.",
+    "start_ms": 3644536,
+    "end_ms": 3653389,
+    "duration_ms": 8853,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3653.389,
+    "text": "Yes, it's demo and I can just let this be open and then go to the demo.",
+    "start_ms": 3653389,
+    "end_ms": 3659056,
+    "duration_ms": 5667,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3659.056,
+    "text": "Where can you find the demo? The place that you can take a look at everything that will be releasing is actually going to the homepage of data 100 fall.",
+    "start_ms": 3659056,
+    "end_ms": 3670056,
+    "duration_ms": 11000,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3670.056,
+    "text": "then you should be able to actually see the schedule.",
+    "start_ms": 3670056,
+    "end_ms": 3672616,
+    "duration_ms": 2560,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3672.616,
+    "text": "So here, for example, we released everything about lecture one, lecture one introduction, who is gonna give that lecture, and then a slide code HTML.",
+    "start_ms": 3672616,
+    "end_ms": 3682056,
+    "duration_ms": 9440,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3682.056,
+    "text": "So code is gonna spin up a data 100, data hub for you, and then you should be able to actually run stuff.",
+    "start_ms": 3682056,
+    "end_ms": 3689736,
+    "duration_ms": 7680,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3689.736,
+    "text": "Code HTML, if you're on your phone, and you just wanna take a look at the code that be posted, you should be able to do that as well.",
+    "start_ms": 3689736,
+    "end_ms": 3696096,
+    "duration_ms": 6360,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3696.44,
+    "text": "So I'm going to switch here. And walk you through one simple example of data science life cycle.",
+    "start_ms": 3696440,
+    "end_ms": 3704008,
+    "duration_ms": 7568,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3704.792,
+    "text": "So this simple example of data science life cycle is that what I want is that I have a bunch of different questions.",
+    "start_ms": 3704792,
+    "end_ms": 3712792,
+    "duration_ms": 8000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3712.792,
+    "text": "So the questions that I have is that I'll try to answer through this demo is that I want to see how many students we have in the course.",
+    "start_ms": 3712792,
+    "end_ms": 3719792,
+    "duration_ms": 7000,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3719.792,
+    "text": "I'm sure you're all curious to see how big this this offering is.",
+    "start_ms": 3719792,
+    "end_ms": 3723792,
+    "duration_ms": 4000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3723.792,
+    "text": "And then we're going to see whether the majors, whether the top majors, what's the distribution between grad students, undergrad students, the distribution of names.",
+    "start_ms": 3723792,
+    "end_ms": 3732792,
+    "duration_ms": 9000,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3732.792,
+    "text": "all the fun stuff that you'll get to know about data 100.",
+    "start_ms": 3732792,
+    "end_ms": 3735992,
+    "duration_ms": 3200,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3735.992,
+    "text": "And then the last thing is that we're gonna take a look at the trend of the distribution of undergrad and grad students on campus historically since 2013 and the distribution of undergrad and grads in our course and just compared with our trends to see if we're rather than the same, if we're like representative of this trend that we have.",
+    "start_ms": 3735992,
+    "end_ms": 3757472,
+    "duration_ms": 21480,
+    "word_count": 62,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3758.168,
+    "text": "So what you're seeing is that every notebook that we will pose is going to have a title.",
+    "start_ms": 3758168,
+    "end_ms": 3763768,
+    "duration_ms": 5600,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3763.768,
+    "text": "It's going to say which lecture this notebook belongs to.",
+    "start_ms": 3763768,
+    "end_ms": 3767768,
+    "duration_ms": 4000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3767.768,
+    "text": "And then it will have a bunch of different text cells and code cells.",
+    "start_ms": 3767768,
+    "end_ms": 3773368,
+    "duration_ms": 5600,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3773.368,
+    "text": "In the text cells, if you read them, it really flows with the flow of the lecture.",
+    "start_ms": 3773368,
+    "end_ms": 3778368,
+    "duration_ms": 5000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3778.368,
+    "text": "So they go together really well. So some software packages that we're going to import are basically like NumPy that you'd seen before pandas.",
+    "start_ms": 3778368,
+    "end_ms": 3788928,
+    "duration_ms": 10560,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3788.928,
+    "text": "Next tree lectures is all about pandas. So I'll be here for tree lectures teaching you how to use pandas.",
+    "start_ms": 3788928,
+    "end_ms": 3795248,
+    "duration_ms": 6320,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3795.248,
+    "text": "And then assuming that you will go ahead, learn pandas and learn how to read pandas API documentation.",
+    "start_ms": 3795248,
+    "end_ms": 3801488,
+    "duration_ms": 6240,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3801.488,
+    "text": "It's going to be fun. Then we're going to do some exploratory data analysis and lectures on EDA.",
+    "start_ms": 3801488,
+    "end_ms": 3806928,
+    "duration_ms": 5440,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3806.928,
+    "text": "And then we will learn a lot about visualizations. So you will learn Matplotlib, C-bornplotlib, hopefully in the visualization lectures and then we are also also plotting some few other stuff here too.",
+    "start_ms": 3806928,
+    "end_ms": 3820328,
+    "duration_ms": 13400,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3820.984,
+    "text": "Okay, for now you don't need to remember stuff. So the first question that we have is, who are students in data 100?",
+    "start_ms": 3820984,
+    "end_ms": 3827984,
+    "duration_ms": 7000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3827.984,
+    "text": "So let's take a look at how I can answer that question.",
+    "start_ms": 3827984,
+    "end_ms": 3831984,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3832.312,
+    "text": "So this question that I'm trying to answer, I need to obtain the data for it.",
+    "start_ms": 3832312,
+    "end_ms": 3836872,
+    "duration_ms": 4560,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3836.872,
+    "text": "So what I did was basically I looked at the Cal Central.",
+    "start_ms": 3836872,
+    "end_ms": 3840552,
+    "duration_ms": 3680,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3840.552,
+    "text": "I downloaded all the data that we had from the enrollment of all three sections of the course.",
+    "start_ms": 3840552,
+    "end_ms": 3846632,
+    "duration_ms": 6080,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3846.632,
+    "text": "And what I did was that I tried to anonymize it, add a little bit of noise to the data, noise in a sense that okay, I have only your first names and non-last name, middle names and majors also is there.",
+    "start_ms": 3846632,
+    "end_ms": 3859632,
+    "duration_ms": 13000,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3859.632,
+    "text": "So I have two separate spreadsheets of majors.csd and names.csd.",
+    "start_ms": 3859632,
+    "end_ms": 3864832,
+    "duration_ms": 5200,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3864.832,
+    "text": "These are pre-process, not going to study. You'll see. Where are they so you should be able to see them?",
+    "start_ms": 3864832,
+    "end_ms": 3871696,
+    "duration_ms": 6864,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3872.152,
+    "text": "in the data. So you should be a ball. So this is a different version, but you will see majors at CSV names that CSV.",
+    "start_ms": 3872152,
+    "end_ms": 3880422,
+    "duration_ms": 8270,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3880.422,
+    "text": "You will only be able to see these two spreadsheets or CSVs and not Rusty.",
+    "start_ms": 3880422,
+    "end_ms": 3885928,
+    "duration_ms": 5506,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3885.928,
+    "text": "So what I'll do is I will load majors that CSV in a data frame called majors and names that CSV in a data frame called Names.",
+    "start_ms": 3885928,
+    "end_ms": 3894568,
+    "duration_ms": 8640,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3894.968,
+    "text": "And then we'll basically take a look at the data and try to understand the data.",
+    "start_ms": 3894968,
+    "end_ms": 3899968,
+    "duration_ms": 5000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3899.968,
+    "text": "So this is how the flow of processing data or responding to one data science posture looks like.",
+    "start_ms": 3899968,
+    "end_ms": 3907568,
+    "duration_ms": 7600,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3907.554,
+    "text": "how do I start understanding the data? What I can do is I can just take a peek at the data.",
+    "start_ms": 3907554,
+    "end_ms": 3913816,
+    "duration_ms": 6262,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3913.816,
+    "text": "So head is going to give me the top x number of rows.",
+    "start_ms": 3913816,
+    "end_ms": 3917795,
+    "duration_ms": 3979,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3917.795,
+    "text": "So here I'm saying that head 20, give me the top 20 rows in this spreadsheet.",
+    "start_ms": 3917795,
+    "end_ms": 3923425,
+    "duration_ms": 5630,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3923.425,
+    "text": "And again, because they are randomly kind of ordered, this is just going to give me the top 20 kind of majors that we have.",
+    "start_ms": 3923425,
+    "end_ms": 3932509,
+    "duration_ms": 9084,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3932.509,
+    "text": "So you're seeing that, okay, the person that was represented in the first row is from letters and sciences, undeclared, so on and so forth.",
+    "start_ms": 3932509,
+    "end_ms": 3941416,
+    "duration_ms": 8907,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3941.416,
+    "text": "So you should be able to see that in majors, data frame, this is a data structure.",
+    "start_ms": 3941416,
+    "end_ms": 3947256,
+    "duration_ms": 5840,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3947.256,
+    "text": "You have majors and I have terms and attendance. So that's why we take a look at the data.",
+    "start_ms": 3947256,
+    "end_ms": 3952056,
+    "duration_ms": 4800,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3952.056,
+    "text": "We want to see attributes, we want to see how many rows we have, and then we want to generally see the structure to save this structure is within what we're expecting or not.",
+    "start_ms": 3952056,
+    "end_ms": 3960856,
+    "duration_ms": 8800,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3961.688,
+    "text": "I can also do the same thing with head of the names.",
+    "start_ms": 3961688,
+    "end_ms": 3965488,
+    "duration_ms": 3800,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3965.488,
+    "text": "So I'm looking at the top five rows of the name data frame.",
+    "start_ms": 3965488,
+    "end_ms": 3969368,
+    "duration_ms": 3880,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3969.368,
+    "text": "So the name data frame, you can see that it has two different columns.",
+    "start_ms": 3969368,
+    "end_ms": 3973488,
+    "duration_ms": 4120,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3973.488,
+    "text": "The name column and the row column. So it says that the role of all of these top five people is a student and then you have some of their names.",
+    "start_ms": 3973488,
+    "end_ms": 3982408,
+    "duration_ms": 8920,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3982.408,
+    "text": "And you might notice that they're not all in the same format.",
+    "start_ms": 3982408,
+    "end_ms": 3985848,
+    "duration_ms": 3440,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3985.848,
+    "text": "Ethan, James's, all caps and then the rest are typo case, so I need to fix that as well.",
+    "start_ms": 3985848,
+    "end_ms": 3992808,
+    "duration_ms": 6960,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3992.808,
+    "text": "So just generally taking a look at the data will tell you how you should clean it and that's why we spend a lot of time in cleaning.",
+    "start_ms": 3992808,
+    "end_ms": 3998848,
+    "duration_ms": 6040,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3998.848,
+    "text": "We'll clean, we'll visualize, we'll... Again, think that there is more cleaning that we need to do and then we'll go around this cycle again and again.",
+    "start_ms": 3998848,
+    "end_ms": 4006400,
+    "duration_ms": 7552,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4007.352,
+    "text": "So how do I result the issues of this name, these names being in different formats?",
+    "start_ms": 4007352,
+    "end_ms": 4013752,
+    "duration_ms": 6400,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4013.752,
+    "text": "What I can do is I can go ahead and say that go ahead and get the names column, go ahead and assume that this is a string and just lubricate that string.",
+    "start_ms": 4013752,
+    "end_ms": 4030712,
+    "duration_ms": 16960,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4030.416,
+    "text": "are kind of condensed in the first half of the stamina.",
+    "start_ms": 4030416,
+    "end_ms": 4033952,
+    "duration_ms": 3536,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4034.296,
+    "text": "So I'm going to do that and then I'm going to take a look at those names again and now James is in the proper format.",
+    "start_ms": 4034296,
+    "end_ms": 4040696,
+    "duration_ms": 6400,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4040.696,
+    "text": "Everything is lowercase. This is helpful when I want to aggregate based on unique names.",
+    "start_ms": 4040696,
+    "end_ms": 4046696,
+    "duration_ms": 6000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4046.696,
+    "text": "Then I won't have an instance for James, I'll offer case and James, I'll lowercase and James title case and then treat them as different names, but in fact they're similar, right?",
+    "start_ms": 4046696,
+    "end_ms": 4055896,
+    "duration_ms": 9200,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4056.216,
+    "text": "So now take a look at the names data set.",
+    "start_ms": 4056216,
+    "end_ms": 4059816,
+    "duration_ms": 3600,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4059.816,
+    "text": "So in the names data set, what I want to do is I want to kind of generally understand whether the distribution of my data is right or not.",
+    "start_ms": 4059816,
+    "end_ms": 4066816,
+    "duration_ms": 7000,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4066.816,
+    "text": "So what I'll do is I'll say that, okay, go ahead and get the names column.",
+    "start_ms": 4066816,
+    "end_ms": 4070416,
+    "duration_ms": 3600,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4070.904,
+    "text": "Get the first character of that string named from every row and just give calculate the frequency of each one of those first characters.",
+    "start_ms": 4070904,
+    "end_ms": 4081904,
+    "duration_ms": 11000,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4081.904,
+    "text": "So for example, if you take a look at what it looks like and tell me that, okay, if I'm looking at the distribution of the first letters of the names, the most frequent one is a names the starting with a and there is 200 of such names.",
+    "start_ms": 4081904,
+    "end_ms": 4096904,
+    "duration_ms": 15000,
+    "word_count": 49,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4096.904,
+    "text": "is the second one, J, 118, and so on and so forth.",
+    "start_ms": 4096904,
+    "end_ms": 4100744,
+    "duration_ms": 3840,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4100.744,
+    "text": "And I just looked at the top most frequent first letter occurrences, right?",
+    "start_ms": 4100744,
+    "end_ms": 4106584,
+    "duration_ms": 5840,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4106.584,
+    "text": "So that's why I'm only getting five of them. What I do is I'll basically say that go ahead and plot all of them together because then visually I'll understand it better and then you'll see that A, J, S and then all the way all of those first letters that are appearing in your names and you can see that A and J are the top most frequent names and we can validate with our knowledge that in the United States A and J and A names are the most popular Popular First Initials.",
+    "start_ms": 4106584,
+    "end_ms": 4138568,
+    "duration_ms": 31984,
+    "word_count": 95,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4138.328,
+    "text": "So that's kind of validating whether your data comes from the right distribution or not.",
+    "start_ms": 4138328,
+    "end_ms": 4144168,
+    "duration_ms": 5840,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4144.168,
+    "text": "This is a very naive way of doing it, but you'll do all of these like extra information that you have in order to validate, whether your data has the distribution that makes it reasonable for you to use for the modeling purpose or not.",
+    "start_ms": 4144168,
+    "end_ms": 4157168,
+    "duration_ms": 13000,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4157.848,
+    "text": "So um... You were asking how many students we have.",
+    "start_ms": 4157848,
+    "end_ms": 4162335,
+    "duration_ms": 4487,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4162.335,
+    "text": "So you see if I get the length of the each one of those data frames, the lengths are distinct and there are 1,200 and 1 with students enrolled in the course.",
+    "start_ms": 4162335,
+    "end_ms": 4171178,
+    "duration_ms": 8843,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4171.178,
+    "text": "That's how big this course is. It's exciting. It's just slightly smaller than previous semester, believe it or not.",
+    "start_ms": 4171178,
+    "end_ms": 4176784,
+    "duration_ms": 5606,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4176.784,
+    "text": "But then there is 1,200 and 1 with students in the course.",
+    "start_ms": 4176784,
+    "end_ms": 4187144,
+    "duration_ms": 10360,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4187.099,
+    "text": "that will give you for a while and you'll see me do that with this data and every time that I will give you one insider one information about the data you will learn something about the class that you didn't know before right that's what makes the little bit also fun to go through the data as a part of this process.",
+    "start_ms": 4187099,
+    "end_ms": 4211080,
+    "duration_ms": 23981,
+    "word_count": 63,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4210.847,
+    "text": "okay give me all the unique roles and it will tell me that there is 1200 instances where the role is a student and there is one instant that the role is this hash graph explanation more.",
+    "start_ms": 4210847,
+    "end_ms": 4222944,
+    "duration_ms": 12097,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4223.512,
+    "text": "and it shows that oh, that hash graphics Lommissha mark might be a fall T-Brow.",
+    "start_ms": 4223512,
+    "end_ms": 4229392,
+    "duration_ms": 5880,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4229.392,
+    "text": "So we should go ahead and remove it. How do I remove it?",
+    "start_ms": 4229392,
+    "end_ms": 4232752,
+    "duration_ms": 3360,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4232.752,
+    "text": "I would say that go ahead and show me that row.",
+    "start_ms": 4232752,
+    "end_ms": 4236192,
+    "duration_ms": 3440,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4236.192,
+    "text": "It shows that okay, the row 11133. is kind of mouth-borne and what I can do is I can say that go ahead and filter for every verb that the name or the role is not equal to that hash wrap.",
+    "start_ms": 4236192,
+    "end_ms": 4251336,
+    "duration_ms": 15144,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4251.576,
+    "text": "So we'll do that and then we'll basically take care of like one more time and now I only have 1200 students See we initially proud that we have 1200 and one student, but then we lost that one student at the end So hopefully don't drop the course or if you're dropping drop with multiples of 10 so that we can still like have this nice numbers Of the students were taking the course because I'm kind of obsessed with that All right, let's take a look at the names, right?",
+    "start_ms": 4251576,
+    "end_ms": 4282008,
+    "duration_ms": 30432,
+    "word_count": 92,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4282.008,
+    "text": "So going through the names, so I'm going to take a look at the most frequent names, right?",
+    "start_ms": 4282008,
+    "end_ms": 4287088,
+    "duration_ms": 5080,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4287.088,
+    "text": "So I said, okay, give me the frequency of the unique names and structure it nicely.",
+    "start_ms": 4287088,
+    "end_ms": 4293008,
+    "duration_ms": 5920,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4293.008,
+    "text": "So two frames, those that are structured as a data frame, so I can visualize it nicely.",
+    "start_ms": 4293008,
+    "end_ms": 4298648,
+    "duration_ms": 5640,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4298.648,
+    "text": "And we can see that the most frequent name is Ethan and Ryan and Daniel are tied at the top, right?",
+    "start_ms": 4298648,
+    "end_ms": 4307488,
+    "duration_ms": 8840,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4307.488,
+    "text": "So let's do a hypothesis. So this is where you would do some hypothesis.",
+    "start_ms": 4307488,
+    "end_ms": 4311488,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4311.488,
+    "text": "You would say that, okay, if you're assuming that it's equally likely for Ethan, one Ethan to be in the lecture or be synchronous online or just not bother attend the lecture, then we have three possibilities.",
+    "start_ms": 4311488,
+    "end_ms": 4324988,
+    "duration_ms": 13500,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4324.988,
+    "text": "If there are equally likely and expecting 3.3 Ethan's being the lecture hall.",
+    "start_ms": 4324988,
+    "end_ms": 4330488,
+    "duration_ms": 5500,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4330.488,
+    "text": "So raise your hand if you're Ethan. One more. One.",
+    "start_ms": 4330488,
+    "end_ms": 4334400,
+    "duration_ms": 3912,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4335.416,
+    "text": "Oh, give me three, two. Three. and it's sure people more.",
+    "start_ms": 4335416,
+    "end_ms": 4340712,
+    "duration_ms": 5296,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4340.568,
+    "text": "4 Oh, there's one ethernet line. Okay, that's not. Okay, great.",
+    "start_ms": 4340568,
+    "end_ms": 4345238,
+    "duration_ms": 4670,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4345.238,
+    "text": "So it was more likely for people to be To be attending the course either synchronously or a synchronously.",
+    "start_ms": 4345238,
+    "end_ms": 4353039,
+    "duration_ms": 7801,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4353.039,
+    "text": "Sorry I said that in the course I still didn't meet that 3.3 But still you see that like we as data scientists will try to form hypothesis my hypothesis was that the distribution is You know form between these three possibilities.",
+    "start_ms": 4353039,
+    "end_ms": 4369349,
+    "duration_ms": 16310,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4369.349,
+    "text": "We're going to take a look at all of these probability jargonzeleban later and it's going to be more fun.",
+    "start_ms": 4369349,
+    "end_ms": 4374597,
+    "duration_ms": 5248,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4374.597,
+    "text": "But we're going to take a look at it from a data scientist perspective, not from like a statistician perspective.",
+    "start_ms": 4374597,
+    "end_ms": 4381750,
+    "duration_ms": 7153,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4381.75,
+    "text": "I know this respect is a statistician. But anyhow, so let me continue because we still have five more minutes and I want to show you more about the course, right?",
+    "start_ms": 4381750,
+    "end_ms": 4391611,
+    "duration_ms": 9861,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4391.611,
+    "text": "So I'm going to take a look at the columns in the majors, data frame.",
+    "start_ms": 4391611,
+    "end_ms": 4396328,
+    "duration_ms": 4717,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4396.328,
+    "text": "So remember that I had the major itself, I had term and attendance.",
+    "start_ms": 4396328,
+    "end_ms": 4401368,
+    "duration_ms": 5040,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4401.368,
+    "text": "And if I go ahead and take a look at the frequency of term and attendance thing, you should be able to see that.",
+    "start_ms": 4401368,
+    "end_ms": 4408568,
+    "duration_ms": 7200,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4408.856,
+    "text": "Majority of the students, not majority, sorry, the highest frequency of tremendous attendance is five.",
+    "start_ms": 4408856,
+    "end_ms": 4415256,
+    "duration_ms": 6400,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4415.256,
+    "text": "Raise your hand if you're an undergrad in your fifth semester.",
+    "start_ms": 4415256,
+    "end_ms": 4419656,
+    "duration_ms": 4400,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4420.888,
+    "text": "Yeah, so see this is kind of oh okay there goes online.",
+    "start_ms": 4420888,
+    "end_ms": 4426221,
+    "duration_ms": 5333,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4426.221,
+    "text": "So this is we have 479 uh, students and their fifth semester.",
+    "start_ms": 4426221,
+    "end_ms": 4430739,
+    "duration_ms": 4518,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4430.739,
+    "text": "They have all of those semesters there. There is that faulty row of hash ref fixed damage and mark that I still need to remove.",
+    "start_ms": 4430739,
+    "end_ms": 4439222,
+    "duration_ms": 8483,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4439.222,
+    "text": "There's also G. What's your guess about this G row here?",
+    "start_ms": 4439222,
+    "end_ms": 4443462,
+    "duration_ms": 4240,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4443.462,
+    "text": "112. Gradually. Gradually students. We have 112 graduate students. That's a small tiny intimate group because they're going to do a grad project and they're going to meet more kind of hands-on supervised health throughout the course.",
+    "start_ms": 4443462,
+    "end_ms": 4474312,
+    "duration_ms": 30850,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4473.983,
+    "text": "the nice enrollment that we have established. We can also summarize data, see with a simple function call with this script.",
+    "start_ms": 4473983,
+    "end_ms": 4483441,
+    "duration_ms": 9458,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4483.441,
+    "text": "I'm taking a look at, okay, what is the summary of this data that we have?",
+    "start_ms": 4483441,
+    "end_ms": 4488712,
+    "duration_ms": 5271,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4488.712,
+    "text": "So it says that for name and role, there are 1200 records in each one of them.",
+    "start_ms": 4488712,
+    "end_ms": 4494392,
+    "duration_ms": 5680,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4494.392,
+    "text": "So we know that already, it also says that there are 862 unique names.",
+    "start_ms": 4494392,
+    "end_ms": 4501272,
+    "duration_ms": 6880,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4501.272,
+    "text": "So your names are pretty unique, because out of the 1200 students having 862 unique names is pretty cool.",
+    "start_ms": 4501272,
+    "end_ms": 4508677,
+    "duration_ms": 7405,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4508.677,
+    "text": "And then the role is only one because we only have one role as a student.",
+    "start_ms": 4508677,
+    "end_ms": 4514712,
+    "duration_ms": 6035,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4515.352,
+    "text": "The top name was Ethan and then the top role frequency was a student and the frequency of this most frequent name was 10 that we established already and the student is 1200.",
+    "start_ms": 4515352,
+    "end_ms": 4528712,
+    "duration_ms": 13360,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4528.712,
+    "text": "Remember that we had top three names but now only shows Ethan this is because it basically initially, things sorted it based on alphabetical ordering or something.",
+    "start_ms": 4528712,
+    "end_ms": 4538672,
+    "duration_ms": 9960,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4538.672,
+    "text": "So that's why Ethan won it. But I have to take a look at why that's the case.",
+    "start_ms": 4538672,
+    "end_ms": 4544929,
+    "duration_ms": 6257,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4544.929,
+    "text": "For majors. You might have guessed that the most frequent major is letters and sciences under undeclared undergraduate.",
+    "start_ms": 4544929,
+    "end_ms": 4554360,
+    "duration_ms": 9431,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4554.712,
+    "text": "And how many of that we have? We have 267 undergraduate, letters and sciences and students.",
+    "start_ms": 4554712,
+    "end_ms": 4561250,
+    "duration_ms": 6538,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4561.25,
+    "text": "With the term in attendance, we saw that five is the most frequent and then we have 479.",
+    "start_ms": 4561250,
+    "end_ms": 4568712,
+    "duration_ms": 7462,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4569.272,
+    "text": "So we can keep going and taking a look at what are the major that we have.",
+    "start_ms": 4569272,
+    "end_ms": 4577072,
+    "duration_ms": 7800,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4577.072,
+    "text": "We have letters and sciences as most frequent CS, folks as the second most frequent, the ECS, the third one, and then you can find also your major, hopefully here if you go down the list.",
+    "start_ms": 4577072,
+    "end_ms": 4590232,
+    "duration_ms": 13160,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4590.968,
+    "text": "If you go ahead and visualize all of this thing, you see this pretty cool plot.",
+    "start_ms": 4590968,
+    "end_ms": 4595708,
+    "duration_ms": 4740,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4595.708,
+    "text": "We're gonna learn how we can plot all of these stuff.",
+    "start_ms": 4595708,
+    "end_ms": 4598968,
+    "duration_ms": 3260,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4598.968,
+    "text": "But take a look. I hover over it. It will show me that value and then it will show me the count.",
+    "start_ms": 4598968,
+    "end_ms": 4604468,
+    "duration_ms": 5500,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4604.468,
+    "text": "This is how we can plot the stuff in plotly.",
+    "start_ms": 4604468,
+    "end_ms": 4606968,
+    "duration_ms": 2500,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4606.968,
+    "text": "So we're gonna see more of these in the next few lectures.",
+    "start_ms": 4606968,
+    "end_ms": 4610468,
+    "duration_ms": 3500,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4610.468,
+    "text": "I'm gonna let you go through the stem on your own pace.",
+    "start_ms": 4610468,
+    "end_ms": 4613968,
+    "duration_ms": 3500,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4613.968,
+    "text": "Hey, is this last piece that goes ahead and takes a look at this?",
+    "start_ms": 4613968,
+    "end_ms": 4619328,
+    "duration_ms": 5360,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4619.832,
+    "text": "Transmitted by the Uncampus over the years. So I said to be fun.",
+    "start_ms": 4619832,
+    "end_ms": 4626832,
+    "duration_ms": 7000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4626.832,
+    "text": "I will see you back on Tuesday. Happy holiday weekend.",
+    "start_ms": 4626832,
+    "end_ms": 4631832,
+    "duration_ms": 5000,
+    "word_count": 10,
+    "avg_confidence": 90
+  }
+]

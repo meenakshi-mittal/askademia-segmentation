@@ -1,0 +1,6599 @@
+[
+  {
+    "timestamp": 6.168,
+    "text": "All right, good morning everyone. Welcome to lecture 13 I think.",
+    "start_ms": 6168,
+    "end_ms": 12232,
+    "duration_ms": 6064,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 12.728,
+    "text": "Alright, let's just double check my... Yeah, lecture 13, that's a good number.",
+    "start_ms": 12728,
+    "end_ms": 16728,
+    "duration_ms": 4000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 16.728,
+    "text": "Alright, welcome to lecture 13. Here's the slide, oh. Here's another QR code.",
+    "start_ms": 16728,
+    "end_ms": 23784,
+    "duration_ms": 7056,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 23.704,
+    "text": "We check these surveys so please do this if you haven't done so already.",
+    "start_ms": 23704,
+    "end_ms": 27144,
+    "duration_ms": 3440,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 27.144,
+    "text": "We're seeing okay turnout but more turnout will be better as we've discussed and sampling.",
+    "start_ms": 27144,
+    "end_ms": 32344,
+    "duration_ms": 5200,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 32.632,
+    "text": "Let's get out of the way. Take your picture. Alright.",
+    "start_ms": 32632,
+    "end_ms": 36264,
+    "duration_ms": 3632,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 38.936,
+    "text": "So to try to do a little bit of recap from lecture 12 because we did a ride linear algebra.",
+    "start_ms": 38936,
+    "end_ms": 45088,
+    "duration_ms": 6152,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 45.816,
+    "text": "And I'm not going to be confusing. we're going to believe on the linear algebra so it's important to understand what's going on.",
+    "start_ms": 45816,
+    "end_ms": 51576,
+    "duration_ms": 5760,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 52.728,
+    "text": "And then... Today, we will start. Gradient descent. One of the coolest, hottest algorithms of 2024.",
+    "start_ms": 52728,
+    "end_ms": 59868,
+    "duration_ms": 7140,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 59.868,
+    "text": "Billions of dollars are being spent on gradient descent. Every week, every month, I don't know.",
+    "start_ms": 59868,
+    "end_ms": 66152,
+    "duration_ms": 6284,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 66.84,
+    "text": "It's the thing that everyone's computing, so we're gonna let it take.",
+    "start_ms": 66840,
+    "end_ms": 69840,
+    "duration_ms": 3000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 70.456,
+    "text": "Hopefully. Alright, so... This is actually a goal from yesterday's today, so around Tuesday.",
+    "start_ms": 70456,
+    "end_ms": 76824,
+    "duration_ms": 6368,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 76.824,
+    "text": "We were going through the process of ordinary lease squares.",
+    "start_ms": 76824,
+    "end_ms": 80424,
+    "duration_ms": 3600,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 83.608,
+    "text": "professional audio settings will turn it off now. If there's issues on zoom, I guess, leave a note and hopefully we'll try to fix it.",
+    "start_ms": 83608,
+    "end_ms": 90368,
+    "duration_ms": 6760,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 90.368,
+    "text": "Okay, so we were going to ordinary lease squares, and we had this model we had set up last time.",
+    "start_ms": 90368,
+    "end_ms": 95429,
+    "duration_ms": 5061,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 95.429,
+    "text": "We're looking at multiple dimensions now, so we have data which is not just one column of data, but a couple columns.",
+    "start_ms": 95429,
+    "end_ms": 100648,
+    "duration_ms": 5219,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 102.136,
+    "text": "And this is if we said there were p columns.",
+    "start_ms": 102136,
+    "end_ms": 104136,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 104.568,
+    "text": "We'll talk more about our P's in a moment. And then our model was a constant theta zero plus all these extra theta coefficients for each of our features.",
+    "start_ms": 104568,
+    "end_ms": 113528,
+    "duration_ms": 8960,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 115.736,
+    "text": "And then we went into this. Long but important, uh, digression regression, I don't know, into linear algebra and we're going to use that some more today, so let's go through it once more.",
+    "start_ms": 115736,
+    "end_ms": 126104,
+    "duration_ms": 10368,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 126.584,
+    "text": "So we had our data matrix X. It's a matrix.",
+    "start_ms": 126584,
+    "end_ms": 129584,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 129.848,
+    "text": "It's also a data frame for us, but some matrix because now it's going to be all numbers in our matrix X or a data frame X.",
+    "start_ms": 129848,
+    "end_ms": 135848,
+    "duration_ms": 6000,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 135.928,
+    "text": "We call this our codeberry matrix. This is our features.",
+    "start_ms": 135928,
+    "end_ms": 138928,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 139.512,
+    "text": "Who's trying to print why? So in our label and our data we have this extra calm why those are things trying to predict.",
+    "start_ms": 139512,
+    "end_ms": 145208,
+    "duration_ms": 5696,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 145.848,
+    "text": "We were trying to predict star ratings. Income something. It's a quantitative continuous field, but we're trying to break it.",
+    "start_ms": 145848,
+    "end_ms": 153301,
+    "duration_ms": 7453,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 153.301,
+    "text": "So we're doing regression. We built this model up here, which we can now write using linear algebra.",
+    "start_ms": 153301,
+    "end_ms": 159704,
+    "duration_ms": 6403,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 160.184,
+    "text": "Right here. What is going on? X, that's my covariate matrix.",
+    "start_ms": 160184,
+    "end_ms": 164680,
+    "duration_ms": 4496,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 165.208,
+    "text": "Looks like this. By the way, I'm bad at linear algebra.",
+    "start_ms": 165208,
+    "end_ms": 168088,
+    "duration_ms": 2880,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 168.088,
+    "text": "I will make mistakes during lecture. To make my life easier I always draw rectangles.",
+    "start_ms": 168088,
+    "end_ms": 171885,
+    "duration_ms": 3797,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 171.885,
+    "text": "So if you're having trouble in your algebra draw some rectangles.",
+    "start_ms": 171885,
+    "end_ms": 174408,
+    "duration_ms": 2523,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 175.16,
+    "text": "So we got this rectangle. Scott N. Rose and Records of Data.",
+    "start_ms": 175160,
+    "end_ms": 179848,
+    "duration_ms": 4688,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 180.216,
+    "text": "People's one count. Why is there people's one count? You're the center step.",
+    "start_ms": 180216,
+    "end_ms": 185600,
+    "duration_ms": 5384,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 186.456,
+    "text": "And then we go one two did it up to P.",
+    "start_ms": 186456,
+    "end_ms": 189256,
+    "duration_ms": 2800,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 189.496,
+    "text": "coefficients. I'll show you in a second we added an extra ones here.",
+    "start_ms": 189496,
+    "end_ms": 195400,
+    "duration_ms": 5904,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 195.4,
+    "text": "I'm going to read him in this moment but let's just say we have our our matrix.",
+    "start_ms": 195400,
+    "end_ms": 199504,
+    "duration_ms": 4104,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 199.576,
+    "text": "People's one counts. Now we multiply that by this vector.",
+    "start_ms": 199576,
+    "end_ms": 205146,
+    "duration_ms": 5570,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 205.146,
+    "text": "It's a skinny vector. This length is 1. what? P.",
+    "start_ms": 205146,
+    "end_ms": 211040,
+    "duration_ms": 5894,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 211.672,
+    "text": "plus one. I'm gonna mess this up. Okay. What happens when I take this row here, maybe this row here, and I multiply by this is I'm going to take this row and multiply by that, that's going to give me this equation up here.",
+    "start_ms": 211672,
+    "end_ms": 224352,
+    "duration_ms": 12680,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 227.608,
+    "text": "So this is just a nice linear algebra shorthand this thing right here.",
+    "start_ms": 227608,
+    "end_ms": 231608,
+    "duration_ms": 4000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 231.864,
+    "text": "For this equation up here, this equation right here. Thank you.",
+    "start_ms": 231864,
+    "end_ms": 236512,
+    "duration_ms": 4648,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 236.76,
+    "text": "Okay. And again, this is my data. It's my data frame of my P plus one columns.",
+    "start_ms": 236760,
+    "end_ms": 242240,
+    "duration_ms": 5480,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 242.24,
+    "text": "And then my one extra column of things I'm trying to predict.",
+    "start_ms": 242240,
+    "end_ms": 244800,
+    "duration_ms": 2560,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 244.8,
+    "text": "And here's the linear algebra way to write my prediction.",
+    "start_ms": 244800,
+    "end_ms": 246960,
+    "duration_ms": 2160,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 248.088,
+    "text": "I call y hat my prediction, that's my guess, but what y is.",
+    "start_ms": 248088,
+    "end_ms": 251688,
+    "duration_ms": 3600,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 251.688,
+    "text": "I have y, but in the future I'm going to get another x, for which I don't have a y.",
+    "start_ms": 251688,
+    "end_ms": 255728,
+    "duration_ms": 4040,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 255.728,
+    "text": "I want to make guesses for it. This y will not necessarily be the same as this y.",
+    "start_ms": 255728,
+    "end_ms": 261256,
+    "duration_ms": 5528,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 261.72,
+    "text": "Because I'm making a prediction, I'm going along that line, right?",
+    "start_ms": 261720,
+    "end_ms": 264760,
+    "duration_ms": 3040,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 265.4,
+    "text": "My day may not be on that line. This is what I actually observe.",
+    "start_ms": 265400,
+    "end_ms": 268400,
+    "duration_ms": 3000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 268.664,
+    "text": "Okay, it's my response to my label. Sometimes written as clear this up once more as what I observe.",
+    "start_ms": 268664,
+    "end_ms": 274712,
+    "duration_ms": 6048,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 278.392,
+    "text": "Zerved make it past tense. Alright, so I set a minstruggle with these P's and P plus one so i'm gonna do something to make life easier for us on slides.",
+    "start_ms": 278392,
+    "end_ms": 287504,
+    "duration_ms": 9112,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 290.008,
+    "text": "I'm going to say that this state is zero. It's hard to keep track of, so I'm going to start with theta one, so I go from one to p, so I'm going to have just p columns, and if I wanted a theta zero, I'll just add an extra ones, column at the beginning here.",
+    "start_ms": 290008,
+    "end_ms": 309560,
+    "duration_ms": 19552,
+    "word_count": 56,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 309.55,
+    "text": "right? It's a cute trick. We did this in previous lectures.",
+    "start_ms": 309550,
+    "end_ms": 316848,
+    "duration_ms": 7298,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 316.848,
+    "text": "I'm going to use that throughout this lecture. So instead of having P plus whatever you're going to have just P.",
+    "start_ms": 316848,
+    "end_ms": 321848,
+    "duration_ms": 5000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 321.976,
+    "text": "So just pee. Just pee. And I can add my comms of ones to encode the intercept if I want it.",
+    "start_ms": 321976,
+    "end_ms": 328288,
+    "duration_ms": 6312,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 328.288,
+    "text": "And this is desire if I don't have to have an intercept I can say you know what I don't want this I'm just gonna start with my actual data.",
+    "start_ms": 328288,
+    "end_ms": 333528,
+    "duration_ms": 5240,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 334.008,
+    "text": "I can add an extra combo once. Smodeling Choice I make.",
+    "start_ms": 334008,
+    "end_ms": 338312,
+    "duration_ms": 4304,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 338.84,
+    "text": "Bye. Questions with the setup, questions about the setup for this model.",
+    "start_ms": 338840,
+    "end_ms": 343280,
+    "duration_ms": 4440,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 346.968,
+    "text": "Who's feeling I get it? Who's feeling like not responding?",
+    "start_ms": 346968,
+    "end_ms": 352264,
+    "duration_ms": 5296,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 352.664,
+    "text": "Very good. Okay. Uh... People aren't getting it or not responding and not voting.",
+    "start_ms": 352664,
+    "end_ms": 357576,
+    "duration_ms": 4912,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 358.072,
+    "text": "Awkward. Um Let's keep going. Okay, one more thing here.",
+    "start_ms": 358072,
+    "end_ms": 365256,
+    "duration_ms": 7184,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 366.68,
+    "text": "Those are set up. We chose a model and by the way this formula right here choose a model choose a loss optimize it and evaluate it.",
+    "start_ms": 366680,
+    "end_ms": 374600,
+    "duration_ms": 7920,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 375.288,
+    "text": "That is the formula, the process, for all the modeling you will do.",
+    "start_ms": 375288,
+    "end_ms": 379288,
+    "duration_ms": 4000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 379.768,
+    "text": "Even advanced neural networks follow this exact same four step recipe.",
+    "start_ms": 379768,
+    "end_ms": 383368,
+    "duration_ms": 3600,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 384.472,
+    "text": "Step 2. Let's choose a loss. This is measuring how good our predictions are.",
+    "start_ms": 384472,
+    "end_ms": 389832,
+    "duration_ms": 5360,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 390.36,
+    "text": "Roll the trow data. What's the loss we all love?",
+    "start_ms": 390360,
+    "end_ms": 394356,
+    "duration_ms": 3996,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 394.356,
+    "text": "The square loss? Why do we like it so much?",
+    "start_ms": 394356,
+    "end_ms": 396856,
+    "duration_ms": 2500,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 398.648,
+    "text": "Specially in difference. Square difference is nice. It's nice. And what does a square look like a parabola?",
+    "start_ms": 398648,
+    "end_ms": 404648,
+    "duration_ms": 6000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 404.648,
+    "text": "We'll talk more about why we like parabolas later. But this is a loss we use.",
+    "start_ms": 404648,
+    "end_ms": 408728,
+    "duration_ms": 4080,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 409.144,
+    "text": "Simple linear regression regression use square loss. We also sometimes call this least.",
+    "start_ms": 409144,
+    "end_ms": 414944,
+    "duration_ms": 5800,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 415.96,
+    "text": "Squares regression to minimize the square about F. Okay, so this was the error on all my data.",
+    "start_ms": 415960,
+    "end_ms": 427384,
+    "duration_ms": 11424,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 427.384,
+    "text": "I averaged it, so this is the mean squared error, the mean of the square of the errors.",
+    "start_ms": 427384,
+    "end_ms": 431544,
+    "duration_ms": 4160,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 432.536,
+    "text": "And then we did linear algebra again. We're at this.",
+    "start_ms": 432536,
+    "end_ms": 435488,
+    "duration_ms": 2952,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 436.632,
+    "text": "Why is that work? Okay, let's break it down. y minus y hat.",
+    "start_ms": 436632,
+    "end_ms": 442093,
+    "duration_ms": 5461,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 442.093,
+    "text": "That's just a difference between these two vectors. This one here.",
+    "start_ms": 442093,
+    "end_ms": 445760,
+    "duration_ms": 3667,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 447.768,
+    "text": "no shouting racer difference between this vector here. And this vector here.",
+    "start_ms": 447768,
+    "end_ms": 455176,
+    "duration_ms": 7408,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 455.672,
+    "text": "predictions. What's your insane two vectors? A vector. How big is that vector?",
+    "start_ms": 455672,
+    "end_ms": 462778,
+    "duration_ms": 7106,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 462.778,
+    "text": "What's the dimensions? Let's dimension of this resulting vector. We'll call it R.",
+    "start_ms": 462778,
+    "end_ms": 466836,
+    "duration_ms": 4058,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 471.128,
+    "text": "and Same dimensions as this. This is 1 by n.",
+    "start_ms": 471128,
+    "end_ms": 481104,
+    "duration_ms": 9976,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 480.812,
+    "text": "here. Says take the sum of the squares of the value.",
+    "start_ms": 480812,
+    "end_ms": 484612,
+    "duration_ms": 3800,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 484.612,
+    "text": "This is the Actually, since the, since take the square root.",
+    "start_ms": 484612,
+    "end_ms": 490136,
+    "duration_ms": 5524,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 490.552,
+    "text": "of the sum of the values. So, that like r1 squared plus r2 squared.",
+    "start_ms": 490552,
+    "end_ms": 496952,
+    "duration_ms": 6400,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 497.72,
+    "text": "This is the Euclidean norm. This right here is our...",
+    "start_ms": 497720,
+    "end_ms": 502824,
+    "duration_ms": 5104,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 502.712,
+    "text": "Standard! by Tha Green Theorem. We're generalized to many dimensions.",
+    "start_ms": 502712,
+    "end_ms": 508093,
+    "duration_ms": 5381,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 508.093,
+    "text": "How many dimensions is this? Interesting, right? So this vector here is an n-dimensional vector.",
+    "start_ms": 508093,
+    "end_ms": 518158,
+    "duration_ms": 10065,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 518.158,
+    "text": "This difference vector r There's tall and skinny like that.",
+    "start_ms": 518158,
+    "end_ms": 522184,
+    "duration_ms": 4026,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 523.96,
+    "text": "I'm going to take the sum of the squares of these things and I'll take the square root.",
+    "start_ms": 523960,
+    "end_ms": 528760,
+    "duration_ms": 4800,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 528.984,
+    "text": "And then guess what I'll do immediately scurry again. So what is that?",
+    "start_ms": 528984,
+    "end_ms": 532384,
+    "duration_ms": 3400,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 533.88,
+    "text": "The square of the square root is the thing. So this right here is the sum of the squares.",
+    "start_ms": 533880,
+    "end_ms": 539745,
+    "duration_ms": 5865,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 539.745,
+    "text": "Also known as that. with me so far. You got the model?",
+    "start_ms": 539745,
+    "end_ms": 548448,
+    "duration_ms": 8703,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 549.016,
+    "text": "Forget the loss. There's questions on zoom and I'm not good at zoom so if there are questions in zoom and I need to know it or people let me know I apologize, maybe ask the questions on Slido.",
+    "start_ms": 549016,
+    "end_ms": 562992,
+    "duration_ms": 13976,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 563.768,
+    "text": "Slido is a good place to check. Ask questions. Okay.",
+    "start_ms": 563768,
+    "end_ms": 567368,
+    "duration_ms": 3600,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 568.056,
+    "text": "So now we have our model. We have our loss.",
+    "start_ms": 568056,
+    "end_ms": 571976,
+    "duration_ms": 3920,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 571.768,
+    "text": "And then in last lecture we derive this amazing equation.",
+    "start_ms": 571768,
+    "end_ms": 575268,
+    "duration_ms": 3500,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 577.784,
+    "text": "I'm not going to do that again. go back and watch the last lecture for that derivation.",
+    "start_ms": 577784,
+    "end_ms": 581448,
+    "duration_ms": 3664,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 582.2,
+    "text": "But let's talk about this equation today. This is the normal equation.",
+    "start_ms": 582200,
+    "end_ms": 586600,
+    "duration_ms": 4400,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 587.064,
+    "text": "It's super cool. normal because it was about this geometric interpretation of something that was normal to the plane.",
+    "start_ms": 587064,
+    "end_ms": 593664,
+    "duration_ms": 6600,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 594.264,
+    "text": "Go see last lecture. What does this look like? I draw rectangles.",
+    "start_ms": 594264,
+    "end_ms": 602184,
+    "duration_ms": 7920,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 602.005,
+    "text": "let's walk over to my rectangles. Let's talk about X transpose X.",
+    "start_ms": 602005,
+    "end_ms": 606856,
+    "duration_ms": 4851,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 607.512,
+    "text": "Here's my data matrix, remember, done here's my data matrix.",
+    "start_ms": 607512,
+    "end_ms": 610152,
+    "duration_ms": 2640,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 610.488,
+    "text": "Here it is again, a little x. And I transpose it, was that mean?",
+    "start_ms": 610488,
+    "end_ms": 614488,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 614.776,
+    "text": "Flip it outside. That's this matrix right here. What happens when I take these two?",
+    "start_ms": 614776,
+    "end_ms": 622024,
+    "duration_ms": 7248,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 622.264,
+    "text": "matrices You too. You too. And I'm most quiet. I draw a tingle so I know that one side is going to look like that.",
+    "start_ms": 622264,
+    "end_ms": 633144,
+    "duration_ms": 10880,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 633.4,
+    "text": "One side's gonna look like that, so I gotta make tricks it looks like.",
+    "start_ms": 633400,
+    "end_ms": 636400,
+    "duration_ms": 3000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 636.76,
+    "text": "This is the end of the world. skinny. Right. So I'm done, I have just like...",
+    "start_ms": 636760,
+    "end_ms": 655656,
+    "duration_ms": 18896,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 655.288,
+    "text": "3x3 little matrix. But, captures everything I need to know about my exes.",
+    "start_ms": 655288,
+    "end_ms": 660604,
+    "duration_ms": 5316,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 661.464,
+    "text": "It's kinda cool, right? Okay. So get aside. Next, Transposed Why?",
+    "start_ms": 661464,
+    "end_ms": 669576,
+    "duration_ms": 8112,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 669.528,
+    "text": "Here's our date again, flipped on its side. Where the ones go.",
+    "start_ms": 669528,
+    "end_ms": 673864,
+    "duration_ms": 4336,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 673.864,
+    "text": "I had ones here. I had the ones where would they be?",
+    "start_ms": 673864,
+    "end_ms": 677944,
+    "duration_ms": 4080,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 680.248,
+    "text": "Right here in. There's no one's right. I'm going to multiply and have my other features here.",
+    "start_ms": 680248,
+    "end_ms": 688168,
+    "duration_ms": 7920,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 688.168,
+    "text": "I'm going to multiply these features times this Y. That's kind of weird.",
+    "start_ms": 688168,
+    "end_ms": 690648,
+    "duration_ms": 2480,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 691.128,
+    "text": "That's what's up, sir. I get this. P by one thing, so P by one.",
+    "start_ms": 691128,
+    "end_ms": 699336,
+    "duration_ms": 8208,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 699.8,
+    "text": "So get this other little thing here. Clean up a little bit.",
+    "start_ms": 699800,
+    "end_ms": 704256,
+    "duration_ms": 4456,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 705.848,
+    "text": "This... It's pretty cool, right? What is that? have a matrix, it's called m because m there you go.",
+    "start_ms": 705848,
+    "end_ms": 716400,
+    "duration_ms": 10552,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 716.4,
+    "text": "Maybe another matrix A. And I have this thing of data.",
+    "start_ms": 716400,
+    "end_ms": 721064,
+    "duration_ms": 4664,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 721.688,
+    "text": "He's a vector, but it's random variable. So I have sort of like...",
+    "start_ms": 721688,
+    "end_ms": 727240,
+    "duration_ms": 5552,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 726.616,
+    "text": "n times theta equals a. If this was just basic out what would you do you divide by M?",
+    "start_ms": 726616,
+    "end_ms": 733744,
+    "duration_ms": 7128,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 734.648,
+    "text": "Right by M and you go well. Veta equals a divided by m.",
+    "start_ms": 734648,
+    "end_ms": 739824,
+    "duration_ms": 5176,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 740.792,
+    "text": "Oh, it's waiting right here. We did the linear algebra version that which is we take the inverse of this matrix right here.",
+    "start_ms": 740792,
+    "end_ms": 747080,
+    "duration_ms": 6288,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 748.728,
+    "text": "And we solved for theta. So if you bought that this was...",
+    "start_ms": 748728,
+    "end_ms": 756008,
+    "duration_ms": 7280,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 756.216,
+    "text": "True. This was true. This is a hot, I mean this is our best estimate.",
+    "start_ms": 756216,
+    "end_ms": 762216,
+    "duration_ms": 6000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 762.456,
+    "text": "for the mean squared air. The nut would imply that this other crazy thing is true.",
+    "start_ms": 762456,
+    "end_ms": 770552,
+    "duration_ms": 8096,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 771.096,
+    "text": "The Theta hat is just this. So we now have to solve.",
+    "start_ms": 771096,
+    "end_ms": 780328,
+    "duration_ms": 9232,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 780.024,
+    "text": "The normal equation. To get a motto. This is our model.",
+    "start_ms": 780024,
+    "end_ms": 786184,
+    "duration_ms": 6160,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 786.68,
+    "text": "Amazing! Questions? This is fast, this is big stuff. This is a basic building block and a lot of things.",
+    "start_ms": 786680,
+    "end_ms": 799048,
+    "duration_ms": 12368,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 799.048,
+    "text": "So you can use this same piece of math here.",
+    "start_ms": 799048,
+    "end_ms": 801048,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 801.688,
+    "text": "To win the Netflix Challenge for a million dollars. Great question.",
+    "start_ms": 801688,
+    "end_ms": 811904,
+    "duration_ms": 10216,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 812.472,
+    "text": "Is this always true? Maybe there are conditions I need on this x?",
+    "start_ms": 812472,
+    "end_ms": 815672,
+    "duration_ms": 3200,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 816.248,
+    "text": "And that is the next set of slides so don't steal it for me.",
+    "start_ms": 816248,
+    "end_ms": 819048,
+    "duration_ms": 2800,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 819.384,
+    "text": "Before I do that, I want to talk about P and D.",
+    "start_ms": 819384,
+    "end_ms": 822184,
+    "duration_ms": 2800,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 823.352,
+    "text": "I look and fast I am a computer scientist. I do not know why people use pee.",
+    "start_ms": 823352,
+    "end_ms": 828328,
+    "duration_ms": 4976,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 828.824,
+    "text": "My step statistician friends refer to things as parameters so they use p, p dimensions.",
+    "start_ms": 828824,
+    "end_ms": 833824,
+    "duration_ms": 5000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 834.36,
+    "text": "I will say D-Dimensions occasionally forgive me. When you look at textbooks, they will alternate between P or D, depending on what field they come from.",
+    "start_ms": 834360,
+    "end_ms": 843944,
+    "duration_ms": 9584,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 844.824,
+    "text": "So p dimensions d dimensions p parameters d parameters. Good nutrition.",
+    "start_ms": 844824,
+    "end_ms": 851976,
+    "duration_ms": 7152,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 851.774,
+    "text": "to the earlier question, we're generally going to have situations where N is much bigger than.",
+    "start_ms": 851774,
+    "end_ms": 856480,
+    "duration_ms": 4706,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 858.712,
+    "text": "That's an important property which we'll come back to when we talk about does this actually work under what conditions can this be done.",
+    "start_ms": 858712,
+    "end_ms": 865212,
+    "duration_ms": 6500,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 868.472,
+    "text": "Alright, in fact it's right here. At least one solution exists to this problem.",
+    "start_ms": 868472,
+    "end_ms": 876956,
+    "duration_ms": 8484,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 878.392,
+    "text": "I want to jump ahead. I'll come back to the formality of it.",
+    "start_ms": 878392,
+    "end_ms": 882032,
+    "duration_ms": 3640,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 882.032,
+    "text": "Let's go back to this question of when I can solve this.",
+    "start_ms": 882032,
+    "end_ms": 885392,
+    "duration_ms": 3360,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 885.528,
+    "text": "And we'll start the simpler question of when is this unique?",
+    "start_ms": 885528,
+    "end_ms": 888928,
+    "duration_ms": 3400,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 890.648,
+    "text": "What does it mean to be unique? Let's talk about that.",
+    "start_ms": 890648,
+    "end_ms": 892648,
+    "duration_ms": 2000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 893.144,
+    "text": "We had this really simple model while ago. We said, what's a good estimate for why if I just had to pick one number?",
+    "start_ms": 893144,
+    "end_ms": 900144,
+    "duration_ms": 7000,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 900.824,
+    "text": "I don't care what the features are. The income is $0.00 for all people.",
+    "start_ms": 900824,
+    "end_ms": 905116,
+    "duration_ms": 4292,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 908.088,
+    "text": "If I choose the mean square to get lost. The mean is that number.",
+    "start_ms": 908088,
+    "end_ms": 911659,
+    "duration_ms": 3571,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 911.659,
+    "text": "So just take a mean of your your wise and say that say to zero.",
+    "start_ms": 911659,
+    "end_ms": 915424,
+    "duration_ms": 3765,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 915.896,
+    "text": "Call the day. This is always gonna work and it's always unique.",
+    "start_ms": 915896,
+    "end_ms": 920880,
+    "duration_ms": 4984,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 922.84,
+    "text": "That's nice. Ode Mirian Constantine again. Mean absolute air. So what do you mean up to there for this model?",
+    "start_ms": 922840,
+    "end_ms": 933960,
+    "duration_ms": 11120,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 934.2,
+    "text": "Now the answer is the median. If I have odd data, the media is all defined.",
+    "start_ms": 934200,
+    "end_ms": 939408,
+    "duration_ms": 5208,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 939.928,
+    "text": "Nick. I've even dared out to fix it. That's not quite unique.",
+    "start_ms": 939928,
+    "end_ms": 943656,
+    "duration_ms": 3728,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 943.896,
+    "text": "I can make unique by always returning the middle the average of the two.",
+    "start_ms": 943896,
+    "end_ms": 946936,
+    "duration_ms": 3040,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 950.2,
+    "text": "Simple and Ear Model here. So the baby version of what we've been doing, little constant term.",
+    "start_ms": 950200,
+    "end_ms": 955932,
+    "duration_ms": 5732,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 956.376,
+    "text": "One-slope term means crit error. We derived theta zero as this.",
+    "start_ms": 956376,
+    "end_ms": 960808,
+    "duration_ms": 4432,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 963.032,
+    "text": "We can always compute that as zero. Why can we do that?",
+    "start_ms": 963032,
+    "end_ms": 965810,
+    "duration_ms": 2778,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 965.81,
+    "text": "Because y bar the mean of y. Good to go.",
+    "start_ms": 965810,
+    "end_ms": 968960,
+    "duration_ms": 3150,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 969.368,
+    "text": "x part of the mean of x. Good to go.",
+    "start_ms": 969368,
+    "end_ms": 973960,
+    "duration_ms": 4592,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 974.008,
+    "text": "Oh, well, hold on. We got data one. It's a bit of an issue here.",
+    "start_ms": 974008,
+    "end_ms": 977008,
+    "duration_ms": 3000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 977.008,
+    "text": "Let's talk about data one. Data 1 is R. Time something here.",
+    "start_ms": 977008,
+    "end_ms": 984040,
+    "duration_ms": 7032,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 984.021,
+    "text": "this maybe closes into a problem. If there's no variability in X, what is this?",
+    "start_ms": 984021,
+    "end_ms": 988892,
+    "duration_ms": 4871,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 990.264,
+    "text": "This is the end of the video. What's the thing do I buy zero?",
+    "start_ms": 990264,
+    "end_ms": 994696,
+    "duration_ms": 4432,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 996.12,
+    "text": "It's not a number, you know. Undefined. So act, we need very very much for this to be unique.",
+    "start_ms": 996120,
+    "end_ms": 1003560,
+    "duration_ms": 7440,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1005.72,
+    "text": "Right, for this three define. Zammida, I can't. Compute of a line.",
+    "start_ms": 1005720,
+    "end_ms": 1012808,
+    "duration_ms": 7088,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1016.44,
+    "text": "What does this look like if I have no very billion X?",
+    "start_ms": 1016440,
+    "end_ms": 1018440,
+    "duration_ms": 2000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1019.576,
+    "text": "What are you doing? Let's draw some data. My little axis is my y, here's my x.",
+    "start_ms": 1019576,
+    "end_ms": 1027792,
+    "duration_ms": 8216,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1028.312,
+    "text": "No very really next good look like Good that was the line.",
+    "start_ms": 1028312,
+    "end_ms": 1034024,
+    "duration_ms": 5712,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1034.392,
+    "text": "Well, okay, the line that goes up and down, we can't do that line still in finity, not define sorry, but you know what this line's pretty good.",
+    "start_ms": 1034392,
+    "end_ms": 1041392,
+    "duration_ms": 7000,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1042.008,
+    "text": "Airlines. Just if I try to write it like this, I cannot.",
+    "start_ms": 1042008,
+    "end_ms": 1047144,
+    "duration_ms": 5136,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1049.944,
+    "text": "So there's a A solution, I can pick many solutions.",
+    "start_ms": 1049944,
+    "end_ms": 1052994,
+    "duration_ms": 3050,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1052.994,
+    "text": "Remember I'm finding the best solution. The best solution for me in square N is the line that goes like this.",
+    "start_ms": 1052994,
+    "end_ms": 1057690,
+    "duration_ms": 4696,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1057.69,
+    "text": "That I can't. Can't define using this notation. Now what do you think?",
+    "start_ms": 1057690,
+    "end_ms": 1069544,
+    "duration_ms": 11854,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1069.464,
+    "text": "Nick to what conditions might make this all work out.",
+    "start_ms": 1069464,
+    "end_ms": 1073288,
+    "duration_ms": 3824,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1076.856,
+    "text": "Who thinks they know the answer to this? Who's taken the newspaper classes before?",
+    "start_ms": 1076856,
+    "end_ms": 1083560,
+    "duration_ms": 6704,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1084.152,
+    "text": "correlated okay good Good. Let's talk about it. You guys see this.",
+    "start_ms": 1084152,
+    "end_ms": 1091400,
+    "duration_ms": 7248,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1092.216,
+    "text": "I've wrote over the negative one. You see this? What is this need what are we thinking when we see the inverse of matrix we have some problems right.",
+    "start_ms": 1092216,
+    "end_ms": 1101248,
+    "duration_ms": 9032,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1101.88,
+    "text": "Talk about it. This is unique. We can find the answer to this.",
+    "start_ms": 1101880,
+    "end_ms": 1106031,
+    "duration_ms": 4151,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1106.031,
+    "text": "You can solve this thing here. You can solve the system of equations.",
+    "start_ms": 1106031,
+    "end_ms": 1109140,
+    "duration_ms": 3109,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1109.624,
+    "text": "If our covert matrix is full column rank. I believe in the fact to try to approve.",
+    "start_ms": 1109624,
+    "end_ms": 1118248,
+    "duration_ms": 8624,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1120.792,
+    "text": "Let's talk about that for a second. There may be many solutions if it's not full com rink so there's always a valid value for this but whether it truly minimizes a thing and it is the unique one that minimizes it.",
+    "start_ms": 1120792,
+    "end_ms": 1132704,
+    "duration_ms": 11912,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1134.2,
+    "text": "Depends on the conditions on X. So we can have multiple good lines potentially.",
+    "start_ms": 1134200,
+    "end_ms": 1138952,
+    "duration_ms": 4752,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1139.928,
+    "text": "So let's talk about those conditions. So here's an informal.",
+    "start_ms": 1139928,
+    "end_ms": 1144168,
+    "duration_ms": 4240,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1144.6,
+    "text": "Sketch of a Proof. The U.E. square is estimate, theta hat that we've been defining is unique if and only if.",
+    "start_ms": 1144600,
+    "end_ms": 1153064,
+    "duration_ms": 8464,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1153.464,
+    "text": "X is full column rake. Proofscaps, here we go. So we need to solve the system of equations.",
+    "start_ms": 1153464,
+    "end_ms": 1162232,
+    "duration_ms": 8768,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1162.232,
+    "text": "Remember this is essentially M times. If you like pure old algebra textbook, I can't do that.",
+    "start_ms": 1162232,
+    "end_ms": 1166823,
+    "duration_ms": 4591,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1166.823,
+    "text": "Okay. They double. You say this are variable equals a.",
+    "start_ms": 1166823,
+    "end_ms": 1169440,
+    "duration_ms": 2617,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1169.784,
+    "text": "It's a system of linear equations and we can solve that.",
+    "start_ms": 1169784,
+    "end_ms": 1172784,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1173.4,
+    "text": "We can invert. X-Trend for X. And it's invertible. If an only if, X-Rex is for RANK.",
+    "start_ms": 1173400,
+    "end_ms": 1183816,
+    "duration_ms": 10416,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1186.68,
+    "text": "The RANK of Number of linearly independent columns, the rank of it is the Literally independent columns of that matrix.",
+    "start_ms": 1186680,
+    "end_ms": 1196591,
+    "duration_ms": 9911,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1197.944,
+    "text": "The matrix x transpose x. Okay, and this actually applies to X as well.",
+    "start_ms": 1197944,
+    "end_ms": 1204872,
+    "duration_ms": 6928,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1204.872,
+    "text": "So we need X to have P for rank. So let's draw that picture real quickly.",
+    "start_ms": 1204872,
+    "end_ms": 1209512,
+    "duration_ms": 4640,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1209.512,
+    "text": "I draw my rectangles. There's Max Matrix. need this to be full-ranked.",
+    "start_ms": 1209512,
+    "end_ms": 1214200,
+    "duration_ms": 4688,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1214.2,
+    "text": "I need all these columns to be linearly independent. Okay.",
+    "start_ms": 1214200,
+    "end_ms": 1219564,
+    "duration_ms": 5364,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1220.472,
+    "text": "Can you think yourself one might this not be true?",
+    "start_ms": 1220472,
+    "end_ms": 1222472,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1225.848,
+    "text": "In practice when you get real data and there's noise and stuff and your matrix looks nice and tall in the skin like this generally gonna be true.",
+    "start_ms": 1225848,
+    "end_ms": 1231848,
+    "duration_ms": 6000,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1232.472,
+    "text": "It's good news, the TV reiki. I'm trying to give you a true.",
+    "start_ms": 1232472,
+    "end_ms": 1236840,
+    "duration_ms": 4368,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1236.84,
+    "text": "But you're gonna do feature engineering and do things that add extra columns.",
+    "start_ms": 1236840,
+    "end_ms": 1240240,
+    "duration_ms": 3400,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1240.696,
+    "text": "Sometimes those columns might be functions of existing columns. That could be a problem.",
+    "start_ms": 1240696,
+    "end_ms": 1246300,
+    "duration_ms": 5604,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1246.3,
+    "text": "If you say, you know what, I think I'm going to take this calm here and multiply it by 10.",
+    "start_ms": 1246300,
+    "end_ms": 1251360,
+    "duration_ms": 5060,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1251.736,
+    "text": "and out a new column that's ten tons at column.",
+    "start_ms": 1251736,
+    "end_ms": 1253736,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1255.256,
+    "text": "Good feature. Ex-laterally a function of this other column. Now we broke this rule.",
+    "start_ms": 1255256,
+    "end_ms": 1260664,
+    "duration_ms": 5408,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1264.6,
+    "text": "Alright, so when is not unique? Oh, I gave it away.",
+    "start_ms": 1264600,
+    "end_ms": 1266240,
+    "duration_ms": 1640,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1266.24,
+    "text": "Plumber. Okay, well here's another reason why you might have a problem.",
+    "start_ms": 1266240,
+    "end_ms": 1268920,
+    "duration_ms": 2680,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1269.336,
+    "text": "What your day looks like this fat matrices where you have p.",
+    "start_ms": 1269336,
+    "end_ms": 1272876,
+    "duration_ms": 3540,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1273.144,
+    "text": "is way bigger than it. You're saying I want to fit some data to this thing where I have very little data and lots of features.",
+    "start_ms": 1273144,
+    "end_ms": 1281472,
+    "duration_ms": 8328,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1282.424,
+    "text": "There's many ways you could fit that data. Undo Determined What does this happen in life?",
+    "start_ms": 1282424,
+    "end_ms": 1290664,
+    "duration_ms": 8240,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1292.536,
+    "text": "Why don't you see this situation? I just get this all the time.",
+    "start_ms": 1292536,
+    "end_ms": 1298931,
+    "duration_ms": 6395,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1298.931,
+    "text": "They have like pen rats and they have all this DNA information.",
+    "start_ms": 1298931,
+    "end_ms": 1302216,
+    "duration_ms": 3285,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1303.128,
+    "text": "All these like factors that they measure in their 10 rats.",
+    "start_ms": 1303128,
+    "end_ms": 1305928,
+    "duration_ms": 2800,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1306.936,
+    "text": "They got a problem. Stay tuned, we have a solution for this too.",
+    "start_ms": 1306936,
+    "end_ms": 1310287,
+    "duration_ms": 3351,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1310.287,
+    "text": "We can resolve the situation. Alright, so that's one way this happens.",
+    "start_ms": 1310287,
+    "end_ms": 1315120,
+    "duration_ms": 4833,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1315.12,
+    "text": "Computer vision, you have a few images, each image, there's many, many, many pixels.",
+    "start_ms": 1315120,
+    "end_ms": 1319220,
+    "duration_ms": 4100,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1319.22,
+    "text": "Alright, how do I fit models to that? But typically...",
+    "start_ms": 1319220,
+    "end_ms": 1323712,
+    "duration_ms": 4492,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1324.216,
+    "text": "In this class we're going to have an much bigger than P.",
+    "start_ms": 1324216,
+    "end_ms": 1326216,
+    "duration_ms": 2000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1326.216,
+    "text": "So that's not usually a problem. The more likely problem is you invent new columns.",
+    "start_ms": 1326216,
+    "end_ms": 1331344,
+    "duration_ms": 5128,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1331.96,
+    "text": "In the next lecture we'll talk about how inventing columns can be useful.",
+    "start_ms": 1331960,
+    "end_ms": 1335260,
+    "duration_ms": 3300,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1335.64,
+    "text": "Adding columns that are not linear combinations of your existing columns is a good way to improve your model.",
+    "start_ms": 1335640,
+    "end_ms": 1340940,
+    "duration_ms": 5300,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1342.68,
+    "text": "But I didn't come to really hear combinations. Ensures that X is no longer for ink.",
+    "start_ms": 1342680,
+    "end_ms": 1347720,
+    "duration_ms": 5040,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1352.376,
+    "text": "Alright, so that's the formal mathematics. We will solve these problems.",
+    "start_ms": 1352376,
+    "end_ms": 1356776,
+    "duration_ms": 4400,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1357.432,
+    "text": "by using regularization which you'll hear about later and the numeric tools that we use today will actually ultimately pick just one of these potentially good solutions.",
+    "start_ms": 1357432,
+    "end_ms": 1367432,
+    "duration_ms": 10000,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1367.348,
+    "text": "some catastrophic. Would you need to understand the underlying mathematics?",
+    "start_ms": 1367348,
+    "end_ms": 1370408,
+    "duration_ms": 3060,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1372.12,
+    "text": "All right, questions up to this point. Warming by... Okay.",
+    "start_ms": 1372120,
+    "end_ms": 1378304,
+    "duration_ms": 6184,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1378.304,
+    "text": "Our Slido questions like you. A lot. That's good. We'll call it good not a whole lot.",
+    "start_ms": 1378304,
+    "end_ms": 1385160,
+    "duration_ms": 6856,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1386.16,
+    "text": "All right, great. So now we're going to do a demo.",
+    "start_ms": 1386160,
+    "end_ms": 1388160,
+    "duration_ms": 2000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1388.44,
+    "text": "And today we're going to be predicting the Bill length of a penguin.",
+    "start_ms": 1388440,
+    "end_ms": 1391740,
+    "duration_ms": 3300,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1394.232,
+    "text": "Nope, the build depth, this is an exciting number. The build depth of the penguin I assume based on its body mass.",
+    "start_ms": 1394232,
+    "end_ms": 1400232,
+    "duration_ms": 6000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1400.232,
+    "text": "And the flipper length. I know I'm either related but let's do some modeling and I will actually work through using the normal equations in code.",
+    "start_ms": 1400232,
+    "end_ms": 1407648,
+    "duration_ms": 7416,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1408.024,
+    "text": "Okay, do that look quickly or are you behind? Bye.",
+    "start_ms": 1408024,
+    "end_ms": 1410524,
+    "duration_ms": 2500,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1410.904,
+    "text": "That's true. Okay. Here we go. So I'm going to pull in one of these kind of toy datasets and C-born penguin data.",
+    "start_ms": 1410904,
+    "end_ms": 1421176,
+    "duration_ms": 10272,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1421.496,
+    "text": "We're seeing Ely Penguins. I'm dropping all the things that missing values should be worried about it but for the eggs purposes who cares.",
+    "start_ms": 1421496,
+    "end_ms": 1429650,
+    "duration_ms": 8154,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1429.65,
+    "text": "So we're going to just focus on a subset of these sequence.",
+    "start_ms": 1429650,
+    "end_ms": 1434232,
+    "duration_ms": 4582,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1434.296,
+    "text": "And let's do some analysis. Alright, so I'm going to look at just these columns.",
+    "start_ms": 1434296,
+    "end_ms": 1440834,
+    "duration_ms": 6538,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1440.834,
+    "text": "This is my data matrix. And this is my why I'm trying to predict Bill Depth and these are going to be my ex columns right here flipper length and body mass That's my day of ring.",
+    "start_ms": 1440834,
+    "end_ms": 1453064,
+    "duration_ms": 12230,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1452.92,
+    "text": "Here's my model. I decide that an intercept term. So I want an intercept plus data one times.",
+    "start_ms": 1452920,
+    "end_ms": 1460504,
+    "duration_ms": 7584,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1460.952,
+    "text": "Flip or length? then theta two times body mass. Okay, how many dimensions is this model?",
+    "start_ms": 1460952,
+    "end_ms": 1468424,
+    "duration_ms": 7472,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1468.632,
+    "text": "What is P for my covert matrix? Correct! It is...",
+    "start_ms": 1468632,
+    "end_ms": 1475592,
+    "duration_ms": 6960,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1476.024,
+    "text": "3 How many parameters are in this model? One. you I'm sorry.",
+    "start_ms": 1476024,
+    "end_ms": 1487692,
+    "duration_ms": 11668,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1491.128,
+    "text": "So math that we've dried on slides, we won't do that.",
+    "start_ms": 1491128,
+    "end_ms": 1493128,
+    "duration_ms": 2000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1493.528,
+    "text": "Let's make our matrices. So I'm going to take this kind of cool.",
+    "start_ms": 1493528,
+    "end_ms": 1496528,
+    "duration_ms": 3000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1496.528,
+    "text": "I'm going to take the the two columns to flip the length in the body mass make that x I'm gonna hide a bias term.",
+    "start_ms": 1496528,
+    "end_ms": 1504072,
+    "duration_ms": 7544,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1503.896,
+    "text": "So, PX, here's my matrix. 3 colors, 1, 2, 3 and...",
+    "start_ms": 1503896,
+    "end_ms": 1509736,
+    "duration_ms": 5840,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1509.912,
+    "text": "I've made theta 3, or I guess theta 2 if you count from 0, the ones.",
+    "start_ms": 1509912,
+    "end_ms": 1514392,
+    "duration_ms": 4480,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1514.392,
+    "text": "It doesn't matter where I put this I could put over here.",
+    "start_ms": 1514392,
+    "end_ms": 1516992,
+    "duration_ms": 2600,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1516.992,
+    "text": "One of my terms is going to be multiplied by 1, so I'm going to have this extra theta that's just a constant.",
+    "start_ms": 1516992,
+    "end_ms": 1523232,
+    "duration_ms": 6240,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1525.688,
+    "text": "Build up. It's my wise, other column matrix or series in this case.",
+    "start_ms": 1525688,
+    "end_ms": 1529688,
+    "duration_ms": 4000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1530.552,
+    "text": "And look how easy it is to do this math in Python.",
+    "start_ms": 1530552,
+    "end_ms": 1533552,
+    "duration_ms": 3000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1534.552,
+    "text": "So I say, this is matrix inverse. This is Matrix Multiply.",
+    "start_ms": 1534552,
+    "end_ms": 1539432,
+    "duration_ms": 4880,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1539.352,
+    "text": "This is x transpose. So I do x transpose. Time's X.",
+    "start_ms": 1539352,
+    "end_ms": 1544296,
+    "duration_ms": 4944,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1544.12,
+    "text": "Inverse, Dup. right there Times X transpose times Y. Solved the system playing equations.",
+    "start_ms": 1544120,
+    "end_ms": 1558440,
+    "duration_ms": 14320,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1558.424,
+    "text": "Be out to the Smodel. Easy. If you just copy the equation very good.",
+    "start_ms": 1558424,
+    "end_ms": 1564840,
+    "duration_ms": 6416,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1565.752,
+    "text": "You shouldn't do this. Okay, so I just did a matrix inverse and then I multiply.",
+    "start_ms": 1565752,
+    "end_ms": 1571800,
+    "duration_ms": 6048,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1571.768,
+    "text": "which is jargon for saying solve a system linear equations.",
+    "start_ms": 1571768,
+    "end_ms": 1575768,
+    "duration_ms": 4000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1575.832,
+    "text": "I could just ask the only algebra library to solve the system of equations.",
+    "start_ms": 1575832,
+    "end_ms": 1579032,
+    "duration_ms": 3200,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1579.032,
+    "text": "But this is my matrix M, and here's the thing I'm trying to solve equal to the column vector 8.",
+    "start_ms": 1579032,
+    "end_ms": 1585832,
+    "duration_ms": 6800,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1586.808,
+    "text": "Why would I want to do this? Computer science has thought long and hard about how to make this more efficient.",
+    "start_ms": 1586808,
+    "end_ms": 1591856,
+    "duration_ms": 5048,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1592.12,
+    "text": "than this. Because they end up solving one of these and then doing a multiply up here when they could just solve directly.",
+    "start_ms": 1592120,
+    "end_ms": 1597368,
+    "duration_ms": 5248,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1598.104,
+    "text": "So if you want something a little bit more stable, but doesn't look exactly like the equations here, this does the same thing.",
+    "start_ms": 1598104,
+    "end_ms": 1603604,
+    "duration_ms": 5500,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1604.792,
+    "text": "Can we just say that's it? Which one should you use?",
+    "start_ms": 1604792,
+    "end_ms": 1609608,
+    "duration_ms": 4816,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1611.128,
+    "text": "Turns out neither. In today's lecture I'll tell you another way to solve these things using software packages which are just more robust in general.",
+    "start_ms": 1611128,
+    "end_ms": 1617128,
+    "duration_ms": 6000,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1617.336,
+    "text": "What is important you understand the underlying with your algebra.",
+    "start_ms": 1617336,
+    "end_ms": 1619976,
+    "duration_ms": 2640,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1621.336,
+    "text": "So how do you make predictions? We've got this theta using normal equations, so my little comb vector of theta's.",
+    "start_ms": 1621336,
+    "end_ms": 1628536,
+    "duration_ms": 7200,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1629.08,
+    "text": "3 by 1 for my 3 dimensions 3 parameters. I can predict the x value for all the penguins in my data.",
+    "start_ms": 1629080,
+    "end_ms": 1638008,
+    "duration_ms": 8928,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1638.264,
+    "text": "I just multiply x. Times data. How easy is that?",
+    "start_ms": 1638264,
+    "end_ms": 1644800,
+    "duration_ms": 6536,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1645.528,
+    "text": "and I went and stored it in the build depth.",
+    "start_ms": 1645528,
+    "end_ms": 1647928,
+    "duration_ms": 2400,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1648.536,
+    "text": "Predicted Bill Death, MM. Also, there's why hat. Well, let's see how we did.",
+    "start_ms": 1648536,
+    "end_ms": 1654952,
+    "duration_ms": 6416,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1654.837,
+    "text": "our prediction. This will be measured. Prediction Measure Pretty good, huh?",
+    "start_ms": 1654837,
+    "end_ms": 1660160,
+    "duration_ms": 5323,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1661.4,
+    "text": "How would we measure if it's any good? I really get lost, right?",
+    "start_ms": 1661400,
+    "end_ms": 1667816,
+    "duration_ms": 6416,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1667.798,
+    "text": "but I don't have time. We're behind. Okay. Let's make sure it's size.",
+    "start_ms": 1667798,
+    "end_ms": 1672552,
+    "duration_ms": 4754,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1672.512,
+    "text": "this mean, the root mean square d r of this with this.",
+    "start_ms": 1672512,
+    "end_ms": 1678920,
+    "duration_ms": 6408,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1679.064,
+    "text": "Okay, good to you in Python. One line. Turn to slides.",
+    "start_ms": 1679064,
+    "end_ms": 1683232,
+    "duration_ms": 4168,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1685.88,
+    "text": "Alright, and now we're ready to start today's lecture. 30 plus minutes behind schedule.",
+    "start_ms": 1685880,
+    "end_ms": 1691048,
+    "duration_ms": 5168,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1692.888,
+    "text": "Today we're going to talk about scikit-learn and gradient descent.",
+    "start_ms": 1692888,
+    "end_ms": 1694888,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1695.608,
+    "text": "Who's hurt of psychic learn? Awesome! Why? How do you know?",
+    "start_ms": 1695608,
+    "end_ms": 1700185,
+    "duration_ms": 4577,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1700.185,
+    "text": "Okay, could you say that I'm really in the sun?",
+    "start_ms": 1700185,
+    "end_ms": 1701852,
+    "duration_ms": 1667,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1702.648,
+    "text": "Even more awesome! back to the end of the set.",
+    "start_ms": 1702648,
+    "end_ms": 1705754,
+    "duration_ms": 3106,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1705.754,
+    "text": "It's the hottest new thing, as I said. Psychic Learn is the package we'll actually use for most remodeling in this class and probably in your early careers as data scientist you will use this package a lot.",
+    "start_ms": 1705754,
+    "end_ms": 1717608,
+    "duration_ms": 11854,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1717.608,
+    "text": "So we'll talk about how to use it. To fit linear models.",
+    "start_ms": 1717608,
+    "end_ms": 1721096,
+    "duration_ms": 3488,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1720.984,
+    "text": "And then we'll talk about the mathematics behind it with gradient descent.",
+    "start_ms": 1720984,
+    "end_ms": 1723984,
+    "duration_ms": 3000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1726.264,
+    "text": "Man that was a long walk to get to here.",
+    "start_ms": 1726264,
+    "end_ms": 1728264,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1728.264,
+    "text": "So we did all that work in geometry and now we're going to use algorithms.",
+    "start_ms": 1728264,
+    "end_ms": 1731264,
+    "duration_ms": 3000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1732.44,
+    "text": "So, psych you learn? Is the package you've already heard of many of you?",
+    "start_ms": 1732440,
+    "end_ms": 1739484,
+    "duration_ms": 7044,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1740.6,
+    "text": "It's a library for creating and training models. Who's heard these other packages?",
+    "start_ms": 1740600,
+    "end_ms": 1746120,
+    "duration_ms": 5520,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1745.976,
+    "text": "actually worst Interesting. Get us the package for decision trees we won't cover in the spa.",
+    "start_ms": 1745976,
+    "end_ms": 1750856,
+    "duration_ms": 4880,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1750.856,
+    "text": "PyTorch! Another great machine learning library for AI for neural networks.",
+    "start_ms": 1750856,
+    "end_ms": 1756120,
+    "duration_ms": 5264,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1756.888,
+    "text": "Tens or flow? Very cool. This is a Google package again, not in this class.",
+    "start_ms": 1756888,
+    "end_ms": 1760968,
+    "duration_ms": 4080,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1761.24,
+    "text": "And that was this last one. Higging face. Which is in a movie.",
+    "start_ms": 1761240,
+    "end_ms": 1767368,
+    "duration_ms": 6128,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1766.936,
+    "text": "Also for AI. So all of these packages here. our adiscope for this class.",
+    "start_ms": 1766936,
+    "end_ms": 1773504,
+    "duration_ms": 6568,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1773.504,
+    "text": "Very much in scope for your life. They're AI packages.",
+    "start_ms": 1773504,
+    "end_ms": 1776704,
+    "duration_ms": 3200,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1776.704,
+    "text": "The cool thing is, actually this one too. The cool thing is they all decided that they'd probably like to be kind of like scikit-learn.",
+    "start_ms": 1776704,
+    "end_ms": 1782704,
+    "duration_ms": 6000,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1782.704,
+    "text": "So they have a lot of the same functionalities, same interfaces.",
+    "start_ms": 1782704,
+    "end_ms": 1785004,
+    "duration_ms": 2300,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1785.004,
+    "text": "So we teach you scikit-learn, which does the basics. I use it in my research all the time to analyze my data.",
+    "start_ms": 1785004,
+    "end_ms": 1792000,
+    "duration_ms": 6996,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1792.44,
+    "text": "Alright, and hopefully in knowing this you'll learn a little about these things too.",
+    "start_ms": 1792440,
+    "end_ms": 1795440,
+    "duration_ms": 3000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1797.176,
+    "text": "At the end of today's lecture I have some links on tutorials with an hour of your time you can become a pseudo expert on this as well.",
+    "start_ms": 1797176,
+    "end_ms": 1803816,
+    "duration_ms": 6640,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1803.992,
+    "text": "So after this class you'll learn more you can do that.",
+    "start_ms": 1803992,
+    "end_ms": 1806792,
+    "duration_ms": 2800,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1807.288,
+    "text": "On your... Alright, so here's the recipe for Cyclet Learn.",
+    "start_ms": 1807288,
+    "end_ms": 1811528,
+    "duration_ms": 4240,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1812.376,
+    "text": "It is this easy and that is a problem. So step one.",
+    "start_ms": 1812376,
+    "end_ms": 1815376,
+    "duration_ms": 3000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1815.832,
+    "text": "Pick your model. So, these linear models when you're regression.",
+    "start_ms": 1815832,
+    "end_ms": 1819880,
+    "duration_ms": 4048,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1821.368,
+    "text": "That creates an instance of a model. In secular. A model really?",
+    "start_ms": 1821368,
+    "end_ms": 1827912,
+    "duration_ms": 6544,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1827.512,
+    "text": "Thank you. This kind of really equal to our model.",
+    "start_ms": 1827512,
+    "end_ms": 1831260,
+    "duration_ms": 3748,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1833.08,
+    "text": "Bless the loss. So most of the models have a built in loss.",
+    "start_ms": 1833080,
+    "end_ms": 1837603,
+    "duration_ms": 4523,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1837.603,
+    "text": "So I choose linear regression. That's the linear model. with the least squares lost.",
+    "start_ms": 1837603,
+    "end_ms": 1841496,
+    "duration_ms": 3893,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1843.992,
+    "text": "So now I have a model with the loss. Step 3 in our our system.",
+    "start_ms": 1843992,
+    "end_ms": 1849000,
+    "duration_ms": 5008,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1849.752,
+    "text": "Fit it to the data. in my model.fit Here's my X, the covariates, and here's the thing I want you to predict.",
+    "start_ms": 1849752,
+    "end_ms": 1857784,
+    "duration_ms": 8032,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1859.128,
+    "text": "Side of the kit learn is like, check. It then does all the optimization for you.",
+    "start_ms": 1859128,
+    "end_ms": 1863272,
+    "duration_ms": 4144,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1864.728,
+    "text": "And this is one of the maybe 15 models it supports.",
+    "start_ms": 1864728,
+    "end_ms": 1868328,
+    "duration_ms": 3600,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1869.144,
+    "text": "So just change your model. Run the same code. Another Prediction, Another Model How do you make a prediction?",
+    "start_ms": 1869144,
+    "end_ms": 1876154,
+    "duration_ms": 7010,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1876.154,
+    "text": "I just fit my model. Inside of this object are all the thaters.",
+    "start_ms": 1876154,
+    "end_ms": 1880752,
+    "duration_ms": 4598,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1881.624,
+    "text": "By the way, in the description, I say... My mother.",
+    "start_ms": 1881624,
+    "end_ms": 1886208,
+    "duration_ms": 4584,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1886.328,
+    "text": "Once it's fit, it uses all these data on some new data, which could be my original data, to make predictions.",
+    "start_ms": 1886328,
+    "end_ms": 1892328,
+    "duration_ms": 6000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1894.104,
+    "text": "Very easy. For some of the models, the linear ones in particular.",
+    "start_ms": 1894104,
+    "end_ms": 1897948,
+    "duration_ms": 3844,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1898.456,
+    "text": "Alright, what those coefficients? You can access it by saying my model at clef.",
+    "start_ms": 1898456,
+    "end_ms": 1903171,
+    "duration_ms": 4715,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1903.171,
+    "text": "It returns those parameters we just estimated. And it's nice it makes it intercept its own little separate parameter.",
+    "start_ms": 1903171,
+    "end_ms": 1908368,
+    "duration_ms": 5197,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1911.128,
+    "text": "really easy to use and that's the problem because you can use crazy models and get yourself in trouble.",
+    "start_ms": 1911128,
+    "end_ms": 1916128,
+    "duration_ms": 5000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1917.208,
+    "text": "So focus on linear aggression for now, because we kind of understand that.",
+    "start_ms": 1917208,
+    "end_ms": 1919708,
+    "duration_ms": 2500,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1921.016,
+    "text": "Oh, demo exciting. Alright. Using Cykit Learn for multiple linear regression.",
+    "start_ms": 1921016,
+    "end_ms": 1929352,
+    "duration_ms": 8336,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1929.56,
+    "text": "So it's this e uh oh why can i not click There you go.",
+    "start_ms": 1929560,
+    "end_ms": 1938144,
+    "duration_ms": 8584,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1938.072,
+    "text": "So I'm going to import my linear regression package. Another regression object class.",
+    "start_ms": 1938072,
+    "end_ms": 1943656,
+    "duration_ms": 5584,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1944.856,
+    "text": "I'm going to make a linear regression model. It's how you create an instance of an object.",
+    "start_ms": 1944856,
+    "end_ms": 1948216,
+    "duration_ms": 3360,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1948.216,
+    "text": "So I send a regression. There's a bunch of arguments I could set here.",
+    "start_ms": 1948216,
+    "end_ms": 1951880,
+    "duration_ms": 3664,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1951.88,
+    "text": "I could turn off the intercept, turn it on. I can use parallel computing but we're not going to do that today.",
+    "start_ms": 1951880,
+    "end_ms": 1956688,
+    "duration_ms": 4808,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1959.448,
+    "text": "You get a model. It's got this really cool interface kind of shows you what's going on.",
+    "start_ms": 1959448,
+    "end_ms": 1962448,
+    "duration_ms": 3000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1962.448,
+    "text": "Linear regression, simple little model. It's orange. It means I haven't fitted anything yet.",
+    "start_ms": 1962448,
+    "end_ms": 1966448,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1966.448,
+    "text": "So I can't make predictions because there's no parameters. Step 2 Fit.",
+    "start_ms": 1966448,
+    "end_ms": 1971392,
+    "duration_ms": 4944,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1971.392,
+    "text": "It's pretty easy. So I take my data frame and say x is going to be this is my covariates.",
+    "start_ms": 1971392,
+    "end_ms": 1976744,
+    "duration_ms": 5352,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1977.048,
+    "text": "My label wants to be the Build-Up. Why am I using two brackets here?",
+    "start_ms": 1977048,
+    "end_ms": 1982088,
+    "duration_ms": 5040,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1983.8,
+    "text": "Because I have a list of columns. Multiple linear regression, right?",
+    "start_ms": 1983800,
+    "end_ms": 1988840,
+    "duration_ms": 5040,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1994.776,
+    "text": "Make a prediction. Completing a random... This was build depth and millimetres and...",
+    "start_ms": 1994776,
+    "end_ms": 2001276,
+    "duration_ms": 6500,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2001.592,
+    "text": "Weight and Gramsick? So I plugged in some numbers I made up and it's going to predict, right?",
+    "start_ms": 2001592,
+    "end_ms": 2007736,
+    "duration_ms": 6144,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2009.464,
+    "text": "spin lanes I think and wait I'm gonna predict the depths Go up the 18.",
+    "start_ms": 2009464,
+    "end_ms": 2017224,
+    "duration_ms": 7760,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2017.592,
+    "text": "Kareko It gave me this warning that's really annoying why is it yelling at me This is actually a neat feature in Scikit Learn when I fit a model giving it a data frame.",
+    "start_ms": 2017592,
+    "end_ms": 2027000,
+    "duration_ms": 9408,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2027.384,
+    "text": "It really wants to make sure that I give the column names to my data when I passed it.",
+    "start_ms": 2027384,
+    "end_ms": 2030984,
+    "duration_ms": 3600,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2031.384,
+    "text": "Well, is it a problem? I've made this mistake. I changed you order my columns that I pass it in.",
+    "start_ms": 2031384,
+    "end_ms": 2035944,
+    "duration_ms": 4560,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2035.944,
+    "text": "Linear models don't care. They're matrices. So just... You put your columns out of order you'll get crazy answers.",
+    "start_ms": 2035944,
+    "end_ms": 2041852,
+    "duration_ms": 5908,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2042.328,
+    "text": "PsychyLone goes, Hey, you didn't name your columns. I'm going to run it for you anyways, but you maybe should think about it.",
+    "start_ms": 2042328,
+    "end_ms": 2047328,
+    "duration_ms": 5000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2048.056,
+    "text": "because your comms could be out of order. If I just pass in my data frame, which has named columns, I write.",
+    "start_ms": 2048056,
+    "end_ms": 2055488,
+    "duration_ms": 7432,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2055.896,
+    "text": "It makes predictions. Is my predictions? They're exactly the same as the ones I used I got from my linear algebra.",
+    "start_ms": 2055896,
+    "end_ms": 2061816,
+    "duration_ms": 5920,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2062.104,
+    "text": "But I didn't have to do any matrix stuff. And if I flip my column order, what's gonna happen?",
+    "start_ms": 2062104,
+    "end_ms": 2066984,
+    "duration_ms": 4880,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2068.184,
+    "text": "What will happen? Make a title. What will happen? Give me that.",
+    "start_ms": 2068184,
+    "end_ms": 2083680,
+    "duration_ms": 15496,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2084.696,
+    "text": "I was hoping it would run, but it tells me it cannot run.",
+    "start_ms": 2084696,
+    "end_ms": 2087016,
+    "duration_ms": 2320,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2087.016,
+    "text": "Why? Because I messed up my column order. So it's sensitive to the names.",
+    "start_ms": 2087016,
+    "end_ms": 2090792,
+    "duration_ms": 3776,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2090.68,
+    "text": "Safety feature. Make predictions using data frames really easy. Make a motto.",
+    "start_ms": 2090680,
+    "end_ms": 2097216,
+    "duration_ms": 6536,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2097.432,
+    "text": "Thank you, model. Make a prediction. That would have been a much faster way to get the last two lectures.",
+    "start_ms": 2097432,
+    "end_ms": 2102760,
+    "duration_ms": 5328,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2103.576,
+    "text": "But it's important you understand the math behind us. So what's the intercept gonna be?",
+    "start_ms": 2103576,
+    "end_ms": 2108232,
+    "duration_ms": 4656,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2109.752,
+    "text": "Confession. How many parameters do I have? One, two, three.",
+    "start_ms": 2109752,
+    "end_ms": 2114696,
+    "duration_ms": 4944,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2115.032,
+    "text": "Right, three parameter model, same as before. and let's compare it to our other thing 11.0299.",
+    "start_ms": 2115032,
+    "end_ms": 2121347,
+    "duration_ms": 6315,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2121.347,
+    "text": "So that was my intercept term. The last column, because I had all the ones at the very end of my my cover at matrix was 11.",
+    "start_ms": 2121347,
+    "end_ms": 2128580,
+    "duration_ms": 7233,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2129.112,
+    "text": "And this is for my solving linear linear algebra before.",
+    "start_ms": 2129112,
+    "end_ms": 2132112,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2132.568,
+    "text": "And then I get these terms the same, yep. 0.9828 and 14771.",
+    "start_ms": 2132568,
+    "end_ms": 2139448,
+    "duration_ms": 6880,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2142.84,
+    "text": "Questions? Alright, let's do some fun stuff. We can visualize the fit.",
+    "start_ms": 2142840,
+    "end_ms": 2149827,
+    "duration_ms": 6987,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2149.827,
+    "text": "What will this look like? What I try to plot this?",
+    "start_ms": 2149827,
+    "end_ms": 2151952,
+    "duration_ms": 2125,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2153.56,
+    "text": "Give me a line. Let's see what we have to do.",
+    "start_ms": 2153560,
+    "end_ms": 2158440,
+    "duration_ms": 4880,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2160.184,
+    "text": "How many dimensions? Was my original data. For that intercept term.",
+    "start_ms": 2160184,
+    "end_ms": 2165832,
+    "duration_ms": 5648,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2166.84,
+    "text": "Two. And two features. Right? I don't try to predict a third thing.",
+    "start_ms": 2166840,
+    "end_ms": 2172168,
+    "duration_ms": 5328,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2173.944,
+    "text": "How many dimensions is this thing gonna look? 3 But there's it.",
+    "start_ms": 2173944,
+    "end_ms": 2178432,
+    "duration_ms": 4488,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2178.552,
+    "text": "Another dimension which is my parameter for my intercept which is going to affect the picture.",
+    "start_ms": 2178552,
+    "end_ms": 2183432,
+    "duration_ms": 4880,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2183.432,
+    "text": "But I visualize this. What will I see? Go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go No, no, don't do that.",
+    "start_ms": 2183432,
+    "end_ms": 2191400,
+    "duration_ms": 7968,
+    "word_count": 236,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2191.4,
+    "text": "Okay. Here we go. This... is how you visualize this data.",
+    "start_ms": 2191400,
+    "end_ms": 2195864,
+    "duration_ms": 4464,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2195.864,
+    "text": "So we have the body mass of the penguin. The slippery length of penguin, I was trying to predict the build-ups.",
+    "start_ms": 2195864,
+    "end_ms": 2201272,
+    "duration_ms": 5408,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2201.592,
+    "text": "These blue dots are my data. And that plane... Is my mother?",
+    "start_ms": 2201592,
+    "end_ms": 2208648,
+    "duration_ms": 7056,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2209.592,
+    "text": "Do you do a good job? What's that, right? I had to enter if I did not have an intercept term.",
+    "start_ms": 2209592,
+    "end_ms": 2216216,
+    "duration_ms": 6624,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2216.696,
+    "text": "What would be true about this plane? It goes to the origin, very good.",
+    "start_ms": 2216696,
+    "end_ms": 2222356,
+    "duration_ms": 5660,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2222.356,
+    "text": "Why would it go to the origin? Because when I say that...",
+    "start_ms": 2222356,
+    "end_ms": 2228552,
+    "duration_ms": 6196,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2229.912,
+    "text": "Body Master Zero, Flip Related Zero Zero times state of one plus zero times state of two and there's no intercept term is Zero.",
+    "start_ms": 2229912,
+    "end_ms": 2238124,
+    "duration_ms": 8212,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2238.968,
+    "text": "So the thing I can predict when I have body mass zero flip math or flipper length zero is a build up task to be zero.",
+    "start_ms": 2238968,
+    "end_ms": 2245568,
+    "duration_ms": 6600,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2246.712,
+    "text": "But I'm in your set term so now build up can be that intercept term when there's zero zero.",
+    "start_ms": 2246712,
+    "end_ms": 2250712,
+    "duration_ms": 4000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2251.64,
+    "text": "So it's no longer in city version. And I didn't plot the origin, but you could extend this plot to see that this plane does not pass the origin.",
+    "start_ms": 2251640,
+    "end_ms": 2258096,
+    "duration_ms": 6456,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2259.64,
+    "text": "Back, where does it go through at the origin? 11.",
+    "start_ms": 2259640,
+    "end_ms": 2266816,
+    "duration_ms": 7176,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2266.816,
+    "text": "We know that the plane at the origin is going to be 11.",
+    "start_ms": 2266816,
+    "end_ms": 2269416,
+    "duration_ms": 2600,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2270.424,
+    "text": "Not here. Because we say when everything else is zero, the intercept term is 11.",
+    "start_ms": 2270424,
+    "end_ms": 2275320,
+    "duration_ms": 4896,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2278.744,
+    "text": "I hope you're understanding this. Analyze performance all right I took it away from you.",
+    "start_ms": 2278744,
+    "end_ms": 2283387,
+    "duration_ms": 4643,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2283.387,
+    "text": "Okay, so let's compute the mean square there So I'm going to port metrics because it's too hard to write.",
+    "start_ms": 2283387,
+    "end_ms": 2289308,
+    "duration_ms": 5921,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2289.976,
+    "text": "20 characters of CodeBin who is there's a mean squared error metrics built into the cycle learn.",
+    "start_ms": 2289976,
+    "end_ms": 2294096,
+    "duration_ms": 4120,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2296.696,
+    "text": "Take the mean square area of my build depth and my circular predictions and I get this number.",
+    "start_ms": 2296696,
+    "end_ms": 2301176,
+    "duration_ms": 4480,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2303.032,
+    "text": "What units is this in? mean square air. Well, this is in millimeters.",
+    "start_ms": 2303032,
+    "end_ms": 2309677,
+    "duration_ms": 6645,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2309.677,
+    "text": "I think build up this in millimeters, secular predictions are in millimeters.",
+    "start_ms": 2309677,
+    "end_ms": 2314229,
+    "duration_ms": 4552,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2314.229,
+    "text": "Mean square air is therefore in. squared. have no clue what that means.",
+    "start_ms": 2314229,
+    "end_ms": 2319304,
+    "duration_ms": 5075,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2320.152,
+    "text": "What should I do? What units is that? Millimeters. So on average I'm about...",
+    "start_ms": 2320152,
+    "end_ms": 2331240,
+    "duration_ms": 11088,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2333.368,
+    "text": "1 millimeter off my predictions. Take it, Mario. How about, pretty happy with that?",
+    "start_ms": 2333368,
+    "end_ms": 2340328,
+    "duration_ms": 6960,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2340.472,
+    "text": "Bonus never do bonuses. Let's do it anyways. Okay. Uh, what if I want to use a crazy model?",
+    "start_ms": 2340472,
+    "end_ms": 2347040,
+    "duration_ms": 6568,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2347.04,
+    "text": "We haven't taught this yet. Let's use a decision-free regressor.",
+    "start_ms": 2347040,
+    "end_ms": 2350040,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2350.776,
+    "text": "Who knows what that does? We can create an instance of it and we can fit it, right?",
+    "start_ms": 2350776,
+    "end_ms": 2354136,
+    "duration_ms": 3360,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2354.552,
+    "text": "Boom! Fender model! Can make some predictions. We're gonna just say, predict.",
+    "start_ms": 2354552,
+    "end_ms": 2360584,
+    "duration_ms": 6032,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2360.44,
+    "text": "I just changed my model from linear to tree model that I just fit right here.",
+    "start_ms": 2360440,
+    "end_ms": 2363440,
+    "duration_ms": 3000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2364.472,
+    "text": "So, crazy new model? means square air. a lot of like those units.",
+    "start_ms": 2364472,
+    "end_ms": 2371336,
+    "duration_ms": 6864,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2371.576,
+    "text": "Square root. 0.2 so much better See, you can change your modeling and have a much better fit.",
+    "start_ms": 2371576,
+    "end_ms": 2380808,
+    "duration_ms": 9232,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2380.808,
+    "text": "So, it's like I learned to make sure it's easy.",
+    "start_ms": 2380808,
+    "end_ms": 2382808,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2382.936,
+    "text": "What do you think this looks like? Nice. Such a better plane, right?",
+    "start_ms": 2382936,
+    "end_ms": 2392904,
+    "duration_ms": 9968,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2394.776,
+    "text": "So you are laughing and you should be laughing because this is a bad idea.",
+    "start_ms": 2394776,
+    "end_ms": 2397776,
+    "duration_ms": 3000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2397.776,
+    "text": "This is why I said that killing is only dangerous.",
+    "start_ms": 2397776,
+    "end_ms": 2399515,
+    "duration_ms": 1739,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2399.515,
+    "text": "You could just change your model and get better results and go look.",
+    "start_ms": 2399515,
+    "end_ms": 2401776,
+    "duration_ms": 2261,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2401.88,
+    "text": "I'm clever. next few lectures will find out why this could be a terrible idea.",
+    "start_ms": 2401880,
+    "end_ms": 2406784,
+    "duration_ms": 4904,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2408.44,
+    "text": "That's cool, so Zycular does make it easy for you to try any model and get really good results.",
+    "start_ms": 2408440,
+    "end_ms": 2412200,
+    "duration_ms": 3760,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2413.144,
+    "text": "You have to understand 80 algorithms in your math just fit and predict.",
+    "start_ms": 2413144,
+    "end_ms": 2416744,
+    "duration_ms": 3600,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2420.376,
+    "text": "Exciting. How do I scroll? we can lecture. Alright, so here's a recap which I won't go through.",
+    "start_ms": 2420376,
+    "end_ms": 2428911,
+    "duration_ms": 8535,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2428.911,
+    "text": "We did that in great detail in the lecture or in the demo.",
+    "start_ms": 2428911,
+    "end_ms": 2432020,
+    "duration_ms": 3109,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2432.02,
+    "text": "For those on Zoom you can just jump to this if you need to.",
+    "start_ms": 2432020,
+    "end_ms": 2434820,
+    "duration_ms": 2800,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2435.192,
+    "text": "Alright, so how do these software packages fit models in general?",
+    "start_ms": 2435192,
+    "end_ms": 2437942,
+    "duration_ms": 2750,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2437.942,
+    "text": "How do they do it? So we use... In the Merrick Locked Position.",
+    "start_ms": 2437942,
+    "end_ms": 2445416,
+    "duration_ms": 7474,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2445.528,
+    "text": "And that opposite optimizations often some variation of this gradient descent algorithm, which is the focus of today's lecture.",
+    "start_ms": 2445528,
+    "end_ms": 2452128,
+    "duration_ms": 6600,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2453.688,
+    "text": "So up to this point. I'm using calculus based approaches or geometric techniques to solve our problems.",
+    "start_ms": 2453688,
+    "end_ms": 2460280,
+    "duration_ms": 6592,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2460.632,
+    "text": "calculus is amazing and we'll continue to use it But we were algebraically solving for the zero points.",
+    "start_ms": 2460632,
+    "end_ms": 2466192,
+    "duration_ms": 5560,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2466.192,
+    "text": "We had to curve like this and we were like, oh, I want to find the bottom of this.",
+    "start_ms": 2466192,
+    "end_ms": 2469692,
+    "duration_ms": 3500,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2469.88,
+    "text": "I take the derivative. What's the derivative of this? Looks kind of like this.",
+    "start_ms": 2469880,
+    "end_ms": 2474680,
+    "duration_ms": 4800,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2475.096,
+    "text": "Uh oh, what? That's unfortunate. Okay, well here we go, we can fix this.",
+    "start_ms": 2475096,
+    "end_ms": 2481768,
+    "duration_ms": 6672,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2481.768,
+    "text": "Let's call this the zero point, my axis. So... Okay, so where it goes to zero?",
+    "start_ms": 2481768,
+    "end_ms": 2487880,
+    "duration_ms": 6112,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2488.056,
+    "text": "Is the vine releasing? So we're using this calculus idea that if I can solve like compete the derivative and where the derivative passes through the zero.",
+    "start_ms": 2488056,
+    "end_ms": 2497992,
+    "duration_ms": 9936,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2498.712,
+    "text": "That's where the minimum of these things are. That was video up to this point.",
+    "start_ms": 2498712,
+    "end_ms": 2506440,
+    "duration_ms": 7728,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2506.337,
+    "text": "that's not going to work in practice for really big problems.",
+    "start_ms": 2506337,
+    "end_ms": 2508904,
+    "duration_ms": 2567,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2508.904,
+    "text": "And when these things no longer look. Like that. So we can't do that.",
+    "start_ms": 2508904,
+    "end_ms": 2515304,
+    "duration_ms": 6400,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2515.416,
+    "text": "We also try the geometric interpretation. You can use calculus matrix calculus to solve the normal equations, but we also found a geometric way to do that.",
+    "start_ms": 2515416,
+    "end_ms": 2523912,
+    "duration_ms": 8496,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2524.472,
+    "text": "And that is only going to work for linear models and means grid errors.",
+    "start_ms": 2524472,
+    "end_ms": 2527472,
+    "duration_ms": 3000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2528.152,
+    "text": "That's kind of a bummer. I spent a whole lecture on the only works in one very special case.",
+    "start_ms": 2528152,
+    "end_ms": 2531652,
+    "duration_ms": 3500,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2533.016,
+    "text": "What do we cool there just a general thing it works in all situations.",
+    "start_ms": 2533016,
+    "end_ms": 2536216,
+    "duration_ms": 3200,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2537.496,
+    "text": "You're in luck. Gradient descent. Kind of works in all situations.",
+    "start_ms": 2537496,
+    "end_ms": 2544040,
+    "duration_ms": 6544,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2544.728,
+    "text": "So it's designed for more complex models. and it's a new optimization technique.",
+    "start_ms": 2544728,
+    "end_ms": 2550120,
+    "duration_ms": 5392,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2553.88,
+    "text": "big idea use an iterative algorithm. To numerically compute the minimum.",
+    "start_ms": 2553880,
+    "end_ms": 2559672,
+    "duration_ms": 5792,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2560.376,
+    "text": "No more solving stuff? We will use calculus. We're not going to solve any equations.",
+    "start_ms": 2560376,
+    "end_ms": 2565656,
+    "duration_ms": 5280,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2566.072,
+    "text": "We're just going to take steps in the right direction.",
+    "start_ms": 2566072,
+    "end_ms": 2568072,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2572.888,
+    "text": "Just don't know. Alright, so I'm going to work through a simple example and say it's like sure, not a model building, Think just a simple minimization problem.",
+    "start_ms": 2572888,
+    "end_ms": 2581000,
+    "duration_ms": 8112,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2580.984,
+    "text": "To build an intuition. I'm gonna play the album to a very simple model.",
+    "start_ms": 2580984,
+    "end_ms": 2584840,
+    "duration_ms": 3856,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2585.656,
+    "text": "One which we already know how to solve analytically. I'm going to describe how this generalizes.",
+    "start_ms": 2585656,
+    "end_ms": 2590536,
+    "duration_ms": 4880,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2591.224,
+    "text": "to any model. And remember our goal. In this class at least.",
+    "start_ms": 2591224,
+    "end_ms": 2598760,
+    "duration_ms": 7536,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2599.288,
+    "text": "Is it fine that parameters? that minimize the model's loss.",
+    "start_ms": 2599288,
+    "end_ms": 2603112,
+    "duration_ms": 3824,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2603.992,
+    "text": "We're going to find the best parameters for a model to make it fit our data the best we can.",
+    "start_ms": 2603992,
+    "end_ms": 2608472,
+    "duration_ms": 4480,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2610.648,
+    "text": "Let's do it. Minimizing a 1D arbitrary function. Here's my function.",
+    "start_ms": 2610648,
+    "end_ms": 2618408,
+    "duration_ms": 7760,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2618.616,
+    "text": "We're the minimum of this function. Humans are great at this.",
+    "start_ms": 2618616,
+    "end_ms": 2622944,
+    "duration_ms": 4328,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2622.944,
+    "text": "You go, I see it. The minimum is right. Right Done.",
+    "start_ms": 2622944,
+    "end_ms": 2629164,
+    "duration_ms": 6220,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2629.976,
+    "text": "Piece of cake. this one's easy, it's in one dimension, you can do it.",
+    "start_ms": 2629976,
+    "end_ms": 2634280,
+    "duration_ms": 4304,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2635.0,
+    "text": "Hi everyone, it's Jimmy Harder. The minimum of the functions right there should be really clear here.",
+    "start_ms": 2635000,
+    "end_ms": 2640736,
+    "duration_ms": 5736,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2640.736,
+    "text": "The minimum point is there. The value I want is this point on this axis.",
+    "start_ms": 2640736,
+    "end_ms": 2645496,
+    "duration_ms": 4760,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2645.496,
+    "text": "Right. This is my, this is my lost problem. This would be the lost dimension.",
+    "start_ms": 2645496,
+    "end_ms": 2650016,
+    "duration_ms": 4520,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2650.36,
+    "text": "And this would be a one-provener model, so this would be theta by one-provener.",
+    "start_ms": 2650360,
+    "end_ms": 2654360,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2655.096,
+    "text": "And this is my crazy loss and the lowest point on this loss is right here.",
+    "start_ms": 2655096,
+    "end_ms": 2659416,
+    "duration_ms": 4320,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2659.736,
+    "text": "And so I'd say I like this data. I might be okay at this day to do it so it's not so bad.",
+    "start_ms": 2659736,
+    "end_ms": 2664008,
+    "duration_ms": 4272,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2665.304,
+    "text": "You go right here. Ooh, sorry. Right here. But this is the best one.",
+    "start_ms": 2665304,
+    "end_ms": 2671080,
+    "duration_ms": 5776,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2672.088,
+    "text": "Ready? Is that our goal? try guessing and then using numeric up to oh yes let's do that okay so it's a quick demo That was up late.",
+    "start_ms": 2672088,
+    "end_ms": 2683402,
+    "duration_ms": 11314,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2683.402,
+    "text": "Sounds great. No, it's to myself. Alright, so here's our crazy function which we have.",
+    "start_ms": 2683402,
+    "end_ms": 2687192,
+    "duration_ms": 3790,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2687.832,
+    "text": "which we're calling our arbitrary function. I'm moving some shoulder.",
+    "start_ms": 2687832,
+    "end_ms": 2693256,
+    "duration_ms": 5424,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2693.624,
+    "text": "Slide. Did some silly stuff. past that okay Alright, so these are a function.",
+    "start_ms": 2693624,
+    "end_ms": 2712008,
+    "duration_ms": 18384,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2713.24,
+    "text": "Let's plot it. or plot or function by the ideal of my pots and pot leak in this class we're focusing on that pot lid but if you want to learn other visualization tools lectures i'll use Plotly for stuff so it can kind of mouse over and see what things look like Alright, let's do the naive thing.",
+    "start_ms": 2713240,
+    "end_ms": 2730280,
+    "duration_ms": 17040,
+    "word_count": 59,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2730.712,
+    "text": "Which actually works in a lot of situations. Let's just guess.",
+    "start_ms": 2730712,
+    "end_ms": 2734712,
+    "duration_ms": 4000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2735.288,
+    "text": "So I'm going to make some guesses. So I'm going to try a couple of guesses.",
+    "start_ms": 2735288,
+    "end_ms": 2743944,
+    "duration_ms": 8656,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2743.944,
+    "text": "The simple minimize just deviw its functions at those locations and chooses the arg min.",
+    "start_ms": 2743944,
+    "end_ms": 2747944,
+    "duration_ms": 4000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2747.944,
+    "text": "The thing that minimizes my function at those spots. Does that look like?",
+    "start_ms": 2747944,
+    "end_ms": 2754056,
+    "duration_ms": 6112,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2753.85,
+    "text": "took these guesses and it said this guess is my best guess.",
+    "start_ms": 2753850,
+    "end_ms": 2756550,
+    "duration_ms": 2700,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2756.55,
+    "text": "Good job. Trying and guess it, like, trying things out and testing a model is actually not a terrible strategy.",
+    "start_ms": 2756550,
+    "end_ms": 2762776,
+    "duration_ms": 6226,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2763.16,
+    "text": "Advanced techniques will do this and then you know use cover, heuristics figure out if I figured these guesses look like that, maybe I'll improve my next guess a bit more.",
+    "start_ms": 2763160,
+    "end_ms": 2770240,
+    "duration_ms": 7080,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2771.192,
+    "text": "This is a technique. But in high dimensions, and in complex problems, it's not going to form well.",
+    "start_ms": 2771192,
+    "end_ms": 2778360,
+    "duration_ms": 7168,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2779.032,
+    "text": "I really want to use more information about my function to find the lowest point.",
+    "start_ms": 2779032,
+    "end_ms": 2783032,
+    "duration_ms": 4000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2784.28,
+    "text": "There's another tool that we used in day 8. This tool actually uses this guessing strategy, but as it builds these guesses, it estimates the derivative of the surface, it uses derivative estimates to improve its its answer.",
+    "start_ms": 2784280,
+    "end_ms": 2803112,
+    "duration_ms": 18832,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2802.676,
+    "text": "Package, which is pretty powerful. Inside of it it uses grain descent in a whole bunch of other algorithms.",
+    "start_ms": 2802676,
+    "end_ms": 2809024,
+    "duration_ms": 6348,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2809.784,
+    "text": "I say minimize my function f, that was this function here, this blue line.",
+    "start_ms": 2809784,
+    "end_ms": 2813784,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2814.2,
+    "text": "And start at the guess of x equals 3.5. Where is that?",
+    "start_ms": 2814200,
+    "end_ms": 2817200,
+    "duration_ms": 3000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2817.2,
+    "text": "3.5, like right here. That's my initial guess. Super fast.",
+    "start_ms": 2817200,
+    "end_ms": 2823840,
+    "duration_ms": 6640,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2824.248,
+    "text": "It says The X value. is 2.393 Second. Uh oh.",
+    "start_ms": 2824248,
+    "end_ms": 2835660,
+    "duration_ms": 11412,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2836.216,
+    "text": "What this way? I think we're going to get a little bigger.",
+    "start_ms": 2836216,
+    "end_ms": 2840264,
+    "duration_ms": 4048,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2840.108,
+    "text": "seven. 5.32 That's over here. Interesting. So it depends on where I start my guess.",
+    "start_ms": 2840108,
+    "end_ms": 2849097,
+    "duration_ms": 8989,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2849.097,
+    "text": "Why? So I'm going to try to walk down some hills, it's using something like a little cover lecture.",
+    "start_ms": 2849097,
+    "end_ms": 2853616,
+    "duration_ms": 4519,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2853.784,
+    "text": "If I start over here it goes, ah, that's the best choice.",
+    "start_ms": 2853784,
+    "end_ms": 2857144,
+    "duration_ms": 3360,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2857.144,
+    "text": "If I start over here it goes, ah, this is a better choice.",
+    "start_ms": 2857144,
+    "end_ms": 2860424,
+    "duration_ms": 3280,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2863.128,
+    "text": "Not a great way to optimize, but you have an idea of a basic package for solving these kinds of problems.",
+    "start_ms": 2863128,
+    "end_ms": 2867528,
+    "duration_ms": 4400,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2869.848,
+    "text": "Okay, see you later, Mice. Turn the lecture. So let's invent gradient descent.",
+    "start_ms": 2869848,
+    "end_ms": 2876392,
+    "duration_ms": 6544,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2877.336,
+    "text": "How would you find the bottom of a complex surface?",
+    "start_ms": 2877336,
+    "end_ms": 2879621,
+    "duration_ms": 2285,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2879.621,
+    "text": "You're walking around campus and you want to get to the...",
+    "start_ms": 2879621,
+    "end_ms": 2882136,
+    "duration_ms": 2515,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2882.424,
+    "text": "The bottom of campus. But you can't see anything around you all you can see is where you're standing.",
+    "start_ms": 2882424,
+    "end_ms": 2887080,
+    "duration_ms": 4656,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2887.992,
+    "text": "What would you do? Pure a skier what would you do?",
+    "start_ms": 2887992,
+    "end_ms": 2894888,
+    "duration_ms": 6896,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2895.448,
+    "text": "Yeah. Oh you guys are getting fancy Newton's method who walks around doing Newton's method.",
+    "start_ms": 2895448,
+    "end_ms": 2900785,
+    "duration_ms": 5337,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2900.785,
+    "text": "I see the hit that it's slope goes this way I'll just walk downhill.",
+    "start_ms": 2900785,
+    "end_ms": 2904460,
+    "duration_ms": 3675,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2904.46,
+    "text": "Great We're doing simple stuff. Newton's bet is actually a very Swiss K-Opposition Technique.",
+    "start_ms": 2904460,
+    "end_ms": 2909256,
+    "duration_ms": 4796,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2909.256,
+    "text": "The second one does more than we'll do here. This is going to be a really simple algorithm.",
+    "start_ms": 2909256,
+    "end_ms": 2913016,
+    "duration_ms": 3760,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2913.528,
+    "text": "But it turns out this is what we actually use when we have billion dollar problems to solve.",
+    "start_ms": 2913528,
+    "end_ms": 2916728,
+    "duration_ms": 3200,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2917.752,
+    "text": "Okay. Let's find the minute one. we're starting here. the real world you don't get to see the blue light.",
+    "start_ms": 2917752,
+    "end_ms": 2924200,
+    "duration_ms": 6448,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2924.6,
+    "text": "All you get to do is see the little slope around you.",
+    "start_ms": 2924600,
+    "end_ms": 2926600,
+    "duration_ms": 2000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2927.32,
+    "text": "How is the shape of the land that you're standing on?",
+    "start_ms": 2927320,
+    "end_ms": 2929320,
+    "duration_ms": 2000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2930.808,
+    "text": "So what's this slope? Does the change? Change a change in this direction, went up.",
+    "start_ms": 2930808,
+    "end_ms": 2939912,
+    "duration_ms": 9104,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2940.408,
+    "text": "Rechange in this direction. Is this look positive or negative?",
+    "start_ms": 2940408,
+    "end_ms": 2944232,
+    "duration_ms": 3824,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2946.616,
+    "text": "First of all, is a slope? Is it a number?",
+    "start_ms": 2946616,
+    "end_ms": 2948282,
+    "duration_ms": 1666,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2948.282,
+    "text": "A vector? What is it? Hope of this line is number.",
+    "start_ms": 2948282,
+    "end_ms": 2952808,
+    "duration_ms": 4526,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2952.808,
+    "text": "Is it number? And it seems to be it's the ratio of the, you know, change in.",
+    "start_ms": 2952808,
+    "end_ms": 2958088,
+    "duration_ms": 5280,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2959.352,
+    "text": "I'm sorry. Okay, well. That's the change. and why over the change in X.",
+    "start_ms": 2959352,
+    "end_ms": 2966856,
+    "duration_ms": 7504,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2968.376,
+    "text": "At that point. I'm sorry. a positive number. I have to pick that slope as single this way.",
+    "start_ms": 2968376,
+    "end_ms": 2974280,
+    "duration_ms": 5904,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2975.992,
+    "text": "So I'm standing on a hill which way is the slope?",
+    "start_ms": 2975992,
+    "end_ms": 2977992,
+    "duration_ms": 2000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2982.808,
+    "text": "There's a 1D hill. So that sub says go right to go up.",
+    "start_ms": 2982808,
+    "end_ms": 2988512,
+    "duration_ms": 5704,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2989.272,
+    "text": "First big insight. Also common source of bugs when implementing this algorithm.",
+    "start_ms": 2989272,
+    "end_ms": 2993672,
+    "duration_ms": 4400,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2994.008,
+    "text": "Is I don't want to go in the direction of slope, I want to go in the opposite direction of slope.",
+    "start_ms": 2994008,
+    "end_ms": 2997008,
+    "duration_ms": 3000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2997.752,
+    "text": "I'm going downhill. So the soap says go this way.",
+    "start_ms": 2997752,
+    "end_ms": 3002824,
+    "duration_ms": 5072,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3003.224,
+    "text": "So I say great, I'm going that way. Go and down hill.",
+    "start_ms": 3003224,
+    "end_ms": 3007264,
+    "duration_ms": 4040,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3008.664,
+    "text": "That's the algorithm. Got the slope? And then what? We can start.",
+    "start_ms": 3008664,
+    "end_ms": 3016736,
+    "duration_ms": 8072,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3018.104,
+    "text": "How far? Take a step. Maybe we can start with just go however large the still place.",
+    "start_ms": 3018104,
+    "end_ms": 3024258,
+    "duration_ms": 6154,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3024.258,
+    "text": "Really steep take a big step. That's a steep, thicker, smaller step.",
+    "start_ms": 3024258,
+    "end_ms": 3028040,
+    "duration_ms": 3782,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3031.192,
+    "text": "So this is the basis for all the innovation that happens in AI today.",
+    "start_ms": 3031192,
+    "end_ms": 3035672,
+    "duration_ms": 4480,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3035.672,
+    "text": "This simple idea by I'm standing on a curve thing and I can figure out the slope.",
+    "start_ms": 3035672,
+    "end_ms": 3039832,
+    "duration_ms": 4160,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3039.832,
+    "text": "Go the opposite direction. So, let me walk this way.",
+    "start_ms": 3039832,
+    "end_ms": 3044256,
+    "duration_ms": 4424,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3044.792,
+    "text": "I'm in the perimeter. I'm just a perimeter. So my theta is right here.",
+    "start_ms": 3044792,
+    "end_ms": 3048792,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3048.792,
+    "text": "This is my initial guess and it says, you know, let's go that way.",
+    "start_ms": 3048792,
+    "end_ms": 3052792,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3053.496,
+    "text": "This is my new guest right here. We'll show you again.",
+    "start_ms": 3053496,
+    "end_ms": 3058176,
+    "duration_ms": 4680,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3058.744,
+    "text": "I give it away, Mama. Commute this up again. So, upstairs go right.",
+    "start_ms": 3058744,
+    "end_ms": 3063029,
+    "duration_ms": 4285,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3063.029,
+    "text": "I go negative. So, I go left. Go left. So where am I going to go?",
+    "start_ms": 3063029,
+    "end_ms": 3068966,
+    "duration_ms": 5937,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3068.966,
+    "text": "We're going to go here. I do. I want to go bigger step.",
+    "start_ms": 3068966,
+    "end_ms": 3072168,
+    "duration_ms": 3202,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3073.048,
+    "text": "So I went from here. Over to here. Let's continue.",
+    "start_ms": 3073048,
+    "end_ms": 3077856,
+    "duration_ms": 4808,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3078.328,
+    "text": "I'm down here. That would twist. I go. What's the slope?",
+    "start_ms": 3078328,
+    "end_ms": 3083008,
+    "duration_ms": 4680,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3085.656,
+    "text": "Slope is zero. Why is it so zero? Draw our tangent line.",
+    "start_ms": 3085656,
+    "end_ms": 3091752,
+    "duration_ms": 6096,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3092.824,
+    "text": "What's the slope of that line? Do! So which way should I go?",
+    "start_ms": 3092824,
+    "end_ms": 3097492,
+    "duration_ms": 4668,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3097.492,
+    "text": "Zero. I don't know which way to go. I'm at the bottom.",
+    "start_ms": 3097492,
+    "end_ms": 3099492,
+    "duration_ms": 2000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3099.992,
+    "text": "So now we have a stopping condition if we get to the zero or done.",
+    "start_ms": 3099992,
+    "end_ms": 3102792,
+    "duration_ms": 2800,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3108.024,
+    "text": "Let's start out over here. What is this slope here?",
+    "start_ms": 3108024,
+    "end_ms": 3112264,
+    "duration_ms": 4240,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3112.472,
+    "text": "From that tangent line, Which way is the slip set to go for what direction is the slip negative or positive.",
+    "start_ms": 3112472,
+    "end_ms": 3119880,
+    "duration_ms": 7408,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3121.272,
+    "text": "So, let's say and go this way. Thank you so much.",
+    "start_ms": 3121272,
+    "end_ms": 3124096,
+    "duration_ms": 2824,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3125.24,
+    "text": "Which way should I go? The opposite direction. The negative of the slope.",
+    "start_ms": 3125240,
+    "end_ms": 3131048,
+    "duration_ms": 5808,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3130.616,
+    "text": "Which is now positive. for being there. Alright, so depending on where I am on this curve it's going to tell me which way to go.",
+    "start_ms": 3130616,
+    "end_ms": 3137240,
+    "duration_ms": 6624,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3143.672,
+    "text": "To how I couldn't use this. Right down, gradient descent.",
+    "start_ms": 3143672,
+    "end_ms": 3155336,
+    "duration_ms": 11664,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3156.76,
+    "text": "Let's y'all go to them. While you're rating this doubt, I will take a two-minute stretch break.",
+    "start_ms": 3156760,
+    "end_ms": 3171496,
+    "duration_ms": 14736,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3171.672,
+    "text": "Since we are... it. So I will see everyone at...",
+    "start_ms": 3171672,
+    "end_ms": 3176930,
+    "duration_ms": 5258,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3176.93,
+    "text": "we'll call it. 12 or 5. Stretch. 46 people. Somebody's definitely writing Newton's Method, huh?",
+    "start_ms": 3176930,
+    "end_ms": 3189992,
+    "duration_ms": 13062,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3247.96,
+    "text": "Alright, do you have any 10? Come on. Let's see what people got.",
+    "start_ms": 3247960,
+    "end_ms": 3252032,
+    "duration_ms": 4072,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3252.032,
+    "text": "I think we keep going. Well, no, that's just the answer.",
+    "start_ms": 3252032,
+    "end_ms": 3256072,
+    "duration_ms": 4040,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3256.072,
+    "text": "You can't agree, Greens. You gotta write down the equation.",
+    "start_ms": 3256072,
+    "end_ms": 3258661,
+    "duration_ms": 2589,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3258.661,
+    "text": "People. What is gradient set gradient descent? I mean, it's true.",
+    "start_ms": 3258661,
+    "end_ms": 3268664,
+    "duration_ms": 10003,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3268.664,
+    "text": "Right. Not helpful. Yeah, it could be that this word all is doing silly stuff and breaking up your your answers.",
+    "start_ms": 3268664,
+    "end_ms": 3280143,
+    "duration_ms": 11479,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3283.896,
+    "text": "Alright. 2, 1 Okay, let's keep going. People got it.",
+    "start_ms": 3283896,
+    "end_ms": 3290208,
+    "duration_ms": 6312,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3290.936,
+    "text": "Um, it is been, I've been told that people are confused by my p versus p plus one situation.",
+    "start_ms": 3290936,
+    "end_ms": 3296177,
+    "duration_ms": 5241,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3296.177,
+    "text": "How are we feeling about p versus p plus one?",
+    "start_ms": 3296177,
+    "end_ms": 3298936,
+    "duration_ms": 2759,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3298.936,
+    "text": "Who's still confused about p versus p plus one? Okay.",
+    "start_ms": 3298936,
+    "end_ms": 3303180,
+    "duration_ms": 4244,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3303.768,
+    "text": "Uh I'm sorry. Alright, I'm not going to try to fix this right now.",
+    "start_ms": 3303768,
+    "end_ms": 3311928,
+    "duration_ms": 8160,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3312.28,
+    "text": "Post on Ed, maybe the punchline here is it I don't want to think about the intercept term so I'm just going to assume that my matrix my covariates has an all ones column I'm going to say there are p parameters and my covariate table has p dimensions not p minus 1 dimensions and there's this extra parameter outside So I just want everything is just P, or P.",
+    "start_ms": 3312280,
+    "end_ms": 3330984,
+    "duration_ms": 18704,
+    "word_count": 70,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3332.088,
+    "text": "Intercept is cooked into my features. Right, that's all I'm going to say.",
+    "start_ms": 3332088,
+    "end_ms": 3336776,
+    "duration_ms": 4688,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3336.776,
+    "text": "So here's our equation that you were supposed to write or make up on the previous slide.",
+    "start_ms": 3336776,
+    "end_ms": 3341016,
+    "duration_ms": 4240,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3341.464,
+    "text": "I have some guests for my best values so far.",
+    "start_ms": 3341464,
+    "end_ms": 3343964,
+    "duration_ms": 2500,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3345.272,
+    "text": "And I compute the slope of my function. At that gas.",
+    "start_ms": 3345272,
+    "end_ms": 3350536,
+    "duration_ms": 5264,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3350.552,
+    "text": "And then the all important negative. I subtract. I go in the opposite direction of slope.",
+    "start_ms": 3350552,
+    "end_ms": 3356412,
+    "duration_ms": 5860,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3356.412,
+    "text": "You could say... It is plus the negative slope if you like.",
+    "start_ms": 3356412,
+    "end_ms": 3360856,
+    "duration_ms": 4444,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3362.616,
+    "text": "Questions? Yeah, could I multiply this up by some learning rate?",
+    "start_ms": 3362616,
+    "end_ms": 3371976,
+    "duration_ms": 9360,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3371.976,
+    "text": "Stop reading ahead in lecture. Yes, you could, and you will.",
+    "start_ms": 3371976,
+    "end_ms": 3374976,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3374.976,
+    "text": "But not yet. You have to discover how this is a bad idea first.",
+    "start_ms": 3374976,
+    "end_ms": 3378216,
+    "duration_ms": 3240,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3378.744,
+    "text": "Alright, so my equation abstractly is next. Yes. equals equals LAS Yes.",
+    "start_ms": 3378744,
+    "end_ms": 3391648,
+    "duration_ms": 12904,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3393.048,
+    "text": "What? Negative slope. at less. Yes. That's the procedure. And then some viewpoint out we might want to put a little bit of a co-efficient right here.",
+    "start_ms": 3393048,
+    "end_ms": 3411608,
+    "duration_ms": 18560,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3411.608,
+    "text": "We'll come back to that a little bit. Oh good, so could I find the other minima?",
+    "start_ms": 3411608,
+    "end_ms": 3418664,
+    "duration_ms": 7056,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3418.664,
+    "text": "What the... What might be every time we start to guess and make another guess.",
+    "start_ms": 3418664,
+    "end_ms": 3425664,
+    "duration_ms": 7000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3426.264,
+    "text": "and like big AI things will make trillions of guesses before we get to the bottom.",
+    "start_ms": 3426264,
+    "end_ms": 3431064,
+    "duration_ms": 4800,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3432.344,
+    "text": "To a critique of long time, lots of little guesses, and often take really small steps.",
+    "start_ms": 3432344,
+    "end_ms": 3437064,
+    "duration_ms": 4720,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3437.784,
+    "text": "If you don't overshoot that minimum, so you make small steps each time.",
+    "start_ms": 3437784,
+    "end_ms": 3441784,
+    "duration_ms": 4000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3442.52,
+    "text": "And how big of a step? pointed out we might want to put a little bit of a thing here.",
+    "start_ms": 3442520,
+    "end_ms": 3446616,
+    "duration_ms": 4096,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3447.032,
+    "text": "We'll come back to animal. Oh, demo, excellent. Okay. He's just work.",
+    "start_ms": 3447032,
+    "end_ms": 3455496,
+    "duration_ms": 8464,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3454.904,
+    "text": "It does. Okay. So gradient of this is this. How did I do that?",
+    "start_ms": 3454904,
+    "end_ms": 3463208,
+    "duration_ms": 8304,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3464.728,
+    "text": "How did I do that? I don't have this equation anywhere so let's just try to...",
+    "start_ms": 3464728,
+    "end_ms": 3468296,
+    "duration_ms": 3568,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3468.92,
+    "text": "We'll sketch it out. I would take the gradient, the derivative of this thing with respect to x, derivatives x to the fourth is...",
+    "start_ms": 3468920,
+    "end_ms": 3475300,
+    "duration_ms": 6380,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3476.248,
+    "text": "X the third times four. Drill of 15 times x to the third.",
+    "start_ms": 3476248,
+    "end_ms": 3483048,
+    "duration_ms": 6800,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3484.024,
+    "text": "is or 3 times 15 Time's x this x-quake. You're going to have to know calculus in this class.",
+    "start_ms": 3484024,
+    "end_ms": 3491697,
+    "duration_ms": 7673,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3491.697,
+    "text": "There are two things you really want to make sure you're comfortable with.",
+    "start_ms": 3491697,
+    "end_ms": 3494184,
+    "duration_ms": 2487,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3494.552,
+    "text": "Taking grids of things like exponents and products. And the...",
+    "start_ms": 3494552,
+    "end_ms": 3499656,
+    "duration_ms": 5104,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3500.568,
+    "text": "Shane Rowe Which i don't know if you have on slight form but i'm gonna just write it down so rune has it We are here.",
+    "start_ms": 3500568,
+    "end_ms": 3508288,
+    "duration_ms": 7720,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3510.552,
+    "text": "or just happen outside of okay. Chain rule. Now the slide is blank.",
+    "start_ms": 3510552,
+    "end_ms": 3515604,
+    "duration_ms": 5052,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3515.604,
+    "text": "Yeah, let's try to write this down real quickly here.",
+    "start_ms": 3515604,
+    "end_ms": 3517709,
+    "duration_ms": 2105,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3517.709,
+    "text": "So, a chain roll. I want to compute the derivative.",
+    "start_ms": 3517709,
+    "end_ms": 3521000,
+    "duration_ms": 3291,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3522.584,
+    "text": "with respect to x. With respect to X. of F.",
+    "start_ms": 3522584,
+    "end_ms": 3533088,
+    "duration_ms": 10504,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3534.52,
+    "text": "of G. of X. How do I do that? Really really useful first.",
+    "start_ms": 3534520,
+    "end_ms": 3542664,
+    "duration_ms": 8144,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3543.128,
+    "text": "I take the derivative. Respect to you. of F. of you.",
+    "start_ms": 3543128,
+    "end_ms": 3554376,
+    "duration_ms": 11248,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3555.384,
+    "text": "Now I take the default thing. and i'm going to exaluate that U equals X.",
+    "start_ms": 3555384,
+    "end_ms": 3562952,
+    "duration_ms": 7568,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3563.416,
+    "text": "Hello, everybody. Take the derivative, I multiply this times. The derivative.",
+    "start_ms": 3563416,
+    "end_ms": 3570208,
+    "duration_ms": 6792,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3572.568,
+    "text": "respect to X. I'm G. of x. The Chain Rule.",
+    "start_ms": 3572568,
+    "end_ms": 3582528,
+    "duration_ms": 9960,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3583.544,
+    "text": "Useful because I have things of things like squares that my loss function that you have sometimes look the loss.",
+    "start_ms": 3583544,
+    "end_ms": 3591144,
+    "duration_ms": 7600,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3591.928,
+    "text": "of Why? And so this is a function of my y hat, which secretly is a function of theta, right?",
+    "start_ms": 3591928,
+    "end_ms": 3600828,
+    "duration_ms": 8900,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3602.616,
+    "text": "I want to take the derivative of this thing. Respect the data.",
+    "start_ms": 3602616,
+    "end_ms": 3606304,
+    "duration_ms": 3688,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3607.64,
+    "text": "Very useful technique, the chain rule. You're confused about the chain rule, go to the Sours, ask someone.",
+    "start_ms": 3607640,
+    "end_ms": 3614120,
+    "duration_ms": 6480,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3614.296,
+    "text": "It's really useful. so bad and critical to doing all the stuff that we'll do with Gradients in this class.",
+    "start_ms": 3614296,
+    "end_ms": 3620600,
+    "duration_ms": 6304,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3623.672,
+    "text": "I know I'm going to regret that, because we're behind.",
+    "start_ms": 3623672,
+    "end_ms": 3625672,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3626.072,
+    "text": "All right, so how my gradient I derive this in latex here, latex here.",
+    "start_ms": 3626072,
+    "end_ms": 3631432,
+    "duration_ms": 5360,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3631.432,
+    "text": "I've just implemented this exact equation down below. One-tenth times all these things.",
+    "start_ms": 3631432,
+    "end_ms": 3637544,
+    "duration_ms": 6112,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3638.232,
+    "text": "Right here. The random mistakes. So I can plot. the derivative function.",
+    "start_ms": 3638232,
+    "end_ms": 3646088,
+    "duration_ms": 7856,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3645.816,
+    "text": "of my blue line. On the same plot. And you'll notice right here with this derivative function passes through zero.",
+    "start_ms": 3645816,
+    "end_ms": 3652376,
+    "duration_ms": 6560,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3652.664,
+    "text": "Are interesting points on the blue light. They are the Minima.",
+    "start_ms": 3652664,
+    "end_ms": 3656640,
+    "duration_ms": 3976,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3657.176,
+    "text": "The Maximum, remember. their inflection points of the blue light.",
+    "start_ms": 3657176,
+    "end_ms": 3661608,
+    "duration_ms": 4432,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3663.576,
+    "text": "But we're not solving this today, right? We're not doing analytic solutions of this line.",
+    "start_ms": 3663576,
+    "end_ms": 3667176,
+    "duration_ms": 3600,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3667.736,
+    "text": "We just need the gradient, the derivative, to tell us which way to go.",
+    "start_ms": 3667736,
+    "end_ms": 3670536,
+    "duration_ms": 2800,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3673.496,
+    "text": "So, this is the actual code. Here's a point. There's a negative slope at that point.",
+    "start_ms": 3673496,
+    "end_ms": 3678760,
+    "duration_ms": 5264,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3680.184,
+    "text": "I calculated this using... My derivative function above. So I take X.",
+    "start_ms": 3680184,
+    "end_ms": 3686360,
+    "duration_ms": 6176,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3686.872,
+    "text": "And I go, my arrow goes in the x minus grad f direction, and I put the arrow at the position of f of x.",
+    "start_ms": 3686872,
+    "end_ms": 3692872,
+    "duration_ms": 6000,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3692.872,
+    "text": "So at this point on the line. It's Mera. So I derivative, which way do I go?",
+    "start_ms": 3692872,
+    "end_ms": 3698056,
+    "duration_ms": 5184,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3699.288,
+    "text": "That direction. So we can all write this out for them really simply.",
+    "start_ms": 3699288,
+    "end_ms": 3703176,
+    "duration_ms": 3888,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3703.672,
+    "text": "Take one step out of them. As a guess, takes a derivative.",
+    "start_ms": 3703672,
+    "end_ms": 3708152,
+    "duration_ms": 4480,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3708.664,
+    "text": "And it says my new guess is equal to my old guess minus the derivative.",
+    "start_ms": 3708664,
+    "end_ms": 3712824,
+    "duration_ms": 4160,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3713.592,
+    "text": "Termine guests. I can run this 10 steps starting out against the 4.",
+    "start_ms": 3713592,
+    "end_ms": 3719528,
+    "duration_ms": 5936,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3720.12,
+    "text": "And these are my guesses, the sequence of guesses for x.",
+    "start_ms": 3720120,
+    "end_ms": 3723400,
+    "duration_ms": 3280,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3724.664,
+    "text": "They are the sequence of guesses for X that's trying to minimize that blue line.",
+    "start_ms": 3724664,
+    "end_ms": 3729144,
+    "duration_ms": 4480,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3731.8,
+    "text": "But let's draw pictures, see what that looks like. A lot of steps.",
+    "start_ms": 3731800,
+    "end_ms": 3735680,
+    "duration_ms": 3880,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3735.68,
+    "text": "There we go. Here's my algorithm. Zoom in. So I guessed here, I took a step, guessed, that's my next guess, I took another step, a little bit steeper, bigger step.",
+    "start_ms": 3735680,
+    "end_ms": 3746168,
+    "duration_ms": 10488,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3746.648,
+    "text": "Uh-huh, now we'll get interesting. Okay, so as I go, jump over here.",
+    "start_ms": 3746648,
+    "end_ms": 3751432,
+    "duration_ms": 4784,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3751.704,
+    "text": "There you go. No, jump back over here. Yep, jump back over here.",
+    "start_ms": 3751704,
+    "end_ms": 3755282,
+    "duration_ms": 3578,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3755.282,
+    "text": "See a problem? Keep taking steps and get to the bottom of the hill I got up jump over the other side of the valley I should go back this way, take another step.",
+    "start_ms": 3755282,
+    "end_ms": 3765032,
+    "duration_ms": 9750,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3765.032,
+    "text": "I keep stepping over the bottom. How would we fix this?",
+    "start_ms": 3765032,
+    "end_ms": 3769960,
+    "duration_ms": 4928,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3769.944,
+    "text": "People need a front, don't answer my question. How do we fix this?",
+    "start_ms": 3769944,
+    "end_ms": 3774216,
+    "duration_ms": 4272,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3775.0,
+    "text": "It takes smaller steps, so it would help, right? So maybe I could scale my step.",
+    "start_ms": 3775000,
+    "end_ms": 3779000,
+    "duration_ms": 4000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3779.832,
+    "text": "My problem? So this solution... I'd do this slides. Is I'm going to add this extra alpha term.",
+    "start_ms": 3779832,
+    "end_ms": 3787576,
+    "duration_ms": 7744,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3787.576,
+    "text": "This is called a learning rate for those in the machine learning world.",
+    "start_ms": 3787576,
+    "end_ms": 3790456,
+    "duration_ms": 2880,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3790.456,
+    "text": "It's going to allow me to pick a number less than one.",
+    "start_ms": 3790456,
+    "end_ms": 3793496,
+    "duration_ms": 3040,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3793.496,
+    "text": "And maybe I'll even shrink it as I go. So it takes smaller and smaller steps.",
+    "start_ms": 3793496,
+    "end_ms": 3797336,
+    "duration_ms": 3840,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3797.336,
+    "text": "So they don't overstep the bottom of the hill. The name of...",
+    "start_ms": 3797336,
+    "end_ms": 3801992,
+    "duration_ms": 4656,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3805.016,
+    "text": "Take one step. Now with Alpha. My previous guess minus alpha times the derivative.",
+    "start_ms": 3805016,
+    "end_ms": 3812136,
+    "duration_ms": 7120,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3812.664,
+    "text": "I should pick a small alpha. Let's pick 0.3. Run it again.",
+    "start_ms": 3812664,
+    "end_ms": 3816832,
+    "duration_ms": 4168,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3821.112,
+    "text": "Jimmy. Let's do it again. Oh, zoomed in too far.",
+    "start_ms": 3821112,
+    "end_ms": 3826856,
+    "duration_ms": 5744,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3827.256,
+    "text": "Get in there, so close. Keep getting smaller and smaller.",
+    "start_ms": 3827256,
+    "end_ms": 3831816,
+    "duration_ms": 4560,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3831.608,
+    "text": "And I get stir. Why is my blue line not where my red dots are?",
+    "start_ms": 3831608,
+    "end_ms": 3835388,
+    "duration_ms": 3780,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3837.688,
+    "text": "Plotting air. There's no data here. line isn't precise enough.",
+    "start_ms": 3837688,
+    "end_ms": 3842568,
+    "duration_ms": 4880,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3842.491,
+    "text": "draw the blue line I just sampled points. These red dots are exactly where the data is.",
+    "start_ms": 3842491,
+    "end_ms": 3845816,
+    "duration_ms": 3325,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3845.816,
+    "text": "For the purpose. So this is really good guests for the neighborhood.",
+    "start_ms": 3845816,
+    "end_ms": 3849544,
+    "duration_ms": 3728,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3852.12,
+    "text": "All right, questions at this point. Is your awful always between zero and one?",
+    "start_ms": 3852120,
+    "end_ms": 3860840,
+    "duration_ms": 8720,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3860.84,
+    "text": "Interesting question. Generally it's... you don't want to take too large of a step.",
+    "start_ms": 3860840,
+    "end_ms": 3866496,
+    "duration_ms": 5656,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3869.112,
+    "text": "It's usually a smaller number. And in some of our rhythms we'll use something called learning rate decay.",
+    "start_ms": 3869112,
+    "end_ms": 3873968,
+    "duration_ms": 4856,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3874.2,
+    "text": "Which is what it sounds like you make the landing rate get smaller as you take steps to take a thousand steps make a little bit smaller.",
+    "start_ms": 3874200,
+    "end_ms": 3882280,
+    "duration_ms": 8080,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3882.28,
+    "text": "Take a few more thousand steps, letting rate good smaller.",
+    "start_ms": 3882280,
+    "end_ms": 3887280,
+    "duration_ms": 5000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3888.248,
+    "text": "Why is this more efficient than just solving this with calculus?",
+    "start_ms": 3888248,
+    "end_ms": 3891048,
+    "duration_ms": 2800,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3891.64,
+    "text": "Great question. It's not. For this problem it's die-sh-just-e-de-cockus. Well, for this picture, yeah, I can do the calculus.",
+    "start_ms": 3891640,
+    "end_ms": 3899836,
+    "duration_ms": 8196,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3899.836,
+    "text": "In general. You can't do the cactus. I don't know if I can solve this analytically.",
+    "start_ms": 3899836,
+    "end_ms": 3906056,
+    "duration_ms": 6220,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3906.36,
+    "text": "In general, you won't be able to solve these things analytically.",
+    "start_ms": 3906360,
+    "end_ms": 3909360,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3909.528,
+    "text": "Real-world losses, real-world problems have no analytic solution in many cases and the advanced AI problems.",
+    "start_ms": 3909528,
+    "end_ms": 3916128,
+    "duration_ms": 6600,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3916.536,
+    "text": "Don't even have unique solutions, or many, many, many, many trillions of solutions.",
+    "start_ms": 3916536,
+    "end_ms": 3920536,
+    "duration_ms": 4000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3920.92,
+    "text": "that are local minima. What if I start over here?",
+    "start_ms": 3920920,
+    "end_ms": 3928296,
+    "duration_ms": 7376,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3930.296,
+    "text": "Right here. that would be unfortunate. I'd be stuck. So you started a minute ma?",
+    "start_ms": 3930296,
+    "end_ms": 3935688,
+    "duration_ms": 5392,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3936.312,
+    "text": "Or if you started a maxima right here, you're stuck.",
+    "start_ms": 3936312,
+    "end_ms": 3939912,
+    "duration_ms": 3600,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3940.888,
+    "text": "Don't know which way to go. Would it be nice if I had some stochasticity, some randomness to help me?",
+    "start_ms": 3940888,
+    "end_ms": 3946536,
+    "duration_ms": 5648,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3947.544,
+    "text": "That's the end of this lecture, or perhaps the beginning of next lecture.",
+    "start_ms": 3947544,
+    "end_ms": 3950456,
+    "duration_ms": 2912,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3950.456,
+    "text": "We'll see. Alright, so... We are... Not here. We are.",
+    "start_ms": 3950456,
+    "end_ms": 3957832,
+    "duration_ms": 7376,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3958.008,
+    "text": "Here. 30, place this zoom out. I'm sorry. Oh, there you go.",
+    "start_ms": 3958008,
+    "end_ms": 3964480,
+    "duration_ms": 6472,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3965.208,
+    "text": "Okay, so we did it. Let's return to slides. Alright, so we did our demo.",
+    "start_ms": 3965208,
+    "end_ms": 3970760,
+    "duration_ms": 5552,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3970.616,
+    "text": "Oh, that's clear to the side. So that was Chain Rule.",
+    "start_ms": 3970616,
+    "end_ms": 3973116,
+    "duration_ms": 2500,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3973.752,
+    "text": "I remember it. Screen grab. Okay, it's gone. about the actual algorithm.",
+    "start_ms": 3973752,
+    "end_ms": 3980728,
+    "duration_ms": 6976,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3980.728,
+    "text": "So we built a new algorithm which is almost dead end equal to the old algorithm except we brought in alpha.",
+    "start_ms": 3980728,
+    "end_ms": 3986504,
+    "duration_ms": 5776,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3987.128,
+    "text": "Alpha is a number. Ah. The dream. Maybe don't get that uh Tween, let's don't make it zero, that's a bad choice.",
+    "start_ms": 3987128,
+    "end_ms": 3997500,
+    "duration_ms": 10372,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3997.5,
+    "text": "Zero and one. Let's get started. You And do you tune your alpha?",
+    "start_ms": 3997500,
+    "end_ms": 4009434,
+    "duration_ms": 11934,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4009.434,
+    "text": "Yes, you do. Are there whole people like armies of techniques and people working on picking alpha yes there are a lot of the i research is about who much i do with alpha.",
+    "start_ms": 4009434,
+    "end_ms": 4017956,
+    "duration_ms": 8522,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4019.288,
+    "text": "So that's kind of annoying, but this is the algorithm.",
+    "start_ms": 4019288,
+    "end_ms": 4021288,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4022.776,
+    "text": "That's the basic process. We didn't change much. do we stop updating this thing?",
+    "start_ms": 4022776,
+    "end_ms": 4029000,
+    "duration_ms": 6224,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4029.0,
+    "text": "When do we stop? When is T big enough? Often, after fixing their updates.",
+    "start_ms": 4029000,
+    "end_ms": 4035144,
+    "duration_ms": 6144,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4035.864,
+    "text": "When you are too tired. Where you said I've waited 30 minutes for the answer to my thing.",
+    "start_ms": 4035864,
+    "end_ms": 4040448,
+    "duration_ms": 4584,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4040.76,
+    "text": "10,000 updates will be enough for me. If you're... the next super AI model maybe one trillion updates is good enough.",
+    "start_ms": 4040760,
+    "end_ms": 4049208,
+    "duration_ms": 8448,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4055.416,
+    "text": "It doesn't change much. Perhaps the gradient is zero. Does a gradient ever get to be zero?",
+    "start_ms": 4055416,
+    "end_ms": 4060828,
+    "duration_ms": 5412,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4060.828,
+    "text": "Is slope ever get to zero? In practice, no, but it's really really close.",
+    "start_ms": 4060828,
+    "end_ms": 4065000,
+    "duration_ms": 4172,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4065.0,
+    "text": "At some point you're like, that slope is so flat, I'm not going to move anymore.",
+    "start_ms": 4065000,
+    "end_ms": 4068600,
+    "duration_ms": 3600,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4069.08,
+    "text": "Because I'm moving first slowly anyways. So these are my two region reasons to stop.",
+    "start_ms": 4069080,
+    "end_ms": 4073288,
+    "duration_ms": 4208,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4074.04,
+    "text": "Convergence. Big question. Out of scope of this class. When the algorithm settles to uneaslution and stops upsetting significantly or at all.",
+    "start_ms": 4074040,
+    "end_ms": 4082624,
+    "duration_ms": 8584,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4083.672,
+    "text": "So yes, you need to know what generally means to converge.",
+    "start_ms": 4083672,
+    "end_ms": 4086570,
+    "duration_ms": 2898,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4086.57,
+    "text": "Does this thing converge in general? All right. Under complicated conditions which I'll talk about in a moment.",
+    "start_ms": 4086570,
+    "end_ms": 4093328,
+    "duration_ms": 6758,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4094.296,
+    "text": "I think already did this demo. Might have run ahead, let me just double check.",
+    "start_ms": 4094296,
+    "end_ms": 4098120,
+    "duration_ms": 3824,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4100.952,
+    "text": "I don't know, I did. Okay. the full version of this algorithm which is briefly highlighted.",
+    "start_ms": 4100952,
+    "end_ms": 4105800,
+    "duration_ms": 4848,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4105.8,
+    "text": "So we have my gradient descent. Oh, come on. Something is wrong with my superior environment.",
+    "start_ms": 4105800,
+    "end_ms": 4113224,
+    "duration_ms": 7424,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4115.832,
+    "text": "about that Alright, here's my algorithm. Let's walk through it.",
+    "start_ms": 4115832,
+    "end_ms": 4120847,
+    "duration_ms": 5015,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4120.847,
+    "text": "Gradient descent takes a gradient and initial guess and alpha and N, which is no steps I want to take.",
+    "start_ms": 4120847,
+    "end_ms": 4126049,
+    "duration_ms": 5202,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4126.049,
+    "text": "I should have probably made that T. Hello. Let's make it.",
+    "start_ms": 4126049,
+    "end_ms": 4129256,
+    "duration_ms": 3207,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4132.408,
+    "text": "I do t-steps. Okay. There's my algorithm. I start with my initial guess is my list of guesses and this algorithm return all my guesses so I can plot it.",
+    "start_ms": 4132408,
+    "end_ms": 4141652,
+    "duration_ms": 9244,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4142.136,
+    "text": "And I take my current guess and I say my current guess is my old current guess minus alpha times a gradient evaluate the current guess.",
+    "start_ms": 4142136,
+    "end_ms": 4148636,
+    "duration_ms": 6500,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4149.048,
+    "text": "and keep that in my list of guesses. Can run it?",
+    "start_ms": 4149048,
+    "end_ms": 4155304,
+    "duration_ms": 6256,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4156.024,
+    "text": "You can see it run. This is plotting that trajectory.",
+    "start_ms": 4156024,
+    "end_ms": 4158074,
+    "duration_ms": 2050,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4158.074,
+    "text": "If I start out over here... I get stuck here.",
+    "start_ms": 4158074,
+    "end_ms": 4161704,
+    "duration_ms": 3630,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4162.168,
+    "text": "and start out over here and get stuck here. Alright, so where I start, that initial guest does matter.",
+    "start_ms": 4162168,
+    "end_ms": 4169244,
+    "duration_ms": 7076,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4170.904,
+    "text": "Some of you are not in. Alright, let's keep going.",
+    "start_ms": 4170904,
+    "end_ms": 4176392,
+    "duration_ms": 5488,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4177.784,
+    "text": "There are multiple elements. Where I start a fixed planter.",
+    "start_ms": 4177784,
+    "end_ms": 4181832,
+    "duration_ms": 4048,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4182.84,
+    "text": "We might want to know what situations Will there be one answer?",
+    "start_ms": 4182840,
+    "end_ms": 4186508,
+    "duration_ms": 3668,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4186.508,
+    "text": "And ideally, will it actually converge? A little bit out of scope for this class is this concept convexi but we're going to use some basic definition that you'll actually work through in the upcoming assignments.",
+    "start_ms": 4186508,
+    "end_ms": 4196124,
+    "duration_ms": 9616,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4197.24,
+    "text": "So a convex function has this formal definition. We're just saying that if I take any two points here and here, I interpolate between them.",
+    "start_ms": 4197240,
+    "end_ms": 4206210,
+    "duration_ms": 8970,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4206.21,
+    "text": "This is the line between those two points. That's this line.",
+    "start_ms": 4206210,
+    "end_ms": 4209784,
+    "duration_ms": 3574,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4210.264,
+    "text": "That is above the function. Everywhere between those two points.",
+    "start_ms": 4210264,
+    "end_ms": 4215592,
+    "duration_ms": 5328,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4216.216,
+    "text": "So this... Line is above this function here. So this is convex.",
+    "start_ms": 4216216,
+    "end_ms": 4221848,
+    "duration_ms": 5632,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4222.296,
+    "text": "This line goes above that line, so this is not convinced.",
+    "start_ms": 4222296,
+    "end_ms": 4227296,
+    "duration_ms": 5000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4231.544,
+    "text": "intuition for newvexity. Good back to you things where it's like a bowl.",
+    "start_ms": 4231544,
+    "end_ms": 4235912,
+    "duration_ms": 4368,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4236.984,
+    "text": "It does clearly define. Bottom. Give you one picture that might be a little confusing.",
+    "start_ms": 4236984,
+    "end_ms": 4245087,
+    "duration_ms": 8103,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4245.087,
+    "text": "How about this one? My function looks like this. Second Vex.",
+    "start_ms": 4245087,
+    "end_ms": 4250536,
+    "duration_ms": 5449,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4255.704,
+    "text": "They close attention to this thing here. Tokyo, the Eagles.",
+    "start_ms": 4255704,
+    "end_ms": 4260360,
+    "duration_ms": 4656,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4260.344,
+    "text": "So I can take these two points here and this line.",
+    "start_ms": 4260344,
+    "end_ms": 4262844,
+    "duration_ms": 2500,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4263.192,
+    "text": "In this line... on top of each other. It's still conducts.",
+    "start_ms": 4263192,
+    "end_ms": 4267976,
+    "duration_ms": 4784,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4267.768,
+    "text": "Does not have a unique minima? So any of these things would be good to be like right here, maybe right here.",
+    "start_ms": 4267768,
+    "end_ms": 4273096,
+    "duration_ms": 5328,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4273.496,
+    "text": "Um It is convex. So the nice thing is that any local minima of one of these things is a global.",
+    "start_ms": 4273496,
+    "end_ms": 4286584,
+    "duration_ms": 13088,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4287.16,
+    "text": "To the Havoc Convex. Thing, and I run this algorithm and I find a minima.",
+    "start_ms": 4287160,
+    "end_ms": 4291984,
+    "duration_ms": 4824,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4292.056,
+    "text": "I'm good. do it is the minimum is a minimum there's no better minimum might be equivalent to that of mine but nothing better.",
+    "start_ms": 4292056,
+    "end_ms": 4300072,
+    "duration_ms": 8016,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4304.472,
+    "text": "The Poinshary demo is non-convex. Mean squared air is convex, Stephen Strongly convex, so it's a really nice air function because it's got a nice minimum.",
+    "start_ms": 4304472,
+    "end_ms": 4315152,
+    "duration_ms": 10680,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4316.664,
+    "text": "It's a popular choice for this reason. Because it's easy to optimize.",
+    "start_ms": 4316664,
+    "end_ms": 4321160,
+    "duration_ms": 4496,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4322.264,
+    "text": "Gradient descent, this new algorithm, is only guaranteed to converge.",
+    "start_ms": 4322264,
+    "end_ms": 4326264,
+    "duration_ms": 4000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4326.584,
+    "text": "Given enough iterations and approximate step size and some conditions for convex functions.",
+    "start_ms": 4326584,
+    "end_ms": 4332584,
+    "duration_ms": 6000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4333.976,
+    "text": "Otherwise, it could jump all around. Now life, again, a lot of the interesting stuff going on today.",
+    "start_ms": 4333976,
+    "end_ms": 4342392,
+    "duration_ms": 8416,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4343.672,
+    "text": "Is not, but is not convex. But, in this lecture and in this class, we were generally going to focus on things that are convex.",
+    "start_ms": 4343672,
+    "end_ms": 4353944,
+    "duration_ms": 10272,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4355.864,
+    "text": "Is that makes e's numeric techniques really robust? And it is true that great and said.",
+    "start_ms": 4355864,
+    "end_ms": 4364024,
+    "duration_ms": 8160,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4364.408,
+    "text": "is applied very commonly in non-convict settings, incredibly non-convict settings.",
+    "start_ms": 4364408,
+    "end_ms": 4368408,
+    "duration_ms": 4000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4370.744,
+    "text": "Alright, so now let's look at a 1D model and I think we'll get to finish this and then we'll start to cast the gradient next lecture.",
+    "start_ms": 4370744,
+    "end_ms": 4376744,
+    "duration_ms": 6000,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4378.808,
+    "text": "Alright, so here's my loss. for my 1D model. My Prouder Theta We've already defined this.",
+    "start_ms": 4378808,
+    "end_ms": 4386045,
+    "duration_ms": 7237,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4386.045,
+    "text": "This is I'm defining R my loss is this average loss over my data Remember this data, this y hat here is really implicitly a function of theta, right?",
+    "start_ms": 4386045,
+    "end_ms": 4395992,
+    "duration_ms": 9947,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4396.696,
+    "text": "So my model, my predictions, depend on my choice of data.",
+    "start_ms": 4396696,
+    "end_ms": 4399896,
+    "duration_ms": 3200,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4400.632,
+    "text": "Can see why the chain will might be important. What does this look like right here?",
+    "start_ms": 4400632,
+    "end_ms": 4405824,
+    "duration_ms": 5192,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4405.824,
+    "text": "Do I have it on the slide? No, I got so I have a nice parabola.",
+    "start_ms": 4405824,
+    "end_ms": 4409673,
+    "duration_ms": 3849,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4409.673,
+    "text": "What kind of loss would give me this? Square-dose. Right?",
+    "start_ms": 4409673,
+    "end_ms": 4416232,
+    "duration_ms": 6559,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4416.376,
+    "text": "Square loss x squared looks like zz. So this is a square loss.",
+    "start_ms": 4416376,
+    "end_ms": 4421776,
+    "duration_ms": 5400,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4421.776,
+    "text": "And then I'm trying to find the minimum. Remember the by plot my loss surface, the parameter here is data.",
+    "start_ms": 4421776,
+    "end_ms": 4426776,
+    "duration_ms": 5000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4427.096,
+    "text": "This is my theta axis, but I want the value of theta that's at the bottom of this loss.",
+    "start_ms": 4427096,
+    "end_ms": 4431096,
+    "duration_ms": 4000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4431.576,
+    "text": "Any point in this curve is a different guess for my model.",
+    "start_ms": 4431576,
+    "end_ms": 4434576,
+    "duration_ms": 3000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4435.352,
+    "text": "But I want this one, it's the best one. I'll be a lot to say.",
+    "start_ms": 4435352,
+    "end_ms": 4439226,
+    "duration_ms": 3874,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4439.226,
+    "text": "This one right there. Okay. We're gonna go away. So now I can take that gradient send algorithm and put it in terms of my parameters.",
+    "start_ms": 4439226,
+    "end_ms": 4449560,
+    "duration_ms": 10334,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4449.56,
+    "text": "So my next parameter guess is my previous parameter guess times a gradient to my loss.",
+    "start_ms": 4449560,
+    "end_ms": 4454360,
+    "duration_ms": 4800,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4454.36,
+    "text": "Again, here is where I'm going to want to use this chain rule.",
+    "start_ms": 4454360,
+    "end_ms": 4456760,
+    "duration_ms": 2400,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4463.64,
+    "text": "I think we're actually going to do the derivation. Let's try to do it.",
+    "start_ms": 4463640,
+    "end_ms": 4465640,
+    "duration_ms": 2000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4466.648,
+    "text": "Next slide. Okay. or you some channel so this is my model Right here.",
+    "start_ms": 4466648,
+    "end_ms": 4473248,
+    "duration_ms": 6600,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4475.576,
+    "text": "So it's... How many plumbers? Just a slow term to intercept.",
+    "start_ms": 4475576,
+    "end_ms": 4481800,
+    "duration_ms": 6224,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4482.456,
+    "text": "Let's take the derivative of respect to theta. How do I do that?",
+    "start_ms": 4482456,
+    "end_ms": 4484456,
+    "duration_ms": 2000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4485.656,
+    "text": "So let's take the derivative of the derivative of slides through here, it slides through here.",
+    "start_ms": 4485656,
+    "end_ms": 4489256,
+    "duration_ms": 3600,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4489.256,
+    "text": "Now let's start working there. So let's say the derivative.",
+    "start_ms": 4489256,
+    "end_ms": 4492856,
+    "duration_ms": 3600,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4495.96,
+    "text": "My loss. equals 1 over n 1 2 n of the derivative.",
+    "start_ms": 4495960,
+    "end_ms": 4509864,
+    "duration_ms": 13904,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4510.616,
+    "text": "Respect the theatre. Turbo Theta. of y i minus Data?",
+    "start_ms": 4510616,
+    "end_ms": 4520904,
+    "duration_ms": 10288,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4520.56,
+    "text": "times x i. Square. Chain Roll. See this thing right out here?",
+    "start_ms": 4520560,
+    "end_ms": 4527816,
+    "duration_ms": 7256,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4527.765,
+    "text": "G or my F here is... f of u equals u squared, and my g of Hey, da.",
+    "start_ms": 4527765,
+    "end_ms": 4539208,
+    "duration_ms": 11443,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4539.448,
+    "text": "is equal to y i minus Theta 1 times xi.",
+    "start_ms": 4539448,
+    "end_ms": 4547292,
+    "duration_ms": 7844,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4548.376,
+    "text": "Thank you. Alright, so let's do the chain roll. So first I take the root of this thing.",
+    "start_ms": 4548376,
+    "end_ms": 4552918,
+    "duration_ms": 4542,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4552.918,
+    "text": "What's the root of this thing here? Hello I don't know, great.",
+    "start_ms": 4552918,
+    "end_ms": 4561000,
+    "duration_ms": 8082,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4560.664,
+    "text": "Go fast, one over n. We're okay. So equals 1 2 n of I gotta bring this to down.",
+    "start_ms": 4560664,
+    "end_ms": 4571354,
+    "duration_ms": 10690,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4571.354,
+    "text": "I'm gonna use so I have two times y i.",
+    "start_ms": 4571354,
+    "end_ms": 4575472,
+    "duration_ms": 4118,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4576.856,
+    "text": "minus theta 1. X i Just did this part here of my chain rule.",
+    "start_ms": 4576856,
+    "end_ms": 4584428,
+    "duration_ms": 7572,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4584.428,
+    "text": "Now I do this part times the derivative of this whole thing.",
+    "start_ms": 4584428,
+    "end_ms": 4587228,
+    "duration_ms": 2800,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4587.228,
+    "text": "What's the derivative of this thing with respect to theta one?",
+    "start_ms": 4587228,
+    "end_ms": 4589228,
+    "duration_ms": 2000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4591.736,
+    "text": "Myrish? That's times a minus x i They do it right?",
+    "start_ms": 4591736,
+    "end_ms": 4601120,
+    "duration_ms": 9384,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4602.264,
+    "text": "Hopefully. I'm on the next slide. Oh, okay. I did it right.",
+    "start_ms": 4602264,
+    "end_ms": 4607504,
+    "duration_ms": 5240,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4607.504,
+    "text": "Here's the answer. My derivative. So that let's go back.",
+    "start_ms": 4607504,
+    "end_ms": 4614472,
+    "duration_ms": 6968,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4614.392,
+    "text": "So this, this two I'm going to bring it out over here.",
+    "start_ms": 4614392,
+    "end_ms": 4616769,
+    "duration_ms": 2377,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4616.769,
+    "text": "This might as well also bring out over here. And I get...",
+    "start_ms": 4616769,
+    "end_ms": 4621416,
+    "duration_ms": 4647,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4621.688,
+    "text": "The negative 2 and the x i remains, there's my equation.",
+    "start_ms": 4621688,
+    "end_ms": 4629452,
+    "duration_ms": 7764,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4629.452,
+    "text": "There's my derivative using the general. Right here. I get this guy.",
+    "start_ms": 4629452,
+    "end_ms": 4638184,
+    "duration_ms": 8732,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4640.888,
+    "text": "Easy. Well, again, shut. We can do it. We wanna do it.",
+    "start_ms": 4640888,
+    "end_ms": 4652320,
+    "duration_ms": 11432,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4656.44,
+    "text": "Yeah, let's do it and then next lecture we're going to do the higher dimension stuff into castigradient.",
+    "start_ms": 4656440,
+    "end_ms": 4660840,
+    "duration_ms": 4400,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4661.464,
+    "text": "We just time it by. Afflector. Oh my, okay. Do I want the model?",
+    "start_ms": 4661464,
+    "end_ms": 4669480,
+    "duration_ms": 8016,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4672.6,
+    "text": "Okay, and I think I'm trying to predict it. Bill.",
+    "start_ms": 4672600,
+    "end_ms": 4675700,
+    "duration_ms": 3100,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4675.7,
+    "text": "Alright, so here's my lost surface. And for this model, I'm actually going to try to predict the tip from the total bill.",
+    "start_ms": 4675700,
+    "end_ms": 4682352,
+    "duration_ms": 6652,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4682.904,
+    "text": "I remember every point on this axis here is a model for me.",
+    "start_ms": 4682904,
+    "end_ms": 4687064,
+    "duration_ms": 4160,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4687.064,
+    "text": "This curve here is the air I get from that model.",
+    "start_ms": 4687064,
+    "end_ms": 4689704,
+    "duration_ms": 2640,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4694.968,
+    "text": "Here's the gradient and we derive this in the slide as the mean.",
+    "start_ms": 4694968,
+    "end_ms": 4698568,
+    "duration_ms": 3600,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4699.288,
+    "text": "of two times this thing times x and got the negative there too.",
+    "start_ms": 4699288,
+    "end_ms": 4703608,
+    "duration_ms": 4320,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4706.456,
+    "text": "My why hat was this data one time Jackson before.",
+    "start_ms": 4706456,
+    "end_ms": 4710056,
+    "duration_ms": 3600,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4712.152,
+    "text": "So I can run the green set out and we implement it earlier today for the random arbitrary function.",
+    "start_ms": 4712152,
+    "end_ms": 4717152,
+    "duration_ms": 5000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4717.56,
+    "text": "I'm going to pick a negative point five in a small learning rate and run a hundred steps so I don't want to overshoot the answer.",
+    "start_ms": 4717560,
+    "end_ms": 4724560,
+    "duration_ms": 7000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4725.336,
+    "text": "And here's what I get. Solves a problem. Okay, so taking small steps gets us the answer in our 1D case.",
+    "start_ms": 4725336,
+    "end_ms": 4732120,
+    "duration_ms": 6784,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4733.144,
+    "text": "I return to lecture. We recap. Alright, so in the next lecture, we're going to do something crazy.",
+    "start_ms": 4733144,
+    "end_ms": 4740688,
+    "duration_ms": 7544,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4740.688,
+    "text": "We're going to push this to much higher dimensions. We're going to talk about the gradient is not just a slope, but is this vector in which direction we move.",
+    "start_ms": 4740688,
+    "end_ms": 4747709,
+    "duration_ms": 7021,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4747.709,
+    "text": "And at the end of. What should have been this lecture we'll introduce to a castigrate in sent where we will use randomness to make these things work on really large and asets in massive dimensions.",
+    "start_ms": 4747709,
+    "end_ms": 4758624,
+    "duration_ms": 10915,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4759.864,
+    "text": "See you all on Tuesday.",
+    "start_ms": 4759864,
+    "end_ms": 4761864,
+    "duration_ms": 2000,
+    "word_count": 5,
+    "avg_confidence": 90
+  }
+]

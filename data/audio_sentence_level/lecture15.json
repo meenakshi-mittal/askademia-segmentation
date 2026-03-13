@@ -1,0 +1,5249 @@
+[
+  {
+    "timestamp": 3.896,
+    "text": "Good morning, data 100. Can you hear me alright? Wonderful.",
+    "start_ms": 3896,
+    "end_ms": 13292,
+    "duration_ms": 9396,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 13.292,
+    "text": "Today we're pleased to welcome Dr. Edmerson from our very own UC Berkeley.",
+    "start_ms": 13292,
+    "end_ms": 19792,
+    "duration_ms": 6500,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 19.792,
+    "text": "Hold on one second, Nargis. It's a... It's only coming through my computer right now.",
+    "start_ms": 19792,
+    "end_ms": 24863,
+    "duration_ms": 5071,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 24.863,
+    "text": "I will put the microphones up to the computer. Xiao Zheng That might cause me back.",
+    "start_ms": 24863,
+    "end_ms": 34856,
+    "duration_ms": 9993,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 42.104,
+    "text": "So I guess you can say same as system and then switch to wheeling.",
+    "start_ms": 42104,
+    "end_ms": 44904,
+    "duration_ms": 2800,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 45.592,
+    "text": "If you're so famous, I'm more than being a... Okay, let's try that.",
+    "start_ms": 45592,
+    "end_ms": 47992,
+    "duration_ms": 2400,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 47.992,
+    "text": "Okay, now I guess do you want to try? Okay.",
+    "start_ms": 47992,
+    "end_ms": 49692,
+    "duration_ms": 1700,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 50.232,
+    "text": "Can you hear me alright now? Yeah, I think that's coming.",
+    "start_ms": 50232,
+    "end_ms": 54600,
+    "duration_ms": 4368,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 54.296,
+    "text": "All right, wonderful, wonderful. Good morning, everyone. Today we're pleased to welcome Dr.",
+    "start_ms": 54296,
+    "end_ms": 60536,
+    "duration_ms": 6240,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 60.536,
+    "text": "Edminson from our UC Berkeley, Dr. Edminson holds a PhD in history and he is doing research in European philosophy, social, political and legal theory and much more.",
+    "start_ms": 60536,
+    "end_ms": 72366,
+    "duration_ms": 11830,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 72.366,
+    "text": "He played a key role in creating human context and ethics element of our data science program for which we're all very grateful.",
+    "start_ms": 72366,
+    "end_ms": 80056,
+    "duration_ms": 7690,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 80.056,
+    "text": "I hope you all enjoy this lecture. This is going to be a very interesting and useful lecture for you and you will use it a lot in Project A1 and Project A2 that you will have in the future upcoming weeks.",
+    "start_ms": 80056,
+    "end_ms": 93496,
+    "duration_ms": 13440,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 93.496,
+    "text": "Please join me in welcoming Dr. Edminson. Thank you for coming to our lecture.",
+    "start_ms": 93496,
+    "end_ms": 97216,
+    "duration_ms": 3720,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 103.96,
+    "text": "Okay, great. Thank you, Nargis, for the lovely introduction and thank you all for coming here today.",
+    "start_ms": 103960,
+    "end_ms": 109740,
+    "duration_ms": 5780,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 109.74,
+    "text": "So I can talk to you a little bit about...",
+    "start_ms": 109740,
+    "end_ms": 112440,
+    "duration_ms": 2700,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 112.792,
+    "text": "Well, on the one hand, the human context and ethics of data, the program that I help run and teach in here at UC Berkeley is part of the data science program.",
+    "start_ms": 112792,
+    "end_ms": 120792,
+    "duration_ms": 8000,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 120.792,
+    "text": "And also to give you some context and some tools to help you with your upcoming projects and two parts project A1 and A2.",
+    "start_ms": 120792,
+    "end_ms": 129792,
+    "duration_ms": 9000,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 131.256,
+    "text": "So um... Today, I'm going to tell you a little bit of a story.",
+    "start_ms": 131256,
+    "end_ms": 136048,
+    "duration_ms": 4792,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 136.696,
+    "text": "And in that story i'm gonna help you think through some stakes and context and give you some generalizable tools for thinking about The stakes and meaning of similar kinds of work when you're building models that do real work.",
+    "start_ms": 136696,
+    "end_ms": 148632,
+    "duration_ms": 11936,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 148.984,
+    "text": "in the real world. going to be working with the real world data set very soon and replicating the attempts of other data scientists to solve a real world problem.",
+    "start_ms": 148984,
+    "end_ms": 158820,
+    "duration_ms": 9836,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 158.82,
+    "text": "And I'm going to give you some of the context to help you think through what is it that I'm actually doing what should I be thinking about what should I be worrying about and why is the task maybe even more complicated than it seems at first glance.",
+    "start_ms": 158820,
+    "end_ms": 170620,
+    "duration_ms": 11800,
+    "word_count": 49,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 171.288,
+    "text": "So, the story has to do with something called The Cook County Assessor's Office.",
+    "start_ms": 171288,
+    "end_ms": 177192,
+    "duration_ms": 5904,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 177.88,
+    "text": "and their open data initiative, which is actually the very source of the data that you're going to be working with in your project.",
+    "start_ms": 177880,
+    "end_ms": 185880,
+    "duration_ms": 8000,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 186.776,
+    "text": "And it has to do with the use of data science techniques to create more accurate, uniform, and in a simple, but telling translation, more fair assessments of property values.",
+    "start_ms": 186776,
+    "end_ms": 197976,
+    "duration_ms": 11200,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 198.328,
+    "text": "Now this might sound like something pretty distant from your everyday experience, so I'm going to do a little bit to talk to you about what this kind of process is, why it exists, why it's actually really important and plays a kind of vital social function that means it stakes are relatively high.",
+    "start_ms": 198328,
+    "end_ms": 211528,
+    "duration_ms": 13200,
+    "word_count": 54,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 214.168,
+    "text": "So briefly, what is this case study about? You're looking at data and doing work that parallels the Cook County Assessor's office, this part of its open data initiative, which was created in response to a particular social and political problem that emerged at a specific moment in time.",
+    "start_ms": 214168,
+    "end_ms": 238040,
+    "duration_ms": 23872,
+    "word_count": 49,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 237.768,
+    "text": "is basically Chicago, Illinois, and some of the kind of suburbs and towns like Evanston right around Chicago.",
+    "start_ms": 237768,
+    "end_ms": 244386,
+    "duration_ms": 6618,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 244.386,
+    "text": "What is an assessor's office? Some of you might know, but a lot of you probably have never thought about this.",
+    "start_ms": 244386,
+    "end_ms": 250025,
+    "duration_ms": 5639,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 250.025,
+    "text": "You've never worried about paying property taxes, and if you're from California, property tax assessment works pretty different than it does in most other states, like Illinois.",
+    "start_ms": 250025,
+    "end_ms": 259440,
+    "duration_ms": 9415,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 259.864,
+    "text": "So what is an assessor's office do? It assesses property values at scale.",
+    "start_ms": 259864,
+    "end_ms": 264285,
+    "duration_ms": 4421,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 264.285,
+    "text": "That is, it tries to estimate how much is it any given property actually worth.",
+    "start_ms": 264285,
+    "end_ms": 269401,
+    "duration_ms": 5116,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 269.401,
+    "text": "And this means residential properties as well as commercial properties.",
+    "start_ms": 269401,
+    "end_ms": 273832,
+    "duration_ms": 4431,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 273.832,
+    "text": "And it has to do this every three years. And that's a really big task because in a big city, a big county like Chicago, there's quite a few properties.",
+    "start_ms": 273832,
+    "end_ms": 282738,
+    "duration_ms": 8906,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 282.738,
+    "text": "In Cook County, for example, there were nearly 900,000 assessed properties in its last cycle 2018 to 2021.",
+    "start_ms": 282738,
+    "end_ms": 288977,
+    "duration_ms": 6239,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 288.977,
+    "text": "They're just finishing the next cycle now. So you might be wondering why do they do this?",
+    "start_ms": 288977,
+    "end_ms": 294552,
+    "duration_ms": 5575,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 294.552,
+    "text": "Why are they guessing property values? You might be familiar with websites like Zillow or Redfin that are doing that that help you sort of decide, oh, how much is my property worth if I want to sell it?",
+    "start_ms": 294552,
+    "end_ms": 303352,
+    "duration_ms": 8800,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 303.352,
+    "text": "Or how much of the properties out there, you know, maybe worth if I'm looking to buy?",
+    "start_ms": 303352,
+    "end_ms": 307832,
+    "duration_ms": 4480,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 307.832,
+    "text": "Acesor's office do it for a very specific reason. They want to figure out how much property tax do you owe?",
+    "start_ms": 307832,
+    "end_ms": 313992,
+    "duration_ms": 6160,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 313.992,
+    "text": "That's ultimately what they're there for. They're there to figure out if you own property, you owe us taxes based on that property.",
+    "start_ms": 313992,
+    "end_ms": 319672,
+    "duration_ms": 5680,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 319.672,
+    "text": "And if your property hasn't sold in a really long time, they don't actually know.",
+    "start_ms": 319672,
+    "end_ms": 323832,
+    "duration_ms": 4160,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 323.832,
+    "text": "They can't just look at the last sales price because it might be decades old and a house that was sold for $50,000 in 1970, it could easily be worth a million dollars today.",
+    "start_ms": 323832,
+    "end_ms": 333512,
+    "duration_ms": 9680,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 333.88,
+    "text": "So they need techniques to help figure out based on the similarity of your home to other homes that have sold more recently.",
+    "start_ms": 333880,
+    "end_ms": 340880,
+    "duration_ms": 7000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 340.88,
+    "text": "How much do we think that that home is worth and therefore how much in property taxes do you have to pay every single year?",
+    "start_ms": 340880,
+    "end_ms": 347880,
+    "duration_ms": 7000,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 349.336,
+    "text": "As I said, this is a massive operation. And at its core, this is...",
+    "start_ms": 349336,
+    "end_ms": 355600,
+    "duration_ms": 6264,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 355.896,
+    "text": "Data science work. And the techniques that you learn in classes like this one are very much utilized in actually kind of running these systems and it's been to property tax assessment has been really a data intensive practice for about a century now.",
+    "start_ms": 355896,
+    "end_ms": 371768,
+    "duration_ms": 15872,
+    "word_count": 44,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 373.432,
+    "text": "So today, I'm going to examine this case study. that you're going to be replicating and walking through in your project in about four parts.",
+    "start_ms": 373432,
+    "end_ms": 382488,
+    "duration_ms": 9056,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 382.488,
+    "text": "We'll be looking at what was the problem precisely that this is responding to.",
+    "start_ms": 382488,
+    "end_ms": 386648,
+    "duration_ms": 4160,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 388.376,
+    "text": "What was the problem that this was responding to? What was the response to it?",
+    "start_ms": 388376,
+    "end_ms": 393976,
+    "duration_ms": 5600,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 393.976,
+    "text": "How was it formulated? How was it understood? How was it framed?",
+    "start_ms": 393976,
+    "end_ms": 397056,
+    "duration_ms": 3080,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 397.624,
+    "text": "And then all of the very un- briefly run through just kind of review what are some of the key takeaways like what was the point of all of this.",
+    "start_ms": 397624,
+    "end_ms": 405124,
+    "duration_ms": 7500,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 405.124,
+    "text": "And then at the end I won't walk through it but there's a set of slides on you know lessons for data science practice that walk you through sort of the kinds of questions that you can ask each stage of the data science life cycle that you've learned about in this class is a kind of normative framework for what is.",
+    "start_ms": 405124,
+    "end_ms": 419924,
+    "duration_ms": 14800,
+    "word_count": 62,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 419.924,
+    "text": "data science, you know, what is the, you know, your actual activities as a data scientist look like.",
+    "start_ms": 419924,
+    "end_ms": 424484,
+    "duration_ms": 4560,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 424.484,
+    "text": "And it'll be basically giving you added questions. What else can you be asking about related to the human context and ethics of data science practice at each of those stages.",
+    "start_ms": 424484,
+    "end_ms": 433124,
+    "duration_ms": 8640,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 433.124,
+    "text": "So those slides will be just a resource at the end to kind of take with you as you kind of continue in in this course.",
+    "start_ms": 433124,
+    "end_ms": 440324,
+    "duration_ms": 7200,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 441.112,
+    "text": "So let's start with the problem, the historical and social context that actually led to the creation of an open data initiative that led to the creation and making public of the data that you work within your project.",
+    "start_ms": 441112,
+    "end_ms": 452200,
+    "duration_ms": 11088,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 452.2,
+    "text": "That's where we got the data from when we built this project.",
+    "start_ms": 452200,
+    "end_ms": 455612,
+    "duration_ms": 3412,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 457.88,
+    "text": "It starts with a 2017 investigative report from the Chicago Tribune, which uncovered...",
+    "start_ms": 457880,
+    "end_ms": 464120,
+    "duration_ms": 6240,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 464.376,
+    "text": "and precipitated a major scandal in the property assessment system managed by the Cook County Assessor's Office under the watch of its now former County Assessor Joseph Barrios.",
+    "start_ms": 464376,
+    "end_ms": 474696,
+    "duration_ms": 10320,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 475.288,
+    "text": "Working with experts from the University of Chicago, experts in property assessment and data science, journalists that demonstrate the presence of systematic bias and corruption that resulted in a highly regressive tax system.",
+    "start_ms": 475288,
+    "end_ms": 489708,
+    "duration_ms": 14420,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 490.04,
+    "text": "A regressive tax system means one where the disproportionate burden of the taxes fell on lower class and particularly black homeowners in a Chicago area.",
+    "start_ms": 490040,
+    "end_ms": 500680,
+    "duration_ms": 10640,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 501.976,
+    "text": "And is part of this kind of journalistic effort they leveraged.",
+    "start_ms": 501976,
+    "end_ms": 506136,
+    "duration_ms": 4160,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 506.648,
+    "text": "Data analysis and visualization. To help make visible the workings of what they were arguing was a deeply unjust and unfair system.",
+    "start_ms": 506648,
+    "end_ms": 514968,
+    "duration_ms": 8320,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 515.672,
+    "text": "They demonstrated with reference to some standard metrics that have been developed in the property assessment business, that the system was not only generally inaccurate, that is across the board, across different property values, it was kind of well off the mark, but more than that, that the errors had a sort of structural tendency.",
+    "start_ms": 515672,
+    "end_ms": 534232,
+    "duration_ms": 18560,
+    "word_count": 55,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 534.232,
+    "text": "They were distributed systematically in a particular way. Where is property taxes are supposed to be a flat rate that is everybody pays the same percentage of their property values of the property value.",
+    "start_ms": 534232,
+    "end_ms": 546888,
+    "duration_ms": 12656,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 546.888,
+    "text": "So you have a thousand dollar house you're paying say 8% or not a point like 0.8% a million dollar house you're paying 0.8%.",
+    "start_ms": 546888,
+    "end_ms": 555770,
+    "duration_ms": 8882,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 555.77,
+    "text": "The form of fairness that's built into the system is imagine to be you pay an amount of taxes proportional to your home value.",
+    "start_ms": 555770,
+    "end_ms": 563466,
+    "duration_ms": 7696,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 563.466,
+    "text": "And so when the errors are are systematically skewed and say you're a homeowner with a home of a lesser value and your house is being over assessed.",
+    "start_ms": 563466,
+    "end_ms": 573432,
+    "duration_ms": 9966,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 574.136,
+    "text": "You're going to be paying a kind of disproportionately high share of taxes if the people who have more expensive homes are being under assessed and therefore paying less than their fair share.",
+    "start_ms": 574136,
+    "end_ms": 587136,
+    "duration_ms": 13000,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 587.928,
+    "text": "So that would be the difference between, say, on the one hand a regressive taxation scheme.",
+    "start_ms": 587928,
+    "end_ms": 591928,
+    "duration_ms": 4000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 592.312,
+    "text": "That is the poor lower income home owners pay effectively a higher tax rate than high value property owners.",
+    "start_ms": 592312,
+    "end_ms": 601312,
+    "duration_ms": 9000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 601.312,
+    "text": "And that would be compared to say a progressive taxation scheme progressive taxation schemes are often called redistributive they tax higher earners or those of higher property values at a higher rate and redistribute basically is a way of redistributing and trying to equalize unequal systems.",
+    "start_ms": 601312,
+    "end_ms": 618312,
+    "duration_ms": 17000,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 619.128,
+    "text": "But in property taxation, it's not supposed to be regressive or progressive.",
+    "start_ms": 619128,
+    "end_ms": 622461,
+    "duration_ms": 3333,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 622.461,
+    "text": "It's supposed to be flat. Yes. That's a property tax rate.",
+    "start_ms": 622461,
+    "end_ms": 632984,
+    "duration_ms": 10523,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 632.984,
+    "text": "So effective tax rate there means it's supposed to be one single tax rate.",
+    "start_ms": 632984,
+    "end_ms": 637586,
+    "duration_ms": 4602,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 637.586,
+    "text": "It should be that that line should be flat. And that says, what are people actually paying in practice on average across these different median household incomes?",
+    "start_ms": 637586,
+    "end_ms": 646329,
+    "duration_ms": 8743,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 646.329,
+    "text": "Yeah. Great question. So these graphs are basically trying to demonstrate that.",
+    "start_ms": 646329,
+    "end_ms": 651452,
+    "duration_ms": 5123,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 651.452,
+    "text": "That's a graph illustrating the regressivity of the effective property tax rate in Cook County with respect not just to the property value, but with respect, you know, which other graph studies that like, you know, for each quintile of property value, you know, zero to $100,000, $100, you know, whatever.",
+    "start_ms": 651452,
+    "end_ms": 667952,
+    "duration_ms": 16500,
+    "word_count": 51,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 667.952,
+    "text": "It's about, you know, household income. So different ways of measuring and trying to visualize who exactly is this harming.",
+    "start_ms": 667952,
+    "end_ms": 674952,
+    "duration_ms": 7000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 675.128,
+    "text": "And so actually looking trying to map it on to income tells you more than simply property values in part because some you know some low valued homes are owned by landlords who rent them out also and they're paying taxes on those but their own income is actually by high.",
+    "start_ms": 675128,
+    "end_ms": 691128,
+    "duration_ms": 16000,
+    "word_count": 51,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 691.128,
+    "text": "So you want to map things like this to actually say what kinds of people are being impacted.",
+    "start_ms": 691128,
+    "end_ms": 695128,
+    "duration_ms": 4000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 696.536,
+    "text": "Okay, so the work just to recap, the system was regressive because it distributed tax burdens unevenly and in a particular direction placing a disproportionate burden on lower income homeowners and violating the law, which said that this should be a flat tax rate.",
+    "start_ms": 696536,
+    "end_ms": 711536,
+    "duration_ms": 15000,
+    "word_count": 44,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 712.728,
+    "text": "What caused this? Well, some of this was the effects of the recession starting in 2008.",
+    "start_ms": 712728,
+    "end_ms": 718168,
+    "duration_ms": 5440,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 718.168,
+    "text": "That basically their models hadn't caught up with. Property values plummeted after 2008, but people kept being assessed higher based on past sales data.",
+    "start_ms": 718168,
+    "end_ms": 726564,
+    "duration_ms": 8396,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 726.564,
+    "text": "And this just they didn't fully catch up to it.",
+    "start_ms": 726564,
+    "end_ms": 729688,
+    "duration_ms": 3124,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 730.04,
+    "text": "But it wasn't solely that because compared to the analysis showed that other jurisdictions around the US that also would experience big plummets and overall property values didn't have the same kind of disparity.",
+    "start_ms": 730040,
+    "end_ms": 741040,
+    "duration_ms": 11000,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 741.176,
+    "text": "Most jurisdictions actually do our regressive to some degree and have disparity, but in Cook County it was particularly stark.",
+    "start_ms": 741176,
+    "end_ms": 747676,
+    "duration_ms": 6500,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 747.676,
+    "text": "And clearly there was something else going on here that simply the effects of the recession.",
+    "start_ms": 747676,
+    "end_ms": 752376,
+    "duration_ms": 4700,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 754.68,
+    "text": "Another graph that came out of a lawsuit that was subsequent to this revelation that was leveraged by a former by property owners against the assessor burials demonstrated the unfair burden of burials as tax system wasn't only just regressive based on on property value or on income but also in terms of race and they brought up a lawsuits in addition to actually say that this isn't just unfair because of class differences but it's discriminatory against a legally protected class and therefore they're arguing it violates anti-discrimination clauses that have come out of the civil rights acts So It's clear there was a problem, what caused it.",
+    "start_ms": 754680,
+    "end_ms": 799744,
+    "duration_ms": 45064,
+    "word_count": 109,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 799.744,
+    "text": "They said it's not just the recession. You might also be thinking maybe you've taken data 104 or another HCE class or you've just been generally aware of ethics of data science and you might be thinking, oh, this must be a case of a biased algorithm, an algorithm that is learned something about the world and the way that racism works and it's reproducing racism kind of directly from it.",
+    "start_ms": 799744,
+    "end_ms": 822904,
+    "duration_ms": 23160,
+    "word_count": 71,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 822.904,
+    "text": "Well, that's not exactly the case here. Now this is a slightly different case than classical.",
+    "start_ms": 822904,
+    "end_ms": 828144,
+    "duration_ms": 5240,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 828.632,
+    "text": "instances of algorithmic bias. It wasn't in the main the issue of a faulty model that created a more aggressive system.",
+    "start_ms": 828632,
+    "end_ms": 836768,
+    "duration_ms": 8136,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 836.768,
+    "text": "Although that's a little bit of the case in general if you use a really simple linear model it will tend to be regressive because it regresses to the mean that they regress towards the mean price of lower valued homes will tend to be overestimated.",
+    "start_ms": 836768,
+    "end_ms": 849768,
+    "duration_ms": 13000,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 849.768,
+    "text": "But it's very easy and possible to build a model that's not such a simple linear model.",
+    "start_ms": 849768,
+    "end_ms": 854268,
+    "duration_ms": 4500,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 854.268,
+    "text": "So that was one piece of the puzzle but not the entirety of it.",
+    "start_ms": 854268,
+    "end_ms": 857768,
+    "duration_ms": 3500,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 858.808,
+    "text": "The biggest. cause that marked out the distinctiveness of the disparity in Cook County.",
+    "start_ms": 858808,
+    "end_ms": 867280,
+    "duration_ms": 8472,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 867.992,
+    "text": "Was actually because of the particular social, political, and technical arrangements of the property assessment system.",
+    "start_ms": 867992,
+    "end_ms": 873492,
+    "duration_ms": 5500,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 874.712,
+    "text": "That is one that enabled the wealthy and the more privileged.",
+    "start_ms": 874712,
+    "end_ms": 878012,
+    "duration_ms": 3300,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 878.68,
+    "text": "to successfully challenge their assessments. Basically this is what I mean, this is how it works.",
+    "start_ms": 878680,
+    "end_ms": 885608,
+    "duration_ms": 6928,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 886.584,
+    "text": "Every household in Cook County gets an assessment mail to them.",
+    "start_ms": 886584,
+    "end_ms": 889624,
+    "duration_ms": 3040,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 890.584,
+    "text": "It tells them this is how much we think your house is worth and therefore this is how much in property taxes you're going to be paying for the next three years.",
+    "start_ms": 890584,
+    "end_ms": 897084,
+    "duration_ms": 6500,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 897.084,
+    "text": "If you the homeowner believed that you've been over assessed you think that they got something wrong.",
+    "start_ms": 897084,
+    "end_ms": 902584,
+    "duration_ms": 5500,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 902.904,
+    "text": "You can actually go and make an appeal. There's a human in the loop.",
+    "start_ms": 902904,
+    "end_ms": 905992,
+    "duration_ms": 3088,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 905.992,
+    "text": "It's precisely the kind of thing that critics of algorithmic bias say you need to have to fix a problem.",
+    "start_ms": 905992,
+    "end_ms": 910404,
+    "duration_ms": 4412,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 910.404,
+    "text": "Put a human in the loop. Make there a review board that can actually you can go be it before and say hey I think your algorithm made a mistake.",
+    "start_ms": 910404,
+    "end_ms": 916904,
+    "duration_ms": 6500,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 917.4,
+    "text": "But in fact, it's precisely that institution that was part of the problem here.",
+    "start_ms": 917400,
+    "end_ms": 921400,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 921.944,
+    "text": "So you go to a review board which is made up of elected officials and you go in and you make your case.",
+    "start_ms": 921944,
+    "end_ms": 927444,
+    "duration_ms": 5500,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 927.444,
+    "text": "It's a way of trying to build in public confidence and accountability into the system.",
+    "start_ms": 927444,
+    "end_ms": 931644,
+    "duration_ms": 4200,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 931.644,
+    "text": "Sure, air is happened but you can go and try to get them fixed.",
+    "start_ms": 931644,
+    "end_ms": 934944,
+    "duration_ms": 3300,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 936.152,
+    "text": "As sounds like the responsible thing to do. So it must sound really odd to you though that this particular appeals process was actually part of the problem.",
+    "start_ms": 936152,
+    "end_ms": 945032,
+    "duration_ms": 8880,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 945.208,
+    "text": "and not simply a solution. And this isn't a surprise to you if you're familiar with some basic insights from critical race theory, critical legal theory, and even a number of other disciplines, which for a long time demonstrated that seemingly neutral and impartial institutions, which everyone is supposed to have, basically, they call facially neutral, access to.",
+    "start_ms": 945208,
+    "end_ms": 969896,
+    "duration_ms": 24688,
+    "word_count": 58,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 969.912,
+    "text": "Um. Which is basically the way that anti-discrimination has come to be defined since the 1970s.",
+    "start_ms": 969912,
+    "end_ms": 976564,
+    "duration_ms": 6652,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 976.564,
+    "text": "If everybody has ultimately the same access to an institution, the law doesn't actually formally discriminate.",
+    "start_ms": 976564,
+    "end_ms": 983864,
+    "duration_ms": 7300,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 983.864,
+    "text": "Then in theory, you're okay. What happens is those sorts of systems tend to obscure underlying inequalities.",
+    "start_ms": 983864,
+    "end_ms": 992064,
+    "duration_ms": 8200,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 992.312,
+    "text": "that they can then perpetuate. And so this is true of formally impartial algorithms, which is what you learn in other case studies in the HC curriculum.",
+    "start_ms": 992312,
+    "end_ms": 1000052,
+    "duration_ms": 7740,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1000.792,
+    "text": "So why in this case would this be an unequal institution?",
+    "start_ms": 1000792,
+    "end_ms": 1003972,
+    "duration_ms": 3180,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1003.972,
+    "text": "Because although everybody formally has the same access to go and appeal their tax assessments, everybody can in theory go, there's no law that says you have to have a certain amount of money to actually go and appeal your assessment.",
+    "start_ms": 1003972,
+    "end_ms": 1016472,
+    "duration_ms": 12500,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1016.472,
+    "text": "But only those that actually have the means to take time off work to go do it, that have means to hire tax lawyers who know the intricacies of the system would actually go and be able to find success.",
+    "start_ms": 1016472,
+    "end_ms": 1027032,
+    "duration_ms": 10560,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1027.544,
+    "text": "In fact, Chicago boasts a very large and thriving tax attorney industry dedicated precisely to appealing property assessments, which is reflected in the growing number of appeals in Cook County across the first decades of the 21st century, which is one of the things that you see here.",
+    "start_ms": 1027544,
+    "end_ms": 1043544,
+    "duration_ms": 16000,
+    "word_count": 48,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1044.184,
+    "text": "If you would go drive around especially like eight years ago, drive around Chicago, six to eight years ago, and even still today, you would see billboards advertising law firms that were dedicated to going and getting you property tax reductions.",
+    "start_ms": 1044184,
+    "end_ms": 1059921,
+    "duration_ms": 15737,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1059.921,
+    "text": "It was just a huge part of the kind of lawyer industry in Chicago.",
+    "start_ms": 1059921,
+    "end_ms": 1070504,
+    "duration_ms": 10583,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1070.33,
+    "text": "often. And we're more successful in winning reductions, much more often than they're less wealthy and less white, neighbors.",
+    "start_ms": 1070330,
+    "end_ms": 1076500,
+    "duration_ms": 6170,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1077.176,
+    "text": "And so just for an example in 2015 alone, residential property owners filed assessment appeals involving 370,000 parcels and one reduction's 80% of the time.",
+    "start_ms": 1077176,
+    "end_ms": 1087776,
+    "duration_ms": 10600,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1089.688,
+    "text": "Now the Tribune's analysis pointed towards corruption, and lack of transparency is the root of the problem.",
+    "start_ms": 1089688,
+    "end_ms": 1094688,
+    "duration_ms": 5000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1095.384,
+    "text": "The assessor, Barrios, had close, very close ties to this tax lawyer industry, more than half of his campaign contributions came from these tax law firms that stood to benefit and were benefiting considerably from the system.",
+    "start_ms": 1095384,
+    "end_ms": 1107384,
+    "duration_ms": 12000,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1108.504,
+    "text": "The chief partner of the biggest law firm dealing with the largest property appeals was also an Illinois the Illinois house to speaker.",
+    "start_ms": 1108504,
+    "end_ms": 1116504,
+    "duration_ms": 8000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1117.048,
+    "text": "Industry plays a powerful role in Illinois in Chicago politics.",
+    "start_ms": 1117048,
+    "end_ms": 1121048,
+    "duration_ms": 4000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1121.048,
+    "text": "And they cleverly adapt to the language of community engagement, keeping a human in the loop, to give the system a veneer of fairness.",
+    "start_ms": 1121048,
+    "end_ms": 1128248,
+    "duration_ms": 7200,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1128.248,
+    "text": "And so there's a takeaway here that applies both to a system like real social systems as well as to kind of claims about algorithms.",
+    "start_ms": 1128248,
+    "end_ms": 1136568,
+    "duration_ms": 8320,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1136.568,
+    "text": "Don't be fooled by this kind of ethics washing. You know, you see the language here coming from the deputy assessor trying to make you say, tell you that this system is clearly the best and and fairest way to do it.",
+    "start_ms": 1136568,
+    "end_ms": 1146392,
+    "duration_ms": 9824,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1146.392,
+    "text": "You always have to look at the details at the way that a system actually works in practice and not the way that it gets advertised.",
+    "start_ms": 1146392,
+    "end_ms": 1152205,
+    "duration_ms": 5813,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1152.205,
+    "text": "This is true of the way tech firms will describe and talk about the fairness of their own systems, about their inclusivity, actually look at what they do in practice, which takes empirical work by social scientists.",
+    "start_ms": 1152205,
+    "end_ms": 1169448,
+    "duration_ms": 17243,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1169.153,
+    "text": "one year only to suddenly find that the house was appraised at levels far in excess of what they paid for it.",
+    "start_ms": 1169153,
+    "end_ms": 1175576,
+    "duration_ms": 6423,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1175.576,
+    "text": "Suddenly threatening them with the possibility of no longer being able to afford their home to pay off the mortgage.",
+    "start_ms": 1175576,
+    "end_ms": 1180776,
+    "duration_ms": 5200,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1181.272,
+    "text": "This can result in drastic consequences. This is not just an inconvenience if you're a low income homeowner.",
+    "start_ms": 1181272,
+    "end_ms": 1186900,
+    "duration_ms": 5628,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1186.9,
+    "text": "It can result in you having to lose your house, having a foreclosed-on, or having to sell it because you can no longer afford it, because you're suddenly responsible for paying thousands of dollars more every year than you had budgeted.",
+    "start_ms": 1186900,
+    "end_ms": 1198632,
+    "duration_ms": 11732,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1198.632,
+    "text": "And suddenly you just don't have the means to handle it.",
+    "start_ms": 1198632,
+    "end_ms": 1201992,
+    "duration_ms": 3360,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1202.584,
+    "text": "This is not just a problem for individuals. Because what happens when a house or a group of houses in a neighborhood are systematically overvalued.",
+    "start_ms": 1202584,
+    "end_ms": 1210996,
+    "duration_ms": 8412,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1211.48,
+    "text": "or other properties are undervalued. In other words, when air rates are distributed so that Air SKUs positive for lower valued homes and SKUs negative for higher valued homes.",
+    "start_ms": 1211480,
+    "end_ms": 1221288,
+    "duration_ms": 9808,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1221.288,
+    "text": "Well, several things happens. Because it's all connected and relational.",
+    "start_ms": 1221288,
+    "end_ms": 1225832,
+    "duration_ms": 4544,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1226.616,
+    "text": "Other similar properties, those in their own neighborhood that have similar features to them, are going to start being more likely to be overvalued in the model, because those features become more heavily weighted in that model than before.",
+    "start_ms": 1226616,
+    "end_ms": 1244856,
+    "duration_ms": 18240,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1244.581,
+    "text": "amount of taxes set to be collected in Chicago is fixed.",
+    "start_ms": 1244581,
+    "end_ms": 1248248,
+    "duration_ms": 3667,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1248.248,
+    "text": "Like basically the county set says we're going to collect this much in property taxes and assessment is not telling you exactly how much you're going to pay because the percentage is not fixed.",
+    "start_ms": 1248248,
+    "end_ms": 1258248,
+    "duration_ms": 10000,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1258.248,
+    "text": "They basically say here's how much we want to collect and then let's figure out exactly how much all the property value is worth and then each individual property gets you pay based on basically what fraction of that overall hole your property is worth.",
+    "start_ms": 1258248,
+    "end_ms": 1270888,
+    "duration_ms": 12640,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1273.048,
+    "text": "So if all the value of all the properties in Cook County is estimated to say to be a hundred billion dollars and they love you a one percent tax on every property.",
+    "start_ms": 1273048,
+    "end_ms": 1282048,
+    "duration_ms": 9000,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1282.048,
+    "text": "then They basically have to break up that. The one the one percent comes from their determination that they would need to collect a billion dollars sorry didn't phrase that clearly they basically say we need a billion dollars in property taxes if they find out that it's all worth a hundred billion dollars all the properties.",
+    "start_ms": 1282048,
+    "end_ms": 1302152,
+    "duration_ms": 20104,
+    "word_count": 57,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1302.252,
+    "text": "Then they say okay we're levying a one percent tax rate on on on everybody.",
+    "start_ms": 1302252,
+    "end_ms": 1307052,
+    "duration_ms": 4800,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1307.32,
+    "text": "But what happens because this basically means that it's a zero-sum game.",
+    "start_ms": 1307320,
+    "end_ms": 1311560,
+    "duration_ms": 4240,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1311.56,
+    "text": "Every properties were, every properties amount of tax is related to how much other people are paying.",
+    "start_ms": 1311560,
+    "end_ms": 1316920,
+    "duration_ms": 5360,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1317.432,
+    "text": "So even if your home is not being, say, undervalued relative to its actual value.",
+    "start_ms": 1317432,
+    "end_ms": 1322432,
+    "duration_ms": 5000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1322.744,
+    "text": "or overvalued relative to an its actual value if everybody with more expensive homes is being undervalued even if the assessment of your house is correct you will end up paying more.",
+    "start_ms": 1322744,
+    "end_ms": 1333744,
+    "duration_ms": 11000,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1334.136,
+    "text": "So it's actually the way that the whole system works that translates into how much am I going to be paid.",
+    "start_ms": 1334136,
+    "end_ms": 1339636,
+    "duration_ms": 5500,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1342.744,
+    "text": "This is also, by the way, true of the relationship between residential and commercial properties as well.",
+    "start_ms": 1342744,
+    "end_ms": 1347144,
+    "duration_ms": 4400,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1347.144,
+    "text": "I'm you're only going to be working with residential properties in your project, but basically the kind of slice of the pie is also divided up between all the residential properties and all the commercial properties.",
+    "start_ms": 1347144,
+    "end_ms": 1356344,
+    "duration_ms": 9200,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1356.344,
+    "text": "So commercial properties are undervalued as they really were, then residential properties by default end up having to paint more.",
+    "start_ms": 1356344,
+    "end_ms": 1363544,
+    "duration_ms": 7200,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1364.312,
+    "text": "So not only is this unfair and kind of obvious ways, but the issue of justice that's involved goes a bit deeper here because it replicated much older patterns of racially discriminatory housing practices in Chicago and across the United States.",
+    "start_ms": 1364312,
+    "end_ms": 1384152,
+    "duration_ms": 19840,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1384.065,
+    "text": "boasts the distinction of being the most segregated city in the United States.",
+    "start_ms": 1384065,
+    "end_ms": 1387928,
+    "duration_ms": 3863,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1387.928,
+    "text": "And that's also part of why regressive taxation systems The impact low income homeowners at different rates are almost necessarily going to disparate, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, uh, So before we look at how the Cook County assessors office mobilized the power of data to try to solve this problem, I want to take a quick and very brief detour through the history of racist housing practices to give you some context to understand the meaning and urgency of what this Chicago Tribune uncovered, because this wasn't a one-off problem.",
+    "start_ms": 1387928,
+    "end_ms": 1423513,
+    "duration_ms": 35585,
+    "word_count": 195,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1423.513,
+    "text": "It was part of the whole and deep history and pattern of driving inequality through housing practices.",
+    "start_ms": 1423513,
+    "end_ms": 1430476,
+    "duration_ms": 6963,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1430.476,
+    "text": "Housing in real estate has been one of the most significant in enduring drivers of structural racism and racial inequality in the history of the United States, going back to the aftermath of the Civil War.",
+    "start_ms": 1430476,
+    "end_ms": 1440476,
+    "duration_ms": 10000,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1440.792,
+    "text": "So many of you are likely familiar with some effective segregationist policies in the United States in the 20th century, particularly in the Jim Crow South, which forbid African Americans from using the same facilities as whites, buses, bathrooms, and pools.",
+    "start_ms": 1440792,
+    "end_ms": 1457312,
+    "duration_ms": 16520,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1457.312,
+    "text": "Maybe you've learned about the role of the Civil Rights Act or the Civil Rights Movement in basically rendering that illegal.",
+    "start_ms": 1457312,
+    "end_ms": 1464632,
+    "duration_ms": 7320,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1465.72,
+    "text": "But this was also a story simultaneously of how neighborhoods in the urban north that didn't have the same Jim Crow laws became increasingly segregated through sets of other more subtle forms of practices.",
+    "start_ms": 1465720,
+    "end_ms": 1476345,
+    "duration_ms": 10625,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1476.345,
+    "text": "In some cases in the case of housing it was driven by private real estate industry and connection with government actors.",
+    "start_ms": 1476345,
+    "end_ms": 1484120,
+    "duration_ms": 7775,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1484.984,
+    "text": "So, is segregation increased across the first half of the 20th century as part of the two ways of the Great Migration of African Americans from the South into the urban centers of the North?",
+    "start_ms": 1484984,
+    "end_ms": 1495984,
+    "duration_ms": 11000,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1495.984,
+    "text": "And as those urban centers received them, they developed practices for segregating.",
+    "start_ms": 1495984,
+    "end_ms": 1500984,
+    "duration_ms": 5000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1502.136,
+    "text": "Although it was illegal for governments to actively segregate neighborhoods according to race, to use that as a good reason that you can or can't live in a certain area, other methods were available for essentially achieving the same ends in practice.",
+    "start_ms": 1502136,
+    "end_ms": 1514536,
+    "duration_ms": 12400,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1514.536,
+    "text": "So again, facial neutral laws, but there were other sorts of social practices that enabled that segregation to take place anyways.",
+    "start_ms": 1514536,
+    "end_ms": 1521416,
+    "duration_ms": 6880,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1522.04,
+    "text": "One of the most notorious practices was what has come to be known is redlining.",
+    "start_ms": 1522040,
+    "end_ms": 1526360,
+    "duration_ms": 4320,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1526.648,
+    "text": "Drawing maps of cities that distinguish neighborhoods in terms of relative risk.",
+    "start_ms": 1526648,
+    "end_ms": 1531648,
+    "duration_ms": 5000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1531.864,
+    "text": "Redlining was performed by federal housing agencies during the Great Depression in the 1930s in order to increase home ownership for lower-income Americans, or at least white-lower-income Americans.",
+    "start_ms": 1531864,
+    "end_ms": 1543864,
+    "duration_ms": 12000,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1544.152,
+    "text": "The areas coded as highest risk, colored in red, hence the name of redlining, were deemed too risky for the federal government to ensure banks issuing mortgages in those areas.",
+    "start_ms": 1544152,
+    "end_ms": 1554605,
+    "duration_ms": 10453,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1554.605,
+    "text": "So it became especially difficult to access loans. and buy a home.",
+    "start_ms": 1554605,
+    "end_ms": 1560680,
+    "duration_ms": 6075,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1560.68,
+    "text": "As these neighborhoods were disproportionately black, this meant that credit was near impossible to come by for African Americans looking to own a house.",
+    "start_ms": 1560680,
+    "end_ms": 1567941,
+    "duration_ms": 7261,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1567.941,
+    "text": "And the effects of these practices has continued to resonate today.",
+    "start_ms": 1567941,
+    "end_ms": 1571326,
+    "duration_ms": 3385,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1571.326,
+    "text": "And in a number of jurisdictions, including in the Bay Area and in Berkeley and Chicago, if you look at redlining masks, you can actually map them on to demographics today with a surprising amount of fidelity.",
+    "start_ms": 1571326,
+    "end_ms": 1583480,
+    "duration_ms": 12154,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1584.664,
+    "text": "Now the origins of this practice of redlining, it wasn't simply a top-down government initiative to racially segregate.",
+    "start_ms": 1584664,
+    "end_ms": 1591664,
+    "duration_ms": 7000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1591.664,
+    "text": "We're actually lay in the data that the federal government was using.",
+    "start_ms": 1591664,
+    "end_ms": 1595664,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1595.664,
+    "text": "And that came out of a change in data practices, basically early data science techniques, developed by the private real estate industry in the 1920s.",
+    "start_ms": 1595664,
+    "end_ms": 1605664,
+    "duration_ms": 10000,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1606.456,
+    "text": "In other words, segregation was established and reinforced in part through the work of real estate professionals who were concerned with establishing reliable methods for predicting the value of a home that it was part of professionalizing a certain kind of data science practice is and and generating new forms of making data that actually underwrote the federal housing system that was captured in these redlining maps.",
+    "start_ms": 1606456,
+    "end_ms": 1630456,
+    "duration_ms": 24000,
+    "word_count": 67,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1632.408,
+    "text": "And again, was this the real estate industry was professionalized in a few places in this, uh, in a, uh, at first one of those places was not accidentally Chicago in the first half of the 20th century.",
+    "start_ms": 1632408,
+    "end_ms": 1644968,
+    "duration_ms": 12560,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1645.56,
+    "text": "The men that were part of these industries aimed to standardize procedures for assessing property values, that is to make more objective, precise, accurate mathematical, the determination of like, what do you think a home is worth so we can go and better sell it?",
+    "start_ms": 1645560,
+    "end_ms": 1660152,
+    "duration_ms": 14592,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1660.152,
+    "text": "They wanted property appraisal to be a kind of empirical and rigorous data science guided by strict methods and principles.",
+    "start_ms": 1660152,
+    "end_ms": 1666600,
+    "duration_ms": 6448,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1666.6,
+    "text": "Beginning in the 1920s, these burgeoning professionals, professionals in places like Chicago and Cleveland began creating manuals for training real estate assessors in the proper scientific methods for appraising property.",
+    "start_ms": 1666600,
+    "end_ms": 1678240,
+    "duration_ms": 11640,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1679.352,
+    "text": "And they coded race directly into these like step by step you could call them sort of like kinds of algorithms that a human being would follow.",
+    "start_ms": 1679352,
+    "end_ms": 1687352,
+    "duration_ms": 8000,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1687.352,
+    "text": "In order to basically go out in map cities in terms of their property values.",
+    "start_ms": 1687352,
+    "end_ms": 1693352,
+    "duration_ms": 6000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1693.352,
+    "text": "And you'd see this in this table from an appraisal manual from 1937.",
+    "start_ms": 1693352,
+    "end_ms": 1697352,
+    "duration_ms": 4000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1697.848,
+    "text": "And as I've underlined here, what are things that kind of increase the value or decrease the value of a given home that you're looking at.",
+    "start_ms": 1697848,
+    "end_ms": 1704348,
+    "duration_ms": 6500,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1704.348,
+    "text": "Racial and foreign neighbors is shows up as a reason for a deduction.",
+    "start_ms": 1704348,
+    "end_ms": 1709848,
+    "duration_ms": 5500,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1710.424,
+    "text": "So race simply put, which viewed as a risk factor for our property or in neighborhood.",
+    "start_ms": 1710424,
+    "end_ms": 1714904,
+    "duration_ms": 4480,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1715.48,
+    "text": "Even where race was not explicitly mentioned to praisers created proxies that stood in for race, like the obsolescence of a property or a neighborhood that were sort of known to be a reference to race without mention.",
+    "start_ms": 1715480,
+    "end_ms": 1726440,
+    "duration_ms": 10960,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1739.192,
+    "text": "So this all contributed to an evolving and self-reinforcing system of racial inequality and segregation that's still alive today.",
+    "start_ms": 1739192,
+    "end_ms": 1745272,
+    "duration_ms": 6080,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1745.848,
+    "text": "Now I do want to note that this racial data revolution is not directly responsible for the overassessment of black homer's property we see in Cook County today.",
+    "start_ms": 1745848,
+    "end_ms": 1752848,
+    "duration_ms": 7000,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1753.976,
+    "text": "It would benefit owners of lower-valued properties to have their homes be undervalued because that would mean paying lower property tax.",
+    "start_ms": 1753976,
+    "end_ms": 1760716,
+    "duration_ms": 6740,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1760.716,
+    "text": "So it's not because of, say, proxies that are still in the data that these homes are being overvalued as we've said this comes from other places.",
+    "start_ms": 1760716,
+    "end_ms": 1768056,
+    "duration_ms": 7340,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1768.056,
+    "text": "The point of running through this history is not to tell you this is how you get bad or biased data that generates bad algorithms.",
+    "start_ms": 1768056,
+    "end_ms": 1775116,
+    "duration_ms": 7060,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1775.116,
+    "text": "It's rather to give you a historical background to explain how housing has been a major vector of racial inequality for the last century.",
+    "start_ms": 1775116,
+    "end_ms": 1783796,
+    "duration_ms": 8680,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1783.796,
+    "text": "you seen as risky on the one hand, which makes it hard to get loans to buy homes, and on the other restricting access to credit.",
+    "start_ms": 1783796,
+    "end_ms": 1792588,
+    "duration_ms": 8792,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1792.588,
+    "text": "So that's all on one hand. And on the other, you're caught in the opposite direction.",
+    "start_ms": 1792588,
+    "end_ms": 1795988,
+    "duration_ms": 3400,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1795.988,
+    "text": "The home can be overvalued by the tax assessors, so you're paying a higher, a higher price.",
+    "start_ms": 1795988,
+    "end_ms": 1800988,
+    "duration_ms": 5000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1800.988,
+    "text": "So for those homeowners that are caught between this, you're getting squeezed in both directions.",
+    "start_ms": 1800988,
+    "end_ms": 1804988,
+    "duration_ms": 4000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1805.784,
+    "text": "Okay, that's the background, that's the problem. Where does the data come from?",
+    "start_ms": 1805784,
+    "end_ms": 1809294,
+    "duration_ms": 3510,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1809.294,
+    "text": "How do they intend to use it and how is it supposed to fix this problem?",
+    "start_ms": 1809294,
+    "end_ms": 1819144,
+    "duration_ms": 9850,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1819.064,
+    "text": "the rest of today's class. So the new assessor, there's a new assessor that gets elected.",
+    "start_ms": 1819064,
+    "end_ms": 1823912,
+    "duration_ms": 4848,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1823.912,
+    "text": "But public in Cook County, like sees this story, they're outraged, it's a big scandal, the old assessor gets voted out, and a new assessor gets voted in with a mandate to fix this system.",
+    "start_ms": 1823912,
+    "end_ms": 1835352,
+    "duration_ms": 11440,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1836.152,
+    "text": "And one of the first things he did and had promised to do as part of his campaign was create a new office of data science with an open data initiative.",
+    "start_ms": 1836152,
+    "end_ms": 1842341,
+    "duration_ms": 6189,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1842.341,
+    "text": "And it's now part of a broader Cook County open data system that centralizes across many different agencies, but initially it was built up from within the assessors, the Cook County Assessors Office.",
+    "start_ms": 1842341,
+    "end_ms": 1853592,
+    "duration_ms": 11251,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1854.072,
+    "text": "And they said what we're going to do is create not just any more accurate.",
+    "start_ms": 1854072,
+    "end_ms": 1857372,
+    "duration_ms": 3300,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1857.656,
+    "text": "Algorithmic model that will be more fair because accurate but will design a new whole system in pipeline to address the problems with the Cook County assessor's office.",
+    "start_ms": 1857656,
+    "end_ms": 1866656,
+    "duration_ms": 9000,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1867.992,
+    "text": "So what I'm going to do is walk through how the assessor's office and its data science department developed this solution by reconstructing and analyzing their path through the data science life cycle that you've been learning in this class.",
+    "start_ms": 1867992,
+    "end_ms": 1879992,
+    "duration_ms": 12000,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1880.6,
+    "text": "We'll really focus on asking, you know, a question being really precise about the task before you.",
+    "start_ms": 1880600,
+    "end_ms": 1885920,
+    "duration_ms": 5320,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1885.92,
+    "text": "What exactly is it I'm trying to do? What's really involved in its stake?",
+    "start_ms": 1885920,
+    "end_ms": 1890200,
+    "duration_ms": 4280,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1891.064,
+    "text": "And it's about understanding the world that you're operating within and better understand the impacts of the model that you're building.",
+    "start_ms": 1891064,
+    "end_ms": 1897564,
+    "duration_ms": 6500,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1898.008,
+    "text": "That is you know think more about the inputs and outputs at the lifecycle.",
+    "start_ms": 1898008,
+    "end_ms": 1902008,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1902.424,
+    "text": "So what I'm asking you to do is situate your technical task which you can often do in abstraction how do I optimize for a kind of given loss function when I'm building my model.",
+    "start_ms": 1902424,
+    "end_ms": 1910924,
+    "duration_ms": 8500,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1910.924,
+    "text": "You know make good predictions according to some metric and situate that within the larger social context of that technical task because that context actually tells you what you're doing what it means to do your job well.",
+    "start_ms": 1910924,
+    "end_ms": 1921924,
+    "duration_ms": 11000,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1922.616,
+    "text": "To be able to interpret what am I actually doing?",
+    "start_ms": 1922616,
+    "end_ms": 1925016,
+    "duration_ms": 2400,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1925.368,
+    "text": "Why what do these numbers mean? What do the what and how do I actually choose different ways of measuring and evaluating what it is that I'm building.",
+    "start_ms": 1925368,
+    "end_ms": 1932868,
+    "duration_ms": 7500,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1932.868,
+    "text": "So you know what kinds of choices to make if you're ever working in situations like this.",
+    "start_ms": 1932868,
+    "end_ms": 1936868,
+    "duration_ms": 4000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1938.712,
+    "text": "Okay, so let's jump in. Imagine as you're asking you to do on the project, you're a data scientist, you're working for the Cook County Assessor's Office, and you're trying to build a whole new system, not just the model and a pipeline, but a whole new approach with a lot of different people involved to actually fix the world, to replace an old unfair system and create a new one.",
+    "start_ms": 1938712,
+    "end_ms": 1965432,
+    "duration_ms": 26720,
+    "word_count": 71,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1965.212,
+    "text": "translated from a social problem into a technical problem. And it was framed this way by the Chicago Tribune story and by the New County Assessor office.",
+    "start_ms": 1965212,
+    "end_ms": 1972792,
+    "duration_ms": 7580,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1972.792,
+    "text": "The new County Assessor. The idea is this. The old system was unfair because it was at the end of the day inaccurate.",
+    "start_ms": 1972792,
+    "end_ms": 1980312,
+    "duration_ms": 7520,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1980.312,
+    "text": "And I'll say, you know, inaccurate and quotation marks because as you learn in this class, the word accuracy has on the one hand a very technical definition.",
+    "start_ms": 1980312,
+    "end_ms": 1986552,
+    "duration_ms": 6240,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1986.552,
+    "text": "And I'm going to be using it in its kind of broader sense.",
+    "start_ms": 1986552,
+    "end_ms": 1989512,
+    "duration_ms": 2960,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1989.512,
+    "text": "and then within that we'll disambiguate different versions of what it means to be accurate.",
+    "start_ms": 1989512,
+    "end_ms": 1993312,
+    "duration_ms": 3800,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1993.312,
+    "text": "But ultimately it was to say that it's unfair because it's not accurate in particular ways.",
+    "start_ms": 1993312,
+    "end_ms": 1998012,
+    "duration_ms": 4700,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1998.012,
+    "text": "It's not just that the old system was wrong but wrong in a particular way.",
+    "start_ms": 1998012,
+    "end_ms": 2002012,
+    "duration_ms": 4000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2002.392,
+    "text": "It made errors that were distributed in a particular way that was socially interpreted as there.",
+    "start_ms": 2002392,
+    "end_ms": 2008892,
+    "duration_ms": 6500,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2010.136,
+    "text": "As they put it the task was to quote create a robust pipeline that accurately assesses property values at scale and is fair.",
+    "start_ms": 2010136,
+    "end_ms": 2016436,
+    "duration_ms": 6300,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2016.436,
+    "text": "They're essentially equating these two things which are distinct concepts.",
+    "start_ms": 2016436,
+    "end_ms": 2019836,
+    "duration_ms": 3400,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2019.836,
+    "text": "Accuracy of prediction and fairness and are trying to make one stand in for the other and trying to do the work to actually make accuracy into a way of understanding what fairness is.",
+    "start_ms": 2019836,
+    "end_ms": 2028436,
+    "duration_ms": 8600,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2028.984,
+    "text": "We may take for granted that something that's accurate is more fair but i want you to part of what i'm going to do today is try to actually denaturalize that assumption and say what work does it take to make something like statistical accuracy stand in for fairness.",
+    "start_ms": 2028984,
+    "end_ms": 2042744,
+    "duration_ms": 13760,
+    "word_count": 49,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2044.792,
+    "text": "So on their GitLab, they write that the Define fairness, as quote, the ability of our pipeline to accurately assess all residential property values, accounting for disparities in geography information, etc.",
+    "start_ms": 2044792,
+    "end_ms": 2055112,
+    "duration_ms": 10320,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2055.928,
+    "text": "Okay. So the task is framed as something appropriate for data scientists.",
+    "start_ms": 2055928,
+    "end_ms": 2060237,
+    "duration_ms": 4309,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2060.237,
+    "text": "If you can make the assessments more accurate, that is minimize errors in a particular way, you will definitely make for a more fair system.",
+    "start_ms": 2060237,
+    "end_ms": 2068824,
+    "duration_ms": 8587,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2070.904,
+    "text": "But there are in a sense two different problems here.",
+    "start_ms": 2070904,
+    "end_ms": 2073704,
+    "duration_ms": 2800,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2073.704,
+    "text": "Make accurate assessments, you can do that without necessarily making the system itself more fair.",
+    "start_ms": 2073704,
+    "end_ms": 2077904,
+    "duration_ms": 4200,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2077.904,
+    "text": "The fact that they're being made equivalent is important in telling.",
+    "start_ms": 2077904,
+    "end_ms": 2080773,
+    "duration_ms": 2869,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2080.773,
+    "text": "It's an equation that's not just given by the nature of things, but when they're trying to make work.",
+    "start_ms": 2080773,
+    "end_ms": 2085730,
+    "duration_ms": 4957,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2085.73,
+    "text": "Make two, you know, put two different problems and make one stand in for the other.",
+    "start_ms": 2085730,
+    "end_ms": 2089904,
+    "duration_ms": 4174,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2090.712,
+    "text": "Accuracy, Baroness, Baroness as Accuracy. Make a social problem into it more straightforward and tractable technical one.",
+    "start_ms": 2090712,
+    "end_ms": 2098568,
+    "duration_ms": 7856,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2099.096,
+    "text": "So we're going to start by talking about that technical part, the accuracy part.",
+    "start_ms": 2099096,
+    "end_ms": 2102936,
+    "duration_ms": 3840,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2102.936,
+    "text": "For you, the data scientist, this probably feels more comfortable.",
+    "start_ms": 2102936,
+    "end_ms": 2105896,
+    "duration_ms": 2960,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2105.896,
+    "text": "All right, let's bracket out these complex questions about fairness.",
+    "start_ms": 2105896,
+    "end_ms": 2108856,
+    "duration_ms": 2960,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2108.856,
+    "text": "What does it mean to just build a model that predicts well?",
+    "start_ms": 2108856,
+    "end_ms": 2115016,
+    "duration_ms": 6160,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2115.001,
+    "text": "science problem. Okay. So what does it actually mean then?",
+    "start_ms": 2115001,
+    "end_ms": 2119136,
+    "duration_ms": 4135,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2119.136,
+    "text": "We're going to create a robust pipeline to accurately assess property values at scale.",
+    "start_ms": 2119136,
+    "end_ms": 2122776,
+    "duration_ms": 3640,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2122.776,
+    "text": "What does it mean to accurately assess property values? And what role does this scale play here?",
+    "start_ms": 2122776,
+    "end_ms": 2128456,
+    "duration_ms": 5680,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2129.624,
+    "text": "So let's distinguish three interrelated questions. I think it's really useful to be precise, as precise as we can about what exactly we're defining.",
+    "start_ms": 2129624,
+    "end_ms": 2135917,
+    "duration_ms": 6293,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2135.917,
+    "text": "So we know what is it we're actually predicting and what's involved here.",
+    "start_ms": 2135917,
+    "end_ms": 2139304,
+    "duration_ms": 3387,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2140.664,
+    "text": "Um. First, what actually is an assessment? What are we predicting?",
+    "start_ms": 2140664,
+    "end_ms": 2145939,
+    "duration_ms": 5275,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2145.939,
+    "text": "Again, I think you all have a sense of what's involved, but I think it's more complicated than I've stated.",
+    "start_ms": 2145939,
+    "end_ms": 2151356,
+    "duration_ms": 5417,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2151.356,
+    "text": "What makes one assessment more accurate than another? How do you actually determine and make that evaluation that one assessment is more accurate than another?",
+    "start_ms": 2151356,
+    "end_ms": 2160356,
+    "duration_ms": 9000,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2160.356,
+    "text": "And what makes one whole batch of assessments, not just an assessment of an individual property, but what makes, you know, assessing at scale more accurate than say a whole other batch, like, you know, a different model evaluating all of the same properties again.",
+    "start_ms": 2160356,
+    "end_ms": 2174356,
+    "duration_ms": 14000,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2174.872,
+    "text": "We'll break this down one step at a time and see how these problems are all interconnected.",
+    "start_ms": 2174872,
+    "end_ms": 2178872,
+    "duration_ms": 4000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2180.088,
+    "text": "Okay, so start with this simple question. What's in assessment?",
+    "start_ms": 2180088,
+    "end_ms": 2184552,
+    "duration_ms": 4464,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2184.6,
+    "text": "An assessment obviously is an estimate of the value of a home we've been talking about that for a while, duh.",
+    "start_ms": 2184600,
+    "end_ms": 2189600,
+    "duration_ms": 5000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2190.2,
+    "text": "What do we mean by value here? We're estimating the value of a home.",
+    "start_ms": 2190200,
+    "end_ms": 2194460,
+    "duration_ms": 4260,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2194.46,
+    "text": "The word value means a lot of different things. You know, every day like we talk about all kinds of different values.",
+    "start_ms": 2194460,
+    "end_ms": 2201234,
+    "duration_ms": 6774,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2201.234,
+    "text": "There's many ways of valuing a home thinking about its use value.",
+    "start_ms": 2201234,
+    "end_ms": 2204958,
+    "duration_ms": 3724,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2204.958,
+    "text": "It's usefulness to somebody. It's value with something that I desire or like or want.",
+    "start_ms": 2204958,
+    "end_ms": 2209400,
+    "duration_ms": 4442,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2209.88,
+    "text": "Um, obviously we're not talking about moral values like trust, whether you're dependable, or a physical measurement that has different values.",
+    "start_ms": 2209880,
+    "end_ms": 2216880,
+    "duration_ms": 7000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2216.88,
+    "text": "But of course we're talking about an economic value. It's value in currency.",
+    "start_ms": 2216880,
+    "end_ms": 2221755,
+    "duration_ms": 4875,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2221.755,
+    "text": "It's dollar value. What determines the dollar value of a home?",
+    "start_ms": 2221755,
+    "end_ms": 2226172,
+    "duration_ms": 4417,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2226.584,
+    "text": "It's not just some intrinsic property of this physical structure sitting there.",
+    "start_ms": 2226584,
+    "end_ms": 2230904,
+    "duration_ms": 4320,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2231.224,
+    "text": "And there's many different ways you can actually talk about determining the economic value of a home even.",
+    "start_ms": 2231224,
+    "end_ms": 2237724,
+    "duration_ms": 6500,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2237.724,
+    "text": "You could refer it to its construction materials and property size.",
+    "start_ms": 2237724,
+    "end_ms": 2242224,
+    "duration_ms": 4500,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2242.224,
+    "text": "It could be the fair price determined by the state what a home ought to be worth given something some notion of fairness that's imported from somewhere else.",
+    "start_ms": 2242224,
+    "end_ms": 2250224,
+    "duration_ms": 8000,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2250.224,
+    "text": "It could be what a real estate expert thinks based on some combination of location, materials, quality or size.",
+    "start_ms": 2250224,
+    "end_ms": 2256224,
+    "duration_ms": 6000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2256.224,
+    "text": "It could also just be what a homeowner thinks. What is my property worth?",
+    "start_ms": 2256224,
+    "end_ms": 2260684,
+    "duration_ms": 4460,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2260.684,
+    "text": "Because I paid for it, I know what it's worth, I know a lot about my neighborhood.",
+    "start_ms": 2260684,
+    "end_ms": 2264564,
+    "duration_ms": 3880,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2264.792,
+    "text": "You could add to the list of different ways of deciding what does it mean to say you determine the value of a home.",
+    "start_ms": 2264792,
+    "end_ms": 2270192,
+    "duration_ms": 5400,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2270.712,
+    "text": "But I think you all probably already assume that none of these things actually go into determining what is that you know how do you actually determine economic price of a home.",
+    "start_ms": 2270712,
+    "end_ms": 2280112,
+    "duration_ms": 9400,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2280.504,
+    "text": "That thing that you need to actually use is a target variable if you want to predict homes that haven't been sold in a long time.",
+    "start_ms": 2280504,
+    "end_ms": 2285504,
+    "duration_ms": 5000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2287.256,
+    "text": "In this case, what do you think they use? They use market value.",
+    "start_ms": 2287256,
+    "end_ms": 2290865,
+    "duration_ms": 3609,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2290.865,
+    "text": "That is what something actually sells for. What somebody actually paid for a house at some moment in time.",
+    "start_ms": 2290865,
+    "end_ms": 2296936,
+    "duration_ms": 6071,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2296.936,
+    "text": "What someone is willing to pay and someone is willing to sell for.",
+    "start_ms": 2296936,
+    "end_ms": 2299640,
+    "duration_ms": 2704,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2299.64,
+    "text": "It's a product of a kind of singular event. One little interaction between several parties.",
+    "start_ms": 2299640,
+    "end_ms": 2304616,
+    "duration_ms": 4976,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2304.616,
+    "text": "I'm selling your buying, and in this moment a sale price is registered and that determines the value.",
+    "start_ms": 2304616,
+    "end_ms": 2315976,
+    "duration_ms": 11360,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2315.969,
+    "text": "fixed thing out there, something just part of nature, like measuring, say, the position of a star, which has sort of, you know, you could say a more stable kind of positional value.",
+    "start_ms": 2315969,
+    "end_ms": 2326112,
+    "duration_ms": 10143,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2326.112,
+    "text": "Rather, the value of a home is a product of a social interaction that takes place at one moment in time that's structured by a whole network of perceptions and information, beliefs, desire, convenience, Existing financial instruments, taste, class, perceptions of class about the neighborhood, perceptions of the race of the neighborhood, you could go on, all of these things can structure exactly why a house sells for what it does at a particular moment in time.",
+    "start_ms": 2326112,
+    "end_ms": 2350112,
+    "duration_ms": 24000,
+    "word_count": 77,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2350.112,
+    "text": "It's a very ephemeral data point that's taken to be something that's a hard ground truth that's very stable.",
+    "start_ms": 2350112,
+    "end_ms": 2355112,
+    "duration_ms": 5000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2355.896,
+    "text": "But a house could have, you know, if that one person didn't show up who loved this house for some reason, it could be sold again the next day for a different price.",
+    "start_ms": 2355896,
+    "end_ms": 2362376,
+    "duration_ms": 6480,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2362.376,
+    "text": "So long as there's just someone willing to pay that price for sell for that price.",
+    "start_ms": 2362376,
+    "end_ms": 2366216,
+    "duration_ms": 3840,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2366.904,
+    "text": "So it's not stable the value that you're using as a target variable or a ground truth, but it's also not arbitrary.",
+    "start_ms": 2366904,
+    "end_ms": 2372904,
+    "duration_ms": 6000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2372.904,
+    "text": "There's good reason there's a logic behind why things usually get sold for roughly what they get sold for.",
+    "start_ms": 2372904,
+    "end_ms": 2378904,
+    "duration_ms": 6000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2378.904,
+    "text": "reasons why prices tend to be relatively stable across, you know, short periods of time, and when they change, they change in patterned ways.",
+    "start_ms": 2378904,
+    "end_ms": 2386104,
+    "duration_ms": 7200,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2387.0,
+    "text": "So when a home is not sold. Its market value is not just in uncertain, it's not that we don't know what the market value is when it hasn't been sold.",
+    "start_ms": 2387000,
+    "end_ms": 2396200,
+    "duration_ms": 9200,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2396.2,
+    "text": "It's in a deeper, kind of ontological sense in determinant.",
+    "start_ms": 2396200,
+    "end_ms": 2400200,
+    "duration_ms": 4000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2401.4,
+    "text": "So it's not uncertain the way that you might be uncertain about where is a star based on, you know, I have all these different astronomical observations and I'm uncertain where it actually is.",
+    "start_ms": 2401400,
+    "end_ms": 2409400,
+    "duration_ms": 8000,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2409.4,
+    "text": "And I have to use, you know, averages to try and figure out what I think, you know, the best position of it is.",
+    "start_ms": 2409400,
+    "end_ms": 2415400,
+    "duration_ms": 6000,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2415.4,
+    "text": "It's not uncertain in that way. It's more deeply it's indeterminate because it has no fixed value outside of our socially legitimated acts of valuing it in a marketplace.",
+    "start_ms": 2415400,
+    "end_ms": 2424400,
+    "duration_ms": 9000,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2424.4,
+    "text": "That is, it's given value by being sold. And in between, it's not value lists, but it's value again is indeterminate.",
+    "start_ms": 2424400,
+    "end_ms": 2432400,
+    "duration_ms": 8000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2432.4,
+    "text": "Its value is what different institutions that need to know what its value is decide that it's worth.",
+    "start_ms": 2432400,
+    "end_ms": 2436400,
+    "duration_ms": 4000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2436.4,
+    "text": "You know, what you want to leverage it to take a mortgage out on it, you need to determine what its value is.",
+    "start_ms": 2436400,
+    "end_ms": 2441400,
+    "duration_ms": 5000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2441.4,
+    "text": "And that's a different kind of operation that also wants to kind of assess your home price.",
+    "start_ms": 2441400,
+    "end_ms": 2446400,
+    "duration_ms": 5000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2446.4,
+    "text": "So again, there's social institutions that need to decide, and in some ways make determinate something that is at root indeterminate.",
+    "start_ms": 2446400,
+    "end_ms": 2453400,
+    "duration_ms": 7000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2455.448,
+    "text": "So, um, if you're trying to determine the price of a home, it's market value in order to assess its tax burden.",
+    "start_ms": 2455448,
+    "end_ms": 2461608,
+    "duration_ms": 6160,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2461.608,
+    "text": "The only way of reliably was say, 100% certainty of knowing its value.",
+    "start_ms": 2461608,
+    "end_ms": 2466408,
+    "duration_ms": 4800,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2466.648,
+    "text": "You can say this with perfect accuracy is to actually sell it.",
+    "start_ms": 2466648,
+    "end_ms": 2470808,
+    "duration_ms": 4160,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2471.288,
+    "text": "In a sense, an estimate is only really truly accurate if you test it by selling the very same property the next day.",
+    "start_ms": 2471288,
+    "end_ms": 2476928,
+    "duration_ms": 5640,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2477.816,
+    "text": "And even then it's only going to be accurate for a short period of time because the market might fluctuate.",
+    "start_ms": 2477816,
+    "end_ms": 2482416,
+    "duration_ms": 4600,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2482.416,
+    "text": "It might be worth something different. Unfortunately, if you're a property assessor, selling every property every three years isn't really a great way to make an assessment.",
+    "start_ms": 2482416,
+    "end_ms": 2495092,
+    "duration_ms": 12676,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2495.092,
+    "text": "That's why we use statistical tools to do it. You need to have a pretty good idea of what a property is worth if you want its owners to pay their fair share of taxes on it.",
+    "start_ms": 2495092,
+    "end_ms": 2503944,
+    "duration_ms": 8852,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2503.944,
+    "text": "You can't make everyone sell their property every few years to truly know its market value.",
+    "start_ms": 2503944,
+    "end_ms": 2508444,
+    "duration_ms": 4500,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2509.24,
+    "text": "And since so many properties haven't been sold for years, for decades, every year that passes makes that previous sale even less reliable as an indicator.",
+    "start_ms": 2509240,
+    "end_ms": 2518240,
+    "duration_ms": 9000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2519.032,
+    "text": "So you need to make estimates. So you're all data scientists or interested in data science or want to learn how to do it in some way.",
+    "start_ms": 2519032,
+    "end_ms": 2526552,
+    "duration_ms": 7520,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2526.552,
+    "text": "So you have some sense of where this is going.",
+    "start_ms": 2526552,
+    "end_ms": 2529085,
+    "duration_ms": 2533,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2529.085,
+    "text": "You're probably thinking, well, with the right data about lots of different homes, their features, their characteristics, and with enough some subset of recent sales prices, you can probably predict the value of a property pretty reliably.",
+    "start_ms": 2529085,
+    "end_ms": 2541432,
+    "duration_ms": 12347,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2541.912,
+    "text": "Even if you're not a data scientist, you probably know about websites like Zillow and Redfin that do this and are constantly updating their estimates or property values in a similar way.",
+    "start_ms": 2541912,
+    "end_ms": 2550392,
+    "duration_ms": 8480,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2550.392,
+    "text": "They of course don't know the actual value what it will definitely sell for, but they make estimates they make predictions based on past data.",
+    "start_ms": 2550392,
+    "end_ms": 2557032,
+    "duration_ms": 6640,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2557.72,
+    "text": "They predict what it would sell for if it sold in the next week or perhaps in the next year.",
+    "start_ms": 2557720,
+    "end_ms": 2562120,
+    "duration_ms": 4400,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2563.032,
+    "text": "How do you think they do this? Let's look at this with a little more precisely by starting with the data.",
+    "start_ms": 2563032,
+    "end_ms": 2568056,
+    "duration_ms": 5024,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2568.056,
+    "text": "Because that's the next step in the life cycle right now we've just been talking about framing the problem.",
+    "start_ms": 2568056,
+    "end_ms": 2572136,
+    "duration_ms": 4080,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2572.136,
+    "text": "And I've been showing you that the problem itself, uh, uh, you know, make more accurate assessments is actually a lot more complicated than we thought initially.",
+    "start_ms": 2572136,
+    "end_ms": 2579976,
+    "duration_ms": 7840,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2581.016,
+    "text": "Okay, so we start with the data we have and perhaps the data we might need.",
+    "start_ms": 2581016,
+    "end_ms": 2586016,
+    "duration_ms": 5000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2586.016,
+    "text": "These are the basic questions that usually get data acquisition, you know, at the stage of obtaining data.",
+    "start_ms": 2586016,
+    "end_ms": 2592516,
+    "duration_ms": 6500,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2592.516,
+    "text": "What data do we have? What do we need? How will we sample more data, et cetera?",
+    "start_ms": 2592516,
+    "end_ms": 2596516,
+    "duration_ms": 4000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2597.144,
+    "text": "So in the case of the Cook County Assessor's Office, you've got two data sets and you've got these data that you're going to be working with these data sets in Project A1 and A2.",
+    "start_ms": 2597144,
+    "end_ms": 2605144,
+    "duration_ms": 8000,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2606.36,
+    "text": "You have property characteristics on the one hand, so for every single property, every single residential property in Cook County, you have a big list of different property characteristics, and you see some of them listed here, the age of the property, central air conditioning apartments, attic finish, attic type bedrooms, in your number of bedrooms, building square feet, does it have a basement, et cetera?",
+    "start_ms": 2606360,
+    "end_ms": 2625180,
+    "duration_ms": 18820,
+    "word_count": 66,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2625.18,
+    "text": "The list goes on and on and on. There's a lot of different data points you can collect about any individual property.",
+    "start_ms": 2625180,
+    "end_ms": 2630060,
+    "duration_ms": 4880,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2630.06,
+    "text": "And on the other, you have sales data, all homes in the county, and then you select only the most recent sales data because the longer ago it is, the less useful it is for you.",
+    "start_ms": 2630060,
+    "end_ms": 2639300,
+    "duration_ms": 9240,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2640.056,
+    "text": "You don't have to be a data scientist, of course, to think this way.",
+    "start_ms": 2640056,
+    "end_ms": 2642856,
+    "duration_ms": 2800,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2642.856,
+    "text": "Everyday homeowners do this all the time. You live on a street save identical homes, your neighbor sells their house for $500,000.",
+    "start_ms": 2642856,
+    "end_ms": 2650376,
+    "duration_ms": 7520,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2650.376,
+    "text": "Okay, it's pretty safe bet that your house would also sell for $500,000 if you sold it in the near future.",
+    "start_ms": 2650376,
+    "end_ms": 2655896,
+    "duration_ms": 5520,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2656.312,
+    "text": "But what if your house is a little bit larger than your neighbors?",
+    "start_ms": 2656312,
+    "end_ms": 2659322,
+    "duration_ms": 3010,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2659.322,
+    "text": "Say an extra 200 square feet? Maybe you see another house down the street that's a little larger than yours, and it has an extra bathroom and it sells for $700,000.",
+    "start_ms": 2659322,
+    "end_ms": 2668152,
+    "duration_ms": 8830,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2668.664,
+    "text": "How do you decide where the value of your house lies in between them?",
+    "start_ms": 2668664,
+    "end_ms": 2672424,
+    "duration_ms": 3760,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2672.424,
+    "text": "You could say it's $600,000, somewhere in the middle. And that's a really rough estimate, not very reliable, and you're obviously working up a very small sample size.",
+    "start_ms": 2672424,
+    "end_ms": 2681304,
+    "duration_ms": 8880,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2681.816,
+    "text": "But the county assessors in the CCAO have a lot more data, and they have sophisticated statistical techniques, like all of you were learning.",
+    "start_ms": 2681816,
+    "end_ms": 2688456,
+    "duration_ms": 6640,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2689.176,
+    "text": "So looking at square feet in bathrooms of every home, sales data on every arms-length transaction.",
+    "start_ms": 2689176,
+    "end_ms": 2695029,
+    "duration_ms": 5853,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2695.029,
+    "text": "Arms length, by the way, here means that it was It wasn't being sold on a big discount to a family member.",
+    "start_ms": 2695029,
+    "end_ms": 2703296,
+    "duration_ms": 8267,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2703.296,
+    "text": "So some properties are going to be sold for weirdly small number amount of money because it's like a parent's like selling the property to their child for a poultry sum.",
+    "start_ms": 2703296,
+    "end_ms": 2712336,
+    "duration_ms": 9040,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2712.336,
+    "text": "So you have to actually filter figure out where those are and filter them now and not use those because they're going to mess up your model because they're not arms length market prices.",
+    "start_ms": 2712336,
+    "end_ms": 2720656,
+    "duration_ms": 8320,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2721.72,
+    "text": "So all this data makes it possible to create a linear model to predict sales price, the fair market value of unsold properties, by basically uncovering patterns and data sets containing known sale prices and characteristics of similar and nearby properties, training a model on this data and applying it to all the properties about which you don't have sales data.",
+    "start_ms": 2721720,
+    "end_ms": 2740120,
+    "duration_ms": 18400,
+    "word_count": 61,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2745.048,
+    "text": "And so one of the big things you have to think about is like, what is in my data?",
+    "start_ms": 2745048,
+    "end_ms": 2749288,
+    "duration_ms": 4240,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2749.288,
+    "text": "How good is my data? How complete is my data?",
+    "start_ms": 2749288,
+    "end_ms": 2751248,
+    "duration_ms": 1960,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2751.248,
+    "text": "How consistent is it? How might the attributes be differentially reported?",
+    "start_ms": 2751248,
+    "end_ms": 2756848,
+    "duration_ms": 5600,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2756.848,
+    "text": "Which data is missing and for which neighborhoods is the data going to be spotter for some neighborhoods rather than others?",
+    "start_ms": 2756848,
+    "end_ms": 2762608,
+    "duration_ms": 5760,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2762.608,
+    "text": "And they even went out and realized that there were important predictors that they didn't have reliable data on, such as, are the homes in a floodplain?",
+    "start_ms": 2762608,
+    "end_ms": 2769968,
+    "duration_ms": 7360,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2769.968,
+    "text": "How closer they to an airport? That is, if you're in an area that, you know, near mid-way or old-hair airports and planes are landing over you all the time, that might be a big reason for why your property values are lower than they might otherwise be.",
+    "start_ms": 2769968,
+    "end_ms": 2781128,
+    "duration_ms": 11160,
+    "word_count": 48,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2782.392,
+    "text": "And you have to figure out how do you track these improvements?",
+    "start_ms": 2782392,
+    "end_ms": 2785058,
+    "duration_ms": 2666,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2785.058,
+    "text": "How do you update them? How do you figure out how to get sufficient data?",
+    "start_ms": 2785058,
+    "end_ms": 2788392,
+    "duration_ms": 3334,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2788.392,
+    "text": "So part of the CCAO doing its work that data scientists doing their work is not just working with the existing data but recognizing they have to actually build an infrastructure for collecting more of it.",
+    "start_ms": 2788392,
+    "end_ms": 2797392,
+    "duration_ms": 9000,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2800.216,
+    "text": "And then you move on to exploratory data analysis to actually understand your data as you're doing the work of building your model.",
+    "start_ms": 2800216,
+    "end_ms": 2808376,
+    "duration_ms": 8160,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2808.376,
+    "text": "What are the most important features? Which sets of attributes are most predictive of sales price?",
+    "start_ms": 2808376,
+    "end_ms": 2813416,
+    "duration_ms": 5040,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2814.072,
+    "text": "They note that this that which features our most predictive actually changes neighborhood to neighborhood.",
+    "start_ms": 2814072,
+    "end_ms": 2822072,
+    "duration_ms": 8000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2822.712,
+    "text": "So one extra bedroom and one neighborhood doesn't contribute sort of like a fixed amount of value.",
+    "start_ms": 2822712,
+    "end_ms": 2828712,
+    "duration_ms": 6000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2828.712,
+    "text": "It's about the kind of combination of one extra bedroom when combined with certain other features.",
+    "start_ms": 2828712,
+    "end_ms": 2832712,
+    "duration_ms": 4000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2832.712,
+    "text": "Like one extra bedroom plus this neighborhood creates a different kind of factor.",
+    "start_ms": 2832712,
+    "end_ms": 2839712,
+    "duration_ms": 7000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2839.712,
+    "text": "And they look through and this kind of suggested to them that different models might need to be used in different neighborhoods and different townships to basically wait these different features different.",
+    "start_ms": 2839712,
+    "end_ms": 2848712,
+    "duration_ms": 9000,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2848.712,
+    "text": "you they found that location is the largest driver of county wide variation in property value, and itself this impacts how other features are weighted.",
+    "start_ms": 2848712,
+    "end_ms": 2858008,
+    "duration_ms": 9296,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2859.672,
+    "text": "Okay, and then you think about are there any data points in there that are misleading again like non arms length transactions.",
+    "start_ms": 2859672,
+    "end_ms": 2867512,
+    "duration_ms": 7840,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2867.512,
+    "text": "And how do these kind of bias the model. And then you figure out do we have all the data we need and perhaps you have to go back to the previous stage and realize oh some of our data is problematic or it's incomplete and we need more right the data science life cycle doesn't just go in one direction.",
+    "start_ms": 2867512,
+    "end_ms": 2881792,
+    "duration_ms": 14280,
+    "word_count": 61,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2881.792,
+    "text": "You get to understand the data and often realize you have to go backwards and go back and collect more data and better data or clean your data better.",
+    "start_ms": 2881792,
+    "end_ms": 2888512,
+    "duration_ms": 6720,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2889.208,
+    "text": "And then figure out, okay, this is good enough data can we move on to the next stage where we actually model things we actually make predictions and inferences about the world.",
+    "start_ms": 2889208,
+    "end_ms": 2896708,
+    "duration_ms": 7500,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2896.708,
+    "text": "Where we try to figure out how to decide is our model accurate, how accurate, and what do we even mean by accurate in the first place such that in making it more accurate we make the system more fair.",
+    "start_ms": 2896708,
+    "end_ms": 2907708,
+    "duration_ms": 11000,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2910.52,
+    "text": "So let's move on to that question. How do you know if the estimate that you've produced?",
+    "start_ms": 2910520,
+    "end_ms": 2914040,
+    "duration_ms": 3520,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2914.808,
+    "text": "If your model overall is accurate. You hold out a test data set, of course.",
+    "start_ms": 2914808,
+    "end_ms": 2919608,
+    "duration_ms": 4800,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2919.608,
+    "text": "And you see how your model performs, predicting the sales price of properties that it was not trained on.",
+    "start_ms": 2919608,
+    "end_ms": 2924488,
+    "duration_ms": 4880,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2924.488,
+    "text": "So right, you reserve a certain set of sales data and then run your model on it and see basically, oh, how close was it to the actual sales price as we have?",
+    "start_ms": 2924488,
+    "end_ms": 2933448,
+    "duration_ms": 8960,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2933.448,
+    "text": "And then you evaluate how close, I'm going to put in quotation marks, how close your estimate was, to the actual sales price and that data, making sure not to overfit your model.",
+    "start_ms": 2933448,
+    "end_ms": 2942728,
+    "duration_ms": 9280,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2943.192,
+    "text": "And this is exactly what you're doing in your projects.",
+    "start_ms": 2943192,
+    "end_ms": 2945772,
+    "duration_ms": 2580,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2945.772,
+    "text": "This is precisely what you're going to do and precisely how you're going to kind of then you're going to make the predictions and you're going to try to evaluate it according to certain metrics.",
+    "start_ms": 2945772,
+    "end_ms": 2952292,
+    "duration_ms": 6520,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2952.292,
+    "text": "How close was I was I close enough? And then you go back and say I can accurately predict the price of any one individual house that has not been sold recently because at scale my model produces values that are pretty close to the recent sales data about other houses in most cases.",
+    "start_ms": 2952292,
+    "end_ms": 2970904,
+    "duration_ms": 18612,
+    "word_count": 54,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2971.608,
+    "text": "So you need some quantitative measure of this closeness. And when you have this, it gives you at least as the data scientist some confidence that any one prediction about any individual house, even though you don't know for certain, it gives you some confidence that you can transpose, you can translate from the statistical aggregate to any one house and say, I'm pretty sure that that one's going to be close to, if only it were to sell on the next year and I could verify, in fact, if I was that close.",
+    "start_ms": 2971608,
+    "end_ms": 2998408,
+    "duration_ms": 26800,
+    "word_count": 94,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3000.216,
+    "text": "In other words, my confidence that I'm estimating the value of anyone house accurately rests on some measure of the overall accuracy of the model at scale.",
+    "start_ms": 3000216,
+    "end_ms": 3008216,
+    "duration_ms": 8000,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3009.72,
+    "text": "And so then the question about how close am I for an individual property comes back to how you know how close.",
+    "start_ms": 3009720,
+    "end_ms": 3024720,
+    "duration_ms": 15000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3024.536,
+    "text": "How close is close enough? And what do we mean by close?",
+    "start_ms": 3024536,
+    "end_ms": 3028136,
+    "duration_ms": 3600,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3028.136,
+    "text": "That's the interesting problem. It's a kind of problem. Statisticians and data scientists are trained to solve.",
+    "start_ms": 3028136,
+    "end_ms": 3033240,
+    "duration_ms": 5104,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3033.24,
+    "text": "You have all kinds of tools at your disposal to make arguments about this kind of closeness.",
+    "start_ms": 3033240,
+    "end_ms": 3038136,
+    "duration_ms": 4896,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3038.616,
+    "text": "But this also means that you have some hard choices to make because you know that you can measure this in a lot of different ways.",
+    "start_ms": 3038616,
+    "end_ms": 3044616,
+    "duration_ms": 6000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3045.048,
+    "text": "There's a lot of different ways to evaluate the accuracy and reliability of a model, different ways of measuring different kinds of error.",
+    "start_ms": 3045048,
+    "end_ms": 3051128,
+    "duration_ms": 6080,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3051.448,
+    "text": "And each has different consequences and relationships to this category we're calling value.",
+    "start_ms": 3051448,
+    "end_ms": 3056448,
+    "duration_ms": 5000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3058.744,
+    "text": "So one of those is to measure the root mean squared error.",
+    "start_ms": 3058744,
+    "end_ms": 3063744,
+    "duration_ms": 5000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3063.744,
+    "text": "And that's what you're at first going to be asked to do.",
+    "start_ms": 3063744,
+    "end_ms": 3066744,
+    "duration_ms": 3000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3067.352,
+    "text": "uh... in uh... your model in project a evaluate how good is my model you'll be looking at what is the root mean squared air So RMSC is a pretty powerful tool for doing quite a lot of things.",
+    "start_ms": 3067352,
+    "end_ms": 3083612,
+    "duration_ms": 16260,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3083.612,
+    "text": "It's an essential thing to have in your toolkit. But it has its limits too.",
+    "start_ms": 3083612,
+    "end_ms": 3087832,
+    "duration_ms": 4220,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3088.28,
+    "text": "It doesn't tell you anything about where the error happens.",
+    "start_ms": 3088280,
+    "end_ms": 3091680,
+    "duration_ms": 3400,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3091.96,
+    "text": "How that error is distributed and whether that error for any given sort of distribution, you know, some sample of those homes say the lowest quintile is if the error is positive overvaluation or negative undervaluation.",
+    "start_ms": 3091960,
+    "end_ms": 3104497,
+    "duration_ms": 12537,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3104.497,
+    "text": "It just gives you a rough measure of the overall aggregate error.",
+    "start_ms": 3104497,
+    "end_ms": 3118680,
+    "duration_ms": 14183,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3118.632,
+    "text": "That might actually not be good enough to ensure that your system's not regressive.",
+    "start_ms": 3118632,
+    "end_ms": 3122432,
+    "duration_ms": 3800,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3122.904,
+    "text": "If the error that does exist over values less expensive homes and over values more expensive homes.",
+    "start_ms": 3122904,
+    "end_ms": 3128404,
+    "duration_ms": 5500,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3128.76,
+    "text": "You don't actually see that when you're looking at RMSC.",
+    "start_ms": 3128760,
+    "end_ms": 3131560,
+    "duration_ms": 2800,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3135.672,
+    "text": "Broad metrics of accuracy like RMSE does have limits for evaluating fairness in property appraisal because it doesn't tell you the distribution of the errors, the sign of the errors that is are the positive or negative, and it doesn't tell you anything about the relative size of the errors.",
+    "start_ms": 3135672,
+    "end_ms": 3151232,
+    "duration_ms": 15560,
+    "word_count": 50,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3151.232,
+    "text": "In short, It doesn't tell you anything about the regressivity of your model which is precisely what you're trying to worry about so our ms is you know i can't get the thing you reach for simple you're gonna learn to use it here in this.",
+    "start_ms": 3151232,
+    "end_ms": 3164504,
+    "duration_ms": 13272,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3164.504,
+    "text": "in this project, but you also need to recognize what exactly as a measure it doesn't capture.",
+    "start_ms": 3164504,
+    "end_ms": 3169664,
+    "duration_ms": 5160,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3170.84,
+    "text": "So what's the alternative that? In some ways the world of expertise.",
+    "start_ms": 3170840,
+    "end_ms": 3175496,
+    "duration_ms": 4656,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3175.896,
+    "text": "That there are experts out there working this has made it easy for you the data scientist you don't have to reinvent the wheel.",
+    "start_ms": 3175896,
+    "end_ms": 3181696,
+    "duration_ms": 5800,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3182.04,
+    "text": "You don't have to make hard choices about RMSC or figure out what's another metric that's going to be better and which ones the right one.",
+    "start_ms": 3182040,
+    "end_ms": 3188040,
+    "duration_ms": 6000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3188.04,
+    "text": "You don't have to make hard choices about the meaning of fairness it seems because as a data scientist working for this particular institution there's professional standards their rules set out by the international association of assessment officers.",
+    "start_ms": 3188040,
+    "end_ms": 3202040,
+    "duration_ms": 14000,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3202.04,
+    "text": "that you just follow and then you don't have to decide which ones to use.",
+    "start_ms": 3202040,
+    "end_ms": 3205440,
+    "duration_ms": 3400,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3205.44,
+    "text": "You just say, do I actually fall within these metrics that you might remember this slide from earlier?",
+    "start_ms": 3205440,
+    "end_ms": 3210360,
+    "duration_ms": 4920,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3210.36,
+    "text": "Things like coefficient of dispersion, price-related differential, which are just two different ways of trying to measure things like how is the error being distributed and where?",
+    "start_ms": 3210360,
+    "end_ms": 3220320,
+    "duration_ms": 9960,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3221.464,
+    "text": "So the associations create standardized tests and determine the appropriate thresholds for what counts as close for model estimating property values at scale.",
+    "start_ms": 3221464,
+    "end_ms": 3230704,
+    "duration_ms": 9240,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3230.704,
+    "text": "It says these are the best practices when you're working for this institution.",
+    "start_ms": 3230704,
+    "end_ms": 3234584,
+    "duration_ms": 3880,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3234.584,
+    "text": "And for a lot of data scientists you simply go in and say okay, that's the experts say that's a sort of determination by assessment officers.",
+    "start_ms": 3234584,
+    "end_ms": 3241584,
+    "duration_ms": 7000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3241.584,
+    "text": "I'm just good with data so I'm going to do build the best models I can to meet their definitions but I'm not actually going to think anymore about what does this mean and how does it translate into actual effects on people in the world.",
+    "start_ms": 3241584,
+    "end_ms": 3251744,
+    "duration_ms": 10160,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3254.136,
+    "text": "So most data scientists might just accept these professional standards.",
+    "start_ms": 3254136,
+    "end_ms": 3258216,
+    "duration_ms": 4080,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3258.216,
+    "text": "And maybe again that's for the best it's inevitable. You're not going to reinvent the wheel every time you do a project and rethink every little thing from the ground up.",
+    "start_ms": 3258216,
+    "end_ms": 3265256,
+    "duration_ms": 7040,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3265.256,
+    "text": "There's limits to what you can do. for time and resources.",
+    "start_ms": 3265256,
+    "end_ms": 3269352,
+    "duration_ms": 4096,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3269.176,
+    "text": "But you should be cognizant that any standards like these were made for reasons.",
+    "start_ms": 3269176,
+    "end_ms": 3273336,
+    "duration_ms": 4160,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3273.88,
+    "text": "and know what their possible limitations might be. They're not natural facts about the world, about fairness in the world.",
+    "start_ms": 3273880,
+    "end_ms": 3281624,
+    "duration_ms": 7744,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3281.624,
+    "text": "They're the result of decisions made by experts. And not only are experts not infallible, their forms of knowledge making are always political.",
+    "start_ms": 3281624,
+    "end_ms": 3290120,
+    "duration_ms": 8496,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3290.12,
+    "text": "They may present themselves as neutral. This is just the kind of standard if you fall within this, then you are technically and objectively in the clear.",
+    "start_ms": 3290120,
+    "end_ms": 3297400,
+    "duration_ms": 7280,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3297.4,
+    "text": "It's actually a political determination to say, this is an acceptable threshold, and this is the kind of threshold, or this is the direction that your values have to go in.",
+    "start_ms": 3297400,
+    "end_ms": 3305880,
+    "duration_ms": 8480,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3306.872,
+    "text": "Their forms of knowledge making are always political. Don't forget that it was the professionalizing real estate assessors in the 1920s and 30s who encoded racist, risky and real estate practices precisely in the name of creating objective, expert knowledge practices.",
+    "start_ms": 3306872,
+    "end_ms": 3321872,
+    "duration_ms": 15000,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3322.52,
+    "text": "I'm not trying to say expertise is bad, I'm trying to say it socially constructed and complicated, and you want to be careful around what happens when you black box these standards and take them for granted, and see them as just part of the way the world is rather than as the product of specific choices that are political and value-laden.",
+    "start_ms": 3322520,
+    "end_ms": 3338760,
+    "duration_ms": 16240,
+    "word_count": 62,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3339.064,
+    "text": "After all, like the P values you learn about in statistical significance testing, these thresholds are in a sense made up, and then they're black boxed for most users.",
+    "start_ms": 3339064,
+    "end_ms": 3346904,
+    "duration_ms": 7840,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3346.904,
+    "text": "It doesn't mean there are betrayary exactly, they're the product of expert agreement, a threshold that was stabilized by some kind of local consensus at a certain moment in time, but they could be otherwise.",
+    "start_ms": 3346904,
+    "end_ms": 3358690,
+    "duration_ms": 11786,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3358.69,
+    "text": "And there might be good reasons to make them differently.",
+    "start_ms": 3358690,
+    "end_ms": 3361464,
+    "duration_ms": 2774,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3362.168,
+    "text": "Because there might be reasons that you think. Um. Are they necessarily the most fair metrics of accuracy?",
+    "start_ms": 3362168,
+    "end_ms": 3369560,
+    "duration_ms": 7392,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3370.424,
+    "text": "and are there alternatives? Maybe so, maybe not. Just to give you one example of how this could be different, you could determine that any errors are only permissible when they're progressive.",
+    "start_ms": 3370424,
+    "end_ms": 3382024,
+    "duration_ms": 11600,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3383.032,
+    "text": "The coefficient of dispersion and price-related differential do things like measure.",
+    "start_ms": 3383032,
+    "end_ms": 3388032,
+    "duration_ms": 5000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3388.376,
+    "text": "How just how regressive can you be up to a certain point it permits a certain amount of regressiveness in the distribution of errors.",
+    "start_ms": 3388376,
+    "end_ms": 3394976,
+    "duration_ms": 6600,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3395.384,
+    "text": "But that's not natural. That's not like the way things have to be.",
+    "start_ms": 3395384,
+    "end_ms": 3398775,
+    "duration_ms": 3391,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3398.775,
+    "text": "It's about certain intuitions about what it's fair to expect.",
+    "start_ms": 3398775,
+    "end_ms": 3401384,
+    "duration_ms": 2609,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3401.384,
+    "text": "And what kinds of errors are acceptable. That is you could prefer a model that is more inaccurate overall.",
+    "start_ms": 3401384,
+    "end_ms": 3409204,
+    "duration_ms": 7820,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3409.204,
+    "text": "Maybe RMSE is actually not is a little poorer or a little higher.",
+    "start_ms": 3409204,
+    "end_ms": 3413704,
+    "duration_ms": 4500,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3414.804,
+    "text": "According to a measure like RMSE, you're more inaccurate as a whole.",
+    "start_ms": 3414804,
+    "end_ms": 3418804,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3418.804,
+    "text": "But maybe the model ensures that the errors for those in the bottom, you know, to quartiles reduce rather than increase the tax burden.",
+    "start_ms": 3418804,
+    "end_ms": 3427804,
+    "duration_ms": 9000,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3428.248,
+    "text": "So there's a political and ethical decision to set these standards and to say, okay, it can be a little bit regressive.",
+    "start_ms": 3428248,
+    "end_ms": 3433608,
+    "duration_ms": 5360,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3433.608,
+    "text": "And when you look and you can see that in most jurisdictions, all property taxes are defaults to being slightly regressive.",
+    "start_ms": 3433608,
+    "end_ms": 3439403,
+    "duration_ms": 5795,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3439.403,
+    "text": "The IIO simply says it's okay as long as it's within this somewhat arbitrarily defined threshold of regressivity.",
+    "start_ms": 3439403,
+    "end_ms": 3445354,
+    "duration_ms": 5951,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3445.354,
+    "text": "Again, that's a political decision. You could say that no amount of regressivity is permissible.",
+    "start_ms": 3445354,
+    "end_ms": 3450259,
+    "duration_ms": 4905,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3450.259,
+    "text": "It's a political decision. Fairness always means more that can be captured by any single metric.",
+    "start_ms": 3450259,
+    "end_ms": 3455208,
+    "duration_ms": 4949,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3456.152,
+    "text": "So the metric you choose influences what kind of model or pipeline you build, because different models are going to sort of try to minimize different forms of error.",
+    "start_ms": 3456152,
+    "end_ms": 3464632,
+    "duration_ms": 8480,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3465.048,
+    "text": "So there's really hard choices about which model to use, depending on a trade-offs.",
+    "start_ms": 3465048,
+    "end_ms": 3470488,
+    "duration_ms": 5440,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3471.32,
+    "text": "So let's do the quick slide op-hole here and we're going to have to call out, uh, um, I think the results of this.",
+    "start_ms": 3471320,
+    "end_ms": 3478320,
+    "duration_ms": 7000,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3478.36,
+    "text": "Um Bye, uh... because of interesting technical issues but these boat on this I basically asked you I've offered you a few here a few different ways of thinking about what a metric might try to capture kind of socially intuitive ways of thinking about what what what seems most or least fair to me.",
+    "start_ms": 3478360,
+    "end_ms": 3498304,
+    "duration_ms": 19944,
+    "word_count": 55,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3498.36,
+    "text": "Is it a model that minimizes RMSC? It's just RMSC is as low as it could be, but it's still somewhat regressive.",
+    "start_ms": 3498360,
+    "end_ms": 3508600,
+    "duration_ms": 10240,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3508.6,
+    "text": "Is it a model that minimizes regressivity but has a higher RMSC?",
+    "start_ms": 3508600,
+    "end_ms": 3512894,
+    "duration_ms": 4294,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3512.894,
+    "text": "Is it a model that minimizes regressivity, but its highest error rates are clustered around the most expensive properties?",
+    "start_ms": 3512894,
+    "end_ms": 3519400,
+    "duration_ms": 6506,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3520.056,
+    "text": "So, regressivity is relatively low, but the biggest errors are on those that have expensive homes, or a model that's a little bit progressive.",
+    "start_ms": 3520056,
+    "end_ms": 3529056,
+    "duration_ms": 9000,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3529.056,
+    "text": "That is, it's not just minimizing regressivity, but it actually overvalues the homes of those who are wealthy and undervalues the values of poor homeowners.",
+    "start_ms": 3529056,
+    "end_ms": 3541056,
+    "duration_ms": 12000,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3541.056,
+    "text": "but the overall error rate is actually quite high. Okay.",
+    "start_ms": 3541056,
+    "end_ms": 3545740,
+    "duration_ms": 4684,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3546.36,
+    "text": "So... The I will read off what I'm seeing here which is actually very different than last semester I can't account for it so the winner.",
+    "start_ms": 3546360,
+    "end_ms": 3557240,
+    "duration_ms": 10880,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3557.752,
+    "text": "is option number three, the third one. A model that minimizes regressivity but its highest error rates are clustered around the most expensive property 65% of you chose that one.",
+    "start_ms": 3557752,
+    "end_ms": 3573792,
+    "duration_ms": 16040,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3573.554,
+    "text": "it has been the first one. A lot of you really still like RMSC despite what I said about it.",
+    "start_ms": 3573554,
+    "end_ms": 3580216,
+    "duration_ms": 6662,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3581.144,
+    "text": "Anybody want to tell me why they voted the way that they did?",
+    "start_ms": 3581144,
+    "end_ms": 3583644,
+    "duration_ms": 2500,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3584.728,
+    "text": "Yeah. OK, you're likely to have high errors amongst expensive properties, because they're not sold as often, so you have fewer data points.",
+    "start_ms": 3584728,
+    "end_ms": 3604520,
+    "duration_ms": 19792,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3604.52,
+    "text": "So you're going to have a lot of error there anyway.",
+    "start_ms": 3604520,
+    "end_ms": 3605960,
+    "duration_ms": 1440,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3605.96,
+    "text": "So it's sort of, OK, if that's the case. Okay, thank you.",
+    "start_ms": 3605960,
+    "end_ms": 3610296,
+    "duration_ms": 4336,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3610.296,
+    "text": "Any other thoughts? Why did you vote the way that you did?",
+    "start_ms": 3610296,
+    "end_ms": 3613496,
+    "duration_ms": 3200,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3621.208,
+    "text": "Up, yes. Okay, so you voted number three or number two.",
+    "start_ms": 3621208,
+    "end_ms": 3641608,
+    "duration_ms": 20400,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3642.456,
+    "text": "Three. Why did you choose three rather than two? Okay, okay, so similar, similar kind of reasoning about Y, Y, three rather than two.",
+    "start_ms": 3642456,
+    "end_ms": 3668584,
+    "duration_ms": 26128,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3668.904,
+    "text": "Anybody who voted for the fourth one, want to explain why they voted for it?",
+    "start_ms": 3668904,
+    "end_ms": 3672064,
+    "duration_ms": 3160,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3672.384,
+    "text": "There weren't many of you. Uh, but a few of you did.",
+    "start_ms": 3672384,
+    "end_ms": 3675255,
+    "duration_ms": 2871,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3675.255,
+    "text": "I don't know if any of you were in the room.",
+    "start_ms": 3675255,
+    "end_ms": 3677415,
+    "duration_ms": 2160,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3677.415,
+    "text": "It's only 3% it was the lowest the lowest one.",
+    "start_ms": 3677415,
+    "end_ms": 3679380,
+    "duration_ms": 1965,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3680.856,
+    "text": "Very few of you did. Did anybody, anybody want to share why they did?",
+    "start_ms": 3680856,
+    "end_ms": 3683856,
+    "duration_ms": 3000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3710.296,
+    "text": "So it's more fair to tax the higher valued homes at higher rates.",
+    "start_ms": 3710296,
+    "end_ms": 3714796,
+    "duration_ms": 4500,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3714.796,
+    "text": "Well, and why do you think that? Yeah, I mean, there's a sense of it's your sense of political it's it's your political orientation to say that this is more fair.",
+    "start_ms": 3714796,
+    "end_ms": 3731232,
+    "duration_ms": 16436,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3731.232,
+    "text": "Like they're wealthy they can pay more it's okay if you're going to mess up somewhere it should be on the people who actually can bear that burden right more than the people who who can't.",
+    "start_ms": 3731232,
+    "end_ms": 3739232,
+    "duration_ms": 8000,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3739.232,
+    "text": "Yeah, I think that's a really valuable assess like evaluation.",
+    "start_ms": 3739232,
+    "end_ms": 3744232,
+    "duration_ms": 5000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3744.056,
+    "text": "By the way, that's kind of closer to where I would land too.",
+    "start_ms": 3744056,
+    "end_ms": 3747256,
+    "duration_ms": 3200,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3747.256,
+    "text": "It doesn't mean that you all have to agree with the two of us.",
+    "start_ms": 3747256,
+    "end_ms": 3750056,
+    "duration_ms": 2800,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3750.056,
+    "text": "But I think there's strong arguments to say that actually overall accuracy maybe matters less than who exactly is being impacted in what proportion.",
+    "start_ms": 3750056,
+    "end_ms": 3758056,
+    "duration_ms": 8000,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3758.456,
+    "text": "That clearly is not the default answer from all of you, although I'm kind of pleased that you've moved from A to C is the dominant answer.",
+    "start_ms": 3758456,
+    "end_ms": 3765456,
+    "duration_ms": 7000,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3765.456,
+    "text": "But I think there's a kind of a deeper politics, a kind of more equalizing and progressive politics that is suggested by D, but I know it probably makes you uncomfortable as a data scientist to imagine I'm going to build something that's like, gets it wrong in some technical sense.",
+    "start_ms": 3765456,
+    "end_ms": 3779456,
+    "duration_ms": 14000,
+    "word_count": 51,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3779.736,
+    "text": "But the point is all of these involve some amount of wrongness or error.",
+    "start_ms": 3779736,
+    "end_ms": 3782736,
+    "duration_ms": 3000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3782.736,
+    "text": "The point is also to think about exactly what am I doing in the world?",
+    "start_ms": 3782736,
+    "end_ms": 3785736,
+    "duration_ms": 3000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3785.736,
+    "text": "How am I trying to shift power in the world as it exists?",
+    "start_ms": 3785736,
+    "end_ms": 3789736,
+    "duration_ms": 4000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3789.912,
+    "text": "That's part of what you're thinking about when you make these kinds of decisions.",
+    "start_ms": 3789912,
+    "end_ms": 3793112,
+    "duration_ms": 3200,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3794.168,
+    "text": "Okay. Sure. Now we've already defined some of the things I said we'd set out to define it in a course of doing it.",
+    "start_ms": 3794168,
+    "end_ms": 3801734,
+    "duration_ms": 7566,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3801.734,
+    "text": "I've already provided you with a lot of the tools I want you to think through.",
+    "start_ms": 3801734,
+    "end_ms": 3805212,
+    "duration_ms": 3478,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3805.212,
+    "text": "We've defined the meaning of this individual assessment. The meaning of accuracy for an individual property and the meaning of accuracy at scale.",
+    "start_ms": 3805212,
+    "end_ms": 3811952,
+    "duration_ms": 6740,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3811.952,
+    "text": "To say that an individual assessment for one single property is accurate means that it's conferred value by a model based upon its relationship to every other home in the county or the township.",
+    "start_ms": 3811952,
+    "end_ms": 3823952,
+    "duration_ms": 12000,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3823.952,
+    "text": "and their relationship to the broader housing market. Any given assessment of a single property.",
+    "start_ms": 3823952,
+    "end_ms": 3831208,
+    "duration_ms": 7256,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3831.8,
+    "text": "One single property. Can be judged as accurate, held to be accurate by people that are worried about this, only because the model can be mathematically demonstrated to be accurate on average with respect to all of the other properties.",
+    "start_ms": 3831800,
+    "end_ms": 3844456,
+    "duration_ms": 12656,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3844.792,
+    "text": "except for those that are actually sold, the ground truth, you know, the truth here is relative to the whole overall accuracy rate.",
+    "start_ms": 3844792,
+    "end_ms": 3853132,
+    "duration_ms": 8340,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3853.132,
+    "text": "If I haven't sold my property recently, for me to say, oh I think they got it right or wrong.",
+    "start_ms": 3853132,
+    "end_ms": 3858932,
+    "duration_ms": 5800,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3859.16,
+    "text": "It relates to an overall metric about all of the other houses sold and how close it's been demonstrated it comes to this other data, other people's data.",
+    "start_ms": 3859160,
+    "end_ms": 3867160,
+    "duration_ms": 8000,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3867.16,
+    "text": "So again, my data, meaning of my data is deeply relational related to all the other properties that have been evaluated.",
+    "start_ms": 3867160,
+    "end_ms": 3873160,
+    "duration_ms": 6000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3875.832,
+    "text": "Because of all that it presumably shares with those other properties.",
+    "start_ms": 3875832,
+    "end_ms": 3879732,
+    "duration_ms": 3900,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3880.12,
+    "text": "At least what it shares that is captured in the data.",
+    "start_ms": 3880120,
+    "end_ms": 3883320,
+    "duration_ms": 3200,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3884.184,
+    "text": "It's value can only be estimated in light of these relationships.",
+    "start_ms": 3884184,
+    "end_ms": 3887784,
+    "duration_ms": 3600,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3888.376,
+    "text": "In other words, the accuracy, what you think of whether it's given individual assessment on one house is accurate, depends on trust, on something very social, on social trust.",
+    "start_ms": 3888376,
+    "end_ms": 3899816,
+    "duration_ms": 11440,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3901.24,
+    "text": "The measure of accuracy published at scale is supposed to hold for my property.",
+    "start_ms": 3901240,
+    "end_ms": 3905400,
+    "duration_ms": 4160,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3905.4,
+    "text": "My property got this value and it's a matter of do I trust that you know that larger number pulls me something about my individual house.",
+    "start_ms": 3905400,
+    "end_ms": 3915288,
+    "duration_ms": 9888,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3915.288,
+    "text": "It's not given. should be confident because across the board, here's the patterns we're seeing, there's a kind of leap here that's going on and trust as part of what closes that gap between what happens at scale and how does my individual property fit into that larger hole?",
+    "start_ms": 3915288,
+    "end_ms": 3931992,
+    "duration_ms": 16704,
+    "word_count": 49,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3933.016,
+    "text": "The value of a home is assessed by these means as we could call a socio-technical performance.",
+    "start_ms": 3933016,
+    "end_ms": 3937816,
+    "duration_ms": 4800,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3937.816,
+    "text": "A performance made before a public, designed to cultivate their trust.",
+    "start_ms": 3937816,
+    "end_ms": 3942936,
+    "duration_ms": 5120,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3942.936,
+    "text": "Right, what's going on here is not just something abstractly fair, but it's also about convincing the public to say this is fair, this is legitimate, and to draw on existing reservoirs of trust.",
+    "start_ms": 3942936,
+    "end_ms": 3952216,
+    "duration_ms": 9280,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3952.536,
+    "text": "If they exist in numbers in statistical indicators. So by centering a social relationship, by centering the role of trust in what you're actually trying to manage and building this, right?",
+    "start_ms": 3952536,
+    "end_ms": 3964152,
+    "duration_ms": 11616,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3964.152,
+    "text": "You're not just making numbers that are objectively fair, you're making numbers that are meant to do work and convince people to make arguments that they ought to trust what you're doing.",
+    "start_ms": 3964152,
+    "end_ms": 3971832,
+    "duration_ms": 7680,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3971.832,
+    "text": "You can better understand how building a model like this is a kind of socio-technical practice.",
+    "start_ms": 3971832,
+    "end_ms": 3976872,
+    "duration_ms": 5040,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3977.4,
+    "text": "Trying to make accuracy a technical proxy for social fairness might work, but you can't take it for granted is working.",
+    "start_ms": 3977400,
+    "end_ms": 3983800,
+    "duration_ms": 6400,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3984.184,
+    "text": "And this is crucial because it's not hard to imagine somebody disagreeing with this.",
+    "start_ms": 3984184,
+    "end_ms": 3988184,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3988.184,
+    "text": "Okay, sure, you know, your model is usually close for most of the properties.",
+    "start_ms": 3988184,
+    "end_ms": 3991614,
+    "duration_ms": 3430,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3991.614,
+    "text": "You have greasy sales data on you might say, but I think it made a big mistake on mine.",
+    "start_ms": 3991614,
+    "end_ms": 3996344,
+    "duration_ms": 4730,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3996.344,
+    "text": "There's some hidden variable, something not in the data. There's something there.",
+    "start_ms": 3996344,
+    "end_ms": 3999784,
+    "duration_ms": 3440,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3999.784,
+    "text": "There's some maybe the world has changed since you had that sales data.",
+    "start_ms": 3999784,
+    "end_ms": 4002744,
+    "duration_ms": 2960,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4003.864,
+    "text": "So prove to me that there's not something about my property, something about my neighborhood, something about the market that the model didn't capture.",
+    "start_ms": 4003864,
+    "end_ms": 4010584,
+    "duration_ms": 6720,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4010.584,
+    "text": "prove to me that these numbers which you claim to show correctly estimated, you know, some set of home sale prices this year, actually hold from my property.",
+    "start_ms": 4010584,
+    "end_ms": 4019703,
+    "duration_ms": 9119,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4020.44,
+    "text": "So you may take it for granted that it does.",
+    "start_ms": 4020440,
+    "end_ms": 4022600,
+    "duration_ms": 2160,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4022.6,
+    "text": "You have a deep trust in, you know, the, uh, in statistics and for good reasons because it does allow you to generate a fair amount of confidence in the aggregate.",
+    "start_ms": 4022600,
+    "end_ms": 4030600,
+    "duration_ms": 8000,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4031.064,
+    "text": "And perhaps people who are not negatively affected by this would feel comfortable making this kind of translation from accuracy at the scale to accuracy for my property.",
+    "start_ms": 4031064,
+    "end_ms": 4040064,
+    "duration_ms": 9000,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4040.792,
+    "text": "It's pretty reliable at scale so for any given property we should trust it's probably right.",
+    "start_ms": 4040792,
+    "end_ms": 4045432,
+    "duration_ms": 4640,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4045.816,
+    "text": "But why? You can make powerful statistical arguments about why it should hold.",
+    "start_ms": 4045816,
+    "end_ms": 4051768,
+    "duration_ms": 5952,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4051.928,
+    "text": "You can show and demonstrate to the public my procedures have been robust.",
+    "start_ms": 4051928,
+    "end_ms": 4055528,
+    "duration_ms": 3600,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4055.528,
+    "text": "We make this pipeline transparent, we show it to the public so anybody can come in and audit and see what are we doing?",
+    "start_ms": 4055528,
+    "end_ms": 4060830,
+    "duration_ms": 5302,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4060.83,
+    "text": "How are we actually, you know, we're showing our work, we're allowing people to come in and contest our practice and say, oh, here's some important things that you've left out.",
+    "start_ms": 4060830,
+    "end_ms": 4067848,
+    "duration_ms": 7018,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4068.504,
+    "text": "But there's always the possibility of course it's something doesn't add up, which means that there's ways for people to contest it and ultimately try to discredit the entire practice that you're trying to put together.",
+    "start_ms": 4068504,
+    "end_ms": 4078213,
+    "duration_ms": 9709,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4078.213,
+    "text": "And that's part of the point of what I'm saying.",
+    "start_ms": 4078213,
+    "end_ms": 4080487,
+    "duration_ms": 2274,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4080.487,
+    "text": "I'm not saying this to undermine the power of statistics and its predictions.",
+    "start_ms": 4080487,
+    "end_ms": 4085581,
+    "duration_ms": 5094,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4085.581,
+    "text": "Quite the opposite. I'm saying that making socially robust inferences and predictions about the world.",
+    "start_ms": 4085581,
+    "end_ms": 4091624,
+    "duration_ms": 6043,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4092.376,
+    "text": "Make them actually robust socially involves understanding the social work that those numbers do in the world, how they're interpreted, how they're read, how they move through the world and actually shift things, how they instill, how they relate to beliefs and values and social trust, that are needed to help those numbers do the work.",
+    "start_ms": 4092376,
+    "end_ms": 4107598,
+    "duration_ms": 15222,
+    "word_count": 56,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4107.598,
+    "text": "They don't magically do it on their own. Numbers. Do work because they have social meanings and social existence and that means they don't always mean the same thing to everyone.",
+    "start_ms": 4107598,
+    "end_ms": 4119232,
+    "duration_ms": 11634,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4119.544,
+    "text": "Trust is at the heart of all of us. Why, when do we trust a numbers in statistical arguments?",
+    "start_ms": 4119544,
+    "end_ms": 4125696,
+    "duration_ms": 6152,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4125.696,
+    "text": "Or not? And this is why people still go to the review board.",
+    "start_ms": 4125696,
+    "end_ms": 4129072,
+    "duration_ms": 3376,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4129.072,
+    "text": "This is something that has continued to take place. Going through a review board, people go to the review board and make arguments.",
+    "start_ms": 4129072,
+    "end_ms": 4134104,
+    "duration_ms": 5032,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4134.616,
+    "text": "And try to say don't trust those numbers, don't trust these practices.",
+    "start_ms": 4134616,
+    "end_ms": 4138376,
+    "duration_ms": 3760,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4138.584,
+    "text": "and continue to hire tax lawyers to go and try to undermine the system.",
+    "start_ms": 4138584,
+    "end_ms": 4144984,
+    "duration_ms": 6400,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4145.688,
+    "text": "So in the end with the people creating the system relying on was if we make such a good and open system it'll be so hard for these people to actually go and contest it because we're gonna have the power of you know a numerical statistical objectivity on our side.",
+    "start_ms": 4145688,
+    "end_ms": 4160488,
+    "duration_ms": 14800,
+    "word_count": 51,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4162.808,
+    "text": "But statistical objectivity is only as good as the people who are willing to listen to it and buy into it.",
+    "start_ms": 4162808,
+    "end_ms": 4167408,
+    "duration_ms": 4600,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4167.704,
+    "text": "And so whether it works or not depends on more than simply.",
+    "start_ms": 4167704,
+    "end_ms": 4171104,
+    "duration_ms": 3400,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4171.448,
+    "text": "Creating a pipeline that looks right to you as a data scientist.",
+    "start_ms": 4171448,
+    "end_ms": 4175448,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4176.248,
+    "text": "That's what makes doing this work so important and so difficult.",
+    "start_ms": 4176248,
+    "end_ms": 4179288,
+    "duration_ms": 3040,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4182.872,
+    "text": "So it may be naive to simply hope that, oh, if the outputs I'm getting look like the way I want them to, I'm hitting my thresholds, I'm accurate according to these set of metrics, I'm trans being transparent, you know, with them to the public, but that's simply going to translate into more fair outcomes in practice in reality.",
+    "start_ms": 4182872,
+    "end_ms": 4200372,
+    "duration_ms": 17500,
+    "word_count": 60,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4200.568,
+    "text": "There's a gap there too that you don't want to take for granted.",
+    "start_ms": 4200568,
+    "end_ms": 4203968,
+    "duration_ms": 3400,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4204.568,
+    "text": "Creating fair algorithms is not just about an abstract formal relationship between the inputs and outputs of your model.",
+    "start_ms": 4204568,
+    "end_ms": 4210248,
+    "duration_ms": 5680,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4210.248,
+    "text": "It's about what those outputs do and how they do them as well.",
+    "start_ms": 4210248,
+    "end_ms": 4213208,
+    "duration_ms": 2960,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4213.944,
+    "text": "So for the sake of argument. This is for the sake of argument here.",
+    "start_ms": 4213944,
+    "end_ms": 4218248,
+    "duration_ms": 4304,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4218.552,
+    "text": "Um. Let's pretend that your model is perfectly optimized for a particular loss function that satisfies our intuitions about what fairness should mean.",
+    "start_ms": 4218552,
+    "end_ms": 4227312,
+    "duration_ms": 8760,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4228.248,
+    "text": "There's no guarantee that the printing of those numbers and their sent being sent out to people's homes and then being taken to tax review boards are actually going to result in people paying what some others did to be their fair share in taxes.",
+    "start_ms": 4228248,
+    "end_ms": 4241042,
+    "duration_ms": 12794,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4241.042,
+    "text": "It may be an important step. An important ingredient. But it's not everything.",
+    "start_ms": 4241042,
+    "end_ms": 4246644,
+    "duration_ms": 5602,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4246.644,
+    "text": "And even if it does work, it's not simply because the numbers are irresistibly compelling, but because they drew upon this reservoir of social trust, they were part of powerful social arguments about doing those work.",
+    "start_ms": 4246644,
+    "end_ms": 4258244,
+    "duration_ms": 11600,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4258.616,
+    "text": "Doing that kind of work and if that trust has been diminished, it may be hard to win it back, through appealing to yet more numbers and yet more other forms of expertise.",
+    "start_ms": 4258616,
+    "end_ms": 4266936,
+    "duration_ms": 8320,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4267.256,
+    "text": "And so that's why despite all their best efforts, the CCAO is still struggling to create fair assessments and engender social trust as witnessed by some of these news stories that have come out over the last few years.",
+    "start_ms": 4267256,
+    "end_ms": 4280256,
+    "duration_ms": 13000,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4280.256,
+    "text": "Stories like the one on the right. Total taxes for residential properties went up because commercial taxes went down due to continuing under evaluations.",
+    "start_ms": 4280256,
+    "end_ms": 4290280,
+    "duration_ms": 10024,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4290.28,
+    "text": "Actually, point to the fact that tax review board hasn't been disrupted because the people most effectively leveraging tax lawyers are large corporations owning large commercial properties that have continued to be successful in lowering their overall rates, which necessarily increases rates on private homeowners.",
+    "start_ms": 4290280,
+    "end_ms": 4305720,
+    "duration_ms": 15440,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4306.872,
+    "text": "But it's more complicated if you look at this distribution on the right and you know anything about Chicago and its maps.",
+    "start_ms": 4306872,
+    "end_ms": 4313872,
+    "duration_ms": 7000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4314.328,
+    "text": "Then you know that the biggest increases occurred in wealthy neighborhoods, up at the top.",
+    "start_ms": 4314328,
+    "end_ms": 4318568,
+    "duration_ms": 4240,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4319.864,
+    "text": "And the biggest decreases in the less wealthy and predominantly black neighborhoods in South Chicago.",
+    "start_ms": 4319864,
+    "end_ms": 4324864,
+    "duration_ms": 5000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4325.496,
+    "text": "So maybe actually there was some success after all, and the people that are angrily printing these stories are wealthy homeowners that have felt that they're unfairly having their taxes go up when really what is happening is successful redistribution.",
+    "start_ms": 4325496,
+    "end_ms": 4337196,
+    "duration_ms": 11700,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4337.196,
+    "text": "In some ways it's too early to tell. But again, doing the work of making things more fair in one way may have upset enough powerful people that it's going to undermine legitimacy and trust in the system.",
+    "start_ms": 4337196,
+    "end_ms": 4348216,
+    "duration_ms": 11020,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4348.216,
+    "text": "There's no straightforward solution here. Okay. Let's conclude by just briefly reviewing a few takeaways.",
+    "start_ms": 4348216,
+    "end_ms": 4358392,
+    "duration_ms": 10176,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4359.32,
+    "text": "First of all, accuracy is unnecessary. Some notion of accuracy is unnecessary, but certainly not a sufficient condition of actually creating a fair system.",
+    "start_ms": 4359320,
+    "end_ms": 4367480,
+    "duration_ms": 8160,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4367.48,
+    "text": "As I think we've had the big kind of takeaway that we've been demonstrating throughout entirety of today's lecture.",
+    "start_ms": 4367480,
+    "end_ms": 4373080,
+    "duration_ms": 5600,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4373.528,
+    "text": "A fair system almost certainly needs to be accurate in some demonstrable sense, but it's not necessarily fair.",
+    "start_ms": 4373528,
+    "end_ms": 4379008,
+    "duration_ms": 5480,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4379.008,
+    "text": "Fairness is about more than some way of quantifying the relationship between inputs and outputs of the system.",
+    "start_ms": 4379008,
+    "end_ms": 4388008,
+    "duration_ms": 9000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4390.328,
+    "text": "All kinds of questions about fairness show up here too that might feel like they go beyond your responsibility as a data scientist.",
+    "start_ms": 4390328,
+    "end_ms": 4396728,
+    "duration_ms": 6400,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4396.728,
+    "text": "Is a neutral or flat tax rate really fair? Is it about a matter of policy rather than about how close your model reflects the policy?",
+    "start_ms": 4396728,
+    "end_ms": 4405528,
+    "duration_ms": 8800,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4405.528,
+    "text": "That's often not part of the decision space, the data scientist, but it is a larger political question that matters for the work that you do.",
+    "start_ms": 4405528,
+    "end_ms": 4412728,
+    "duration_ms": 7200,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4413.72,
+    "text": "Other levels of fairness are often occluded by hidden sort of made harder to see by excessively focusing on accuracy.",
+    "start_ms": 4413720,
+    "end_ms": 4422560,
+    "duration_ms": 8840,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4422.776,
+    "text": "For example, and I think this came up in our discussion about these different metrics, the experience of being over or under assessed is simply different depending on who you are.",
+    "start_ms": 4422776,
+    "end_ms": 4432776,
+    "duration_ms": 10000,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4433.048,
+    "text": "A wealthy homeowner of a being over assessed is that's more likely to be experiences and inconvenience.",
+    "start_ms": 4433048,
+    "end_ms": 4437203,
+    "duration_ms": 4155,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4437.203,
+    "text": "You have a lot of means you're like I have to pay a little bit extra.",
+    "start_ms": 4437203,
+    "end_ms": 4441659,
+    "duration_ms": 4456,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4441.659,
+    "text": "Maybe I don't buy you know this fancy coat or something that I wanted because I'm paying more but it's not a huge deal.",
+    "start_ms": 4441659,
+    "end_ms": 4448488,
+    "duration_ms": 6829,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4448.488,
+    "text": "Lower income homeowners are much more likely to experience it as catastrophic.",
+    "start_ms": 4448488,
+    "end_ms": 4452488,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4452.92,
+    "text": "Again, the same error for two different people has two very different meanings.",
+    "start_ms": 4452920,
+    "end_ms": 4456920,
+    "duration_ms": 4000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4456.92,
+    "text": "It might mean losing a home. The numbers don't tell you that by themselves.",
+    "start_ms": 4456920,
+    "end_ms": 4460920,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4460.92,
+    "text": "Simply trying to optimize for any metric of accuracy isn't enough if you don't consider the specific social effects and harms from the perspective of those who actually feel them.",
+    "start_ms": 4460920,
+    "end_ms": 4470120,
+    "duration_ms": 9200,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4470.488,
+    "text": "That means actually talking to people, getting to know them and not simply looking at this field of abstract numbers before you, and trying to imprint some abstract notion of fairness onto it.",
+    "start_ms": 4470488,
+    "end_ms": 4479088,
+    "duration_ms": 8600,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4481.08,
+    "text": "In the sense a system might be as I've suggested more fair that air is on the side of overvaluing high value homes and air is on the side of undervaluing low value homes, even if it means reducing the overall accuracy of the model by making it more progressive again it's a political choice.",
+    "start_ms": 4481080,
+    "end_ms": 4495080,
+    "duration_ms": 14000,
+    "word_count": 55,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4495.768,
+    "text": "It's about deep held sets of values about what you think is actually right in the world.",
+    "start_ms": 4495768,
+    "end_ms": 4500168,
+    "duration_ms": 4400,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4502.168,
+    "text": "Well, excessively focusing on accuracy also can miss other aspects of justice that fairness don't always fully bring into light.",
+    "start_ms": 4502168,
+    "end_ms": 4509168,
+    "duration_ms": 7000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4509.464,
+    "text": "You can miss the cumulative effects of all caught both historical and other forms of discrimination that can add up over time.",
+    "start_ms": 4509464,
+    "end_ms": 4516464,
+    "duration_ms": 7000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4517.656,
+    "text": "Right, the whole history of being over assessed for many years, the system doesn't actually give you money back that you overpaid.",
+    "start_ms": 4517656,
+    "end_ms": 4523416,
+    "duration_ms": 5760,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4523.896,
+    "text": "Or it's about the accumulation and overlapping of different kinds of discrimination.",
+    "start_ms": 4523896,
+    "end_ms": 4529096,
+    "duration_ms": 5200,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4529.096,
+    "text": "Fairness is not something that just happens at one discrete moment in time.",
+    "start_ms": 4529096,
+    "end_ms": 4532456,
+    "duration_ms": 3360,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4532.456,
+    "text": "Oh, this is, you know, the algorithm is unfair. What's the larger social system?",
+    "start_ms": 4532456,
+    "end_ms": 4539816,
+    "duration_ms": 7360,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4539.72,
+    "text": "and how exactly does this relate to that whole constellation of different forms of discrimination.",
+    "start_ms": 4539720,
+    "end_ms": 4544612,
+    "duration_ms": 4892,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4544.712,
+    "text": "How do effects accumulate? How do they get compounded by the work that you might be doing?",
+    "start_ms": 4544712,
+    "end_ms": 4549371,
+    "duration_ms": 4659,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4549.371,
+    "text": "What are their effects not just on individuals but communities?",
+    "start_ms": 4549371,
+    "end_ms": 4552112,
+    "duration_ms": 2741,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4552.408,
+    "text": "Improving the fairness of outputs doesn't address years of overassessment and discrimination by other agencies.",
+    "start_ms": 4552408,
+    "end_ms": 4558648,
+    "duration_ms": 6240,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4560.568,
+    "text": "Two, fairness and transparency are context dependent. Again, for I think all the reasons that we've just been discussing, I don't think we have to explain this one any further.",
+    "start_ms": 4560568,
+    "end_ms": 4570168,
+    "duration_ms": 9600,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4570.52,
+    "text": "Three, one big takeaway is therefore, work with contexts. Figure out what's the historical context of the problem, the data, the social actors involved.",
+    "start_ms": 4570520,
+    "end_ms": 4578520,
+    "duration_ms": 8000,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4579.224,
+    "text": "What are the consequences? Part of the point of the human context at fixed program is widening the scope of what's considered part of responsible data practice.",
+    "start_ms": 4579224,
+    "end_ms": 4586884,
+    "duration_ms": 7660,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4586.884,
+    "text": "Beyond simply saying, okay, given some metrics that have been given to me, have I optimized for this particular form of relationship between inputs and outputs.",
+    "start_ms": 4586884,
+    "end_ms": 4594824,
+    "duration_ms": 7940,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4596.088,
+    "text": "That means doing things like check in your own expertise.",
+    "start_ms": 4596088,
+    "end_ms": 4598373,
+    "duration_ms": 2285,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4598.373,
+    "text": "What are the limits of the tools I bring to bear?",
+    "start_ms": 4598373,
+    "end_ms": 4600888,
+    "duration_ms": 2515,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4601.176,
+    "text": "Who else can I talk to to figure out whether I'm doing the right thing?",
+    "start_ms": 4601176,
+    "end_ms": 4604176,
+    "duration_ms": 3000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4605.624,
+    "text": "And lastly, always keep in mind, therefore, the power in limits of data analysis for solving social problems.",
+    "start_ms": 4605624,
+    "end_ms": 4613224,
+    "duration_ms": 7600,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4614.296,
+    "text": "As illustrated in this case to create a more accurate assessment of a home's value.",
+    "start_ms": 4614296,
+    "end_ms": 4617896,
+    "duration_ms": 3600,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4617.896,
+    "text": "Is that always the right tool? To a hammer, everything looks like a nail as the saying goes.",
+    "start_ms": 4617896,
+    "end_ms": 4623496,
+    "duration_ms": 5600,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4623.928,
+    "text": "The larger the toolkit you bring with you to take action on real-world problems, the greater the positive impact you'd be able to have.",
+    "start_ms": 4623928,
+    "end_ms": 4630428,
+    "duration_ms": 6500,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4631.0,
+    "text": "And so this means not assuming that simply putting just better numbers out of the world will magically reshape the world in their image.",
+    "start_ms": 4631000,
+    "end_ms": 4637000,
+    "duration_ms": 6000,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4637.0,
+    "text": "The numbers do work, but exactly what work they do involves social dynamics that goes beyond.",
+    "start_ms": 4637000,
+    "end_ms": 4642000,
+    "duration_ms": 5000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4641.976,
+    "text": "The technical robustness of your inferences. And so that might just mean starting with a broader conception of the meaning of your question, what is a home worth?",
+    "start_ms": 4641976,
+    "end_ms": 4649920,
+    "duration_ms": 7944,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4649.92,
+    "text": "Because that might open up broader questions about worth how much to whom.",
+    "start_ms": 4649920,
+    "end_ms": 4653920,
+    "duration_ms": 4000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4653.976,
+    "text": "This involves questions about power. Who gets to decide and questions about other ways we might work to arrange our world to be more just thank you.",
+    "start_ms": 4653976,
+    "end_ms": 4663324,
+    "duration_ms": 9348,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4672.312,
+    "text": "There. Are some slides that you can take a look at just for extra questions to ask yourself and here is the takeaway slide opal what did you get from this lecture okay thank you everybody have a good day and I hope to see you in day 104 if you haven't taken it already.",
+    "start_ms": 4672312,
+    "end_ms": 4696568,
+    "duration_ms": 24256,
+    "word_count": 55,
+    "avg_confidence": 90
+  }
+]

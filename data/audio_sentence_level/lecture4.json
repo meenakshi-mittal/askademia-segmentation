@@ -1,0 +1,4952 @@
+[
+  {
+    "timestamp": 1.72,
+    "text": "Recording in progress. morning, data 100. Welcome. Welcome to our lecture for, believe it or not.",
+    "start_ms": 1720,
+    "end_ms": 15225,
+    "duration_ms": 13505,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 15.225,
+    "text": "We are almost done with pandas. So today, as I promise, we're going to go over 11 more advanced topics in pandas, some of which you've seen in data 8.",
+    "start_ms": 15225,
+    "end_ms": 26200,
+    "duration_ms": 10975,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 26.2,
+    "text": "So we're basically going to talk a little bit about how do we translate the things that you'd seen in data 8 in terms of the pandas language.",
+    "start_ms": 26200,
+    "end_ms": 37338,
+    "duration_ms": 11138,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 37.338,
+    "text": "So we're going to talk about group by. So it's a grouping kind of mechanism that we have.",
+    "start_ms": 37338,
+    "end_ms": 43368,
+    "duration_ms": 6030,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 43.368,
+    "text": "So you have had grouping in data 84. So we're going to see how it's working out in data 100.",
+    "start_ms": 43368,
+    "end_ms": 50190,
+    "duration_ms": 6822,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 50.19,
+    "text": "We're going to also talk about pivot tables, joining of two tables.",
+    "start_ms": 50190,
+    "end_ms": 56040,
+    "duration_ms": 5850,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 56.04,
+    "text": "And then we're going to also see, quick demo and then see how we can do different things in different kind of ways and functionalities that Pandas is giving us.",
+    "start_ms": 56040,
+    "end_ms": 68120,
+    "duration_ms": 12080,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 68.6,
+    "text": "So this is where we left off in the previous lecture.",
+    "start_ms": 68600,
+    "end_ms": 71800,
+    "duration_ms": 3200,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 71.8,
+    "text": "I was going to talk about why we need to process data frames in terms of grouping objects or grouping different rows into different categories.",
+    "start_ms": 71800,
+    "end_ms": 82240,
+    "duration_ms": 10440,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 82.24,
+    "text": "So one of the reasons that we group a stuff into different categories is that sometimes in our data items or rows in our data are intrinsically coming from the same categories.",
+    "start_ms": 82240,
+    "end_ms": 95000,
+    "duration_ms": 12760,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 95.0,
+    "text": "So it would be interesting for us to group Similar categories into separate kind of sub data frames that we can process it.",
+    "start_ms": 95000,
+    "end_ms": 103200,
+    "duration_ms": 8200,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 103.2,
+    "text": "But once we categorize items into their corresponding categories, what we want to also do is to get some information from it.",
+    "start_ms": 103200,
+    "end_ms": 111440,
+    "duration_ms": 8240,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 111.44,
+    "text": "So we want to see how... Oh oh. This is still light of 100 and that's still...",
+    "start_ms": 111440,
+    "end_ms": 139400,
+    "duration_ms": 27960,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 139.928,
+    "text": "Does that be not earth? Sing your good. I don't know what's going to happen but they're recording.",
+    "start_ms": 139928,
+    "end_ms": 156632,
+    "duration_ms": 16704,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 156.76,
+    "text": "but I will go ahead um progress. Okay. Ready to go.",
+    "start_ms": 156760,
+    "end_ms": 178376,
+    "duration_ms": 21616,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 184.632,
+    "text": "This is very large still. Okay. Cool. Um... Sorry about that, where are?",
+    "start_ms": 184632,
+    "end_ms": 192648,
+    "duration_ms": 8016,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 192.824,
+    "text": "In the recording for all good. So, what were we talking about?",
+    "start_ms": 192824,
+    "end_ms": 199501,
+    "duration_ms": 6677,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 199.501,
+    "text": "We were talking about grouping. Why do we need grouping?",
+    "start_ms": 199501,
+    "end_ms": 203056,
+    "duration_ms": 3555,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 203.056,
+    "text": "We said that items are coming from different categories and therefore they need to be grouped into sub data frames that then those sub data frames are going to...",
+    "start_ms": 203056,
+    "end_ms": 213368,
+    "duration_ms": 10312,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 214.072,
+    "text": "be used for collecting information, aggregating information so that we can gain more insights.",
+    "start_ms": 214072,
+    "end_ms": 220072,
+    "duration_ms": 6000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 220.072,
+    "text": "So for example, what you will see today is that we're going to see How we can group the baby names data frame into different years so that we can take a look at what's happening to different names and different number of babies with different names who are born in different years.",
+    "start_ms": 220072,
+    "end_ms": 238480,
+    "duration_ms": 18408,
+    "word_count": 53,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 238.48,
+    "text": "And then in terms of aggregating, so once we group items or names into different years, what we might be interested in is taking a look at how many total babies were born in any given name.",
+    "start_ms": 238480,
+    "end_ms": 249720,
+    "duration_ms": 11240,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 249.72,
+    "text": "So that's the kind of example of an aggregation that we might want to do.",
+    "start_ms": 249720,
+    "end_ms": 252840,
+    "duration_ms": 3120,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 252.84,
+    "text": "So it's a powerful thing. What we can do is we can perform this kind of aggregation very quickly on the entire data frame.",
+    "start_ms": 252840,
+    "end_ms": 259440,
+    "duration_ms": 6600,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 259.44,
+    "text": "And you can assume that we have very and large data set that's stored in the data frame.",
+    "start_ms": 259440,
+    "end_ms": 263680,
+    "duration_ms": 4240,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 263.68,
+    "text": "And then we can summarize information using that kind of aggregation or the collection of information that we have.",
+    "start_ms": 263680,
+    "end_ms": 270040,
+    "duration_ms": 6360,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 270.2,
+    "text": "So what you had seen in data aid was something like this.",
+    "start_ms": 270200,
+    "end_ms": 274200,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 274.2,
+    "text": "This plot or this figure might not familiar to you in data aid.",
+    "start_ms": 274200,
+    "end_ms": 278200,
+    "duration_ms": 4000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 278.2,
+    "text": "In data aid, what you had was you had You had actually the group function and then you also had the collect functions.",
+    "start_ms": 278200,
+    "end_ms": 288000,
+    "duration_ms": 9800,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 288.0,
+    "text": "The group function was giving you different groups of data based on some attribute that those data points in a certain group were sharing amongst each other and then you would be able to collect to use the collect function in order to summarize information in each one of those groups.",
+    "start_ms": 288000,
+    "end_ms": 305200,
+    "duration_ms": 17200,
+    "word_count": 51,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 305.2,
+    "text": "For example, in this case, in the top kind of group, what you're seeing is that they all have this letter A in common.",
+    "start_ms": 305200,
+    "end_ms": 313780,
+    "duration_ms": 8580,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 313.78,
+    "text": "So this is the attribute that they were grouped upon.",
+    "start_ms": 313780,
+    "end_ms": 316540,
+    "duration_ms": 2760,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 316.54,
+    "text": "So they have that in common. And then what we have is the collect function.",
+    "start_ms": 316540,
+    "end_ms": 321420,
+    "duration_ms": 4880,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 321.42,
+    "text": "And the collect function can be different types of functions.",
+    "start_ms": 321420,
+    "end_ms": 324020,
+    "duration_ms": 2600,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 324.02,
+    "text": "For example, if we do min, so what we'll do is we'll take the min over this column.",
+    "start_ms": 324020,
+    "end_ms": 329219,
+    "duration_ms": 5199,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 329.219,
+    "text": "So it is equal to 1. And then we'll take the min over this other green column, which is equal to 2.",
+    "start_ms": 329219,
+    "end_ms": 334579,
+    "duration_ms": 5360,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 334.58,
+    "text": "And this is the way that we categorize, aggregate, summarize, and then we have information in the output.",
+    "start_ms": 334580,
+    "end_ms": 340460,
+    "duration_ms": 5880,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 340.46,
+    "text": "So what we're going to see in data 100 is exactly the same thing, but we call it different, we use the different function name.",
+    "start_ms": 340460,
+    "end_ms": 347460,
+    "duration_ms": 7000,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 347.46,
+    "text": "We call the group function that you have before as group bot.",
+    "start_ms": 347460,
+    "end_ms": 352540,
+    "duration_ms": 5080,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 352.54,
+    "text": "So the group by function, what it does, is that it will go ahead, it will split all the objects or all of those rows into different categories that have the same attribute income in between them.",
+    "start_ms": 352540,
+    "end_ms": 364260,
+    "duration_ms": 11720,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 364.26,
+    "text": "So kind of similar to when we group by the first attribute in the data aid example that the first group had, A in common, the second group had B in common, in the first attribute, and so on and so forth.",
+    "start_ms": 364260,
+    "end_ms": 377180,
+    "duration_ms": 12920,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 377.18,
+    "text": "Then what we will do is we will basically use something similar to the collect function in data aid.",
+    "start_ms": 377180,
+    "end_ms": 382900,
+    "duration_ms": 5720,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 382.9,
+    "text": "We will apply some kind of function. This function can be min, max, or any kind of summarization that we want to do, and each one of those groups separately.",
+    "start_ms": 382900,
+    "end_ms": 392300,
+    "duration_ms": 9400,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 392.3,
+    "text": "And then the last piece that we'll do is we'll combine the results together.",
+    "start_ms": 392300,
+    "end_ms": 396140,
+    "duration_ms": 3840,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 396.14,
+    "text": "So when we try to combine the results, that means that okay, I summarize group one, I summarize group two, I summarize group three.",
+    "start_ms": 396140,
+    "end_ms": 401819,
+    "duration_ms": 5679,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 401.819,
+    "text": "Now I want to put them all together so that the output is a data frame.",
+    "start_ms": 401819,
+    "end_ms": 405140,
+    "duration_ms": 3321,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 405.14,
+    "text": "So you have a summarized aggregated data frame at the end in the output.",
+    "start_ms": 405140,
+    "end_ms": 410140,
+    "duration_ms": 5000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 410.744,
+    "text": "So we call group by, what we'll do after we call the group by is that it will give us some groups.",
+    "start_ms": 410744,
+    "end_ms": 417744,
+    "duration_ms": 7000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 417.744,
+    "text": "So those groups we call them data frame group by object.",
+    "start_ms": 417744,
+    "end_ms": 422744,
+    "duration_ms": 5000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 422.744,
+    "text": "So they are kind of you can think about data frame group by objects as sub data frames.",
+    "start_ms": 422744,
+    "end_ms": 426897,
+    "duration_ms": 4153,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 426.897,
+    "text": "That's how you like to think about it. So it's divide, it's a selection of rows in a data frame that I have.",
+    "start_ms": 426897,
+    "end_ms": 433744,
+    "duration_ms": 6847,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 433.744,
+    "text": "So it's a data frame group by object that you're looking at.",
+    "start_ms": 433744,
+    "end_ms": 437744,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 437.88,
+    "text": "So in this example, so if you think about the baby names data frame that we have before this is kind of a simplified visual for the Data frame the baby names the baby names data frame what we have is you can see that we have different attributes This was this state.",
+    "start_ms": 437880,
+    "end_ms": 455229,
+    "duration_ms": 17349,
+    "word_count": 53,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 455.229,
+    "text": "This was the sex of the babies. This was the year that those names or those babies were born in This is the attribute name and the count of those babies So if we go ahead and say that I want to group by the attribute year, right?",
+    "start_ms": 455229,
+    "end_ms": 468600,
+    "duration_ms": 13371,
+    "word_count": 48,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 468.6,
+    "text": "So we basically use the categories as categories of the year, but I'll end up, end of that is these sub data frames.",
+    "start_ms": 468600,
+    "end_ms": 477920,
+    "duration_ms": 9320,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 477.92,
+    "text": "Each one of them have something in common, which is the year attribute that we try to group by elements with.",
+    "start_ms": 477920,
+    "end_ms": 485720,
+    "duration_ms": 7800,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 485.72,
+    "text": "So we call each one of them data frame group by object, and what we can do is we can apply a assertive function to aggregate information in each one of those categories, then we'll combine all of them together.",
+    "start_ms": 485720,
+    "end_ms": 496960,
+    "duration_ms": 11240,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 497.592,
+    "text": "So what is that function that will summarize information in one data frame group by object?",
+    "start_ms": 497592,
+    "end_ms": 504432,
+    "duration_ms": 6840,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 504.432,
+    "text": "One way of summarizing information is to call dot-ac function.",
+    "start_ms": 504432,
+    "end_ms": 508152,
+    "duration_ms": 3720,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 508.152,
+    "text": "It comes from the aggregate. So this is dot-ac function that will be called on data frame group by objects that we create using dot-group by function call.",
+    "start_ms": 508152,
+    "end_ms": 520912,
+    "duration_ms": 12760,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 520.912,
+    "text": "So what we'll do is afterwards once we call the dot-ac function, it will apply a certain operation.",
+    "start_ms": 520912,
+    "end_ms": 526452,
+    "duration_ms": 5540,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 526.452,
+    "text": "It has a parameter that will apply that parameter function to each one of those sub data frames and then it will collect the information for us.",
+    "start_ms": 526452,
+    "end_ms": 535152,
+    "duration_ms": 8700,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 535.152,
+    "text": "So what you're seeing here is that I grouped by year initially.",
+    "start_ms": 535152,
+    "end_ms": 539285,
+    "duration_ms": 4133,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 539.285,
+    "text": "So I had these sub data frames or data frame group by objects that I had.",
+    "start_ms": 539285,
+    "end_ms": 545032,
+    "duration_ms": 5747,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 545.032,
+    "text": "And then here I'm saying that I want to do aggregation based on the function that's sum.",
+    "start_ms": 545032,
+    "end_ms": 550880,
+    "duration_ms": 5848,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 550.88,
+    "text": "So I'm summing all of the columns that you have.",
+    "start_ms": 550880,
+    "end_ms": 554258,
+    "duration_ms": 3378,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 554.258,
+    "text": "And in this In this case, we're summing all of those numerical columns that we have, and then what we'll do is we'll summarize that information.",
+    "start_ms": 554258,
+    "end_ms": 562232,
+    "duration_ms": 7974,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 562.232,
+    "text": "So what's going to happen is that, so here we have the category that has 1910 in common, so there's going to be a road that has 1910, our aggregation with sum, so we can only apply it on numerical columns.",
+    "start_ms": 562232,
+    "end_ms": 574952,
+    "duration_ms": 12720,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 574.952,
+    "text": "We're going to talk more about why only on numerical columns, because it basically enforces that any numerical operation that you're doing, you have to do only a numerical columns that you have and the only columns that we have that are numerical is this count column.",
+    "start_ms": 574952,
+    "end_ms": 592232,
+    "duration_ms": 17280,
+    "word_count": 47,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 592.232,
+    "text": "So we'll go ahead and sum up these two values to 95 and 47 and the result is 342.",
+    "start_ms": 592232,
+    "end_ms": 599112,
+    "duration_ms": 6880,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 599.112,
+    "text": "So that's how you aggregate using a function and each sub data frame is going to be summarized into one row, one row for 1910, one row for the next year one row for the other year And that's how you can think about this output data frame.",
+    "start_ms": 599112,
+    "end_ms": 613912,
+    "duration_ms": 14800,
+    "word_count": 48,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 613.912,
+    "text": "So I'm going to emphasize that this is a data frame object.",
+    "start_ms": 613912,
+    "end_ms": 617792,
+    "duration_ms": 3880,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 617.792,
+    "text": "This output data frame to be the data frame that has the aggregation of all of those results.",
+    "start_ms": 617792,
+    "end_ms": 622712,
+    "duration_ms": 4920,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 623.032,
+    "text": "One thing that I want you to note here is that we have this column that we aggregated on initially as the index.",
+    "start_ms": 623032,
+    "end_ms": 631032,
+    "duration_ms": 8000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 631.032,
+    "text": "So that's going to be our initial index. So if you wonder what the index is going to be and whether there's going to be automatic indexing or not, that's what's going to happen after we call a group by an an act and if you want to treat year as a normal column you just reset index, move it as a normal column and then have the index to be that automatic index thing that we always have.",
+    "start_ms": 631032,
+    "end_ms": 654992,
+    "duration_ms": 23960,
+    "word_count": 79,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 656.056,
+    "text": "So, the syntax, the general syntax of this whole workflow that we had seen is that we have a data frame.",
+    "start_ms": 656056,
+    "end_ms": 663927,
+    "duration_ms": 7871,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 663.927,
+    "text": "So you create a data frame, you have the data frame, you call .group by, so this is the first thing, you specify which column you want to group by objects with.",
+    "start_ms": 663927,
+    "end_ms": 673733,
+    "duration_ms": 9806,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 673.733,
+    "text": "So what attribute is going to be in common between the elements in one data frame group by object or the sub-data frame that you have.",
+    "start_ms": 673733,
+    "end_ms": 682296,
+    "duration_ms": 8563,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 682.296,
+    "text": "So after this, you have the data frame group by object.",
+    "start_ms": 682296,
+    "end_ms": 686216,
+    "duration_ms": 3920,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 686.216,
+    "text": "You can't do anything with it. The only thing that you can do is you can summarize and aggregate information in those sub-data frames to make them.",
+    "start_ms": 686216,
+    "end_ms": 693976,
+    "duration_ms": 7760,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 694.424,
+    "text": "to make them useful. So what we'll do next is that we call .ag.",
+    "start_ms": 694424,
+    "end_ms": 698930,
+    "duration_ms": 4506,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 698.93,
+    "text": "So .ag is going to go ahead aggregate information and then we'll specify that the type of aggregation that we want to do is going to be passed in as an argument to the ag function.",
+    "start_ms": 698930,
+    "end_ms": 709734,
+    "duration_ms": 10804,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 709.734,
+    "text": "So in the previous example of a sum, because we wanted to count the total number of babies in each year, because we had the counts for each one of the babies.",
+    "start_ms": 709734,
+    "end_ms": 719024,
+    "duration_ms": 9290,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 719.024,
+    "text": "If I sum up everything, that's going to give me the total babies born in a specific year with different kinds of names, which I don't care about.",
+    "start_ms": 719024,
+    "end_ms": 728831,
+    "duration_ms": 9807,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 728.831,
+    "text": "The granularity of the actual names, I just wanted to know how many babies were born.",
+    "start_ms": 728831,
+    "end_ms": 734224,
+    "duration_ms": 5393,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 735.192,
+    "text": "So there are a lot of times that we would actually go ahead and say that, oh, I don't want to run this group by on all of the columns and I want to be very specific about the columns that are going to be participating in the group by and the columns that are going to be participating in the ACC function and I'm doing the aggregation on.",
+    "start_ms": 735192,
+    "end_ms": 754712,
+    "duration_ms": 19520,
+    "word_count": 69,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 754.712,
+    "text": "Specifically what I've done here is, and also this is something that we'll keep doing get in the rest of the lecture is that I'm first going to select columns that I'm only concerned with and not concerned with, for example, the states.",
+    "start_ms": 754712,
+    "end_ms": 770392,
+    "duration_ms": 15680,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 770.392,
+    "text": "I'm going to drop that column or not use that column.",
+    "start_ms": 770392,
+    "end_ms": 773592,
+    "duration_ms": 3200,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 773.592,
+    "text": "So here I'm creating a temporary data frame and I'm saying that from the baby names data frame, only go ahead and grab the year and the count column.",
+    "start_ms": 773592,
+    "end_ms": 783431,
+    "duration_ms": 9839,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 783.431,
+    "text": "So now I have a data frame that has only two columns.",
+    "start_ms": 783431,
+    "end_ms": 786552,
+    "duration_ms": 3121,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 786.552,
+    "text": "I'll go ahead and do this all group by based on.",
+    "start_ms": 786552,
+    "end_ms": 789352,
+    "duration_ms": 2800,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 789.592,
+    "text": "one column which is the year and then I'll go ahead and say that aggregate on some and this is the result that we'll get.",
+    "start_ms": 789592,
+    "end_ms": 797072,
+    "duration_ms": 7480,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 798.04,
+    "text": "Okay. So what goes inside the act function is interesting.",
+    "start_ms": 798040,
+    "end_ms": 802140,
+    "duration_ms": 4100,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 802.14,
+    "text": "So we're going to see multiple examples of what kind of aggregation can we do.",
+    "start_ms": 802140,
+    "end_ms": 807068,
+    "duration_ms": 4928,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 807.068,
+    "text": "We had only seen some. Some common examples that we have are categorized into different functions that are available either through Python or Pandas or through NumPy.",
+    "start_ms": 807068,
+    "end_ms": 819420,
+    "duration_ms": 12352,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 819.42,
+    "text": "So for example, if you wanted to do some or the summation of a numerical column, what we could do is I could say that I'm going to call Ag and then pass some.",
+    "start_ms": 819420,
+    "end_ms": 830420,
+    "duration_ms": 11000,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 830.616,
+    "text": "If I wanted to actually use the numpy version of it, then I could say that dot, add, np dot sum, numpy dot sum.",
+    "start_ms": 830616,
+    "end_ms": 839336,
+    "duration_ms": 8720,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 839.336,
+    "text": "Right? So that's the sum function that's implemented in numpy that I'm invoking here.",
+    "start_ms": 839336,
+    "end_ms": 844496,
+    "duration_ms": 5160,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 844.496,
+    "text": "The same thing is also implemented to append us. The pandas would say that, oh, I'm recognizing this as a string sum.",
+    "start_ms": 844496,
+    "end_ms": 852096,
+    "duration_ms": 7600,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 852.096,
+    "text": "If you pass a string sum, then the pandas version of the sum is going to be in book.",
+    "start_ms": 852096,
+    "end_ms": 857376,
+    "duration_ms": 5280,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 857.376,
+    "text": "They have a slightly different functionalities, performance might be slightly different, but that's not going to concern us in data 100.",
+    "start_ms": 857376,
+    "end_ms": 864296,
+    "duration_ms": 6920,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 864.296,
+    "text": "Just know that there are tree categories of functions that might be available either through Python or through NumPy or through Pandas that we can work with.",
+    "start_ms": 864296,
+    "end_ms": 874616,
+    "duration_ms": 10320,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 875.128,
+    "text": "We can do max, right? So when did you do summation?",
+    "start_ms": 875128,
+    "end_ms": 878238,
+    "duration_ms": 3110,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 878.238,
+    "text": "You can also do all the numerical fancy thing that we can do.",
+    "start_ms": 878238,
+    "end_ms": 881914,
+    "duration_ms": 3676,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 881.914,
+    "text": "We can do max, but Kind of the syntax is exactly the same as we have before.",
+    "start_ms": 881914,
+    "end_ms": 888388,
+    "duration_ms": 6474,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 888.388,
+    "text": "So with the Python I pass max with With numpy I would say np.max numpy numpy's max function and then also with some I would say I would pass max in a string quotation so that it will go ahead and invoke the max in pandas, right?",
+    "start_ms": 888388,
+    "end_ms": 908043,
+    "duration_ms": 19655,
+    "word_count": 47,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 908.043,
+    "text": "So I'm going to quickly kind of show you other categories.",
+    "start_ms": 908043,
+    "end_ms": 912285,
+    "duration_ms": 4242,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 912.285,
+    "text": "We have min, same scenario, we can do mean or average, so there is no Python version for mean or average, but there is non-pivision and pandas version.",
+    "start_ms": 912285,
+    "end_ms": 922411,
+    "duration_ms": 10126,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 922.411,
+    "text": "Pandas also have another functionality for first and last. So first and last the way that it works is that we're going to see multiple times in examples, and you're going to see why it's very useful.",
+    "start_ms": 922411,
+    "end_ms": 935208,
+    "duration_ms": 12797,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 935.208,
+    "text": "First and last, technically, says that once you categorize items into sub-data frames or data frame group by objects that you have, give me the first row or give me the last row.",
+    "start_ms": 935208,
+    "end_ms": 945928,
+    "duration_ms": 10720,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 945.928,
+    "text": "And it might be useful in the case that data frame is sorted in some way.",
+    "start_ms": 945928,
+    "end_ms": 949887,
+    "duration_ms": 3959,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 949.887,
+    "text": "So you will get the entire row without any aggregating on the rest of the rows and whatnot.",
+    "start_ms": 949887,
+    "end_ms": 956488,
+    "duration_ms": 6601,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 956.488,
+    "text": "you're just filtering based on getting only one entry. There are some functions that we use very regularly that we don't need to call dot ag.",
+    "start_ms": 956488,
+    "end_ms": 967768,
+    "duration_ms": 11280,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 967.768,
+    "text": "We can just directly say dot that function and it will automatically call that for us.",
+    "start_ms": 967768,
+    "end_ms": 973416,
+    "duration_ms": 5648,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 973.416,
+    "text": "So again, I could say dot ag mean, mean, or I could say dot mean.",
+    "start_ms": 973416,
+    "end_ms": 979016,
+    "duration_ms": 5600,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 979.016,
+    "text": "And by default, what it knows is that it calls dot ag and then it invokes the mean function and then it will calculate the average over the numerical columns that we have.",
+    "start_ms": 979016,
+    "end_ms": 990936,
+    "duration_ms": 11920,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 990.936,
+    "text": "So there are different ways to... Call and use aggregation functions, but these are just generally different ways.",
+    "start_ms": 990936,
+    "end_ms": 999136,
+    "duration_ms": 8200,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 999.136,
+    "text": "And every time that you want to use any of these aggregation functions, either you can go and take a look at the pandas documentation or you can refer to these slides or our lecture note to see which one is more appropriate.",
+    "start_ms": 999136,
+    "end_ms": 1011856,
+    "duration_ms": 12720,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1012.824,
+    "text": "So remember that I was doing this selection on or the aggregation, not aggregation, grouping by by the year and then I was doing the aggregation on the column.",
+    "start_ms": 1012824,
+    "end_ms": 1027232,
+    "duration_ms": 14408,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1027.232,
+    "text": "So there are different other ways that I could write exactly the same thing and I'm going to basically show you decompose each one of these lines of code so that you can make sense of what's happening.",
+    "start_ms": 1027232,
+    "end_ms": 1037072,
+    "duration_ms": 9840,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1037.464,
+    "text": "So when I say in the first example that I'm grouping by by the year column, remember that the data frame of the baby names initially had all of those six different columns that we had initially, right?",
+    "start_ms": 1037464,
+    "end_ms": 1049384,
+    "duration_ms": 11920,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1049.384,
+    "text": "So right now, which one of those data frame group by objects or sub data frames now has year as the index and then it has all of those other attributes, right?",
+    "start_ms": 1049384,
+    "end_ms": 1060584,
+    "duration_ms": 11200,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1060.584,
+    "text": "So what we're doing next here is that we're saying that, oh, I don't want to call this some function on California because it doesn't make sense.",
+    "start_ms": 1060584,
+    "end_ms": 1068424,
+    "duration_ms": 7840,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1068.424,
+    "text": "I want to go ahead and only extract the column that is numerical.",
+    "start_ms": 1068424,
+    "end_ms": 1072744,
+    "duration_ms": 4320,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1072.744,
+    "text": "So I'm extracting only the column that's numerical under sub data frames that is the count.",
+    "start_ms": 1072744,
+    "end_ms": 1078784,
+    "duration_ms": 6040,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1078.784,
+    "text": "So right now I have sub data frames. Each one of them have the index of the year and then each one of them has a second column that is the count.",
+    "start_ms": 1078784,
+    "end_ms": 1087703,
+    "duration_ms": 8919,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1087.703,
+    "text": "And then on that, what I'll do is I'll say that dot axon.",
+    "start_ms": 1087703,
+    "end_ms": 1090983,
+    "duration_ms": 3280,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1091.736,
+    "text": "I could directly say that because sum is a very useful function, I can directly say dot sum instead of dot x sum and it will do exactly the same thing.",
+    "start_ms": 1091736,
+    "end_ms": 1102816,
+    "duration_ms": 11080,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1103.448,
+    "text": "Or I could say that I'm trusting Pandas to recognize the type of the columns, so that I don't necessarily need to do the selection of the numerical columns the way that I did it here.",
+    "start_ms": 1103448,
+    "end_ms": 1115448,
+    "duration_ms": 12000,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1115.448,
+    "text": "But what I can do is I can say that go ahead and calculate some.",
+    "start_ms": 1115448,
+    "end_ms": 1120448,
+    "duration_ms": 5000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1120.376,
+    "text": "Only on the numerical columns and it will go ahead, drop everything else, it will just keep the numerical columns and it will do the summation and those.",
+    "start_ms": 1120376,
+    "end_ms": 1128376,
+    "duration_ms": 8000,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1128.76,
+    "text": "Make sense. So there are very different ways of doing it.",
+    "start_ms": 1128760,
+    "end_ms": 1132924,
+    "duration_ms": 4164,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1132.924,
+    "text": "But the good thing about pandas is that if you see a sample code, especially in the pandas API documentation, every function has a bunch of different sample codes.",
+    "start_ms": 1132924,
+    "end_ms": 1143224,
+    "duration_ms": 10300,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1143.864,
+    "text": "As you read it, you can make sense of how different things are implemented.",
+    "start_ms": 1143864,
+    "end_ms": 1147544,
+    "duration_ms": 3680,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1147.544,
+    "text": "It's very readable and it's really easy for us to understand.",
+    "start_ms": 1147544,
+    "end_ms": 1150824,
+    "duration_ms": 3280,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1150.824,
+    "text": "But again, you don't need to memorize everything. You're going to be given a reference sheet in the midterm and final exam.",
+    "start_ms": 1150824,
+    "end_ms": 1157504,
+    "duration_ms": 6680,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1157.504,
+    "text": "So all of the documentation or summary of those functions will be there as long as you know what goes as a group, what goes as the act.",
+    "start_ms": 1157504,
+    "end_ms": 1163904,
+    "duration_ms": 6400,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1163.904,
+    "text": "So you should be able to do stuff. So what can I do with that sum?",
+    "start_ms": 1163904,
+    "end_ms": 1168040,
+    "duration_ms": 4136,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1168.04,
+    "text": "Why was I obsessed with the sum thing? I was interested in the sum because if I go ahead and get the data frame which has all of the years and the sum of the babies who were born in that in those years, what I can do is I can do the plotting.",
+    "start_ms": 1168040,
+    "end_ms": 1183400,
+    "duration_ms": 15360,
+    "word_count": 54,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1183.4,
+    "text": "So you don't know how to plot things right now, but this is just an example that you will see that I can plot a line based on this data frame that I'm getting and I'm saying that go ahead and plot the count on the Y-axis and then the index on the X-axis.",
+    "start_ms": 1183400,
+    "end_ms": 1200920,
+    "duration_ms": 17520,
+    "word_count": 54,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1200.92,
+    "text": "And the index is the year. So we're starting from the initial year, which was I think 1910, and we're going all the way to 2022, which is the last year that we have in this dataset.",
+    "start_ms": 1200920,
+    "end_ms": 1210480,
+    "duration_ms": 9560,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1210.48,
+    "text": "And you're seeing the total number of babies and whatnot.",
+    "start_ms": 1210480,
+    "end_ms": 1212880,
+    "duration_ms": 2400,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1213.304,
+    "text": "So I'm going to come back in two lectures and I'm going to talk about visualizations.",
+    "start_ms": 1213304,
+    "end_ms": 1218304,
+    "duration_ms": 5000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1218.304,
+    "text": "So we're going to have two lectures on how to make fancy plots and different libraries that will do different visualizations for us.",
+    "start_ms": 1218304,
+    "end_ms": 1225304,
+    "duration_ms": 7000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1225.304,
+    "text": "But this is for you to just know why we care about aggregation because a lot of time we need to summarize data to be able to plot it some way.",
+    "start_ms": 1225304,
+    "end_ms": 1233304,
+    "duration_ms": 8000,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1234.232,
+    "text": "So of times we visualize data, we summarize data to just confirm whether what we have in our data set is accurate or not, and confirm those values or the results with some external sources or a secondary source.",
+    "start_ms": 1234232,
+    "end_ms": 1249992,
+    "duration_ms": 15760,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1249.992,
+    "text": "For example, in this case, there is a resource here that shows that the total number of babies born in California in 2020 was 421,000 babies.",
+    "start_ms": 1249992,
+    "end_ms": 1263192,
+    "duration_ms": 13200,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1263.192,
+    "text": "But once we take a look at what this plot is showing us right here, it will show us a number closer to like 3, 62k.",
+    "start_ms": 1263192,
+    "end_ms": 1273192,
+    "duration_ms": 10000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1274.328,
+    "text": "Okay, so this is a disparity. You have to be able to explain it and you have to be able to fix the issues in your data set if the issues are critical.",
+    "start_ms": 1274328,
+    "end_ms": 1283328,
+    "duration_ms": 9000,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1283.8,
+    "text": "Is there any guess why we have less babies in our data set than this other source actually reported as 421k Yes.",
+    "start_ms": 1283800,
+    "end_ms": 1301472,
+    "duration_ms": 17672,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1305.784,
+    "text": "So the response was, could there be duplicates? No. So assume that that 421k is...",
+    "start_ms": 1305784,
+    "end_ms": 1312784,
+    "duration_ms": 7000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1312.888,
+    "text": "The goal truth or the ground truth. Yeah. It might be that the data set is not updated.",
+    "start_ms": 1312888,
+    "end_ms": 1326232,
+    "duration_ms": 13344,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1326.232,
+    "text": "One good explanation is that this data set or like a rational or explanation makes them what we know about the data set is that this data set is the data set of babies who were registered with the social security.",
+    "start_ms": 1326232,
+    "end_ms": 1339432,
+    "duration_ms": 13200,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1339.432,
+    "text": "Not all babies are registered, right, for multiple different reasons.",
+    "start_ms": 1339432,
+    "end_ms": 1342272,
+    "duration_ms": 2840,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1342.272,
+    "text": "And that's why the actual number and the number that's reported in our data set is different.",
+    "start_ms": 1342272,
+    "end_ms": 1347632,
+    "duration_ms": 5360,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1347.632,
+    "text": "So this basically will tell you if you're going to do any modeling, if there are going to be any biases in your data set that will create biases in the model and in the results and in the inference that you're doing them, what not.",
+    "start_ms": 1347632,
+    "end_ms": 1359672,
+    "duration_ms": 12040,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1359.672,
+    "text": "So these are the things that in exploratory data analysis will keep thinking about and will keep validating and understanding about whether we have all the data, whether we have the right data, whether there are biases in our data or not.",
+    "start_ms": 1359672,
+    "end_ms": 1372672,
+    "duration_ms": 13000,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1373.4,
+    "text": "So moving on, summarizing everything that we've seen, we split the data, we see data frame group by objects, we apply a function, we aggregate or combine all of those summarized information into a data frame, at the end we'll get a data frame that has the index that is equal to the attribute that we group by on, and then the value that we're seeing, or the values that we're seeing are the aggregated values on the rest of the columns based on the function that we're passing to the act function.",
+    "start_ms": 1373400,
+    "end_ms": 1406440,
+    "duration_ms": 33040,
+    "word_count": 93,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1406.936,
+    "text": "This is kind of a quick summary. So this is a slight question for you actually.",
+    "start_ms": 1406936,
+    "end_ms": 1414169,
+    "duration_ms": 7233,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1414.169,
+    "text": "So take a close look at this picture. So I have a data frame.",
+    "start_ms": 1414169,
+    "end_ms": 1419648,
+    "duration_ms": 5479,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1419.648,
+    "text": "It doesn't have any index or anything. It has tree columns.",
+    "start_ms": 1419648,
+    "end_ms": 1424148,
+    "duration_ms": 4500,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1424.148,
+    "text": "I'm performing Group-by on the first attribute, right, on those letters.",
+    "start_ms": 1424148,
+    "end_ms": 1428648,
+    "duration_ms": 4500,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1428.648,
+    "text": "And then I'm performing the max-ag function. And then what you're seeing is those values in the second column are populated, but the question for you is what would go in the question mark cell for row A?",
+    "start_ms": 1428648,
+    "end_ms": 1446024,
+    "duration_ms": 17376,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1446.776,
+    "text": "Go for it. It was initially AK and now high is picking up.",
+    "start_ms": 1446776,
+    "end_ms": 1471600,
+    "duration_ms": 24824,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1471.6,
+    "text": "I think we should hide the colors so that you don't know what the correct answer is.",
+    "start_ms": 1471600,
+    "end_ms": 1477560,
+    "duration_ms": 5960,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1477.56,
+    "text": "But you just compete with the majority voting. So the answer is actually high.",
+    "start_ms": 1477560,
+    "end_ms": 1484760,
+    "duration_ms": 7200,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1484.76,
+    "text": "Can someone explain why? I'll get a volunteer from this side.",
+    "start_ms": 1484760,
+    "end_ms": 1487880,
+    "duration_ms": 3120,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1488.6,
+    "text": "Why high is the correct answer? Anyone? Yes. Exactly, when we're doing max Sun string values, it will perform comparison and alphabetical ordering, and H is greater than A and C, so that's why high is going to be.",
+    "start_ms": 1488600,
+    "end_ms": 1514304,
+    "duration_ms": 25704,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1514.168,
+    "text": "Um going to be the max between all of them.",
+    "start_ms": 1514168,
+    "end_ms": 1518953,
+    "duration_ms": 4785,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1518.953,
+    "text": "So 622 moving on, there will be more slider questions today.",
+    "start_ms": 1518953,
+    "end_ms": 1522313,
+    "duration_ms": 3360,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1522.313,
+    "text": "So these are all the values that you'll see. So kind of quickly showing you what's happening with this sub data frame.",
+    "start_ms": 1522313,
+    "end_ms": 1529202,
+    "duration_ms": 6889,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1529.202,
+    "text": "What's happening is that I'm just grabbing the index for the category.",
+    "start_ms": 1529202,
+    "end_ms": 1533813,
+    "duration_ms": 4611,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1533.813,
+    "text": "So that's where A comes from. And then over the second column, I'm taking the max between 3, 1 and 2, which is now going to be equal to 3 and then I'm taking the max over a k high and c a and what you're seeing is high.",
+    "start_ms": 1533813,
+    "end_ms": 1548480,
+    "duration_ms": 14667,
+    "word_count": 49,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1549.368,
+    "text": "Quick observation here. Notice that one row that I have at the end does not correspond to one row in a data frame.",
+    "start_ms": 1549368,
+    "end_ms": 1556368,
+    "duration_ms": 7000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1556.92,
+    "text": "Right? So the row that I had here, if I wanted to pick this row, this would have been tree AK, but now I have tree high.",
+    "start_ms": 1556920,
+    "end_ms": 1566636,
+    "duration_ms": 9716,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1566.636,
+    "text": "So it's basically just looking at this sub data frame column wise, not row wise, so we're not selecting rows.",
+    "start_ms": 1566636,
+    "end_ms": 1573000,
+    "duration_ms": 6364,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1573.0,
+    "text": "You're going to see different function that will select rows, but this is not doing that.",
+    "start_ms": 1573000,
+    "end_ms": 1577309,
+    "duration_ms": 4309,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1577.309,
+    "text": "So there's no direct correspondence. We're going to see a puzzle question later today and we're going to take a look at that question.",
+    "start_ms": 1577309,
+    "end_ms": 1585160,
+    "duration_ms": 7851,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1593.016,
+    "text": "very good questions. I'm going to show you why in the actual code I was actually trying to make sure that I don't have any numerical values, but here I'm not kind of caring about not having numerical values and I'm doing max on the strings.",
+    "start_ms": 1593016,
+    "end_ms": 1610056,
+    "duration_ms": 17040,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1610.056,
+    "text": "This is because previously pandas would allow for any kind of operations that you could do on the strings.",
+    "start_ms": 1610056,
+    "end_ms": 1616733,
+    "duration_ms": 6677,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1616.733,
+    "text": "On the strings you could do concatenation summation or like you could also even do like mean and max, right?",
+    "start_ms": 1616733,
+    "end_ms": 1625056,
+    "duration_ms": 8323,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1625.056,
+    "text": "But right now the pandas API right now does not allow for that and I'm going to talk about why and then the work around was that we would say numeric only in the example from the previous slide or we would manually select those columns.",
+    "start_ms": 1625056,
+    "end_ms": 1638816,
+    "duration_ms": 13760,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1638.816,
+    "text": "Otherwise we'll get I think we'll get a type error and we're going to take a look at that.",
+    "start_ms": 1638816,
+    "end_ms": 1644696,
+    "duration_ms": 5880,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1644.696,
+    "text": "Good question. specifically. So, I'm going to now go over a quick kind of an example so that you can see with all the functionalities that you'd seen so far we can do a lot of nice and fancy things.",
+    "start_ms": 1644696,
+    "end_ms": 1660504,
+    "duration_ms": 15808,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1660.504,
+    "text": "So the example that we're going to work on, this is a mini project, is that I have this baby names data frame that's panda to me and what I want to do is I want to figure out the names who have fallen, the female baby names, who have fallen the most in popularity.",
+    "start_ms": 1660504,
+    "end_ms": 1677144,
+    "duration_ms": 16640,
+    "word_count": 55,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1677.88,
+    "text": "Right? So let me state up one more time. The mini project that we're going to work on is that from the baby names data frame.",
+    "start_ms": 1677880,
+    "end_ms": 1685880,
+    "duration_ms": 8000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1686.168,
+    "text": "We're going to take a look at the female baby names who have fallen the most in popularity.",
+    "start_ms": 1686168,
+    "end_ms": 1693168,
+    "duration_ms": 7000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1693.272,
+    "text": "So we're gonna define what does it mean? Falling the most.",
+    "start_ms": 1693272,
+    "end_ms": 1696896,
+    "duration_ms": 3624,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1697.272,
+    "text": "In popularity, we're going to take a look at how we can filter the data and get only female baby names.",
+    "start_ms": 1697272,
+    "end_ms": 1702512,
+    "duration_ms": 5240,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1702.512,
+    "text": "We're going to take a look at how we can look at one name over multiple years and then compare all of them together.",
+    "start_ms": 1702512,
+    "end_ms": 1708872,
+    "duration_ms": 6360,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1708.872,
+    "text": "So we'll do all of those fancy things together. As a starting point, what I'm going to show you here in this slide is that I took the first step.",
+    "start_ms": 1708872,
+    "end_ms": 1718632,
+    "duration_ms": 9760,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1718.632,
+    "text": "I'm saying that I'm not going to care about the entire set of babies in the baby name.",
+    "start_ms": 1718632,
+    "end_ms": 1724312,
+    "duration_ms": 5680,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1724.312,
+    "text": "I'm going to filter for only female babies. And then now I'm going to work on F under-score baby names data frame.",
+    "start_ms": 1724312,
+    "end_ms": 1732832,
+    "duration_ms": 8520,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1732.832,
+    "text": "And then what's going to happen is that what I can do or different things that you will see in the demo is that I'm going to just take a look at all of these female baby names and then I'll sort the value by year.",
+    "start_ms": 1732832,
+    "end_ms": 1744752,
+    "duration_ms": 11920,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1744.752,
+    "text": "So it has the trend of all of those female baby names over the years is starting from 1910 and then it will go all the way to 2022.",
+    "start_ms": 1744752,
+    "end_ms": 1754912,
+    "duration_ms": 10160,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1754.912,
+    "text": "And then what we'll do is we can take a look at each individual name individually.",
+    "start_ms": 1754912,
+    "end_ms": 1760592,
+    "duration_ms": 5680,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1760.592,
+    "text": "And then we can plot the trend. So for example, in this case, I'm saying that, OK, you sorted all of the values.",
+    "start_ms": 1760592,
+    "end_ms": 1766592,
+    "duration_ms": 6000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1766.592,
+    "text": "Already, the year is sorted. What I can do is I can say that let's take a look at all the entries with the name Jennifer.",
+    "start_ms": 1766592,
+    "end_ms": 1775472,
+    "duration_ms": 8880,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1775.472,
+    "text": "So now every other name is going to be thrown out.",
+    "start_ms": 1775472,
+    "end_ms": 1779112,
+    "duration_ms": 3640,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1779.112,
+    "text": "The data set is sorted, and now I'm only filtering for Jennifer.",
+    "start_ms": 1779112,
+    "end_ms": 1782992,
+    "duration_ms": 3880,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1782.992,
+    "text": "So I have Jennifer from Jennifer Count in 1910, Jennifer Count in 1911, and so on and so forth.",
+    "start_ms": 1782992,
+    "end_ms": 1789432,
+    "duration_ms": 6440,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1789.432,
+    "text": "So it's a kind of a sequence of all of these values.",
+    "start_ms": 1789432,
+    "end_ms": 1793632,
+    "duration_ms": 4200,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1793.632,
+    "text": "And then I'm taking a look at the count, because I'm interested only in the count of those Jennifer babies.",
+    "start_ms": 1793632,
+    "end_ms": 1800672,
+    "duration_ms": 7040,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1800.672,
+    "text": "So as a result, what you're seeing is that I have a Jennifer Count series object, which I just know that what is the count and is sorted by the year.",
+    "start_ms": 1800672,
+    "end_ms": 1811551,
+    "duration_ms": 10879,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1811.551,
+    "text": "And technically here, we also have them sorted by the year which we have done initially.",
+    "start_ms": 1811551,
+    "end_ms": 1819712,
+    "duration_ms": 8161,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1819.712,
+    "text": "And if I go ahead and plot it, what you'll see is this shape.",
+    "start_ms": 1819712,
+    "end_ms": 1823092,
+    "duration_ms": 3380,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1823.092,
+    "text": "When we think about fallen the most in popularity, what we're looking at is what is the current value or the current number of gender for babies who were born in 2022.",
+    "start_ms": 1823092,
+    "end_ms": 1834052,
+    "duration_ms": 10960,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1834.052,
+    "text": "And then we're gonna basically somehow compare it the maximum of...",
+    "start_ms": 1834052,
+    "end_ms": 1838392,
+    "duration_ms": 4340,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1839.544,
+    "text": "of a year that we had the maximum number of baby genufers born, right?",
+    "start_ms": 1839544,
+    "end_ms": 1844544,
+    "duration_ms": 5000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1844.544,
+    "text": "And we'll take a look at that, we'll calculate it, we'll do exactly the same thing for all of the names, and then we'll find out which names have fallen the most in popularity, and then we'll plot all of them.",
+    "start_ms": 1844544,
+    "end_ms": 1855544,
+    "duration_ms": 11000,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1857.08,
+    "text": "Let's take a look. Oops We started. My import the stuff.",
+    "start_ms": 1857080,
+    "end_ms": 1879336,
+    "duration_ms": 22256,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1879.608,
+    "text": "Now here, actually, let me... I'm going to skip the grouping piece, these are the things that we had already seen in the slides.",
+    "start_ms": 1879608,
+    "end_ms": 1903088,
+    "duration_ms": 23480,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1903.088,
+    "text": "So I'm going to go directly into this case and study this mini project that we're working on.",
+    "start_ms": 1903088,
+    "end_ms": 1908088,
+    "duration_ms": 5000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1908.088,
+    "text": "Remember that what I had was, I initially, when I had said that, I'm going to filter for only babies who are female and then what I'm going to get is all of these female babies and the number of rows is less than what I had initially in a dataset.",
+    "start_ms": 1908088,
+    "end_ms": 1924208,
+    "duration_ms": 16120,
+    "word_count": 51,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1924.44,
+    "text": "What I'm doing next is somehow I can validate that they're sorted by year But never trust but you're seeing as a summary of the first few Rosen last few rows always go ahead and sort your data frame if you want to make sure that your data frame is sorted for a fact So here I'm saying that I want to sort by year, right?",
+    "start_ms": 1924440,
+    "end_ms": 1945080,
+    "duration_ms": 20640,
+    "word_count": 66,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1945.08,
+    "text": "Remember that then I wanted to sort a data frame I had to specify which column I'm going to sort on because there's multiple different columns that I'm sorting on So I'm sorting by year.",
+    "start_ms": 1945080,
+    "end_ms": 1956040,
+    "duration_ms": 10960,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1956.04,
+    "text": "By default, this is going to sort in ascending order.",
+    "start_ms": 1956040,
+    "end_ms": 1959120,
+    "duration_ms": 3080,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1959.12,
+    "text": "So it starts from the 1910, goes all the way to 2022.",
+    "start_ms": 1959120,
+    "end_ms": 1963200,
+    "duration_ms": 4080,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1963.2,
+    "text": "And this is F underscore baby name, data frame that I have.",
+    "start_ms": 1963200,
+    "end_ms": 1967200,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1967.416,
+    "text": "So what we saw was that, okay, if I go ahead and only double check four female babies with the name Jennifer and I go ahead and plot a Line plot with year being on the x-axis and then Counting on the y-axis.",
+    "start_ms": 1967416,
+    "end_ms": 1983480,
+    "duration_ms": 16064,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1983.48,
+    "text": "What's going to be the trend? And if you take your look...",
+    "start_ms": 1983480,
+    "end_ms": 1988008,
+    "duration_ms": 4528,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1988.056,
+    "text": "This is going to be the trend. It's starting from 1910.",
+    "start_ms": 1988056,
+    "end_ms": 1991856,
+    "duration_ms": 3800,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1991.856,
+    "text": "We have all of those values. So you're seeing that these two values for every row that are sorted by year are going to basically be plotted.",
+    "start_ms": 1991856,
+    "end_ms": 2001376,
+    "duration_ms": 9520,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2001.376,
+    "text": "It turns out that this seems to be the maximum.",
+    "start_ms": 2001376,
+    "end_ms": 2004256,
+    "duration_ms": 2880,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2004.256,
+    "text": "6,065 is the maximum number of Jennifer's born in any given year.",
+    "start_ms": 2004256,
+    "end_ms": 2009376,
+    "duration_ms": 5120,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2009.376,
+    "text": "And then in 2022, if I can just pull, that doesn't show you.",
+    "start_ms": 2009376,
+    "end_ms": 2014496,
+    "duration_ms": 5120,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2014.496,
+    "text": "but we'll figure out what is the current value or the number of baby genuperes in 2022.",
+    "start_ms": 2014496,
+    "end_ms": 2020816,
+    "duration_ms": 6320,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2021.56,
+    "text": "So if I want to figure out what's the maximum number of Jennifer's who were born.",
+    "start_ms": 2021560,
+    "end_ms": 2027560,
+    "duration_ms": 6000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2027.56,
+    "text": "Instead of just manually inspecting the plot which you can't do for all of the names, I'm saying that I'm going to invoke this numpy function.",
+    "start_ms": 2027560,
+    "end_ms": 2035560,
+    "duration_ms": 8000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2035.56,
+    "text": "This numpy function max is going to take this series object, which we know that this series object was all the Jennifer's and we're only looking at the count.",
+    "start_ms": 2035560,
+    "end_ms": 2044560,
+    "duration_ms": 9000,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2044.56,
+    "text": "So if I take the maximum, this is going to be the max of the count.",
+    "start_ms": 2044560,
+    "end_ms": 2049560,
+    "duration_ms": 5000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2049.688,
+    "text": "And if I run it, it will tell me that the maximum Jennifer was in fact the 6,000, 6,000, and 65 babies that be at the same question.",
+    "start_ms": 2049688,
+    "end_ms": 2059688,
+    "duration_ms": 10000,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2063.064,
+    "text": "It's stable meaning that it will save... Back to the data frame.",
+    "start_ms": 2063064,
+    "end_ms": 2069096,
+    "duration_ms": 6032,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2071.512,
+    "text": "You will have to double check the documentation. I would think that it is a stable because it's not changing the content.",
+    "start_ms": 2071512,
+    "end_ms": 2082909,
+    "duration_ms": 11397,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2082.909,
+    "text": "It's just reordering the content. So, what we're also going to do is we're going to take a look at what is the current number of Jennifer's born in a given in 2022.",
+    "start_ms": 2082909,
+    "end_ms": 2094284,
+    "duration_ms": 11375,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2094.284,
+    "text": "So what I'll do is I am basically taking a look at the same series object, right?",
+    "start_ms": 2094284,
+    "end_ms": 2100504,
+    "duration_ms": 6220,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2100.504,
+    "text": "This is the series that has all of those counts that are sorted by year.",
+    "start_ms": 2100504,
+    "end_ms": 2105304,
+    "duration_ms": 4800,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2105.304,
+    "text": "Remember, it's the important that we know for a fact that is sorted by year.",
+    "start_ms": 2105304,
+    "end_ms": 2109256,
+    "duration_ms": 3952,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2109.256,
+    "text": "Which then, But I can do is I can say that go ahead and I lock and give me the last row.",
+    "start_ms": 2109256,
+    "end_ms": 2114384,
+    "duration_ms": 5128,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2114.904,
+    "text": "Right? So the last row is going to be negative one or we could say that or however many elements you have Just give that index or that integer position and be able to extract it.",
+    "start_ms": 2114904,
+    "end_ms": 2126810,
+    "duration_ms": 11906,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2126.81,
+    "text": "So current Jennifer turns out to be 114 and what I can do is that I'm defining what is the falling in popularity meat?",
+    "start_ms": 2126810,
+    "end_ms": 2136984,
+    "duration_ms": 10174,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2136.984,
+    "text": "The following popularity, the way that we can define it is that we can define it as ratio to peak.",
+    "start_ms": 2136984,
+    "end_ms": 2142944,
+    "duration_ms": 5960,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2142.944,
+    "text": "Ratio of the current number of babies with that name compared to the peak of where it has been the most popular.",
+    "start_ms": 2142944,
+    "end_ms": 2150304,
+    "duration_ms": 7360,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2150.304,
+    "text": "So the smaller this value is, that means that it has fallen more.",
+    "start_ms": 2150304,
+    "end_ms": 2154824,
+    "duration_ms": 4520,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2154.824,
+    "text": "So you will see that the ratio to peak for Jennifer is 0.018.",
+    "start_ms": 2154824,
+    "end_ms": 2159944,
+    "duration_ms": 5120,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2160.6,
+    "text": "But the issue is that with Jennifer, I did it manually.",
+    "start_ms": 2160600,
+    "end_ms": 2165080,
+    "duration_ms": 4480,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2165.08,
+    "text": "For Jennifer, I did it, then I have to manually do it for all different names, Mary and Air Guests, whatever, whatever.",
+    "start_ms": 2165080,
+    "end_ms": 2170480,
+    "duration_ms": 5400,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2170.48,
+    "text": "And it will take a lot of time. So instead what I can do is I can modularize this functionality.",
+    "start_ms": 2170480,
+    "end_ms": 2175608,
+    "duration_ms": 5128,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2175.608,
+    "text": "I can say that I'm going to define this ratio to peak function.",
+    "start_ms": 2175608,
+    "end_ms": 2179248,
+    "duration_ms": 3640,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2180.248,
+    "text": "that takes a serious object. What is this serious object?",
+    "start_ms": 2180248,
+    "end_ms": 2183405,
+    "duration_ms": 3157,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2183.405,
+    "text": "This is a serious object that for every given name, for a given name, it has all of those count values.",
+    "start_ms": 2183405,
+    "end_ms": 2190037,
+    "duration_ms": 6632,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2190.037,
+    "text": "So it just has one dimension count. And what we'll do is we'll apply the same function.",
+    "start_ms": 2190037,
+    "end_ms": 2195144,
+    "duration_ms": 5107,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2195.144,
+    "text": "We'll say that this is the ratio to peak. You gave me a series.",
+    "start_ms": 2195144,
+    "end_ms": 2198344,
+    "duration_ms": 3200,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2198.344,
+    "text": "I assume that it's sorted. I'm going to get the last element and then I'm also going to get the max and I'll calculate that ratio or that fraction.",
+    "start_ms": 2198344,
+    "end_ms": 2206344,
+    "duration_ms": 8000,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2206.968,
+    "text": "So in order to make sure that this function works, I'm going to actually give this Jennifer Count Series object that I have, which is basically female babies with the name Jennifer, and I'm only looking at this count column.",
+    "start_ms": 2206968,
+    "end_ms": 2221448,
+    "duration_ms": 14480,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2221.448,
+    "text": "So I just got that count out of the filtered version of the data frame that has all the Jennifer's, so it's the count sorted by the year.",
+    "start_ms": 2221448,
+    "end_ms": 2229728,
+    "duration_ms": 8280,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2229.728,
+    "text": "And this is called Jennifer Count, and I'm passing it to ratio to peak.",
+    "start_ms": 2229728,
+    "end_ms": 2235368,
+    "duration_ms": 5640,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2235.368,
+    "text": "and then what I can do. is Take a look at the value.",
+    "start_ms": 2235368,
+    "end_ms": 2241736,
+    "duration_ms": 6368,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2241.56,
+    "text": "0.01A. So it looks like that function does what I want.",
+    "start_ms": 2241560,
+    "end_ms": 2244473,
+    "duration_ms": 2913,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2244.473,
+    "text": "So all I need to do is I need to make sure that for all of the names I create that series object and then I pass it to ratio to peak ratio to pick notes how to calculate it Okay, so we're kind of half-way there.",
+    "start_ms": 2244473,
+    "end_ms": 2260584,
+    "duration_ms": 16111,
+    "word_count": 47,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2260.584,
+    "text": "So let's see what we can do with the group by functionality that we had seen.",
+    "start_ms": 2260584,
+    "end_ms": 2266064,
+    "duration_ms": 5480,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2266.064,
+    "text": "Remember with the group by functionality, we know that we can group by by name, right?",
+    "start_ms": 2266064,
+    "end_ms": 2271384,
+    "duration_ms": 5320,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2271.384,
+    "text": "That was the whole purpose. So instead of me filtering the data frame so that I get an entire data frame for Jennifer, I can filter the data frame or I can segment the data frame into sub data frame.",
+    "start_ms": 2271384,
+    "end_ms": 2283504,
+    "duration_ms": 12120,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2283.504,
+    "text": "Each one of those sub-data frames or data frame group by objects be specific to one name.",
+    "start_ms": 2283504,
+    "end_ms": 2288784,
+    "duration_ms": 5280,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2288.92,
+    "text": "Right, and then I'll perform the operation on the sub data frame for Jennifer, sub data frame for Mary and so on and so forth.",
+    "start_ms": 2288920,
+    "end_ms": 2295420,
+    "duration_ms": 6500,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2295.42,
+    "text": "Right, and then I'll combine everything into the final result.",
+    "start_ms": 2295420,
+    "end_ms": 2298420,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2298.84,
+    "text": "So what I'll do is I'll say that okay go ahead And just do grouping based on the name.",
+    "start_ms": 2298840,
+    "end_ms": 2306620,
+    "duration_ms": 7780,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2306.62,
+    "text": "So I have those sub data frames right now, ready to go, which is equal to this portion of the thing that I said that I want to only look at the name Jennifer.",
+    "start_ms": 2306620,
+    "end_ms": 2318420,
+    "duration_ms": 11800,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2318.42,
+    "text": "That's the easier version of doing it for all of the names.",
+    "start_ms": 2318420,
+    "end_ms": 2321420,
+    "duration_ms": 3000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2321.656,
+    "text": "And then what I'm saying is that I'm going to only look at the year and the count column, right?",
+    "start_ms": 2321656,
+    "end_ms": 2327456,
+    "duration_ms": 5800,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2327.536,
+    "text": "So now we have index, spin the name and then we have one more column year one more column count Because I want to have the year as the sequence and the x-faxes if I want to plot it and then I want to have the count so that I can index into the last year, I can get the maximum and then be able to find out what's happening there.",
+    "start_ms": 2327536,
+    "end_ms": 2347708,
+    "duration_ms": 20172,
+    "word_count": 71,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2348.248,
+    "text": "So this right now as a result, each one of those sub data frames has one index and two column.",
+    "start_ms": 2348248,
+    "end_ms": 2355848,
+    "duration_ms": 7600,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2355.848,
+    "text": "Index be name and then columns are a year in count.",
+    "start_ms": 2355848,
+    "end_ms": 2359048,
+    "duration_ms": 3200,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2359.048,
+    "text": "And then what I'm saying is that I'm saying that go ahead call dot ag.",
+    "start_ms": 2359048,
+    "end_ms": 2363848,
+    "duration_ms": 4800,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2364.696,
+    "text": "Right, this is for aggregation. And for aggregation, I'm saying that instead of calling some or mean or max...",
+    "start_ms": 2364696,
+    "end_ms": 2372936,
+    "duration_ms": 8240,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2373.144,
+    "text": "Call this function that I implemented. So this is how you can also pass a custom built function to the Act function.",
+    "start_ms": 2373144,
+    "end_ms": 2380344,
+    "duration_ms": 7200,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2380.344,
+    "text": "It just matters that it wants to have serious objects and then knows how you can treat each one of those columns.",
+    "start_ms": 2380344,
+    "end_ms": 2387024,
+    "duration_ms": 6680,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2387.544,
+    "text": "So let's take a look at the result. The result is going to give us exactly what we know.",
+    "start_ms": 2387544,
+    "end_ms": 2394200,
+    "duration_ms": 6656,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2394.2,
+    "text": "Because we aggregated, so because we grouped by name, name is our index right now.",
+    "start_ms": 2394200,
+    "end_ms": 2399900,
+    "duration_ms": 5700,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2399.9,
+    "text": "We had year and then we also had the count.",
+    "start_ms": 2399900,
+    "end_ms": 2403100,
+    "duration_ms": 3200,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2403.1,
+    "text": "So for all of those counts, we calculated ratio to peak.",
+    "start_ms": 2403100,
+    "end_ms": 2407400,
+    "duration_ms": 4300,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2407.4,
+    "text": "If we had access to the Jennifer right now, if I were to index into Jennifer, we would be able to see that the count column has the ratio to peak, which was 0.018.",
+    "start_ms": 2407400,
+    "end_ms": 2419200,
+    "duration_ms": 11800,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2419.672,
+    "text": "The year is equal to one, I think. Right? I want to actually...",
+    "start_ms": 2419672,
+    "end_ms": 2429104,
+    "duration_ms": 9432,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2429.432,
+    "text": "Take a look at So all of these things we explain, so I'm going to fast forward this calculation.",
+    "start_ms": 2429432,
+    "end_ms": 2438352,
+    "duration_ms": 8920,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2438.352,
+    "text": "And my question for you is that, is there going to be a row?",
+    "start_ms": 2438352,
+    "end_ms": 2443152,
+    "duration_ms": 4800,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2443.768,
+    "text": "The year value is not equal to one. So think about it.",
+    "start_ms": 2443768,
+    "end_ms": 2450496,
+    "duration_ms": 6728,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2503.096,
+    "text": "So, option one says that yes, names that appeared for the first time in 2022.",
+    "start_ms": 2503096,
+    "end_ms": 2509496,
+    "duration_ms": 6400,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2509.496,
+    "text": "Is that correct or not correct? If a name appeared in 2020 for the first time.",
+    "start_ms": 2509496,
+    "end_ms": 2515056,
+    "duration_ms": 5560,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2515.576,
+    "text": "Current and Max is going to be the same. So when you divide them, that's going to be equal to one.",
+    "start_ms": 2515576,
+    "end_ms": 2521856,
+    "duration_ms": 6280,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2521.856,
+    "text": "So this is not going to give us a road.",
+    "start_ms": 2521856,
+    "end_ms": 2523656,
+    "duration_ms": 1800,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2523.656,
+    "text": "That's not equal to one. Option two, yes, names that did not appear in 2022.",
+    "start_ms": 2523656,
+    "end_ms": 2529416,
+    "duration_ms": 5760,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2529.848,
+    "text": "Is that correct or not? If a name didn't happen in year 2022, say they happen in 2020 as the last instance.",
+    "start_ms": 2529848,
+    "end_ms": 2540752,
+    "duration_ms": 10904,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2541.24,
+    "text": "When we index into getting the last occurrence of that name, we don't check for the year, we just check for the last occurrence, right?",
+    "start_ms": 2541240,
+    "end_ms": 2549240,
+    "duration_ms": 8000,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2549.24,
+    "text": "So it won't change that grow value or it is not going to impact it.",
+    "start_ms": 2549240,
+    "end_ms": 2555240,
+    "duration_ms": 6000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2555.16,
+    "text": "Yes, names whose peak count was in 2022. The cell is the same kind of rationale.",
+    "start_ms": 2555160,
+    "end_ms": 2561440,
+    "duration_ms": 6280,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2561.44,
+    "text": "If the last year and the peak count is the same, it is still going to be equal to 1.",
+    "start_ms": 2561440,
+    "end_ms": 2566640,
+    "duration_ms": 5200,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2567.032,
+    "text": "Um. And then, no, every row in the year has the value.",
+    "start_ms": 2567032,
+    "end_ms": 2573288,
+    "duration_ms": 6256,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2574.584,
+    "text": "every row in a year has value of one which is correct.",
+    "start_ms": 2574584,
+    "end_ms": 2579584,
+    "duration_ms": 5000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2579.584,
+    "text": "And the explanation is that when we're calculating ratio to peak, what we're calculating is that the peak of the year is going to be equal to 2022, right?",
+    "start_ms": 2579584,
+    "end_ms": 2591184,
+    "duration_ms": 11600,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2591.184,
+    "text": "So that's the maximum in the year. When I explained the rest of the options, I think I was thinking about the count, but we're talking about the year.",
+    "start_ms": 2591184,
+    "end_ms": 2601168,
+    "duration_ms": 9984,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2601.168,
+    "text": "So in the year column, the max is always going to be the latest year, right?",
+    "start_ms": 2601168,
+    "end_ms": 2606168,
+    "duration_ms": 5000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2606.168,
+    "text": "And the current year is always going to be the latest year.",
+    "start_ms": 2606168,
+    "end_ms": 2609168,
+    "duration_ms": 3000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2609.168,
+    "text": "So that's why the numerator and the denominator for ratio to pick is always going to be the same, and that's why it's always going to be equal to one.",
+    "start_ms": 2609168,
+    "end_ms": 2617168,
+    "duration_ms": 8000,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2617.848,
+    "text": "Gekai, so that's the answer to that. We were talking a little bit about why I needed to do the actual selection.",
+    "start_ms": 2617848,
+    "end_ms": 2626592,
+    "duration_ms": 8744,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2626.592,
+    "text": "So here when I grouped by name, I actually went ahead and manually selected year and count.",
+    "start_ms": 2626592,
+    "end_ms": 2633592,
+    "duration_ms": 7000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2633.72,
+    "text": "And I didn't like those columns to be or the rest of the columns such as like It's say things like that or all of the non-numerical columns to stay there if I Just not do that and not do that selection and say group by name and then dot a grayshoot to peak What we'll get is the type error?",
+    "start_ms": 2633720,
+    "end_ms": 2653880,
+    "duration_ms": 20160,
+    "word_count": 61,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2654.6,
+    "text": "So what you're seeing is that this type error is basically telling me that it doesn't know how to Let's scroll down.",
+    "start_ms": 2654600,
+    "end_ms": 2664680,
+    "duration_ms": 10080,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2665.496,
+    "text": "It will basically telling me that it doesn't know how to divide a string by a string.",
+    "start_ms": 2665496,
+    "end_ms": 2670296,
+    "duration_ms": 4800,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2670.296,
+    "text": "So that's a type error. So that's why we needed to have all of those selections of only numerical columns.",
+    "start_ms": 2670296,
+    "end_ms": 2676496,
+    "duration_ms": 6200,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2676.496,
+    "text": "This is the updated version of pandas that will require you to either directly say numeric only or directly collect all of the numerical columns that you want if you think that the function is going to be a numerical function that you need.",
+    "start_ms": 2676496,
+    "end_ms": 2692456,
+    "duration_ms": 15960,
+    "word_count": 44,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2693.432,
+    "text": "So we already saw this if I validate what's happening in the year column So you're seeing that if I say that in RTP table that resulting final table I call unique The unique valley is only one there's no other entry other than one If I go ahead and drop the year column, then the result is going to be only this index name and the RTP values or ratio to peak values.",
+    "start_ms": 2693432,
+    "end_ms": 2722120,
+    "duration_ms": 28688,
+    "word_count": 74,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2722.12,
+    "text": "So this is the final result that we wanted. What we also wanted in addition to this was we wanted to make sure that we find the names we have fallen the most in popularity.",
+    "start_ms": 2722120,
+    "end_ms": 2732520,
+    "duration_ms": 10400,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2732.52,
+    "text": "So the value in this count column should have been the least.",
+    "start_ms": 2732520,
+    "end_ms": 2736520,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2736.52,
+    "text": "So we need to sort it. So that's the first step.",
+    "start_ms": 2736520,
+    "end_ms": 2740400,
+    "duration_ms": 3880,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2740.4,
+    "text": "We need to sort it. If you want to get the top five names, then we get the top five in this sorted data frame.",
+    "start_ms": 2740400,
+    "end_ms": 2747840,
+    "duration_ms": 7440,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2747.84,
+    "text": "The other thing that we need to do is that this column count.",
+    "start_ms": 2747840,
+    "end_ms": 2751960,
+    "duration_ms": 4120,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2751.96,
+    "text": "It's labeled as count. So it didn't change the name of the column.",
+    "start_ms": 2751960,
+    "end_ms": 2755960,
+    "duration_ms": 4000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2755.96,
+    "text": "So it was initially the count attribute, but we changed the value and we changed the value to be ratio to peak.",
+    "start_ms": 2755960,
+    "end_ms": 2764200,
+    "duration_ms": 8240,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2764.2,
+    "text": "So we need to also rename this column So that if someone is looking at this RTP table, they know what's happening in this table for us.",
+    "start_ms": 2764200,
+    "end_ms": 2772560,
+    "duration_ms": 8360,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2772.56,
+    "text": "So that's the renaming that we'll do right here. So here I'm saying that I'm renaming the columns.",
+    "start_ms": 2772560,
+    "end_ms": 2778520,
+    "duration_ms": 5960,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2778.52,
+    "text": "I'm renaming whatever you see as count right now to count RTP or ratio to peak.",
+    "start_ms": 2778520,
+    "end_ms": 2784600,
+    "duration_ms": 6080,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2784.6,
+    "text": "So we'll have this. And then what we need to do is we also need to sort values so that we also see the names who have fallen the most in popularity at the top.",
+    "start_ms": 2784600,
+    "end_ms": 2794400,
+    "duration_ms": 9800,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2794.648,
+    "text": "So these are the top names who have fallen most in popularity.",
+    "start_ms": 2794648,
+    "end_ms": 2797848,
+    "duration_ms": 3200,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2797.848,
+    "text": "So this is the total vectorized way that I could do this entire operation end to end instead of like indexing and selecting Jennifer and selecting this name and that name.",
+    "start_ms": 2797848,
+    "end_ms": 2808008,
+    "duration_ms": 10160,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2808.008,
+    "text": "So everything is handled into one simple process. So what I'll do here is just I'll go ahead and plot all of those values.",
+    "start_ms": 2808008,
+    "end_ms": 2815699,
+    "duration_ms": 7691,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2815.699,
+    "text": "You don't need to know how I'm plotting right now.",
+    "start_ms": 2815699,
+    "end_ms": 2817642,
+    "duration_ms": 1943,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2817.642,
+    "text": "You will learn all of this but you'll see that here.",
+    "start_ms": 2817642,
+    "end_ms": 2821208,
+    "duration_ms": 3566,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2821.208,
+    "text": "I'm plotting for Debra. So Debra had the maximum in 1955 with this value.",
+    "start_ms": 2821208,
+    "end_ms": 2828708,
+    "duration_ms": 7500,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2828.708,
+    "text": "And then right now it is fallen to five-ish in popularity.",
+    "start_ms": 2828708,
+    "end_ms": 2833708,
+    "duration_ms": 5000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2833.708,
+    "text": "And then what I can do is I can say that, okay, go ahead, take a look at the count RTP.",
+    "start_ms": 2833708,
+    "end_ms": 2839308,
+    "duration_ms": 5600,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2839.308,
+    "text": "Get the top 10, the first 10 rows. And those are because they're sorted.",
+    "start_ms": 2839308,
+    "end_ms": 2844208,
+    "duration_ms": 4900,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2844.208,
+    "text": "They're the, they have fallen the most in popularity. And I'm going to basically take a look at those names who have fallen the most.",
+    "start_ms": 2844208,
+    "end_ms": 2851808,
+    "duration_ms": 7600,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2851.808,
+    "text": "So you're seeing that Jennifer isn't there, but that would be Carol and all of these names are.",
+    "start_ms": 2851808,
+    "end_ms": 2856648,
+    "duration_ms": 4840,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2856.648,
+    "text": "The names who have fallen the most in popularity, but they have different peaks, but it's just that all of those peaks were compared with 2022.",
+    "start_ms": 2856648,
+    "end_ms": 2864848,
+    "duration_ms": 8200,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2864.848,
+    "text": "And if I go ahead and plot it, in one plot, this is a fancy plot with the legend of the name, and you can see which one was the most popular name, or the popularity was the most and what's their current values right here.",
+    "start_ms": 2864848,
+    "end_ms": 2879328,
+    "duration_ms": 14480,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2879.328,
+    "text": "And you can see that it's color coded by name.",
+    "start_ms": 2879328,
+    "end_ms": 2881328,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2881.72,
+    "text": "So, fancy stuff we can do. The only thing that you don't know about this entire process is applauding.",
+    "start_ms": 2881720,
+    "end_ms": 2886720,
+    "duration_ms": 5000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2886.72,
+    "text": "But now you learn everything. You can do mini projects, get a dataset process, think about what you need to do in what order you need to do them in order to get the result.",
+    "start_ms": 2886720,
+    "end_ms": 2896720,
+    "duration_ms": 10000,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2897.4,
+    "text": "That you want. So covered all of these elements, why we need to do renaming of the columns, why we need to sort those values.",
+    "start_ms": 2897400,
+    "end_ms": 2910696,
+    "duration_ms": 13296,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2910.696,
+    "text": "We got the list, the name was fallen, the most in popularity, which was Debra, and then we plotted the top 10, and we saw the result as well.",
+    "start_ms": 2910696,
+    "end_ms": 2918976,
+    "duration_ms": 8280,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2919.864,
+    "text": "So the group by function, so the example that you saw was that ratio to peak function was a custom built function.",
+    "start_ms": 2919864,
+    "end_ms": 2927596,
+    "duration_ms": 7732,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2927.596,
+    "text": "But there are other different function functionalities that are available when we do the grouping.",
+    "start_ms": 2927596,
+    "end_ms": 2933010,
+    "duration_ms": 5414,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2933.01,
+    "text": "So for example, when we do the group by object and we take a look at, for example, we, sorry, when we do group by by the year and we take a look at the type of the object that it creates at the end, it will tell us that the type is going to be group by generic data frame group by object.",
+    "start_ms": 2933010,
+    "end_ms": 2951303,
+    "duration_ms": 18293,
+    "word_count": 64,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2951.303,
+    "text": "We already validated that. But we don't have access to this data frame group by object other than when we call different functions in order to summarize the content of it.",
+    "start_ms": 2951303,
+    "end_ms": 2961504,
+    "duration_ms": 10201,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2961.504,
+    "text": "Which you'd see that we can call dot ag. We can call dot ag with custom functions, dot ag with mean max sum and all of those functions.",
+    "start_ms": 2961504,
+    "end_ms": 2970984,
+    "duration_ms": 9480,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2970.984,
+    "text": "We had seen that we can directly call some of these numerical functions in order to calculate mean sum, minimum and maximum directly without the use of act.",
+    "start_ms": 2970984,
+    "end_ms": 2980624,
+    "duration_ms": 9640,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2980.624,
+    "text": "We had seen that we can call first and last.",
+    "start_ms": 2980624,
+    "end_ms": 2983424,
+    "duration_ms": 2800,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2983.424,
+    "text": "So I could say dot act first, or I can directly say dot first.",
+    "start_ms": 2983424,
+    "end_ms": 2988144,
+    "duration_ms": 4720,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2988.144,
+    "text": "I can also call dot last. This is getting the first throw or the last throw of each individual data frame group by object.",
+    "start_ms": 2988144,
+    "end_ms": 2996584,
+    "duration_ms": 8440,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2996.584,
+    "text": "There are different functions that will tell us about this size and the count.",
+    "start_ms": 2996584,
+    "end_ms": 3001104,
+    "duration_ms": 4520,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3001.104,
+    "text": "So I'm going to talk about those next, and we're going to take a look at the differences between them.",
+    "start_ms": 3001104,
+    "end_ms": 3006424,
+    "duration_ms": 5320,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3006.424,
+    "text": "And there is one important function that is available that's called filter.",
+    "start_ms": 3006424,
+    "end_ms": 3011104,
+    "duration_ms": 4680,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3011.104,
+    "text": "Filter is going to help us filter the data set so that we're only looking at sub data frames that satisfy a certain functionality for us.",
+    "start_ms": 3011104,
+    "end_ms": 3019424,
+    "duration_ms": 8320,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3019.424,
+    "text": "So the next bit for me is to go over these two boxes and then tell you what they are doing and how they're implemented.",
+    "start_ms": 3019424,
+    "end_ms": 3027344,
+    "duration_ms": 7920,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3027.896,
+    "text": "So, what does the size do? The size is basically telling you how many rows you have in each one of those data frame group by objects.",
+    "start_ms": 3027896,
+    "end_ms": 3038385,
+    "duration_ms": 10489,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3038.385,
+    "text": "So for example, here I have a group by, I did group by by years, I have data frame group by objects, so for the year 1992 I have two rows.",
+    "start_ms": 3038385,
+    "end_ms": 3047886,
+    "duration_ms": 9501,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3047.886,
+    "text": "So the size is telling me that I have two.",
+    "start_ms": 3047886,
+    "end_ms": 3050796,
+    "duration_ms": 2910,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3051.224,
+    "text": "It's exactly kind of similar to running value accounts, but this time it is also, but it does not sort the based on the index based on the year.",
+    "start_ms": 3051224,
+    "end_ms": 3063784,
+    "duration_ms": 12560,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3063.784,
+    "text": "So it basically takes a look at the ordering that we had in the data frame and then it will split them and then it will also combine them based on the same order.",
+    "start_ms": 3063784,
+    "end_ms": 3073024,
+    "duration_ms": 9240,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3073.024,
+    "text": "So I have 1992 first and then 1996 second and then 2003.",
+    "start_ms": 3073024,
+    "end_ms": 3077984,
+    "duration_ms": 4960,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3078.52,
+    "text": "So for this other sub data frame there is two so we'll do that for me as well.",
+    "start_ms": 3078520,
+    "end_ms": 3083960,
+    "duration_ms": 5440,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3084.632,
+    "text": "with the count count returns a data frame so that's different because it wants to count the number of elements that I have in each one of those columns in the sub data frame.",
+    "start_ms": 3084632,
+    "end_ms": 3095632,
+    "duration_ms": 11000,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3095.632,
+    "text": "So for example for the 1992 you will basically tell me that your count of non-missing values is equal to one for the first column because this is a missing value or is a non-value.",
+    "start_ms": 3095632,
+    "end_ms": 3108632,
+    "duration_ms": 13000,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3108.632,
+    "text": "For the column 2, the count is equal to 2 because I have two non-missing values.",
+    "start_ms": 3108632,
+    "end_ms": 3114232,
+    "duration_ms": 5600,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3114.232,
+    "text": "So it is a data frame because for every column I need to count.",
+    "start_ms": 3114232,
+    "end_ms": 3118232,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3118.232,
+    "text": "And for every column there is a possibility that one of the rows has a nan value or will not have a nan value.",
+    "start_ms": 3118232,
+    "end_ms": 3124632,
+    "duration_ms": 6400,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3126.36,
+    "text": "What does the filter function do? Filter function is very useful.",
+    "start_ms": 3126360,
+    "end_ms": 3130960,
+    "duration_ms": 4600,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3130.96,
+    "text": "What it does is that it will basically take a data frame as an input, and it will return a true or false.",
+    "start_ms": 3130960,
+    "end_ms": 3141280,
+    "duration_ms": 10320,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3141.28,
+    "text": "So dot filter takes the function, the dot function. Accept the data frame decides whether this entire data frame Satisfies a certain condition or not.",
+    "start_ms": 3141280,
+    "end_ms": 3151901,
+    "duration_ms": 10621,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3151.901,
+    "text": "So what I will do is I'll basically say that I'm going to pass each one of those sub data frames To this function or this the function that is going to do the filtering for me and then I'm going to decide whether the entire sub data frame is going to Move on to the output or will not move on to the output based on better the result of the filter function is true or false.",
+    "start_ms": 3151901,
+    "end_ms": 3176504,
+    "duration_ms": 24603,
+    "word_count": 78,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3176.504,
+    "text": "So for example, what's happening here is that I'm going to say that I'm grouping by by the first column, right?",
+    "start_ms": 3176504,
+    "end_ms": 3183744,
+    "duration_ms": 7240,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3183.744,
+    "text": "And then I'll say that I want to filter these data frames or these sub data frames that I have based on a function that's called f, which I'm creating this function f using a lambda function like this.",
+    "start_ms": 3183744,
+    "end_ms": 3196882,
+    "duration_ms": 13138,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3196.882,
+    "text": "That it will basically say that You give me a sub data frame, sf.",
+    "start_ms": 3196882,
+    "end_ms": 3203323,
+    "duration_ms": 6441,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3203.323,
+    "text": "I'll take a look at sf num, and then I'll basically sum up all of those num values or the num values in the num column.",
+    "start_ms": 3203323,
+    "end_ms": 3213216,
+    "duration_ms": 9893,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3213.216,
+    "text": "And if the sum is greater than 10, I'll return true, otherwise I'll return false.",
+    "start_ms": 3213216,
+    "end_ms": 3218640,
+    "duration_ms": 5424,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3218.64,
+    "text": "So this function right here, this function f, is always returning true false values.",
+    "start_ms": 3218640,
+    "end_ms": 3223903,
+    "duration_ms": 5263,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3223.903,
+    "text": "So if I'm going to apply to each one of those sub data frames, what's going to happen here is that I'm saying that this is a sub data frame that will be passed to this function f.",
+    "start_ms": 3223903,
+    "end_ms": 3234376,
+    "duration_ms": 10473,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3235.864,
+    "text": "It will take a look at all of these num values that we have in the column.",
+    "start_ms": 3235864,
+    "end_ms": 3239864,
+    "duration_ms": 4000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3239.864,
+    "text": "It will sum them up, so the summation is going to be 3 plus 1 plus 2, which is equal to 6.",
+    "start_ms": 3239864,
+    "end_ms": 3245864,
+    "duration_ms": 6000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3246.552,
+    "text": "And then it will do the comparison whether 6 is greater than 10 or not the output is going to be equal to false So the entire data frame is not going to move to the output So the entire sub data frame is going to be filtered if we follow exactly the same thing The job of the filter is to decide whether each one of those data frame group by objects or sub data frames is going to be in the output Or is going to be filtered out?",
+    "start_ms": 3246552,
+    "end_ms": 3270272,
+    "duration_ms": 23720,
+    "word_count": 91,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3270.272,
+    "text": "So this is the time that the aggregation is kind of on the real level and grows are going to either entirely move or entirely not move.",
+    "start_ms": 3270272,
+    "end_ms": 3278272,
+    "duration_ms": 8000,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3278.2,
+    "text": "So in this case, when I do the summation under stop data frame, that's equal to 12.",
+    "start_ms": 3278200,
+    "end_ms": 3283700,
+    "duration_ms": 5500,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3283.7,
+    "text": "It's greater than 10, the output is equal to true, so all of those values are going to be moved.",
+    "start_ms": 3283700,
+    "end_ms": 3288440,
+    "duration_ms": 4740,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3288.44,
+    "text": "So this is this row, this is this other row, and then this is this last row that we have.",
+    "start_ms": 3288440,
+    "end_ms": 3293600,
+    "duration_ms": 5160,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3293.784,
+    "text": "For this other one, the summation is 13. Again, it's going to move and that's equal to those two rows that we have.",
+    "start_ms": 3293784,
+    "end_ms": 3300784,
+    "duration_ms": 7000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3300.784,
+    "text": "And then this last category, it has the sum equal to 5.",
+    "start_ms": 3300784,
+    "end_ms": 3303984,
+    "duration_ms": 3200,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3303.984,
+    "text": "It's not going to meet the filter condition, the output is false, so it's not going to move.",
+    "start_ms": 3303984,
+    "end_ms": 3308784,
+    "duration_ms": 4800,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3309.624,
+    "text": "One thing to note is that the ordering of those rows is preserved.",
+    "start_ms": 3309624,
+    "end_ms": 3313464,
+    "duration_ms": 3840,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3313.464,
+    "text": "It's just that those rows who don't meet the condition based on their sub data frames are filtered out.",
+    "start_ms": 3313464,
+    "end_ms": 3320104,
+    "duration_ms": 6640,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3320.104,
+    "text": "So if you take a look, we said that category A and category C are going to be in the output.",
+    "start_ms": 3320104,
+    "end_ms": 3326024,
+    "duration_ms": 5920,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3326.024,
+    "text": "So therefore, what we have is this row, this row, sorry, B in.",
+    "start_ms": 3326024,
+    "end_ms": 3333464,
+    "duration_ms": 7440,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3333.976,
+    "text": "B&C are going to be in the output. Because these are the two who meet the condition B and C, B and C, and then B.",
+    "start_ms": 3333976,
+    "end_ms": 3342712,
+    "duration_ms": 8736,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3342.712,
+    "text": "And the order is exactly the same if you take a look at the order that we have at the end.",
+    "start_ms": 3342712,
+    "end_ms": 3347392,
+    "duration_ms": 4680,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3347.64,
+    "text": "So it's not going to cluster bees together or cluster seas together.",
+    "start_ms": 3347640,
+    "end_ms": 3351720,
+    "duration_ms": 4080,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3351.72,
+    "text": "So we will basically do exactly the filtering on the original data frame.",
+    "start_ms": 3351720,
+    "end_ms": 3355720,
+    "duration_ms": 4000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3356.344,
+    "text": "One important fact is that notice that the columns that we group that we group by on, which was the first column is not an index, it's not highlighted.",
+    "start_ms": 3356344,
+    "end_ms": 3366384,
+    "duration_ms": 10040,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3366.384,
+    "text": "That's the difference between when we do group by and ag and when we do group by and filter in filter, it's exactly the same data frame, same structure, same index.",
+    "start_ms": 3366384,
+    "end_ms": 3376824,
+    "duration_ms": 10440,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3376.824,
+    "text": "So nothing is going to change. So if I want to, for example, go back to the elections data set and I want to say that, oh, I want to take a look at all the elections that the maximum percentage of vote that the candidate got is less than 45%.",
+    "start_ms": 3376824,
+    "end_ms": 3394024,
+    "duration_ms": 17200,
+    "word_count": 51,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3394.024,
+    "text": "I can do exactly that with the filter function. Here I would say that on the elections data frame, go ahead and group by by the year so that we get one election, her category.",
+    "start_ms": 3394024,
+    "end_ms": 3406148,
+    "duration_ms": 12124,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3406.148,
+    "text": "So each sub-data frame is one election. What I can do is I can say that do the filtering based on this lambda function that takes A sub-data frame takes a look at the percentage column.",
+    "start_ms": 3406148,
+    "end_ms": 3420076,
+    "duration_ms": 13928,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3420.6,
+    "text": "takes the maximum and if the maximum is less than 45% return true otherwise return false when it returns true the entire that election year is going to be moved if the condition is false that election year is not going to be moved so what you can see is that for example in this case election in 1860s moved but no election afterward is moved up until 1912 right so that's how you can see and you can also validate that they all meet the condition that their percentages, they're all in a given year, in a given election year is less than 45%.",
+    "start_ms": 3420600,
+    "end_ms": 3458280,
+    "duration_ms": 37680,
+    "word_count": 105,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3459.48,
+    "text": "So, I'm going to give you two minutes of break.",
+    "start_ms": 3459480,
+    "end_ms": 3462560,
+    "duration_ms": 3080,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3462.56,
+    "text": "We're going to come back and talk about pivot table and joining of tables very quickly.",
+    "start_ms": 3462560,
+    "end_ms": 3468200,
+    "duration_ms": 5640,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3468.2,
+    "text": "So take a two minute stretch and then we will talk about pivot table.",
+    "start_ms": 3468200,
+    "end_ms": 3473000,
+    "duration_ms": 4800,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3499.352,
+    "text": "This is not now. Yes. Alright, we're going back in five.",
+    "start_ms": 3499352,
+    "end_ms": 3562192,
+    "duration_ms": 62840,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3563.096,
+    "text": "4 Tree. 2 And one, so we are going to talk a little bit about kind of the rest of the things that we want to see in pandas.",
+    "start_ms": 3563096,
+    "end_ms": 3579232,
+    "duration_ms": 16136,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3579.232,
+    "text": "So one thing is that I want to show you how everything that we learn and all of these group-by kind of operations can become handy when the situation that we're dealing with is a little bit complex.",
+    "start_ms": 3579232,
+    "end_ms": 3591072,
+    "duration_ms": 11840,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3591.072,
+    "text": "So let's assume that I want to work on this elections data frame that we had from the previous lecture but what I'm interested in is to get the best election for each party.",
+    "start_ms": 3591072,
+    "end_ms": 3600752,
+    "duration_ms": 9680,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3601.464,
+    "text": "Best election means that what was the election and what was the candidate, what was the year that they got the maximum percentage of votes.",
+    "start_ms": 3601464,
+    "end_ms": 3612064,
+    "duration_ms": 10600,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3612.064,
+    "text": "So this is going to be a little bit complicated because as you can imagine what I'm interested in is get one entire row.",
+    "start_ms": 3612064,
+    "end_ms": 3619744,
+    "duration_ms": 7680,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3619.744,
+    "text": "Getting one entire row is going to be very different than just applying max over different columns.",
+    "start_ms": 3619744,
+    "end_ms": 3626184,
+    "duration_ms": 6440,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3626.184,
+    "text": "So this was the elections. state a frame that we have had.",
+    "start_ms": 3626184,
+    "end_ms": 3629063,
+    "duration_ms": 2879,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3629.063,
+    "text": "And if you take a look and, for example, do something naive and say that, OK, just go ahead and group by party and just go ahead and take the maximum.",
+    "start_ms": 3629063,
+    "end_ms": 3638744,
+    "duration_ms": 9681,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3639.192,
+    "text": "The result is going to be this output data frame which is going to be incorrect.",
+    "start_ms": 3639192,
+    "end_ms": 3646192,
+    "duration_ms": 7000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3646.616,
+    "text": "The reason that this result is incorrect, as I said, is that what we're taking a look at is we're taking maximum over different columns.",
+    "start_ms": 3646616,
+    "end_ms": 3655796,
+    "duration_ms": 9180,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3655.796,
+    "text": "So one row in the output does not necessarily correspond to one row in the input that we have.",
+    "start_ms": 3655796,
+    "end_ms": 3661456,
+    "duration_ms": 5660,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3661.456,
+    "text": "So for example, it says that which reveal Sun was the candidate who...",
+    "start_ms": 3661456,
+    "end_ms": 3665656,
+    "duration_ms": 4200,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3666.296,
+    "text": "who was in election year 2020 and then the percentage of popular vote that I got was 61%, which we know that these values don't add up together as representative of one exact sample that we had.",
+    "start_ms": 3666296,
+    "end_ms": 3679856,
+    "duration_ms": 13560,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3679.856,
+    "text": "But as you can guess what's happening is that it takes the maximum over each one of the columns, it happens that we're Wilson and alphabetical ordering has the maximum value, so that's why it was selected and the maximum percentage for the Democratic Party was 61% and so on and so forth.",
+    "start_ms": 3679856,
+    "end_ms": 3696816,
+    "duration_ms": 16960,
+    "word_count": 53,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3696.816,
+    "text": "That's how it's mixing and matching different values. But the correct way of actually doing it is everything that we had seen before.",
+    "start_ms": 3696816,
+    "end_ms": 3705776,
+    "duration_ms": 8960,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3705.776,
+    "text": "So we had seen that there are different ways that we can use filters so that filter moves the stuff as an entire row.",
+    "start_ms": 3705776,
+    "end_ms": 3712856,
+    "duration_ms": 7080,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3712.856,
+    "text": "Or we had seen examples that we could use first and last in order to get the exact first row or the exact last row.",
+    "start_ms": 3712856,
+    "end_ms": 3719656,
+    "duration_ms": 6800,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3719.656,
+    "text": "If we could filter our data frame by a certain value.",
+    "start_ms": 3719656,
+    "end_ms": 3723496,
+    "duration_ms": 3840,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3723.832,
+    "text": "So again, looking at all of these things that we're seeing or all of these functions that we're seeing, none of those min and max values would be helpful.",
+    "start_ms": 3723832,
+    "end_ms": 3733472,
+    "duration_ms": 9640,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3733.592,
+    "text": "But the only thing that could actually be helpful is either using that filter or using that first and last that we're going to get some practice with in this example.",
+    "start_ms": 3733592,
+    "end_ms": 3744152,
+    "duration_ms": 10560,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3744.824,
+    "text": "So one solution could be for me to use first.",
+    "start_ms": 3744824,
+    "end_ms": 3748824,
+    "duration_ms": 4000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3748.824,
+    "text": "So how do I use first? What I can do is I can say that first would be helpful in the case that the road that I want to extract is the first row of the sub-data frame.",
+    "start_ms": 3748824,
+    "end_ms": 3759824,
+    "duration_ms": 11000,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3759.824,
+    "text": "That means that my data frame has to be sorted by the percentage.",
+    "start_ms": 3759824,
+    "end_ms": 3765064,
+    "duration_ms": 5240,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3765.064,
+    "text": "So what I'm going to do initially is that I'll say that go ahead and sort values by percentage.",
+    "start_ms": 3765064,
+    "end_ms": 3770984,
+    "duration_ms": 5920,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3770.984,
+    "text": "I'll say that ascending is equal to false so that during descending order, so that the maximum is going to be at the top, right?",
+    "start_ms": 3770984,
+    "end_ms": 3777504,
+    "duration_ms": 6520,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3777.504,
+    "text": "And then what I'll do afterwards, after I sort this entire data frame is that, I can go ahead and say that, now go ahead and group by party.",
+    "start_ms": 3777504,
+    "end_ms": 3786424,
+    "duration_ms": 8920,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3786.424,
+    "text": "So I can take a look at what's happening, what's the best case scenario for each one of those parties.",
+    "start_ms": 3786424,
+    "end_ms": 3791384,
+    "duration_ms": 4960,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3791.384,
+    "text": "So every time that you're seeing that, I'm going to say that I want a certain attribute for All elements having similar values in another attribute.",
+    "start_ms": 3791384,
+    "end_ms": 3801872,
+    "duration_ms": 10488,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3801.872,
+    "text": "So I want, for example, to see the maximum percentage.",
+    "start_ms": 3801872,
+    "end_ms": 3805072,
+    "duration_ms": 3200,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3805.432,
+    "text": "is one attribute for all, for example, for each individual party.",
+    "start_ms": 3805432,
+    "end_ms": 3809667,
+    "duration_ms": 4235,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3809.667,
+    "text": "You know that I have to do a group by-by party.",
+    "start_ms": 3809667,
+    "end_ms": 3813658,
+    "duration_ms": 3991,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3813.658,
+    "text": "So here I'll do group by-by party. So what you're seeing is that now I have democratic group, republican, and then all of those different kind of parties grouped together in a sub-data frame.",
+    "start_ms": 3813658,
+    "end_ms": 3829164,
+    "duration_ms": 15506,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3829.164,
+    "text": "And obviously it preserves order. It just groups them. So when it preserves order, each one of these rows and each one of these top data frames are also ordered in the standing order.",
+    "start_ms": 3829164,
+    "end_ms": 3841252,
+    "duration_ms": 12088,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3841.252,
+    "text": "So the first element in each one of them is always the best one.",
+    "start_ms": 3841252,
+    "end_ms": 3845052,
+    "duration_ms": 3800,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3845.052,
+    "text": "So I can just directly state dot first or dot aq first.",
+    "start_ms": 3845052,
+    "end_ms": 3849212,
+    "duration_ms": 4160,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3849.212,
+    "text": "And this will give us the rows that we want.",
+    "start_ms": 3849212,
+    "end_ms": 3852652,
+    "duration_ms": 3440,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3853.08,
+    "text": "So this is kind of the solution that we had, so we sort them by values, then what we do at the end is that we will say that get the first in each one of those sub data frames, but notice that because we aggregated on party, then party is now the index.",
+    "start_ms": 3853080,
+    "end_ms": 3868920,
+    "duration_ms": 15840,
+    "word_count": 54,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3868.92,
+    "text": "So because we group by by party, party is now the index of the output data frame.",
+    "start_ms": 3868920,
+    "end_ms": 3874640,
+    "duration_ms": 5720,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3874.64,
+    "text": "If you want it to be original, column, you just say reset index, it moves it as one normal column and it will do the automatic labeling of the routes.",
+    "start_ms": 3874640,
+    "end_ms": 3884320,
+    "duration_ms": 9680,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3884.32,
+    "text": "I want to show you that there are different ways of doing a similar thing.",
+    "start_ms": 3884320,
+    "end_ms": 3889200,
+    "duration_ms": 4880,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3889.2,
+    "text": "So one way is to use the lambda function. If you didn't know the first and last, or you didn't know what would be the function that does the functionality that you want, just implemented yourself using a lambda function.",
+    "start_ms": 3889200,
+    "end_ms": 3901680,
+    "duration_ms": 12480,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3901.68,
+    "text": "So what I can do here is that I'm saying that, okay, we're sorting values as usual.",
+    "start_ms": 3901680,
+    "end_ms": 3906040,
+    "duration_ms": 4360,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3906.04,
+    "text": "This is what we want. So it's sorted so that the best result is always at the top.",
+    "start_ms": 3906040,
+    "end_ms": 3911120,
+    "duration_ms": 5080,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3911.12,
+    "text": "Obviously we grew up by party because we're interested in just extracting information based on a party.",
+    "start_ms": 3911120,
+    "end_ms": 3916640,
+    "duration_ms": 5520,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3916.64,
+    "text": "And then we're saying that now we're doing the aggregation based on this lambda function.",
+    "start_ms": 3916640,
+    "end_ms": 3921720,
+    "duration_ms": 5080,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3921.72,
+    "text": "Remember, we can create custom functions here. This is similar to me calculating, calling ratio to peak function that we had in the previous example.",
+    "start_ms": 3921720,
+    "end_ms": 3930480,
+    "duration_ms": 8760,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3930.48,
+    "text": "So here I'm creating, either you create this function separately and just pass the name of the function here, or you just directly create that function if it's short as a lambda function.",
+    "start_ms": 3930480,
+    "end_ms": 3940920,
+    "duration_ms": 10440,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3940.92,
+    "text": "So here the lambda function says that if you have a data frame x, go ahead and do iLock at integer position 0, which is like get the first.",
+    "start_ms": 3940920,
+    "end_ms": 3952200,
+    "duration_ms": 11280,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3952.2,
+    "text": "So if you don't know it, you can always implement it.",
+    "start_ms": 3952200,
+    "end_ms": 3955840,
+    "duration_ms": 3640,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3955.84,
+    "text": "Using IDX max function, so IDX max function, what it does is it will give you the index for the position that the maximum is happening.",
+    "start_ms": 3955840,
+    "end_ms": 3967360,
+    "duration_ms": 11520,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3967.36,
+    "text": "So what we're doing here is that we're saying that, okay, we are doing a lock, right?",
+    "start_ms": 3967360,
+    "end_ms": 3974460,
+    "duration_ms": 7100,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3974.584,
+    "text": "on something that's inside this argument. So what is that something that's inside the argument?",
+    "start_ms": 3974584,
+    "end_ms": 3980984,
+    "duration_ms": 6400,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3980.984,
+    "text": "It needs to be a label. So where do we get that label?",
+    "start_ms": 3980984,
+    "end_ms": 3984684,
+    "duration_ms": 3700,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3984.684,
+    "text": "We're getting the label from by calling the IDX max on another data frame.",
+    "start_ms": 3984684,
+    "end_ms": 3991184,
+    "duration_ms": 6500,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3991.184,
+    "text": "What is that other data frame? The data frame says that we're doing the group by and party.",
+    "start_ms": 3991184,
+    "end_ms": 3995584,
+    "duration_ms": 4400,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3995.584,
+    "text": "We're getting the percentage per each individual sub data frames that you have.",
+    "start_ms": 3995584,
+    "end_ms": 4001084,
+    "duration_ms": 5500,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4001.084,
+    "text": "And then what we will do is we will find where the percentage has the maximum value.",
+    "start_ms": 4001084,
+    "end_ms": 4007203,
+    "duration_ms": 6119,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4007.203,
+    "text": "It will return the label for that row, and then the label is going to be passed to the lock, and then lock is going to combine all of that together.",
+    "start_ms": 4007203,
+    "end_ms": 4014924,
+    "duration_ms": 7721,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4014.924,
+    "text": "This is the most complicated way, but just know that IDX max can be used to identify where you have maximum for a certain column, and it will return the label, and then you can index using that label using the lock operator.",
+    "start_ms": 4014924,
+    "end_ms": 4028124,
+    "duration_ms": 13200,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4028.92,
+    "text": "Drop duplicates. This is fancy. So in the drop duplicate, this is kind of the most untrivial version of doing it is that I'm sorting based on the percentage, so all of those values are sorted.",
+    "start_ms": 4028920,
+    "end_ms": 4043538,
+    "duration_ms": 14618,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4043.538,
+    "text": "And then I'll say that drop duplicate. On Party. So I want to have one representative from the party.",
+    "start_ms": 4043538,
+    "end_ms": 4050952,
+    "duration_ms": 7414,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4051.48,
+    "text": "Right? It will just basically start from the top. It will take the first occurrence of, for example, Democratic Party, and then it will drop every other road that has the party equal to Democrat.",
+    "start_ms": 4051480,
+    "end_ms": 4064480,
+    "duration_ms": 13000,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4064.76,
+    "text": "Right? So it will drop duplicate based on the party and because it is sorted the first time or the first instance that it gets Is the best instance because we already sorted by values and then what we are basically doing is that Okay, if we're sorting by values in An ascending order we keep the last if we're sorting in the sending order We keep the first and that's how we're going to use drop duplicates in order to just preserve one certain row in the data field.",
+    "start_ms": 4064760,
+    "end_ms": 4096360,
+    "duration_ms": 31600,
+    "word_count": 90,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4096.952,
+    "text": "So the whole purpose of showing you different ways that we can do this is that just think about this as an algorithm that you're designing.",
+    "start_ms": 4096952,
+    "end_ms": 4103912,
+    "duration_ms": 6960,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4103.912,
+    "text": "Every problem that we give you just think about how can you break it down into multiple different phases and how can you implement each one of those phases.",
+    "start_ms": 4103912,
+    "end_ms": 4113285,
+    "duration_ms": 9373,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4113.285,
+    "text": "And there's no single way of implementing. There's no direct way of implementing everything that's set in stone so there's flexibility in terms of how you figure out how you want to implement a certain functionality.",
+    "start_ms": 4113285,
+    "end_ms": 4127072,
+    "duration_ms": 13787,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4127.072,
+    "text": "And this is what we're basically talking about. There's no best way.",
+    "start_ms": 4127072,
+    "end_ms": 4130112,
+    "duration_ms": 3040,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4130.112,
+    "text": "We're in data 100. We're not necessarily concerned with runtime or efficiency.",
+    "start_ms": 4130112,
+    "end_ms": 4137232,
+    "duration_ms": 7120,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4137.232,
+    "text": "As long as everything is handled in a vectorized way using non-pire pandas, you should be fine and you should be able to process data sets of the size that we're providing you.",
+    "start_ms": 4137232,
+    "end_ms": 4147392,
+    "duration_ms": 10160,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4148.472,
+    "text": "So, with the DataFrame Group by Object, there are different attributes that we can get.",
+    "start_ms": 4148472,
+    "end_ms": 4154152,
+    "duration_ms": 5680,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4154.152,
+    "text": "So when I say that I'm grouping by party, I can call the attribute.group and I should be able to get all the different parties that I have.",
+    "start_ms": 4154152,
+    "end_ms": 4164512,
+    "duration_ms": 10360,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4164.856,
+    "text": "I can also go ahead and call dot get group and then I pass a group that I want to extract and then it will give me the data frame with all of those values or the rows that are associated with that specific group or give me that sub data frame in a sense in the output.",
+    "start_ms": 4164856,
+    "end_ms": 4183136,
+    "duration_ms": 18280,
+    "word_count": 58,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4183.136,
+    "text": "So just know that these functionalities are available to you and you can use them.",
+    "start_ms": 4183136,
+    "end_ms": 4187656,
+    "duration_ms": 4520,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4188.408,
+    "text": "So the next thing that I want to talk about is pivot table.",
+    "start_ms": 4188408,
+    "end_ms": 4191368,
+    "duration_ms": 2960,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4191.368,
+    "text": "So pivot table is kind of a different way of us grouping by two columns.",
+    "start_ms": 4191368,
+    "end_ms": 4197688,
+    "duration_ms": 6320,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4197.688,
+    "text": "So if I want to do group by, by for example, year and sex, and what I'll do is that I'll get two index, one index per year, and then one index per sex.",
+    "start_ms": 4197688,
+    "end_ms": 4207728,
+    "duration_ms": 10040,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4207.728,
+    "text": "And then what's happening is that here, I would say that I'm only looking at the count column, so there is the count column, and it will just do the aggregation on some based on what I'm requesting.",
+    "start_ms": 4207728,
+    "end_ms": 4217688,
+    "duration_ms": 9960,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4218.136,
+    "text": "So this multi-index structure in the output is usually very complex.",
+    "start_ms": 4218136,
+    "end_ms": 4223576,
+    "duration_ms": 5440,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4223.576,
+    "text": "The way, the better way of doing it is that what we can do is we can use one of those categories that we're grouping by as labels under rows, so year, b under rows, and then the second attribute that we're grouped by in the columns.",
+    "start_ms": 4223576,
+    "end_ms": 4241176,
+    "duration_ms": 17600,
+    "word_count": 47,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4241.176,
+    "text": "So we use pivot table for that purpose. So this structure of a pivot table is that in kind of exactly similar to the group by operation, what we'll do is we'll say that baby names that pivot table, we will say that for the index, for the rows, we want year to be the index, and for the columns, we would say that we want the second attribute sex to be the columns.",
+    "start_ms": 4241176,
+    "end_ms": 4267320,
+    "duration_ms": 26144,
+    "word_count": 74,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4267.32,
+    "text": "And then what we'll say is that the values that you're filling this entire 2D table or the state of frame is going to come from count.",
+    "start_ms": 4267320,
+    "end_ms": 4275320,
+    "duration_ms": 8000,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4276.024,
+    "text": "And then how do you calculate count or how do you aggregate multiple rows so that you have a single value for every combination of sex and year is that we're going to say that let's do that based on this summation just do this summation and it will do this summation.",
+    "start_ms": 4276024,
+    "end_ms": 4292640,
+    "duration_ms": 16616,
+    "word_count": 52,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4292.64,
+    "text": "If there is a value that doesn't exist or there is a combination that doesn't exist in the data frame, it will fill it will add that value as nann or not a value or not a number and then you'll know that There was no row in your initial data frame that was a combination of those two specific attributes and that's how it works.",
+    "start_ms": 4292640,
+    "end_ms": 4313504,
+    "duration_ms": 20864,
+    "word_count": 66,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4313.944,
+    "text": "So if you compare visually what happens with multi-index, kind of structure of grouping by by two columns versus doing it using pivot table, you'll see that it's easier to work with the data that is kind of flatly structured with one label and the resume label and the columns using pivot table.",
+    "start_ms": 4313944,
+    "end_ms": 4333264,
+    "duration_ms": 19320,
+    "word_count": 53,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4333.88,
+    "text": "So kind of the visual of how it looks like if I have the column R and then the column C and I'm going to aggregate based on the, I'm doing group by based on these two things, but I can do is I can say that instead of grouping by these two things, I'm going to have one of them as row labels, one of them as a column labels and I'll do the, the group by based on those.",
+    "start_ms": 4333880,
+    "end_ms": 4358680,
+    "duration_ms": 24800,
+    "word_count": 81,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4358.68,
+    "text": "So a combination of A and F is one sub data frame, combination of A and M is one sub data frame, B and F, and so on and so forth.",
+    "start_ms": 4358680,
+    "end_ms": 4366680,
+    "duration_ms": 8000,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4366.68,
+    "text": "So I'll basically split the data frame into all those combinations.",
+    "start_ms": 4366680,
+    "end_ms": 4371800,
+    "duration_ms": 5120,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4371.8,
+    "text": "And now I have a bunch of different sub data frames that then I can aggregate them.",
+    "start_ms": 4371800,
+    "end_ms": 4376120,
+    "duration_ms": 4320,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4376.12,
+    "text": "We said that the aggregation function is sum. So what I can do is I will say that summing up this last column here is going to give me 3 plus 3 equal to 5.",
+    "start_ms": 4376120,
+    "end_ms": 4386320,
+    "duration_ms": 10200,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4386.32,
+    "text": "I'll sum up all of those columns. then I'll let structure what I said is going to be the row label on the rows, what I said, I'll let structure on the column labels and the columns, and then I'll just move those values.",
+    "start_ms": 4386320,
+    "end_ms": 4398360,
+    "duration_ms": 12040,
+    "word_count": 44,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4398.36,
+    "text": "So we'll move the value five at the intersection of a and f, and then we'll move all of those values all the way.",
+    "start_ms": 4398360,
+    "end_ms": 4405560,
+    "duration_ms": 7200,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4405.56,
+    "text": "And if there is a value that doesn't exist, for example, here I don't have the combination of dnm, I'll add not a number or non-value.",
+    "start_ms": 4405560,
+    "end_ms": 4414640,
+    "duration_ms": 9080,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4414.64,
+    "text": "There are ways that you can say that, okay, if there was a missing bro, or there was no missing, there was no representative for a combination, fill in with value, for example, zero.",
+    "start_ms": 4414640,
+    "end_ms": 4426480,
+    "duration_ms": 11840,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4426.48,
+    "text": "So that's also an option that we can do. So in this example, it's exactly kind of the same thing except for we're saying that I'm going to have values for both count and the name.",
+    "start_ms": 4426480,
+    "end_ms": 4438824,
+    "duration_ms": 12344,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4438.824,
+    "text": "So I'm going to do the maximum for both count and the name.",
+    "start_ms": 4438824,
+    "end_ms": 4441824,
+    "duration_ms": 3000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4441.824,
+    "text": "And what they will do is it will basically duplicate the column labels.",
+    "start_ms": 4441824,
+    "end_ms": 4446824,
+    "duration_ms": 5000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4446.824,
+    "text": "And what's happening here is that the year that was the index is always going to be the index.",
+    "start_ms": 4446824,
+    "end_ms": 4452824,
+    "duration_ms": 6000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4452.824,
+    "text": "But the columns that was sex is going to be duplicated once for count and then once for name which are the two things that we said that we want as values.",
+    "start_ms": 4452824,
+    "end_ms": 4465343,
+    "duration_ms": 12519,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4465.343,
+    "text": "So note that we can actually keep expanding this structure into the different columns.",
+    "start_ms": 4465343,
+    "end_ms": 4473264,
+    "duration_ms": 7921,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4473.264,
+    "text": "If you want to have multiple different columns, at the expense, at the benefit that we don't We won't have multi-label multi-index kind of bros for us.",
+    "start_ms": 4473264,
+    "end_ms": 4484864,
+    "duration_ms": 11600,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4484.864,
+    "text": "That makes the indexing into rows a little bit easier.",
+    "start_ms": 4484864,
+    "end_ms": 4488824,
+    "duration_ms": 3960,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4488.824,
+    "text": "So the last thing that I want to talk about is joining the tables.",
+    "start_ms": 4488824,
+    "end_ms": 4492423,
+    "duration_ms": 3599,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4492.423,
+    "text": "So if we have two tables, how can we combine those two tables together?",
+    "start_ms": 4492423,
+    "end_ms": 4496784,
+    "duration_ms": 4361,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4496.784,
+    "text": "You had seen this in data aid, but I want to quickly show you how it looks like in data 100.",
+    "start_ms": 4496784,
+    "end_ms": 4501704,
+    "duration_ms": 4920,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4501.704,
+    "text": "And the example that I'm going to use is that let's assume that we have the elections data frame and we have baby names data frame.",
+    "start_ms": 4501704,
+    "end_ms": 4507944,
+    "duration_ms": 6240,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4507.944,
+    "text": "And what I want to do is I want to find out the popularity or the count of the babies born in 2022 with the first name as the first name of the candidate.",
+    "start_ms": 4507944,
+    "end_ms": 4518984,
+    "duration_ms": 11040,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4518.984,
+    "text": "So I'm just trying to expand the elections they differ in that way.",
+    "start_ms": 4518984,
+    "end_ms": 4523504,
+    "duration_ms": 4520,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4523.928,
+    "text": "So what I can do is I can basically say that now I'm going to focus only on the baby names in 2022.",
+    "start_ms": 4523928,
+    "end_ms": 4530528,
+    "duration_ms": 6600,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4530.528,
+    "text": "So here baby name year is equal to 2022. We have this data frame that is now going to be joined with the elections data frame.",
+    "start_ms": 4530528,
+    "end_ms": 4538928,
+    "duration_ms": 8400,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4539.608,
+    "text": "What I need to do on the elections data frame is that each candidate name has first name last name so I need to extract only the first name.",
+    "start_ms": 4539608,
+    "end_ms": 4547608,
+    "duration_ms": 8000,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4547.608,
+    "text": "So these are all the pre-processing that you need to do in order to be able to do the final functionality that you want.",
+    "start_ms": 4547608,
+    "end_ms": 4554608,
+    "duration_ms": 7000,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4554.608,
+    "text": "So what I'll do is I'll say that go ahead and grab the candidate.",
+    "start_ms": 4554608,
+    "end_ms": 4558608,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4559.224,
+    "text": "Know that it's a string. It's flooded based on the space.",
+    "start_ms": 4559224,
+    "end_ms": 4563724,
+    "duration_ms": 4500,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4563.896,
+    "text": "Grab the first element, which is the name. And then it will go ahead and add it in the column that is called first name.",
+    "start_ms": 4563896,
+    "end_ms": 4571096,
+    "duration_ms": 7200,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4571.096,
+    "text": "So this is now modified version of the data frame that we have with the first name added as the last column.",
+    "start_ms": 4571096,
+    "end_ms": 4577896,
+    "duration_ms": 6800,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4578.68,
+    "text": "So now we have elections they to frame with the first name we have Baby names in 2022, which all have the name.",
+    "start_ms": 4578680,
+    "end_ms": 4586848,
+    "duration_ms": 8168,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4586.848,
+    "text": "And the only thing that I need to know, I need to do is to merge them together.",
+    "start_ms": 4586848,
+    "end_ms": 4591288,
+    "duration_ms": 4440,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4591.288,
+    "text": "There are two ways that I can merge them together.",
+    "start_ms": 4591288,
+    "end_ms": 4593648,
+    "duration_ms": 2360,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4593.648,
+    "text": "I can either say that. Pandas, go ahead and merge.",
+    "start_ms": 4593648,
+    "end_ms": 4597544,
+    "duration_ms": 3896,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4598.168,
+    "text": "One of the data frames to be elections. One of the data frames to be baby names from 2022.",
+    "start_ms": 4598168,
+    "end_ms": 4607456,
+    "duration_ms": 9288,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4607.456,
+    "text": "So the left one is election. The baby names from 2022 is the right one.",
+    "start_ms": 4607456,
+    "end_ms": 4612056,
+    "duration_ms": 4600,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4612.056,
+    "text": "What are the indicators that will show you that those rows are corresponding to each other?",
+    "start_ms": 4612056,
+    "end_ms": 4617096,
+    "duration_ms": 5040,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4617.096,
+    "text": "It will say that... For the left one, the indicator is the first name.",
+    "start_ms": 4617096,
+    "end_ms": 4622288,
+    "duration_ms": 5192,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4622.288,
+    "text": "So the first name of the candidate that we had.",
+    "start_ms": 4622288,
+    "end_ms": 4625088,
+    "duration_ms": 2800,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4625.088,
+    "text": "Look at that column. If it was equal to The name of the baby in the baby names 2020.",
+    "start_ms": 4625088,
+    "end_ms": 4634112,
+    "duration_ms": 9024,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4634.112,
+    "text": "Today the frame if these two attributes or these two values are the same, go ahead and combine them and merge those rows so that it extends those values.",
+    "start_ms": 4634112,
+    "end_ms": 4644312,
+    "duration_ms": 10200,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4644.312,
+    "text": "The other way that we can do is we can say that on the elections day the frame, I'm going to merge it on the right.",
+    "start_ms": 4644312,
+    "end_ms": 4651392,
+    "duration_ms": 7080,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4651.704,
+    "text": "with another data frame. So on the right, we are saying that the right data frame is baby names to 2022.",
+    "start_ms": 4651704,
+    "end_ms": 4657704,
+    "duration_ms": 6000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4657.704,
+    "text": "The attribute and the left that we're looking at is the first name and the attribute and the right that we're looking at is the name.",
+    "start_ms": 4657704,
+    "end_ms": 4663704,
+    "duration_ms": 6000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4663.704,
+    "text": "And in those instances, it will go ahead and combine them.",
+    "start_ms": 4663704,
+    "end_ms": 4666637,
+    "duration_ms": 2933,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4666.637,
+    "text": "What is the result? You're seeing that the result is actually taking all of the values from the left data frame all the way to here.",
+    "start_ms": 4666637,
+    "end_ms": 4675704,
+    "duration_ms": 9067,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4675.704,
+    "text": "to here. So this is all the elections data frame.",
+    "start_ms": 4675704,
+    "end_ms": 4678865,
+    "duration_ms": 3161,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4678.865,
+    "text": "It will say that there was a year in the left data frame year underscore X.",
+    "start_ms": 4678865,
+    "end_ms": 4683649,
+    "duration_ms": 4784,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4683.649,
+    "text": "There was the candidate, there was party, and then it goes all the way to the first name.",
+    "start_ms": 4683649,
+    "end_ms": 4688331,
+    "duration_ms": 4682,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4688.331,
+    "text": "Remember that this is the last thing that we created.",
+    "start_ms": 4688331,
+    "end_ms": 4690899,
+    "duration_ms": 2568,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4690.899,
+    "text": "And then it will extend it with the values we have in the baby names 2022.",
+    "start_ms": 4690899,
+    "end_ms": 4695745,
+    "duration_ms": 4846,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4695.745,
+    "text": "You see that it has a state, it has sex.",
+    "start_ms": 4695745,
+    "end_ms": 4698984,
+    "duration_ms": 3239,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4698.984,
+    "text": "It also has year underscore Y. This is showing that this year is coming from the second or the right data frame.",
+    "start_ms": 4698984,
+    "end_ms": 4707424,
+    "duration_ms": 8440,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4707.424,
+    "text": "And then it will basically extend it all the way.",
+    "start_ms": 4707424,
+    "end_ms": 4709944,
+    "duration_ms": 2520,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4709.944,
+    "text": "If you don't want a column, you can drop it afterwards.",
+    "start_ms": 4709944,
+    "end_ms": 4713184,
+    "duration_ms": 3240,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4713.184,
+    "text": "So for example, you can drop the year underscore y or anything else that you don't want.",
+    "start_ms": 4713184,
+    "end_ms": 4718584,
+    "duration_ms": 5400,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4718.584,
+    "text": "But this is how we merge two data frames and we'll combine them together.",
+    "start_ms": 4718584,
+    "end_ms": 4723304,
+    "duration_ms": 4720,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4723.384,
+    "text": "Thank you all for listening to all the Pandas lectures we're done with basics of Pandas.",
+    "start_ms": 4723384,
+    "end_ms": 4728384,
+    "duration_ms": 5000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4728.384,
+    "text": "We're going to see exploratory data analysis in the next two lectures after that we'll see visualization for another two lecture.",
+    "start_ms": 4728384,
+    "end_ms": 4736384,
+    "duration_ms": 8000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4736.384,
+    "text": "Thank you.",
+    "start_ms": 4736384,
+    "end_ms": 4737384,
+    "duration_ms": 1000,
+    "word_count": 2,
+    "avg_confidence": 90
+  }
+]

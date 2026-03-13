@@ -1,0 +1,423 @@
+{
+  "lecture_id": "2",
+  "levels": [
+    {
+      "level": 0,
+      "count": 58
+    },
+    {
+      "level": 1,
+      "count": 13
+    },
+    {
+      "level": 2,
+      "count": 3
+    },
+    {
+      "level": 3,
+      "count": 1
+    }
+  ],
+  "roots": [
+    {
+      "level": 3,
+      "index": 0,
+      "start_timestamp": 869.648,
+      "end_timestamp": 1606.207,
+      "title": "Course Logistics and Pandas Data Types",
+      "summary": "Students should access code for Data 100 on the course website, which includes resources for lecture two on pandas, notebooks, and data files. An HTML version of the code is available for mobile use but is not runnable. A translation of data science libraries to pandas is provided, along with a data folder in the notebooks containing necessary data. In pandas, integer values are recognized as 64-bit integers, while non-primitive types like strings or custom objects are categorized as objects, which may cause issues if numerical values are loaded as objects, requiring a type cast back to the correct format.",
+      "children": [
+        {
+          "level": 2,
+          "index": 0,
+          "start_timestamp": 869.648,
+          "end_timestamp": 962.657,
+          "title": "Course Logistics and Code Access for Data 100",
+          "summary": "Students should familiarize themselves with the code available on the course website for Data 100, which includes relevant code for lecture two on pandas, notebooks, and data files. An HTML version of the code is accessible for mobile use, though it is not runnable. Additionally, a translation of data science libraries to pandas is provided, along with a data folder in the notebooks containing necessary data and resources.",
+          "children": [
+            {
+              "level": 1,
+              "index": 0,
+              "start_timestamp": 869.648,
+              "end_timestamp": 962.657,
+              "title": "Course Logistics and Code Access for Data 100",
+              "summary": "Students should familiarize themselves with the code available on the course website for Data 100. This includes all relevant code for lecture two on pandas, notebooks, and data files. An HTML version of the code is available for mobile access, though it is not runnable. Additionally, a translation of data science libraries to pandas is provided, along with a data folder in the notebooks containing necessary data and resources.",
+              "children": [
+                {
+                  "level": 0,
+                  "index": 9,
+                  "start_timestamp": 869.648,
+                  "end_timestamp": 962.657,
+                  "title": "Course Logistics and Code Access for Data 100",
+                  "summary": "Students are expected to familiarize themselves with the code provided in the course, which will be available on the course website. The website will host all relevant code for lecture two on pandas, including notebooks and data files. An HTML version of the code is also available for mobile access, although it is not runnable. Additionally, there is a translation of data science libraries to pandas included, along with a data folder in the notebooks containing all necessary data and resources.",
+                  "children": [],
+                  "leaf_chunk": {
+                    "chunk_index": 9,
+                    "timestamp": 869.648,
+                    "start_ms": 869648,
+                    "end_ms": 962657,
+                    "duration_ms": 93009,
+                    "text": "Audio: So that's how you should expect us operating. And that's how you should expect us operating. So the code that you will see, um, generally in data 100. And this is the first time that we're officially expecting you to know all the code that we're showing you, um, is that all the code we're generally, um, sharing them on the website. So you can go on the website and you can go and then see that, okay, this is lecture two pandas and then be actually released all the information. Um, so you can click on the code, get the code, it will spin data 100, um, data help for you and then you should be able to get the data as well as all the notebooks that we posted for you. There's also the HTML version if you're looking on your phone and you just want to take a look at the code you can open the HTML version that is not runable. It's just the HTML file that you should be able to take a look. And this is kind of an unofficial translation of data science library to pendants. So it basically walks you through everything that you had and then it will have the corresponding version in pandas. So if you want to take a look at that, we're also supposed to dec sample code and HTML file format for it, but we're not going to go over these last two or this data data aid equivalent kind of notebook for you. So what you're expecting is if you open your notebook, you're going to see a data folder. This is where we have all the data and then you should be able to see data aid translation and you should be able to see lecture 2.iphone notebook. Video: 1: v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n",
+                    "audio": "So that's how you should expect us operating. And that's how you should expect us operating. So the code that you will see, um, generally in data 100. And this is the first time that we're officially expecting you to know all the code that we're showing you, um, is that all the code we're generally, um, sharing them on the website. So you can go on the website and you can go and then see that, okay, this is lecture two pandas and then be actually released all the information. Um, so you can click on the code, get the code, it will spin data 100, um, data help for you and then you should be able to get the data as well as all the notebooks that we posted for you. There's also the HTML version if you're looking on your phone and you just want to take a look at the code you can open the HTML version that is not runable. It's just the HTML file that you should be able to take a look. And this is kind of an unofficial translation of data science library to pendants. So it basically walks you through everything that you had and then it will have the corresponding version in pandas. So if you want to take a look at that, we're also supposed to dec sample code and HTML file format for it, but we're not going to go over these last two or this data data aid equivalent kind of notebook for you. So what you're expecting is if you open your notebook, you're going to see a data folder. This is where we have all the data and then you should be able to see data aid translation and you should be able to see lecture 2.iphone notebook.",
+                    "video": [
+                      "v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n"
+                    ],
+                    "sentence_count": 12,
+                    "word_count": 303,
+                    "sentences": [
+                      {
+                        "timestamp": 869.648,
+                        "text": "Audio: So that's how you should expect us operating. And that's how you should expect us operating. Video: 1: v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n",
+                        "start_ms": 869648,
+                        "end_ms": 875448,
+                        "duration_ms": 5800,
+                        "word_count": 16,
+                        "avg_confidence": 90,
+                        "sentence_index": 87,
+                        "audio": "So that's how you should expect us operating. And that's how you should expect us operating.",
+                        "video": [
+                          "v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n"
+                        ]
+                      },
+                      {
+                        "timestamp": 876.184,
+                        "text": "Audio: So the code that you will see, um, generally in data 100. Video: 1: v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n",
+                        "start_ms": 876184,
+                        "end_ms": 879684,
+                        "duration_ms": 3500,
+                        "word_count": 12,
+                        "avg_confidence": 90,
+                        "sentence_index": 88,
+                        "audio": "So the code that you will see, um, generally in data 100.",
+                        "video": [
+                          "v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n"
+                        ]
+                      },
+                      {
+                        "timestamp": 879.684,
+                        "text": "Audio: And this is the first time that we're officially expecting you to know all the code that we're showing you, um, is that all the code we're generally, um, sharing them on the website. Video: 1: v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n",
+                        "start_ms": 879684,
+                        "end_ms": 891084,
+                        "duration_ms": 11400,
+                        "word_count": 34,
+                        "avg_confidence": 90,
+                        "sentence_index": 89,
+                        "audio": "And this is the first time that we're officially expecting you to know all the code that we're showing you, um, is that all the code we're generally, um, sharing them on the website.",
+                        "video": [
+                          "v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n"
+                        ]
+                      },
+                      {
+                        "timestamp": 891.084,
+                        "text": "Audio: So you can go on the website and you can go and then see that, okay, this is lecture two pandas and then be actually released all the information. Video: 1: v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n",
+                        "start_ms": 891084,
+                        "end_ms": 899184,
+                        "duration_ms": 8100,
+                        "word_count": 29,
+                        "avg_confidence": 90,
+                        "sentence_index": 90,
+                        "audio": "So you can go on the website and you can go and then see that, okay, this is lecture two pandas and then be actually released all the information.",
+                        "video": [
+                          "v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n"
+                        ]
+                      },
+                      {
+                        "timestamp": 899.184,
+                        "text": "Audio: Um, so you can click on the code, get the code, it will spin data 100, um, data help for you and then you should be able to get the data as well as all the notebooks that we posted for you. Video: 1: v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n",
+                        "start_ms": 899184,
+                        "end_ms": 909724,
+                        "duration_ms": 10540,
+                        "word_count": 42,
+                        "avg_confidence": 90,
+                        "sentence_index": 91,
+                        "audio": "Um, so you can click on the code, get the code, it will spin data 100, um, data help for you and then you should be able to get the data as well as all the notebooks that we posted for you.",
+                        "video": [
+                          "v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n"
+                        ]
+                      },
+                      {
+                        "timestamp": 909.724,
+                        "text": "Audio: There's also the HTML version if you're looking on your phone and you just want to take a look at the code you can open the HTML version that is not runable. Video: 1: v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n",
+                        "start_ms": 909724,
+                        "end_ms": 919064,
+                        "duration_ms": 9340,
+                        "word_count": 32,
+                        "avg_confidence": 90,
+                        "sentence_index": 92,
+                        "audio": "There's also the HTML version if you're looking on your phone and you just want to take a look at the code you can open the HTML version that is not runable.",
+                        "video": [
+                          "v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n"
+                        ]
+                      },
+                      {
+                        "timestamp": 919.064,
+                        "text": "Audio: It's just the HTML file that you should be able to take a look. Video: 1: v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n",
+                        "start_ms": 919064,
+                        "end_ms": 923264,
+                        "duration_ms": 4200,
+                        "word_count": 14,
+                        "avg_confidence": 90,
+                        "sentence_index": 93,
+                        "audio": "It's just the HTML file that you should be able to take a look.",
+                        "video": [
+                          "v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n"
+                        ]
+                      },
+                      {
+                        "timestamp": 923.264,
+                        "text": "Audio: And this is kind of an unofficial translation of data science library to pendants. Video: 1: v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n",
+                        "start_ms": 923264,
+                        "end_ms": 929124,
+                        "duration_ms": 5860,
+                        "word_count": 14,
+                        "avg_confidence": 90,
+                        "sentence_index": 94,
+                        "audio": "And this is kind of an unofficial translation of data science library to pendants.",
+                        "video": [
+                          "v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n"
+                        ]
+                      },
+                      {
+                        "timestamp": 929.124,
+                        "text": "Audio: So it basically walks you through everything that you had and then it will have the corresponding version in pandas. Video: 1: v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n",
+                        "start_ms": 929124,
+                        "end_ms": 934669,
+                        "duration_ms": 5545,
+                        "word_count": 20,
+                        "avg_confidence": 90,
+                        "sentence_index": 95,
+                        "audio": "So it basically walks you through everything that you had and then it will have the corresponding version in pandas.",
+                        "video": [
+                          "v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n"
+                        ]
+                      },
+                      {
+                        "timestamp": 934.669,
+                        "text": "Audio: So if you want to take a look at that, we're also supposed to dec sample code and HTML file format for it, but we're not going to go over these last two or this data data aid equivalent kind of notebook for you. Video: 1: v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n",
+                        "start_ms": 934669,
+                        "end_ms": 949444,
+                        "duration_ms": 14775,
+                        "word_count": 44,
+                        "avg_confidence": 90,
+                        "sentence_index": 96,
+                        "audio": "So if you want to take a look at that, we're also supposed to dec sample code and HTML file format for it, but we're not going to go over these last two or this data data aid equivalent kind of notebook for you.",
+                        "video": [
+                          "v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n"
+                        ]
+                      },
+                      {
+                        "timestamp": 949.444,
+                        "text": "Audio: So what you're expecting is if you open your notebook, you're going to see a data folder. Video: 1: v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n",
+                        "start_ms": 949444,
+                        "end_ms": 955342,
+                        "duration_ms": 5898,
+                        "word_count": 17,
+                        "avg_confidence": 90,
+                        "sentence_index": 97,
+                        "audio": "So what you're expecting is if you open your notebook, you're going to see a data folder.",
+                        "video": [
+                          "v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n"
+                        ]
+                      },
+                      {
+                        "timestamp": 955.342,
+                        "text": "Audio: This is where we have all the data and then you should be able to see data aid translation and you should be able to see lecture 2.iphone notebook. Video: 1: v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n",
+                        "start_ms": 955342,
+                        "end_ms": 962657,
+                        "duration_ms": 7315,
+                        "word_count": 29,
+                        "avg_confidence": 90,
+                        "sentence_index": 98,
+                        "audio": "This is where we have all the data and then you should be able to see data aid translation and you should be able to see lecture 2.iphone notebook.",
+                        "video": [
+                          "v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n"
+                        ]
+                      }
+                    ],
+                    "text_embedding_b64": "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"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "index": 1,
+          "start_timestamp": 962.657,
+          "end_timestamp": 972.971,
+          "title": "Non-lecture interlude (logistics/technical/etc.)",
+          "summary": "This part consists of a pause and technical issues related to the audio and video setup, with no substantive lecture content.",
+          "children": [
+            {
+              "level": 1,
+              "index": 1,
+              "start_timestamp": 962.657,
+              "end_timestamp": 972.971,
+              "title": "Non-lecture interlude (logistics/technical/etc.)",
+              "summary": "This part consists of a pause and technical issues related to the audio and video setup, with no substantive lecture content.",
+              "children": [
+                {
+                  "level": 0,
+                  "index": 10,
+                  "start_timestamp": 962.657,
+                  "end_timestamp": 972.971,
+                  "title": "Non-lecture interlude (logistics/technical/etc.)",
+                  "summary": "This part consists of a pause and technical issues related to the audio and video setup, with no substantive lecture content.",
+                  "children": [],
+                  "leaf_chunk": {
+                    "chunk_index": 10,
+                    "timestamp": 962.657,
+                    "start_ms": 962657,
+                    "end_ms": 972971,
+                    "duration_ms": 10314,
+                    "text": "Audio: This is my local change so you won't be able to have access to this demo because I have this likely different version of that. So this is the file directory that you will see. Video: 1: v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n",
+                    "audio": "This is my local change so you won't be able to have access to this demo because I have this likely different version of that. So this is the file directory that you will see.",
+                    "video": [
+                      "v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n"
+                    ],
+                    "sentence_count": 2,
+                    "word_count": 35,
+                    "sentences": [
+                      {
+                        "timestamp": 962.657,
+                        "text": "Audio: This is my local change so you won't be able to have access to this demo because I have this likely different version of that. Video: 1: v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n",
+                        "start_ms": 962657,
+                        "end_ms": 970279,
+                        "duration_ms": 7622,
+                        "word_count": 25,
+                        "avg_confidence": 90,
+                        "sentence_index": 99,
+                        "audio": "This is my local change so you won't be able to have access to this demo because I have this likely different version of that.",
+                        "video": [
+                          "v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n"
+                        ]
+                      },
+                      {
+                        "timestamp": 970.279,
+                        "text": "Audio: So this is the file directory that you will see. Video: 1: v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n",
+                        "start_ms": 970279,
+                        "end_ms": 972971,
+                        "duration_ms": 2692,
+                        "word_count": 10,
+                        "avg_confidence": 90,
+                        "sentence_index": 100,
+                        "audio": "So this is the file directory that you will see.",
+                        "video": [
+                          "v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n"
+                        ]
+                      }
+                    ],
+                    "text_embedding_b64": "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"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "index": 2,
+          "start_timestamp": 1553.56,
+          "end_timestamp": 1606.207,
+          "title": "Pandas Data Types and Object Handling",
+          "summary": "In pandas, integer values are recognized as 64-bit integers, while non-primitive types such as strings or custom objects are categorized as objects. This distinction can lead to issues if numerical values are loaded as objects, necessitating a type cast back to the correct format.",
+          "children": [
+            {
+              "level": 1,
+              "index": 3,
+              "start_timestamp": 1553.56,
+              "end_timestamp": 1606.207,
+              "title": "Pandas Data Types and Object Handling",
+              "summary": "In pandas, integer values are automatically recognized as 64-bit integers, while non-primitive types like strings or custom objects are categorized as objects. This distinction can cause problems if numerical values are improperly loaded as objects, requiring a type cast back to the correct format.",
+              "children": [
+                {
+                  "level": 0,
+                  "index": 19,
+                  "start_timestamp": 1553.56,
+                  "end_timestamp": 1606.207,
+                  "title": "Pandas Data Types and Object Handling",
+                  "summary": "In pandas, integer values are automatically labeled as 64-bit integers, but non-primitive types such as strings or custom objects are tagged as objects. This can lead to issues where numerical values may be incorrectly loaded as objects if the data isn't loaded properly, necessitating a cast back to the appropriate type.",
+                  "children": [],
+                  "leaf_chunk": {
+                    "chunk_index": 19,
+                    "timestamp": 1553.56,
+                    "start_ms": 1553560,
+                    "end_ms": 1606207,
+                    "duration_ms": 52647,
+                    "text": "Audio: Any questions so far? Questions? Great question. So I forgot to mention that here because my values were integer, it was automatically labeling that as in 64 and it's not integers in 64 bit. And that's how pandas is implemented. But anything other than primitive types, integer float, everything else is going to be tagged as objects and you'll keep seeing object object over and over again. So most of the time, it is not numerical value and it's objects. And a lot of time, if you, for example, don't do the loading of the data properly, it will even load the integer values or full load values as object, then you need to cast that. Video: 1: v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n",
+                    "audio": "Any questions so far? Questions? Great question. So I forgot to mention that here because my values were integer, it was automatically labeling that as in 64 and it's not integers in 64 bit. And that's how pandas is implemented. But anything other than primitive types, integer float, everything else is going to be tagged as objects and you'll keep seeing object object over and over again. So most of the time, it is not numerical value and it's objects. And a lot of time, if you, for example, don't do the loading of the data properly, it will even load the integer values or full load values as object, then you need to cast that.",
+                    "video": [
+                      "v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n"
+                    ],
+                    "sentence_count": 4,
+                    "word_count": 116,
+                    "sentences": [
+                      {
+                        "timestamp": 1553.56,
+                        "text": "Audio: Any questions so far? Questions? Great question. So I forgot to mention that here because my values were integer, it was automatically labeling that as in 64 and it's not integers in 64 bit. Video: 1: v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n",
+                        "start_ms": 1553560,
+                        "end_ms": 1577288,
+                        "duration_ms": 23728,
+                        "word_count": 34,
+                        "avg_confidence": 90,
+                        "sentence_index": 176,
+                        "audio": "Any questions so far? Questions? Great question. So I forgot to mention that here because my values were integer, it was automatically labeling that as in 64 and it's not integers in 64 bit.",
+                        "video": [
+                          "v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n"
+                        ]
+                      },
+                      {
+                        "timestamp": 1577.288,
+                        "text": "Audio: And that's how pandas is implemented. But anything other than primitive types, integer float, everything else is going to be tagged as objects and you'll keep seeing object object over and over again. Video: 1: v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n",
+                        "start_ms": 1577288,
+                        "end_ms": 1589688,
+                        "duration_ms": 12400,
+                        "word_count": 33,
+                        "avg_confidence": 90,
+                        "sentence_index": 177,
+                        "audio": "And that's how pandas is implemented. But anything other than primitive types, integer float, everything else is going to be tagged as objects and you'll keep seeing object object over and over again.",
+                        "video": [
+                          "v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n"
+                        ]
+                      },
+                      {
+                        "timestamp": 1589.688,
+                        "text": "Audio: So most of the time, it is not numerical value and it's objects. Video: 1: v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n",
+                        "start_ms": 1589688,
+                        "end_ms": 1594368,
+                        "duration_ms": 4680,
+                        "word_count": 13,
+                        "avg_confidence": 90,
+                        "sentence_index": 178,
+                        "audio": "So most of the time, it is not numerical value and it's objects.",
+                        "video": [
+                          "v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n"
+                        ]
+                      },
+                      {
+                        "timestamp": 1594.368,
+                        "text": "Audio: And a lot of time, if you, for example, don't do the loading of the data properly, it will even load the integer values or full load values as object, then you need to cast that. Video: 1: v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n",
+                        "start_ms": 1594368,
+                        "end_ms": 1606207,
+                        "duration_ms": 11839,
+                        "word_count": 36,
+                        "avg_confidence": 90,
+                        "sentence_index": 179,
+                        "audio": "And a lot of time, if you, for example, don't do the loading of the data properly, it will even load the integer values or full load values as object, then you need to cast that.",
+                        "video": [
+                          "v\nLec 02 - DS100 Fa24 - Pandas | >\nJupyterLab\n× | -\nC\nº5 docs.google.com/presentation/d/1qXdSjQhmaXcxtXOMTgWcPsB3tSH3HspppoHk2Pqfles/edit#slide=id.g1d1eab55d83_0_239\nNarges Norouzi\ny\n...\nK\nabo\nT\nO\n3334675\nTabular data\nSeries, DataFrames, and Indices\nData extraction with loc, iloc, and\nTabular Data\nLecture 02, Data 100 Fall 2024\n5\nCo\n1\nV\n5\n...\nS\n2024-09-03 11:14:11\n"
+                        ]
+                      }
+                    ],
+                    "text_embedding_b64": "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"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

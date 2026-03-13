@@ -1,0 +1,5753 @@
+[
+  {
+    "timestamp": 2.36,
+    "text": "All right, good. So good morning, everyone. Excited to cover a new topic.",
+    "start_ms": 2360,
+    "end_ms": 6515,
+    "duration_ms": 4155,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 6.515,
+    "text": "I guess I was just saying to the class here.",
+    "start_ms": 6515,
+    "end_ms": 9108,
+    "duration_ms": 2593,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 9.108,
+    "text": "I missed last week, which was simple. Hopefully you guys enjoyed The data processing the other set of tools on the data ecosystem.",
+    "start_ms": 9108,
+    "end_ms": 16696,
+    "duration_ms": 7588,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 16.696,
+    "text": "Normally I get to present those lectures but this time Rano was in Korea so I missed out on that.",
+    "start_ms": 16696,
+    "end_ms": 20696,
+    "duration_ms": 4000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 21.848,
+    "text": "This week we're going to be doing logistic regression. Which is kind of like baby neural networks so it's really exciting.",
+    "start_ms": 21848,
+    "end_ms": 27884,
+    "duration_ms": 6036,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 27.884,
+    "text": "We're going to bring it a whole new set of models.",
+    "start_ms": 27884,
+    "end_ms": 29984,
+    "duration_ms": 2100,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 29.984,
+    "text": "There'll be a little bit of math maybe not as much as we had with regression.",
+    "start_ms": 29984,
+    "end_ms": 33284,
+    "duration_ms": 3300,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 33.284,
+    "text": "I will do some more code so it should be kind of fun mix of math and code today.",
+    "start_ms": 33284,
+    "end_ms": 37184,
+    "duration_ms": 3900,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 41.4,
+    "text": "So we're moving away from linear regression. I guess they should say we're moving away from regression.",
+    "start_ms": 41400,
+    "end_ms": 45400,
+    "duration_ms": 4000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 45.4,
+    "text": "Because we're going to keep doing regression or say. We keep doing a form of linear modeling in a moment, but we're gonna we're gonna focus now on classification.",
+    "start_ms": 45400,
+    "end_ms": 55560,
+    "duration_ms": 10160,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 55.832,
+    "text": "And today we're going to introduce the kind of classification setting and we're going to derive the logistic regression model, which is the standard model used for classification.",
+    "start_ms": 55832,
+    "end_ms": 64712,
+    "duration_ms": 8880,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 64.712,
+    "text": "As I said, these are also the basic building blocks and neural networks.",
+    "start_ms": 64712,
+    "end_ms": 69032,
+    "duration_ms": 4320,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 71.192,
+    "text": "So, to first start talking about regression versus classification. So, up into this point, we've been building a...",
+    "start_ms": 71192,
+    "end_ms": 77192,
+    "duration_ms": 6000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 77.368,
+    "text": "linear regression models doing linear regression and this picture I used in when I first taught this class actually in the machine learning landscape in the space of modeling problems are sort of let's say four main categories of modeling problems that people are counter so far we spent a lot of time on regression And you think this is a...",
+    "start_ms": 77368,
+    "end_ms": 99816,
+    "duration_ms": 22448,
+    "word_count": 61,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 100.312,
+    "text": "I have labeled data so in all the regression work we've done so far we've had a why value.",
+    "start_ms": 100312,
+    "end_ms": 105812,
+    "duration_ms": 5500,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 106.456,
+    "text": "There's something we're trying to predict, so we had a label.",
+    "start_ms": 106456,
+    "end_ms": 108456,
+    "duration_ms": 2000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 109.816,
+    "text": "We call these supervised learning problems. These are learning problems where I know what I'm trying to predict in my training data I have labels.",
+    "start_ms": 109816,
+    "end_ms": 116816,
+    "duration_ms": 7000,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 119.896,
+    "text": "And the label trying to predict is quantitative, uh, continuous.",
+    "start_ms": 119896,
+    "end_ms": 123656,
+    "duration_ms": 3760,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 123.656,
+    "text": "I'm trying to predict a real number. Like a salary.",
+    "start_ms": 123656,
+    "end_ms": 127848,
+    "duration_ms": 4192,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 127.672,
+    "text": "A temperature. Today, we're going to transition to predicting categorical data.",
+    "start_ms": 127672,
+    "end_ms": 135768,
+    "duration_ms": 8096,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 136.184,
+    "text": "making predictions about spam, not spam, and I'll elaborate it more on that in a moment.",
+    "start_ms": 136184,
+    "end_ms": 140824,
+    "duration_ms": 4640,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 142.008,
+    "text": "Throughout those next two weeks, two and a half weeks.",
+    "start_ms": 142008,
+    "end_ms": 145368,
+    "duration_ms": 3360,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 145.976,
+    "text": "We're going to transition from working with label data. two working with unlabeled data so it's not today but in fact not this week but next week we'll start looking at unlabeled data where i have for example Just some features, no labels, I understand is there some simpler way to represent these features?",
+    "start_ms": 145976,
+    "end_ms": 165560,
+    "duration_ms": 19584,
+    "word_count": 54,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 165.88,
+    "text": "A more is kind of a kin similar to classification, if you're getting we'll talk about today.",
+    "start_ms": 165880,
+    "end_ms": 170080,
+    "duration_ms": 4200,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 170.08,
+    "text": "This is the thing of clustering. We're having again a bunch of data, but I don't have the labels.",
+    "start_ms": 170080,
+    "end_ms": 173680,
+    "duration_ms": 3600,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 173.68,
+    "text": "I don't know if this is a... You know a spam or not a spam email but i like to see is there a space where they cluster together where maybe the spam emails are in one cluster and they're not spam or the other.",
+    "start_ms": 173680,
+    "end_ms": 182628,
+    "duration_ms": 8948,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 183.512,
+    "text": "So you're called unlabeled or unsupervised learning tasks. But again, today we're going to focus on the supervised domain.",
+    "start_ms": 183512,
+    "end_ms": 189112,
+    "duration_ms": 5600,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 190.232,
+    "text": "Does there more branch of machine learning, which we're not coming in this class, which is when we work from reward?",
+    "start_ms": 190232,
+    "end_ms": 196232,
+    "duration_ms": 6000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 196.28,
+    "text": "So, like, how humans learn? So you do a bunch of stuff, and the other day you get a grade, like, hmm, I should have studied harder, so I go back and learn some more.",
+    "start_ms": 196280,
+    "end_ms": 204541,
+    "duration_ms": 8261,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 204.541,
+    "text": "Right? This makes you with the hardest ways to learn.",
+    "start_ms": 204541,
+    "end_ms": 206696,
+    "duration_ms": 2155,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 207.32,
+    "text": "Much better when someone says here's what to do, here's what to do, this is the supervised setting.",
+    "start_ms": 207320,
+    "end_ms": 211320,
+    "duration_ms": 4000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 211.8,
+    "text": "Well, maybe someone says, look at this stuff and find something interesting.",
+    "start_ms": 211800,
+    "end_ms": 214600,
+    "duration_ms": 2800,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 215.064,
+    "text": "But when you're said, hey, do a bunch of things and then get some reward at the end?",
+    "start_ms": 215064,
+    "end_ms": 218664,
+    "duration_ms": 3600,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 218.968,
+    "text": "That's the hardest way to learn, but life is often like this.",
+    "start_ms": 218968,
+    "end_ms": 222008,
+    "duration_ms": 3040,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 222.008,
+    "text": "This is a whole family machine learning technique, so it'd become very popular, like AlphaGo for winning the famous Go versus Human Challenge.",
+    "start_ms": 222008,
+    "end_ms": 229608,
+    "duration_ms": 7600,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 230.104,
+    "text": "that use these kinds of techniques. So it's completely out of scope for this class so we're not going to cover that this semester but we will cover both of these.",
+    "start_ms": 230104,
+    "end_ms": 238132,
+    "duration_ms": 8028,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 238.872,
+    "text": "And today we're going to finish off our story of Supervisoring and this week we're going to focus on classification.",
+    "start_ms": 238872,
+    "end_ms": 244372,
+    "duration_ms": 5500,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 247.16,
+    "text": "Questions about this space? For those who are looking at the line, the slide has been highlighted.",
+    "start_ms": 247160,
+    "end_ms": 260432,
+    "duration_ms": 13272,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 260.432,
+    "text": "So rest this week, folks on classification. Alright, so this is it earlier.",
+    "start_ms": 260432,
+    "end_ms": 264424,
+    "duration_ms": 3992,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 264.76,
+    "text": "Everything we've done up to this point, we've got some features which we might have been transformations of our data, and some linear combination of those features was used to make some prediction for some why.",
+    "start_ms": 264760,
+    "end_ms": 274520,
+    "duration_ms": 9760,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 274.328,
+    "text": "Right. And critically, this why I went from negative infinity to infinity.",
+    "start_ms": 274328,
+    "end_ms": 279576,
+    "duration_ms": 5248,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 280.184,
+    "text": "Because we're predicting a line. or a plate. Things like predicting the bill.",
+    "start_ms": 280184,
+    "end_ms": 286968,
+    "duration_ms": 6784,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 288.408,
+    "text": "Preaching horsepower. percent turnover is probably number between zero and 100.",
+    "start_ms": 288408,
+    "end_ms": 296704,
+    "duration_ms": 8296,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 296.704,
+    "text": "We're going to modline as a line anyways. a while.",
+    "start_ms": 296704,
+    "end_ms": 302144,
+    "duration_ms": 5440,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 302.296,
+    "text": "What a mess. Today we're going to change the story.",
+    "start_ms": 302296,
+    "end_ms": 305992,
+    "duration_ms": 3696,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 305.88,
+    "text": "So, that was regression. Now we're going to do classification.",
+    "start_ms": 305880,
+    "end_ms": 308380,
+    "duration_ms": 2500,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 308.38,
+    "text": "This is a different learning problem. Again, we have quite a data features.",
+    "start_ms": 308380,
+    "end_ms": 312162,
+    "duration_ms": 3782,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 312.162,
+    "text": "So we have to convert our features to numbers, real numbers.",
+    "start_ms": 312162,
+    "end_ms": 315096,
+    "duration_ms": 2934,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 315.096,
+    "text": "We've already talked about how to take features like text or categories and make those into numbers.",
+    "start_ms": 315096,
+    "end_ms": 327096,
+    "duration_ms": 12000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 326.424,
+    "text": "Ah. Qualitative or kind of work with variables. Things like...",
+    "start_ms": 326424,
+    "end_ms": 334344,
+    "duration_ms": 7920,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 334.552,
+    "text": "Day of the week. You could have made that a number, but we might choose to model that as a category.",
+    "start_ms": 334552,
+    "end_ms": 339152,
+    "duration_ms": 4600,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 339.152,
+    "text": "There are seven days a week. Model the car, that's much harder to think of as a number.",
+    "start_ms": 339152,
+    "end_ms": 343936,
+    "duration_ms": 4784,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 343.936,
+    "text": "Hard to think how you would regress on predicting a model of a car.",
+    "start_ms": 343936,
+    "end_ms": 347336,
+    "duration_ms": 3400,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 348.184,
+    "text": "This is a classification problem. Which team won from presenter we're gonna talk about that today.",
+    "start_ms": 348184,
+    "end_ms": 354952,
+    "duration_ms": 6768,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 354.952,
+    "text": "So you have two teams in a basketball game and how can I figure out which team is gonna win that game.",
+    "start_ms": 354952,
+    "end_ms": 360792,
+    "duration_ms": 5840,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 360.792,
+    "text": "Right. Does A win or does B win? It's a Classical Problem.",
+    "start_ms": 360792,
+    "end_ms": 366728,
+    "duration_ms": 5936,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 367.288,
+    "text": "It's kind of a summary of this week. We're going to take our new American book features.",
+    "start_ms": 367288,
+    "end_ms": 370888,
+    "duration_ms": 3600,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 371.512,
+    "text": "We're going to learn to model the probability of the classes.",
+    "start_ms": 371512,
+    "end_ms": 375112,
+    "duration_ms": 3600,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 375.48,
+    "text": "Using this function here, it's sigmoid, which we'll talk a lot about today.",
+    "start_ms": 375480,
+    "end_ms": 379480,
+    "duration_ms": 4000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 380.088,
+    "text": "of someone in your model. we're going to keep using our linear modeling technique because it's still very powerful.",
+    "start_ms": 380088,
+    "end_ms": 384936,
+    "duration_ms": 4848,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 386.488,
+    "text": "Then we're going to use these P's and we're going to define a decision roll.",
+    "start_ms": 386488,
+    "end_ms": 389728,
+    "duration_ms": 3240,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 389.728,
+    "text": "We'll do that on Thursday. So, I'll help us decide.",
+    "start_ms": 389728,
+    "end_ms": 392088,
+    "duration_ms": 2360,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 392.344,
+    "text": "Based on the probability... What is the output class? Spam?",
+    "start_ms": 392344,
+    "end_ms": 396690,
+    "duration_ms": 4346,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 396.69,
+    "text": "Is it not spam? The teammate winner or the team B win?",
+    "start_ms": 396690,
+    "end_ms": 399944,
+    "duration_ms": 3254,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 403.544,
+    "text": "That's the goal for this week and again today we're going to focus on this.",
+    "start_ms": 403544,
+    "end_ms": 406544,
+    "duration_ms": 3000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 407.448,
+    "text": "I pasted in a little bit of this so if we have time to talk about it but my guess is this will be Tuesday.",
+    "start_ms": 407448,
+    "end_ms": 412448,
+    "duration_ms": 5000,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 413.144,
+    "text": "We'll just do this today. So we're interested in predicting some kind of Roku variable.",
+    "start_ms": 413144,
+    "end_ms": 419912,
+    "duration_ms": 6768,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 420.984,
+    "text": "So response variable is still called Y, but now it's going to be a 0-1 thing.",
+    "start_ms": 420984,
+    "end_ms": 424984,
+    "duration_ms": 4000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 425.464,
+    "text": "In this class, we're going to focus on two classes.",
+    "start_ms": 425464,
+    "end_ms": 428464,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 429.72,
+    "text": "Spam or not spam. techniques we introduce you could generalize to multiple classes and I'll talk about it just briefly in a moment.",
+    "start_ms": 429720,
+    "end_ms": 435884,
+    "duration_ms": 6164,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 440.728,
+    "text": "Yeah, so we can take these techniques and extend them to multi-class classification.",
+    "start_ms": 440728,
+    "end_ms": 444728,
+    "duration_ms": 4000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 445.4,
+    "text": "We agree to have an lecture on neural networks and maybe in that lecture we can briefly talk about how the things we cover in this class, like I said, this kind of a baby neural net can be used to do multi-class classification.",
+    "start_ms": 445400,
+    "end_ms": 456080,
+    "duration_ms": 10680,
+    "word_count": 44,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 456.08,
+    "text": "But we're not going to focus on that for this week.",
+    "start_ms": 456080,
+    "end_ms": 458360,
+    "duration_ms": 2280,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 460.728,
+    "text": "These ideas also can be extended to structure prediction tasks.",
+    "start_ms": 460728,
+    "end_ms": 464088,
+    "duration_ms": 3360,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 464.088,
+    "text": "What is that? So think of classification as I'm predicting spam and not spam but I could also say predict the next word.",
+    "start_ms": 464088,
+    "end_ms": 471352,
+    "duration_ms": 7264,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 471.8,
+    "text": "I think I'm predicting a whole sequence of words. I'm sorry.",
+    "start_ms": 471800,
+    "end_ms": 476904,
+    "duration_ms": 5104,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 476.562,
+    "text": "to you an example of this? Same techniques we cover today will be the basis of techniques like chat GPT.",
+    "start_ms": 476562,
+    "end_ms": 483608,
+    "duration_ms": 7046,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 483.608,
+    "text": "In that same week, at the end of this class, we're going to talk about neural networks and we'll also give a tutorial on how chat GPT works.",
+    "start_ms": 483608,
+    "end_ms": 489608,
+    "duration_ms": 6000,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 490.52,
+    "text": "And that we based on. What we're going to cover today, or any classification.",
+    "start_ms": 490520,
+    "end_ms": 495016,
+    "duration_ms": 4496,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 496.856,
+    "text": "So pretty good building block for a lot of stuff in machine learning.",
+    "start_ms": 496856,
+    "end_ms": 499656,
+    "duration_ms": 2800,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 504.728,
+    "text": "More peace in the t-shirt. So our goal today is to predict something that's binary so it's a zero one.",
+    "start_ms": 504728,
+    "end_ms": 509244,
+    "duration_ms": 4516,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 509.244,
+    "text": "So our y hat is can either be zero or one.",
+    "start_ms": 509244,
+    "end_ms": 511728,
+    "duration_ms": 2484,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 512.248,
+    "text": "Just as a notational point of view, we use here in one in this class.",
+    "start_ms": 512248,
+    "end_ms": 515368,
+    "duration_ms": 3120,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 515.368,
+    "text": "You'll read in other papers or maybe when you're looking at some blog, people use plus one and minus one.",
+    "start_ms": 515368,
+    "end_ms": 521688,
+    "duration_ms": 6320,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 521.688,
+    "text": "It doesn't matter. You're just picking some definition of class A and class B, and we're going to pick a number for it.",
+    "start_ms": 521688,
+    "end_ms": 527128,
+    "duration_ms": 5440,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 528.184,
+    "text": "What will matter is we're going to use some mathematical tricks where this form zero and one get easier to work with.",
+    "start_ms": 528184,
+    "end_ms": 534984,
+    "duration_ms": 6800,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 540.824,
+    "text": "Alright, so here's our modeling process. The modeling process throughout this class probably won the big takeaways from hopefully you're getting this idea Works everywhere.",
+    "start_ms": 540824,
+    "end_ms": 549573,
+    "duration_ms": 8749,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 549.573,
+    "text": "So you're building your own networks doing advanced AI or just very simple classification problems.",
+    "start_ms": 549573,
+    "end_ms": 556391,
+    "duration_ms": 6818,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 556.391,
+    "text": "Same process. Okay, step one. Cheers Amaro! For regression we chose the linear model.",
+    "start_ms": 556391,
+    "end_ms": 563248,
+    "duration_ms": 6857,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 563.8,
+    "text": "We choose a loss and for regression we chose the squared loss.",
+    "start_ms": 563800,
+    "end_ms": 566957,
+    "duration_ms": 3157,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 566.957,
+    "text": "Sometimes you also looked at absolute loss. So, you did squared loss.",
+    "start_ms": 566957,
+    "end_ms": 570800,
+    "duration_ms": 3843,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 571.32,
+    "text": "Konami race. Amazing. We fit a model and we talked about doing, in fact, a lecture on solving only equations and then we ultimately concluded we'll use scikit-learn or gradient descent as our fitting procedures.",
+    "start_ms": 571320,
+    "end_ms": 584920,
+    "duration_ms": 13600,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 584.645,
+    "text": "is going to be true. For everything we do. We're not going to change that.",
+    "start_ms": 584645,
+    "end_ms": 591048,
+    "duration_ms": 6403,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 590.834,
+    "text": "then we had to evaluate the model. We had these things like r squared or residual one kind of analysis that we had before.",
+    "start_ms": 590834,
+    "end_ms": 597640,
+    "duration_ms": 6806,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 597.64,
+    "text": "These aren't going to work in our new modeling domain, so we'll talk about that now.",
+    "start_ms": 597640,
+    "end_ms": 600840,
+    "duration_ms": 3200,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 600.84,
+    "text": "All right, so our new domain, we have to answer each of these questions.",
+    "start_ms": 600840,
+    "end_ms": 603640,
+    "duration_ms": 2800,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 603.64,
+    "text": "What's the model? What's at a loss and then how do we evaluate it?",
+    "start_ms": 603640,
+    "end_ms": 607880,
+    "duration_ms": 4240,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 608.024,
+    "text": "Again, this is going to be for next lecture. That is the modeling process.",
+    "start_ms": 608024,
+    "end_ms": 613370,
+    "duration_ms": 5346,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 613.37,
+    "text": "Let's do it. The logistic regression of model. All right, there's an aside here and I want to spend a moment on this.",
+    "start_ms": 613370,
+    "end_ms": 619256,
+    "duration_ms": 5886,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 619.256,
+    "text": "So we call it regression. That's confusing because it's a classification model.",
+    "start_ms": 619256,
+    "end_ms": 623256,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 625.944,
+    "text": "My apologies this is just the terminology people picked. The regression it is called logistic regression because inside this model we still have that linear model like we used in regression before.",
+    "start_ms": 625944,
+    "end_ms": 636344,
+    "duration_ms": 10400,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 636.632,
+    "text": "We are doing classification with our logistic regression model. So.",
+    "start_ms": 636632,
+    "end_ms": 640732,
+    "duration_ms": 4100,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 640.984,
+    "text": "It is delay classification tasks that is our focus. Alright, so today we're going to play with basketball data.",
+    "start_ms": 640984,
+    "end_ms": 650024,
+    "duration_ms": 9040,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 650.024,
+    "text": "I am not a basketball fan, but today's going to be kind of fun because we're going to try to predict in a matchup of two teams which one will win.",
+    "start_ms": 650024,
+    "end_ms": 658304,
+    "duration_ms": 8280,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 658.648,
+    "text": "This is a supervised learning problem we actually have the labels.",
+    "start_ms": 658648,
+    "end_ms": 661542,
+    "duration_ms": 2894,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 661.542,
+    "text": "We're going to try to build a classifier. And we're going to do this based on the gold diff.",
+    "start_ms": 661542,
+    "end_ms": 665736,
+    "duration_ms": 4194,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 666.168,
+    "text": "But I first saw these slides and like wait a second, gold diff.",
+    "start_ms": 666168,
+    "end_ms": 668668,
+    "duration_ms": 2500,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 669.08,
+    "text": "This is Baskovore, right? Are there girls in basketball? They're all apparently.",
+    "start_ms": 669080,
+    "end_ms": 675392,
+    "duration_ms": 6312,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 675.8,
+    "text": "There are field goals like hola and that's football. Nope.",
+    "start_ms": 675800,
+    "end_ms": 678630,
+    "duration_ms": 2830,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 678.63,
+    "text": "A field goal is a actual technical term in basketball, which I learned earlier this week.",
+    "start_ms": 678630,
+    "end_ms": 683976,
+    "duration_ms": 5346,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 683.976,
+    "text": "Last week, a field goal is when a ball goes into the net for some process, other than a free throw.",
+    "start_ms": 683976,
+    "end_ms": 693176,
+    "duration_ms": 9200,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 695.704,
+    "text": "In this dataset, we have the percentage of field goals for the each team this is statistic you collect over the history of that team how often does it get balls into the net over the time to take actually shots at net right so team to get lots of balls into the net Relative or shots has a higher percentage.",
+    "start_ms": 695704,
+    "end_ms": 714376,
+    "duration_ms": 18672,
+    "word_count": 61,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 715.576,
+    "text": "So... The diff is the difference between the team's percentages.",
+    "start_ms": 715576,
+    "end_ms": 719984,
+    "duration_ms": 4408,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 722.68,
+    "text": "Let's think about that. This is a negative number. that mean?",
+    "start_ms": 722680,
+    "end_ms": 726592,
+    "duration_ms": 3912,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 730.136,
+    "text": "What's silly? Cleveland. Cleveland has a slightly higher percentage of things going in the net when they throw it at the hoop.",
+    "start_ms": 730136,
+    "end_ms": 740508,
+    "duration_ms": 10372,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 742.744,
+    "text": "So who's gonna win? Probably Cleveland. This here says Boston lost.",
+    "start_ms": 742744,
+    "end_ms": 751041,
+    "duration_ms": 8297,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 751.041,
+    "text": "It got a zero. Alright, so rough I can say the date.",
+    "start_ms": 751041,
+    "end_ms": 757320,
+    "duration_ms": 6279,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 757.32,
+    "text": "Each one of these rows is a game of pairing a matchup of two teams.",
+    "start_ms": 757320,
+    "end_ms": 762920,
+    "duration_ms": 5600,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 764.312,
+    "text": "We have Did Team A win. The Boston win. No.",
+    "start_ms": 764312,
+    "end_ms": 769792,
+    "duration_ms": 5480,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 769.816,
+    "text": "Boston won Boston loss and the gold diff was the difference in percentages that they came into this game with right statistics of each of the teams Who bets on sports?",
+    "start_ms": 769816,
+    "end_ms": 781664,
+    "duration_ms": 11848,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 781.664,
+    "text": "Don't answer that question. Uh, if you were a sports betting person, you might want to know, well, this team win.",
+    "start_ms": 781664,
+    "end_ms": 787071,
+    "duration_ms": 5407,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 787.071,
+    "text": "I can look at the Skull Diff. I'd like to...",
+    "start_ms": 787071,
+    "end_ms": 789664,
+    "duration_ms": 2593,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 789.88,
+    "text": "Classify? match up as whether or not T-Mail winner lose.",
+    "start_ms": 789880,
+    "end_ms": 794556,
+    "duration_ms": 4676,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 796.152,
+    "text": "We're not doing point spread. That would be a Russian problem.",
+    "start_ms": 796152,
+    "end_ms": 798652,
+    "duration_ms": 2500,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 799.0,
+    "text": "He was trying to side, teammate win or lose. want to say for this.",
+    "start_ms": 799000,
+    "end_ms": 812844,
+    "duration_ms": 13844,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 812.844,
+    "text": "Let's do a demo. Let's be fun demo. We'll play this data.",
+    "start_ms": 812844,
+    "end_ms": 818728,
+    "duration_ms": 5884,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 819.416,
+    "text": "There's no book here so I've deladated it. The actual data has a lot more in it.",
+    "start_ms": 819416,
+    "end_ms": 823193,
+    "duration_ms": 3777,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 823.193,
+    "text": "So if you are a you are a basketball fan.",
+    "start_ms": 823193,
+    "end_ms": 825416,
+    "duration_ms": 2223,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 825.912,
+    "text": "You can play with this data and get a better sense of Things you could do with it.",
+    "start_ms": 825912,
+    "end_ms": 832075,
+    "duration_ms": 6163,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 832.075,
+    "text": "I'm going to just start with a really simple is 29 comps a lot of features.",
+    "start_ms": 832075,
+    "end_ms": 836905,
+    "duration_ms": 4830,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 836.905,
+    "text": "Again, I'm going to start the really simple version of this where I have the matchup I have team name the opposing team's name so Boston Celtics versus the Cleveland Cataliers.",
+    "start_ms": 836905,
+    "end_ms": 846264,
+    "duration_ms": 9359,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 846.264,
+    "text": "That was Cleveland, good job. And Boston lost. So it was a loss.",
+    "start_ms": 846264,
+    "end_ms": 850384,
+    "duration_ms": 4120,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 850.384,
+    "text": "I put an L there just so we have an extra either a easier.",
+    "start_ms": 850384,
+    "end_ms": 853584,
+    "duration_ms": 3200,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 854.2,
+    "text": "and the gold dip. So, yeah. Let's plot it. So I'm using Goldift to predict one.",
+    "start_ms": 854200,
+    "end_ms": 864462,
+    "duration_ms": 10262,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 864.462,
+    "text": "What do I see here? What's the example of? What plotting failure?",
+    "start_ms": 864462,
+    "end_ms": 871464,
+    "duration_ms": 7002,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 871.48,
+    "text": "I'm overplating, right? I have way too much stuff on top of everything else.",
+    "start_ms": 871480,
+    "end_ms": 874680,
+    "duration_ms": 3200,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 875.128,
+    "text": "Kind of mouse over. Interactive plots we can see what's going on here.",
+    "start_ms": 875128,
+    "end_ms": 878408,
+    "duration_ms": 3280,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 879.832,
+    "text": "Well, look at these points in a moment. We can improve this plot how could we improve it?",
+    "start_ms": 879832,
+    "end_ms": 884008,
+    "duration_ms": 4176,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 885.816,
+    "text": "What could I do? You're right. Oh yeah, so we're gonna play for past that's good.",
+    "start_ms": 885816,
+    "end_ms": 895368,
+    "duration_ms": 9552,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 895.368,
+    "text": "Uh, we'll try it real quickly. See what that looks like.",
+    "start_ms": 895368,
+    "end_ms": 897464,
+    "duration_ms": 2096,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 904.12,
+    "text": "Something's going on, but it's really hard to see. So another trick that's often used is jittering.",
+    "start_ms": 904120,
+    "end_ms": 909072,
+    "duration_ms": 4952,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 909.072,
+    "text": "I'm just going to be done with a strip plot, which automatically jitter a categorical data.",
+    "start_ms": 909072,
+    "end_ms": 914072,
+    "duration_ms": 5000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 914.072,
+    "text": "So this just takes my categories and puts them on the way access, win and lose.",
+    "start_ms": 914072,
+    "end_ms": 917072,
+    "duration_ms": 3000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 917.56,
+    "text": "Hey And then cheers data. This is not numerical. I'm in this first post lecture, I'm going to try to cheat.",
+    "start_ms": 917560,
+    "end_ms": 925710,
+    "duration_ms": 8150,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 925.71,
+    "text": "We know how to do regression. Suppose all I had was regression.",
+    "start_ms": 925710,
+    "end_ms": 929039,
+    "duration_ms": 3329,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 929.039,
+    "text": "Can I model this using regression? So we do instead.",
+    "start_ms": 929039,
+    "end_ms": 933384,
+    "duration_ms": 4345,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 933.528,
+    "text": "Is it gonna plot the data? with the label zero and one.",
+    "start_ms": 933528,
+    "end_ms": 936959,
+    "duration_ms": 3431,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 936.959,
+    "text": "I'm jitter the labels so i'm i'm just that's in the way so i can see it in a plot right.",
+    "start_ms": 936959,
+    "end_ms": 942248,
+    "duration_ms": 5289,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 942.488,
+    "text": "This is still overplotting here but we have a better picture of what's going on.",
+    "start_ms": 942488,
+    "end_ms": 945488,
+    "duration_ms": 3000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 945.488,
+    "text": "There's a lot of data here and then it kind of on the tails uh...",
+    "start_ms": 945488,
+    "end_ms": 948488,
+    "duration_ms": 3000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 948.824,
+    "text": "There's some few few outliers. How did I jitter it?",
+    "start_ms": 948824,
+    "end_ms": 954912,
+    "duration_ms": 6088,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 954.912,
+    "text": "I just added some noise. I'm going to leave the data in this original form here and I'm going to fit a regression model to it.",
+    "start_ms": 954912,
+    "end_ms": 964536,
+    "duration_ms": 9624,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 966.616,
+    "text": "That'll give me a model we know how to do regression so you can apply regression right here we have labels the predicting zero and one.",
+    "start_ms": 966616,
+    "end_ms": 972936,
+    "duration_ms": 6320,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 972.936,
+    "text": "What if we just treated those as real numbers beyond numbers?",
+    "start_ms": 972936,
+    "end_ms": 976936,
+    "duration_ms": 4000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 978.104,
+    "text": "Let's do that. So we'd fit a least squares model directly to this zero one.",
+    "start_ms": 978104,
+    "end_ms": 983784,
+    "duration_ms": 5680,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 984.312,
+    "text": "Feel this one column. Okay, whether that teammate won. Thank you for your lecture.",
+    "start_ms": 984312,
+    "end_ms": 992392,
+    "duration_ms": 8080,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 992.568,
+    "text": "So get this picture. What's going on in this picture?",
+    "start_ms": 992568,
+    "end_ms": 996744,
+    "duration_ms": 4176,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 997.592,
+    "text": "I have a line. And in this range, it's actually not bad, right?",
+    "start_ms": 997592,
+    "end_ms": 1002364,
+    "duration_ms": 4772,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1002.776,
+    "text": "Between 0 and 1. think of this as a probability.",
+    "start_ms": 1002776,
+    "end_ms": 1006152,
+    "duration_ms": 3376,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1007.064,
+    "text": "Except that when we go a little bit to the right.",
+    "start_ms": 1007064,
+    "end_ms": 1009064,
+    "duration_ms": 2000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1009.656,
+    "text": "We get numbers of like 1.7. Team A REALLY ONE!",
+    "start_ms": 1009656,
+    "end_ms": 1015720,
+    "duration_ms": 6064,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1016.664,
+    "text": "Not really a probability. Let's start for the small desk.",
+    "start_ms": 1016664,
+    "end_ms": 1021224,
+    "duration_ms": 4560,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1022.904,
+    "text": "the Ducuracity, some extreme outliers, Atlanta Hawks. You tied jazz or Solution to Wizards.",
+    "start_ms": 1022904,
+    "end_ms": 1028936,
+    "duration_ms": 6032,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1029.752,
+    "text": "Yeah, so you can these points we expect these extreme points where TMA has a really high percent rate relative to TnB, right?",
+    "start_ms": 1029752,
+    "end_ms": 1038752,
+    "duration_ms": 9000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1038.752,
+    "text": "So we expect these to be, you know, pure, these down here, this TMA is pretty bad, right?",
+    "start_ms": 1038752,
+    "end_ms": 1044752,
+    "duration_ms": 6000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1044.824,
+    "text": "It is like there. Dallas Mavericks. Phoenix Suns New York Nix I don't know anything about basketball, but they're probably not.",
+    "start_ms": 1044824,
+    "end_ms": 1053544,
+    "duration_ms": 8720,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1053.72,
+    "text": "Um. Okay. We have a solution what is wrong with the solution again.",
+    "start_ms": 1053720,
+    "end_ms": 1059216,
+    "duration_ms": 5496,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1059.864,
+    "text": "This is what we already know how to do. As she's linear aggression.",
+    "start_ms": 1059864,
+    "end_ms": 1064328,
+    "duration_ms": 4464,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1071.96,
+    "text": "It's again, we say it's negative numbers are real probabilities, positive numbers are, you know, positive numbers greater than one or not probabilities.",
+    "start_ms": 1071960,
+    "end_ms": 1078080,
+    "duration_ms": 6120,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1079.512,
+    "text": "Do I want the shape? Who do I want? We'll figure that out a second.",
+    "start_ms": 1079512,
+    "end_ms": 1086312,
+    "duration_ms": 6800,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1086.312,
+    "text": "Alright, so this is our first starting point. How did we do here?",
+    "start_ms": 1086312,
+    "end_ms": 1090376,
+    "duration_ms": 4064,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1090.162,
+    "text": "we have things outside the range. We don't know how to interpret it.",
+    "start_ms": 1090162,
+    "end_ms": 1093412,
+    "duration_ms": 3250,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1093.412,
+    "text": "We could threshold it, and that would give us something that like stops at one, stops at zero.",
+    "start_ms": 1093412,
+    "end_ms": 1097992,
+    "duration_ms": 4580,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1097.992,
+    "text": "We want to try to build a better model. In day 8 we did this weird thing which is actually pretty clever in retrospect.",
+    "start_ms": 1097992,
+    "end_ms": 1110648,
+    "duration_ms": 12656,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1110.648,
+    "text": "We said let's take our data and rather than fit a line because we don't yet know how to fit a line in this at this point in day 8.",
+    "start_ms": 1110648,
+    "end_ms": 1116648,
+    "duration_ms": 6000,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1116.648,
+    "text": "We said what we'll do instead is we'll break our data into these little bins like this.",
+    "start_ms": 1116648,
+    "end_ms": 1120648,
+    "duration_ms": 4000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1120.984,
+    "text": "And in each of these bins, we'll compute the average of all this data, and then we'll give us some point.",
+    "start_ms": 1120984,
+    "end_ms": 1124984,
+    "duration_ms": 4000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1127.48,
+    "text": "Yellows can see better. So there's some point here. Do that again here and you know, the bin here and so on.",
+    "start_ms": 1127480,
+    "end_ms": 1134637,
+    "duration_ms": 7157,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1134.637,
+    "text": "We'll connect all these points. We'll get some line that goes like that.",
+    "start_ms": 1134637,
+    "end_ms": 1141480,
+    "duration_ms": 6843,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1141.373,
+    "text": "what's what's the value within some interval. Right, we got this line here.",
+    "start_ms": 1141373,
+    "end_ms": 1145800,
+    "duration_ms": 4427,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1146.168,
+    "text": "based on our averages and that is actually pretty close to the regression line that we get if we saw off release resurrection.",
+    "start_ms": 1146168,
+    "end_ms": 1151168,
+    "duration_ms": 5000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1152.248,
+    "text": "What if we do something like that here? Let's look at that.",
+    "start_ms": 1152248,
+    "end_ms": 1156680,
+    "duration_ms": 4432,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1164.632,
+    "text": "I'm going to just think kind of cool. Pandas has this function called cut, which is going to take my goal depth value.",
+    "start_ms": 1164632,
+    "end_ms": 1170072,
+    "duration_ms": 5440,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1170.264,
+    "text": "and break it into equally sized bins, 20 of them.",
+    "start_ms": 1170264,
+    "end_ms": 1173864,
+    "duration_ms": 3600,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1174.616,
+    "text": "That's gonna give me a lower-napped professional for those bins.",
+    "start_ms": 1174616,
+    "end_ms": 1177616,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1178.936,
+    "text": "So you look at my data now, I've created bins for each of the goals.",
+    "start_ms": 1178936,
+    "end_ms": 1182547,
+    "duration_ms": 3611,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1182.547,
+    "text": "So this is the bin that this goal diff is inside of.",
+    "start_ms": 1182547,
+    "end_ms": 1185436,
+    "duration_ms": 2889,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1185.436,
+    "text": "And there's 20 to you know unique kinds of bins that you can have.",
+    "start_ms": 1185436,
+    "end_ms": 1188936,
+    "duration_ms": 3500,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1190.936,
+    "text": "So cool, pandestive. pre-mortis, these are the bins. So I slice my data up into little bits.",
+    "start_ms": 1190936,
+    "end_ms": 1199464,
+    "duration_ms": 8528,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1201.912,
+    "text": "What do you want to do now? Because I want to take within each of these bins this data here and this data here and I'm going to compute an average.",
+    "start_ms": 1201912,
+    "end_ms": 1212096,
+    "duration_ms": 10184,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1212.096,
+    "text": "That's going to give me a number between 0 and 1, right?",
+    "start_ms": 1212096,
+    "end_ms": 1214096,
+    "duration_ms": 2000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1214.968,
+    "text": "Maybe it's like right here. I do that for this pin.",
+    "start_ms": 1214968,
+    "end_ms": 1217968,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1218.136,
+    "text": "It's gonna compute an average, give me a number that's like, well, there's no blue here, so it's somewhere here, right?",
+    "start_ms": 1218136,
+    "end_ms": 1222636,
+    "duration_ms": 4500,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1224.536,
+    "text": "Let's do that. So we compute the center. Senator Beachpin.",
+    "start_ms": 1224536,
+    "end_ms": 1231912,
+    "duration_ms": 7376,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1232.504,
+    "text": "By taking the left and the right, I'm going to say all the data is going to get a center for its bin attached to it.",
+    "start_ms": 1232504,
+    "end_ms": 1238331,
+    "duration_ms": 5827,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1238.331,
+    "text": "That's going to be group all the data inside this bin into one thing.",
+    "start_ms": 1238331,
+    "end_ms": 1241927,
+    "duration_ms": 3596,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1241.927,
+    "text": "I'm going to group by they all share the same bin center.",
+    "start_ms": 1241927,
+    "end_ms": 1244184,
+    "duration_ms": 2257,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1245.432,
+    "text": "Alright, so I'm going to group by the bin center.",
+    "start_ms": 1245432,
+    "end_ms": 1247432,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1247.896,
+    "text": "In computer mean, other in each bin. Have a win rate for each of my bins.",
+    "start_ms": 1247896,
+    "end_ms": 1257400,
+    "duration_ms": 9504,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1257.816,
+    "text": "and the center of the bin. What do you think this looks like?",
+    "start_ms": 1257816,
+    "end_ms": 1263976,
+    "duration_ms": 6160,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1271.224,
+    "text": "That's not bad, let me make this a bit bigger.",
+    "start_ms": 1271224,
+    "end_ms": 1273224,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1279.736,
+    "text": "It's too big. Sorry. There you go. It's pretty good.",
+    "start_ms": 1279736,
+    "end_ms": 1286368,
+    "duration_ms": 6632,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1286.424,
+    "text": "What do we get here? You can't see it's all I'm drawing time for the two.",
+    "start_ms": 1286424,
+    "end_ms": 1290856,
+    "duration_ms": 4432,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1291.128,
+    "text": "I'll let you. Alright, so here's my line. You're that.",
+    "start_ms": 1291128,
+    "end_ms": 1297056,
+    "duration_ms": 5928,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1297.752,
+    "text": "It is between 0 and 1. to curve. It's what it looks like right here.",
+    "start_ms": 1297752,
+    "end_ms": 1306504,
+    "duration_ms": 8752,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1309.208,
+    "text": "In this area here I'm kind of sure the probability of teammate winning is you know transitioning.",
+    "start_ms": 1309208,
+    "end_ms": 1314208,
+    "duration_ms": 5000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1315.064,
+    "text": "She may never wins over here. No win. And then, TMA seems to always win over here.",
+    "start_ms": 1315064,
+    "end_ms": 1323008,
+    "duration_ms": 7944,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1323.008,
+    "text": "Always wins. And then I have this smooth transition here.",
+    "start_ms": 1323008,
+    "end_ms": 1330376,
+    "duration_ms": 7368,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1337.24,
+    "text": "That's where I want to model. So I want to build a model that captures this behavior.",
+    "start_ms": 1337240,
+    "end_ms": 1341064,
+    "duration_ms": 3824,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1342.456,
+    "text": "Does that sort of reflect what I see in my data, this proportion?",
+    "start_ms": 1342456,
+    "end_ms": 1345736,
+    "duration_ms": 3280,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1356.504,
+    "text": "So it's between 0 and 1, we check that off, and it's not linear, it's a curve.",
+    "start_ms": 1356504,
+    "end_ms": 1360104,
+    "duration_ms": 3600,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1360.504,
+    "text": "So we're going to try to build a model of this curve.",
+    "start_ms": 1360504,
+    "end_ms": 1363004,
+    "duration_ms": 2500,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1365.688,
+    "text": "What we were doing in each of these steps again is we were computing the average of the labels inside of that bin so number of ones.",
+    "start_ms": 1365688,
+    "end_ms": 1373288,
+    "duration_ms": 7600,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1373.656,
+    "text": "times one and number zero times zero. Which is really just the proportion of what's right?",
+    "start_ms": 1373656,
+    "end_ms": 1382536,
+    "duration_ms": 8880,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1382.872,
+    "text": "Inside that bin. The proportion of ones inside that bin is what?",
+    "start_ms": 1382872,
+    "end_ms": 1387656,
+    "duration_ms": 4784,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1389.592,
+    "text": "So probably a y equals one. A proximate is my empirical estimate of the probability of y equals 1 inside that bit.",
+    "start_ms": 1389592,
+    "end_ms": 1395416,
+    "duration_ms": 5824,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1395.96,
+    "text": "So this is a pretty good guess for a model of the probability.",
+    "start_ms": 1395960,
+    "end_ms": 1399960,
+    "duration_ms": 4000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1400.312,
+    "text": "at each of these builds. But I went to probability at every point for every possible goal diff.",
+    "start_ms": 1400312,
+    "end_ms": 1406708,
+    "duration_ms": 6396,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1406.708,
+    "text": "What's the probability the team able win? It's my own goal here.",
+    "start_ms": 1406708,
+    "end_ms": 1410336,
+    "duration_ms": 3628,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1414.008,
+    "text": "So, I want to compute the probability that y equals 1 for...",
+    "start_ms": 1414008,
+    "end_ms": 1418008,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1418.808,
+    "text": "A particular value of x. So you give me an x or any x.",
+    "start_ms": 1418808,
+    "end_ms": 1422141,
+    "duration_ms": 3333,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1422.141,
+    "text": "I should really give you this p. Right, that probability.",
+    "start_ms": 1422141,
+    "end_ms": 1426728,
+    "duration_ms": 4587,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1427.32,
+    "text": "So we're going to model the probability. The data point belonging to Class 1.",
+    "start_ms": 1427320,
+    "end_ms": 1431624,
+    "duration_ms": 4304,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1437.016,
+    "text": "We have a problem. So our probability curve is non-linear, right?",
+    "start_ms": 1437016,
+    "end_ms": 1440436,
+    "duration_ms": 3420,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1440.436,
+    "text": "And we only have this linear function that we know how to so far in this class to model.",
+    "start_ms": 1440436,
+    "end_ms": 1445552,
+    "duration_ms": 5116,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1447.864,
+    "text": "In the past, we transformed our data to deal with nonlinearities and we've transformed both X and Y when building plots.",
+    "start_ms": 1447864,
+    "end_ms": 1454864,
+    "duration_ms": 7000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1456.6,
+    "text": "So let's think about transforming Y. What a linearized relationship.",
+    "start_ms": 1456600,
+    "end_ms": 1462380,
+    "duration_ms": 5780,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1462.38,
+    "text": "We're gonna fit a linear model. Let's see on goal.",
+    "start_ms": 1462380,
+    "end_ms": 1464220,
+    "duration_ms": 1840,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1465.24,
+    "text": "Let me be able to transform the relationship back to get this curve.",
+    "start_ms": 1465240,
+    "end_ms": 1468440,
+    "duration_ms": 3200,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1471.48,
+    "text": "The same process here. But unfortunately this shape this curvy scene sort of doesn't match our bulge tag.",
+    "start_ms": 1471480,
+    "end_ms": 1478168,
+    "duration_ms": 6688,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1480.088,
+    "text": "So, can't use our existing techniques. Instead, we can look at something a little bit different.",
+    "start_ms": 1480088,
+    "end_ms": 1489160,
+    "duration_ms": 9072,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1489.16,
+    "text": "So our end goal here was again to the side.",
+    "start_ms": 1489160,
+    "end_ms": 1492160,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1492.216,
+    "text": "Win or lose, like technically I don't need the probability I might use that in my gambling, but ultimately my goal and classification is predict.",
+    "start_ms": 1492216,
+    "end_ms": 1500816,
+    "duration_ms": 8600,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1500.816,
+    "text": "Win or lose have to make a decision. And when you're faced with making a decision about probability.",
+    "start_ms": 1500816,
+    "end_ms": 1507056,
+    "duration_ms": 6240,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1508.152,
+    "text": "Use the odds. Right, what are the odds? The odds are the probability of winning.",
+    "start_ms": 1508152,
+    "end_ms": 1513896,
+    "duration_ms": 5744,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1514.52,
+    "text": "What are they probably of losing? So maybe we can try to model the odds.",
+    "start_ms": 1514520,
+    "end_ms": 1522696,
+    "duration_ms": 8176,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1525.72,
+    "text": "Let's try to do that. So, my plot, this odds curve.",
+    "start_ms": 1525720,
+    "end_ms": 1532808,
+    "duration_ms": 7088,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1533.336,
+    "text": "Right. For different gold-dift values. I get something looks like this, and I can using the data I had from before.",
+    "start_ms": 1533336,
+    "end_ms": 1539856,
+    "duration_ms": 6520,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1539.856,
+    "text": "Right, so these bin centers. Right. How would I linearize that?",
+    "start_ms": 1539856,
+    "end_ms": 1545096,
+    "duration_ms": 5240,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1547.448,
+    "text": "So, but if I see this curve... I want to make it look like this curve.",
+    "start_ms": 1547448,
+    "end_ms": 1551560,
+    "duration_ms": 4112,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1552.376,
+    "text": "I take the lock. The log of the odds is a straight line.",
+    "start_ms": 1552376,
+    "end_ms": 1557336,
+    "duration_ms": 4960,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1560.984,
+    "text": "My x-V is this cold if? This is my odds that odds ratio.",
+    "start_ms": 1560984,
+    "end_ms": 1565924,
+    "duration_ms": 4940,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1565.924,
+    "text": "If I plot the odds ratio, I go to figure this curve.",
+    "start_ms": 1565924,
+    "end_ms": 1568124,
+    "duration_ms": 2200,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1568.124,
+    "text": "If I take the log of it, I give this curve.",
+    "start_ms": 1568124,
+    "end_ms": 1570264,
+    "duration_ms": 2140,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1572.568,
+    "text": "Straight line. This, because of the straight line, we can use...",
+    "start_ms": 1572568,
+    "end_ms": 1584248,
+    "duration_ms": 11680,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1585.048,
+    "text": "Our linear combination of features from before. Right, so this line here...",
+    "start_ms": 1585048,
+    "end_ms": 1590824,
+    "duration_ms": 5776,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1590.808,
+    "text": "I could model this line as Z. It's gonna be more Z.",
+    "start_ms": 1590808,
+    "end_ms": 1596552,
+    "duration_ms": 5744,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1597.176,
+    "text": "Here. And I can model that. there a linear combination of features?",
+    "start_ms": 1597176,
+    "end_ms": 1602792,
+    "duration_ms": 5616,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1603.768,
+    "text": "So. I could try to predict the law of gods using linear regression.",
+    "start_ms": 1603768,
+    "end_ms": 1609240,
+    "duration_ms": 5472,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1612.248,
+    "text": "What is something? So, she is my log-aids. and z could be theta transpose or doing x.",
+    "start_ms": 1612248,
+    "end_ms": 1621624,
+    "duration_ms": 9376,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1622.328,
+    "text": "Oops X transpose theta. Hey. So now... I look here.",
+    "start_ms": 1622328,
+    "end_ms": 1636488,
+    "duration_ms": 14160,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1636.152,
+    "text": "I have something I can use. Transfer the data. Cause this...",
+    "start_ms": 1636152,
+    "end_ms": 1641856,
+    "duration_ms": 5704,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1650.776,
+    "text": "Let's drive this and it will stop and take a moment for questions.",
+    "start_ms": 1650776,
+    "end_ms": 1653776,
+    "duration_ms": 3000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1654.296,
+    "text": "Alright, so I have my x. and my law gods, I say it's a straight line.",
+    "start_ms": 1654296,
+    "end_ms": 1659225,
+    "duration_ms": 4929,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1659.225,
+    "text": "So I'm going to model that as a linear. function is the Log-Ods right here.",
+    "start_ms": 1659225,
+    "end_ms": 1664744,
+    "duration_ms": 5519,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1666.648,
+    "text": "My goal is to get a model for P. So what do I need to do?",
+    "start_ms": 1666648,
+    "end_ms": 1671112,
+    "duration_ms": 4464,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1672.632,
+    "text": "I got P. I got my linear model. They saw.",
+    "start_ms": 1672632,
+    "end_ms": 1677536,
+    "duration_ms": 4904,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1678.168,
+    "text": "Let's try that. So to get rid of the log on this side, I take the exponent of both sides.",
+    "start_ms": 1678168,
+    "end_ms": 1686040,
+    "duration_ms": 7872,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1686.04,
+    "text": "X-Purr. Step one. Now I just need to solve for P, which I'm going to try to do on slide.",
+    "start_ms": 1686040,
+    "end_ms": 1691872,
+    "duration_ms": 5832,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1691.872,
+    "text": "Here we go. Eh? So I'll do... P. equals 1 minus p times E.",
+    "start_ms": 1691872,
+    "end_ms": 1704008,
+    "duration_ms": 12136,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1703.736,
+    "text": "X transpose theta. I'll go and multiply this through. e x transpose theta Times.",
+    "start_ms": 1703736,
+    "end_ms": 1715200,
+    "duration_ms": 11464,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1716.952,
+    "text": "PEX transpose data. How do I do? Bring these piece together.",
+    "start_ms": 1716952,
+    "end_ms": 1724296,
+    "duration_ms": 7344,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1724.76,
+    "text": "P. It's Peter Wings, I brought this to you on this side.",
+    "start_ms": 1724760,
+    "end_ms": 1729128,
+    "duration_ms": 4368,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1730.648,
+    "text": "So, please here. Peace. One Plus I transpose theta. equals X transpose beta.",
+    "start_ms": 1730648,
+    "end_ms": 1750280,
+    "duration_ms": 19632,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1751.448,
+    "text": "So now what? Put it right here. I got p equals You transpose data divided by I'll just get back over here.",
+    "start_ms": 1751448,
+    "end_ms": 1766312,
+    "duration_ms": 14864,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1767.32,
+    "text": "Goodbye. One Plus e x transpose theta So it looked like something.",
+    "start_ms": 1767320,
+    "end_ms": 1778120,
+    "duration_ms": 10800,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1779.0,
+    "text": "Just doing some algebra. If I most buy the new Rader and the denominator, bye.",
+    "start_ms": 1779000,
+    "end_ms": 1785680,
+    "duration_ms": 6680,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1788.568,
+    "text": "here. Coming to multiply both sides by E. that What will happen?",
+    "start_ms": 1788568,
+    "end_ms": 1798196,
+    "duration_ms": 9628,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1798.196,
+    "text": "So multiply this times this. gonna get... to have our next slide so we're still doing it.",
+    "start_ms": 1798196,
+    "end_ms": 1804040,
+    "duration_ms": 5844,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1804.248,
+    "text": "So, I won't buy this. This time's this, I get one.",
+    "start_ms": 1804248,
+    "end_ms": 1810968,
+    "duration_ms": 6720,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1811.32,
+    "text": "And we'll play this and do it in the denominator as well.",
+    "start_ms": 1811320,
+    "end_ms": 1813320,
+    "duration_ms": 2000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1814.04,
+    "text": "I'm going to get this turns into one and this one turns into e to the negative x transpose data.",
+    "start_ms": 1814040,
+    "end_ms": 1820840,
+    "duration_ms": 6800,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1825.272,
+    "text": "You don't believe me? You should try it again. We went from here.",
+    "start_ms": 1825272,
+    "end_ms": 1829096,
+    "duration_ms": 3824,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1828.888,
+    "text": "To hear. This is the model. Was it me? you here, this shape is called a sigmoid.",
+    "start_ms": 1828888,
+    "end_ms": 1843448,
+    "duration_ms": 14560,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1843.16,
+    "text": "It's often written as stigma. Simplit. Sometimes sigmoid function also sometimes called logistic function for logistic regression.",
+    "start_ms": 1843160,
+    "end_ms": 1851640,
+    "duration_ms": 8480,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1853.144,
+    "text": "That is this equation right here. We do one more thing.",
+    "start_ms": 1853144,
+    "end_ms": 1858828,
+    "duration_ms": 5684,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1858.828,
+    "text": "I'll just give you this on the side form. So we have sigma.",
+    "start_ms": 1858828,
+    "end_ms": 1866232,
+    "duration_ms": 7404,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1867.256,
+    "text": "Oh You equals 1 divided by 1 plus e to the negative t.",
+    "start_ms": 1867256,
+    "end_ms": 1877480,
+    "duration_ms": 10224,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1881.848,
+    "text": "That's my single function. This again. This part here is my model.",
+    "start_ms": 1881848,
+    "end_ms": 1890838,
+    "duration_ms": 8990,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1890.838,
+    "text": "So I now have the basic building block of a model.",
+    "start_ms": 1890838,
+    "end_ms": 1893944,
+    "duration_ms": 3106,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1894.392,
+    "text": "I can predict the probability P for any X that you give me.",
+    "start_ms": 1894392,
+    "end_ms": 1897892,
+    "duration_ms": 3500,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1899.864,
+    "text": "And I drive this from the log-outs. A linear model of the log-Its gives me this.",
+    "start_ms": 1899864,
+    "end_ms": 1905488,
+    "duration_ms": 5624,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1905.656,
+    "text": "Interesting model of P itself. So this is a logistic regression model.",
+    "start_ms": 1905656,
+    "end_ms": 1912392,
+    "duration_ms": 6736,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1913.912,
+    "text": "This is the probability of y equals 1 given x.",
+    "start_ms": 1913912,
+    "end_ms": 1916312,
+    "duration_ms": 2400,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1916.312,
+    "text": "This is this equation right here. And we remember it can expand this is a linear sum of our features.",
+    "start_ms": 1916312,
+    "end_ms": 1922600,
+    "duration_ms": 6288,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1923.128,
+    "text": "Linear communication with our features. Questions? You should this demo.",
+    "start_ms": 1923128,
+    "end_ms": 1945024,
+    "duration_ms": 21896,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1945.336,
+    "text": "When you're back to my demo for a second. Let me code this up.",
+    "start_ms": 1945336,
+    "end_ms": 1951432,
+    "duration_ms": 6096,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1952.6,
+    "text": "Thank you. I dropped it. Okay. That's one more. We can also fit the just aggression curve to the state of directly I won't do that right now.",
+    "start_ms": 1952600,
+    "end_ms": 1968775,
+    "duration_ms": 16175,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1970.136,
+    "text": "Come back on the floor. But that is what this black line looks like.",
+    "start_ms": 1970136,
+    "end_ms": 1973992,
+    "duration_ms": 3856,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1973.992,
+    "text": "So if I had fit this data using my logistic regression model from scikit learn, I would get exactly this black line that would closely mirror the line that we computed when we constructed those averages.",
+    "start_ms": 1973992,
+    "end_ms": 1986312,
+    "duration_ms": 12320,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1987.384,
+    "text": "But this black line, unlike those averages, can predict at any x not just for each of the bins.",
+    "start_ms": 1987384,
+    "end_ms": 1992664,
+    "duration_ms": 5280,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1993.912,
+    "text": "So that's the model I built up to this point.",
+    "start_ms": 1993912,
+    "end_ms": 1995912,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1998.04,
+    "text": "Okay, I want to quickly cover a few important points of the sigmoid function.",
+    "start_ms": 1998040,
+    "end_ms": 2002200,
+    "duration_ms": 4160,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2002.2,
+    "text": "You'll need these, I think, for some upcoming assignments. But...",
+    "start_ms": 2002200,
+    "end_ms": 2006200,
+    "duration_ms": 4000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2007.0,
+    "text": "The Pre- Derivable using algebra i'm just going to state them so you have them the one that's most important you do need to know well for this class and in life is that this sigmoid function takes in anything any real number Right, so it maps a regression problem.",
+    "start_ms": 2007000,
+    "end_ms": 2027472,
+    "duration_ms": 20472,
+    "word_count": 50,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2028.184,
+    "text": "into a thing between zero and one a probability. This is a very standard way to take something that is not a probability and turn it into a probability.",
+    "start_ms": 2028184,
+    "end_ms": 2038644,
+    "duration_ms": 10460,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2042.584,
+    "text": "It has a few important properties. So if I take 1 minus, so 1 minus p can be written, this is 1 minus sigma of t, and we're sigma t is modeling p, so 1 minus p for example, can be written as sigma of negative t.",
+    "start_ms": 2042584,
+    "end_ms": 2055144,
+    "duration_ms": 12560,
+    "word_count": 47,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2056.888,
+    "text": "The symmetry. It's inverse, what we derived is the law gods.",
+    "start_ms": 2056888,
+    "end_ms": 2062110,
+    "duration_ms": 5222,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2062.11,
+    "text": "That's why we built the thing in the first place, based on law gods.",
+    "start_ms": 2062110,
+    "end_ms": 2066152,
+    "duration_ms": 4042,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2067.544,
+    "text": "I don't think you need to know that for this class anymore, but we used to use the derivative of the sigmoid to actually implement gradient descent.",
+    "start_ms": 2067544,
+    "end_ms": 2074044,
+    "duration_ms": 6500,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2074.044,
+    "text": "So if you did want to implement gradient descent by hand, you would use this property that I can take the derivative of this function as this really nice simple form.",
+    "start_ms": 2074044,
+    "end_ms": 2082044,
+    "duration_ms": 8000,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2082.552,
+    "text": "And CS189 will likely do that, so it's good to know this extra identity.",
+    "start_ms": 2082552,
+    "end_ms": 2086872,
+    "duration_ms": 4320,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2088.792,
+    "text": "That's a signal. to bed. Oh, I just thought I had a link to uh...",
+    "start_ms": 2088792,
+    "end_ms": 2095784,
+    "duration_ms": 6992,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2098.104,
+    "text": "Sigma lead interaction. Let's just do a short quick. I want to do one more thing with the sick point.",
+    "start_ms": 2098104,
+    "end_ms": 2102824,
+    "duration_ms": 4720,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2103.768,
+    "text": "I want to show you what it looks like as I change the model here.",
+    "start_ms": 2103768,
+    "end_ms": 2106808,
+    "duration_ms": 3040,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2107.032,
+    "text": "So in this slide here, let me just write since I can.",
+    "start_ms": 2107032,
+    "end_ms": 2110032,
+    "duration_ms": 3000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2110.52,
+    "text": "Here I've chosen my model Y. equals 1 divided by 1 plus You Data 0.",
+    "start_ms": 2110520,
+    "end_ms": 2121320,
+    "duration_ms": 10800,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2122.104,
+    "text": "Negative minus beta. 1 times x. So this is my x axis, this is my y axis.",
+    "start_ms": 2122104,
+    "end_ms": 2129528,
+    "duration_ms": 7424,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2129.848,
+    "text": "Now, what is what happens when I change these data?",
+    "start_ms": 2129848,
+    "end_ms": 2131848,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2131.848,
+    "text": "So, you can intuition how this function works. So here I will take a...",
+    "start_ms": 2131848,
+    "end_ms": 2136456,
+    "duration_ms": 4608,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2137.496,
+    "text": "Tha-0. When I shift that left and right, that's my intercept.",
+    "start_ms": 2137496,
+    "end_ms": 2140496,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2140.496,
+    "text": "And now this weird model that's a sigmoid function of my linear model.",
+    "start_ms": 2140496,
+    "end_ms": 2144496,
+    "duration_ms": 4000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2144.44,
+    "text": "What happens when I move the intercept? What happens is the shape of this curve.",
+    "start_ms": 2144440,
+    "end_ms": 2149312,
+    "duration_ms": 4872,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2149.312,
+    "text": "But make the Data 0 bigger. Let's see what happens.",
+    "start_ms": 2149312,
+    "end_ms": 2152488,
+    "duration_ms": 3176,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2154.872,
+    "text": "Just one way. So bigger than a zero makes this curve shift.",
+    "start_ms": 2154872,
+    "end_ms": 2159192,
+    "duration_ms": 4320,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2160.568,
+    "text": "To the left and smaller that is your negative that is your makes a shift to the right.",
+    "start_ms": 2160568,
+    "end_ms": 2165048,
+    "duration_ms": 4480,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2165.592,
+    "text": "If I go right to zero... The bear hut. zero.",
+    "start_ms": 2165592,
+    "end_ms": 2174860,
+    "duration_ms": 9268,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2176.6,
+    "text": "goes right to the origin of this configuration is .5.",
+    "start_ms": 2176600,
+    "end_ms": 2179600,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2181.752,
+    "text": "So the intercept term moves where this goes. And it says everything to the left side here is probably zero.",
+    "start_ms": 2181752,
+    "end_ms": 2190152,
+    "duration_ms": 8400,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2190.152,
+    "text": "They're close to probably zero. It doesn't actually ever get to zero.",
+    "start_ms": 2190152,
+    "end_ms": 2192392,
+    "duration_ms": 2240,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2192.392,
+    "text": "It approaches zero, right, in the limit. And over here, it's going to approach one in the limit.",
+    "start_ms": 2192392,
+    "end_ms": 2196552,
+    "duration_ms": 4160,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2198.008,
+    "text": "What happens if I move this second slider? Data 1, Sni coefficient of X.",
+    "start_ms": 2198008,
+    "end_ms": 2202952,
+    "duration_ms": 4944,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2205.656,
+    "text": "Make it bigger. It's steeper. I make it smaller and smaller.",
+    "start_ms": 2205656,
+    "end_ms": 2209921,
+    "duration_ms": 4265,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2209.921,
+    "text": "It's still positive right now. Smaller and smaller. It gets shallow and shallow and shallow.",
+    "start_ms": 2209921,
+    "end_ms": 2213848,
+    "duration_ms": 3927,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2214.296,
+    "text": "and then watch this flips It goes negative. Satisfact is zero.",
+    "start_ms": 2214296,
+    "end_ms": 2220904,
+    "duration_ms": 6608,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2223.0,
+    "text": "Now let's go through that. a negative it flips the other way.",
+    "start_ms": 2223000,
+    "end_ms": 2226536,
+    "duration_ms": 3536,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2226.872,
+    "text": "So coefficient, let's me choose which way. is a win in our earliest scenario.",
+    "start_ms": 2226872,
+    "end_ms": 2235292,
+    "duration_ms": 8420,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2235.292,
+    "text": "Right. So we said gold if on the right top here.",
+    "start_ms": 2235292,
+    "end_ms": 2243848,
+    "duration_ms": 8556,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2243.8,
+    "text": "But if we had flipped it around and maybe instead this was the you know we did the negative of the gold if it would look like this.",
+    "start_ms": 2243800,
+    "end_ms": 2250080,
+    "duration_ms": 6280,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2251.16,
+    "text": "Then we get a different uh So again, this is my linear coefficients for my linear model here.",
+    "start_ms": 2251160,
+    "end_ms": 2264152,
+    "duration_ms": 12992,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2265.048,
+    "text": "Right. Passing the signal, it gives me this interesting shape.",
+    "start_ms": 2265048,
+    "end_ms": 2267912,
+    "duration_ms": 2864,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2268.664,
+    "text": "and I can control The shape by changing those coefficients.",
+    "start_ms": 2268664,
+    "end_ms": 2272860,
+    "duration_ms": 4196,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2273.56,
+    "text": "So, learning promise, as it's always been, always been, I have to choose how to tune these two parameters to get the thing that most fits my data.",
+    "start_ms": 2273560,
+    "end_ms": 2281560,
+    "duration_ms": 8000,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2284.984,
+    "text": "any positive questions. Unslider their questions. Okay. Still shocked, but I like you going.",
+    "start_ms": 2284984,
+    "end_ms": 2294984,
+    "duration_ms": 10000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2294.552,
+    "text": "Okay. So we introduce the signal it is our model of probability.",
+    "start_ms": 2294552,
+    "end_ms": 2300456,
+    "duration_ms": 5904,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2314.68,
+    "text": "So this is giving me an estimated probability once I fit this model.",
+    "start_ms": 2314680,
+    "end_ms": 2318280,
+    "duration_ms": 3600,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2318.648,
+    "text": "Right, because I'm making predictions so it's an estimate of probability for each of the exits.",
+    "start_ms": 2318648,
+    "end_ms": 2323102,
+    "duration_ms": 4454,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2323.102,
+    "text": "So for any x you give me I can estimate now the probability of y equals 1 at that specific location.",
+    "start_ms": 2323102,
+    "end_ms": 2329488,
+    "duration_ms": 6386,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2329.912,
+    "text": "and using this model. So this is our logistic question function.",
+    "start_ms": 2329912,
+    "end_ms": 2336516,
+    "duration_ms": 6604,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2336.516,
+    "text": "We have solved the modeling part of this lecture. Are there any other points or questions here?",
+    "start_ms": 2336516,
+    "end_ms": 2342504,
+    "duration_ms": 5988,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2343.928,
+    "text": "One point of confusion, I'm just going to state this again so it shows up.",
+    "start_ms": 2343928,
+    "end_ms": 2346528,
+    "duration_ms": 2600,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2346.528,
+    "text": "I've had this off-sales line. Sigma here is the sigmoid.",
+    "start_ms": 2346528,
+    "end_ms": 2350528,
+    "duration_ms": 4000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2351.416,
+    "text": "Ah. Nuts! Standard deviation. So, when you see sigma here, unfortunately, for the next few lectures, sigma means sigmoid.",
+    "start_ms": 2351416,
+    "end_ms": 2364856,
+    "duration_ms": 13440,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2364.856,
+    "text": "This non-miniarity. Okay, questions. Good question. Okay, let me go back to this picture again.",
+    "start_ms": 2364856,
+    "end_ms": 2378472,
+    "duration_ms": 13616,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2385.4,
+    "text": "Yes, so. The sigmoid function is fixed and in fact let's make this you know the the standard sigmoid setup would be this is gonna be zero And if I make this here, this is 1.",
+    "start_ms": 2385400,
+    "end_ms": 2400524,
+    "duration_ms": 15124,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2401.656,
+    "text": "But equals one. Okay, that's the thing. Here's my Sigma-Eight Curve.",
+    "start_ms": 2401656,
+    "end_ms": 2410632,
+    "duration_ms": 8976,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2411.64,
+    "text": "As I go to the limits, sorry, they're going to limits on this curve.",
+    "start_ms": 2411640,
+    "end_ms": 2414870,
+    "duration_ms": 3230,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2414.87,
+    "text": "It never actually gets to one. It gets it goes to one very very quickly because we're going to get this exponent on the inside.",
+    "start_ms": 2414870,
+    "end_ms": 2420640,
+    "duration_ms": 5770,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2420.64,
+    "text": "side. And so if you look at this exponent. You guys can't see that.",
+    "start_ms": 2420640,
+    "end_ms": 2424872,
+    "duration_ms": 4232,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2424.872,
+    "text": "Yeah, it's human. Okay, well, that kind of works. This x point right here.",
+    "start_ms": 2424872,
+    "end_ms": 2432392,
+    "duration_ms": 7520,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2432.6,
+    "text": "So, as this number gets this negative number, the e to the negative number is that gets really, really large.",
+    "start_ms": 2432600,
+    "end_ms": 2437600,
+    "duration_ms": 5000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2437.6,
+    "text": "This whole thing gets really, really small and we get whatever one.",
+    "start_ms": 2437600,
+    "end_ms": 2441100,
+    "duration_ms": 3500,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2441.1,
+    "text": "So we go, we approach one. And this whole thing is this tear for you.",
+    "start_ms": 2441100,
+    "end_ms": 2449176,
+    "duration_ms": 8076,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2449.272,
+    "text": "If this thing inside of this parentheses is negative, so this part is negative.",
+    "start_ms": 2449272,
+    "end_ms": 2454272,
+    "duration_ms": 5000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2456.408,
+    "text": "We also have this negative sign outside, so that is...",
+    "start_ms": 2456408,
+    "end_ms": 2458408,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2458.968,
+    "text": "Positive, right? So this whole exponent thing becomes positive. You get one over one plus big number.",
+    "start_ms": 2458968,
+    "end_ms": 2465832,
+    "duration_ms": 6864,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2465.832,
+    "text": "Right? And as big number gets really big, one over one plus big number goes to.",
+    "start_ms": 2465832,
+    "end_ms": 2469832,
+    "duration_ms": 4000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2471.352,
+    "text": "Zero. Right, so the signal it has this behavior anyways, we're just controlling by these are coefficients.",
+    "start_ms": 2471352,
+    "end_ms": 2479272,
+    "duration_ms": 7920,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2479.928,
+    "text": "How fast it happens? and which way it goes. If I put a negative sign here, if my thing is negative I flip this cover around.",
+    "start_ms": 2479928,
+    "end_ms": 2488184,
+    "duration_ms": 8256,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2488.28,
+    "text": "Right. That's why if I take this data one. And I go in the negative direction, I get one curve, I go in the positive direction, I get different curves.",
+    "start_ms": 2488280,
+    "end_ms": 2495664,
+    "duration_ms": 7384,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2496.568,
+    "text": "some flipping it one way or the other And as I go further it gets steeper and steeper.",
+    "start_ms": 2496568,
+    "end_ms": 2501608,
+    "duration_ms": 5040,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2501.608,
+    "text": "I get switches between 0 and 1 faster and faster.",
+    "start_ms": 2501608,
+    "end_ms": 2504168,
+    "duration_ms": 2560,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2505.496,
+    "text": "Because I'm just changing this coefficient inside of this linear model here.",
+    "start_ms": 2505496,
+    "end_ms": 2509496,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2512.056,
+    "text": "Question the back. What if what if you have more than two features so you only have one feature.",
+    "start_ms": 2512056,
+    "end_ms": 2521256,
+    "duration_ms": 9200,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2521.56,
+    "text": "two parameters. If I had more than one feature I could just put more features in this list and in fact either later today we're very likely on Thursday we will add more features.",
+    "start_ms": 2521560,
+    "end_ms": 2536560,
+    "duration_ms": 15000,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2536.378,
+    "text": "the one feature plot. I'm in higher dimensions it's a curved surface and stuff but yeah you can model as many features you like and you will when you do things like spam classification.",
+    "start_ms": 2536378,
+    "end_ms": 2546320,
+    "duration_ms": 9942,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2554.296,
+    "text": "Alright, let's do an example. So, Slido, and then we can make a short break afterwards.",
+    "start_ms": 2554296,
+    "end_ms": 2557456,
+    "duration_ms": 3160,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2557.784,
+    "text": "All right, so let's practice. Do you understand how this model works?",
+    "start_ms": 2557784,
+    "end_ms": 2561784,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2562.04,
+    "text": "Suppose, and we haven't figured out how to do this yet.",
+    "start_ms": 2562040,
+    "end_ms": 2564540,
+    "duration_ms": 2500,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2564.54,
+    "text": "Suppose we have computed a theta hat. We've solved this optimization problem.",
+    "start_ms": 2564540,
+    "end_ms": 2569640,
+    "duration_ms": 5100,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2569.848,
+    "text": "And a next T comes along and we're doing this for our basketball prediction task, great.",
+    "start_ms": 2569848,
+    "end_ms": 2574248,
+    "duration_ms": 4400,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2574.52,
+    "text": "Thumb Here I'm making... an intercept term. One. And then let's say this is my My XTA Kodif.",
+    "start_ms": 2574520,
+    "end_ms": 2591368,
+    "duration_ms": 16848,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2591.992,
+    "text": "15th in the eye. let's go through this calculation. Let's do it.",
+    "start_ms": 2591992,
+    "end_ms": 2597416,
+    "duration_ms": 5424,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2597.253,
+    "text": "so this is Light O. So how do I make a prediction for the probability of winning?",
+    "start_ms": 2597253,
+    "end_ms": 2602920,
+    "duration_ms": 5667,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2679.0,
+    "text": "vote. I'm actually going to put my guard on. Come on in.",
+    "start_ms": 2679000,
+    "end_ms": 2684032,
+    "duration_ms": 5032,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2684.12,
+    "text": "Wonderful. So I said something wrong. I said we had intercept and a slope.",
+    "start_ms": 2684120,
+    "end_ms": 2694223,
+    "duration_ms": 10103,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2694.223,
+    "text": "I realize now that we change the slides and the numbers would be easy to calculate.",
+    "start_ms": 2694223,
+    "end_ms": 2697907,
+    "duration_ms": 3684,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2697.907,
+    "text": "And we have two features in this example. So our x is first feature is the number of That is Goldith and the second feature is the MFFeatures.",
+    "start_ms": 2697907,
+    "end_ms": 2706800,
+    "duration_ms": 8893,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2708.824,
+    "text": "Still one five is a pretty high goldish. It doesn't matter for the map.",
+    "start_ms": 2708824,
+    "end_ms": 2717160,
+    "duration_ms": 8336,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2717.976,
+    "text": "Alright, it's over in the... the... the palm. Alright, let's go forward you can keep feeling as we go.",
+    "start_ms": 2717976,
+    "end_ms": 2725304,
+    "duration_ms": 7328,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2725.304,
+    "text": "Okay, you got it, very good. How did you get it?",
+    "start_ms": 2725304,
+    "end_ms": 2728281,
+    "duration_ms": 2977,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2728.281,
+    "text": "Let's think through that. So we have... We'll stay on the slide to keep throwing it in.",
+    "start_ms": 2728281,
+    "end_ms": 2732136,
+    "duration_ms": 3855,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2732.136,
+    "text": "So we have the stigma where I can't throw the slide.",
+    "start_ms": 2732136,
+    "end_ms": 2735136,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2736.184,
+    "text": "Sorry. Everyone's filled in the pool. Please go go go.",
+    "start_ms": 2736184,
+    "end_ms": 2740488,
+    "duration_ms": 4304,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2748.312,
+    "text": "So how do we do this? so we went again to our models setup.",
+    "start_ms": 2748312,
+    "end_ms": 2751976,
+    "duration_ms": 3664,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2753.88,
+    "text": "Sigma, this is Sigma 1. X, so features. Data is our model.",
+    "start_ms": 2753880,
+    "end_ms": 2760812,
+    "duration_ms": 6932,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2760.812,
+    "text": "We know how to do X-transcon of the state. We've been doing that for the, you know, half the semester.",
+    "start_ms": 2760812,
+    "end_ms": 2772696,
+    "duration_ms": 11884,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2772.528,
+    "text": ".5 times 1 right here. We add these up that's our dot product, Sigma of 1.",
+    "start_ms": 2772528,
+    "end_ms": 2778096,
+    "duration_ms": 5568,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2778.36,
+    "text": "What is Sigma One? Sigma 1, we just plug it in.",
+    "start_ms": 2778360,
+    "end_ms": 2786184,
+    "duration_ms": 7824,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2786.296,
+    "text": "We get this equation right here. We can evaluate that.",
+    "start_ms": 2786296,
+    "end_ms": 2790766,
+    "duration_ms": 4470,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2790.766,
+    "text": "We get .731. Probably, if winning is 0.7311. So we know how to calculate with this model.",
+    "start_ms": 2790766,
+    "end_ms": 2798472,
+    "duration_ms": 7706,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2800.28,
+    "text": "Let me go back to this picture once more just to make sure everyone's on the same page because this curve is interesting.",
+    "start_ms": 2800280,
+    "end_ms": 2805080,
+    "duration_ms": 4800,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2806.04,
+    "text": "Can I slide you? I can't read it. Okay. So remember this curve takes any value on the x and maps it to a value on the y-axis.",
+    "start_ms": 2806040,
+    "end_ms": 2815544,
+    "duration_ms": 9504,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2815.8,
+    "text": "And my if I start with data zero my intercept term of my linear model right here's inner piece or here's a linear model.",
+    "start_ms": 2815800,
+    "end_ms": 2822500,
+    "duration_ms": 6700,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2822.84,
+    "text": "So theta zero is set to zero. Beta 1 is set to 1.",
+    "start_ms": 2822840,
+    "end_ms": 2827880,
+    "duration_ms": 5040,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2828.152,
+    "text": "Then I basically mod this right here is just the sigmoid.",
+    "start_ms": 2828152,
+    "end_ms": 2831152,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2831.576,
+    "text": "As it is, right, right, go, same way. Remember if I shift this left and right, I'm moving this this bump left and right.",
+    "start_ms": 2831576,
+    "end_ms": 2838360,
+    "duration_ms": 6784,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2838.904,
+    "text": "Just shifting where zero occurs, right? So here zero is zero.",
+    "start_ms": 2838904,
+    "end_ms": 2843864,
+    "duration_ms": 4960,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2844.952,
+    "text": "What happens when I plug in zero here? Let's eat in zero.",
+    "start_ms": 2844952,
+    "end_ms": 2851208,
+    "duration_ms": 6256,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2851.8,
+    "text": "What's easy to do? One. 1 over 1 plus one two one half.",
+    "start_ms": 2851800,
+    "end_ms": 2861592,
+    "duration_ms": 9792,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2861.944,
+    "text": "So, add 0, it's 0.5. But I can scale it.",
+    "start_ms": 2861944,
+    "end_ms": 2866600,
+    "duration_ms": 4656,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2867.736,
+    "text": "I can let's scale it. So if I change this this thing right here, that's changing how quickly it transitions from one side to the other, right?",
+    "start_ms": 2867736,
+    "end_ms": 2875816,
+    "duration_ms": 8080,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2875.816,
+    "text": "So I make it bigger. Transition is very quickly. Smaller transitions less quickly.",
+    "start_ms": 2875816,
+    "end_ms": 2882216,
+    "duration_ms": 6400,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2882.52,
+    "text": "And then... zero what's going on here. What am I getting?",
+    "start_ms": 2882520,
+    "end_ms": 2888928,
+    "duration_ms": 6408,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2889.432,
+    "text": "I make everything zero would I predict? 1 over 1 plus e to the 0.",
+    "start_ms": 2889432,
+    "end_ms": 2898280,
+    "duration_ms": 8848,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2898.488,
+    "text": "Plus, zero times whatever. The whole thing is zero, so get one over one plus one or one half.",
+    "start_ms": 2898488,
+    "end_ms": 2905400,
+    "duration_ms": 6912,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2908.856,
+    "text": "get that. So again, if this thing is always zero because I made both these coefficients zero, I just did that.",
+    "start_ms": 2908856,
+    "end_ms": 2914562,
+    "duration_ms": 5706,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2914.562,
+    "text": "Then for all x's, this whole thing here... is zero.",
+    "start_ms": 2914562,
+    "end_ms": 2919688,
+    "duration_ms": 5126,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2920.28,
+    "text": "e to the zero is one so i get one plus one so one over one plus one is one half So it's always 0.5.",
+    "start_ms": 2920280,
+    "end_ms": 2928264,
+    "duration_ms": 7984,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2928.12,
+    "text": "Right. So my model if I set everything to zero is just what's the chance of them winning point five.",
+    "start_ms": 2928120,
+    "end_ms": 2933560,
+    "duration_ms": 5440,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2934.84,
+    "text": "Not a bad place to be, right? So I don't know anything with chance of winning.",
+    "start_ms": 2934840,
+    "end_ms": 2938792,
+    "duration_ms": 3952,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2939.096,
+    "text": "Bye-bye. We'll see later that maybe that's that we want.",
+    "start_ms": 2939096,
+    "end_ms": 2943360,
+    "duration_ms": 4264,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2943.36,
+    "text": "Maybe, you know, TMA always wins because home advantage or something.",
+    "start_ms": 2943360,
+    "end_ms": 2947400,
+    "duration_ms": 4040,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2947.4,
+    "text": "But yeah, this gives us our basic starting point. Oh, typically we have this thing not zero, so we have some transition from zero to one.",
+    "start_ms": 2947400,
+    "end_ms": 2956136,
+    "duration_ms": 8736,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2956.504,
+    "text": "And if I go past zero make it negative, I flip the way it transitions.",
+    "start_ms": 2956504,
+    "end_ms": 2960961,
+    "duration_ms": 4457,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2960.961,
+    "text": "So now smaller values of x. Win and larger values of x lose.",
+    "start_ms": 2960961,
+    "end_ms": 2965644,
+    "duration_ms": 4683,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2967.64,
+    "text": "Alright, let me go steep again this way. And maybe it's not at zero that this transition happens maybe it's over here at one.",
+    "start_ms": 2967640,
+    "end_ms": 2974608,
+    "duration_ms": 6968,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2975.192,
+    "text": "Over here. Okay, next you interact. So if I move this...",
+    "start_ms": 2975192,
+    "end_ms": 2979528,
+    "duration_ms": 4336,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2980.216,
+    "text": "If I make this smaller, it also transitions the curve shifts over as well.",
+    "start_ms": 2980216,
+    "end_ms": 2985016,
+    "duration_ms": 4800,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2985.816,
+    "text": "So do they interact between these two features? And how do we turn these features for these primators?",
+    "start_ms": 2985816,
+    "end_ms": 2992632,
+    "duration_ms": 6816,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2995.192,
+    "text": "Great answer. There is no analytic solution to this problem.",
+    "start_ms": 2995192,
+    "end_ms": 2999600,
+    "duration_ms": 4408,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2999.96,
+    "text": "And so you have to use numeric optimization techniques to solve these.",
+    "start_ms": 2999960,
+    "end_ms": 3002960,
+    "duration_ms": 3000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3004.664,
+    "text": "Okay. Here's my link to them. I thought it would put it earlier.",
+    "start_ms": 3004664,
+    "end_ms": 3012248,
+    "duration_ms": 7584,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3012.248,
+    "text": "It's about right. Okay, so we've gone through an example.",
+    "start_ms": 3012248,
+    "end_ms": 3014767,
+    "duration_ms": 2519,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3014.767,
+    "text": "We just spent some time on this particular piece here.",
+    "start_ms": 3014767,
+    "end_ms": 3017544,
+    "duration_ms": 2777,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3017.544,
+    "text": "So, that is your controls, the position of the curve along the horizontal axis.",
+    "start_ms": 3017544,
+    "end_ms": 3022335,
+    "duration_ms": 4791,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3022.335,
+    "text": "That was my shifting. That was this intercept term right here.",
+    "start_ms": 3022335,
+    "end_ms": 3025864,
+    "duration_ms": 3529,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3026.84,
+    "text": "and change colors. The magnitude of theta one controls the steepness of the sigmoid.",
+    "start_ms": 3026840,
+    "end_ms": 3032632,
+    "duration_ms": 5792,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3032.92,
+    "text": "Right here. And the sign of theta one controls the orientation of the curve.",
+    "start_ms": 3032920,
+    "end_ms": 3037160,
+    "duration_ms": 4240,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3037.16,
+    "text": "It flips one way or the other. to this point.",
+    "start_ms": 3037160,
+    "end_ms": 3042280,
+    "duration_ms": 5120,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3042.808,
+    "text": "Hopefully you have an understanding of the model. Questions about sigmoids?",
+    "start_ms": 3042808,
+    "end_ms": 3046278,
+    "duration_ms": 3470,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3046.278,
+    "text": "This is confusing stuff, so. Okay, let's do a two-minute break and then we'll pick up from that.",
+    "start_ms": 3046278,
+    "end_ms": 3053688,
+    "duration_ms": 7410,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3054.296,
+    "text": "So, two minute break. And do that here. Let's start to pick up.",
+    "start_ms": 3054296,
+    "end_ms": 3234164,
+    "duration_ms": 179868,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3234.164,
+    "text": "Who's seeing Silicon Valley? There's a very funny episode if you want to see classification.",
+    "start_ms": 3234164,
+    "end_ms": 3240424,
+    "duration_ms": 6260,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3240.632,
+    "text": "about building a food classifier. I detect what food isn't an image.",
+    "start_ms": 3240632,
+    "end_ms": 3246844,
+    "duration_ms": 6212,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3247.128,
+    "text": "and they build a food classifier and they demo it and it goes This picture of a hot dog goes hot dog.",
+    "start_ms": 3247128,
+    "end_ms": 3253980,
+    "duration_ms": 6852,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3254.712,
+    "text": "We've been trying to talk, hot talk. Picture a pizza.",
+    "start_ms": 3254712,
+    "end_ms": 3258528,
+    "duration_ms": 3816,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3260.056,
+    "text": "Not hot. So you build a binary classifier? Break the clat food classification task which is pretty fun.",
+    "start_ms": 3260056,
+    "end_ms": 3267528,
+    "duration_ms": 7472,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3267.96,
+    "text": "Um. Classification is hard. And like a lot of high research actually deal with these sorts of problems.",
+    "start_ms": 3267960,
+    "end_ms": 3273208,
+    "duration_ms": 5248,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3273.208,
+    "text": "So like how to deal with images that are very confusing.",
+    "start_ms": 3273208,
+    "end_ms": 3275804,
+    "duration_ms": 2596,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3275.804,
+    "text": "So we spend a lot of time thinking about building better classifiers.",
+    "start_ms": 3275804,
+    "end_ms": 3278918,
+    "duration_ms": 3114,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3278.918,
+    "text": "It's a big focus of research. And as I said earlier, the latest generation of models are also the gender of models are built using these same ideas, trying to predict one of 120,000 different classes at every step.",
+    "start_ms": 3278918,
+    "end_ms": 3293352,
+    "duration_ms": 14434,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3293.352,
+    "text": "All right. So classification really big, Part of AI is driving a lot of things and is a hard problem.",
+    "start_ms": 3293352,
+    "end_ms": 3299928,
+    "duration_ms": 6576,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3299.928,
+    "text": "And up to this point, we spent a lot of time setting up one of the basic pieces of the basic building blocks of the classification model.",
+    "start_ms": 3299928,
+    "end_ms": 3306059,
+    "duration_ms": 6131,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3306.059,
+    "text": "Sadly, I've lost my order of my notebook. I did have rendering of this whole log-outs analysis.",
+    "start_ms": 3306059,
+    "end_ms": 3311178,
+    "duration_ms": 5119,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3311.178,
+    "text": "So this is what happens. We fit the logistic regression model to our data.",
+    "start_ms": 3311178,
+    "end_ms": 3314712,
+    "duration_ms": 3534,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3314.712,
+    "text": "Just let me actually show you this because at the end of the day, you actually want to learn how to fit models.",
+    "start_ms": 3314712,
+    "end_ms": 3319793,
+    "duration_ms": 5081,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3319.793,
+    "text": "Let's fit a model. So logistic regression, you will be happy to to learn is identical to regression when it comes to using it.",
+    "start_ms": 3319793,
+    "end_ms": 3326088,
+    "duration_ms": 6295,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3326.088,
+    "text": "So we could have skipped all of today's lecture. You could say, look, I, I, logistic regression does classification.",
+    "start_ms": 3326088,
+    "end_ms": 3331208,
+    "duration_ms": 5120,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3331.208,
+    "text": "Good to go. I will create a logistic regression model and I'll say fit.",
+    "start_ms": 3331208,
+    "end_ms": 3334407,
+    "duration_ms": 3199,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3334.648,
+    "text": "My x and my y done. Hmm, kind of. So I have not fit my model when I make predictions I now predict probabilities.",
+    "start_ms": 3334648,
+    "end_ms": 3344600,
+    "duration_ms": 9952,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3345.08,
+    "text": "Right, and it returns to probably this probability of a and dot a right when and not when I want actually that when and when so I want the second probably probably of when so there's the second entry in that a column of or two column matrix.",
+    "start_ms": 3345080,
+    "end_ms": 3360520,
+    "duration_ms": 15440,
+    "word_count": 48,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3361.208,
+    "text": "And that is my probability of winning. So that's my logistic predictions.",
+    "start_ms": 3361208,
+    "end_ms": 3365208,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3365.208,
+    "text": "And that is what gives me this nice black curve here.",
+    "start_ms": 3365208,
+    "end_ms": 3368008,
+    "duration_ms": 2800,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3368.888,
+    "text": "Okay, so you now know, and I could have told you, I guess, a few words here.",
+    "start_ms": 3368888,
+    "end_ms": 3374648,
+    "duration_ms": 5760,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3374.648,
+    "text": "This is how to fit and predict with a logistic regression classifier.",
+    "start_ms": 3374648,
+    "end_ms": 3379448,
+    "duration_ms": 4800,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3379.448,
+    "text": "So it is very easy. You might be wondering about C.",
+    "start_ms": 3379448,
+    "end_ms": 3383433,
+    "duration_ms": 3985,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3383.433,
+    "text": "So there is some regularization which will come up and we'll talk more about that at the beginning of Thursday's lecture.",
+    "start_ms": 3383433,
+    "end_ms": 3389656,
+    "duration_ms": 6223,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3390.424,
+    "text": "Alright, so that's our latest regression picture. Now we're going to talk about how we fit the model as I said earlier.",
+    "start_ms": 3390424,
+    "end_ms": 3397068,
+    "duration_ms": 6644,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3399.352,
+    "text": "Well, I guess we got our picture. Okay, so we chose a model, which is point we saw that problem.",
+    "start_ms": 3399352,
+    "end_ms": 3406728,
+    "duration_ms": 7376,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3406.728,
+    "text": "We're going to choose a loss and again, we're going to use a software package to solve this problem, but we need to talk about the loss that we would use because that's going to important we go to evaluate these techniques.",
+    "start_ms": 3406728,
+    "end_ms": 3415528,
+    "duration_ms": 8800,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3415.832,
+    "text": "So what would be the loss to use for a logistic regression?",
+    "start_ms": 3415832,
+    "end_ms": 3418832,
+    "duration_ms": 3000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3420.344,
+    "text": "What losses do you know at this point? Should we answer this question?",
+    "start_ms": 3420344,
+    "end_ms": 3424584,
+    "duration_ms": 4240,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3425.528,
+    "text": "You know that absolute loss, you know that squared loss, we spent a lot of time with the squared loss.",
+    "start_ms": 3425528,
+    "end_ms": 3430028,
+    "duration_ms": 4500,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3430.488,
+    "text": "So why not try that here? Let's use a squared loss.",
+    "start_ms": 3430488,
+    "end_ms": 3433208,
+    "duration_ms": 2720,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3433.208,
+    "text": "And people used to do this actually. We can see what happens.",
+    "start_ms": 3433208,
+    "end_ms": 3437236,
+    "duration_ms": 4028,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3437.236,
+    "text": "It's an early neural network. People did this. Right, so we make a little tweeted asset.",
+    "start_ms": 3437236,
+    "end_ms": 3441606,
+    "duration_ms": 4370,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3441.606,
+    "text": "Let's try it. Is my dad? So x is under what x is.",
+    "start_ms": 3441606,
+    "end_ms": 3446146,
+    "duration_ms": 4540,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3446.146,
+    "text": "It's a it's a feature. My label is 0 or 1.",
+    "start_ms": 3446146,
+    "end_ms": 3448848,
+    "duration_ms": 2702,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3448.848,
+    "text": "It's either you know 0 over here and 1 over here.",
+    "start_ms": 3448848,
+    "end_ms": 3451696,
+    "duration_ms": 2848,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3451.928,
+    "text": "Let's fit a simple one one feature model. Here's my Sigmoin and Python.",
+    "start_ms": 3451928,
+    "end_ms": 3460392,
+    "duration_ms": 8464,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3464.952,
+    "text": "I think this is actually sorry. Sick morning, play time.",
+    "start_ms": 3464952,
+    "end_ms": 3469512,
+    "duration_ms": 4560,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3470.776,
+    "text": "There's my, my sigloin. Oh, sorry, I didn't step. My MSC loss, I can compute my sigmoid, my prediction.",
+    "start_ms": 3470776,
+    "end_ms": 3479624,
+    "duration_ms": 8848,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3480.12,
+    "text": "And then I have my true label y at each of the data points.",
+    "start_ms": 3480120,
+    "end_ms": 3483800,
+    "duration_ms": 3680,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3483.8,
+    "text": "And I have my prediction and I'm going to take the mean squared.",
+    "start_ms": 3483800,
+    "end_ms": 3487360,
+    "duration_ms": 3560,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3487.36,
+    "text": "So this is the squared error here. I take the mean of that.",
+    "start_ms": 3487360,
+    "end_ms": 3490600,
+    "duration_ms": 3240,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3491.064,
+    "text": "mean square there. That's the msc loss on my data for a choice of data.",
+    "start_ms": 3491064,
+    "end_ms": 3495464,
+    "duration_ms": 4400,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3495.464,
+    "text": "Over the loss is a function from a choice of my model parameters to how good that choice of model parameters is.",
+    "start_ms": 3495464,
+    "end_ms": 3502264,
+    "duration_ms": 6800,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3503.256,
+    "text": "This is the plot of that loss. Which is a good data here.",
+    "start_ms": 3503256,
+    "end_ms": 3507816,
+    "duration_ms": 4560,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3509.048,
+    "text": "What the best data? This point right here right? The bottom of this curve.",
+    "start_ms": 3509048,
+    "end_ms": 3520488,
+    "duration_ms": 11440,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3521.528,
+    "text": "It's not terrible. It goes down. It's like, yeah, it's not bad.",
+    "start_ms": 3521528,
+    "end_ms": 3524351,
+    "duration_ms": 2823,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3524.351,
+    "text": "Let's go down over here. It's got this weird like dip.",
+    "start_ms": 3524351,
+    "end_ms": 3528680,
+    "duration_ms": 4329,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3530.04,
+    "text": "It's also not convex. We talked about this briefly, we discussed optimization, but we went ideally for our problems to have one minima.",
+    "start_ms": 3530040,
+    "end_ms": 3538504,
+    "duration_ms": 8464,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3538.504,
+    "text": "And no matter where we start, if you just go down hill, we get there.",
+    "start_ms": 3538504,
+    "end_ms": 3541544,
+    "duration_ms": 3040,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3542.072,
+    "text": "But this this curve right here is like kind of dips over here.",
+    "start_ms": 3542072,
+    "end_ms": 3544903,
+    "duration_ms": 2831,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3544.903,
+    "text": "It's weird. It's got two minima one way to think of convexity.",
+    "start_ms": 3544903,
+    "end_ms": 3547592,
+    "duration_ms": 2689,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3547.592,
+    "text": "I guess we have another side here. Um, should let's keep going here.",
+    "start_ms": 3547592,
+    "end_ms": 3550752,
+    "duration_ms": 3160,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3550.752,
+    "text": "So it's not convex. That means if I call the minimization function and I start it at x equals zero.",
+    "start_ms": 3550752,
+    "end_ms": 3556323,
+    "duration_ms": 5571,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3556.323,
+    "text": "I start right here. What's going to happen? My best data is .5.",
+    "start_ms": 3556323,
+    "end_ms": 3562920,
+    "duration_ms": 6597,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3563.928,
+    "text": "That's good .544, so we'll look somewhere around here. The optimize revs, you down the hill, found that spot was pretty happy.",
+    "start_ms": 3563928,
+    "end_ms": 3571288,
+    "duration_ms": 7360,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3571.96,
+    "text": "But... I was going to look at my curve. So here's my my logistic regression curve just plotted using that that choice of data.",
+    "start_ms": 3571960,
+    "end_ms": 3581496,
+    "duration_ms": 9536,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3581.496,
+    "text": "That's not that's pretty good fit right? I'm thinking over here at saying that the really small x's have probably like y equals 1 is 0 and really large x's probably y equals 1 is 1 and in here we're not so sure.",
+    "start_ms": 3581496,
+    "end_ms": 3594068,
+    "duration_ms": 12572,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3594.616,
+    "text": "Right in the middle. So suppose I go back up here and I start my optimizer over here what's gonna happen.",
+    "start_ms": 3594616,
+    "end_ms": 3602008,
+    "duration_ms": 7392,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3604.6,
+    "text": "Let's try it. So we start with the optimizer at negative 5.",
+    "start_ms": 3604600,
+    "end_ms": 3607600,
+    "duration_ms": 3000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3609.336,
+    "text": "What is And with this way. Kinda gave up at this point.",
+    "start_ms": 3609336,
+    "end_ms": 3614061,
+    "duration_ms": 4725,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3614.061,
+    "text": "Got pretty flat. Okay. Let's look at this plot. That's my desk fit model.",
+    "start_ms": 3614061,
+    "end_ms": 3621064,
+    "duration_ms": 7003,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3620.76,
+    "text": "Is that a good fit? No, why not? Let's say on the left here we're very certain that it should be.",
+    "start_ms": 3620760,
+    "end_ms": 3627992,
+    "duration_ms": 7232,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3628.472,
+    "text": "one that that we should win why it was one But it's definitely not.",
+    "start_ms": 3628472,
+    "end_ms": 3634815,
+    "duration_ms": 6343,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3634.815,
+    "text": "It's pretty zero here. We're pretty sure in fact we want really quickly to this is definitely zero.",
+    "start_ms": 3634815,
+    "end_ms": 3647088,
+    "duration_ms": 12273,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3647.054,
+    "text": "here. But this loss function is not convex, so optimization routines on this loss are not going to perform well.",
+    "start_ms": 3647054,
+    "end_ms": 3653528,
+    "duration_ms": 6474,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3653.912,
+    "text": "I do want the minimum. In fact, if I could always find the true minimum of this huge curve, it would still be okay.",
+    "start_ms": 3653912,
+    "end_ms": 3660552,
+    "duration_ms": 6640,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3660.552,
+    "text": "The minimum is not terrible. But it's giving my try to define.",
+    "start_ms": 3660552,
+    "end_ms": 3664456,
+    "duration_ms": 3904,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3666.424,
+    "text": "That's kind of one problem with it. Look at our two data.",
+    "start_ms": 3666424,
+    "end_ms": 3673782,
+    "duration_ms": 7358,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3673.782,
+    "text": "So these are the ones we found when we set the optimizer up here and then when we set the optimizer here, go into out here and draw it now actually.",
+    "start_ms": 3673782,
+    "end_ms": 3680120,
+    "duration_ms": 6338,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3682.328,
+    "text": "Yeah, so this, when we started here, we went down to here.",
+    "start_ms": 3682328,
+    "end_ms": 3684888,
+    "duration_ms": 2560,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3684.888,
+    "text": "That was good. and stick with red. And we started here.",
+    "start_ms": 3684888,
+    "end_ms": 3689118,
+    "duration_ms": 4230,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3689.118,
+    "text": "We went over this way and we got stuck here.",
+    "start_ms": 3689118,
+    "end_ms": 3691205,
+    "duration_ms": 2087,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3691.205,
+    "text": "That was bad. That kind of ex. It's got another problem too though.",
+    "start_ms": 3691205,
+    "end_ms": 3695944,
+    "duration_ms": 4739,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3705.56,
+    "text": "Suppose I think y equals 1, right? So I start the situation where y equals 1.",
+    "start_ms": 3705560,
+    "end_ms": 3709880,
+    "duration_ms": 4320,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3711.192,
+    "text": "And I look at my p-hat values. So if my p-hat for that specific thing is close to one, I get very little loss.",
+    "start_ms": 3711192,
+    "end_ms": 3719010,
+    "duration_ms": 7818,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3719.01,
+    "text": "That's good. And this is good. if I say p hat is zero, I pay a penalty of one.",
+    "start_ms": 3719010,
+    "end_ms": 3725080,
+    "duration_ms": 6070,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3727.096,
+    "text": "That's terrible! Like this should be a much higher penalty for making such a wrong decision for something that is clearly one I say that could never happen.",
+    "start_ms": 3727096,
+    "end_ms": 3735792,
+    "duration_ms": 8696,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3736.696,
+    "text": "Probably zero. So I want this penalty to go up much faster.",
+    "start_ms": 3736696,
+    "end_ms": 3740744,
+    "duration_ms": 4048,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3740.744,
+    "text": "I feel like there should be higher penalties for getting this part of the curve raw, right?",
+    "start_ms": 3740744,
+    "end_ms": 3744984,
+    "duration_ms": 4240,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3745.24,
+    "text": "This is my spread loss, my spread loss is saying look.",
+    "start_ms": 3745240,
+    "end_ms": 3747740,
+    "duration_ms": 2500,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3748.344,
+    "text": "Not super, I'm indifferent, you know, it'd be better to be here, but you know if you're over here, it's not such a big difference, right?",
+    "start_ms": 3748344,
+    "end_ms": 3754344,
+    "duration_ms": 6000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3755.416,
+    "text": "I want this thing to be, I want a big penalty, a crazy penalty for being on the wrong side of this curve.",
+    "start_ms": 3755416,
+    "end_ms": 3760696,
+    "duration_ms": 5280,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3762.392,
+    "text": "There's another issue with the scroll with the scroll boss.",
+    "start_ms": 3762392,
+    "end_ms": 3764392,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3766.68,
+    "text": "I'm just going to slide form here. So we said it was non-convex.",
+    "start_ms": 3766680,
+    "end_ms": 3769280,
+    "duration_ms": 2600,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3769.28,
+    "text": "So, you know, if I draw a line connecting to two points, that line doesn't stay above the surface, right?",
+    "start_ms": 3769280,
+    "end_ms": 3774910,
+    "duration_ms": 5630,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3774.91,
+    "text": "So it's non-convex just by pictures. So when we optimize, we got two minima.",
+    "start_ms": 3774910,
+    "end_ms": 3783496,
+    "duration_ms": 8586,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3784.856,
+    "text": "Two very wrong curves. then it's kind of bounded so it's not a good measure model error.",
+    "start_ms": 3784856,
+    "end_ms": 3790920,
+    "duration_ms": 6064,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3790.92,
+    "text": "We like to see loss function penalize off predictions more.",
+    "start_ms": 3790920,
+    "end_ms": 3794200,
+    "duration_ms": 3280,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3794.2,
+    "text": "Especially when it's in the extremes of zeros and ones.",
+    "start_ms": 3794200,
+    "end_ms": 3797040,
+    "duration_ms": 2840,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3797.04,
+    "text": "If you say something has probably zero it should never happen.",
+    "start_ms": 3797040,
+    "end_ms": 3799800,
+    "duration_ms": 2760,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3801.08,
+    "text": "So you're going to have a high penalty for that.",
+    "start_ms": 3801080,
+    "end_ms": 3803080,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3803.384,
+    "text": "If it's probably one, then it should always happen. If it doesn't, I'd penalty for that as well.",
+    "start_ms": 3803384,
+    "end_ms": 3807384,
+    "duration_ms": 4000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3808.216,
+    "text": "Right, so this brings us to the cross entropy loss.",
+    "start_ms": 3808216,
+    "end_ms": 3810756,
+    "duration_ms": 2540,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3810.756,
+    "text": "And this is the loss that is widely used for all kinds of classification tasks.",
+    "start_ms": 3810756,
+    "end_ms": 3815756,
+    "duration_ms": 5000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3816.12,
+    "text": "This is what gives us the loss function for logistic regression, but you can take this very same loss and you will see, and most modern AI applications use this loss as well.",
+    "start_ms": 3816120,
+    "end_ms": 3827120,
+    "duration_ms": 11000,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3827.032,
+    "text": "So this is how we deal with these kinds of classification tasks.",
+    "start_ms": 3827032,
+    "end_ms": 3830032,
+    "duration_ms": 3000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3832.792,
+    "text": "So let's start a loss in classification. Alright, so we'll wait, I have a picture for this.",
+    "start_ms": 3832792,
+    "end_ms": 3839144,
+    "duration_ms": 6352,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3840.536,
+    "text": "Yeah, here we go. Right. So, uh, cross entropy loss is a loss we're going to choose and it's defined as this.",
+    "start_ms": 3840536,
+    "end_ms": 3846036,
+    "duration_ms": 5500,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3846.036,
+    "text": "So I'm going to give you the definition for us and we'll talk to it in more detail.",
+    "start_ms": 3846036,
+    "end_ms": 3850536,
+    "duration_ms": 4500,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3850.536,
+    "text": "So the cross-century law says, if Y is 1, the loss I should pay is negative log of p.",
+    "start_ms": 3850536,
+    "end_ms": 3857264,
+    "duration_ms": 6728,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3859.928,
+    "text": "What does that look like? So this is the y equals one situation.",
+    "start_ms": 3859928,
+    "end_ms": 3865483,
+    "duration_ms": 5555,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3865.483,
+    "text": "This curve looks like this. Has the properties I'm looking for right so as I go as p gets really small and remember white was one I'm gonna pay a lot of penalty Okay, back to me to go to Infinite Poundy as I get to zero.",
+    "start_ms": 3865483,
+    "end_ms": 3878920,
+    "duration_ms": 13437,
+    "word_count": 47,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3882.008,
+    "text": "Now, if y equals zero, I wanna pay this. I flip it around.",
+    "start_ms": 3882008,
+    "end_ms": 3889000,
+    "duration_ms": 6992,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3889.816,
+    "text": "So we get this curve here. So again, if y equals zero and I say, well, you know, p is close to one, that's a very high penalty.",
+    "start_ms": 3889816,
+    "end_ms": 3897416,
+    "duration_ms": 7600,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3902.296,
+    "text": "to cross entry loss. So as P approaches one, I'm going to infinite loss in this situation here.",
+    "start_ms": 3902296,
+    "end_ms": 3910616,
+    "duration_ms": 8320,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3911.16,
+    "text": "We like zero. P approaches zero when like was one, I'm going to pay it for loss.",
+    "start_ms": 3911160,
+    "end_ms": 3916300,
+    "duration_ms": 5140,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3920.984,
+    "text": "classification loss. When we use this in code, we'll often write a little bit differently.",
+    "start_ms": 3920984,
+    "end_ms": 3930639,
+    "duration_ms": 9655,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3930.639,
+    "text": "We'll write it this way. Remember, I said earlier, I'm going to choose y equals 1 and 0.",
+    "start_ms": 3930639,
+    "end_ms": 3936080,
+    "duration_ms": 5441,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3936.08,
+    "text": "This is a standard notation. And we could have done plus 1 minus 1.",
+    "start_ms": 3936080,
+    "end_ms": 3939520,
+    "duration_ms": 3440,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3939.52,
+    "text": "We just need some indication of two classes. Here, it's very important I use 1 and 0 as my notation.",
+    "start_ms": 3939520,
+    "end_ms": 3944880,
+    "duration_ms": 5360,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3944.88,
+    "text": "So y equals 1 is class 1, or the winning class.",
+    "start_ms": 3944880,
+    "end_ms": 3949560,
+    "duration_ms": 4680,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3949.56,
+    "text": "And it's a 0 is the losing class. I'm modeling the probability that y equals 1.",
+    "start_ms": 3949560,
+    "end_ms": 3954720,
+    "duration_ms": 5160,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3954.72,
+    "text": "And so this loss function here can be rewritten as this.",
+    "start_ms": 3954720,
+    "end_ms": 3958320,
+    "duration_ms": 3600,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3961.016,
+    "text": "Actually I built a sense that we do that. So this is broken down into two parts.",
+    "start_ms": 3961016,
+    "end_ms": 3965899,
+    "duration_ms": 4883,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3965.899,
+    "text": "Right? So in y equals one I'm selecting this part.",
+    "start_ms": 3965899,
+    "end_ms": 3969216,
+    "duration_ms": 3317,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3969.656,
+    "text": "and y equals one that means y-1-1 so this part here this goes to 0 right.",
+    "start_ms": 3969656,
+    "end_ms": 3975096,
+    "duration_ms": 5440,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3976.056,
+    "text": "So this goes to zero and y equals one. So I ignore this term and I just have this term.",
+    "start_ms": 3976056,
+    "end_ms": 3980056,
+    "duration_ms": 4000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3981.24,
+    "text": "and then y equals zero. Like was here I ignore this term.",
+    "start_ms": 3981240,
+    "end_ms": 3985448,
+    "duration_ms": 4208,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3985.656,
+    "text": "And I select this term. I get this chart down here.",
+    "start_ms": 3985656,
+    "end_ms": 3988696,
+    "duration_ms": 3040,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3989.784,
+    "text": "It's another way to rate this cross-entropy loss. And a little out of scope for those things about like, callback-leabler divergence.",
+    "start_ms": 3989784,
+    "end_ms": 3998084,
+    "duration_ms": 8300,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3998.084,
+    "text": "This is another way to write part of the callback-leabler divergence, which is where this cross-central-be-cale divergence comes from.",
+    "start_ms": 3998084,
+    "end_ms": 4003924,
+    "duration_ms": 5840,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4005.976,
+    "text": "I'll just go for this class. You can ignore what I just said.",
+    "start_ms": 4005976,
+    "end_ms": 4007976,
+    "duration_ms": 2000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4007.976,
+    "text": "It's an easy way to write this loss as we define it here.",
+    "start_ms": 4007976,
+    "end_ms": 4010976,
+    "duration_ms": 3000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4013.752,
+    "text": "Alright, questions, since we're a little bit Matthew, you know.",
+    "start_ms": 4013752,
+    "end_ms": 4015752,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4019.224,
+    "text": "So my last function. We're gonna start using it. Now I define the loss function.",
+    "start_ms": 4019224,
+    "end_ms": 4027336,
+    "duration_ms": 8112,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4027.672,
+    "text": "Again, it's right here. So my loss is right here.",
+    "start_ms": 4027672,
+    "end_ms": 4031624,
+    "duration_ms": 3952,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4031.96,
+    "text": "I can now define the empirical risk over my entire data set as we've done before we just take the average right Of the loss for each of my data points.",
+    "start_ms": 4031960,
+    "end_ms": 4040008,
+    "duration_ms": 8048,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4043.704,
+    "text": "I remember my P I we have a decision we have a way to find that right that was this.",
+    "start_ms": 4043704,
+    "end_ms": 4048184,
+    "duration_ms": 4480,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4049.208,
+    "text": "PI right here is this. So you can plug in the math from before this is our logistic regression model right here.",
+    "start_ms": 4049208,
+    "end_ms": 4061160,
+    "duration_ms": 11952,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4063.544,
+    "text": "And so this is the optimization problem that we solve when we're solving logistic regression.",
+    "start_ms": 4063544,
+    "end_ms": 4067824,
+    "duration_ms": 4280,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4067.824,
+    "text": "This this problem right here. We're taking the argument. So we're choosing the.",
+    "start_ms": 4067824,
+    "end_ms": 4071384,
+    "duration_ms": 3560,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4071.896,
+    "text": "Data that minimizes this loss function. Again, in previous versions of this class you would take the derivative of this loss function, compute its gradient, and then optimize it.",
+    "start_ms": 4071896,
+    "end_ms": 4090320,
+    "duration_ms": 18424,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4090.264,
+    "text": "Alright. This semester and I guess in the past few semesters you switch to just using side kit work which is the right way to do this anyways.",
+    "start_ms": 4090264,
+    "end_ms": 4097096,
+    "duration_ms": 6832,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4097.096,
+    "text": "We should still know what this loss is because this is the thing that we're optimizing when we use any of these software packages.",
+    "start_ms": 4097096,
+    "end_ms": 4102696,
+    "duration_ms": 5600,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4103.608,
+    "text": "So cross and speed loss. Alright, let's cool about the cross-entry loss if we actually plot it.",
+    "start_ms": 4103608,
+    "end_ms": 4109936,
+    "duration_ms": 6328,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4111.48,
+    "text": "Is it looks like oh sorry um It looks like this, so it's nice and convex.",
+    "start_ms": 4111480,
+    "end_ms": 4117808,
+    "duration_ms": 6328,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4119.864,
+    "text": "This makes the optimization perform. There's a lot of us that's just running real quickly.",
+    "start_ms": 4119864,
+    "end_ms": 4127272,
+    "duration_ms": 7408,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4134.328,
+    "text": "Send those to the cone. So I think these are my two curves just to give you a side by side picture of what was going before.",
+    "start_ms": 4134328,
+    "end_ms": 4142840,
+    "duration_ms": 8512,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4142.84,
+    "text": "Here's my cross entry loss versus my squared loss. You see the cross entry loss when y equals one is really prioritizing, you know, one.",
+    "start_ms": 4142840,
+    "end_ms": 4151840,
+    "duration_ms": 9000,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4151.84,
+    "text": "My problem is you go to one and as it goes to zero, I'm paying a large penalty.",
+    "start_ms": 4151840,
+    "end_ms": 4155840,
+    "duration_ms": 4000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4157.592,
+    "text": "Same for zero which we've talked about again comparing to L2 loss big difference.",
+    "start_ms": 4157592,
+    "end_ms": 4161992,
+    "duration_ms": 4400,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4163.32,
+    "text": "All right, so we can actually plot the cross-entry loss on our toy data set.",
+    "start_ms": 4163320,
+    "end_ms": 4166360,
+    "duration_ms": 3040,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4166.36,
+    "text": "And this is what it looks like. You'll notice we get a bunch of air messages, which we'll talk about in a second.",
+    "start_ms": 4166360,
+    "end_ms": 4170920,
+    "duration_ms": 4560,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4170.92,
+    "text": "But this is the cross-entry loss. It looks about right except we've got a bump here and all these air messages.",
+    "start_ms": 4170920,
+    "end_ms": 4175480,
+    "duration_ms": 4560,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4175.48,
+    "text": "This is the risk, the average cross-entry loss for my trace of theta on my toy data set for all the possible values of theta.",
+    "start_ms": 4175480,
+    "end_ms": 4184280,
+    "duration_ms": 8800,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4185.848,
+    "text": "Why would I be getting all these air messages? with a computer science here.",
+    "start_ms": 4185848,
+    "end_ms": 4191471,
+    "duration_ms": 5623,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4191.471,
+    "text": "It's kind of fun. What's going on? I'm going to take the log of zero.",
+    "start_ms": 4191471,
+    "end_ms": 4203112,
+    "duration_ms": 11641,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4206.904,
+    "text": "Can't take long of zero. So if you get something that's really close to zero.",
+    "start_ms": 4206904,
+    "end_ms": 4210184,
+    "duration_ms": 3280,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4211.32,
+    "text": "I have no icon stability, right? So, uh... When you work with us in practice, this equation, if I just write it as is, it's a little bit messy.",
+    "start_ms": 4211320,
+    "end_ms": 4219320,
+    "duration_ms": 8000,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4219.32,
+    "text": "This would be an issue if you went in this class with the many ingredients sent.",
+    "start_ms": 4219320,
+    "end_ms": 4222712,
+    "duration_ms": 3392,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4222.712,
+    "text": "You don't have to. In this notebook, I actually worked with a cleanup of this equation.",
+    "start_ms": 4222712,
+    "end_ms": 4227861,
+    "duration_ms": 5149,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4227.861,
+    "text": "This is just using algebra, so techniques that you could go through this duration.",
+    "start_ms": 4227861,
+    "end_ms": 4231525,
+    "duration_ms": 3664,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4231.525,
+    "text": "It's not important it's not in this scope. We're not going to ask you an exam, give it more efficient, or a more numerically stable version of the loss, we can rewrite the loss as this.",
+    "start_ms": 4231525,
+    "end_ms": 4240840,
+    "duration_ms": 9315,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4241.656,
+    "text": "Um It's tiny because this is actually numerically stable and there's built-in ways to compute log of 1 plus an exponent.",
+    "start_ms": 4241656,
+    "end_ms": 4249480,
+    "duration_ms": 7824,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4250.552,
+    "text": "I do that efficiently and numerically stable. So you do that, change my lost function to be exactly the same thing just numerically stable version.",
+    "start_ms": 4250552,
+    "end_ms": 4259680,
+    "duration_ms": 9128,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4260.376,
+    "text": "And now I've plotted them on top of each other and the blue line here is my cross entry loss.",
+    "start_ms": 4260376,
+    "end_ms": 4264496,
+    "duration_ms": 4120,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4265.336,
+    "text": "for my traces of data, it's nice and convex. And the orange line here is the MSC loss which you can barely see so I can zoom in on it.",
+    "start_ms": 4265336,
+    "end_ms": 4272736,
+    "duration_ms": 7400,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4274.2,
+    "text": "Thanks for watching. I hope you enjoyed this video. Confusing Shade, right?",
+    "start_ms": 4274200,
+    "end_ms": 4277768,
+    "duration_ms": 3568,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4277.496,
+    "text": "Procension speed loss is nice, it actually is a slightly different minimizer.",
+    "start_ms": 4277496,
+    "end_ms": 4281496,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4281.752,
+    "text": "So we go to optimize these. We're going to get slightly different answers.",
+    "start_ms": 4281752,
+    "end_ms": 4284392,
+    "duration_ms": 2640,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4285.624,
+    "text": "That's Optimizer. And here I'll start at negative 5, be a little bit bold, right?",
+    "start_ms": 4285624,
+    "end_ms": 4289304,
+    "duration_ms": 3680,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4289.304,
+    "text": "That broke my lean squared loss. But I'll define for cost entropy.",
+    "start_ms": 4289304,
+    "end_ms": 4293448,
+    "duration_ms": 4144,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4294.392,
+    "text": "In part these two. So if I zoom in again.",
+    "start_ms": 4294392,
+    "end_ms": 4298440,
+    "duration_ms": 4048,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4299.064,
+    "text": "Right here. I get slightly different values. Slightly different values for my best data.",
+    "start_ms": 4299064,
+    "end_ms": 4306856,
+    "duration_ms": 7792,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4308.664,
+    "text": "I feel slightly different from in a month. These with the two curves look like.",
+    "start_ms": 4308664,
+    "end_ms": 4315528,
+    "duration_ms": 6864,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4317.08,
+    "text": "So if I use the cross-entry loss... Thanks a little bit sharper.",
+    "start_ms": 4317080,
+    "end_ms": 4320826,
+    "duration_ms": 3746,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4320.826,
+    "text": "I'm willing to be a slight more confident because I'm actually directly modeling these probabilities.",
+    "start_ms": 4320826,
+    "end_ms": 4324576,
+    "duration_ms": 3750,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4325.592,
+    "text": "Use a square air loss to get this red curve right here.",
+    "start_ms": 4325592,
+    "end_ms": 4328592,
+    "duration_ms": 3000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4328.592,
+    "text": "This is the best point for it in the square air loss.",
+    "start_ms": 4328592,
+    "end_ms": 4330592,
+    "duration_ms": 2000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4331.288,
+    "text": "So you get slightly different models when they use different loss functions.",
+    "start_ms": 4331288,
+    "end_ms": 4334288,
+    "duration_ms": 3000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4337.304,
+    "text": "So what should you use in practice? Procension to be lost.",
+    "start_ms": 4337304,
+    "end_ms": 4343592,
+    "duration_ms": 6288,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4343.576,
+    "text": "probabilities, following these decisions cross-century laws. Classification. That is the end of what I wanted to cover for loss minimization.",
+    "start_ms": 4343576,
+    "end_ms": 4353752,
+    "duration_ms": 10176,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4354.328,
+    "text": "I have a few minutes, so I want to start what I'm going to talk about in next lecture.",
+    "start_ms": 4354328,
+    "end_ms": 4358328,
+    "duration_ms": 4000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4358.552,
+    "text": "Um, decision batteries. Okay, so this is what we'll talk about tomorrow or on Thursday.",
+    "start_ms": 4358552,
+    "end_ms": 4363768,
+    "duration_ms": 5216,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4363.768,
+    "text": "Up to this point we've been modeling the probability. But if I give you a probability, how do you turn that into a decision?",
+    "start_ms": 4363768,
+    "end_ms": 4370200,
+    "duration_ms": 6432,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4371.32,
+    "text": "Quite six chance that the, you know, the, the warriors will win.",
+    "start_ms": 4371320,
+    "end_ms": 4374600,
+    "duration_ms": 3280,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4376.6,
+    "text": "Do you better not? So I have to convert this into a zero one ultimately because I am making a classification decision.",
+    "start_ms": 4376600,
+    "end_ms": 4383672,
+    "duration_ms": 7072,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4384.44,
+    "text": "So this is a decision rule that helps us make that decision.",
+    "start_ms": 4384440,
+    "end_ms": 4387440,
+    "duration_ms": 3000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4389.56,
+    "text": "So it tells you how to interpret these probabilities. And again, remember, we made probability predictions up to this point.",
+    "start_ms": 4389560,
+    "end_ms": 4395440,
+    "duration_ms": 5880,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4396.76,
+    "text": "Let's talk about a simple decision role. So the standard approach to these kinds of problems is to use a threshold.",
+    "start_ms": 4396760,
+    "end_ms": 4403224,
+    "duration_ms": 6464,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4403.224,
+    "text": "Right so I'm going to set it decision threshold. You say, why isn't in class 1 if P is about some T?",
+    "start_ms": 4403224,
+    "end_ms": 4411224,
+    "duration_ms": 8000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4412.6,
+    "text": "And if it's not, it's in class zero. That's pretty simple, right?",
+    "start_ms": 4412600,
+    "end_ms": 4417232,
+    "duration_ms": 4632,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4417.232,
+    "text": "So, you know, I say it's .7 chance of winning, it's a probability.",
+    "start_ms": 4417232,
+    "end_ms": 4422616,
+    "duration_ms": 5384,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4422.616,
+    "text": "And we choose a T. Typically people use 0.5. So, more than half chance of winning, let's call it a win.",
+    "start_ms": 4422616,
+    "end_ms": 4430652,
+    "duration_ms": 8036,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4431.224,
+    "text": "Right? Less than half a loss. And this is lecture.",
+    "start_ms": 4431224,
+    "end_ms": 4434688,
+    "duration_ms": 3464,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4434.688,
+    "text": "We'll realize it. That's not always a good idea. But that is a standard decision-ruled that many would use.",
+    "start_ms": 4434688,
+    "end_ms": 4440552,
+    "duration_ms": 5864,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4440.552,
+    "text": "In settings, especially when, you know, coming into this, I think it's equally likely, and I have the signal, and it's slightly more likely than eight wins, I'll say eight wins.",
+    "start_ms": 4440552,
+    "end_ms": 4448392,
+    "duration_ms": 7840,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4449.944,
+    "text": "This is your mouth. Questions? Yeah, so in Thursday's lecture, we'll talk about how we might choose this decision rule based on the kinds of things we're trying to make a decision about.",
+    "start_ms": 4449944,
+    "end_ms": 4464448,
+    "duration_ms": 14504,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4464.448,
+    "text": "Maybe it's like, it's a cancer that's kind of rare.",
+    "start_ms": 4464448,
+    "end_ms": 4467080,
+    "duration_ms": 2632,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4467.08,
+    "text": "And so, you know, 0.5 is not what I want.",
+    "start_ms": 4467080,
+    "end_ms": 4469532,
+    "duration_ms": 2452,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4469.532,
+    "text": "I want to be a little more conservative. So we'll choose that threshold.",
+    "start_ms": 4469532,
+    "end_ms": 4472721,
+    "duration_ms": 3189,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4472.721,
+    "text": "We're going to stick with this model. This is the basic model that can kind of do anything as I do each engineering can model really crazy stuff with it.",
+    "start_ms": 4472721,
+    "end_ms": 4480080,
+    "duration_ms": 7359,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4480.08,
+    "text": "We'll talk about what this decision boundary means as we visualize it.",
+    "start_ms": 4480080,
+    "end_ms": 4483400,
+    "duration_ms": 3320,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4483.4,
+    "text": "We'll also talk about separability as we think of sets of data sets.",
+    "start_ms": 4483400,
+    "end_ms": 4487480,
+    "duration_ms": 4080,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4487.48,
+    "text": "Actually, I'll give you one picture just to give you the taste of what we'll do.",
+    "start_ms": 4487480,
+    "end_ms": 4490960,
+    "duration_ms": 3480,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4492.76,
+    "text": "picture here. Oh no okay. We'll talk about how we define decision boundaries and higher dimensions and whether or not our data can be truly split into separate classes or not.",
+    "start_ms": 4492760,
+    "end_ms": 4502672,
+    "duration_ms": 9912,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4503.224,
+    "text": "Now just before you see a little of that up into this point, where we were looking at pictures like, you know.",
+    "start_ms": 4503224,
+    "end_ms": 4509224,
+    "duration_ms": 6000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4509.432,
+    "text": "I'm sorry. This wasn't a problem that we could easily split sometimes, you know.",
+    "start_ms": 4509432,
+    "end_ms": 4518920,
+    "duration_ms": 9488,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4519.416,
+    "text": "The team that wasn't favorite to win one and sometimes the team that was favorite to win or to lose uh win here right so this this like a like uh this this person had a a very bad gold if or maybe over here um and they still won right questions a bit trickier, if I say I got it right 95% of the time.",
+    "start_ms": 4519416,
+    "end_ms": 4547184,
+    "duration_ms": 27768,
+    "word_count": 66,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4547.768,
+    "text": "Does it mean I'm actually doing any good at all?",
+    "start_ms": 4547768,
+    "end_ms": 4550495,
+    "duration_ms": 2727,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4550.495,
+    "text": "Right? And we'll find out that in many cases it means nothing, 95%.",
+    "start_ms": 4550495,
+    "end_ms": 4554032,
+    "duration_ms": 3537,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4554.744,
+    "text": "Is terror? So I have to look at the kind of distribution of wins and losses as well.",
+    "start_ms": 4554744,
+    "end_ms": 4560232,
+    "duration_ms": 5488,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4560.568,
+    "text": "Alright, so I'll see you on Thursday where we wrap up with just a progression.",
+    "start_ms": 4560568,
+    "end_ms": 4563608,
+    "duration_ms": 3040,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4564.792,
+    "text": "Thank you all.",
+    "start_ms": 4564792,
+    "end_ms": 4565792,
+    "duration_ms": 1000,
+    "word_count": 3,
+    "avg_confidence": 90
+  }
+]

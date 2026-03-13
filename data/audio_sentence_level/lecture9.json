@@ -1,0 +1,6095 @@
+[
+  {
+    "timestamp": 2.328,
+    "text": "Good morning, everyone. There we go. Those are interested. That was Oppenheimer, the soundtrack of Oppenheimer.",
+    "start_ms": 2328,
+    "end_ms": 10680,
+    "duration_ms": 8352,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 10.904,
+    "text": "Which is chosen because we'll be talking about Oppenheimer. and Barbie today.",
+    "start_ms": 10904,
+    "end_ms": 17032,
+    "duration_ms": 6128,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 17.88,
+    "text": "to very famous movies. and there is people. Alright, so today's lecture is on sampling.",
+    "start_ms": 17880,
+    "end_ms": 23496,
+    "duration_ms": 5616,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 24.28,
+    "text": "I hope you all enjoyed the... Fun lectures on visualization for the past past lectures.",
+    "start_ms": 24280,
+    "end_ms": 29158,
+    "duration_ms": 4878,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 29.158,
+    "text": "We are now transitioning to thinking about What her data tells us about the world.",
+    "start_ms": 29158,
+    "end_ms": 34248,
+    "duration_ms": 5090,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 35.0,
+    "text": "And the first step in that process is understanding how we got our data.",
+    "start_ms": 35000,
+    "end_ms": 40200,
+    "duration_ms": 5200,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 41.112,
+    "text": "So that is what we will do today. So... This lecture has a lot of...",
+    "start_ms": 41112,
+    "end_ms": 47112,
+    "duration_ms": 6000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 46.936,
+    "text": "Key terms and definitions will go through those. Those are important to think about as you do your sampling process, you do data science, you're also good questions for exams, so things you want to kind of review.",
+    "start_ms": 46936,
+    "end_ms": 58776,
+    "duration_ms": 11840,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 59.352,
+    "text": "So we like about census, uh, census and surveys. Some definitions of sampling.",
+    "start_ms": 59352,
+    "end_ms": 63725,
+    "duration_ms": 4373,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 63.725,
+    "text": "We'll talk about sampling bias in a very famous case study.",
+    "start_ms": 63725,
+    "end_ms": 66952,
+    "duration_ms": 3227,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 67.288,
+    "text": "We'll learn about probability samples and what makes a probability sample.",
+    "start_ms": 67288,
+    "end_ms": 70288,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 70.872,
+    "text": "And we will try very quickly the last few minutes to talk about multinomial probabilities, which are a cool mathematical tool for raising about certain kinds of probability samples.",
+    "start_ms": 70872,
+    "end_ms": 80872,
+    "duration_ms": 10000,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 81.304,
+    "text": "So I said we are moving from the realm of understanding our data to trying to understand the world.",
+    "start_ms": 81304,
+    "end_ms": 86024,
+    "duration_ms": 4720,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 86.024,
+    "text": "Our data being a snapshot of something in the world that we are interested in studying.",
+    "start_ms": 86024,
+    "end_ms": 96184,
+    "duration_ms": 10160,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 96.952,
+    "text": "It is worth noting that in order to understand the world we actually will have to go back to how we got our data.",
+    "start_ms": 96952,
+    "end_ms": 101952,
+    "duration_ms": 5000,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 103.896,
+    "text": "En sampling will be the study of maybe this arrow.",
+    "start_ms": 103896,
+    "end_ms": 106896,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 107.384,
+    "text": "And what it will tell us about this thing. Going from our data.",
+    "start_ms": 107384,
+    "end_ms": 118600,
+    "duration_ms": 11216,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 118.424,
+    "text": "2 The summon process all the way to understanding the world.",
+    "start_ms": 118424,
+    "end_ms": 122184,
+    "duration_ms": 3760,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 123.672,
+    "text": "That's our story. Alright, so let's start our census and surveys.",
+    "start_ms": 123672,
+    "end_ms": 126866,
+    "duration_ms": 3194,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 126.866,
+    "text": "There's some key terms that you will need to know.",
+    "start_ms": 126866,
+    "end_ms": 128700,
+    "duration_ms": 1834,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 129.432,
+    "text": "A Census. As since it's a complete... Count or survey of a population.",
+    "start_ms": 129432,
+    "end_ms": 138064,
+    "duration_ms": 8632,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 138.712,
+    "text": "So it's complete. of the entire population complete measurement of that population.",
+    "start_ms": 138712,
+    "end_ms": 143976,
+    "duration_ms": 5264,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 147.384,
+    "text": "Every individual... In the population. included in that count or survey to call it a census.",
+    "start_ms": 147384,
+    "end_ms": 154120,
+    "duration_ms": 6736,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 160.184,
+    "text": "The population is the complete set of individuals that we are studying.",
+    "start_ms": 160184,
+    "end_ms": 164424,
+    "duration_ms": 4240,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 165.496,
+    "text": "So if I'm asking a question, I'm ultimately asking a question about a group that group is the population.",
+    "start_ms": 165496,
+    "end_ms": 171096,
+    "duration_ms": 5600,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 171.096,
+    "text": "I again only have access often to a sample from that group, and that's what we're talking about today, but sometimes, and very rarely, I might be able to construct a census.",
+    "start_ms": 171096,
+    "end_ms": 180696,
+    "duration_ms": 9600,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 181.336,
+    "text": "The beauty in having a sense is... I'm seeing the data is understanding the world.",
+    "start_ms": 181336,
+    "end_ms": 186344,
+    "duration_ms": 5008,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 186.968,
+    "text": "Could you have all the data? population. It doesn't have to be individuals, so it's not about some examples.",
+    "start_ms": 186968,
+    "end_ms": 197232,
+    "duration_ms": 10264,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 197.72,
+    "text": "The most natural one is maybe people living in a particular country and we'll talk about the US census as an example of such a census.",
+    "start_ms": 197720,
+    "end_ms": 204100,
+    "duration_ms": 6380,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 205.24,
+    "text": "But it could be the bacteria living in one's personal gut or a set of individuals guts.",
+    "start_ms": 205240,
+    "end_ms": 212040,
+    "duration_ms": 6800,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 213.432,
+    "text": "You'll be trees of a certain species. We treat certain species in a particular force.",
+    "start_ms": 213432,
+    "end_ms": 218044,
+    "duration_ms": 4612,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 221.848,
+    "text": "Could he bolts on a bridge? Be things. The Bay Bridge recently, or I guess when it was under construction, had some issues of bolts.",
+    "start_ms": 221848,
+    "end_ms": 230312,
+    "duration_ms": 8464,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 230.312,
+    "text": "I met one of all the bolts. How many have issues?",
+    "start_ms": 230312,
+    "end_ms": 232719,
+    "duration_ms": 2407,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 232.719,
+    "text": "Well, I maybe pull a few bolts out. That's expensive.",
+    "start_ms": 232719,
+    "end_ms": 234907,
+    "duration_ms": 2188,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 234.907,
+    "text": "Maybe a little dangerous. But I'll measure those. That would be a sample.",
+    "start_ms": 234907,
+    "end_ms": 237752,
+    "duration_ms": 2845,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 238.264,
+    "text": "But my population is the bots. Small businesses. Could study loans I might care about all business of a certain size.",
+    "start_ms": 238264,
+    "end_ms": 247352,
+    "duration_ms": 9088,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 247.352,
+    "text": "It's not all businesses that's not my population it's all businesses of a certain size.",
+    "start_ms": 247352,
+    "end_ms": 251592,
+    "duration_ms": 4240,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 254.136,
+    "text": "Color statistics this one's kind of fun. Someone thought, well, there's a lot of numbers and papers.",
+    "start_ms": 254136,
+    "end_ms": 259368,
+    "duration_ms": 5232,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 259.368,
+    "text": "P-values, the populations, all those P-values, how many of them are bogus?",
+    "start_ms": 259368,
+    "end_ms": 263048,
+    "duration_ms": 3680,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 263.048,
+    "text": "I want to figure out a portion of research that has bogus P-values.",
+    "start_ms": 263048,
+    "end_ms": 266808,
+    "duration_ms": 3760,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 268.984,
+    "text": "So the individual determine individual. Sounds like a person. But it doesn't need to be.",
+    "start_ms": 268984,
+    "end_ms": 275472,
+    "duration_ms": 6488,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 275.472,
+    "text": "It could be a statistic. It could be a bolt, a tree, a bacteria, and so on.",
+    "start_ms": 275472,
+    "end_ms": 279168,
+    "duration_ms": 3696,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 281.784,
+    "text": "The Census Is a kind of census and the United States we have the census.",
+    "start_ms": 281784,
+    "end_ms": 287940,
+    "duration_ms": 6156,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 288.28,
+    "text": "The US Decennial Sense this. This has done every 10 years.",
+    "start_ms": 288280,
+    "end_ms": 295656,
+    "duration_ms": 7376,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 297.24,
+    "text": "Last held in April 2020. May have heard the news about, you know, the construction of this census and so the debates around it.",
+    "start_ms": 297240,
+    "end_ms": 304280,
+    "duration_ms": 7040,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 304.792,
+    "text": "Here the population counts. Every person... Living, supporting, in all 50 states.",
+    "start_ms": 304792,
+    "end_ms": 313016,
+    "duration_ms": 8224,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 313.848,
+    "text": "and US territories. Not just citizens. That's the mandate of the census.",
+    "start_ms": 313848,
+    "end_ms": 321352,
+    "duration_ms": 7504,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 321.528,
+    "text": "The Constitution mandate. have to do it and it can't be just citizens.",
+    "start_ms": 321528,
+    "end_ms": 325844,
+    "duration_ms": 4316,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 325.844,
+    "text": "It has to be all people. Living in all 50 states and US territories.",
+    "start_ms": 325844,
+    "end_ms": 331400,
+    "duration_ms": 5556,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 333.816,
+    "text": "How would you do that? That is really hard to do.",
+    "start_ms": 333816,
+    "end_ms": 338291,
+    "duration_ms": 4475,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 338.291,
+    "text": "How do you guarantee you get everyone? Cost a lot of money.",
+    "start_ms": 338291,
+    "end_ms": 341522,
+    "duration_ms": 3231,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 341.522,
+    "text": "We'll do it every 10 years. Maybe when they were building this country like, well, you know, there's not that many people.",
+    "start_ms": 341522,
+    "end_ms": 345944,
+    "duration_ms": 4422,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 346.488,
+    "text": "Now, I charter. Manated by the Constitution? Participation is required by law.",
+    "start_ms": 346488,
+    "end_ms": 355632,
+    "duration_ms": 9144,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 355.992,
+    "text": "You must give the senses. It's one way to get it to work.",
+    "start_ms": 355992,
+    "end_ms": 360552,
+    "duration_ms": 4560,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 360.92,
+    "text": "Does it really work? We'll talk about that. Important uses.",
+    "start_ms": 360920,
+    "end_ms": 363370,
+    "duration_ms": 2450,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 363.37,
+    "text": "So, this is used to allocate federal funds. Make big decisions here.",
+    "start_ms": 363370,
+    "end_ms": 366840,
+    "duration_ms": 3470,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 368.024,
+    "text": "Representation. It represents you in Congress, and it's not even people who live where you are.",
+    "start_ms": 368024,
+    "end_ms": 372424,
+    "duration_ms": 4400,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 374.392,
+    "text": "Drawing, congressional, and state legislative districts, those crazy maps are based on census data.",
+    "start_ms": 374392,
+    "end_ms": 380392,
+    "duration_ms": 6000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 382.616,
+    "text": "So these are hard to do. What? Required by law?",
+    "start_ms": 382616,
+    "end_ms": 387784,
+    "duration_ms": 5168,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 387.736,
+    "text": "In certain situations you can imagine a census being done for let's say students in this class I could require every student to do a thing like take an exam.",
+    "start_ms": 387736,
+    "end_ms": 395736,
+    "duration_ms": 8000,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 396.888,
+    "text": "And then I can figure out how students in this class because I have a full measure of the whole class.",
+    "start_ms": 396888,
+    "end_ms": 400488,
+    "duration_ms": 3600,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 401.688,
+    "text": "Unless someone doesn't take an exam. A lot of senses.",
+    "start_ms": 401688,
+    "end_ms": 405600,
+    "duration_ms": 3912,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 406.328,
+    "text": "So, a complete counter survey. A survey that's been more precise is a set of questions or measurements that I want to take against that population.",
+    "start_ms": 406328,
+    "end_ms": 414580,
+    "duration_ms": 8252,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 416.504,
+    "text": "So, Census workers in the U.S. Decennial Census survey individuals and households asking A lot of questions.",
+    "start_ms": 416504,
+    "end_ms": 423904,
+    "duration_ms": 7400,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 426.936,
+    "text": "What is asked? And how it is asked... can affect the answers.",
+    "start_ms": 426936,
+    "end_ms": 433320,
+    "duration_ms": 6384,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 436.632,
+    "text": "It affects how people respond. and weather. They respond. So now a survey doesn't have to be a census, a census-like kind of survey.",
+    "start_ms": 436632,
+    "end_ms": 447840,
+    "duration_ms": 11208,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 448.952,
+    "text": "I can take a simple and run a survey on that sample as well.",
+    "start_ms": 448952,
+    "end_ms": 451992,
+    "duration_ms": 3040,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 453.176,
+    "text": "Again, these questions are important. You may have heard this in the news, actually, who has heard of this?",
+    "start_ms": 453176,
+    "end_ms": 462428,
+    "duration_ms": 9252,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 463.096,
+    "text": "The West Census. Can you finish you? Congratul... People, leadership.",
+    "start_ms": 463096,
+    "end_ms": 470760,
+    "duration_ms": 7664,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 470.68,
+    "text": "Thought it would be great to ask if you were a US citizen.",
+    "start_ms": 470680,
+    "end_ms": 472680,
+    "duration_ms": 2000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 473.304,
+    "text": "On that survey. census. That's a problem, right? Are you here legally?",
+    "start_ms": 473304,
+    "end_ms": 479834,
+    "duration_ms": 6530,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 479.834,
+    "text": "How do you broken the law? Yes? No. yes, I have broken the law.",
+    "start_ms": 479834,
+    "end_ms": 485460,
+    "duration_ms": 5626,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 485.46,
+    "text": "Would you put that on a government form? Would you fill out that government form if it says it's among the form?",
+    "start_ms": 485460,
+    "end_ms": 494096,
+    "duration_ms": 8636,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 494.52,
+    "text": "It is perjury to lie on this form. You might run away from that form, hide from the census workers.",
+    "start_ms": 494520,
+    "end_ms": 500232,
+    "duration_ms": 5712,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 500.76,
+    "text": "They couldn't find you, it wasn't your fault. Yes, the questions you ask matter.",
+    "start_ms": 500760,
+    "end_ms": 505960,
+    "duration_ms": 5200,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 506.648,
+    "text": "may affect who participates. Perhaps how to answer. We'll talk about techniques you can use if you want to ask sensitive questions.",
+    "start_ms": 506648,
+    "end_ms": 513648,
+    "duration_ms": 7000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 514.04,
+    "text": "and a few minutes. This is exciting stuff. There's an entire course devoted to it.",
+    "start_ms": 514040,
+    "end_ms": 522120,
+    "duration_ms": 8080,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 522.456,
+    "text": "Making surveys is hard. Doing these days is very hard.",
+    "start_ms": 522456,
+    "end_ms": 526760,
+    "duration_ms": 4304,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 526.584,
+    "text": "We're going to just give you a little bit of the ideas enough to know maybe what you don't know and then when you want to build your own surveys do your sampling.",
+    "start_ms": 526584,
+    "end_ms": 535884,
+    "duration_ms": 9300,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 536.888,
+    "text": "You'll have to learn some more. Alright, so under counting.",
+    "start_ms": 536888,
+    "end_ms": 541440,
+    "duration_ms": 4552,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 542.04,
+    "text": "So this is something actually happens, the US Census. It's terrible.",
+    "start_ms": 542040,
+    "end_ms": 547258,
+    "duration_ms": 5218,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 547.258,
+    "text": "The U.S. Census is famous for having this problem. Why?",
+    "start_ms": 547258,
+    "end_ms": 552300,
+    "duration_ms": 5042,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 555.0,
+    "text": "It's hard to count everyone, especially if they're hiding from you.",
+    "start_ms": 555000,
+    "end_ms": 558200,
+    "duration_ms": 3200,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 558.68,
+    "text": "Right. Suicide census doesn't actually necessarily give us a proper census.",
+    "start_ms": 558680,
+    "end_ms": 563877,
+    "duration_ms": 5197,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 563.877,
+    "text": "It's called a census. But it maybe doesn't actually achieve the goal of a census.",
+    "start_ms": 563877,
+    "end_ms": 568284,
+    "duration_ms": 4407,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 571.256,
+    "text": "So this is an L.A. Times Analysis. And while Sanjulis, we can actually see the people who go out of fracture people going uncounted.",
+    "start_ms": 571256,
+    "end_ms": 578720,
+    "duration_ms": 7464,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 583.864,
+    "text": "So here I think we're counting a number of children, right?",
+    "start_ms": 583864,
+    "end_ms": 585864,
+    "duration_ms": 2000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 586.52,
+    "text": "a fraction of children. It comes with the highest number of uncounted Latino children in thousands.",
+    "start_ms": 586520,
+    "end_ms": 593176,
+    "duration_ms": 6656,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 594.616,
+    "text": "This total count is not percentages. Why is this happening?",
+    "start_ms": 594616,
+    "end_ms": 599368,
+    "duration_ms": 4752,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 599.416,
+    "text": "Also, how do we know these numbers? How do we answer that?",
+    "start_ms": 599416,
+    "end_ms": 603312,
+    "duration_ms": 3896,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 603.312,
+    "text": "How do we get a picture of what the census is missing?",
+    "start_ms": 603312,
+    "end_ms": 605598,
+    "duration_ms": 2286,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 605.598,
+    "text": "The census has everything. How can... what the sense is missing if it has everything.",
+    "start_ms": 605598,
+    "end_ms": 611824,
+    "duration_ms": 6226,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 614.36,
+    "text": "Subway. So we'll actually find out that sampling can often beat these attempts at building a census.",
+    "start_ms": 614360,
+    "end_ms": 619860,
+    "duration_ms": 5500,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 619.86,
+    "text": "So building a census is hard, but you're better off just sampling.",
+    "start_ms": 619860,
+    "end_ms": 625768,
+    "duration_ms": 5908,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 628.76,
+    "text": "Statistitions have fought hard. To fix this problem. Senses are silly because you can't actually do a census.",
+    "start_ms": 628760,
+    "end_ms": 635964,
+    "duration_ms": 7204,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 636.216,
+    "text": "Sassistion goes, no, I can do much better with statistics.",
+    "start_ms": 636216,
+    "end_ms": 639496,
+    "duration_ms": 3280,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 640.152,
+    "text": "Congressperson goes, no, I don't understand statistics. We'll do the census.",
+    "start_ms": 640152,
+    "end_ms": 645352,
+    "duration_ms": 5200,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 646.648,
+    "text": "sampling is really powerful And even when you try your best to do this sort of thing.",
+    "start_ms": 646648,
+    "end_ms": 651548,
+    "duration_ms": 4900,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 651.8,
+    "text": "Sometimes sampling can give you a better picture. You can control that process.",
+    "start_ms": 651800,
+    "end_ms": 657064,
+    "duration_ms": 5264,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 661.24,
+    "text": "in 2020. A lot of states realized the importance of counting, everyone.",
+    "start_ms": 661240,
+    "end_ms": 667272,
+    "duration_ms": 6032,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 667.704,
+    "text": "and put a lot of energy into ensuring that that census was a better reflection of the population.",
+    "start_ms": 667704,
+    "end_ms": 672184,
+    "duration_ms": 4480,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 672.856,
+    "text": "A true or a census? Unfortunately, The states that chose to do this and the states that didn't had another bias going.",
+    "start_ms": 672856,
+    "end_ms": 680120,
+    "duration_ms": 7264,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 681.304,
+    "text": "Right, so you get another reason why it's attempted a census.",
+    "start_ms": 681304,
+    "end_ms": 684304,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 684.792,
+    "text": "A full count can not only be a bias count.",
+    "start_ms": 684792,
+    "end_ms": 687592,
+    "duration_ms": 2800,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 691.8,
+    "text": "So, since this would be ideal if you could build them.",
+    "start_ms": 691800,
+    "end_ms": 694600,
+    "duration_ms": 2800,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 694.872,
+    "text": "They were nearly impossible. They were very expensive. And even if you try to do it, you're often going to fail.",
+    "start_ms": 694872,
+    "end_ms": 701872,
+    "duration_ms": 7000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 702.424,
+    "text": "And so we use sampling. a much more effective method to get data to reason about a population.",
+    "start_ms": 702424,
+    "end_ms": 707960,
+    "duration_ms": 5536,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 711.992,
+    "text": "So, so this is expensive and difficult to execute. I think I've already talked about this.",
+    "start_ms": 711992,
+    "end_ms": 719172,
+    "duration_ms": 7180,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 719.172,
+    "text": "So let's talk about a sample. Alright, so sample is usually a subset of the population.",
+    "start_ms": 719172,
+    "end_ms": 724680,
+    "duration_ms": 5508,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 726.104,
+    "text": "Are you still ready? Samples are often used to make inferences, predictions about the population.",
+    "start_ms": 726104,
+    "end_ms": 733216,
+    "duration_ms": 7112,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 734.264,
+    "text": "We don't do inferences for census because if I have a census there's no prediction we made I have the answer.",
+    "start_ms": 734264,
+    "end_ms": 739264,
+    "duration_ms": 5000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 741.944,
+    "text": "The per sample. I have to make inferences I have to use what I have to make conclusions about what I don't.",
+    "start_ms": 741944,
+    "end_ms": 750544,
+    "duration_ms": 8600,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 750.419,
+    "text": "or prediction is drawing conclusions about a population based on the sample.",
+    "start_ms": 750419,
+    "end_ms": 753848,
+    "duration_ms": 3429,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 754.808,
+    "text": "Some of the concepts we're going to talk about today show up in the day to date textbook.",
+    "start_ms": 754808,
+    "end_ms": 757808,
+    "duration_ms": 3000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 758.136,
+    "text": "It's a good book. It's got online book. If you haven't taken the course and you should have but if you haven't check out the book.",
+    "start_ms": 758136,
+    "end_ms": 763992,
+    "duration_ms": 5856,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 764.312,
+    "text": "Maybe you did take the class and then check out the book.",
+    "start_ms": 764312,
+    "end_ms": 766312,
+    "duration_ms": 2000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 766.52,
+    "text": "That was a good time to look at it. Alright, so how do you draw a sample?",
+    "start_ms": 766520,
+    "end_ms": 771004,
+    "duration_ms": 4484,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 771.004,
+    "text": "We'll affect your accuracy, and we're going to spend much of today's lecture talking about how we construct that sample.",
+    "start_ms": 771004,
+    "end_ms": 776904,
+    "duration_ms": 5900,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 778.104,
+    "text": "Alright, there are two things that we want to think about when constructing our sample.",
+    "start_ms": 778104,
+    "end_ms": 782051,
+    "duration_ms": 3947,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 782.051,
+    "text": "Two sources of air. Shant sir. Is the error that comes from your random sampling process?",
+    "start_ms": 782051,
+    "end_ms": 790568,
+    "duration_ms": 8517,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 791.32,
+    "text": "It can vary from what is expected. In any direction, ideally.",
+    "start_ms": 791320,
+    "end_ms": 797128,
+    "duration_ms": 5808,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 798.616,
+    "text": "It's just chance. lucky with the samplight hook. Oh well.",
+    "start_ms": 798616,
+    "end_ms": 802456,
+    "duration_ms": 3840,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 806.392,
+    "text": "Then there's Bice. This is a systematic error. Generally in one direction.",
+    "start_ms": 806392,
+    "end_ms": 812200,
+    "duration_ms": 5808,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 813.56,
+    "text": "We'll go through a bunch of examples of this. How I choose my sampling process may actually introduce a bias.",
+    "start_ms": 813560,
+    "end_ms": 820928,
+    "duration_ms": 7368,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 823.384,
+    "text": "Understanding the biases that you are introducing will be important in making and French conclusions from your data for drawing in French conclusions.",
+    "start_ms": 823384,
+    "end_ms": 830384,
+    "duration_ms": 7000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 833.88,
+    "text": "We'll talk about how bias can arise in a moment.",
+    "start_ms": 833880,
+    "end_ms": 836880,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 840.44,
+    "text": "This is a great picture to sort of think through the steps in a sample or the pieces in a sample.",
+    "start_ms": 840440,
+    "end_ms": 845720,
+    "duration_ms": 5280,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 846.296,
+    "text": "This blue circle here. This is my population. That's the thing I want to study, which is all decided building a census is kind of look, you know, is hard to do.",
+    "start_ms": 846296,
+    "end_ms": 857800,
+    "duration_ms": 11504,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 858.104,
+    "text": "Maybe I try my senses like this and I just I miss stuff and maybe the things I miss here are the most important.",
+    "start_ms": 858104,
+    "end_ms": 863604,
+    "duration_ms": 5500,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 864.728,
+    "text": "So really trying to get a sense this is very hard.",
+    "start_ms": 864728,
+    "end_ms": 867478,
+    "duration_ms": 2750,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 867.478,
+    "text": "So we're going to use different mechanisms to get a better picture of the population.",
+    "start_ms": 867478,
+    "end_ms": 871228,
+    "duration_ms": 3750,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 872.28,
+    "text": "First thing that you need to know about is the sampling frame.",
+    "start_ms": 872280,
+    "end_ms": 876280,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 876.196,
+    "text": "in here. Subling frame is the group from which the sample is going to be drawn.",
+    "start_ms": 876196,
+    "end_ms": 881052,
+    "duration_ms": 4856,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 887.128,
+    "text": "So I was trying to sample instead of take the US Census.",
+    "start_ms": 887128,
+    "end_ms": 890728,
+    "duration_ms": 3600,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 891.672,
+    "text": "If my if I decided I'm going to ask students in my class.",
+    "start_ms": 891672,
+    "end_ms": 895672,
+    "duration_ms": 4000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 896.568,
+    "text": "The census questions. Maybe a random set of them? The sibling frame is a thing that I'm going to be able to sample from.",
+    "start_ms": 896568,
+    "end_ms": 904912,
+    "duration_ms": 8344,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 908.76,
+    "text": "Why do I need to think about a sampling frame?",
+    "start_ms": 908760,
+    "end_ms": 910560,
+    "duration_ms": 1800,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 910.56,
+    "text": "I have the population of building a sample. What's the role of the sampling frame?",
+    "start_ms": 910560,
+    "end_ms": 913260,
+    "duration_ms": 2700,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 914.808,
+    "text": "The keyroll is simple sampling frame. Is to understand your sampling process.",
+    "start_ms": 914808,
+    "end_ms": 920072,
+    "duration_ms": 5264,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 921.272,
+    "text": "So you have a process for collecting your sample data.",
+    "start_ms": 921272,
+    "end_ms": 923772,
+    "duration_ms": 2500,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 924.088,
+    "text": "It is a sample. You should think through. What could I be sampling from?",
+    "start_ms": 924088,
+    "end_ms": 930184,
+    "duration_ms": 6096,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 930.712,
+    "text": "Is it the true population? What does the subset of the population?",
+    "start_ms": 930712,
+    "end_ms": 937640,
+    "duration_ms": 6928,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 937.528,
+    "text": "Alright, so assembling frame is a space of things from which I could hope to draw my sample.",
+    "start_ms": 937528,
+    "end_ms": 941528,
+    "duration_ms": 4000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 942.84,
+    "text": "And the simple itself is just the individuals you actually select.",
+    "start_ms": 942840,
+    "end_ms": 946520,
+    "duration_ms": 3680,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 947.16,
+    "text": "It looked like that. The sample must... Must be inside of the sampling frame.",
+    "start_ms": 947160,
+    "end_ms": 953608,
+    "duration_ms": 6448,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 956.024,
+    "text": "That's a depth initial sampling frame. But the sample needed...",
+    "start_ms": 956024,
+    "end_ms": 961640,
+    "duration_ms": 5616,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 962.04,
+    "text": "Be entirely in the population. Is my sample? It does always include the population, good things outside the population, misses parts of the population altogether as well.",
+    "start_ms": 962040,
+    "end_ms": 969848,
+    "duration_ms": 7808,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 973.688,
+    "text": "So, population, everything I want to study, sampling frame, the things from which I could hope to sample, the sample, the collection of individuals that actually collect, or actually survey.",
+    "start_ms": 973688,
+    "end_ms": 982688,
+    "duration_ms": 9000,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 986.008,
+    "text": "So there may be individuals near something frame and hence your sample that are not in the population.",
+    "start_ms": 986008,
+    "end_ms": 991008,
+    "duration_ms": 5000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 991.832,
+    "text": "That's the script right here. Still to the mouth. Hopefully.",
+    "start_ms": 991832,
+    "end_ms": 996040,
+    "duration_ms": 4208,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 996.376,
+    "text": "Think about it. If your sample looked like this. Sampling filtering these out would give you pretty tiny sample.",
+    "start_ms": 996376,
+    "end_ms": 1003056,
+    "duration_ms": 6680,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1005.4,
+    "text": "So sampling frame need to be in the population. Therefore the sample may not be in the population entirely.",
+    "start_ms": 1005400,
+    "end_ms": 1011640,
+    "duration_ms": 6240,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1012.6,
+    "text": "There may be individuals in your target population that are not in your sampling frame.",
+    "start_ms": 1012600,
+    "end_ms": 1016200,
+    "duration_ms": 3600,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1016.92,
+    "text": "This group right here. I will never sample these individuals.",
+    "start_ms": 1016920,
+    "end_ms": 1021288,
+    "duration_ms": 4368,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1022.04,
+    "text": "I got the reason I think about sampling frames just so I can say hmm can't access these individuals.",
+    "start_ms": 1022040,
+    "end_ms": 1027176,
+    "duration_ms": 5136,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1028.472,
+    "text": "What does that mean about my differential conclusions? And ideally, I'd like to claim that inside of this circle...",
+    "start_ms": 1028472,
+    "end_ms": 1035824,
+    "duration_ms": 7352,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1036.216,
+    "text": "I have a really good picture of how well I'm going to sample.",
+    "start_ms": 1036216,
+    "end_ms": 1039616,
+    "duration_ms": 3400,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1040.92,
+    "text": "and maybe an ideal world. I can every every point in the space has equal like later being in my sample.",
+    "start_ms": 1040920,
+    "end_ms": 1047648,
+    "duration_ms": 6728,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1049.08,
+    "text": "Maybe construct this frame so that I can guarantee that.",
+    "start_ms": 1049080,
+    "end_ms": 1051580,
+    "duration_ms": 2500,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1052.152,
+    "text": "Now let's me have a better understanding of what individuals actually...",
+    "start_ms": 1052152,
+    "end_ms": 1055512,
+    "duration_ms": 3360,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1055.928,
+    "text": "are in my datacent, in my sample. So let's talk about bias in this picture.",
+    "start_ms": 1055928,
+    "end_ms": 1062696,
+    "duration_ms": 6768,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1063.096,
+    "text": "How do I decrease bias? Or would that look like?",
+    "start_ms": 1063096,
+    "end_ms": 1065616,
+    "duration_ms": 2520,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1069.368,
+    "text": "Think about it for a second. Which circle is going to move?",
+    "start_ms": 1069368,
+    "end_ms": 1072205,
+    "duration_ms": 2837,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1072.205,
+    "text": "The blue circle? That's the population can't change that. sampling frame Gladia, sample.",
+    "start_ms": 1072205,
+    "end_ms": 1081192,
+    "duration_ms": 8987,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1082.2,
+    "text": "Hopefully, maybe we'll move with the sampling frame. Let's see.",
+    "start_ms": 1082200,
+    "end_ms": 1085200,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1087.928,
+    "text": "Cell-blink-frame Is how I control the bias. Circle right here.",
+    "start_ms": 1087928,
+    "end_ms": 1093800,
+    "duration_ms": 5872,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1095.608,
+    "text": "Doesn't include this space here. This is my bias. So we can control that.",
+    "start_ms": 1095608,
+    "end_ms": 1101440,
+    "duration_ms": 5832,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1101.976,
+    "text": "And then if my sampling process itself is a uniform in here.",
+    "start_ms": 1101976,
+    "end_ms": 1104976,
+    "duration_ms": 3000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1105.848,
+    "text": "And there's no additional bias. Now, it's possible my sampling process is a little goofy and all of a sudden it kind of favors this half of this sampling frame.",
+    "start_ms": 1105848,
+    "end_ms": 1114248,
+    "duration_ms": 8400,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1114.248,
+    "text": "You can do that. And you need to know that you've chosen a sampling process that puts you over here mostly, but sometimes over here, occasionally.",
+    "start_ms": 1114248,
+    "end_ms": 1120728,
+    "duration_ms": 6480,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1122.488,
+    "text": "Is there a bias? Keeping being simple, generally, the way you're going to control biases thinking about your sampling frame.",
+    "start_ms": 1122488,
+    "end_ms": 1129144,
+    "duration_ms": 6656,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1129.784,
+    "text": "You're going to pick a good sampling process that doesn't add bias inside of that sampling frame.",
+    "start_ms": 1129784,
+    "end_ms": 1133784,
+    "duration_ms": 4000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1135.32,
+    "text": "That's what we strive for. What about chance there? Was that a click?",
+    "start_ms": 1135320,
+    "end_ms": 1142400,
+    "duration_ms": 7080,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1143.256,
+    "text": "In this picture. I'm going to make chins there smaller.",
+    "start_ms": 1143256,
+    "end_ms": 1150984,
+    "duration_ms": 7728,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1155.832,
+    "text": "Should I change the sign on the sides of this circle?",
+    "start_ms": 1155832,
+    "end_ms": 1157832,
+    "duration_ms": 2000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1161.848,
+    "text": "and affect my bias with this circle. I want to make a chance they are smaller.",
+    "start_ms": 1161848,
+    "end_ms": 1168040,
+    "duration_ms": 6192,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1167.832,
+    "text": "Should make this circle bigger. We make this size my entire sampling frame.",
+    "start_ms": 1167832,
+    "end_ms": 1175048,
+    "duration_ms": 7216,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1175.992,
+    "text": "There's no chance there. Every single time we get exactly the same result.",
+    "start_ms": 1175992,
+    "end_ms": 1180232,
+    "duration_ms": 4240,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1181.016,
+    "text": "Everything on sample is the same. Still a lot of bias possibly.",
+    "start_ms": 1181016,
+    "end_ms": 1185064,
+    "duration_ms": 4048,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1186.36,
+    "text": "We're no chance there. this will be a... Really, I make it not quite, but, you know, pretty big.",
+    "start_ms": 1186360,
+    "end_ms": 1192720,
+    "duration_ms": 6360,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1192.72,
+    "text": "That was my sample, my chance there got a lot smaller.",
+    "start_ms": 1192720,
+    "end_ms": 1194720,
+    "duration_ms": 2000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1196.824,
+    "text": "How many whizzing take that many individuals? Some good pictures.",
+    "start_ms": 1196824,
+    "end_ms": 1204680,
+    "duration_ms": 7856,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1204.888,
+    "text": "How are you engaging with today's lecture? Slido. Survey, if you will.",
+    "start_ms": 1204888,
+    "end_ms": 1209248,
+    "duration_ms": 4360,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1212.44,
+    "text": "Shocking. I like that that sixty seventy one percent of this class engages in person.",
+    "start_ms": 1212440,
+    "end_ms": 1221104,
+    "duration_ms": 8664,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1222.072,
+    "text": "26% of the synchronicity. Wait, how are you watching the recording?",
+    "start_ms": 1222072,
+    "end_ms": 1227048,
+    "duration_ms": 4976,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1227.128,
+    "text": "Turn. It's not there yet. Through life. Is there a single thing else you're attending election?",
+    "start_ms": 1227128,
+    "end_ms": 1240700,
+    "duration_ms": 13572,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1244.984,
+    "text": "We should fix this. Alright, I'm going to zoom watch recording means you're watching a live.",
+    "start_ms": 1244984,
+    "end_ms": 1250912,
+    "duration_ms": 5928,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1251.576,
+    "text": "Great! Yeah, so someone doesn't know how to use survey design.",
+    "start_ms": 1251576,
+    "end_ms": 1255496,
+    "duration_ms": 3920,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1256.184,
+    "text": "And that is me. Alright. Very good. This is a sampling exercise.",
+    "start_ms": 1256184,
+    "end_ms": 1262728,
+    "duration_ms": 6544,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1262.904,
+    "text": "I hope that's the next question. Come on, this is easy to fill out, just the same person.",
+    "start_ms": 1262904,
+    "end_ms": 1267176,
+    "duration_ms": 4272,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1269.016,
+    "text": "A bite of sedges introduced. Okay. So we want to know how Data and Hearts students engage with lecture.",
+    "start_ms": 1269016,
+    "end_ms": 1276152,
+    "duration_ms": 7136,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1276.152,
+    "text": "Once we just did, we did this survey. What happened here?",
+    "start_ms": 1276152,
+    "end_ms": 1280616,
+    "duration_ms": 4464,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1280.248,
+    "text": "Here's my population. All students enrolled in data 100. Nice.",
+    "start_ms": 1280248,
+    "end_ms": 1285650,
+    "duration_ms": 5402,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1285.65,
+    "text": "That is what I want to know. What's my sampling frame?",
+    "start_ms": 1285650,
+    "end_ms": 1290952,
+    "duration_ms": 5302,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1294.136,
+    "text": "Everyone attending lecture today, we're on Zoom, watching the live recording.",
+    "start_ms": 1294136,
+    "end_ms": 1297736,
+    "duration_ms": 3600,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1299.384,
+    "text": "So I get to help with that. If you are not attending lecture day and not on zoom, you will not be able to complete this discussion.",
+    "start_ms": 1299384,
+    "end_ms": 1306688,
+    "duration_ms": 7304,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1306.808,
+    "text": "I think. But you're sharing the slider links and slack or something.",
+    "start_ms": 1306808,
+    "end_ms": 1310792,
+    "duration_ms": 3984,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1312.248,
+    "text": "Okay. So, it was my sample. People respond to Slido.",
+    "start_ms": 1312248,
+    "end_ms": 1317672,
+    "duration_ms": 5424,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1317.672,
+    "text": "We had a pretty good response for any of the 400 plus people.",
+    "start_ms": 1317672,
+    "end_ms": 1325320,
+    "duration_ms": 7648,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1325.32,
+    "text": "people come to lecture. And for those online, check out this entirely full lecture hall.",
+    "start_ms": 1325320,
+    "end_ms": 1329928,
+    "duration_ms": 4608,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1331.128,
+    "text": "Hey 70% of you are coming lecture. Watching life. It's amazing.",
+    "start_ms": 1331128,
+    "end_ms": 1338336,
+    "duration_ms": 7208,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1338.584,
+    "text": "Here's a bias, right? Ask the question to the population also.",
+    "start_ms": 1338584,
+    "end_ms": 1342504,
+    "duration_ms": 3920,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1342.504,
+    "text": "For those online, there are spaces in the lecture halls.",
+    "start_ms": 1342504,
+    "end_ms": 1344904,
+    "duration_ms": 2400,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1344.904,
+    "text": "You should come in. a few spaces. Yeah, so there's a bias.",
+    "start_ms": 1344904,
+    "end_ms": 1350104,
+    "duration_ms": 5200,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1350.552,
+    "text": "Pre-veg-byes! My sampling frame is biased towards needed a conclusion I wanted.",
+    "start_ms": 1350552,
+    "end_ms": 1356040,
+    "duration_ms": 5488,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1358.616,
+    "text": "Understanding this allows me to say that conclusion I just drew 70% of you were.",
+    "start_ms": 1358616,
+    "end_ms": 1363616,
+    "duration_ms": 5000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1364.024,
+    "text": "Watching. Live. is probably not true. I have to understand my sampling frame after I stand my sample.",
+    "start_ms": 1364024,
+    "end_ms": 1375176,
+    "duration_ms": 11152,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1379.992,
+    "text": "So let's solve our famous case study in sampling bias.",
+    "start_ms": 1379992,
+    "end_ms": 1382492,
+    "duration_ms": 2500,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1385.88,
+    "text": "It has a lot of elections and it's election years dangerous here to talk about election stuff but we're gonna do anyways Who knows these two figures?",
+    "start_ms": 1385880,
+    "end_ms": 1392584,
+    "duration_ms": 6704,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1394.168,
+    "text": "One of these figures you know. The left one or the right one?",
+    "start_ms": 1394168,
+    "end_ms": 1398216,
+    "duration_ms": 4048,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1398.552,
+    "text": "Left. Who's the left one? FDR, who's the right one?",
+    "start_ms": 1398552,
+    "end_ms": 1404552,
+    "duration_ms": 6000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1406.616,
+    "text": "Nobody knows. London. Why doesn't anyone know him? He lost.",
+    "start_ms": 1406616,
+    "end_ms": 1413824,
+    "duration_ms": 7208,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1417.496,
+    "text": "So, in 1936, there was a presidential election against FDR Franklin D.",
+    "start_ms": 1417496,
+    "end_ms": 1423256,
+    "duration_ms": 5760,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1423.256,
+    "text": "Roosevelt and Alff. Landon, on the right. Holes were conducted.",
+    "start_ms": 1423256,
+    "end_ms": 1430888,
+    "duration_ms": 7632,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1431.0,
+    "text": "Numbers recarculated. And the conclusion from all the polls was, Landon will win by a landslide.",
+    "start_ms": 1431000,
+    "end_ms": 1437400,
+    "duration_ms": 6400,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1439.288,
+    "text": "You know What happened? had this happen again more recently.",
+    "start_ms": 1439288,
+    "end_ms": 1444968,
+    "duration_ms": 5680,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1445.432,
+    "text": "And I don't know what happened then I don't want to talk about it so well.",
+    "start_ms": 1445432,
+    "end_ms": 1448072,
+    "duration_ms": 2640,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1448.072,
+    "text": "We'll just talk about this one. Best painful. Alright, so we're going to study this famous case.",
+    "start_ms": 1448072,
+    "end_ms": 1453928,
+    "duration_ms": 5856,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1455.48,
+    "text": "Literary digest, who's heard of that? Cool, few of you.",
+    "start_ms": 1455480,
+    "end_ms": 1460142,
+    "duration_ms": 4662,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1460.142,
+    "text": "It's another thing. It's a magazine. This is a... A kind of a paper like book that people get.",
+    "start_ms": 1460142,
+    "end_ms": 1465200,
+    "duration_ms": 5058,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1465.56,
+    "text": "In the mail. For used to get they had predicted the outcome.",
+    "start_ms": 1465560,
+    "end_ms": 1470636,
+    "duration_ms": 5076,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1470.968,
+    "text": "5-Gen elections coming into 19 or 1936. Great track record.",
+    "start_ms": 1470968,
+    "end_ms": 1475968,
+    "duration_ms": 5000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1476.568,
+    "text": "And they were big data people 10 million individuals. Huge!",
+    "start_ms": 1476568,
+    "end_ms": 1483648,
+    "duration_ms": 7080,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1485.08,
+    "text": "Survey. Huge pole. Pretty arrogant. Ten million. How could they go wrong?",
+    "start_ms": 1485080,
+    "end_ms": 1492280,
+    "duration_ms": 7200,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1492.28,
+    "text": "That's an enormous sample size. They predicted. There is about to win.",
+    "start_ms": 1492280,
+    "end_ms": 1498600,
+    "duration_ms": 6320,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1498.776,
+    "text": "We'll be beside the time. So, he's not gonna win.",
+    "start_ms": 1498776,
+    "end_ms": 1503360,
+    "duration_ms": 4584,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1504.952,
+    "text": "It's all for London. That's about their sampling frame. They reach out to people using phone books.",
+    "start_ms": 1504952,
+    "end_ms": 1512616,
+    "duration_ms": 7664,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1513.048,
+    "text": "lists of magazine subscribers and country club members. Wow. That is their sampling frame.",
+    "start_ms": 1513048,
+    "end_ms": 1522048,
+    "duration_ms": 9000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1524.632,
+    "text": "Night of Unresponse. So you get a sample from this frame.",
+    "start_ms": 1524632,
+    "end_ms": 1529384,
+    "duration_ms": 4752,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1531.128,
+    "text": "The actual lecture results went the other way. Quite a bit.",
+    "start_ms": 1531128,
+    "end_ms": 1534128,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1534.296,
+    "text": "61% voted for Isabel. There are 45 million votes. That's what.",
+    "start_ms": 1534296,
+    "end_ms": 1543020,
+    "duration_ms": 8724,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1548.504,
+    "text": "I bet you can guess what happened. Did you guess what happened?",
+    "start_ms": 1548504,
+    "end_ms": 1551004,
+    "duration_ms": 2500,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1551.704,
+    "text": "You're thinking who? They're simply in frame. I wonder what the sampling frames bias might be.",
+    "start_ms": 1551704,
+    "end_ms": 1557640,
+    "duration_ms": 5936,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1558.008,
+    "text": "60% Okay, this happened 10 million people surveyed. The ask the same question then too.",
+    "start_ms": 1558008,
+    "end_ms": 1566088,
+    "duration_ms": 8080,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1565.848,
+    "text": "With so much data you can't go wrong. What you can?",
+    "start_ms": 1565848,
+    "end_ms": 1570632,
+    "duration_ms": 4784,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1571.608,
+    "text": "It's a big theme in statistics. Something that my statistician friends tell me.",
+    "start_ms": 1571608,
+    "end_ms": 1576184,
+    "duration_ms": 4576,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1576.664,
+    "text": "Computer scientists never listened to. We in computer science go we've got so much data we can't be wrong.",
+    "start_ms": 1576664,
+    "end_ms": 1582504,
+    "duration_ms": 5840,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1583.32,
+    "text": "All the day in the world. The data is collected badly.",
+    "start_ms": 1583320,
+    "end_ms": 1586714,
+    "duration_ms": 3394,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1586.714,
+    "text": "It doesn't matter. Bad sampling can make even large data look bad.",
+    "start_ms": 1586714,
+    "end_ms": 1592488,
+    "duration_ms": 5774,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1593.496,
+    "text": "Give the wrong results. Yep, so literary digest makes this call.",
+    "start_ms": 1593496,
+    "end_ms": 1603016,
+    "duration_ms": 9520,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1604.6,
+    "text": "What actually happens on story. They were not using representative sample from the population.",
+    "start_ms": 1604600,
+    "end_ms": 1611136,
+    "duration_ms": 6536,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1611.136,
+    "text": "They are sampling frame, as I said, with these things before.",
+    "start_ms": 1611136,
+    "end_ms": 1614136,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1614.296,
+    "text": "Fun books. This one's great, just country clubs. What about that?",
+    "start_ms": 1614296,
+    "end_ms": 1619328,
+    "duration_ms": 5032,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1619.8,
+    "text": "These people are... Affluent, dead houses and phones, when they're expensive back then.",
+    "start_ms": 1619800,
+    "end_ms": 1624592,
+    "duration_ms": 4792,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1625.24,
+    "text": "Bigger magazines. Good stuff. Retin then to vote for Republicans.",
+    "start_ms": 1625240,
+    "end_ms": 1631560,
+    "duration_ms": 6320,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1632.664,
+    "text": "So, if the people they sampled, they're sampling frame at a significant conservative bias.",
+    "start_ms": 1632664,
+    "end_ms": 1637784,
+    "duration_ms": 5120,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1644.568,
+    "text": "So this is a 10 million, actually 2.4 million people actually filled out the survey.",
+    "start_ms": 1644568,
+    "end_ms": 1647848,
+    "duration_ms": 3280,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1649.112,
+    "text": "That's actually pretty good result. they were able to get 10 million people on their sampling frame.",
+    "start_ms": 1649112,
+    "end_ms": 1653473,
+    "duration_ms": 4361,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1653.473,
+    "text": "I misspoke here. This is a sampling frame. Something Frank.",
+    "start_ms": 1653473,
+    "end_ms": 1659296,
+    "duration_ms": 5823,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1659.448,
+    "text": "about tonight. Um, the people thought survey 2.4 million. That's pretty good.",
+    "start_ms": 1659448,
+    "end_ms": 1663848,
+    "duration_ms": 4400,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1664.44,
+    "text": "If you want to survey and you get you know more than 10% of the people responding to your survey, you're doing something really well.",
+    "start_ms": 1664440,
+    "end_ms": 1671160,
+    "duration_ms": 6720,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1673.784,
+    "text": "In this class, we have to bribe students to fill out surveys.",
+    "start_ms": 1673784,
+    "end_ms": 1676284,
+    "duration_ms": 2500,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1677.848,
+    "text": "It does work though, we get pretty good, pretty results.",
+    "start_ms": 1677848,
+    "end_ms": 1680848,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1681.24,
+    "text": "24% response rate. Exclamation point. Well done team. We don't know what the 76% of the non-respondence would have.",
+    "start_ms": 1681240,
+    "end_ms": 1689744,
+    "duration_ms": 8504,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1691.288,
+    "text": "Maybe they called the house of the person who actually is working all day, and they're like, yeah, I'm not home.",
+    "start_ms": 1691288,
+    "end_ms": 1695488,
+    "duration_ms": 4200,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1695.832,
+    "text": "No response. Right? So it could have been that even their sampling frame wasn't so bad.",
+    "start_ms": 1695832,
+    "end_ms": 1701608,
+    "duration_ms": 5776,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1701.752,
+    "text": "But the people that could fill out that sample that actually respond to the survey, this 2.4 million, had a lot of spare time on their hands, maybe some extra cash.",
+    "start_ms": 1701752,
+    "end_ms": 1709592,
+    "duration_ms": 7840,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1710.36,
+    "text": "Side-out, full-out, disturbing. So there's another bias inside of that sampling process itself.",
+    "start_ms": 1710360,
+    "end_ms": 1715912,
+    "duration_ms": 5552,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1716.632,
+    "text": "It wasn't a uniform sample of that population. But non-reference is a real problem.",
+    "start_ms": 1716632,
+    "end_ms": 1724008,
+    "duration_ms": 7376,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1725.624,
+    "text": "Anyone who has a phone today is probably getting text messages from various surveys begging you to fill in that survey And most of you are students and going, yeah, I'm too busy to do that.",
+    "start_ms": 1725624,
+    "end_ms": 1733999,
+    "duration_ms": 8375,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1733.999,
+    "text": "So you are a non-respondent And statisticians know that they try to correct for your lack of time.",
+    "start_ms": 1733999,
+    "end_ms": 1742328,
+    "duration_ms": 8329,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1744.088,
+    "text": "But back then we didn't have those corrections. Talk about another character in George Gallup.",
+    "start_ms": 1744088,
+    "end_ms": 1749736,
+    "duration_ms": 5648,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1750.904,
+    "text": "He was a statistician. A rising statistician. He was able to get the answer.",
+    "start_ms": 1750904,
+    "end_ms": 1759688,
+    "duration_ms": 8784,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1759.64,
+    "text": "The sample size of only 50,000. They're pretty big by that by those times.",
+    "start_ms": 1759640,
+    "end_ms": 1764240,
+    "duration_ms": 4600,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1765.272,
+    "text": "Because I was one of you needed. He guessed. Actually, yes, two things.",
+    "start_ms": 1765272,
+    "end_ms": 1772648,
+    "duration_ms": 7376,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1772.648,
+    "text": "You guessed the outcome for his belt, which was closer to the 61.",
+    "start_ms": 1772648,
+    "end_ms": 1776088,
+    "duration_ms": 3440,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1777.176,
+    "text": "So, you guess there is what would win? He was also able to predict the literary digest.",
+    "start_ms": 1777176,
+    "end_ms": 1783176,
+    "duration_ms": 6000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1783.416,
+    "text": "What's going to be a act. fun game. You're wrong and I know what you're gonna say.",
+    "start_ms": 1783416,
+    "end_ms": 1788456,
+    "duration_ms": 5040,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1790.936,
+    "text": "Just 3000 people. Your 10 million person survey. He was able to get their sampling frame.",
+    "start_ms": 1790936,
+    "end_ms": 1798312,
+    "duration_ms": 7376,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1799.128,
+    "text": "Probably even some of their uh Not responded by us.",
+    "start_ms": 1799128,
+    "end_ms": 1803368,
+    "duration_ms": 4240,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1803.352,
+    "text": "And he was able to sample just a small fraction of those individuals.",
+    "start_ms": 1803352,
+    "end_ms": 1806352,
+    "duration_ms": 3000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1806.352,
+    "text": "They got what they're going to say. We do this a lot today.",
+    "start_ms": 1806352,
+    "end_ms": 1811048,
+    "duration_ms": 4696,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1811.045,
+    "text": "keep track of other polls. They'll let their biases are ensue.",
+    "start_ms": 1811045,
+    "end_ms": 1814712,
+    "duration_ms": 3667,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1817.656,
+    "text": "Three guests. Lery Digest, guys, would say 44%, they said 43.",
+    "start_ms": 1817656,
+    "end_ms": 1822888,
+    "duration_ms": 5232,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1823.32,
+    "text": "So pretty close. Kind of insulting. I know what you're going to say.",
+    "start_ms": 1823320,
+    "end_ms": 1829317,
+    "duration_ms": 5997,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1829.317,
+    "text": "You're wrong and it's this number. Ouch. So you've got a fun story of how polls enscale.",
+    "start_ms": 1829317,
+    "end_ms": 1836752,
+    "duration_ms": 7435,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1838.264,
+    "text": "Maybe it doesn't matter as much as having a good sampling frame, understanding your sampling frame and the biases introduced.",
+    "start_ms": 1838264,
+    "end_ms": 1843944,
+    "duration_ms": 5680,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1845.144,
+    "text": "Let's talk about some common biases. Selection bias. So this is systematically excluding or favoring particular groups.",
+    "start_ms": 1845144,
+    "end_ms": 1853944,
+    "duration_ms": 8800,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1855.992,
+    "text": "We already saw this once, the literary digest pull. They excluded people, not in phone books.",
+    "start_ms": 1855992,
+    "end_ms": 1860792,
+    "duration_ms": 4800,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1860.792,
+    "text": "Couldn't afford that expensive phone. How do we fix this?",
+    "start_ms": 1860792,
+    "end_ms": 1868160,
+    "duration_ms": 7368,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1868.16,
+    "text": "Think about it as sampling frame. And some of our method of sampling.",
+    "start_ms": 1868160,
+    "end_ms": 1872180,
+    "duration_ms": 4020,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1872.18,
+    "text": "Maybe they found phonebooks but people who are too busy paying for that phone didn't answer the phone.",
+    "start_ms": 1872180,
+    "end_ms": 1876860,
+    "duration_ms": 4680,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1877.144,
+    "text": "The people who didn't need to work, they'll take up the phone.",
+    "start_ms": 1877144,
+    "end_ms": 1879744,
+    "duration_ms": 2600,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1880.376,
+    "text": "Knowing that you have that bias, I'm trying to address it in your analysis report.",
+    "start_ms": 1880376,
+    "end_ms": 1883656,
+    "duration_ms": 3280,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1884.952,
+    "text": "Yeah, and I guess this falls into response bias, which I just described.",
+    "start_ms": 1884952,
+    "end_ms": 1887952,
+    "duration_ms": 3000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1887.952,
+    "text": "Response bias is people don't always respond truthfully or at all to questions and lead to certain responses.",
+    "start_ms": 1887952,
+    "end_ms": 1894152,
+    "duration_ms": 6200,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1896.76,
+    "text": "The bias in how people respond. Alright, this is a good one.",
+    "start_ms": 1896760,
+    "end_ms": 1901687,
+    "duration_ms": 4927,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1901.687,
+    "text": "I'm going to dig into the second. So asking something like a citizenship question, the census, is it going to cause certain individuals to not answer or not answer truthfully?",
+    "start_ms": 1901687,
+    "end_ms": 1909160,
+    "duration_ms": 7473,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1914.232,
+    "text": "How many picks this? What is the exam the nature of your questions?",
+    "start_ms": 1914232,
+    "end_ms": 1919459,
+    "duration_ms": 5227,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1919.459,
+    "text": "Don't ask those tough questions. and maybe the method of survey.",
+    "start_ms": 1919459,
+    "end_ms": 1923528,
+    "duration_ms": 4069,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1925.72,
+    "text": "So let's semester I introduced this in one bullet. I'm going to explain it in more detail.",
+    "start_ms": 1925720,
+    "end_ms": 1930280,
+    "duration_ms": 4560,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1930.28,
+    "text": "It's a really cool trick called the randomized response. and explain on this separate slide.",
+    "start_ms": 1930280,
+    "end_ms": 1935656,
+    "duration_ms": 5376,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1935.8,
+    "text": "Alright, so here's the story. Suppose I want to ask you, have you cheated on the exam?",
+    "start_ms": 1935800,
+    "end_ms": 1940688,
+    "duration_ms": 4888,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1941.688,
+    "text": "You're unlikely to answer that question. Truthfully, if you have, so maybe in what's I'll just go ahead and see what you'll see now.",
+    "start_ms": 1941688,
+    "end_ms": 1948288,
+    "duration_ms": 6600,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1948.144,
+    "text": "do want to know if people chill in the exam.",
+    "start_ms": 1948144,
+    "end_ms": 1950144,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1950.144,
+    "text": "I don't care if you cheat on the exam, but I care the whole class.",
+    "start_ms": 1950144,
+    "end_ms": 1952744,
+    "duration_ms": 2600,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1953.752,
+    "text": "How do we get the right answer from you? What do you get in Hesitant?",
+    "start_ms": 1953752,
+    "end_ms": 1958056,
+    "duration_ms": 4304,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1958.264,
+    "text": "Cool trick. I hand you a coin. You go flip that coin.",
+    "start_ms": 1958264,
+    "end_ms": 1962688,
+    "duration_ms": 4424,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1963.384,
+    "text": "Don't tell me what happens. I'll hear your instructions. Did you cheat on the exam?",
+    "start_ms": 1963384,
+    "end_ms": 1973408,
+    "duration_ms": 10024,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1974.136,
+    "text": "If the coin landed heads, you have to say yes.",
+    "start_ms": 1974136,
+    "end_ms": 1977136,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1980.312,
+    "text": "Did you like them? Yes, I did. Can I report you?",
+    "start_ms": 1980312,
+    "end_ms": 1986810,
+    "duration_ms": 6498,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1986.81,
+    "text": "No, your Quinlanidates heads. Equal away. My ear fall, so the coin set.",
+    "start_ms": 1986810,
+    "end_ms": 1992264,
+    "duration_ms": 5454,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1994.296,
+    "text": "Did you hear on the exam? Quayland's heads. You have to say yes.",
+    "start_ms": 1994296,
+    "end_ms": 1997336,
+    "duration_ms": 3040,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1997.336,
+    "text": "That's the rules. It's very important I don't get see your coin, right?",
+    "start_ms": 1997336,
+    "end_ms": 2003144,
+    "duration_ms": 5808,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2003.576,
+    "text": "That's secret. It's a whole trick here. Secret coin you flip it.",
+    "start_ms": 2003576,
+    "end_ms": 2007064,
+    "duration_ms": 3488,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2007.064,
+    "text": "I do not get to see what it is you throw it under it.",
+    "start_ms": 2007064,
+    "end_ms": 2009304,
+    "duration_ms": 2240,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2009.304,
+    "text": "You know, don't see your coin. I ask you, you say yes.",
+    "start_ms": 2009304,
+    "end_ms": 2013032,
+    "duration_ms": 3728,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2013.56,
+    "text": "Beland's Tales be truthful. Will you be truthful? Baby. I don't get to your coin.",
+    "start_ms": 2013560,
+    "end_ms": 2022376,
+    "duration_ms": 8816,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2022.36,
+    "text": "say yes, you say yes, there's a coins fault. We say no.",
+    "start_ms": 2022360,
+    "end_ms": 2026720,
+    "duration_ms": 4360,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2032.184,
+    "text": "to answer truthfully. The Land of Tales The server, that's me.",
+    "start_ms": 2032184,
+    "end_ms": 2038312,
+    "duration_ms": 6128,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2037.944,
+    "text": "Doesn't know. If when you said yes. As we get you cheating.",
+    "start_ms": 2037944,
+    "end_ms": 2042856,
+    "duration_ms": 4912,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2042.488,
+    "text": "Other coin-laden heads. Are you saying no? Can I know you didn't see?",
+    "start_ms": 2042488,
+    "end_ms": 2054056,
+    "duration_ms": 11568,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2060.92,
+    "text": "Very important, we assume the individual is okay saying no.",
+    "start_ms": 2060920,
+    "end_ms": 2063560,
+    "duration_ms": 2640,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2065.304,
+    "text": "If no is also a problem we have a problem.",
+    "start_ms": 2065304,
+    "end_ms": 2067304,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2068.568,
+    "text": "Those bad bad answers. We know the coin lands head 50% of the time.",
+    "start_ms": 2068568,
+    "end_ms": 2076168,
+    "duration_ms": 7600,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2079.544,
+    "text": "So 50% of the no answers. or masked. So all you do is double the proportion of no answers to estimate no no fraction.",
+    "start_ms": 2079544,
+    "end_ms": 2088984,
+    "duration_ms": 9440,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2088.984,
+    "text": "The true no fraction. It's very easy to fix this.",
+    "start_ms": 2088984,
+    "end_ms": 2092584,
+    "duration_ms": 3600,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2095.096,
+    "text": "Questions? A complicated concept. Well, you're thinking of a question, I'll ask you a question.",
+    "start_ms": 2095096,
+    "end_ms": 2101872,
+    "duration_ms": 6776,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2101.872,
+    "text": "Who would do this? It will be truthful. Hey. Why not?",
+    "start_ms": 2101872,
+    "end_ms": 2109043,
+    "duration_ms": 7171,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2109.043,
+    "text": "You have nothing to lose? You say yes, it's the Queen's fault, it's always the Queen's fault.",
+    "start_ms": 2109043,
+    "end_ms": 2114088,
+    "duration_ms": 5045,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2116.536,
+    "text": "So it's actually used as a method to ask people all sensitive questions.",
+    "start_ms": 2116536,
+    "end_ms": 2119336,
+    "duration_ms": 2800,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2119.96,
+    "text": "This variation is this you can learn about randomizer spawns and kind of fall on work.",
+    "start_ms": 2119960,
+    "end_ms": 2124200,
+    "duration_ms": 4240,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2125.816,
+    "text": "Did you that it's a pretty neat area. You're playing with some sort of cryptographic ideas.",
+    "start_ms": 2125816,
+    "end_ms": 2131644,
+    "duration_ms": 5828,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2132.344,
+    "text": "Using randomness to hide a secret. So how's it used if you can't watch them flip the coin?",
+    "start_ms": 2132344,
+    "end_ms": 2142408,
+    "duration_ms": 10064,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2146.744,
+    "text": "We do it. Give them the chance and again they respond yes and you like That take it to court can't file a complaint against you because it's the coin's fault.",
+    "start_ms": 2146744,
+    "end_ms": 2156424,
+    "duration_ms": 9680,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2158.136,
+    "text": "Let's go with that. There are a lot of issues.",
+    "start_ms": 2158136,
+    "end_ms": 2160352,
+    "duration_ms": 2216,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2160.352,
+    "text": "Did you flip the coin well? Did you have a bias coin which is remarkable?",
+    "start_ms": 2160352,
+    "end_ms": 2163602,
+    "duration_ms": 3250,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2163.602,
+    "text": "We haven't developed. Um. Yeah, there's issues with this. You can look at more advanced techniques that use like probabilistic tools, but the fundamental challenge here is that you the person need to trust it.",
+    "start_ms": 2163602,
+    "end_ms": 2174200,
+    "duration_ms": 10598,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2174.2,
+    "text": "If I have a really cool phone app that encrypts your answer like yeah, but I don't trust that phone app, right?",
+    "start_ms": 2174200,
+    "end_ms": 2178280,
+    "duration_ms": 4080,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2178.488,
+    "text": "So this is nice because you're in control. Let's see a measure.",
+    "start_ms": 2178488,
+    "end_ms": 2183112,
+    "duration_ms": 4624,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2184.44,
+    "text": "Alright, any other questions? So even with this, there's going to be a bias.",
+    "start_ms": 2184440,
+    "end_ms": 2193528,
+    "duration_ms": 9088,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2194.232,
+    "text": "I'm going to go to... Okay, yeah, so even with this you're gonna have a bite and you have to deal with that.",
+    "start_ms": 2194232,
+    "end_ms": 2201544,
+    "duration_ms": 7312,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2201.544,
+    "text": "Your analysis. Yes, if they say no, but they still cheat it and some of you might do that, don't, don't cheat.",
+    "start_ms": 2201544,
+    "end_ms": 2216224,
+    "duration_ms": 14680,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2216.224,
+    "text": "But if they say no, you can't guarantee that that was a true no.",
+    "start_ms": 2216224,
+    "end_ms": 2219584,
+    "duration_ms": 3360,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2220.248,
+    "text": "But if I ask you point blank did you cheat?",
+    "start_ms": 2220248,
+    "end_ms": 2222248,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2222.808,
+    "text": "I'm really pretty confident that the know is harder to trust.",
+    "start_ms": 2222808,
+    "end_ms": 2226168,
+    "duration_ms": 3360,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2226.168,
+    "text": "This gives me a higher chance of being able to estimate a yes.",
+    "start_ms": 2226168,
+    "end_ms": 2229208,
+    "duration_ms": 3040,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2230.52,
+    "text": "There is a bias here. So again, if I do this, I'm not guarantee that the true nose as I've written here are in fact the true nose.",
+    "start_ms": 2230520,
+    "end_ms": 2237200,
+    "duration_ms": 6680,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2238.2,
+    "text": "I guess people might still like, but this is increasing your chance of being honest with me.",
+    "start_ms": 2238200,
+    "end_ms": 2241720,
+    "duration_ms": 3520,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2246.168,
+    "text": "Yeah, so I flipped the coin. And 50% of the time, you meant to say no, but the quain forced you to say yes.",
+    "start_ms": 2246168,
+    "end_ms": 2254120,
+    "duration_ms": 7952,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2254.616,
+    "text": "Hey. So 50% of the nose were hidden from me.",
+    "start_ms": 2254616,
+    "end_ms": 2257512,
+    "duration_ms": 2896,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2258.456,
+    "text": "Half the notes. So whatever knows I have, I trust those knows, whatever reason I've doubled them.",
+    "start_ms": 2258456,
+    "end_ms": 2263992,
+    "duration_ms": 5536,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2263.992,
+    "text": "Now that's my estimate for the true knows. Do I really trust those those.",
+    "start_ms": 2263992,
+    "end_ms": 2267292,
+    "duration_ms": 3300,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2268.536,
+    "text": "Plans on how sensitive the question was. Renoise response, fun stuff.",
+    "start_ms": 2268536,
+    "end_ms": 2278280,
+    "duration_ms": 9744,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2279.448,
+    "text": "Alright, and then non-respondence bias, which I guess I lumped in up here early as well.",
+    "start_ms": 2279448,
+    "end_ms": 2284248,
+    "duration_ms": 4800,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2284.728,
+    "text": "People don't always respond. And when people don't respond, it's often because they're different than the people who do respond.",
+    "start_ms": 2284728,
+    "end_ms": 2295896,
+    "duration_ms": 11168,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2304.184,
+    "text": "So 2.4 million of the 10-man people responded to literary digest poll.",
+    "start_ms": 2304184,
+    "end_ms": 2307904,
+    "duration_ms": 3720,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2308.696,
+    "text": "I'm going to get in gas at these 2.4 million people have more free time.",
+    "start_ms": 2308696,
+    "end_ms": 2311976,
+    "duration_ms": 3280,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2314.424,
+    "text": "Probably even more affluent. Working just a few hours a day.",
+    "start_ms": 2314424,
+    "end_ms": 2319400,
+    "duration_ms": 4976,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2320.664,
+    "text": "Playing the stock market, who knows? One of the things that you can do to address this, beyond making sure you have questions that don't cause people to run away from your poll.",
+    "start_ms": 2320664,
+    "end_ms": 2329888,
+    "duration_ms": 9224,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2331.256,
+    "text": "is keep them short. And you may or experiences be persistent.",
+    "start_ms": 2331256,
+    "end_ms": 2337104,
+    "duration_ms": 5848,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2337.848,
+    "text": "This is why you get so many text messages. Recently, because people really wanted to try to address that bias from non-response.",
+    "start_ms": 2337848,
+    "end_ms": 2345640,
+    "duration_ms": 7792,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2348.536,
+    "text": "I'll use Bravery. But I'm not putting that out here.",
+    "start_ms": 2348536,
+    "end_ms": 2352401,
+    "duration_ms": 3865,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2352.401,
+    "text": "If you pay people to do a poll, you can improve the response rate, but you might actually contaminate the data.",
+    "start_ms": 2352401,
+    "end_ms": 2357276,
+    "duration_ms": 4875,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2358.008,
+    "text": "Right, so I pay you to fill out this poll, sure.",
+    "start_ms": 2358008,
+    "end_ms": 2360408,
+    "duration_ms": 2400,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2360.408,
+    "text": "No, no, no, no, no, how much is that worth?",
+    "start_ms": 2360408,
+    "end_ms": 2362488,
+    "duration_ms": 2080,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2362.488,
+    "text": "Yeah. And I think about it, I got $10. Daxial Real Prom.",
+    "start_ms": 2362488,
+    "end_ms": 2368480,
+    "duration_ms": 5992,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2374.68,
+    "text": "We should have flipped the coin. Flip the coin in your head.",
+    "start_ms": 2374680,
+    "end_ms": 2378856,
+    "duration_ms": 4176,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2381.528,
+    "text": "Which is the honest. Not sure why assets I'm probably meant to have a coin in...",
+    "start_ms": 2381528,
+    "end_ms": 2385140,
+    "duration_ms": 3612,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2385.14,
+    "text": "... lecture. No one's filling it up. You're all flukin' coins.",
+    "start_ms": 2385140,
+    "end_ms": 2401736,
+    "duration_ms": 16596,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2402.84,
+    "text": "Yeah, so if I wanted to do this correctly, I should have everyone bring out a coin flip it.",
+    "start_ms": 2402840,
+    "end_ms": 2406840,
+    "duration_ms": 4000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2407.448,
+    "text": "The answer. Point of the coin. Why might I do that?",
+    "start_ms": 2407448,
+    "end_ms": 2410721,
+    "duration_ms": 3273,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2410.721,
+    "text": "Because you know I'm here. And you don't want to lie to me.",
+    "start_ms": 2410721,
+    "end_ms": 2414696,
+    "duration_ms": 3975,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2414.808,
+    "text": "Let's see what happens. We don't have results. Wait, I'm learning I should have results.",
+    "start_ms": 2414808,
+    "end_ms": 2421416,
+    "duration_ms": 6608,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2421.416,
+    "text": "Rest down. What's the answer? Yes, we're going to go at the answers yes attending lectures very helpful.",
+    "start_ms": 2421416,
+    "end_ms": 2430480,
+    "duration_ms": 9064,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2430.84,
+    "text": "Up. Yes, this is an example of mildly sensitive question.",
+    "start_ms": 2430840,
+    "end_ms": 2435960,
+    "duration_ms": 5120,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2435.96,
+    "text": "This one, I bet you would be willing to be honest, even without the coin, but with the coin.",
+    "start_ms": 2435960,
+    "end_ms": 2439960,
+    "duration_ms": 4000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2440.952,
+    "text": "It's even easier to be honest, right? So, let's go to the other side.",
+    "start_ms": 2440952,
+    "end_ms": 2446472,
+    "duration_ms": 5520,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2446.648,
+    "text": "Let's just me out. Okay. Alright, so you gotta pull the deck.",
+    "start_ms": 2446648,
+    "end_ms": 2450728,
+    "duration_ms": 4080,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2451.896,
+    "text": "Alright, so we do these poles. And Gallup pole is probably one of the premier election poles in US.",
+    "start_ms": 2451896,
+    "end_ms": 2456896,
+    "duration_ms": 5000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2457.816,
+    "text": "The sampling frame here is stated civilian non institutionalize its issue population.",
+    "start_ms": 2457816,
+    "end_ms": 2462816,
+    "duration_ms": 5000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2463.288,
+    "text": "of adults in telephone households. Okay. In the Continental U.S.",
+    "start_ms": 2463288,
+    "end_ms": 2470664,
+    "duration_ms": 7376,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2471.448,
+    "text": "So that is the stated sampling frame. That is from the space from which they measure.",
+    "start_ms": 2471448,
+    "end_ms": 2475848,
+    "duration_ms": 4400,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2478.168,
+    "text": "They do random digit dialing. to try to get listed and unlisted numbers.",
+    "start_ms": 2478168,
+    "end_ms": 2484476,
+    "duration_ms": 6308,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2486.808,
+    "text": "Phone numbers. What is this selection bias of this? We're done as well.",
+    "start_ms": 2486808,
+    "end_ms": 2497824,
+    "duration_ms": 11016,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2497.88,
+    "text": "The house. They rarely pick an individual. Let's just section bikes.",
+    "start_ms": 2497880,
+    "end_ms": 2504328,
+    "duration_ms": 6448,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2510.776,
+    "text": "Yes, so we're picking up people who answer phones if you don't have a phone you don't answer phones.",
+    "start_ms": 2510776,
+    "end_ms": 2516176,
+    "duration_ms": 5400,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2516.536,
+    "text": "You're not going to be in this talk, right? Let's take a look at the section.",
+    "start_ms": 2516536,
+    "end_ms": 2521576,
+    "duration_ms": 5040,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2524.024,
+    "text": "We're gonna try to recall multiple times. Try to avoid the non-response bias in the people who don't answer phones.",
+    "start_ms": 2524024,
+    "end_ms": 2530168,
+    "duration_ms": 6144,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2533.272,
+    "text": "But this household is an issue, like I need to have a phone.",
+    "start_ms": 2533272,
+    "end_ms": 2536072,
+    "duration_ms": 2800,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2536.952,
+    "text": "Individuals have phones. They're going to be ignored. It's a selection bias inherent and then the response bias is the Not answering.",
+    "start_ms": 2536952,
+    "end_ms": 2547080,
+    "duration_ms": 10128,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2547.096,
+    "text": "New Response. So many source of biases who responds. Do you know what are the truth this came up in the most recent uh People are being increasingly less honest about their preferences, even the posters.",
+    "start_ms": 2547096,
+    "end_ms": 2567128,
+    "duration_ms": 20032,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2568.472,
+    "text": "And we also have to think about the actual population of votes.",
+    "start_ms": 2568472,
+    "end_ms": 2571872,
+    "duration_ms": 3400,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2571.872,
+    "text": "This is a little bit harder than you might imagine.",
+    "start_ms": 2571872,
+    "end_ms": 2573672,
+    "duration_ms": 1800,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2573.672,
+    "text": "The population itself is a little bit ill-defined. Populations of people are going to vote for a break-back of election, but I don't actually know what that population is.",
+    "start_ms": 2573672,
+    "end_ms": 2582016,
+    "duration_ms": 8344,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2582.744,
+    "text": "I was helping frame which I've tried my best to define in some sampling process in that frame that I've tried my best to instantiate.",
+    "start_ms": 2582744,
+    "end_ms": 2588244,
+    "duration_ms": 5500,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2591.48,
+    "text": "It's a good idea of the response rates. Single-digit response rates of the norm when you run big pulls.",
+    "start_ms": 2591480,
+    "end_ms": 2597104,
+    "duration_ms": 5624,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2597.104,
+    "text": "So get used to that. The tiny faction of your people you pull will actually respond.",
+    "start_ms": 2597104,
+    "end_ms": 2603816,
+    "duration_ms": 6712,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2607.928,
+    "text": "Today we use a lot of fairly sophisticated proprietary, some not public, statistical methods to figure out.",
+    "start_ms": 2607928,
+    "end_ms": 2614968,
+    "duration_ms": 7040,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2615.64,
+    "text": "From the data we sample. What the actual outcome might be?",
+    "start_ms": 2615640,
+    "end_ms": 2619336,
+    "duration_ms": 3696,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2619.544,
+    "text": "We're trying to correct for all these biases. And then re-weighting things like house effects, certain polls seem to have a specific bias over many, many elections and we start to account for that too.",
+    "start_ms": 2619544,
+    "end_ms": 2629648,
+    "duration_ms": 10104,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2630.328,
+    "text": "Just like... The the original literary digest poll. Really, I can anticipate what they're gonna get.",
+    "start_ms": 2630328,
+    "end_ms": 2636744,
+    "duration_ms": 6416,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2637.24,
+    "text": "Today we still try to predict what other poles we'll find, based on what we find in our poles.",
+    "start_ms": 2637240,
+    "end_ms": 2641160,
+    "duration_ms": 3920,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2643.544,
+    "text": "You're interested in pulling and pulling math, 538 is a fun place to check out.",
+    "start_ms": 2643544,
+    "end_ms": 2647544,
+    "duration_ms": 4000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2647.544,
+    "text": "They released many of their simulation code sets for actually doing their analysis.",
+    "start_ms": 2647544,
+    "end_ms": 2652184,
+    "duration_ms": 4640,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2652.696,
+    "text": "So fun place to go. Yep. Why are they proprietary?",
+    "start_ms": 2652696,
+    "end_ms": 2658310,
+    "duration_ms": 5614,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2658.31,
+    "text": "Well, there's a lot of money now in these polls and getting them right.",
+    "start_ms": 2658310,
+    "end_ms": 2662168,
+    "duration_ms": 3858,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2662.168,
+    "text": "And so if I have a really clever statistical method, I may not share all the things that I'm doing.",
+    "start_ms": 2662168,
+    "end_ms": 2666488,
+    "duration_ms": 4320,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2666.488,
+    "text": "All the corrections, the bias accounting that I'm doing, I saw I'm seeing an uptick and people responding to phone surveys in Alabama that tells me that in Arkansas I should expect something able to get in as well.",
+    "start_ms": 2666488,
+    "end_ms": 2679768,
+    "duration_ms": 13280,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2679.714,
+    "text": "there's all these interesting relationships that people try to model to be able to draw deeper conclusions because they try to understand their sampling biases that are present.",
+    "start_ms": 2679714,
+    "end_ms": 2687288,
+    "duration_ms": 7574,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2688.952,
+    "text": "and they don't necessarily want to show up. But if I could create a permit, they share a lot of what they do.",
+    "start_ms": 2688952,
+    "end_ms": 2693192,
+    "duration_ms": 4240,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2694.168,
+    "text": "Good place to check out. Alright, move it along. Almost, let's do probably samples and we'll talk about, we'll take a short break.",
+    "start_ms": 2694168,
+    "end_ms": 2703312,
+    "duration_ms": 9144,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2703.96,
+    "text": "Alright, so, could be an example. This one's a little bit confusing.",
+    "start_ms": 2703960,
+    "end_ms": 2707240,
+    "duration_ms": 3280,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2708.184,
+    "text": "A little bit jargony. Convenienceable. Is it sort of the day that you can get a hold of?",
+    "start_ms": 2708184,
+    "end_ms": 2714856,
+    "duration_ms": 6672,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2716.12,
+    "text": "It's not sampling. I walk to the people in the front row and ask you a question.",
+    "start_ms": 2716120,
+    "end_ms": 2720280,
+    "duration_ms": 4160,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2720.28,
+    "text": "That was convenient to me. I have no clue what my sampling process was.",
+    "start_ms": 2720280,
+    "end_ms": 2723320,
+    "duration_ms": 3040,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2723.32,
+    "text": "So I guess people in this class haven't thought through it.",
+    "start_ms": 2723320,
+    "end_ms": 2725560,
+    "duration_ms": 2240,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2725.848,
+    "text": "I'm not using randomness I'm going like, well, I pick this person, that was a random choice.",
+    "start_ms": 2725848,
+    "end_ms": 2730648,
+    "duration_ms": 4800,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2730.968,
+    "text": "Was it really? I didn't flip it quite, I didn't actually use ramness, I just took what was easy to get to.",
+    "start_ms": 2730968,
+    "end_ms": 2736452,
+    "duration_ms": 5484,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2737.88,
+    "text": "So, example, scientists in New South Wales collect specimens from the eucalyptus trees.",
+    "start_ms": 2737880,
+    "end_ms": 2742840,
+    "duration_ms": 4960,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2743.544,
+    "text": "to keep in museums, recording where they came from, where do you think they come from?",
+    "start_ms": 2743544,
+    "end_ms": 2747544,
+    "duration_ms": 4000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2749.944,
+    "text": "I went out there randomly picked a eucalyptus tree off the side of the road.",
+    "start_ms": 2749944,
+    "end_ms": 2753224,
+    "duration_ms": 3280,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2756.536,
+    "text": "Let's take a gig after distribution. They all live here.",
+    "start_ms": 2756536,
+    "end_ms": 2761704,
+    "duration_ms": 5168,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2761.694,
+    "text": "all the eucliptic trees seem to be right around where they live.",
+    "start_ms": 2761694,
+    "end_ms": 2764464,
+    "duration_ms": 2770,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2764.984,
+    "text": "They did drive to what they felt as an external location.",
+    "start_ms": 2764984,
+    "end_ms": 2768184,
+    "duration_ms": 3200,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2768.856,
+    "text": "Take your time. Right. It's a convenient sample. Didn't say I'm going to grid out this entire space.",
+    "start_ms": 2768856,
+    "end_ms": 2775000,
+    "duration_ms": 6144,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2775.544,
+    "text": "I'm going to say, you know, flip a coin in which particular cube I go to, let's say I'm going to go this cube I'm going to find a road near that point and try to find a sample there.",
+    "start_ms": 2775544,
+    "end_ms": 2783424,
+    "duration_ms": 7880,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2783.424,
+    "text": "That would have been a random sample pages by the sign of Rode, that was a random tree, right?",
+    "start_ms": 2783424,
+    "end_ms": 2789712,
+    "duration_ms": 6288,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2789.712,
+    "text": "And they called out their sample. This is where the tree is actually, let's replay, and it's the replay.",
+    "start_ms": 2789712,
+    "end_ms": 2799074,
+    "duration_ms": 9362,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2799.074,
+    "text": "So this is their sample. This is distribution of eucalyptus trees.",
+    "start_ms": 2799074,
+    "end_ms": 2802696,
+    "duration_ms": 3622,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2804.088,
+    "text": "So, very simple. Where they actually are. Right. So very biosample don't do convenience samples.",
+    "start_ms": 2804088,
+    "end_ms": 2813448,
+    "duration_ms": 9360,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2813.448,
+    "text": "I say that, but a lot of your life you're going to be like, well, I have this data available to me.",
+    "start_ms": 2813448,
+    "end_ms": 2817448,
+    "duration_ms": 4000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2817.448,
+    "text": "I'm going to go, you know, that's what I've got.",
+    "start_ms": 2817448,
+    "end_ms": 2819448,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2819.448,
+    "text": "So I'm going to analyze it and try to draw conclusions.",
+    "start_ms": 2819448,
+    "end_ms": 2821948,
+    "duration_ms": 2500,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2822.488,
+    "text": "When you're in this setting where you have what you thought you know what was convenient for you to collect.",
+    "start_ms": 2822488,
+    "end_ms": 2826888,
+    "duration_ms": 4400,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2826.888,
+    "text": "You should start to ask what was my sampling frame.",
+    "start_ms": 2826888,
+    "end_ms": 2829488,
+    "duration_ms": 2600,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2829.976,
+    "text": "What was my choice chance process if there is no chance process there is no way to reason about the randomness it's hard to draw conclusions like p values or statistical confidence.",
+    "start_ms": 2829976,
+    "end_ms": 2839976,
+    "duration_ms": 10000,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2841.368,
+    "text": "So you could try to sample from it. Call it your sampling thing.",
+    "start_ms": 2841368,
+    "end_ms": 2844568,
+    "duration_ms": 3200,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2845.272,
+    "text": "But then you have to think about again the biases and how you got that original sample.",
+    "start_ms": 2845272,
+    "end_ms": 2848672,
+    "duration_ms": 3400,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2850.04,
+    "text": "Alright, so have hazard. Does not equal random. Random means use a random number generator, use an algorithm, use flip-acoin, do something.",
+    "start_ms": 2850040,
+    "end_ms": 2859936,
+    "duration_ms": 9896,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2860.344,
+    "text": "Don't use your choice of well draw random dots on the board.",
+    "start_ms": 2860344,
+    "end_ms": 2863644,
+    "duration_ms": 3300,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2864.952,
+    "text": "Maybe that's a source of ice. So we can try to fix these things like with polls, but it's better if we can.",
+    "start_ms": 2864952,
+    "end_ms": 2877656,
+    "duration_ms": 12704,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2878.424,
+    "text": "Get actual samples. Alright, so the easiest way to get a good sample is randomization.",
+    "start_ms": 2878424,
+    "end_ms": 2885144,
+    "duration_ms": 6720,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2885.144,
+    "text": "Randomization is a really powerful tool. in statistics, in computer science, and in general.",
+    "start_ms": 2885144,
+    "end_ms": 2890300,
+    "duration_ms": 5156,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2890.968,
+    "text": "Can you do a lot with randomization? So why sector random sample?",
+    "start_ms": 2890968,
+    "end_ms": 2896424,
+    "duration_ms": 5456,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2896.696,
+    "text": "When we get more representative samples, it helps us reduce bias.",
+    "start_ms": 2896696,
+    "end_ms": 2900216,
+    "duration_ms": 3520,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2901.432,
+    "text": "Trusive randomization. still introduced bike suite to manage that. With a random sample...",
+    "start_ms": 2901432,
+    "end_ms": 2909288,
+    "duration_ms": 7856,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2909.048,
+    "text": "Sorry, they ran them simple we can estimate. the bias and chance air.",
+    "start_ms": 2909048,
+    "end_ms": 2914888,
+    "duration_ms": 5840,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2915.64,
+    "text": "The random samples. It allows to quantify uncertainty, compute these p-values to make statistical significance conclusions.",
+    "start_ms": 2915640,
+    "end_ms": 2923368,
+    "duration_ms": 7728,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2924.76,
+    "text": "So for probably a sample this is important, it's in a blue box.",
+    "start_ms": 2924760,
+    "end_ms": 2927760,
+    "duration_ms": 3000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2928.152,
+    "text": "We have to be able to provide the chance. that any specified set of individuals in the sampling frame.",
+    "start_ms": 2928152,
+    "end_ms": 2936504,
+    "duration_ms": 8352,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2936.792,
+    "text": "We'll be in the sample. This is a good exam style question, so probably samples should know this.",
+    "start_ms": 2936792,
+    "end_ms": 2947336,
+    "duration_ms": 10544,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2950.584,
+    "text": "Individuals can have different chances. Some individuals may have chance zero.",
+    "start_ms": 2950584,
+    "end_ms": 2956232,
+    "duration_ms": 5648,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2956.232,
+    "text": "It's okay. As long as you know the chance. It's a probability sample.",
+    "start_ms": 2956232,
+    "end_ms": 2960936,
+    "duration_ms": 4704,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2962.04,
+    "text": "Your ability to do this really depends on your sampling frame.",
+    "start_ms": 2962040,
+    "end_ms": 2964540,
+    "duration_ms": 2500,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2964.888,
+    "text": "You have to know your sampling frame, we'll say the chance that a thing gets in your sample.",
+    "start_ms": 2964888,
+    "end_ms": 2968488,
+    "duration_ms": 3600,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2972.376,
+    "text": "Because we know these probabilities, we can estimate errors. Okay, actually study these processes.",
+    "start_ms": 2972376,
+    "end_ms": 2978472,
+    "duration_ms": 6096,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2984.568,
+    "text": "In practice, we won't know exactly the chance. There is measurement of there's lots of factors that play out.",
+    "start_ms": 2984568,
+    "end_ms": 2990968,
+    "duration_ms": 6400,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2990.968,
+    "text": "We wouldn't be able to say with some confidence that we can estimate these probabilities.",
+    "start_ms": 2990968,
+    "end_ms": 2995208,
+    "duration_ms": 4240,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2998.68,
+    "text": "People don't answer, but maybe I can account for that.",
+    "start_ms": 2998680,
+    "end_ms": 3000680,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3000.68,
+    "text": "I say, well, the probability that, you know, a grad student or undergrad at UC Berkeley doesn't answer is 20%.",
+    "start_ms": 3000680,
+    "end_ms": 3004680,
+    "duration_ms": 4000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3004.68,
+    "text": "So I took an even smaller sample and asked, you know, what's your chance of answering.",
+    "start_ms": 3004680,
+    "end_ms": 3007880,
+    "duration_ms": 3200,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3007.88,
+    "text": "So maybe I have an estimate for these probabilities. bacteria, we don't know their response bias, but again we can maybe make it an educated guess of the distribution of bacteria in the place we sample from, the chance we include a particular kind of bacteria.",
+    "start_ms": 3007880,
+    "end_ms": 3027816,
+    "duration_ms": 19936,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3028.792,
+    "text": "So we can try to model. Alright, so let's go through an example.",
+    "start_ms": 3028792,
+    "end_ms": 3033544,
+    "duration_ms": 4752,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3034.52,
+    "text": "So there's three TAs. We'll call them TAA, B and C.",
+    "start_ms": 3034520,
+    "end_ms": 3038530,
+    "duration_ms": 4010,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3038.53,
+    "text": "They have names, but we'll use letters A, B and C.",
+    "start_ms": 3038530,
+    "end_ms": 3041464,
+    "duration_ms": 2934,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3042.36,
+    "text": "I choose a with probability of 1 and I choose b or c with probably 0.5.",
+    "start_ms": 3042360,
+    "end_ms": 3047800,
+    "duration_ms": 5440,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3048.248,
+    "text": "There's my several. Point my tears. Is that a probability sample?",
+    "start_ms": 3048248,
+    "end_ms": 3053704,
+    "duration_ms": 5456,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3058.968,
+    "text": "Can write down the probabilities? Probably if I'm sampling two at random, so I'm sampling two.",
+    "start_ms": 3058968,
+    "end_ms": 3065432,
+    "duration_ms": 6464,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3065.432,
+    "text": "So I'd probably have getting AB is 0.5, probably AC is 0.5 and probably BC is 0.",
+    "start_ms": 3065432,
+    "end_ms": 3070072,
+    "duration_ms": 4640,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3072.344,
+    "text": "How does it probably sample, because I can write down the probabilities?",
+    "start_ms": 3072344,
+    "end_ms": 3075144,
+    "duration_ms": 2800,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3076.216,
+    "text": "Not a great one. It's not by representative of this particular group.",
+    "start_ms": 3076216,
+    "end_ms": 3079464,
+    "duration_ms": 3248,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3079.992,
+    "text": "uh... poor C. Doesn't several entire population still probably simple?",
+    "start_ms": 3079992,
+    "end_ms": 3090376,
+    "duration_ms": 10384,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3091.544,
+    "text": "There's some chance there. Hang on if I only see a B or AC.",
+    "start_ms": 3091544,
+    "end_ms": 3095544,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3095.525,
+    "text": "see how some biases so It has all the problems, but I can at least analyze it, because they're probably simple.",
+    "start_ms": 3095525,
+    "end_ms": 3101464,
+    "duration_ms": 5939,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3103.64,
+    "text": "Let's do this. I think I'll yeah so i'm gonna go through a few more examples will do a poll on the short break.",
+    "start_ms": 3103640,
+    "end_ms": 3110696,
+    "duration_ms": 7056,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3111.0,
+    "text": "Okay, so simple and I'm simple. It's the gold standard.",
+    "start_ms": 3111000,
+    "end_ms": 3115560,
+    "duration_ms": 4560,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3115.426,
+    "text": "simple. It's not that simple. It's actually hard to do.",
+    "start_ms": 3115426,
+    "end_ms": 3117769,
+    "duration_ms": 2343,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3117.769,
+    "text": "But a simple, random sample, is it going to sample?",
+    "start_ms": 3117769,
+    "end_ms": 3120232,
+    "duration_ms": 2463,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3120.6,
+    "text": "uniformly at random. Without replacement from a population. or for my simply been to So every individual...",
+    "start_ms": 3120600,
+    "end_ms": 3131400,
+    "duration_ms": 10800,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3131.672,
+    "text": "and subset of individuals. has the same chance of being selected for my sampling frame.",
+    "start_ms": 3131672,
+    "end_ms": 3137784,
+    "duration_ms": 6112,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3139.512,
+    "text": "So, is every pair, every triple, and so on, as the same chance?",
+    "start_ms": 3139512,
+    "end_ms": 3143352,
+    "duration_ms": 3840,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3144.536,
+    "text": "It's a simple random sample. It's so common we call it an S R S.",
+    "start_ms": 3144536,
+    "end_ms": 3148536,
+    "duration_ms": 4000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3149.944,
+    "text": "This is kind of a gold standard. You can do this.",
+    "start_ms": 3149944,
+    "end_ms": 3152259,
+    "duration_ms": 2315,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3152.259,
+    "text": "This lets you do a lot of analysis. Simple but amazing deal.",
+    "start_ms": 3152259,
+    "end_ms": 3157272,
+    "duration_ms": 5013,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3161.112,
+    "text": "Another thing called a uniform random sample with replacement. We're drawing uniformly at random.",
+    "start_ms": 3161112,
+    "end_ms": 3167752,
+    "duration_ms": 6640,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3168.088,
+    "text": "With Replacement. is similar, in fact, it's basically the same as simple random sample.",
+    "start_ms": 3168088,
+    "end_ms": 3173496,
+    "duration_ms": 5408,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3174.424,
+    "text": "But I put the person back after I sampled him.",
+    "start_ms": 3174424,
+    "end_ms": 3176924,
+    "duration_ms": 2500,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3180.856,
+    "text": "Why would I do this? I wouldn't. It's silly. Why would I ask you the question twice in a row?",
+    "start_ms": 3180856,
+    "end_ms": 3186984,
+    "duration_ms": 6128,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3187.288,
+    "text": "I could read a sample. are we talking about? This is way easier to analyze this.",
+    "start_ms": 3187288,
+    "end_ms": 3193160,
+    "duration_ms": 5872,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3194.456,
+    "text": "If I have to deal with the fact that once I pulled some out of my sample, then the remaining population is a little bit biased, because I remove that person from my sample, then I simple them.",
+    "start_ms": 3194456,
+    "end_ms": 3201456,
+    "duration_ms": 7000,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3201.912,
+    "text": "The analysis gets much harder. Hello. Do this. This is how we sample.",
+    "start_ms": 3201912,
+    "end_ms": 3207112,
+    "duration_ms": 5200,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3207.032,
+    "text": "But we use this when we do our analysis. This is Sonsion.",
+    "start_ms": 3207032,
+    "end_ms": 3211264,
+    "duration_ms": 4232,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3217.464,
+    "text": "Yeah, and so maybe a Ralph was a good way to think about this.",
+    "start_ms": 3217464,
+    "end_ms": 3219464,
+    "duration_ms": 2000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3219.928,
+    "text": "Bye, put my little... here and I pull one out at a time.",
+    "start_ms": 3219928,
+    "end_ms": 3223560,
+    "duration_ms": 3632,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3224.056,
+    "text": "Is this person wins, this person wins, this person wins.",
+    "start_ms": 3224056,
+    "end_ms": 3225960,
+    "duration_ms": 1904,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3225.96,
+    "text": "If I don't put it back, it's a simple random sample.",
+    "start_ms": 3225960,
+    "end_ms": 3228056,
+    "duration_ms": 2096,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3230.136,
+    "text": "If I put it back, I've been a new form and I'm sampled with replacement.",
+    "start_ms": 3230136,
+    "end_ms": 3233176,
+    "duration_ms": 3040,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3234.808,
+    "text": "You don't get to win twice, so in practice we do this.",
+    "start_ms": 3234808,
+    "end_ms": 3236808,
+    "duration_ms": 2000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3237.624,
+    "text": "But if you're doing your analysis and you have a big enough population, a big enough sample, they basically look the same.",
+    "start_ms": 3237624,
+    "end_ms": 3243624,
+    "duration_ms": 6000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3243.624,
+    "text": "Mathematically, but this one is much easier to do computational.",
+    "start_ms": 3243624,
+    "end_ms": 3247624,
+    "duration_ms": 4000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3250.264,
+    "text": "Let's do one more fun one. We'll take a short break.",
+    "start_ms": 3250264,
+    "end_ms": 3252354,
+    "duration_ms": 2090,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3252.354,
+    "text": "We'll be doing a pull. Simple sampling scheme here. I have a class roster of 100 or 1,100 students that we have this year.",
+    "start_ms": 3252354,
+    "end_ms": 3260808,
+    "duration_ms": 8454,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3260.808,
+    "text": "1,200. It was we had a nice round number but it said this route nice round number of 1,100 students that lists them alphabetically.",
+    "start_ms": 3260808,
+    "end_ms": 3268632,
+    "duration_ms": 7824,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3268.984,
+    "text": "I pick one of the first 10 students on the list at random.",
+    "start_ms": 3268984,
+    "end_ms": 3273064,
+    "duration_ms": 4080,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3273.064,
+    "text": "These are random originator. then I'm going to create a sample by taking that student and every 10th student listed after that so it looks like this.",
+    "start_ms": 3273064,
+    "end_ms": 3281052,
+    "duration_ms": 7988,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3281.368,
+    "text": "So there's my group of first ten. I picked this character.",
+    "start_ms": 3281368,
+    "end_ms": 3284568,
+    "duration_ms": 3200,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3284.856,
+    "text": "And then I count 10 more. One, two, three, four, five, six, seven, eight, nine, ten.",
+    "start_ms": 3284856,
+    "end_ms": 3289656,
+    "duration_ms": 4800,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3289.656,
+    "text": "I picked this one. When I do again. I picked this one over here.",
+    "start_ms": 3289656,
+    "end_ms": 3296744,
+    "duration_ms": 7088,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3297.496,
+    "text": "Alright That's my sampling process. Is this a properly simple?",
+    "start_ms": 3297496,
+    "end_ms": 3302600,
+    "duration_ms": 5104,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3302.456,
+    "text": "Does each student have the same problem of being selected?",
+    "start_ms": 3302456,
+    "end_ms": 3305456,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3305.456,
+    "text": "Is this a simple random sample? If I go to the next one, can you guys keep answering?",
+    "start_ms": 3305456,
+    "end_ms": 3334600,
+    "duration_ms": 29144,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3338.552,
+    "text": "Is the current poll closed now? I need to figure out how this side of stuff works.",
+    "start_ms": 3338552,
+    "end_ms": 3343944,
+    "duration_ms": 5392,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3350.776,
+    "text": "Is this a probability sample? Is it possible to make these things show the answer?",
+    "start_ms": 3350776,
+    "end_ms": 3358792,
+    "duration_ms": 8016,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3360.376,
+    "text": "I should have changed this so I didn't fix that.",
+    "start_ms": 3360376,
+    "end_ms": 3362376,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3367.96,
+    "text": "Sherry, be fresh. Right. Who says is this? Who says, yes, we'll do it in in class, pull as well.",
+    "start_ms": 3367960,
+    "end_ms": 3375050,
+    "duration_ms": 7090,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3375.05,
+    "text": "This is probably simple. Who's the YAS who says no?",
+    "start_ms": 3375050,
+    "end_ms": 3379048,
+    "duration_ms": 3998,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3379.544,
+    "text": "Like our fresh it, let's do it. This is probably simple.",
+    "start_ms": 3379544,
+    "end_ms": 3399840,
+    "duration_ms": 20296,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3401.496,
+    "text": "And the class says yes 75% 75% no The answer is yes.",
+    "start_ms": 3401496,
+    "end_ms": 3407784,
+    "duration_ms": 6288,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3407.64,
+    "text": "Why? I can tell you the probability of any... set of students them are zero.",
+    "start_ms": 3407640,
+    "end_ms": 3414932,
+    "duration_ms": 7292,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3414.932,
+    "text": "Many, many combinations will never happen. But some will and I know exactly how often they'll happen.",
+    "start_ms": 3414932,
+    "end_ms": 3419016,
+    "duration_ms": 4084,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3420.024,
+    "text": "It's probably simple. We'll correct your answers. Okay. Does each student have the same problem being selected?",
+    "start_ms": 3420024,
+    "end_ms": 3430256,
+    "duration_ms": 10232,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3432.056,
+    "text": "Does each single student have the same problem of being selected?",
+    "start_ms": 3432056,
+    "end_ms": 3435056,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3451.928,
+    "text": "True key. Alright, hopefully some enough of the answer. I'm going to move on.",
+    "start_ms": 3451928,
+    "end_ms": 3464328,
+    "duration_ms": 12400,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3465.272,
+    "text": "Just pick something, flip it quite at this point. coin flipping really messed it up.",
+    "start_ms": 3465272,
+    "end_ms": 3481160,
+    "duration_ms": 15888,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3484.056,
+    "text": "So each student actually has an equal chance of being selected.",
+    "start_ms": 3484056,
+    "end_ms": 3488056,
+    "duration_ms": 4000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3490.04,
+    "text": "Not every group of 10 students has an equal chance.",
+    "start_ms": 3490040,
+    "end_ms": 3492680,
+    "duration_ms": 2640,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3493.976,
+    "text": "for each individual student does. Why? Each student is in one of these 10 groups.",
+    "start_ms": 3493976,
+    "end_ms": 3500450,
+    "duration_ms": 6474,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3500.45,
+    "text": "I'm going to pick one of these. How's that work?",
+    "start_ms": 3500450,
+    "end_ms": 3503172,
+    "duration_ms": 2722,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3503.172,
+    "text": "Okay. I've picked my first 10 students. Depending on which of the first 10 students I pick, there's going to be 10 groups of students that I could build.",
+    "start_ms": 3503172,
+    "end_ms": 3514120,
+    "duration_ms": 10948,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3514.004,
+    "text": "equal chance of being in each group. I pick one of these groups around them.",
+    "start_ms": 3514004,
+    "end_ms": 3518620,
+    "duration_ms": 4616,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3518.62,
+    "text": "You have an equal chance of being in one of those groups.",
+    "start_ms": 3518620,
+    "end_ms": 3521120,
+    "duration_ms": 2500,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3521.12,
+    "text": "You have an equal chance of being selected. Give away the answer.",
+    "start_ms": 3521120,
+    "end_ms": 3529759,
+    "duration_ms": 8639,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3529.759,
+    "text": "Let's see if you guys can do this one. Is this a simple random sample?",
+    "start_ms": 3529759,
+    "end_ms": 3534184,
+    "duration_ms": 4425,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3539.224,
+    "text": "So I said some a moment ago that makes this...",
+    "start_ms": 3539224,
+    "end_ms": 3541224,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3541.912,
+    "text": "Too easy. But instead of fast, so maybe you missed it.",
+    "start_ms": 3541912,
+    "end_ms": 3545736,
+    "duration_ms": 3824,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3558.328,
+    "text": "Alright, flip that coin. Go! Okay. This coin keeps ruining my polls.",
+    "start_ms": 3558328,
+    "end_ms": 3570328,
+    "duration_ms": 12000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3570.648,
+    "text": "Alright, so is this a simple random sample? Many of you had originally said yes, now you say no.",
+    "start_ms": 3570648,
+    "end_ms": 3576648,
+    "duration_ms": 6000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3577.72,
+    "text": "Why? as I put up on the screen. Why is this not a simple random sample?",
+    "start_ms": 3577720,
+    "end_ms": 3589096,
+    "duration_ms": 11376,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3588.812,
+    "text": "likely. Every subset of 10 students or groups of 110, yeah, whatever.",
+    "start_ms": 3588812,
+    "end_ms": 3595402,
+    "duration_ms": 6590,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3595.402,
+    "text": "Every subset of the size of each of these groups has to be the same.",
+    "start_ms": 3595402,
+    "end_ms": 3600936,
+    "duration_ms": 5534,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3601.624,
+    "text": "Same chance. So I should be able to take a group of students.",
+    "start_ms": 3601624,
+    "end_ms": 3605692,
+    "duration_ms": 4068,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3606.328,
+    "text": "of 100 and 1,100 divided by 10. So I guess that's what 110 so 110 students each group.",
+    "start_ms": 3606328,
+    "end_ms": 3613688,
+    "duration_ms": 7360,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3614.104,
+    "text": "Uh... Every group of 110 students, possible students, has to speak weekly likely.",
+    "start_ms": 3614104,
+    "end_ms": 3619032,
+    "duration_ms": 4928,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3619.736,
+    "text": "That would be a simple random sample. But here there's only ten possible groups that I can build.",
+    "start_ms": 3619736,
+    "end_ms": 3624700,
+    "duration_ms": 4964,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3626.104,
+    "text": "Yeah, 10 possible groups taken build of 110. Um, so Questions?",
+    "start_ms": 3626104,
+    "end_ms": 3635872,
+    "duration_ms": 9768,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3639.032,
+    "text": "Alright, let's do this. Let's take a two minute break and we'll come back and do some coding exercises.",
+    "start_ms": 3639032,
+    "end_ms": 3643032,
+    "duration_ms": 4000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3645.048,
+    "text": "Give it a break starting now. I assume that was about two minutes.",
+    "start_ms": 3645048,
+    "end_ms": 3837704,
+    "duration_ms": 192656,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3837.704,
+    "text": "For those who are confused, what I just did was a little confusing.",
+    "start_ms": 3837704,
+    "end_ms": 3840704,
+    "duration_ms": 3000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3840.704,
+    "text": "There is some explanation on the slides since we've talked about it already.",
+    "start_ms": 3840704,
+    "end_ms": 3844704,
+    "duration_ms": 4000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3844.704,
+    "text": "I'm not going to re-explain it. You can go look at the slides.",
+    "start_ms": 3844704,
+    "end_ms": 3847704,
+    "duration_ms": 3000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3847.704,
+    "text": "As a quick aside, we have a post about using chat GPT.",
+    "start_ms": 3847704,
+    "end_ms": 3851704,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3851.704,
+    "text": "If you're confused about any of this stuff in lecture, feel free to talk to an AI about it as well.",
+    "start_ms": 3851704,
+    "end_ms": 3855704,
+    "duration_ms": 4000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3855.704,
+    "text": "It's often a great way to get a better explanation than I can provide.",
+    "start_ms": 3855704,
+    "end_ms": 3858704,
+    "duration_ms": 3000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3859.768,
+    "text": "I often do that as well, so when I'm confused how to explain this or ask an AI.",
+    "start_ms": 3859768,
+    "end_ms": 3863368,
+    "duration_ms": 3600,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3863.832,
+    "text": "Alright, we are done with the sampling scheme. Now we get to do the demo.",
+    "start_ms": 3863832,
+    "end_ms": 3869432,
+    "duration_ms": 5600,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3869.432,
+    "text": "Barbie vs Oppenheimer. Who votes for Barbie? It's the movie.",
+    "start_ms": 3869432,
+    "end_ms": 3874810,
+    "duration_ms": 5378,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3874.81,
+    "text": "Yeah. Uh, first of the offline, offline movie. 3 I don't know what the outcome was there.",
+    "start_ms": 3874810,
+    "end_ms": 3881960,
+    "duration_ms": 7150,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3881.96,
+    "text": "No one responded, none response bias was high. Barbie vs Oppenheimer in July 2023 to high-lantis-paid movies arrive in theaters.",
+    "start_ms": 3881960,
+    "end_ms": 3891160,
+    "duration_ms": 9200,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3892.152,
+    "text": "You barbie hop and hammer. We want to know which one's going to win in Berkeley?",
+    "start_ms": 3892152,
+    "end_ms": 3898036,
+    "duration_ms": 5884,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3898.036,
+    "text": "On opening day, we will have the most sales. This is the goal of the demo today.",
+    "start_ms": 3898036,
+    "end_ms": 3901936,
+    "duration_ms": 3900,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3904.312,
+    "text": "Suppose we took a sample of Berkeley residents predict the box office outcomes.",
+    "start_ms": 3904312,
+    "end_ms": 3908952,
+    "duration_ms": 4640,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3910.136,
+    "text": "We could pull students and off-sours, we could pull retirees, they'd look, we can't have this event.",
+    "start_ms": 3910136,
+    "end_ms": 3914136,
+    "duration_ms": 4000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3914.136,
+    "text": "All these things we're going to study. We're going to do this analysis in a way that you don't get to do in practice.",
+    "start_ms": 3914136,
+    "end_ms": 3921592,
+    "duration_ms": 7456,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3921.592,
+    "text": "I'm going to suppose I actually had access to the true population.",
+    "start_ms": 3921592,
+    "end_ms": 3924792,
+    "duration_ms": 3200,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3925.336,
+    "text": "I'm doing this just so we can understand what happens when we sample.",
+    "start_ms": 3925336,
+    "end_ms": 3928336,
+    "duration_ms": 3000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3928.632,
+    "text": "If we again... back in, you know, after the box office opens, you get the actual numbers.",
+    "start_ms": 3928632,
+    "end_ms": 3934712,
+    "duration_ms": 6080,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3934.712,
+    "text": "Right? So, that's the goal for today. Let's do some code.",
+    "start_ms": 3934712,
+    "end_ms": 3939688,
+    "duration_ms": 4976,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3942.04,
+    "text": "Oh no, I renter you. Let's clear our output. Okay.",
+    "start_ms": 3942040,
+    "end_ms": 3946796,
+    "duration_ms": 4756,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3947.192,
+    "text": "So, standard setup. I have a census. So none of what we want to do makes any sense because I already have the answer.",
+    "start_ms": 3947192,
+    "end_ms": 3954416,
+    "duration_ms": 7224,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3954.872,
+    "text": "But, hold, suspend your disc leaf. The census is something that I happen to have.",
+    "start_ms": 3954872,
+    "end_ms": 3959272,
+    "duration_ms": 4400,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3959.272,
+    "text": "I'm going to hold it aside. I'm going to do sampling strategies, try different samples.",
+    "start_ms": 3959272,
+    "end_ms": 3963465,
+    "duration_ms": 4193,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3963.465,
+    "text": "I'll use my census as my ground truth, and I can now see how my sample compares to my census.",
+    "start_ms": 3963465,
+    "end_ms": 3968872,
+    "duration_ms": 5407,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3969.88,
+    "text": "Here's my census. This is made up data, by the way.",
+    "start_ms": 3969880,
+    "end_ms": 3972380,
+    "duration_ms": 2500,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3972.888,
+    "text": "I have the age. Whether they wear Birkenstocks. I don't know how that relates to Barbie, but okay, so they were not there were the work in stocks, the movie, and then...",
+    "start_ms": 3972888,
+    "end_ms": 3983376,
+    "duration_ms": 10488,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3983.768,
+    "text": "Well, I think voted. Barbie, I don't know why I have the movie here.",
+    "start_ms": 3983768,
+    "end_ms": 3988904,
+    "duration_ms": 5136,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3989.88,
+    "text": "Sorry, I reencoded it. So the movie they actually saw and I made a column called Barbie.",
+    "start_ms": 3989880,
+    "end_ms": 3994680,
+    "duration_ms": 4800,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3994.68,
+    "text": "And that column... well as they saw the movie Barbie.",
+    "start_ms": 3994680,
+    "end_ms": 3998472,
+    "duration_ms": 3792,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3999.32,
+    "text": "Right. So if I take the average of that column, what will I get?",
+    "start_ms": 3999320,
+    "end_ms": 4003640,
+    "duration_ms": 4320,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4004.6,
+    "text": "The average of a bunch of true false things is...",
+    "start_ms": 4004600,
+    "end_ms": 4007100,
+    "duration_ms": 2500,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4009.272,
+    "text": "The prop portion of my population that chose to see Barbie.",
+    "start_ms": 4009272,
+    "end_ms": 4013672,
+    "duration_ms": 4400,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4014.68,
+    "text": "Barbie 1 in Berkeley. Big surprise. 53% of the people in our giant town.",
+    "start_ms": 4014680,
+    "end_ms": 4021560,
+    "duration_ms": 6880,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4021.944,
+    "text": "that after they went and we looked to the box office numbers 53% went to C-Barbie.",
+    "start_ms": 4021944,
+    "end_ms": 4026264,
+    "duration_ms": 4320,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4028.28,
+    "text": "Now access to that. We're going to roll back before the box office opens and we want to figure out who's going to see Barbie.",
+    "start_ms": 4028280,
+    "end_ms": 4035528,
+    "duration_ms": 7248,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4036.024,
+    "text": "That's the future. Let's go be in the past. So suppose I am interested in people go to my office hours.",
+    "start_ms": 4036024,
+    "end_ms": 4044800,
+    "duration_ms": 8776,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4044.8,
+    "text": "And for what a reason they are between 18 and 22.",
+    "start_ms": 4044800,
+    "end_ms": 4047520,
+    "duration_ms": 2720,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4047.52,
+    "text": "I'm going to why that's true, but let's say that is my sampling frame.",
+    "start_ms": 4047520,
+    "end_ms": 4050760,
+    "duration_ms": 3240,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4051.736,
+    "text": "Those are people coming by, Alphs hours. During that group.",
+    "start_ms": 4051736,
+    "end_ms": 4054528,
+    "duration_ms": 2792,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4055.064,
+    "text": "And if I sample 10 students... with replacement. from the census, I could see what 10 students that might have come to my office hours would have sent.",
+    "start_ms": 4055064,
+    "end_ms": 4064436,
+    "duration_ms": 9372,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4064.824,
+    "text": "Let's run it. So you're taking my data frame? Looking at only the rows in the true population that would have showed up my off-sourced and again I take a random simple size 10.",
+    "start_ms": 4064824,
+    "end_ms": 4074832,
+    "duration_ms": 10008,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4076.792,
+    "text": "I compute... The proportion of these undergrads in my office hours.",
+    "start_ms": 4076792,
+    "end_ms": 4081776,
+    "duration_ms": 4984,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4081.912,
+    "text": "And point six said they'd love to see Barbie. and all this running again simply loves it.",
+    "start_ms": 4081912,
+    "end_ms": 4089184,
+    "duration_ms": 7272,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4089.184,
+    "text": "Why is it changing? Shantzer, it's random simple. So, he's a nice round number.",
+    "start_ms": 4089184,
+    "end_ms": 4096397,
+    "duration_ms": 7213,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4096.397,
+    "text": "Why is that? I asked ten. That's a sleep number.",
+    "start_ms": 4096397,
+    "end_ms": 4100800,
+    "duration_ms": 4403,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4100.8,
+    "text": "Let's ask eleven. There we go. Didn't really change much, but you know, I have a fraction.",
+    "start_ms": 4100800,
+    "end_ms": 4105864,
+    "duration_ms": 5064,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4106.456,
+    "text": "Barbie's really winning. 81. A lot of variability there. That's a chance there.",
+    "start_ms": 4106456,
+    "end_ms": 4112440,
+    "duration_ms": 5984,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4113.944,
+    "text": "Can we undergraduates have? 11, my sample. How many undergrads?",
+    "start_ms": 4113944,
+    "end_ms": 4120968,
+    "duration_ms": 7024,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4122.936,
+    "text": "In Berkeley. And this is made up data, so I'm curious what we get here.",
+    "start_ms": 4122936,
+    "end_ms": 4127164,
+    "duration_ms": 4228,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4127.164,
+    "text": "The tiny fraction of Berkeley's under breath, really? Oh, sorry, this is length of my undergrad, my sample of the Berkeley.",
+    "start_ms": 4127164,
+    "end_ms": 4135251,
+    "duration_ms": 8087,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4135.251,
+    "text": "So this is a tiny fraction of my sample. What is my sampling frame relative to Berkeley?",
+    "start_ms": 4135251,
+    "end_ms": 4139496,
+    "duration_ms": 4245,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4139.496,
+    "text": "How would I know that? What's this? You dropped this in here.",
+    "start_ms": 4139496,
+    "end_ms": 4144320,
+    "duration_ms": 4824,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4148.12,
+    "text": "7.7% of birth-year undergrads, according to this made-up data. So the tiny sample of Berkeley, tiny sample of the integrals, only 11.",
+    "start_ms": 4148120,
+    "end_ms": 4157688,
+    "duration_ms": 9568,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4157.4,
+    "text": "A lot of chancer. How do you curiosity us on this here?",
+    "start_ms": 4157400,
+    "end_ms": 4161672,
+    "duration_ms": 4272,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4162.424,
+    "text": "I want more undergrads. You should come to my office hours.",
+    "start_ms": 4162424,
+    "end_ms": 4166032,
+    "duration_ms": 3608,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4166.032,
+    "text": "It's fun. We don't actually talk about the class much, but...",
+    "start_ms": 4166032,
+    "end_ms": 4168232,
+    "duration_ms": 2200,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4169.016,
+    "text": "talk about research in the future in science and lots of but it a bigger group my whole class comes to my office hours Still Barbie wins.",
+    "start_ms": 4169016,
+    "end_ms": 4177896,
+    "duration_ms": 8880,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4179.288,
+    "text": "5 more integrats whole class comes in and it's still just 0.08%.",
+    "start_ms": 4179288,
+    "end_ms": 4185528,
+    "duration_ms": 6240,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4185.944,
+    "text": "Up there. The entire population of Berkeley. Go to an elderly event.",
+    "start_ms": 4185944,
+    "end_ms": 4191976,
+    "duration_ms": 6032,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4191.992,
+    "text": "There are now my suffering frame is people who have 65.",
+    "start_ms": 4191992,
+    "end_ms": 4194705,
+    "duration_ms": 2713,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4194.705,
+    "text": "That's the depth of I sample 100 of those people.",
+    "start_ms": 4194705,
+    "end_ms": 4197692,
+    "duration_ms": 2987,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4199.192,
+    "text": "And they do not like Barbie. for you this data.",
+    "start_ms": 4199192,
+    "end_ms": 4202176,
+    "duration_ms": 2984,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4202.744,
+    "text": "I don't actually know why that's the case. But 33% want to see Barbie.",
+    "start_ms": 4202744,
+    "end_ms": 4207580,
+    "duration_ms": 4836,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4208.088,
+    "text": "Let's run it again, and we'll get lucky. 4 4% want to see barb.",
+    "start_ms": 4208088,
+    "end_ms": 4213096,
+    "duration_ms": 5008,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4214.488,
+    "text": "Different populations I'm getting different answers. The two things that play here is my sampling frame, the group that I'm pulling from, and of course the sample size is affecting that variability.",
+    "start_ms": 4214488,
+    "end_ms": 4223512,
+    "duration_ms": 9024,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4228.792,
+    "text": "We have the population so I can start to study the bias.",
+    "start_ms": 4228792,
+    "end_ms": 4231672,
+    "duration_ms": 2880,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4231.672,
+    "text": "What I'm going to do here is use a group by, so look at my population.",
+    "start_ms": 4231672,
+    "end_ms": 4235192,
+    "duration_ms": 3520,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4235.192,
+    "text": "In a group by age and whether or not they wear burkin stocks, again, I don't know why.",
+    "start_ms": 4235192,
+    "end_ms": 4239592,
+    "duration_ms": 4400,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4240.472,
+    "text": "And I'm going to compute the meaning of the votes.",
+    "start_ms": 4240472,
+    "end_ms": 4243672,
+    "duration_ms": 3200,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4243.704,
+    "text": "In that group. here I'm gonna compute the mean up for Barbie.",
+    "start_ms": 4243704,
+    "end_ms": 4247432,
+    "duration_ms": 3728,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4249.816,
+    "text": "I get this nice table. When I'm doing analysis I can't read tables and this was hopefully you guys saw this visualization.",
+    "start_ms": 4249816,
+    "end_ms": 4257816,
+    "duration_ms": 8000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4257.816,
+    "text": "You should build plots whenever you can not for the world but for yourself.",
+    "start_ms": 4257816,
+    "end_ms": 4261816,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4262.264,
+    "text": "I pluck for me. This is my visualization. Let's see what's going on here.",
+    "start_ms": 4262264,
+    "end_ms": 4267784,
+    "duration_ms": 5520,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4268.024,
+    "text": "Whatever is in As you get older, you are less likely to watch Barbie.",
+    "start_ms": 4268024,
+    "end_ms": 4273256,
+    "duration_ms": 5232,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4274.168,
+    "text": "Bring to this data. And a very linear trend. I don't know who made this up.",
+    "start_ms": 4274168,
+    "end_ms": 4278264,
+    "duration_ms": 4096,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4278.264,
+    "text": "Yeah, so as you get older, your interest in Barbie seems to go down.",
+    "start_ms": 4278264,
+    "end_ms": 4281304,
+    "duration_ms": 3040,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4281.496,
+    "text": "and If you wear Birkenstocks, you would like to see Barbie.",
+    "start_ms": 4281496,
+    "end_ms": 4286592,
+    "duration_ms": 5096,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4288.824,
+    "text": "Note Force. Alright. If you do not wear Burkin stocks, you would like to see Barbie.",
+    "start_ms": 4288824,
+    "end_ms": 4294864,
+    "duration_ms": 6040,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4295.768,
+    "text": "So people who are not where where is a Birkenstocks they leave Birkenstocks are kind of shoe.",
+    "start_ms": 4295768,
+    "end_ms": 4300168,
+    "duration_ms": 4400,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4300.728,
+    "text": "Um, then you were less likely to see Barbie. So there was some bias in time and type of shoes.",
+    "start_ms": 4300728,
+    "end_ms": 4304641,
+    "duration_ms": 3913,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4304.641,
+    "text": "If I were folks seeing on a shoe characteristic, I would see it a different bias.",
+    "start_ms": 4304641,
+    "end_ms": 4308228,
+    "duration_ms": 3587,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4308.824,
+    "text": "Uh, my simply. Alright, so now we can start to study a simple random simple.",
+    "start_ms": 4308824,
+    "end_ms": 4313736,
+    "duration_ms": 4912,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4314.52,
+    "text": "So let's say we take 2000 individuals from this population.",
+    "start_ms": 4314520,
+    "end_ms": 4318520,
+    "duration_ms": 4000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4319.128,
+    "text": "I'm going to sample without replacement so it's a simple random sample.",
+    "start_ms": 4319128,
+    "end_ms": 4323128,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4323.352,
+    "text": "How I do it in practice. I'm a computer me.",
+    "start_ms": 4323352,
+    "end_ms": 4327848,
+    "duration_ms": 4496,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4327.672,
+    "text": "52. Was the original value actual Barbie? was 53. run it again.",
+    "start_ms": 4327672,
+    "end_ms": 4335944,
+    "duration_ms": 8272,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4335.192,
+    "text": "53 So keep running it. I keep getting pretty close to the right answer.",
+    "start_ms": 4335192,
+    "end_ms": 4340821,
+    "duration_ms": 5629,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4340.821,
+    "text": "Every time I take a different sample, a simple random sample of just 2000 individuals, get pretty close.",
+    "start_ms": 4340821,
+    "end_ms": 4345292,
+    "duration_ms": 4471,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4346.488,
+    "text": "You're smaller, right? So, let's say I take a sample size of just 800.",
+    "start_ms": 4346488,
+    "end_ms": 4351464,
+    "duration_ms": 4976,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4354.296,
+    "text": "Anywhere there's a couple times. See, pretty close. My air is only a fraction percent of the true value.",
+    "start_ms": 4354296,
+    "end_ms": 4363944,
+    "duration_ms": 9648,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4365.496,
+    "text": "Can we quantify this chance there? So start to bring in the idea of simulation.",
+    "start_ms": 4365496,
+    "end_ms": 4373782,
+    "duration_ms": 8286,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4373.782,
+    "text": "So you hopefully are you familiar with this concept from the bootstrap?",
+    "start_ms": 4373782,
+    "end_ms": 4376640,
+    "duration_ms": 2858,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4377.784,
+    "text": "Did eight, but if I sample many times like I was doing above I saw this kind of variability.",
+    "start_ms": 4377784,
+    "end_ms": 4383084,
+    "duration_ms": 5300,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4383.48,
+    "text": "Let's say I sampled a thousand times, I constructed a thousand separate samples from my population.",
+    "start_ms": 4383480,
+    "end_ms": 4388480,
+    "duration_ms": 5000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4388.6,
+    "text": "And I save this to my pulled results. I can look at a distribution so it takes a little time so I'm training a thousand samples each sample each sample has 800 individuals in it.",
+    "start_ms": 4388600,
+    "end_ms": 4398832,
+    "duration_ms": 10232,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4400.088,
+    "text": "Go faster, computer. Going to some. Alright, we're going to get a distribution over the individual.",
+    "start_ms": 4400088,
+    "end_ms": 4414088,
+    "duration_ms": 14000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4414.088,
+    "text": "Here we go. so this is a distribution of all the samples I could get.",
+    "start_ms": 4414088,
+    "end_ms": 4417976,
+    "duration_ms": 3888,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4418.456,
+    "text": "This usually already the outcomes for all of these these little miniature uh of Barbies across all those samples.",
+    "start_ms": 4418456,
+    "end_ms": 4431474,
+    "duration_ms": 13018,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4431.474,
+    "text": "This is my sampling distribution. It shows me the variability that I would see.",
+    "start_ms": 4431474,
+    "end_ms": 4435264,
+    "duration_ms": 3790,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4436.12,
+    "text": "Due to my sampling process. It is these kinds of plots you want to build and to build these effectively on just a single sample using things like the bootstrap.",
+    "start_ms": 4436120,
+    "end_ms": 4445256,
+    "duration_ms": 9136,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4445.256,
+    "text": "I need to have this simple item sampling process and how I collect my original data.",
+    "start_ms": 4445256,
+    "end_ms": 4450256,
+    "duration_ms": 5000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4455.736,
+    "text": "I want to get back to the slide, so quick tour in Barbies.",
+    "start_ms": 4455736,
+    "end_ms": 4458536,
+    "duration_ms": 2800,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4459.512,
+    "text": "Barbie did in fact win and the not just Berkeley but at large.",
+    "start_ms": 4459512,
+    "end_ms": 4465512,
+    "duration_ms": 6000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4466.104,
+    "text": "I want to cover multi-no probabilities because we'll probably need these for coming assignments.",
+    "start_ms": 4466104,
+    "end_ms": 4470104,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4470.616,
+    "text": "Alright, so we want to quantify the variability when we quantify the source of air and bias.",
+    "start_ms": 4470616,
+    "end_ms": 4475096,
+    "duration_ms": 4480,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4476.536,
+    "text": "In general, we'll never have access to the population. So, uh, it's certainly if we did we wouldn't be doing any of this probability analysis we have the answer.",
+    "start_ms": 4476536,
+    "end_ms": 4484268,
+    "duration_ms": 7732,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4484.6,
+    "text": "So we're going to compute the probabilities of a sample.",
+    "start_ms": 4484600,
+    "end_ms": 4487600,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4487.6,
+    "text": "In this exercise now as I was zoomed before, assuming I had access to population just to understand how these sampling processes work.",
+    "start_ms": 4487600,
+    "end_ms": 4494600,
+    "duration_ms": 7000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4500.568,
+    "text": "The one place where we can actually start to analyze probabilities, and I said before, is when I have a uniform random sampling width replacement.",
+    "start_ms": 4500568,
+    "end_ms": 4507008,
+    "duration_ms": 6440,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4507.416,
+    "text": "And we do that for a categorical population. I'm in this going to produce something called a multinomial probability.",
+    "start_ms": 4507416,
+    "end_ms": 4512828,
+    "duration_ms": 5412,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4513.336,
+    "text": "A lot of words, let me just show it, C-Zero.",
+    "start_ms": 4513336,
+    "end_ms": 4515336,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4516.504,
+    "text": "Have an example, Cheryl. Yeah, so, uh, if I have 10,000 people in my population.",
+    "start_ms": 4516504,
+    "end_ms": 4523192,
+    "duration_ms": 6688,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4524.056,
+    "text": "An exactly 75. Under them, like Reese's and 2500 likes Snickers.",
+    "start_ms": 4524056,
+    "end_ms": 4529848,
+    "duration_ms": 5792,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4530.104,
+    "text": "What is the problem with a random sample of 20 all like Reese's?",
+    "start_ms": 4530104,
+    "end_ms": 4534104,
+    "duration_ms": 4000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4537.016,
+    "text": "With a simple with random simple with replacement that's the easy to calculate thing.",
+    "start_ms": 4537016,
+    "end_ms": 4551016,
+    "duration_ms": 14000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4551.544,
+    "text": "Chances all of 20 of them. Are in this group.",
+    "start_ms": 4551544,
+    "end_ms": 4555528,
+    "duration_ms": 3984,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4555.504,
+    "text": "when I pull one out, it doesn't change this numerator.",
+    "start_ms": 4555504,
+    "end_ms": 4558504,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4558.968,
+    "text": "But I put it back in so you do it 20 times.",
+    "start_ms": 4558968,
+    "end_ms": 4561368,
+    "duration_ms": 2400,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4562.136,
+    "text": "If you try to do the more complicated thing so I pull one out so the first one likes recess then the second numerator is different.",
+    "start_ms": 4562136,
+    "end_ms": 4568936,
+    "duration_ms": 6800,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4569.528,
+    "text": "I have to deal with the change in the popular in the people like Reese's and also the populations now one smaller.",
+    "start_ms": 4569528,
+    "end_ms": 4575028,
+    "duration_ms": 5500,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4576.76,
+    "text": "So this here is a sequence of binomials. Building one more, we can extend this idea to the Multinomial.",
+    "start_ms": 4576760,
+    "end_ms": 4585864,
+    "duration_ms": 9104,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4587.768,
+    "text": "So if I had more than two categories, let's say I have a bag of marbles with 60 blue marbles, 30 green marbles and 10 red marbles, I can start to analyze the chance of any of my samples from a simple, from a uniform random sample.",
+    "start_ms": 4587768,
+    "end_ms": 4600268,
+    "duration_ms": 12500,
+    "word_count": 47,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4601.88,
+    "text": "Let me just build this out. Okay, so if I want to compute the probability of seeing this sequence.",
+    "start_ms": 4601880,
+    "end_ms": 4615880,
+    "duration_ms": 14000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4615.56,
+    "text": "these probabilities, probably blue. is going to be 0.6. Our ability of green is...",
+    "start_ms": 4615560,
+    "end_ms": 4623288,
+    "duration_ms": 7728,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4624.184,
+    "text": "0.3 Sorry, 0.3 and probability of red is 0.1. Red is...",
+    "start_ms": 4624184,
+    "end_ms": 4634024,
+    "duration_ms": 9840,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4633.816,
+    "text": "0.1. So, this sequence is just a product of these probabilities.",
+    "start_ms": 4633816,
+    "end_ms": 4638192,
+    "duration_ms": 4376,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4639.288,
+    "text": "Sick that. When we do sampling counts of proportions, I don't care the water so I'm if I generate a sample and I'm curious what's the probability for blue to green and one red.",
+    "start_ms": 4639288,
+    "end_ms": 4650720,
+    "duration_ms": 11432,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4651.0,
+    "text": "I still compute these probabilities but add this multinomial coefficient which lets me calculate the probability of just seeing.",
+    "start_ms": 4651000,
+    "end_ms": 4656500,
+    "duration_ms": 5500,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4656.92,
+    "text": "This cluster. so i don't care which order i sample them in This kind of multinomial analysis allows us to reason about...",
+    "start_ms": 4656920,
+    "end_ms": 4666056,
+    "duration_ms": 9136,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4666.84,
+    "text": "The kinds of things we could generate directly from our population.",
+    "start_ms": 4666840,
+    "end_ms": 4670440,
+    "duration_ms": 3600,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4670.648,
+    "text": "If we knew these proportions and we can work backwards if we see these things what's something about our what are the characteristics of our population.",
+    "start_ms": 4670648,
+    "end_ms": 4677648,
+    "duration_ms": 7000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4678.136,
+    "text": "All right, you need to know this. I think for upcoming assignments that we build it in.",
+    "start_ms": 4678136,
+    "end_ms": 4682296,
+    "duration_ms": 4160,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4682.296,
+    "text": "So you'd understand this expression here. will give it to you so we'll give you something like this.",
+    "start_ms": 4682296,
+    "end_ms": 4688672,
+    "duration_ms": 6376,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4689.592,
+    "text": "If P's are my proportions that I know if I had them for my population and K's are my counts and my sample.",
+    "start_ms": 4689592,
+    "end_ms": 4696592,
+    "duration_ms": 7000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4698.584,
+    "text": "And is my population size that I can compute the probability of seeing a sample of those proportions in it in my sample.",
+    "start_ms": 4698584,
+    "end_ms": 4706184,
+    "duration_ms": 7600,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4707.032,
+    "text": "Alright, so this is the multi-mule. Alright, we made it through the main concepts and lecture, which is great.",
+    "start_ms": 4707032,
+    "end_ms": 4713592,
+    "duration_ms": 6560,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4713.912,
+    "text": "So important summary again for everyone you need to understand these different kinds of sampling strategies the sample frame the population The sampling process and for random samples and so on and some of the co-beers in today's lecture like sampling from a data frame you'll use an upcoming assignments See you all next Tuesday.",
+    "start_ms": 4713912,
+    "end_ms": 4731976,
+    "duration_ms": 18064,
+    "word_count": 55,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4738.104,
+    "text": "one second.",
+    "start_ms": 4738104,
+    "end_ms": 4739104,
+    "duration_ms": 1000,
+    "word_count": 2,
+    "avg_confidence": 90
+  }
+]

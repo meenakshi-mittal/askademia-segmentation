@@ -1,0 +1,5690 @@
+[
+  {
+    "timestamp": 9.112,
+    "text": "Right. Good morning everyone. My audience with the clients, if I turn it up.",
+    "start_ms": 9112,
+    "end_ms": 14440,
+    "duration_ms": 5328,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 17.976,
+    "text": "All right, so welcome to The next lecture and data 100 on EDA.",
+    "start_ms": 17976,
+    "end_ms": 23464,
+    "duration_ms": 5488,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 23.8,
+    "text": "Please sign the slide up if you haven't done so already.",
+    "start_ms": 23800,
+    "end_ms": 26300,
+    "duration_ms": 2500,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 27.608,
+    "text": "The last lecture I went a little bit too slowly.",
+    "start_ms": 27608,
+    "end_ms": 30108,
+    "duration_ms": 2500,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 30.648,
+    "text": "So then, I'm going to pick up the pace. We need to finish.",
+    "start_ms": 30648,
+    "end_ms": 34568,
+    "duration_ms": 3920,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 34.52,
+    "text": "Data wrangling in EDA, they were transitioned to text wrangling and regular expressions.",
+    "start_ms": 34520,
+    "end_ms": 39680,
+    "duration_ms": 5160,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 42.68,
+    "text": "So the end of last lecture, we were talking about types of variables.",
+    "start_ms": 42680,
+    "end_ms": 46996,
+    "duration_ms": 4316,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 46.996,
+    "text": "This is an important topic to support now for How we approach our data processing how you understand our variables and also the importance we think about visualization.",
+    "start_ms": 46996,
+    "end_ms": 64136,
+    "duration_ms": 17140,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 63.952,
+    "text": "with here. in day to 100. We talked about a variable can be quantitative.",
+    "start_ms": 63952,
+    "end_ms": 76016,
+    "duration_ms": 12064,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 76.472,
+    "text": "And this is again not the how the data is stored but what kind of data it represents?",
+    "start_ms": 76472,
+    "end_ms": 81112,
+    "duration_ms": 4640,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 81.56,
+    "text": "In quantitative variables can either be continuous variables or discrete variables.",
+    "start_ms": 81560,
+    "end_ms": 85960,
+    "duration_ms": 4400,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 86.264,
+    "text": "Continuous things are like price, maybe temperature, discrete things, could be years of education, number of siblings.",
+    "start_ms": 86264,
+    "end_ms": 92104,
+    "duration_ms": 5840,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 92.504,
+    "text": "Things which fractions don't make a lot of sense. In pre-devious years, we made a distinction between these two classes here.",
+    "start_ms": 92504,
+    "end_ms": 100408,
+    "duration_ms": 7904,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 100.408,
+    "text": "For this semester, we'll still learn about this distinction, but we're going to try to focus on kind of this big category of quantitative.",
+    "start_ms": 100408,
+    "end_ms": 106888,
+    "duration_ms": 6480,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 107.896,
+    "text": "On the right side, this distinction becomes more important. So we'll talk about qualitative, variable.",
+    "start_ms": 107896,
+    "end_ms": 113336,
+    "duration_ms": 5440,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 113.336,
+    "text": "Most of these are things that are categorical. There are two classes, ordinal and nominal.",
+    "start_ms": 113336,
+    "end_ms": 117896,
+    "duration_ms": 4560,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 118.936,
+    "text": "Nominal variables are like names. Maybe your political affiliation? It could be a number.",
+    "start_ms": 118936,
+    "end_ms": 124888,
+    "duration_ms": 5952,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 125.368,
+    "text": "But it's number that's representing a name. or the actual order of numbers doesn't matter or differences between Calides don't need anything.",
+    "start_ms": 125368,
+    "end_ms": 134552,
+    "duration_ms": 9184,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 137.56,
+    "text": "And then, ordinal... This type of qualitative data, this type of categorical data, is often the most confusing.",
+    "start_ms": 137560,
+    "end_ms": 144680,
+    "duration_ms": 7120,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 144.952,
+    "text": "And these are names that have a meaning in their order.",
+    "start_ms": 144952,
+    "end_ms": 147752,
+    "duration_ms": 2800,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 149.08,
+    "text": "Things like preferences. Maybe levels of education. 1st year, 2nd year, 3rd year.",
+    "start_ms": 149080,
+    "end_ms": 156424,
+    "duration_ms": 7344,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 158.168,
+    "text": "their names but they're ordered. So at the end of last lecture we didn't get to do this but it's a good way to think through these kinds of types of variables.",
+    "start_ms": 158168,
+    "end_ms": 166880,
+    "duration_ms": 8712,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 168.44,
+    "text": "Let's try to answer these. So, T-O-2 level in part per million.",
+    "start_ms": 168440,
+    "end_ms": 172768,
+    "duration_ms": 4328,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 172.768,
+    "text": "You're doing science, studying the atmosphere. qualitative or quantitative Want to tell you.",
+    "start_ms": 172768,
+    "end_ms": 180192,
+    "duration_ms": 7424,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 180.632,
+    "text": "Continuous or discrete? Continuous, so we'll say this is A.",
+    "start_ms": 180632,
+    "end_ms": 185624,
+    "duration_ms": 4992,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 187.192,
+    "text": "Number of siblings. A B C or D. B Let's just greet.",
+    "start_ms": 187192,
+    "end_ms": 195200,
+    "duration_ms": 8008,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 196.76,
+    "text": "It is a number we could compute differences you can have differences in this person has two less siblings in this other person.",
+    "start_ms": 196760,
+    "end_ms": 203760,
+    "duration_ms": 7000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 204.056,
+    "text": "GPA. Hey. It's continuous, you get a floating point number or fraction.",
+    "start_ms": 204056,
+    "end_ms": 211656,
+    "duration_ms": 7600,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 211.656,
+    "text": "GP is a little tricky though because technically it's computed using A, B, C, D's, which are converted to numbers and an average of a year or so.",
+    "start_ms": 211656,
+    "end_ms": 219176,
+    "duration_ms": 7520,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 220.28,
+    "text": "It's still, we think of it as continuous. You guys see these, these are sort of fuzzy, where that's the screener continues.",
+    "start_ms": 220280,
+    "end_ms": 226584,
+    "duration_ms": 6304,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 228.504,
+    "text": "Income bracket low medium or high. See, why? Well, there's an ordering to these.",
+    "start_ms": 228504,
+    "end_ms": 238808,
+    "duration_ms": 10304,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 238.808,
+    "text": "If you're building a plot and you plot the bar graph and you have a low medium and high and you do low high medium, that's ridiculous.",
+    "start_ms": 238808,
+    "end_ms": 244388,
+    "duration_ms": 5580,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 244.388,
+    "text": "Don't do that. There's an order to those variables. Race for ethnicity.",
+    "start_ms": 244388,
+    "end_ms": 253920,
+    "duration_ms": 9532,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 259.448,
+    "text": "It's no watering, just ninks. Short size. Small beam large C.",
+    "start_ms": 259448,
+    "end_ms": 269480,
+    "duration_ms": 10032,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 269.4,
+    "text": "Good, see. and Yelp Star rating. This was last week's poll.",
+    "start_ms": 269400,
+    "end_ms": 277455,
+    "duration_ms": 8055,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 277.455,
+    "text": "Let's do it again. Just to see all of you build it.",
+    "start_ms": 277455,
+    "end_ms": 280121,
+    "duration_ms": 2666,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 280.121,
+    "text": "Okay. We got we got the right answers. Yelp Star rated.",
+    "start_ms": 280121,
+    "end_ms": 285448,
+    "duration_ms": 5327,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 302.904,
+    "text": "Alright, so you're voting, I'm going to talk about it because we're behind.",
+    "start_ms": 302904,
+    "end_ms": 304904,
+    "duration_ms": 2000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 305.976,
+    "text": "Continue voting. There isn't really a concrete right answer to this.",
+    "start_ms": 305976,
+    "end_ms": 310154,
+    "duration_ms": 4178,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 310.154,
+    "text": "It could be a couple of things. If we're really digging into what it means to be a star.",
+    "start_ms": 310154,
+    "end_ms": 316264,
+    "duration_ms": 6110,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 316.76,
+    "text": "5 stars 4 stars 3 stars They have very different meetings.",
+    "start_ms": 316760,
+    "end_ms": 321024,
+    "duration_ms": 4264,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 321.024,
+    "text": "Isn't like four is a little bit less than five or three is a little bit less than four?",
+    "start_ms": 321024,
+    "end_ms": 324824,
+    "duration_ms": 3800,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 325.112,
+    "text": "Some people were like four and five is a lot and then you know three is I did not like this restaurant at all.",
+    "start_ms": 325112,
+    "end_ms": 329712,
+    "duration_ms": 4600,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 330.424,
+    "text": "See me different things, different peoples, different gaps between them.",
+    "start_ms": 330424,
+    "end_ms": 333724,
+    "duration_ms": 3300,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 334.424,
+    "text": "Could suggest that they're worded on. Might it be a reasonable way to think about them?",
+    "start_ms": 334424,
+    "end_ms": 340440,
+    "duration_ms": 6016,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 341.304,
+    "text": "My pre-reasonable. When we build models, we'll often do regression.",
+    "start_ms": 341304,
+    "end_ms": 345724,
+    "duration_ms": 4420,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 346.04,
+    "text": "on things like Yelp Stars. We'll treat them as a quantitative continuous.",
+    "start_ms": 346040,
+    "end_ms": 350360,
+    "duration_ms": 4320,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 351.128,
+    "text": "And the that's also somewhat reasonable. So it could be both?",
+    "start_ms": 351128,
+    "end_ms": 357768,
+    "duration_ms": 6640,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 357.624,
+    "text": "And when you're doing your analysis you might take a mix of those.",
+    "start_ms": 357624,
+    "end_ms": 360624,
+    "duration_ms": 3000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 361.016,
+    "text": "If you're trying to visualize these... Me the right way to compute a star to describe what's not the starting for a restaurant.",
+    "start_ms": 361016,
+    "end_ms": 367224,
+    "duration_ms": 6208,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 367.736,
+    "text": "is to look at the histogram of the star ratings.",
+    "start_ms": 367736,
+    "end_ms": 371036,
+    "duration_ms": 3300,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 371.736,
+    "text": "or a bar chart of Star Enix. Right, or I give you the average.",
+    "start_ms": 371736,
+    "end_ms": 376776,
+    "duration_ms": 5040,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 376.888,
+    "text": "It's 3.6 stars. There's a lot more information on Instagram.",
+    "start_ms": 376888,
+    "end_ms": 380712,
+    "duration_ms": 3824,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 381.784,
+    "text": "I might treat that as a screen thing, or again I'm reporting the magnitude of each of the different star categories or I might just give you an average and a variance and so on.",
+    "start_ms": 381784,
+    "end_ms": 389784,
+    "duration_ms": 8000,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 391.096,
+    "text": "So some of these are tricky. When I model this, I often treat this as ordinal.",
+    "start_ms": 391096,
+    "end_ms": 395576,
+    "duration_ms": 4480,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 396.472,
+    "text": "Let it cross, we trade as continuous, so we're the one interpretation.",
+    "start_ms": 396472,
+    "end_ms": 399752,
+    "duration_ms": 3280,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 402.616,
+    "text": "Should probably just reverse order. So this is one of my my favorite restaurants on campus right now mine coffee excellent coffee shop.",
+    "start_ms": 402616,
+    "end_ms": 408816,
+    "duration_ms": 6200,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 408.816,
+    "text": "I don't get discounts there, but I should. If you look at their ratings, right, I can give you these two visualizations.",
+    "start_ms": 408816,
+    "end_ms": 415391,
+    "duration_ms": 6575,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 415.391,
+    "text": "This is treating it as just a quantitative continuous thing.",
+    "start_ms": 415391,
+    "end_ms": 418516,
+    "duration_ms": 3125,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 418.516,
+    "text": "This is treating it more as an ordinal thing. Right, I'm telling you to cancel each of the categories.",
+    "start_ms": 418516,
+    "end_ms": 422952,
+    "duration_ms": 4436,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 424.184,
+    "text": "Inside which one is more informative to you. So this wraps up this long discussion we spent most of last lecture on Brown the structure of data, what's its shape?",
+    "start_ms": 424184,
+    "end_ms": 436748,
+    "duration_ms": 12564,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 436.748,
+    "text": "We talked about different types. I should bring this right now.",
+    "start_ms": 436748,
+    "end_ms": 440072,
+    "duration_ms": 3324,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 439.736,
+    "text": "We talked about different formats. Recursive formats like Jason, these nested representations of data.",
+    "start_ms": 439736,
+    "end_ms": 445160,
+    "duration_ms": 5424,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 445.464,
+    "text": "We talked about records being nested. How do we define a record?",
+    "start_ms": 445464,
+    "end_ms": 449464,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 449.464,
+    "text": "Is it? A row is it a part of a Jason object.",
+    "start_ms": 449464,
+    "end_ms": 453768,
+    "duration_ms": 4304,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 454.488,
+    "text": "We talk about unresting records when you're working with these complex data types, finding records inside of records and maybe expanding them into more fine grain things we talk about granularity.",
+    "start_ms": 454488,
+    "end_ms": 464888,
+    "duration_ms": 10400,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 466.872,
+    "text": "We're talking about data referencing other data. So you have lots of tables.",
+    "start_ms": 466872,
+    "end_ms": 470872,
+    "duration_ms": 4000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 471.224,
+    "text": "You often need to join across those tables. That went emerge.",
+    "start_ms": 471224,
+    "end_ms": 476576,
+    "duration_ms": 5352,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 477.208,
+    "text": "When we need to get external data. We just wrapped up talking about fields.",
+    "start_ms": 477208,
+    "end_ms": 484328,
+    "duration_ms": 7120,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 484.328,
+    "text": "What are the columns? What do they represent the various types?",
+    "start_ms": 484328,
+    "end_ms": 487328,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 487.328,
+    "text": "So both how they're encoded and the type of data that is in that column.",
+    "start_ms": 487328,
+    "end_ms": 491328,
+    "duration_ms": 4000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 492.312,
+    "text": "Alright, so I want to wrap up the end of this EDA lecture I talk about scope and and temporality.",
+    "start_ms": 492312,
+    "end_ms": 497792,
+    "duration_ms": 5480,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 498.936,
+    "text": "You're a bit quicker. So scope. But you'll talk more about with sampling.",
+    "start_ms": 498936,
+    "end_ms": 504168,
+    "duration_ms": 5232,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 504.824,
+    "text": "is what is the data reflect relative to the population I'm thinking about so I'm interested in this population here.",
+    "start_ms": 504824,
+    "end_ms": 510324,
+    "duration_ms": 5500,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 510.808,
+    "text": "My data maybe looks like this. That's a pretty common case where sometimes I have parts my data that I don't want.",
+    "start_ms": 510808,
+    "end_ms": 517416,
+    "duration_ms": 6608,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 517.416,
+    "text": "Maybe I want to filter those out and then some parts of the data I do want they reflect the thing in trying to study.",
+    "start_ms": 517416,
+    "end_ms": 521976,
+    "duration_ms": 4560,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 523.32,
+    "text": "Pretty common when you're doing EDA trying to figure out what your data looks like relative to the populations of real problem.",
+    "start_ms": 523320,
+    "end_ms": 528760,
+    "duration_ms": 5440,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 529.656,
+    "text": "You know, in an ideal world you get something like this.",
+    "start_ms": 529656,
+    "end_ms": 532156,
+    "duration_ms": 2500,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 532.952,
+    "text": "You have everyone. But you're interested in only a very small subset.",
+    "start_ms": 532952,
+    "end_ms": 536792,
+    "duration_ms": 3840,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 537.496,
+    "text": "Be one. since side of your data. But that's pretty rare, where you have everything you possibly want.",
+    "start_ms": 537496,
+    "end_ms": 542488,
+    "duration_ms": 4992,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 545.432,
+    "text": "So my dad is too broad. you really do filtering?",
+    "start_ms": 545432,
+    "end_ms": 549032,
+    "duration_ms": 3600,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 549.016,
+    "text": "I think when we're in this setting here and I do filtering here, I might find that the data I'm dropping is a large fraction of my data.",
+    "start_ms": 549016,
+    "end_ms": 554516,
+    "duration_ms": 5500,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 555.672,
+    "text": "And it could be that my sample's bias, they only took this little bottom, bottom corner of the population, and that's something I have to deal about or deal with when I think about my sampling process.",
+    "start_ms": 555672,
+    "end_ms": 564312,
+    "duration_ms": 8640,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 564.536,
+    "text": "So come back to scope when we talk about sampling.",
+    "start_ms": 564536,
+    "end_ms": 566836,
+    "duration_ms": 2300,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 566.836,
+    "text": "Put an EDA you're trying to understand, what do I have and how's it reflect the population I'm trying to study?",
+    "start_ms": 566836,
+    "end_ms": 571836,
+    "duration_ms": 5000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 573.784,
+    "text": "A big part of scope? Is the position in time to impurity?",
+    "start_ms": 573784,
+    "end_ms": 578024,
+    "duration_ms": 4240,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 580.984,
+    "text": "Unfortunately in this class we don't actually spend enough time.",
+    "start_ms": 580984,
+    "end_ms": 583484,
+    "duration_ms": 2500,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 583.992,
+    "text": "On time. But dealing with data. Often, we were dealing with a what would seem like a snapshot in time.",
+    "start_ms": 583992,
+    "end_ms": 591468,
+    "duration_ms": 7476,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 592.856,
+    "text": "But it's not. We take a survey of students to begin this semester.",
+    "start_ms": 592856,
+    "end_ms": 599528,
+    "duration_ms": 6672,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 600.056,
+    "text": "You can answer that survey any time at the beginning of this semester.",
+    "start_ms": 600056,
+    "end_ms": 603114,
+    "duration_ms": 3058,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 603.114,
+    "text": "Your opinions might change. Big events in the news could happen to change how you look at the world.",
+    "start_ms": 603114,
+    "end_ms": 607720,
+    "duration_ms": 4606,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 608.92,
+    "text": "So my data is often... Not a snapshot in time, but some measurement across time.",
+    "start_ms": 608920,
+    "end_ms": 613724,
+    "duration_ms": 4804,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 615.544,
+    "text": "We'll have a date tonight. I have to think about that date.",
+    "start_ms": 615544,
+    "end_ms": 618115,
+    "duration_ms": 2571,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 618.115,
+    "text": "The dates. There's periodicity in data. Time is cyclic. We have days, hours of the day, have different meanings.",
+    "start_ms": 618115,
+    "end_ms": 626600,
+    "duration_ms": 8485,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 627.24,
+    "text": "Days three kept different meanings, so to deal with the time in the place where it's located and the period is see that data.",
+    "start_ms": 627240,
+    "end_ms": 639960,
+    "duration_ms": 12720,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 639.88,
+    "text": "they really mean? Is it when the event happened? Like, patient.",
+    "start_ms": 639880,
+    "end_ms": 643944,
+    "duration_ms": 4064,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 644.664,
+    "text": "Fact in Sick stamp. Is that when the nurse decided to enter that information in the evening when he was checking out of a shift, was it when the patient actually entered the shift or entered the hospital?",
+    "start_ms": 644664,
+    "end_ms": 656452,
+    "duration_ms": 11788,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 657.016,
+    "text": "So what is the event mean? When was it entering the system so was it when it was collected?",
+    "start_ms": 657016,
+    "end_ms": 662632,
+    "duration_ms": 5616,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 662.936,
+    "text": "I'm trying to system. But all that will have timestamps are added.",
+    "start_ms": 662936,
+    "end_ms": 667624,
+    "duration_ms": 4688,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 668.248,
+    "text": "Downstream. So people do some processing of your data. They pull it from the central bank in one country and copy it to the the data warehouse another country and they put a time stamp on it.",
+    "start_ms": 668248,
+    "end_ms": 677248,
+    "duration_ms": 9000,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 677.784,
+    "text": "The time stamp has nothing to do with the other line data but has to do with when the data was transferred and maybe what process was used to transfer it which could affect the meaning of the the current season so on.",
+    "start_ms": 677784,
+    "end_ms": 687384,
+    "duration_ms": 9600,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 689.56,
+    "text": "to understanding the meaning of time since our delivery report.",
+    "start_ms": 689560,
+    "end_ms": 691960,
+    "duration_ms": 2400,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 694.808,
+    "text": "Principles and techniques. Those are some principles here some techniques.",
+    "start_ms": 694808,
+    "end_ms": 697448,
+    "duration_ms": 2640,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 697.784,
+    "text": "You're going to use the Date Time Object in Python.",
+    "start_ms": 697784,
+    "end_ms": 699784,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 700.664,
+    "text": "The DT Accessors, Pandas. This makes it easy to work with dates and times.",
+    "start_ms": 700664,
+    "end_ms": 706792,
+    "duration_ms": 6128,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 707.64,
+    "text": "I think about things like time zones. Definitely when the date was recorded to convert to the correct time zones.",
+    "start_ms": 707640,
+    "end_ms": 714904,
+    "duration_ms": 7264,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 717.624,
+    "text": "Any questions I'm going fast? Who's serve you next time?",
+    "start_ms": 717624,
+    "end_ms": 727304,
+    "duration_ms": 9680,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 728.152,
+    "text": "Very few. Ah. This date. So important. It's the beginning of all time for computers.",
+    "start_ms": 728152,
+    "end_ms": 737352,
+    "duration_ms": 9200,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 739.256,
+    "text": "See you next time. When you have a zero in a date field and you convert it to one of these date time objects.",
+    "start_ms": 739256,
+    "end_ms": 748648,
+    "duration_ms": 9392,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 749.496,
+    "text": "It's January 1st 1970. So I'm important to know, and you have all these dates January 1, 1970.",
+    "start_ms": 749496,
+    "end_ms": 755416,
+    "duration_ms": 5920,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 755.672,
+    "text": "It's time you have weird data. this is an important time in computers.",
+    "start_ms": 755672,
+    "end_ms": 759612,
+    "duration_ms": 3940,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 760.056,
+    "text": "It's important so you're going to see strange no values of dates.",
+    "start_ms": 760056,
+    "end_ms": 762856,
+    "duration_ms": 2800,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 769.08,
+    "text": "Faithfulness. How well does the data capture reality? This really gets fun.",
+    "start_ms": 769080,
+    "end_ms": 775752,
+    "duration_ms": 6672,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 775.712,
+    "text": "it used to be this was a common very common problem a day you would process.",
+    "start_ms": 775712,
+    "end_ms": 779948,
+    "duration_ms": 4236,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 780.28,
+    "text": "Today, we have better data tools so it's less common, but it still happens.",
+    "start_ms": 780280,
+    "end_ms": 785640,
+    "duration_ms": 5360,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 787.128,
+    "text": "People put stuff in Microsoft Excel and then export it out again.",
+    "start_ms": 787128,
+    "end_ms": 790128,
+    "duration_ms": 3000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 791.288,
+    "text": "It drops columns. Maybe the data was too big for their excel.",
+    "start_ms": 791288,
+    "end_ms": 794328,
+    "duration_ms": 3040,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 794.328,
+    "text": "So they only pull the sample the data in. How your days been filtered.",
+    "start_ms": 794328,
+    "end_ms": 798728,
+    "duration_ms": 4400,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 798.684,
+    "text": "to be that you had 65,536 rows. That was the Excel Max, but it's gotten better so you don't have this issue anymore.",
+    "start_ms": 798684,
+    "end_ms": 806168,
+    "duration_ms": 7484,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 806.168,
+    "text": "But this could be, you know, when people touch your data, they might be filtering stuff out.",
+    "start_ms": 806168,
+    "end_ms": 809608,
+    "duration_ms": 3440,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 809.608,
+    "text": "We need to be able to recognize that. This happens a lot.",
+    "start_ms": 809608,
+    "end_ms": 815400,
+    "duration_ms": 5792,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 815.326,
+    "text": "often have duplicate records, duplicate fields. You use Google Forms.",
+    "start_ms": 815326,
+    "end_ms": 819364,
+    "duration_ms": 4038,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 819.364,
+    "text": "People enter the thing twice. Now you have two votes for students.",
+    "start_ms": 819364,
+    "end_ms": 822644,
+    "duration_ms": 3280,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 822.644,
+    "text": "You have to deal with that. So you have to identify duplicate rows.",
+    "start_ms": 822644,
+    "end_ms": 825844,
+    "duration_ms": 3200,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 825.844,
+    "text": "Maybe you use something like a primary key like a student ID.",
+    "start_ms": 825844,
+    "end_ms": 828344,
+    "duration_ms": 2500,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 828.856,
+    "text": "And then duplicate columns. You add an extra, you know, feel to the Google form at some point.",
+    "start_ms": 828856,
+    "end_ms": 833256,
+    "duration_ms": 4400,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 833.256,
+    "text": "You might have a column repeated twice. You have to pick which is the correct column.",
+    "start_ms": 833256,
+    "end_ms": 837736,
+    "duration_ms": 4480,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 841.4,
+    "text": "Spelling errors, people manual enter data, they can't spell. Checking for things like addresses, names.",
+    "start_ms": 841400,
+    "end_ms": 849184,
+    "duration_ms": 7784,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 849.624,
+    "text": "You'd be surprised in medical records doctors can't spell medicine names so you have to deal with that if you're processing electronic records where they were allowed to type in the name directly.",
+    "start_ms": 849624,
+    "end_ms": 859224,
+    "duration_ms": 9600,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 861.72,
+    "text": "Units not specified, currencies, measurements, weights. All these things could depend on where the thing was taken and what unit system they used there.",
+    "start_ms": 861720,
+    "end_ms": 870200,
+    "duration_ms": 8480,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 870.776,
+    "text": "To figure out what they are, maybe convert them. You already talked about this time zones, big issue.",
+    "start_ms": 870776,
+    "end_ms": 876220,
+    "duration_ms": 5444,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 878.328,
+    "text": "Missing data are you talked about, you know, January 1st 1970?",
+    "start_ms": 878328,
+    "end_ms": 881528,
+    "duration_ms": 3200,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 882.232,
+    "text": "2000 could be another way of encoding zeros. Often people use just a blank to encode missing guys but sometimes I'll use something like 999 negative one.",
+    "start_ms": 882232,
+    "end_ms": 892136,
+    "duration_ms": 9904,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 891.672,
+    "text": "as a temperature weight. Some people will write 1, 2, 3, 4, 5 in a Google form to say I don't want to fill in this field.",
+    "start_ms": 891672,
+    "end_ms": 897720,
+    "duration_ms": 6048,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 899.064,
+    "text": "So, detect these weird things. If you're lucky, it'll be not a number, like a nice computer way of saying, I don't have a number, or a null, which is what the database community would say, when something's missing.",
+    "start_ms": 899064,
+    "end_ms": 909064,
+    "duration_ms": 10000,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 912.312,
+    "text": "This is important. Normally I'd spend 30 minutes or 20 minutes and this we're going to go a little quicker.",
+    "start_ms": 912312,
+    "end_ms": 916712,
+    "duration_ms": 4400,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 917.112,
+    "text": "What to do with missing data? What should you do when you have missing data?",
+    "start_ms": 917112,
+    "end_ms": 921112,
+    "duration_ms": 4000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 922.296,
+    "text": "So, suppose I have a record with some missing values.",
+    "start_ms": 922296,
+    "end_ms": 925096,
+    "duration_ms": 2800,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 925.336,
+    "text": "Student forgot to give me their email address. Probably. This is very common.",
+    "start_ms": 925336,
+    "end_ms": 930536,
+    "duration_ms": 5200,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 930.536,
+    "text": "What's the most common solution to it? In fact, it's built-in dependers you can do dot drop.",
+    "start_ms": 930536,
+    "end_ms": 937688,
+    "duration_ms": 7152,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 938.584,
+    "text": "And, hey. Just throw those rows. that had missing data.",
+    "start_ms": 938584,
+    "end_ms": 945288,
+    "duration_ms": 6704,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 947.224,
+    "text": "Make life easy. Who needs rose with missing data? Just make your day to clean by dropping all the bad stuff.",
+    "start_ms": 947224,
+    "end_ms": 953064,
+    "duration_ms": 5840,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 954.104,
+    "text": "problem stuff is the good stuff. People forgot to fill something out.",
+    "start_ms": 954104,
+    "end_ms": 958938,
+    "duration_ms": 4834,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 958.938,
+    "text": "Maybe it is a reason. We actually when I first started doing this ran into issues with a data which I think is in one of the assignments where things were dropped.",
+    "start_ms": 958938,
+    "end_ms": 967976,
+    "duration_ms": 9038,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 968.536,
+    "text": "When we first did the analysis because it was missing something.",
+    "start_ms": 968536,
+    "end_ms": 971036,
+    "duration_ms": 2500,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 971.928,
+    "text": "Turns out that missing something was really important. The fact that he was missing it was important.",
+    "start_ms": 971928,
+    "end_ms": 976168,
+    "duration_ms": 4240,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 977.848,
+    "text": "What could be crop records? Maybe if you have a handful, like less than 20%, less than 10%, you could probably go get away with dropping it, but you should think carefully about what you're dropping.",
+    "start_ms": 977848,
+    "end_ms": 987288,
+    "duration_ms": 9440,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 988.248,
+    "text": "So, one very common solution, drop records. What I like to do.",
+    "start_ms": 988248,
+    "end_ms": 993928,
+    "duration_ms": 5680,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 993.432,
+    "text": "Keep Records. Keep that information there. to work within your downstream analysis.",
+    "start_ms": 993432,
+    "end_ms": 1000040,
+    "duration_ms": 6608,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1001.464,
+    "text": "Maybe make an extra column where you do something like imputation.",
+    "start_ms": 1001464,
+    "end_ms": 1004464,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1004.824,
+    "text": "You guess what did I put up in? Should have been.",
+    "start_ms": 1004824,
+    "end_ms": 1007824,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1008.664,
+    "text": "Permissing Dice. There are a couple ways to do it.",
+    "start_ms": 1008664,
+    "end_ms": 1012328,
+    "duration_ms": 3664,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1012.6,
+    "text": "Average imputation pretty standard. Missing someone's GPA. Plug in the average GPA for students in the class.",
+    "start_ms": 1012600,
+    "end_ms": 1022416,
+    "duration_ms": 9816,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1022.416,
+    "text": "Use it for downstream analysis. some risk in doing that What's one way to deal with it?",
+    "start_ms": 1022416,
+    "end_ms": 1029928,
+    "duration_ms": 7512,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1029.784,
+    "text": "Which average? You could be a little more clever. and find a related subgroup.",
+    "start_ms": 1029784,
+    "end_ms": 1036424,
+    "duration_ms": 6640,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1036.6,
+    "text": "Similar students, similar year. Take an average not from the whole class, but a smaller segment.",
+    "start_ms": 1036600,
+    "end_ms": 1041720,
+    "duration_ms": 5120,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1043.096,
+    "text": "Other strategies. names like Hot Deck Imputation. Who is this mean randomly picked someone else's GPA and just plug in for the students missing GPA.",
+    "start_ms": 1043096,
+    "end_ms": 1052384,
+    "duration_ms": 9288,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1053.336,
+    "text": "Sounds crazy, right? can do this many times I can run my analysis with different samples and see well you know if I had some distribution of outcomes for that one student how would have affected my downstream analysis so I can measure how robust things are.",
+    "start_ms": 1053336,
+    "end_ms": 1065840,
+    "duration_ms": 12504,
+    "word_count": 47,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1069.72,
+    "text": "We'll talk about this later in the class. I could use regression, more predictive modeling techniques to try to fill into missing values.",
+    "start_ms": 1069720,
+    "end_ms": 1075160,
+    "duration_ms": 5440,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1075.16,
+    "text": "you So I'll pre-advanced. Yeah, and so if we talk about hot deck, we can go further and do things like multiple imputation, repeated analysis to figure out how robust.",
+    "start_ms": 1075160,
+    "end_ms": 1092568,
+    "duration_ms": 17408,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1092.44,
+    "text": "Alright, so these choice will affect things like bias, uncertainty, quantification.",
+    "start_ms": 1092440,
+    "end_ms": 1096440,
+    "duration_ms": 4000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1096.44,
+    "text": "Certainly this year is going to introduce bias. This could affect uncertainty.",
+    "start_ms": 1096440,
+    "end_ms": 1101672,
+    "duration_ms": 5232,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1107.768,
+    "text": "Maybe there was a more important question. You should be asking yourself why are the records missing?",
+    "start_ms": 1107768,
+    "end_ms": 1112168,
+    "duration_ms": 4400,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1113.656,
+    "text": "You get to be a detective. Why is it missing important fields in the crime data for the city of Berkeley?",
+    "start_ms": 1113656,
+    "end_ms": 1119046,
+    "duration_ms": 5390,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1119.046,
+    "text": "Why did they not add that information? We had time we'd go through this demo.",
+    "start_ms": 1119046,
+    "end_ms": 1126136,
+    "duration_ms": 7090,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1126.136,
+    "text": "It's a fun one. The notebook is there, so I actually encourage you to take a look at it.",
+    "start_ms": 1126136,
+    "end_ms": 1130813,
+    "duration_ms": 4677,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1130.813,
+    "text": "It's pretty straightforward. This is Data from Honolulu. Here's a plot of the CO2.",
+    "start_ms": 1130813,
+    "end_ms": 1137148,
+    "duration_ms": 6335,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1137.848,
+    "text": "Average CO2 per month. Through time. Temporality. She's a zigzag going on.",
+    "start_ms": 1137848,
+    "end_ms": 1145874,
+    "duration_ms": 8026,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1145.874,
+    "text": "What is that? Seereth breathing. Every year CO2 rises and falls.",
+    "start_ms": 1145874,
+    "end_ms": 1151880,
+    "duration_ms": 6006,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1152.472,
+    "text": "with algal plumes in the ocean. What is this business here?",
+    "start_ms": 1152472,
+    "end_ms": 1157320,
+    "duration_ms": 4848,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1158.2,
+    "text": "I'll tell you this is negative 999. We had negative 999.",
+    "start_ms": 1158200,
+    "end_ms": 1164584,
+    "duration_ms": 6384,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1164.952,
+    "text": "Parts for millions. You too. This is a missing value.",
+    "start_ms": 1164952,
+    "end_ms": 1169416,
+    "duration_ms": 4464,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1169.464,
+    "text": "If I hand you this button you're like wow Pat, someone's going on with that visualization.",
+    "start_ms": 1169464,
+    "end_ms": 1173464,
+    "duration_ms": 4000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1174.264,
+    "text": "What should you do? Drop missing values, not a bad idea.",
+    "start_ms": 1174264,
+    "end_ms": 1178760,
+    "duration_ms": 4496,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1179.16,
+    "text": "Get a plot looks basically the same because it's so zoomed out you can't see the missing values here.",
+    "start_ms": 1179160,
+    "end_ms": 1183960,
+    "duration_ms": 4800,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1185.496,
+    "text": "Maybe most of my analysis works out. It's like... Two or three missing values here, one or two, one, one.",
+    "start_ms": 1185496,
+    "end_ms": 1191245,
+    "duration_ms": 5749,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1191.245,
+    "text": "Not a big deal. or, as a scientist will do, they interplay.",
+    "start_ms": 1191245,
+    "end_ms": 1197104,
+    "duration_ms": 5859,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1197.656,
+    "text": "We use models to film those missing values. We get a nice smooth curve.",
+    "start_ms": 1197656,
+    "end_ms": 1201656,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1202.584,
+    "text": "Get the missing information right here, right here, based on the pattern of the data.",
+    "start_ms": 1202584,
+    "end_ms": 1206984,
+    "duration_ms": 4400,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1207.832,
+    "text": "Let's be due downstream analysis. Good question. I'm making up data.",
+    "start_ms": 1207832,
+    "end_ms": 1223298,
+    "duration_ms": 15466,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1223.298,
+    "text": "That is dishonest. It is. I should tell you that I'm making up data so when you do imputation you shouldn't go ahead and this is the truth does not you've imputed you need to say that What are you doing in Alice's?",
+    "start_ms": 1223298,
+    "end_ms": 1236104,
+    "duration_ms": 12806,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1236.081,
+    "text": "a lot of your data is missing, it might be helpful to impute and then use that as a feature for some downstream tests.",
+    "start_ms": 1236081,
+    "end_ms": 1240536,
+    "duration_ms": 4455,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1242.104,
+    "text": "Don't lie. Don't people. Oh good question and for those on zoom if I use imputation of my making things up.",
+    "start_ms": 1242104,
+    "end_ms": 1249560,
+    "duration_ms": 7456,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1250.008,
+    "text": "Kind of. Is it lying to the person who's looking at this data kind of?",
+    "start_ms": 1250008,
+    "end_ms": 1254696,
+    "duration_ms": 4688,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1254.696,
+    "text": "If I don't tell them? You need to report what you did.",
+    "start_ms": 1254696,
+    "end_ms": 1258632,
+    "duration_ms": 3936,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1258.584,
+    "text": "You just say I was missing this information I imputed it using these techniques I didn't analysis the effect of that imputation.",
+    "start_ms": 1258584,
+    "end_ms": 1264584,
+    "duration_ms": 6000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1266.808,
+    "text": "And with that imputation, I could make much better predictions.",
+    "start_ms": 1266808,
+    "end_ms": 1269308,
+    "duration_ms": 2500,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1269.308,
+    "text": "That's why I did it. If you drop those records you might want to say too.",
+    "start_ms": 1269308,
+    "end_ms": 1275080,
+    "duration_ms": 5772,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1275.352,
+    "text": "A bunch of students didn't enter their preference for section, so I dropped them.",
+    "start_ms": 1275352,
+    "end_ms": 1279352,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1280.28,
+    "text": "Maybe they're all grad students, so I dropped all the grad students that might have been a mistake.",
+    "start_ms": 1280280,
+    "end_ms": 1283880,
+    "duration_ms": 3600,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1288.12,
+    "text": "Alright, we're done. We did it. So, end of the EDA discussion you talked about.",
+    "start_ms": 1288120,
+    "end_ms": 1293296,
+    "duration_ms": 5176,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1293.432,
+    "text": "Going for your data? Look at your data, look at the metadata, time stamps, anything you know about the data.",
+    "start_ms": 1293432,
+    "end_ms": 1298872,
+    "duration_ms": 5440,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1299.192,
+    "text": "You should read the manual, but don't follow it too closely because manuals are often out of date.",
+    "start_ms": 1299192,
+    "end_ms": 1304192,
+    "duration_ms": 5000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1304.92,
+    "text": "What leads field? I go one field at a time.",
+    "start_ms": 1304920,
+    "end_ms": 1306920,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1307.8,
+    "text": "What is it? What's its type? What's going on? What's missing?",
+    "start_ms": 1307800,
+    "end_ms": 1311184,
+    "duration_ms": 3384,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1311.184,
+    "text": "So I... Look at Paris of Fields. with relationships between them.",
+    "start_ms": 1311184,
+    "end_ms": 1316872,
+    "duration_ms": 5688,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1316.856,
+    "text": "This makes way more sense when you add the tools of visualization to your next lecture.",
+    "start_ms": 1316856,
+    "end_ms": 1320216,
+    "duration_ms": 3360,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1320.536,
+    "text": "So you're going to visualize each of these steps as you go through it.",
+    "start_ms": 1320536,
+    "end_ms": 1322536,
+    "duration_ms": 2000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1323.864,
+    "text": "You're gonna check assumptions. Students should have a GPA between 0 and 5.",
+    "start_ms": 1323864,
+    "end_ms": 1328448,
+    "duration_ms": 4584,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1329.144,
+    "text": "Negative 9.9. What's going on? Address anomalies. Maybe I need to impute drop records.",
+    "start_ms": 1329144,
+    "end_ms": 1335432,
+    "duration_ms": 6288,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1335.704,
+    "text": "Maybe fix spelling and so on. to the to the person asked is it lying.",
+    "start_ms": 1335704,
+    "end_ms": 1341340,
+    "duration_ms": 5636,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1342.2,
+    "text": "Record everything you do. Record that whole process. So you can tell the full story of what you did and think about its implications on your final conclusions.",
+    "start_ms": 1342200,
+    "end_ms": 1352608,
+    "duration_ms": 10408,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1356.184,
+    "text": "You did it. So that was the end of text wrangling or the end of EDA.",
+    "start_ms": 1356184,
+    "end_ms": 1361305,
+    "duration_ms": 5121,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1361.305,
+    "text": "Now we're going to talk about text wrangling or regular expression.",
+    "start_ms": 1361305,
+    "end_ms": 1363961,
+    "duration_ms": 2656,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1363.961,
+    "text": "So are there any questions? the basics of video. To finish the video.",
+    "start_ms": 1363961,
+    "end_ms": 1377088,
+    "duration_ms": 13127,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1379.384,
+    "text": "Kind of. A big part of BDA is going to be working with techs data.",
+    "start_ms": 1379384,
+    "end_ms": 1383080,
+    "duration_ms": 3696,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1384.056,
+    "text": "And we didn't have this in the first kind of this class but you know the subsequent versions is being came one of the more useful parts of data 100.",
+    "start_ms": 1384056,
+    "end_ms": 1390556,
+    "duration_ms": 6500,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1390.556,
+    "text": "I'm about to tell you about how to work with strings.",
+    "start_ms": 1390556,
+    "end_ms": 1393256,
+    "duration_ms": 2700,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1393.496,
+    "text": "You don't often get this because it's sort of in the weeds, but it's also pretty critical.",
+    "start_ms": 1393496,
+    "end_ms": 1397896,
+    "duration_ms": 4400,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1398.52,
+    "text": "So we're going to also talk about regular expressions. A terrible language for everyone.",
+    "start_ms": 1398520,
+    "end_ms": 1402968,
+    "duration_ms": 4448,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1403.96,
+    "text": "And then next, I'll be fun stuff like plots. Alright.",
+    "start_ms": 1403960,
+    "end_ms": 1408076,
+    "duration_ms": 4116,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1408.504,
+    "text": "So working with strings, strings, just text, working with text.",
+    "start_ms": 1408504,
+    "end_ms": 1412504,
+    "duration_ms": 4000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1413.912,
+    "text": "I'm going to talk about standard text manipulation tasks first and then the technologies we use to do these tasks.",
+    "start_ms": 1413912,
+    "end_ms": 1421512,
+    "duration_ms": 7600,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1421.976,
+    "text": "I'm going to teach you an entirely new programming language in this lecture.",
+    "start_ms": 1421976,
+    "end_ms": 1424976,
+    "duration_ms": 3000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1426.488,
+    "text": "Alright, so why do we work with text? Two common use cases for working with text.",
+    "start_ms": 1426488,
+    "end_ms": 1431458,
+    "duration_ms": 4970,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1431.458,
+    "text": "One. Canonic Lization. Spelling errors, gradations, and how people write addresses make it hard to do analysis of who lives in Berkeley, that people spell Berkeley differently.",
+    "start_ms": 1431458,
+    "end_ms": 1445056,
+    "duration_ms": 13598,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1445.784,
+    "text": "Sometimes they capitalize, sometimes they're missing an extra E. Conoclization is converting my data so that it has One possible form.",
+    "start_ms": 1445784,
+    "end_ms": 1455080,
+    "duration_ms": 9296,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1455.48,
+    "text": "Should make a new county column, so they're wrong. Maybe a new county column with counties in some more canonical form.",
+    "start_ms": 1455480,
+    "end_ms": 1461880,
+    "duration_ms": 6400,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1462.904,
+    "text": "Fixed Spellings. Drop punctuation that could be distracting when I'm trying to do visualizations and so on.",
+    "start_ms": 1462904,
+    "end_ms": 1468392,
+    "duration_ms": 5488,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1469.528,
+    "text": "It's also important if I want to join piece of data, right?",
+    "start_ms": 1469528,
+    "end_ms": 1472328,
+    "duration_ms": 2800,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1472.6,
+    "text": "Different, different data sources have different ways of encoding the same piece of information as a string.",
+    "start_ms": 1472600,
+    "end_ms": 1477600,
+    "duration_ms": 5000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1478.872,
+    "text": "So here I'm trying to join the Caltis. If I want to join them, I'd like them all to be in some very canonical form.",
+    "start_ms": 1478872,
+    "end_ms": 1484984,
+    "duration_ms": 6112,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1485.688,
+    "text": "I got rid of spaces, I got rid of everything, so there's a good chance that these things will now be the same across my two different data sources.",
+    "start_ms": 1485688,
+    "end_ms": 1492188,
+    "duration_ms": 6500,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1493.336,
+    "text": "So, when she's done... That's one reason. The other reasons to do all this?",
+    "start_ms": 1493336,
+    "end_ms": 1502984,
+    "duration_ms": 9648,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1505.336,
+    "text": "It's too extract information. So those are pretty common. get something like this.",
+    "start_ms": 1505336,
+    "end_ms": 1511080,
+    "duration_ms": 5744,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1511.042,
+    "text": "be in one of your columns of your table you have this giant string.",
+    "start_ms": 1511042,
+    "end_ms": 1514776,
+    "duration_ms": 3734,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1515.448,
+    "text": "which contains some importance time stamps. How do you pull that time stamp down at that string?",
+    "start_ms": 1515448,
+    "end_ms": 1521128,
+    "duration_ms": 5680,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1523.544,
+    "text": "Pretty common problem. So both these will show up in the data analysis you do if you in fact if you use Google Forms you'll but spend a lot of time with stuff like this.",
+    "start_ms": 1523544,
+    "end_ms": 1533324,
+    "duration_ms": 9780,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1533.784,
+    "text": "where people can answer multiple selections, Google Form just takes all the strings to answer and puts them in just one long string.",
+    "start_ms": 1533784,
+    "end_ms": 1539984,
+    "duration_ms": 6200,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1540.504,
+    "text": "You have to extract, you know, which major they are, which classes they've taken and so on.",
+    "start_ms": 1540504,
+    "end_ms": 1544104,
+    "duration_ms": 3600,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1545.368,
+    "text": "So that's a bit of extraction as well. So we're going to use Pandas string methods.",
+    "start_ms": 1545368,
+    "end_ms": 1553304,
+    "duration_ms": 7936,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1553.304,
+    "text": "Start with that. In fact, we should start with the Python string methods.",
+    "start_ms": 1553304,
+    "end_ms": 1557560,
+    "duration_ms": 4256,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1557.56,
+    "text": "So, bass or just vanilla Python has ways to work with text.",
+    "start_ms": 1557560,
+    "end_ms": 1561600,
+    "duration_ms": 4040,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1561.6,
+    "text": "You're called string objects. and recall and we'll come back in a second if you all recall this but recall If you have a string s, let's say s equals.",
+    "start_ms": 1561600,
+    "end_ms": 1571048,
+    "duration_ms": 9448,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1572.088,
+    "text": "Hello. That's my string. Okay, so I can say string dot dot lower or string dot upper.",
+    "start_ms": 1572088,
+    "end_ms": 1584344,
+    "duration_ms": 12256,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1584.728,
+    "text": "that changes the case of all letters to lower or upper case.",
+    "start_ms": 1584728,
+    "end_ms": 1587768,
+    "duration_ms": 3040,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1588.888,
+    "text": "I can do things like replace. where I put some magic in here which will teach you today.",
+    "start_ms": 1588888,
+    "end_ms": 1593496,
+    "duration_ms": 4608,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1593.496,
+    "text": "So I'm going to replace parts of my string. I can split a string.",
+    "start_ms": 1593496,
+    "end_ms": 1597608,
+    "duration_ms": 4112,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1598.072,
+    "text": "Why would I split a string? split out in separate words, so I'm going to split on this little space right here.",
+    "start_ms": 1598072,
+    "end_ms": 1603320,
+    "duration_ms": 5248,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1603.0,
+    "text": "So let's split strings into lists. Can take some strings.",
+    "start_ms": 1603000,
+    "end_ms": 1607360,
+    "duration_ms": 4360,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1607.36,
+    "text": "What's this gonna do? It's going to take this string from position one.",
+    "start_ms": 1607360,
+    "end_ms": 1612624,
+    "duration_ms": 5264,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1613.048,
+    "text": "to position four, inclusive is that right there? Like that, so pull out the subset of characters from my string.",
+    "start_ms": 1613048,
+    "end_ms": 1619208,
+    "duration_ms": 6160,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1620.248,
+    "text": "Sorry, 4x-qlusive. Skip the first character, go with a few more characters.",
+    "start_ms": 1620248,
+    "end_ms": 1626972,
+    "duration_ms": 6724,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1629.08,
+    "text": "I use things like membership and python so I can take a string.",
+    "start_ms": 1629080,
+    "end_ms": 1631880,
+    "duration_ms": 2800,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1632.184,
+    "text": "I can say in another string and test to see if AB is in S.",
+    "start_ms": 1632184,
+    "end_ms": 1636184,
+    "duration_ms": 4000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1638.264,
+    "text": "I can take the length of the string. So standard Python operations you could and often when you're first trying pandas you could write a function apply it to each row using string operations.",
+    "start_ms": 1638264,
+    "end_ms": 1651016,
+    "duration_ms": 12752,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1651.192,
+    "text": "That would work but it'd be slow. and hard to read.",
+    "start_ms": 1651192,
+    "end_ms": 1655784,
+    "duration_ms": 4592,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1655.64,
+    "text": "So, Penn has some magic. .str. the .str operator. So...",
+    "start_ms": 1655640,
+    "end_ms": 1680032,
+    "duration_ms": 24392,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1681.4,
+    "text": "A data famous population has a column called county. I can say .st.",
+    "start_ms": 1681400,
+    "end_ms": 1686264,
+    "duration_ms": 4864,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1686.648,
+    "text": "It's a string operators. Lower. But it's all the strings to lower.",
+    "start_ms": 1686648,
+    "end_ms": 1692136,
+    "duration_ms": 5488,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1693.88,
+    "text": "So more interesting. Take the populations data frame County column string operator.",
+    "start_ms": 1693880,
+    "end_ms": 1700088,
+    "duration_ms": 6208,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1700.728,
+    "text": "Replace. All the ampersens with the amp. So there are many of these.",
+    "start_ms": 1700728,
+    "end_ms": 1714120,
+    "duration_ms": 13392,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1714.061,
+    "text": "looking on Google for Python series string you can look at all the different operations you can.",
+    "start_ms": 1714061,
+    "end_ms": 1718784,
+    "duration_ms": 4723,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1721.336,
+    "text": "Here's a short list. of them and they try to mirror what you would do at this single string in python So you have stringed lower, stringed upper.",
+    "start_ms": 1721336,
+    "end_ms": 1730120,
+    "duration_ms": 8784,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1730.12,
+    "text": "You have stringed replace. String Split. which will turn that calm of strings into a calm of lists.",
+    "start_ms": 1730120,
+    "end_ms": 1737368,
+    "duration_ms": 7248,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1739.608,
+    "text": "You can take a subset of each of the strings.",
+    "start_ms": 1739608,
+    "end_ms": 1741608,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1743.16,
+    "text": "or substring. You can check to see if the string contains another string here.",
+    "start_ms": 1743160,
+    "end_ms": 1746844,
+    "duration_ms": 3684,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1748.408,
+    "text": "and computer games all the strengths. There are more, but this is a pretty common set that you'll use in this class.",
+    "start_ms": 1748408,
+    "end_ms": 1755112,
+    "duration_ms": 6704,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1759.832,
+    "text": "I'm going to skip the demos until the end of lecture to make sure we get to everything and then at the end of lecture I'll show you each of these pieces.",
+    "start_ms": 1759832,
+    "end_ms": 1766445,
+    "duration_ms": 6613,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1766.445,
+    "text": "If we don't get to all the demos, the demos for this lecture are really short so you can scroll to them pretty quickly on your own as well.",
+    "start_ms": 1766445,
+    "end_ms": 1779112,
+    "duration_ms": 12667,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1779.021,
+    "text": "some common representation and join the two tables. Actually, I will highlight from that demo the code here.",
+    "start_ms": 1779021,
+    "end_ms": 1785026,
+    "duration_ms": 6005,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1785.026,
+    "text": "Let's do that real quickly. So, a common pattern in writing these long string operations, again, is to use these parentheses.",
+    "start_ms": 1785026,
+    "end_ms": 1791560,
+    "duration_ms": 6534,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1791.56,
+    "text": "I have my data frame, and now I'm going to do a sequence of string operations one at a time.",
+    "start_ms": 1791560,
+    "end_ms": 1795960,
+    "duration_ms": 4400,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1796.376,
+    "text": "So first I convert everything to lower case. Everything's the other case.",
+    "start_ms": 1796376,
+    "end_ms": 1801112,
+    "duration_ms": 4736,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1801.112,
+    "text": "I replace all the spaces with Nothing. But quote a string that contains nothing.",
+    "start_ms": 1801112,
+    "end_ms": 1807496,
+    "duration_ms": 6384,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1807.864,
+    "text": "That is deleting all the spaces, removing the spaces. Then replace all the ends with Ant.",
+    "start_ms": 1807864,
+    "end_ms": 1813672,
+    "duration_ms": 5808,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1814.584,
+    "text": "So now I don't have any ampersandzymor just ant. Gave all the punctuation.",
+    "start_ms": 1814584,
+    "end_ms": 1819688,
+    "duration_ms": 5104,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1819.992,
+    "text": "Give it all the periods by replacing that with nothing.",
+    "start_ms": 1819992,
+    "end_ms": 1823192,
+    "duration_ms": 3200,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1823.736,
+    "text": "The way of deleting the punctuation. I don't want the word county or parish as well so I delete those placing with nothing.",
+    "start_ms": 1823736,
+    "end_ms": 1831288,
+    "duration_ms": 7552,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1832.408,
+    "text": "I will confess that most of what I do is string manipulation looks like this.",
+    "start_ms": 1832408,
+    "end_ms": 1836408,
+    "duration_ms": 4000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1837.08,
+    "text": "It's pretty easy to read, it's a sequence of transformations of flying to all the strings.",
+    "start_ms": 1837080,
+    "end_ms": 1841160,
+    "duration_ms": 4080,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1841.16,
+    "text": "One step at a time, till I get to the string.",
+    "start_ms": 1841160,
+    "end_ms": 1843360,
+    "duration_ms": 2200,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1843.96,
+    "text": "It looks kind of like this which is not amazingly readable but is now consistent across all the different ways it could be written.",
+    "start_ms": 1843960,
+    "end_ms": 1850960,
+    "duration_ms": 7000,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1851.192,
+    "text": "Yeah, so instead of Saint John's having a period sometimes, sometimes not having a period, I got rid of the period.",
+    "start_ms": 1851192,
+    "end_ms": 1857192,
+    "duration_ms": 6000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1858.808,
+    "text": "There's more consistent. It is canonicalized in some. Coming for.",
+    "start_ms": 1858808,
+    "end_ms": 1863840,
+    "duration_ms": 5032,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1867.064,
+    "text": "You can do that same activity. To pull information out too.",
+    "start_ms": 1867064,
+    "end_ms": 1871464,
+    "duration_ms": 4400,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1871.288,
+    "text": "Again, this is how I would probably do this. Before learning about regular expressions.",
+    "start_ms": 1871288,
+    "end_ms": 1875656,
+    "duration_ms": 4368,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1875.768,
+    "text": "So I can take my line. This is a string, but this could have been a data frame.",
+    "start_ms": 1875768,
+    "end_ms": 1889768,
+    "duration_ms": 14000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1889.72,
+    "text": "Column. STR and then this sequence of steps here. So in this case, I'm taking the string.",
+    "start_ms": 1889720,
+    "end_ms": 1898664,
+    "duration_ms": 8944,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1898.664,
+    "text": "I'm going to split out, split the string here and take the second half of the strings of this whole part right here, I'm going to split the second half here and take just this part and so on.",
+    "start_ms": 1898664,
+    "end_ms": 1907896,
+    "duration_ms": 9232,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1908.696,
+    "text": "So we'll reach these steps, I'm peeling off parts of the string.",
+    "start_ms": 1908696,
+    "end_ms": 1911336,
+    "duration_ms": 2640,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1911.8,
+    "text": "Trying to split it at different characters and these characters have to be in that string for this to work.",
+    "start_ms": 1911800,
+    "end_ms": 1916800,
+    "duration_ms": 5000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1917.56,
+    "text": "and i'm gonna just keep splitting so i split it here then i'm gonna split on these things and so on until i get each of the pieces out of the string Who finds this somewhat readable?",
+    "start_ms": 1917560,
+    "end_ms": 1928040,
+    "duration_ms": 10480,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1928.888,
+    "text": "Exactly. I'll leave you. It's a bummer. I would argue this is actually going to be more readable than what I'm about to teach you.",
+    "start_ms": 1928888,
+    "end_ms": 1935416,
+    "duration_ms": 6528,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1936.984,
+    "text": "But this... Still confusing. So I'm going to show you in a moment a way to do this using a new programming language, which is how data science would typically do these types of extraction tasks.",
+    "start_ms": 1936984,
+    "end_ms": 1947456,
+    "duration_ms": 10472,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1948.6,
+    "text": "But it's good to know these techniques and I think you'll find in practice is often easier to to a sample.",
+    "start_ms": 1948600,
+    "end_ms": 1953080,
+    "duration_ms": 4480,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1955.544,
+    "text": "Alright, so today we're going to talk about regular expressions.",
+    "start_ms": 1955544,
+    "end_ms": 1957544,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1958.136,
+    "text": "The rest of this lecture. Alright, so I showed you all these kinds of individual calls that I can use to split strings up.",
+    "start_ms": 1958136,
+    "end_ms": 1965896,
+    "duration_ms": 7760,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1966.328,
+    "text": "But it won't work for things like I want to extract all the moon like patterns so I want to find all the instances of words that look like this in my string.",
+    "start_ms": 1966328,
+    "end_ms": 1975328,
+    "duration_ms": 9000,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1977.368,
+    "text": "Maybe I want to find all the allergies in my string.",
+    "start_ms": 1977368,
+    "end_ms": 1979828,
+    "duration_ms": 2460,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1979.828,
+    "text": "How do I find all the examples of someone mentioning an allergy like sociology that they're studying?",
+    "start_ms": 1979828,
+    "end_ms": 1985208,
+    "duration_ms": 5380,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1986.872,
+    "text": "It's hard. Baby Possible, but hard to do with these kinds of techniques here.",
+    "start_ms": 1986872,
+    "end_ms": 1991272,
+    "duration_ms": 4400,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1992.536,
+    "text": "So we use something called regular expressions. Which are implemented in Python using the RE library but also available in the string and the successors.",
+    "start_ms": 1992536,
+    "end_ms": 2000856,
+    "duration_ms": 8320,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2001.464,
+    "text": "And here's just a taste of what this looks like.",
+    "start_ms": 2001464,
+    "end_ms": 2003464,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2004.632,
+    "text": "So if I want to find all of the strings it matched.",
+    "start_ms": 2004632,
+    "end_ms": 2007832,
+    "duration_ms": 3200,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2008.12,
+    "text": "I logged before. just write this one little program right here.",
+    "start_ms": 2008120,
+    "end_ms": 2013288,
+    "duration_ms": 5168,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2014.808,
+    "text": "At the end of this lecture, this is going to make a lot of sense.",
+    "start_ms": 2014808,
+    "end_ms": 2017808,
+    "duration_ms": 3000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2019.992,
+    "text": "So it's a new programming language that you use inside of another programming language.",
+    "start_ms": 2019992,
+    "end_ms": 2024312,
+    "duration_ms": 4320,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2024.76,
+    "text": "to match an extract information. This is Reg X. So...",
+    "start_ms": 2024760,
+    "end_ms": 2032552,
+    "duration_ms": 7792,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2032.856,
+    "text": "Regular expression. R. A. X. is how it's shortened is a tiny programming language.",
+    "start_ms": 2032856,
+    "end_ms": 2039904,
+    "duration_ms": 7048,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2040.536,
+    "text": "The Lajor Search Strings Repairs. So something really simple. This is a program that matches socially-created numbers.",
+    "start_ms": 2040536,
+    "end_ms": 2049244,
+    "duration_ms": 8708,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2049.244,
+    "text": "It says I have a digit between 0 and 9, 3 times.",
+    "start_ms": 2049244,
+    "end_ms": 2053844,
+    "duration_ms": 4600,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2054.104,
+    "text": "followed by a hyphen, another digit between 0 and 9, two times followed by a hyphen, the digitization is 9, 4 times.",
+    "start_ms": 2054104,
+    "end_ms": 2062104,
+    "duration_ms": 8000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2065.688,
+    "text": "I haven't explained any of this in text, but you kinda see how I might go to write something.",
+    "start_ms": 2065688,
+    "end_ms": 2068988,
+    "duration_ms": 3300,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2069.304,
+    "text": "pattern in this weird program language that would match something like a social Korean Upper.",
+    "start_ms": 2069304,
+    "end_ms": 2073984,
+    "duration_ms": 4680,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2076.92,
+    "text": "Quick aside, you can say Reg X or Reg X.",
+    "start_ms": 2076920,
+    "end_ms": 2079963,
+    "duration_ms": 3043,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2079.963,
+    "text": "The correct pronunciation is Reg X, but some people would disagree with me.",
+    "start_ms": 2079963,
+    "end_ms": 2083920,
+    "duration_ms": 3957,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2084.152,
+    "text": "So choose your favorite, put the correct answer. Let's do this.",
+    "start_ms": 2084152,
+    "end_ms": 2092744,
+    "duration_ms": 8592,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2092.716,
+    "text": "so first, uh... You are not going to memorize this language.",
+    "start_ms": 2092716,
+    "end_ms": 2096280,
+    "duration_ms": 3564,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2096.28,
+    "text": "In fact, I can't memorize this language. I will constantly look stuff up for regular expressions.",
+    "start_ms": 2096280,
+    "end_ms": 2100312,
+    "duration_ms": 4032,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2101.368,
+    "text": "What are gold today is understand? What you can do with the reg X.",
+    "start_ms": 2101368,
+    "end_ms": 2106248,
+    "duration_ms": 4880,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2106.808,
+    "text": "and how to parse and create a reg X with their reference tape.",
+    "start_ms": 2106808,
+    "end_ms": 2110968,
+    "duration_ms": 4160,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2112.632,
+    "text": "So don't be intimidated. High level understanding, that's our goal.",
+    "start_ms": 2112632,
+    "end_ms": 2118312,
+    "duration_ms": 5680,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2118.328,
+    "text": "So some details. We're going to use a new vocabulary that you haven't had of yet.",
+    "start_ms": 2118328,
+    "end_ms": 2122952,
+    "duration_ms": 4624,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2123.256,
+    "text": "of these kind of medic characters, especially scape characters groups and so on.",
+    "start_ms": 2123256,
+    "end_ms": 2127576,
+    "duration_ms": 4320,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2127.896,
+    "text": "to write down our regular expressions. You can use different kinds of looping syntax.",
+    "start_ms": 2127896,
+    "end_ms": 2133624,
+    "duration_ms": 5728,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2133.624,
+    "text": "We'll talk about these. And you're going to learn about these different character classes and how to build your And we're going to get to how to use regular expressions in patterns.",
+    "start_ms": 2133624,
+    "end_ms": 2145916,
+    "duration_ms": 12292,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2148.472,
+    "text": "When I first started using regular expressions, in fact, it wasn't until this class that I spent a lot of time thinking about them.",
+    "start_ms": 2148472,
+    "end_ms": 2154472,
+    "duration_ms": 6000,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2154.472,
+    "text": "I found it confusing. And I found this website which everyone has started to use as well.",
+    "start_ms": 2154472,
+    "end_ms": 2160448,
+    "duration_ms": 5976,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2160.448,
+    "text": "Really helpful so let's see can I click on the snap.",
+    "start_ms": 2160448,
+    "end_ms": 2163448,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2165.496,
+    "text": "Of a great website as you're going through your expressions and you're like, what is going on?",
+    "start_ms": 2165496,
+    "end_ms": 2172794,
+    "duration_ms": 7298,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2172.794,
+    "text": "Go to this website. First thing you do is go on the left over here.",
+    "start_ms": 2172794,
+    "end_ms": 2181384,
+    "duration_ms": 8590,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2181.192,
+    "text": "little bit and i can write my regular expressions up here and i can write some test strings here and it's going to show me where it matches Do one really quickly?",
+    "start_ms": 2181192,
+    "end_ms": 2189848,
+    "duration_ms": 8656,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2189.848,
+    "text": "Cat. that right. in that. Those are work. Okay, maybe I go cat.",
+    "start_ms": 2189848,
+    "end_ms": 2199616,
+    "duration_ms": 9768,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2199.96,
+    "text": "Ah, that just kept. Great way to practice regular expressions, all this in text, we're going to cover lecture here, you can play with over here.",
+    "start_ms": 2199960,
+    "end_ms": 2207320,
+    "duration_ms": 7360,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2221.592,
+    "text": "Another source of material that I found helpful when I was learning about this rigour expressions is this how to guide for Python rigour expressions.",
+    "start_ms": 2221592,
+    "end_ms": 2229592,
+    "duration_ms": 8000,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2229.592,
+    "text": "It walks through all this in-tacks. I'm going to cover this lecture.",
+    "start_ms": 2229592,
+    "end_ms": 2232152,
+    "duration_ms": 2560,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2232.152,
+    "text": "If you're finding this lecture confusing, maybe try this guide instead.",
+    "start_ms": 2232152,
+    "end_ms": 2236072,
+    "duration_ms": 3920,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2236.28,
+    "text": "and you know in the guide has a look at the copy of the notes book and try them yourself First, four basic operations, the regular expression.",
+    "start_ms": 2236280,
+    "end_ms": 2250040,
+    "duration_ms": 13760,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2251.928,
+    "text": "concatenation This one's the probably easiest. You can write a sequence of characters like AAB, AAB.",
+    "start_ms": 2251928,
+    "end_ms": 2262040,
+    "duration_ms": 10112,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2262.552,
+    "text": "And that will match. Exactly that sequence of characters. We're going to solve that with cat.",
+    "start_ms": 2262552,
+    "end_ms": 2268776,
+    "duration_ms": 6224,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2268.776,
+    "text": "So A, B, A, B will match. Any string that looks like that.",
+    "start_ms": 2268776,
+    "end_ms": 2273384,
+    "duration_ms": 4608,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2273.784,
+    "text": "Any part of a string that looks like that. Good fancier.",
+    "start_ms": 2273784,
+    "end_ms": 2279776,
+    "duration_ms": 5992,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2280.632,
+    "text": "First operator. This is the OR. A A. or B-A-A-B matches.",
+    "start_ms": 2280632,
+    "end_ms": 2288988,
+    "duration_ms": 8356,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2289.528,
+    "text": "A A. or B-A-A-B. Not so bad so far, right?",
+    "start_ms": 2289528,
+    "end_ms": 2297624,
+    "duration_ms": 8096,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2300.504,
+    "text": "Keep going. Star. It's a pretty cool character. A B, star, A, matches zero or more currencies of the thing before.",
+    "start_ms": 2300504,
+    "end_ms": 2315044,
+    "duration_ms": 14540,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2317.208,
+    "text": "So this matches. N, No Bs, A, N1B, A, N2Bs, and so on.",
+    "start_ms": 2317208,
+    "end_ms": 2323280,
+    "duration_ms": 6072,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2328.408,
+    "text": "This is boring, confusing. You'll get more fun in a moment and what we're confusing in a moment.",
+    "start_ms": 2328408,
+    "end_ms": 2334872,
+    "duration_ms": 6464,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2334.872,
+    "text": "So we've introduced some very basic syntax one more. think it should do.",
+    "start_ms": 2334872,
+    "end_ms": 2341864,
+    "duration_ms": 6992,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2343.928,
+    "text": "Kind of come back to where it departs as well.",
+    "start_ms": 2343928,
+    "end_ms": 2347389,
+    "duration_ms": 3461,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2347.389,
+    "text": "I put parentheses around a, b, and then a star here that says this whole thing.",
+    "start_ms": 2347389,
+    "end_ms": 2352928,
+    "duration_ms": 5539,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2353.304,
+    "text": "That's his. zero or more times. So this This pattern right here matches just a...",
+    "start_ms": 2353304,
+    "end_ms": 2363800,
+    "duration_ms": 10496,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2364.408,
+    "text": "Because it just stay here and zero of these things.",
+    "start_ms": 2364408,
+    "end_ms": 2368408,
+    "duration_ms": 4000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2368.408,
+    "text": "It matches A, B, A. Goss matches AB, AB, A.",
+    "start_ms": 2368408,
+    "end_ms": 2374032,
+    "duration_ms": 5624,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2374.264,
+    "text": "As many A-Bs... As I want followed by and there must be a terminal a.",
+    "start_ms": 2374264,
+    "end_ms": 2379580,
+    "duration_ms": 5316,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2383.416,
+    "text": "Questions so far? Surprised. You've got it. These... are called medic characters.",
+    "start_ms": 2383416,
+    "end_ms": 2399048,
+    "duration_ms": 15632,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2399.288,
+    "text": "The part of our programming language is these are just the characters in that language.",
+    "start_ms": 2399288,
+    "end_ms": 2403768,
+    "duration_ms": 4480,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2405.048,
+    "text": "A and B. C, D, 1, 2, 3, all those are just basic characters.",
+    "start_ms": 2405048,
+    "end_ms": 2409896,
+    "duration_ms": 4848,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2409.896,
+    "text": "These things here are their special characters. What do I want to match a star?",
+    "start_ms": 2409896,
+    "end_ms": 2415336,
+    "duration_ms": 5440,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2418.072,
+    "text": "Use another character which we'll learn about a little bit, but a slash beside it.",
+    "start_ms": 2418072,
+    "end_ms": 2421432,
+    "duration_ms": 3360,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2421.432,
+    "text": "Now that's an American-medic character, that's just a star in a string.",
+    "start_ms": 2421432,
+    "end_ms": 2424232,
+    "duration_ms": 2800,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2427.672,
+    "text": "Keep going over back to that room. All right, so we've introduced four operations.",
+    "start_ms": 2427672,
+    "end_ms": 2432752,
+    "duration_ms": 5080,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2432.92,
+    "text": "It's important to think about the presence of these operations.",
+    "start_ms": 2432920,
+    "end_ms": 2435920,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2436.696,
+    "text": "So grouping. parentheses as the highest precedence. So again this matches A.",
+    "start_ms": 2436696,
+    "end_ms": 2448840,
+    "duration_ms": 12144,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2448.696,
+    "text": "Running number of ABABs. The star doesn't apply to just the beat applies to both the A and the B.",
+    "start_ms": 2448696,
+    "end_ms": 2458064,
+    "duration_ms": 9368,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2458.028,
+    "text": "has a next order of preference. So it applies to whatever is immediately next to it.",
+    "start_ms": 2458028,
+    "end_ms": 2461896,
+    "duration_ms": 3868,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2462.744,
+    "text": "That's higher precedence than things like concatenation. So this is A and then zero more copies of B followed by an A.",
+    "start_ms": 2462744,
+    "end_ms": 2470296,
+    "duration_ms": 7552,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2474.424,
+    "text": "We do need parentheses if I want to have AB, this whole thing copied multiple times.",
+    "start_ms": 2474424,
+    "end_ms": 2478424,
+    "duration_ms": 4000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2480.216,
+    "text": "The OR Like shows two can canation can canation has a next preference is this three Do whatever for cut and press it.",
+    "start_ms": 2480216,
+    "end_ms": 2489672,
+    "duration_ms": 9456,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2489.976,
+    "text": "So the concanation comes before the orr, which means the orr applies to all the stuff on the left and the right.",
+    "start_ms": 2489976,
+    "end_ms": 2495276,
+    "duration_ms": 5300,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2496.312,
+    "text": "Not just the immediate characters. Let's do a poll and see how people are doing.",
+    "start_ms": 2496312,
+    "end_ms": 2513944,
+    "duration_ms": 17632,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2535.8,
+    "text": "So which regular expression pattern will match the string? Baby VA.",
+    "start_ms": 2535800,
+    "end_ms": 2539616,
+    "duration_ms": 3816,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2540.568,
+    "text": "Select all that apply. boat You think there's more than one?",
+    "start_ms": 2540568,
+    "end_ms": 2575976,
+    "duration_ms": 35408,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2578.712,
+    "text": "Find out. Alright. There you got this. This is tricky.",
+    "start_ms": 2578712,
+    "end_ms": 2589068,
+    "duration_ms": 10356,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2589.068,
+    "text": "Let's walk through these. A B star A. Where's that matching?",
+    "start_ms": 2589068,
+    "end_ms": 2594152,
+    "duration_ms": 5084,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2595.384,
+    "text": "Hey. And remember the star attaches just to the beat.",
+    "start_ms": 2595384,
+    "end_ms": 2598696,
+    "duration_ms": 3312,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2599.32,
+    "text": "Great. or evaporation. So that means a and then zero more b's.",
+    "start_ms": 2599320,
+    "end_ms": 2605400,
+    "duration_ms": 6080,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2605.976,
+    "text": "Hold by your neck. So A, B, B, A, that works.",
+    "start_ms": 2605976,
+    "end_ms": 2610076,
+    "duration_ms": 4100,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2610.076,
+    "text": "Let's look at the next one. It looks like it should work, but the prints you say have zero more copies of A, B, the whole group.",
+    "start_ms": 2610076,
+    "end_ms": 2618760,
+    "duration_ms": 8684,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2620.216,
+    "text": "Hold by it. So this isn't quite get ABBA. AAB AAB doesn't match ABBA and it has to match exactly that string.",
+    "start_ms": 2620216,
+    "end_ms": 2636424,
+    "duration_ms": 16208,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2637.752,
+    "text": "The only matches AAB, AAB. Last one, A or... B.A.B.",
+    "start_ms": 2637752,
+    "end_ms": 2644768,
+    "duration_ms": 7016,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2647.288,
+    "text": "Hey, does it match ABBA? and B-A-A-B does not match.",
+    "start_ms": 2647288,
+    "end_ms": 2651736,
+    "duration_ms": 4448,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2652.184,
+    "text": "8 BB A. Questions here. The back, yeah. Yeah, let's do this with regular expression.",
+    "start_ms": 2652184,
+    "end_ms": 2668188,
+    "duration_ms": 16004,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2669.592,
+    "text": "Right. So we have a bar. Bye. We'll make more seconds.",
+    "start_ms": 2669592,
+    "end_ms": 2676770,
+    "duration_ms": 7178,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2676.77,
+    "text": "So we want to do a b star Hey. So it doesn't match the whole thing because it's looking for the AB group so that a pair of characters must occur together zero or more times.",
+    "start_ms": 2676770,
+    "end_ms": 2693144,
+    "duration_ms": 16374,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2694.008,
+    "text": "This will match ABAB. Yeah. It also matches just A.",
+    "start_ms": 2694008,
+    "end_ms": 2701352,
+    "duration_ms": 7344,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2705.976,
+    "text": "Alright. Let's keep going. Oh, a more challenging one. Which patterns match?",
+    "start_ms": 2705976,
+    "end_ms": 2713672,
+    "duration_ms": 7696,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2713.368,
+    "text": "Good morning. Expression should match any even number of O's except zero.",
+    "start_ms": 2713368,
+    "end_ms": 2720024,
+    "duration_ms": 6656,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2720.44,
+    "text": "Don't match MN. or M O O N the odd number of O's.",
+    "start_ms": 2720440,
+    "end_ms": 2725624,
+    "duration_ms": 5184,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2746.808,
+    "text": "This one is fun. Who's got it? Thank you. It's hard to get.",
+    "start_ms": 2746808,
+    "end_ms": 2763118,
+    "duration_ms": 16310,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2763.118,
+    "text": "This one's tricky. Thank you. I want to even number of votes.",
+    "start_ms": 2763118,
+    "end_ms": 2767272,
+    "duration_ms": 4154,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2767.352,
+    "text": "Even our Paris emotes. Even a morose. And I must have at least two O's.",
+    "start_ms": 2767352,
+    "end_ms": 2773768,
+    "duration_ms": 6416,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2786.264,
+    "text": "Alright, when have you got it? Let's half you got it, low over half.",
+    "start_ms": 2786264,
+    "end_ms": 2790472,
+    "duration_ms": 4208,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2790.776,
+    "text": "This one's tricky. Let's first look at why the bottom ones are wrong.",
+    "start_ms": 2790776,
+    "end_ms": 2795672,
+    "duration_ms": 4896,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2796.248,
+    "text": "So the very bottom one, M-O-O-Star-N. says match M O and then zero more O's.",
+    "start_ms": 2796248,
+    "end_ms": 2807832,
+    "duration_ms": 11584,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2808.696,
+    "text": "So MON would be fine. M O O N would be fine.",
+    "start_ms": 2808696,
+    "end_ms": 2814512,
+    "duration_ms": 5816,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2815.224,
+    "text": "O-O-O-O and would also be fine. Let's post that shot.",
+    "start_ms": 2815224,
+    "end_ms": 2820360,
+    "duration_ms": 5136,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2820.76,
+    "text": "And the set doesn't work because it matches something you didn't want to match.",
+    "start_ms": 2820760,
+    "end_ms": 2823560,
+    "duration_ms": 2800,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2824.28,
+    "text": "This is one of the challenge and regular expressions you're often looking for a thing that we'll get just what you want.",
+    "start_ms": 2824280,
+    "end_ms": 2828280,
+    "duration_ms": 4000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2828.664,
+    "text": "and not the things you don't. Okay, we'll see you next one.",
+    "start_ms": 2828664,
+    "end_ms": 2833800,
+    "duration_ms": 5136,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2833.944,
+    "text": "Next one says M, followed by zero more copies of this whole group.",
+    "start_ms": 2833944,
+    "end_ms": 2838424,
+    "duration_ms": 4480,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2839.736,
+    "text": "and a group. The French Season of the Star means zero more copies of that group.",
+    "start_ms": 2839736,
+    "end_ms": 2844368,
+    "duration_ms": 4632,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2845.24,
+    "text": "So that matches MN. M-O-N. M-O-N, that's fouros, yeah. So match and even a row's.",
+    "start_ms": 2845240,
+    "end_ms": 2854816,
+    "duration_ms": 9576,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2855.128,
+    "text": "But it also matches MN. That's a dull match, I mean.",
+    "start_ms": 2855128,
+    "end_ms": 2858984,
+    "duration_ms": 3856,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2859.128,
+    "text": "doesn't work. one is Clever. Zizem, you must have at least two O's.",
+    "start_ms": 2859128,
+    "end_ms": 2865384,
+    "duration_ms": 6256,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2866.2,
+    "text": "And then you can have zero more. Copies of the Paravows called by none.",
+    "start_ms": 2866200,
+    "end_ms": 2871648,
+    "duration_ms": 5448,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2872.6,
+    "text": "So, Moon M-O-O-N works. And then if you want to add another pair of it, oh as you can, so it's always being even number of those that are added.",
+    "start_ms": 2872600,
+    "end_ms": 2880428,
+    "duration_ms": 7828,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2883.128,
+    "text": "This is hard. Other questions? Yeah, let me see if I can...",
+    "start_ms": 2883128,
+    "end_ms": 2898184,
+    "duration_ms": 15056,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2899.32,
+    "text": "Let's just go to the regular expression tool again, dear.",
+    "start_ms": 2899320,
+    "end_ms": 2901320,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2902.968,
+    "text": "Alright, so we got... O O what what was it?",
+    "start_ms": 2902968,
+    "end_ms": 2907408,
+    "duration_ms": 4440,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2908.504,
+    "text": "M-O-O, all right. Yep, there you go. M-O star N.",
+    "start_ms": 2908504,
+    "end_ms": 2912864,
+    "duration_ms": 4360,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2913.4,
+    "text": "So you wrote? We got moon. I'm sorry. a little...",
+    "start_ms": 2913400,
+    "end_ms": 2919336,
+    "duration_ms": 5936,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2919.576,
+    "text": "O N N O N So we don't want to match.",
+    "start_ms": 2919576,
+    "end_ms": 2926760,
+    "duration_ms": 7184,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2927.8,
+    "text": "We don't want to match any of these. We did want to match M O.",
+    "start_ms": 2927800,
+    "end_ms": 2931400,
+    "duration_ms": 3600,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2931.768,
+    "text": "Oh, and... and okay. So we want we want all of these.",
+    "start_ms": 2931768,
+    "end_ms": 2939709,
+    "duration_ms": 7941,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2939.709,
+    "text": "That's good. So we got all the good ones. But unfortunately got some bad ones too.",
+    "start_ms": 2939709,
+    "end_ms": 2944160,
+    "duration_ms": 4451,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2945.848,
+    "text": "Why are we at the bad ones? you say M.",
+    "start_ms": 2945848,
+    "end_ms": 2948576,
+    "duration_ms": 2728,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2948.888,
+    "text": "Oh, is she having M.O.? Ah. So we didn't get this one which is good.",
+    "start_ms": 2948888,
+    "end_ms": 2954672,
+    "duration_ms": 5784,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2954.672,
+    "text": "So we had to have at least one out. But then you can have zero more O's after your O.",
+    "start_ms": 2954672,
+    "end_ms": 2959048,
+    "duration_ms": 4376,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2959.048,
+    "text": "So you can have an odd number of those. You don't want to add number of those.",
+    "start_ms": 2959048,
+    "end_ms": 2964296,
+    "duration_ms": 5248,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2964.213,
+    "text": "just want even number of us. Why do we want to even number of those?",
+    "start_ms": 2964213,
+    "end_ms": 2968712,
+    "duration_ms": 4499,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2970.072,
+    "text": "I have no idea. It's just an exercise. You will find that you often have weird things that you want to get for real-regor expressions you're trying to actually construct.",
+    "start_ms": 2970072,
+    "end_ms": 2978264,
+    "duration_ms": 8192,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2988.024,
+    "text": "Right, so I have links to examples of each of these you can work through.",
+    "start_ms": 2988024,
+    "end_ms": 2991704,
+    "duration_ms": 3680,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2991.704,
+    "text": "This bottom one is an extra fun, so you can think about what this regular expression is doing.",
+    "start_ms": 2991704,
+    "end_ms": 2996184,
+    "duration_ms": 4480,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2996.568,
+    "text": "Uh, and we will skip this for now. Alright, so we're going to learn some more operations.",
+    "start_ms": 2996568,
+    "end_ms": 3004188,
+    "duration_ms": 7620,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3005.272,
+    "text": "So a new character group here is the period. This is any character.",
+    "start_ms": 3005272,
+    "end_ms": 3010488,
+    "duration_ms": 5216,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3011.736,
+    "text": "So, snatches. Any number, any letter? in space and e-character.",
+    "start_ms": 3011736,
+    "end_ms": 3018056,
+    "duration_ms": 6320,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3019.128,
+    "text": "It's kind of the wildcard character. Square brackets. These build character classes.",
+    "start_ms": 3019128,
+    "end_ms": 3026536,
+    "duration_ms": 7408,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3026.872,
+    "text": "So this says Match a single character. that can be a letter between papulae and capulae z.",
+    "start_ms": 3026872,
+    "end_ms": 3034520,
+    "duration_ms": 7648,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3035.384,
+    "text": "or between little A and little Z. This little... Range thing is a way of writing a range of that of valid characters.",
+    "start_ms": 3035384,
+    "end_ms": 3043672,
+    "duration_ms": 8288,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3043.672,
+    "text": "So I could also do something like zero nine. I might actually be able to do something like smiley face to sad face, but I've never actually tried that.",
+    "start_ms": 3043672,
+    "end_ms": 3052544,
+    "duration_ms": 8872,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3052.544,
+    "text": "Those are also valid characters. And what does it mean to be in the range of characters if I were to put these characters in alphabetical order or in the order of the unicode character set.",
+    "start_ms": 3052544,
+    "end_ms": 3063128,
+    "duration_ms": 10584,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3063.128,
+    "text": "All the characters between zero and nine. Which in the case of numbers is all the rest of the numbers.",
+    "start_ms": 3063128,
+    "end_ms": 3069992,
+    "duration_ms": 6864,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3072.568,
+    "text": "Alright, so this is where we're building a character class.",
+    "start_ms": 3072568,
+    "end_ms": 3074568,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3074.568,
+    "text": "This whole thing... Only matches a single A, a single little A, a single B, or a single little B.",
+    "start_ms": 3074568,
+    "end_ms": 3080984,
+    "duration_ms": 6416,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3081.624,
+    "text": "So it's way of defining a single character that could be any one of these things.",
+    "start_ms": 3081624,
+    "end_ms": 3085384,
+    "duration_ms": 3760,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3087.576,
+    "text": "Oh, example could be something like A, B, C. That matches the character's A, B, C.",
+    "start_ms": 3087576,
+    "end_ms": 3094952,
+    "duration_ms": 7376,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3095.544,
+    "text": "I can match that star. You're a more times. We'll see some examples in a moment.",
+    "start_ms": 3095544,
+    "end_ms": 3108872,
+    "duration_ms": 13328,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3110.328,
+    "text": "Less Character This is like our star. But instead of it being zero more, it's one or more times.",
+    "start_ms": 3110328,
+    "end_ms": 3118908,
+    "duration_ms": 8580,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3122.584,
+    "text": "So A, B plus matches A, B, so there has to be at least one B, but it could be more than one B as well.",
+    "start_ms": 3122584,
+    "end_ms": 3128824,
+    "duration_ms": 6240,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3132.216,
+    "text": "The question mark. We call it the optional. So is that character can occur 0 or 1 time, so A and B is optional.",
+    "start_ms": 3132216,
+    "end_ms": 3140600,
+    "duration_ms": 8384,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3144.824,
+    "text": "So A works and A B works and that's it.",
+    "start_ms": 3144824,
+    "end_ms": 3146824,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3154.36,
+    "text": "Almost there. Squiggly brackets. Schooly Records. Says Whatever's before me.",
+    "start_ms": 3154360,
+    "end_ms": 3164904,
+    "duration_ms": 10544,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3165.56,
+    "text": "Repeat it exactly X times, and it's the immediate character, same kind of precedence as all of these operations.",
+    "start_ms": 3165560,
+    "end_ms": 3171160,
+    "duration_ms": 5600,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3172.344,
+    "text": "Alright, so in this case... It's saying, I match an A and a B repeated twice.",
+    "start_ms": 3172344,
+    "end_ms": 3178488,
+    "duration_ms": 6144,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3178.488,
+    "text": "So it's equivalent to just saying A, B. Be. Sac simply.",
+    "start_ms": 3178488,
+    "end_ms": 3185536,
+    "duration_ms": 7048,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3186.584,
+    "text": "But you can get fans here. Is there range? So an a followed by 0 to 2 b's.",
+    "start_ms": 3186584,
+    "end_ms": 3193080,
+    "duration_ms": 6496,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3193.08,
+    "text": "So this matches a. A, B, and A, B. There is some redundancy in regular expressions.",
+    "start_ms": 3193080,
+    "end_ms": 3210128,
+    "duration_ms": 17048,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3210.616,
+    "text": "And that the star is exactly equivalent to this thing.",
+    "start_ms": 3210616,
+    "end_ms": 3213282,
+    "duration_ms": 2666,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3213.282,
+    "text": "You can do zero comma. So zero or more times.",
+    "start_ms": 3213282,
+    "end_ms": 3216600,
+    "duration_ms": 3318,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3217.048,
+    "text": "Plus is equivalent to one comma, one or more times.",
+    "start_ms": 3217048,
+    "end_ms": 3220428,
+    "duration_ms": 3380,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3221.208,
+    "text": "The question mark is equivalent to zero one. This is incredibly boring.",
+    "start_ms": 3221208,
+    "end_ms": 3231112,
+    "duration_ms": 9904,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3231.128,
+    "text": "So why are you going to look at a table when you do this?",
+    "start_ms": 3231128,
+    "end_ms": 3233128,
+    "duration_ms": 2000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3233.128,
+    "text": "But hopefully you've gotten some familiarity with some of the basic syntax and how it express or how to build it a regular expression.",
+    "start_ms": 3233128,
+    "end_ms": 3243888,
+    "duration_ms": 10760,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3243.713,
+    "text": "character class and we spent a little more time on that.",
+    "start_ms": 3243713,
+    "end_ms": 3245776,
+    "duration_ms": 2063,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3245.776,
+    "text": "So again, this is a way of describing any capital character, any number between 0 and 9.",
+    "start_ms": 3245776,
+    "end_ms": 3251256,
+    "duration_ms": 5480,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3252.92,
+    "text": "And this is saying... any letter or digit. A rich.",
+    "start_ms": 3252920,
+    "end_ms": 3259136,
+    "duration_ms": 6216,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3259.64,
+    "text": "And this represents just a single character in that class.",
+    "start_ms": 3259640,
+    "end_ms": 3262220,
+    "duration_ms": 2580,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3262.22,
+    "text": "It's creating a class of characters. There's some other built-in ones.",
+    "start_ms": 3262220,
+    "end_ms": 3265880,
+    "duration_ms": 3660,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3266.584,
+    "text": "that you'll use often. Slash W is equivalent to writing this.",
+    "start_ms": 3266584,
+    "end_ms": 3272328,
+    "duration_ms": 5744,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3272.328,
+    "text": "But this is hard to read. So you just say a word-like character.",
+    "start_ms": 3272328,
+    "end_ms": 3276712,
+    "duration_ms": 4384,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3276.712,
+    "text": "Slash W. So you just say a word-like character. Slash W.",
+    "start_ms": 3276712,
+    "end_ms": 3279712,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3280.44,
+    "text": "One or more times. You have a slash D for a digit and a slash S for matching a white space.",
+    "start_ms": 3280440,
+    "end_ms": 3288952,
+    "duration_ms": 8512,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3288.952,
+    "text": "So a space. Could be... 5 times exactly so in a match of a 5 Space 6 Some crazy syntax is negation.",
+    "start_ms": 3288952,
+    "end_ms": 3305160,
+    "duration_ms": 16208,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3305.688,
+    "text": "So if I have something like, it only works inside of a square brackets, so if I have this square brackets followed by this negation operator.",
+    "start_ms": 3305688,
+    "end_ms": 3312688,
+    "duration_ms": 7000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3313.528,
+    "text": "And it's the opposite of this. This matches anything that's not.",
+    "start_ms": 3313528,
+    "end_ms": 3316528,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3317.304,
+    "text": "A letter between ANZ and uppercase. So it's not an uppercase letter.",
+    "start_ms": 3317304,
+    "end_ms": 3324840,
+    "duration_ms": 7536,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3327.608,
+    "text": "So you've seen character classes we have defining a character as some range of things it could be and negation character classes where I define a character is the opposite.",
+    "start_ms": 3327608,
+    "end_ms": 3336708,
+    "duration_ms": 9100,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3337.08,
+    "text": "of something in this class. So anything that's not a capital A to Z.",
+    "start_ms": 3337080,
+    "end_ms": 3341080,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3342.232,
+    "text": "So why did something like... This That's anything that's not a number.",
+    "start_ms": 3342232,
+    "end_ms": 3351032,
+    "duration_ms": 8800,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3351.544,
+    "text": "Anything. As long as that letter is not a number.",
+    "start_ms": 3351544,
+    "end_ms": 3355112,
+    "duration_ms": 3568,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3355.832,
+    "text": "I can match that zero more times. You can also do this.",
+    "start_ms": 3355832,
+    "end_ms": 3362048,
+    "duration_ms": 6216,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3367.544,
+    "text": "Same thing. Anything that's not a digit. Zero more times.",
+    "start_ms": 3367544,
+    "end_ms": 3374496,
+    "duration_ms": 6952,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3378.136,
+    "text": "Alright, and there's because this is a common thing to do negations that capitalize versions.",
+    "start_ms": 3378136,
+    "end_ms": 3383496,
+    "duration_ms": 5360,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3383.864,
+    "text": "of these letters here. are the negated version so I could also just write Slash.",
+    "start_ms": 3383864,
+    "end_ms": 3391104,
+    "duration_ms": 7240,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3391.384,
+    "text": "B. See you in more times. Questions? Worship your back.",
+    "start_ms": 3391384,
+    "end_ms": 3402696,
+    "duration_ms": 11312,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3409.336,
+    "text": "Yeah, so why would I use this? I might say that I have like...",
+    "start_ms": 3409336,
+    "end_ms": 3412336,
+    "duration_ms": 3000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3413.304,
+    "text": "Dear And then you know some people put two spaces.",
+    "start_ms": 3413304,
+    "end_ms": 3418688,
+    "duration_ms": 5384,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3419.128,
+    "text": "the between so maybe i'm going to do slash s 0 to 2 times.",
+    "start_ms": 3419128,
+    "end_ms": 3425384,
+    "duration_ms": 6256,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3427.032,
+    "text": "Dear spaces between D or the next thing I want to match that but one space I'm going to match that to zero space is you've got to put a space I'll still match that to.",
+    "start_ms": 3427032,
+    "end_ms": 3434716,
+    "duration_ms": 7684,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3435.32,
+    "text": "So we've seen a space character. It could also be two tabs, so I could have two tabs that would also match, so the tab is another form of white space.",
+    "start_ms": 3435320,
+    "end_ms": 3442336,
+    "duration_ms": 7016,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3444.696,
+    "text": "but just to slash T as a tab. Lucie in the moment.",
+    "start_ms": 3444696,
+    "end_ms": 3448192,
+    "duration_ms": 3496,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3449.72,
+    "text": "Alright, so let's go through a little practice here. and I will take a short break Alright, so this is saying I match any character followed by you, followed by any character, followed by you, followed by any character, followed by you, followed by any character.",
+    "start_ms": 3449720,
+    "end_ms": 3463040,
+    "duration_ms": 13320,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3463.04,
+    "text": "So that's cumulus. See? You, and you. L-U-S, Kimi-Yos. You can do the exercise could also be in jugular.",
+    "start_ms": 3463040,
+    "end_ms": 3476796,
+    "duration_ms": 13756,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3477.304,
+    "text": "But not what is this made up where it's succubus and tumultuous.",
+    "start_ms": 3477304,
+    "end_ms": 3481464,
+    "duration_ms": 4160,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3487.768,
+    "text": "Why is it match, succubus? S U matches up. I need two C's and I'll get one C one dot All right, keep going.",
+    "start_ms": 3487768,
+    "end_ms": 3501760,
+    "duration_ms": 13992,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3502.232,
+    "text": "What is this here? This is a letter, a single letter.",
+    "start_ms": 3502232,
+    "end_ms": 3506620,
+    "duration_ms": 4388,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3507.16,
+    "text": "It's either a capital letter. or lowercase letter. followed by a lowercase letter Zero or more times.",
+    "start_ms": 3507160,
+    "end_ms": 3515272,
+    "duration_ms": 8112,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3518.52,
+    "text": "So, word works. Capitalize works. But camel case doesn't work.",
+    "start_ms": 3518520,
+    "end_ms": 3524040,
+    "duration_ms": 5520,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3524.824,
+    "text": "So if you're a programmer, I can detect things in camel case or reject things in camel case with this particular expression.",
+    "start_ms": 3524824,
+    "end_ms": 3529824,
+    "duration_ms": 5000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3532.056,
+    "text": "And I didn't allow for numbers so it will for a legal to support Kyder.",
+    "start_ms": 3532056,
+    "end_ms": 3535336,
+    "duration_ms": 3280,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3537.72,
+    "text": "And what about this one? kind of interesting. So this is J, followed by one of these characters.",
+    "start_ms": 3537720,
+    "end_ms": 3546264,
+    "duration_ms": 8544,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3546.264,
+    "text": "Repeated three times. I'll buy a chair. So, matches. J-O-E-H-N-U-N.",
+    "start_ms": 3546264,
+    "end_ms": 3555464,
+    "duration_ms": 9200,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3555.8,
+    "text": "But not this, because I needed three copies. And why not this?",
+    "start_ms": 3555800,
+    "end_ms": 3560284,
+    "duration_ms": 4484,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3560.284,
+    "text": "I needed three copies again. It's too many characters. about this one.",
+    "start_ms": 3560284,
+    "end_ms": 3571176,
+    "duration_ms": 10892,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3571.992,
+    "text": "So J, bye bye. One of these characters, over you, one or two times, followed by H-N.",
+    "start_ms": 3571992,
+    "end_ms": 3578592,
+    "duration_ms": 6600,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3579.192,
+    "text": "So again, matches these doesn't match this because three times zero times here.",
+    "start_ms": 3579192,
+    "end_ms": 3583512,
+    "duration_ms": 4320,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3584.984,
+    "text": "And this says I'm at J followed by at least 1.0.",
+    "start_ms": 3584984,
+    "end_ms": 3588264,
+    "duration_ms": 3280,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3588.792,
+    "text": "and then 8-check. Did you see how I'm reading these?",
+    "start_ms": 3588792,
+    "end_ms": 3594184,
+    "duration_ms": 5392,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3595.352,
+    "text": "It's confusing. It's also really boring. You'll get a chance to do a lot of these in the upcoming assignments.",
+    "start_ms": 3595352,
+    "end_ms": 3600352,
+    "duration_ms": 5000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3602.52,
+    "text": "Alright, one more. a break. What pattern matches any lowercase alphabetic string that has a repeated vowel?",
+    "start_ms": 3602520,
+    "end_ms": 3610328,
+    "duration_ms": 7808,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3645.208,
+    "text": "Let's pick one. What's this? Some hints? Not just any lower case of bed-extring, not as repeated well.",
+    "start_ms": 3645208,
+    "end_ms": 3656696,
+    "duration_ms": 11488,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3657.752,
+    "text": "From Link for Valves. The only thing we repeat in...",
+    "start_ms": 3657752,
+    "end_ms": 3662440,
+    "duration_ms": 4688,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3664.056,
+    "text": "That's interesting. And lower case that's an important signal there.",
+    "start_ms": 3664056,
+    "end_ms": 3668200,
+    "duration_ms": 4144,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3675.896,
+    "text": "We're gonna go. So many of you got this right?",
+    "start_ms": 3675896,
+    "end_ms": 3680040,
+    "duration_ms": 4144,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3680.152,
+    "text": "Let's go on here. Let's read the bottom one first.",
+    "start_ms": 3680152,
+    "end_ms": 3682780,
+    "duration_ms": 2628,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3682.78,
+    "text": "The bottom one says Any character? character? Lorcaise, uppercase? I repeated zero more times.",
+    "start_ms": 3682780,
+    "end_ms": 3691592,
+    "duration_ms": 8812,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3691.32,
+    "text": "Well, bye, Aval. One or more times. All by. And it could be any of these vowels, so A, E would be fine.",
+    "start_ms": 3691320,
+    "end_ms": 3699260,
+    "duration_ms": 7940,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3699.832,
+    "text": "I repeat it A and then E so one and more times.",
+    "start_ms": 3699832,
+    "end_ms": 3702632,
+    "duration_ms": 2800,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3703.128,
+    "text": "It would be fine. Followed by any character repeated zero more times.",
+    "start_ms": 3703128,
+    "end_ms": 3707716,
+    "duration_ms": 4588,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3707.716,
+    "text": "It's too general. Up one says, any character between Laura A and Laura Z, so any Laura case character, peded zero more times.",
+    "start_ms": 3707716,
+    "end_ms": 3717416,
+    "duration_ms": 9700,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3718.616,
+    "text": "Bye bye. This is interesting, either AA. or EE, or II, or O, or UU, to repeat it now.",
+    "start_ms": 3718616,
+    "end_ms": 3726816,
+    "duration_ms": 8200,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3729.496,
+    "text": "Followed by... A lower case letter repeated zero more times.",
+    "start_ms": 3729496,
+    "end_ms": 3733272,
+    "duration_ms": 3776,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3739.992,
+    "text": "Compusing. Play with it a little bit. Great short break we're going to do a exactly one minute break because I'm behind schedule so one minute break stretch Get some water if you're at home.",
+    "start_ms": 3739992,
+    "end_ms": 3751976,
+    "duration_ms": 11984,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3829.816,
+    "text": "I pretend like that was about a minute. Let's get back.",
+    "start_ms": 3829816,
+    "end_ms": 3834358,
+    "duration_ms": 4542,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3834.358,
+    "text": "We're going to finish this all-team challenge of regular expressions.",
+    "start_ms": 3834358,
+    "end_ms": 3837128,
+    "duration_ms": 2770,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3837.128,
+    "text": "It is a boring topic, but so important, and it will get more complicated in just a moment.",
+    "start_ms": 3837128,
+    "end_ms": 3841608,
+    "duration_ms": 4480,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3841.608,
+    "text": "Oh, man. Just as a fun interlude. I believe this is a valid regular expression for email addresses.",
+    "start_ms": 3841608,
+    "end_ms": 3848744,
+    "duration_ms": 7136,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3850.84,
+    "text": "Regular expressions can get gnarly. We'll talk about that in a second.",
+    "start_ms": 3850840,
+    "end_ms": 3854862,
+    "duration_ms": 4022,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3854.862,
+    "text": "Oh, there's also this fun game, Red Ragex Golf. Check it out.",
+    "start_ms": 3854862,
+    "end_ms": 3858272,
+    "duration_ms": 3410,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3858.712,
+    "text": "Basically you're given some things not to match and some things to match and you have many you know three hits for hits however many attempts it takes to get to the expression it does.",
+    "start_ms": 3858712,
+    "end_ms": 3866803,
+    "duration_ms": 8091,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3866.803,
+    "text": "Matches everything you're supposed to match and nothing you're not supposed to match.",
+    "start_ms": 3866803,
+    "end_ms": 3870232,
+    "duration_ms": 3429,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3870.232,
+    "text": "Good game. Alright. So now we're going to talk about greediness.",
+    "start_ms": 3870232,
+    "end_ms": 3876872,
+    "duration_ms": 6640,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3879.736,
+    "text": "I suppose I have this situation down here. I have all these divs.",
+    "start_ms": 3879736,
+    "end_ms": 3882796,
+    "duration_ms": 3060,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3882.796,
+    "text": "This is common where you're pressing things like an HTML string.",
+    "start_ms": 3882796,
+    "end_ms": 3885736,
+    "duration_ms": 2940,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3885.736,
+    "text": "And I just want to get all the things inside these divs.",
+    "start_ms": 3885736,
+    "end_ms": 3888696,
+    "duration_ms": 2960,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3888.696,
+    "text": "I'm going to match this stuff. A lot of dives.",
+    "start_ms": 3888696,
+    "end_ms": 3892360,
+    "duration_ms": 3664,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3892.056,
+    "text": "You might think... It's something like this would work. I can say, div followed by Any character zero more times, I'll buy Div and Div.",
+    "start_ms": 3892056,
+    "end_ms": 3902968,
+    "duration_ms": 10912,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3903.576,
+    "text": "That should work great. Let's try it. Okay. This is example of greediness and regular expressions.",
+    "start_ms": 3903576,
+    "end_ms": 3919880,
+    "duration_ms": 16304,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3920.312,
+    "text": "So here's my regular expression. It's a valid late regular expression.",
+    "start_ms": 3920312,
+    "end_ms": 3925032,
+    "duration_ms": 4720,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3925.656,
+    "text": "What did it do? It said do? All by. Well, he said any character is here more times that's another character totally good that's good that's good That's also that's good.",
+    "start_ms": 3925656,
+    "end_ms": 3935717,
+    "duration_ms": 10061,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3935.717,
+    "text": "That's good. That's good. That's good. That's good. That's good.",
+    "start_ms": 3935717,
+    "end_ms": 3937432,
+    "duration_ms": 1715,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3937.432,
+    "text": "That's all good characters good character up There's end of do But I just wanted it to match this thing.",
+    "start_ms": 3937432,
+    "end_ms": 3944328,
+    "duration_ms": 6896,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3945.272,
+    "text": "I just want to get that one. and maybe this one.",
+    "start_ms": 3945272,
+    "end_ms": 3948872,
+    "duration_ms": 3600,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3950.328,
+    "text": "Are your expressions agreed? But that star just keeps eating characters until it has no more choices left.",
+    "start_ms": 3950328,
+    "end_ms": 3956760,
+    "duration_ms": 6432,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3956.76,
+    "text": "The only way to end it is a slash dib.",
+    "start_ms": 3956760,
+    "end_ms": 3958760,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3961.048,
+    "text": "Alright, fix it. Let's learn how. Alright, so, alright. The way to read what's happening here.",
+    "start_ms": 3961048,
+    "end_ms": 3974440,
+    "duration_ms": 13392,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3974.936,
+    "text": "is looking for the exact string div, then I'm looking for any character zero more times, and then I'm looking for the exact string closed div again.",
+    "start_ms": 3974936,
+    "end_ms": 3984424,
+    "duration_ms": 9488,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3984.424,
+    "text": "I'm going to find the longest thing that matches that pattern.",
+    "start_ms": 3984424,
+    "end_ms": 3987144,
+    "duration_ms": 2720,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3987.8,
+    "text": "So I grab this whole thing. Instead of what I wanted which was each of these segments.",
+    "start_ms": 3987800,
+    "end_ms": 3992732,
+    "duration_ms": 4932,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3995.416,
+    "text": "to fix that. We can use the non-greedy version of star.",
+    "start_ms": 3995416,
+    "end_ms": 4001540,
+    "duration_ms": 6124,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4003.0,
+    "text": "That is this. It's not exciting. really confusing but alright so we now say Do you, followed by any character, zero more times but don't be greedy.",
+    "start_ms": 4003000,
+    "end_ms": 4016256,
+    "duration_ms": 13256,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4017.176,
+    "text": "If you can undo a tip, undo a tip. So fix it, try it.",
+    "start_ms": 4017176,
+    "end_ms": 4023688,
+    "duration_ms": 6512,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4027.576,
+    "text": "What's my syntax here? Works. Magic. So we'll see what just happened there.",
+    "start_ms": 4027576,
+    "end_ms": 4041000,
+    "duration_ms": 13424,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4040.964,
+    "text": "don't be greedy. If you can finish it with the rest of the rager expression do that don't keep using this character.",
+    "start_ms": 4040964,
+    "end_ms": 4046992,
+    "duration_ms": 6028,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4046.992,
+    "text": "The match is everything. is many times as you can.",
+    "start_ms": 4046992,
+    "end_ms": 4050536,
+    "duration_ms": 3544,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4050.616,
+    "text": "So this this thing here, this question mark made it not greedy.",
+    "start_ms": 4050616,
+    "end_ms": 4054216,
+    "duration_ms": 3600,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4054.216,
+    "text": "3 That's really... Questions? It's confusing. Play with a little bit.",
+    "start_ms": 4054216,
+    "end_ms": 4068264,
+    "duration_ms": 14048,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4068.92,
+    "text": "Alright, last set of rules. way to do this. I just want to show you another way.",
+    "start_ms": 4068920,
+    "end_ms": 4073186,
+    "duration_ms": 4266,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4073.186,
+    "text": "How else could I match this thing? So this is a greedy.",
+    "start_ms": 4073186,
+    "end_ms": 4077768,
+    "duration_ms": 4582,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4078.36,
+    "text": "I'm trying something a little bit crazy. What if I do?",
+    "start_ms": 4078360,
+    "end_ms": 4082464,
+    "duration_ms": 4104,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4083.448,
+    "text": "NOT! This. Zero more times. What does that work? It says much dick.",
+    "start_ms": 4083448,
+    "end_ms": 4095032,
+    "duration_ms": 11584,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4095.576,
+    "text": "Well, by not a begin not a left and sign so anything that's not a left and.",
+    "start_ms": 4095576,
+    "end_ms": 4100736,
+    "duration_ms": 5160,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4103.032,
+    "text": "I'm gonna do it. Kind of works, right? What was my do this?",
+    "start_ms": 4103032,
+    "end_ms": 4110600,
+    "duration_ms": 7568,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4111.288,
+    "text": "breaks. So you want to make it even better. What could I do?",
+    "start_ms": 4111288,
+    "end_ms": 4119720,
+    "duration_ms": 8432,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4123.544,
+    "text": "Please, this exercise, there are more than one way to plant regular expressions, and this class the easiest way for doing something like this is I want...",
+    "start_ms": 4123544,
+    "end_ms": 4129784,
+    "duration_ms": 6240,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4130.872,
+    "text": "Any character? See you in more times, but don't be greedy.",
+    "start_ms": 4130872,
+    "end_ms": 4133672,
+    "duration_ms": 2800,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4134.168,
+    "text": "So, question mark. As keep going. Alright, the last set, I promise I hope.",
+    "start_ms": 4134168,
+    "end_ms": 4143192,
+    "duration_ms": 9024,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4143.192,
+    "text": "Okay, that's where I do. I do promise. Um. I told you this earlier I can put this slash beside something so I said early you can put a slash star This says read the thing after the slash as just a character.",
+    "start_ms": 4143192,
+    "end_ms": 4156860,
+    "duration_ms": 13668,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4156.86,
+    "text": "So if I want to match a plus b, right here, if I put the plus in my regular expression, it says match a zero more time followed by a b.",
+    "start_ms": 4156860,
+    "end_ms": 4165160,
+    "duration_ms": 8300,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4165.4,
+    "text": "No, I don't want that. I want just the letter plus so I put a slash right there.",
+    "start_ms": 4165400,
+    "end_ms": 4169400,
+    "duration_ms": 4000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4170.776,
+    "text": "That converts the letter from this medic character to just a regular letter.",
+    "start_ms": 4170776,
+    "end_ms": 4174776,
+    "duration_ms": 4000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4174.968,
+    "text": "But ABC, so. Ws. Okay, so we have this this character here, which remember we had before meaning not a, for example, if I put it outside of these brackets.",
+    "start_ms": 4174968,
+    "end_ms": 4197448,
+    "duration_ms": 22480,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4197.336,
+    "text": "the beginning of the string. So it will no longer match 123 ABC the light match ABC at the very beginning of the string.",
+    "start_ms": 4197336,
+    "end_ms": 4206440,
+    "duration_ms": 9104,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4211.864,
+    "text": "Remember, this has different behavior. Whether or not it's inside or outside of this character class is these square brackets.",
+    "start_ms": 4211864,
+    "end_ms": 4218424,
+    "duration_ms": 6560,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4220.504,
+    "text": "Alright, one more. Dollar sign. ABC Money Only matches ABC puts at the end of the string.",
+    "start_ms": 4220504,
+    "end_ms": 4228668,
+    "duration_ms": 8164,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4236.504,
+    "text": "So we'll not match ABC but we'll match. I put an ABC here, the yet.",
+    "start_ms": 4236504,
+    "end_ms": 4241352,
+    "duration_ms": 4848,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4247.32,
+    "text": "some practice are pretty straightforward, so ARC only matches when it's the beginning.",
+    "start_ms": 4247320,
+    "end_ms": 4253400,
+    "duration_ms": 6080,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4253.624,
+    "text": "Not when there's a character before it. Arc Dollar Sign only matches when it's at the end, not at the beginning.",
+    "start_ms": 4253624,
+    "end_ms": 4260248,
+    "duration_ms": 6624,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4260.984,
+    "text": "and slash converts this star is no longer read this as a slash zero war tire Sorry, so longer a special character, which is anything, it's instead it's just the period.",
+    "start_ms": 4260984,
+    "end_ms": 4273624,
+    "duration_ms": 12640,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4273.624,
+    "text": "So there's only matches. Cal.com and not cows come. Have you got rid of this slash?",
+    "start_ms": 4273624,
+    "end_ms": 4281000,
+    "duration_ms": 7376,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4280.984,
+    "text": "It would match both of these. questions. Almost there. Let's start using this stuff.",
+    "start_ms": 4280984,
+    "end_ms": 4297917,
+    "duration_ms": 16933,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4297.917,
+    "text": "Okay, so you're gonna use these in your assignments. First thing you're learning about is raw strings.",
+    "start_ms": 4297917,
+    "end_ms": 4303232,
+    "duration_ms": 5315,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4303.704,
+    "text": "Raw strings are written with an R. All by your quotations.",
+    "start_ms": 4303704,
+    "end_ms": 4308616,
+    "duration_ms": 4912,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4308.792,
+    "text": "This is just like your regular strings and pipe that you've been writing all along but now you put in a r at the beginning.",
+    "start_ms": 4308792,
+    "end_ms": 4313792,
+    "duration_ms": 5000,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4314.968,
+    "text": "Why raw strings? No? If I don't put an R, then Python itself starts interpreting your characters.",
+    "start_ms": 4314968,
+    "end_ms": 4324216,
+    "duration_ms": 9248,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4324.216,
+    "text": "So you put a string in Python, you put a slash.",
+    "start_ms": 4324216,
+    "end_ms": 4326856,
+    "duration_ms": 2640,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4327.16,
+    "text": "Ask Python interprets that as a special character. I don't want that to be a special character, but I didn't put this art at the beginning and have that as slash to protect the slash, and another slash to protect another slash just that the original slash was there.",
+    "start_ms": 4327160,
+    "end_ms": 4339304,
+    "duration_ms": 12144,
+    "word_count": 49,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4340.44,
+    "text": "So you don't want the Python interpreter doing string manipulation on your string.",
+    "start_ms": 4340440,
+    "end_ms": 4343400,
+    "duration_ms": 2960,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4343.4,
+    "text": "You wanted to trust me. This is the string I have.",
+    "start_ms": 4343400,
+    "end_ms": 4345720,
+    "duration_ms": 2320,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4346.072,
+    "text": "Read it as it is verbatim, it is a raw string.",
+    "start_ms": 4346072,
+    "end_ms": 4349372,
+    "duration_ms": 3300,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4350.328,
+    "text": "So whenever you're doing regular expressions because all these slashes will confuse Python, just put R at the beginning.",
+    "start_ms": 4350328,
+    "end_ms": 4355828,
+    "duration_ms": 5500,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4356.856,
+    "text": "You can do it with a string like this, you can do it with a string like that, you can do it with your triple-quit strings.",
+    "start_ms": 4356856,
+    "end_ms": 4361856,
+    "duration_ms": 5000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4362.296,
+    "text": "Works on all the strings. Raw Strings Probably your first source of bugs when you start doing this stuff in bite-dot.",
+    "start_ms": 4362296,
+    "end_ms": 4368568,
+    "duration_ms": 6272,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4372.024,
+    "text": "You can read about the backslash play later. All right, regular expression library, R E, is the kind of basic outside of Pan as we are doing this stuff.",
+    "start_ms": 4372024,
+    "end_ms": 4380424,
+    "duration_ms": 8400,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4381.432,
+    "text": "And it takes... right, rigger, especially find all, take some pattern, which is my raw string.",
+    "start_ms": 4381432,
+    "end_ms": 4386952,
+    "duration_ms": 5520,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4386.952,
+    "text": "So here's my raw string pattern. And here's some text right here.",
+    "start_ms": 4386952,
+    "end_ms": 4392200,
+    "duration_ms": 5248,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4393.112,
+    "text": "And if I say find all of my pattern with my text, it's going to turn a list of all the things it matched my pattern.",
+    "start_ms": 4393112,
+    "end_ms": 4400112,
+    "duration_ms": 7000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4402.488,
+    "text": "Very useful. And I can start extracting stuff and bin all the Python.",
+    "start_ms": 4402488,
+    "end_ms": 4405288,
+    "duration_ms": 2800,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4405.784,
+    "text": "We're here in Pandas land. So you have a series, use the string access, we say dot string, and then you say find all again.",
+    "start_ms": 4405784,
+    "end_ms": 4413992,
+    "duration_ms": 8208,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4414.488,
+    "text": "You'll need to pass text in because it's each entry in that series, each each piece of data is you're going to apply the pattern to each of the entries in that series.",
+    "start_ms": 4414488,
+    "end_ms": 4423368,
+    "duration_ms": 8880,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4424.312,
+    "text": "So I can take... Social Security number column. Say string.findall.",
+    "start_ms": 4424312,
+    "end_ms": 4429384,
+    "duration_ms": 5072,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4429.384,
+    "text": "Pass my pattern and it's going to extract. Well, it's going to extract all the instances of social security numbers in each of the columns or in each of the rows.",
+    "start_ms": 4429384,
+    "end_ms": 4439976,
+    "duration_ms": 10592,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4442.712,
+    "text": "So now you can start doing extraction. in pandas using string findoff.",
+    "start_ms": 4442712,
+    "end_ms": 4446696,
+    "duration_ms": 3984,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4449.368,
+    "text": "Capture groups, the last big concept, and we're going to finish on time, which is great.",
+    "start_ms": 4449368,
+    "end_ms": 4453368,
+    "duration_ms": 4000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4454.168,
+    "text": "I told you parentheses are what you'd expect them to be.",
+    "start_ms": 4454168,
+    "end_ms": 4457208,
+    "duration_ms": 3040,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4457.208,
+    "text": "Prentices, they grouped stuff together. There's one copy out. They do a little more than just put stuff together.",
+    "start_ms": 4457208,
+    "end_ms": 4463122,
+    "duration_ms": 5914,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4463.122,
+    "text": "They define a capture group. and allows the pool parts of regular expression out of a bigger regular expression.",
+    "start_ms": 4463122,
+    "end_ms": 4469368,
+    "duration_ms": 6246,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4470.616,
+    "text": "So extract only the portion, the regular expression inside the capture group.",
+    "start_ms": 4470616,
+    "end_ms": 4474616,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4476.472,
+    "text": "So here's an example of one. Is my string? I will meet you at 830-00PM tomorrow.",
+    "start_ms": 4476472,
+    "end_ms": 4483640,
+    "duration_ms": 7168,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4484.024,
+    "text": "A regular expression says... Any character? Zero more times, all by, and this is in parentheses now, two digits, all by, colon, all by, again, in parentheses, two digits, colon.",
+    "start_ms": 4484024,
+    "end_ms": 4497384,
+    "duration_ms": 13360,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4497.848,
+    "text": "In parentheses two digits. Let's see. and then any character zero more times.",
+    "start_ms": 4497848,
+    "end_ms": 4505016,
+    "duration_ms": 7168,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4505.72,
+    "text": "When I call find all now it's gonna do something pretty cool.",
+    "start_ms": 4505720,
+    "end_ms": 4508220,
+    "duration_ms": 2500,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4509.24,
+    "text": "It's gonna return. a list of tuples where it's pulled out each of the things into separate.",
+    "start_ms": 4509240,
+    "end_ms": 4516096,
+    "duration_ms": 6856,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4516.632,
+    "text": "Substrinks. So now if I want to pull out an email address and I want the first part of the email address and then you know the at and then I want the Berkeley which is the domain.",
+    "start_ms": 4516632,
+    "end_ms": 4524424,
+    "duration_ms": 7792,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4524.424,
+    "text": "I can start to capture groups to pull out pieces of regular expression not just the entire expression.",
+    "start_ms": 4524424,
+    "end_ms": 4529424,
+    "duration_ms": 5000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4530.584,
+    "text": "Alright, so you notice the output doesn't contain these things.",
+    "start_ms": 4530584,
+    "end_ms": 4533584,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4533.584,
+    "text": "So we're inside of a capture group. So no colon's in my answer just the numbers.",
+    "start_ms": 4533584,
+    "end_ms": 4537584,
+    "duration_ms": 4000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4538.232,
+    "text": "There's a capture group. This will become confusing because sometimes you'll want to use parentheses but you don't want to capture stuff.",
+    "start_ms": 4538232,
+    "end_ms": 4545720,
+    "duration_ms": 7488,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4546.648,
+    "text": "There are tricks for dealing with this. You can read in the Python docs so how to turn off the capture group from capturing and practice.",
+    "start_ms": 4546648,
+    "end_ms": 4552648,
+    "duration_ms": 6000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4552.648,
+    "text": "I found that generally the things in parentheses I ended up wanting to capture or if I didn't I would just ignore this thing and folks on stuff that I did want to capture.",
+    "start_ms": 4552648,
+    "end_ms": 4560648,
+    "duration_ms": 8000,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4564.376,
+    "text": "Alright, so let's start looking at some more Python Panas expressions for doing this.",
+    "start_ms": 4564376,
+    "end_ms": 4569116,
+    "duration_ms": 4740,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4569.336,
+    "text": "So we have an extract function. And this is useful because it works with these capture groups.",
+    "start_ms": 4569336,
+    "end_ms": 4574776,
+    "duration_ms": 5440,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4574.776,
+    "text": "So here's my capture groups and it'll turn them into separate columns.",
+    "start_ms": 4574776,
+    "end_ms": 4577896,
+    "duration_ms": 3120,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4578.296,
+    "text": "So if I take my social screen numbers and I give it Again, this regular expression, it's a raw string right here.",
+    "start_ms": 4578296,
+    "end_ms": 4584324,
+    "duration_ms": 6028,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4584.324,
+    "text": "It's going to extract three columns. into a new data frame with each of the piece of information pulled out of my string as separate columns that I can work with.",
+    "start_ms": 4584324,
+    "end_ms": 4591776,
+    "duration_ms": 7452,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4592.28,
+    "text": "I'll have to rename those columns, it was called 0, 1 and 2.",
+    "start_ms": 4592280,
+    "end_ms": 4595280,
+    "duration_ms": 3000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4595.28,
+    "text": "I give them, you know, meaningful names that I can go on with my data analysis.",
+    "start_ms": 4595280,
+    "end_ms": 4598280,
+    "duration_ms": 3000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4598.28,
+    "text": "So it's a very useful tool. And then there's Extract All.",
+    "start_ms": 4598280,
+    "end_ms": 4604888,
+    "duration_ms": 6608,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4605.4,
+    "text": "Which is even more powerful than extracts and a little more confusing.",
+    "start_ms": 4605400,
+    "end_ms": 4608680,
+    "duration_ms": 3280,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4609.4,
+    "text": "Works the same way I give it this pattern as before.",
+    "start_ms": 4609400,
+    "end_ms": 4612400,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4613.016,
+    "text": "But you'll notice here in this row I had two social security numbers.",
+    "start_ms": 4613016,
+    "end_ms": 4616856,
+    "duration_ms": 3840,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4618.2,
+    "text": "Extract just finds the first match and returns it. If someone has two allergy majors, I want to extract both their allergy majors.",
+    "start_ms": 4618200,
+    "end_ms": 4626552,
+    "duration_ms": 8352,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4628.792,
+    "text": "Then I would use Extract All. And this does some pandas indexing magic.",
+    "start_ms": 4628792,
+    "end_ms": 4633468,
+    "duration_ms": 4676,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4633.816,
+    "text": "Where it returns... Three. Rose and one of those rows is a sub has a sub series inside of it which is the corresponding extracted cistercary numbers for that one cell.",
+    "start_ms": 4633816,
+    "end_ms": 4647384,
+    "duration_ms": 13568,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4650.424,
+    "text": "This is a nested index. Here it is confusing. When you encounter the situation, there are tools to convert these into separate rows and work with each and associate your number separately.",
+    "start_ms": 4650424,
+    "end_ms": 4659304,
+    "duration_ms": 8880,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4662.264,
+    "text": "We're not going to come to that note. All right, last bit of information.",
+    "start_ms": 4662264,
+    "end_ms": 4666784,
+    "duration_ms": 4520,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4666.784,
+    "text": "These are useful. Like I said, we'll often use these patterns to delete stuff like remove divs HTML notation, so on.",
+    "start_ms": 4666784,
+    "end_ms": 4673084,
+    "duration_ms": 6300,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4673.084,
+    "text": "We can define our regular expression for the things we want to remove.",
+    "start_ms": 4673084,
+    "end_ms": 4676984,
+    "duration_ms": 3900,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4676.984,
+    "text": "And then we say substitute the pattern and then a very common style of doing this is just begin quote, close quote, which is substitute whatever this thing these divs with nothing delete them from the string.",
+    "start_ms": 4676984,
+    "end_ms": 4688984,
+    "duration_ms": 12000,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4689.496,
+    "text": "That's what you'll do. And you can do the exact same thing in pandas with your place function.",
+    "start_ms": 4689496,
+    "end_ms": 4696728,
+    "duration_ms": 7232,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4696.984,
+    "text": "Annoyingly, you need to tell it that it's in fact the pattern is a regular expression.",
+    "start_ms": 4696984,
+    "end_ms": 4701501,
+    "duration_ms": 4517,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4701.501,
+    "text": "Why? This function is so common and very few people are comfortable with regular expressions that by default it doesn't assume the pattern is a regular expression.",
+    "start_ms": 4701501,
+    "end_ms": 4708668,
+    "duration_ms": 7167,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4709.048,
+    "text": "So when you're using this with regular expressions you should say with regular expression equals true.",
+    "start_ms": 4709048,
+    "end_ms": 4714048,
+    "duration_ms": 5000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4718.744,
+    "text": "Alright, so an example here, again I'm removing all the HTML tags from my HTML strings, so these are my HTML strings.",
+    "start_ms": 4718744,
+    "end_ms": 4725824,
+    "duration_ms": 7080,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4726.328,
+    "text": "It is resulting text without text. All right, so here's a final list of the important functions for string manipulation.",
+    "start_ms": 4726328,
+    "end_ms": 4734408,
+    "duration_ms": 8080,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4734.408,
+    "text": "When you eat on the exams, we'll give you the key piece of notation as a reference.",
+    "start_ms": 4734408,
+    "end_ms": 4738568,
+    "duration_ms": 4160,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4738.568,
+    "text": "You don't need to memorize all these functions. We should be familiar with the kinds of things that they do when I show you a list like this.",
+    "start_ms": 4738568,
+    "end_ms": 4744248,
+    "duration_ms": 5680,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4745.88,
+    "text": "There are a lot of limitations regular expressions they can be as you've already seen pretty confusing they get pretty complicated but yet they are one of the more powerful ways for working with complex strings and they're also very efficient for lots of string manipulation.",
+    "start_ms": 4745880,
+    "end_ms": 4757380,
+    "duration_ms": 11500,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4758.584,
+    "text": "Alright, I think that is it. We finish regular expressions by the driest lecture of the semester.",
+    "start_ms": 4758584,
+    "end_ms": 4764104,
+    "duration_ms": 5520,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4764.104,
+    "text": "Next lecture is Visualizations, one of the more exciting lectures, semester.",
+    "start_ms": 4764104,
+    "end_ms": 4767784,
+    "duration_ms": 3680,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4768.184,
+    "text": "Let's go.",
+    "start_ms": 4768184,
+    "end_ms": 4768684,
+    "duration_ms": 500,
+    "word_count": 2,
+    "avg_confidence": 90
+  }
+]

@@ -1,0 +1,5420 @@
+[
+  {
+    "timestamp": 15.256,
+    "text": "Should work. Good morning. Welcome to um be very fun.",
+    "start_ms": 15256,
+    "end_ms": 24920,
+    "duration_ms": 9664,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 24.92,
+    "text": "It's one of the most expensive lectures that we designed because it has A lot of hours that those of us me enjoy is then creating this lecture so it has a fun demo fun content so enjoy it the topic for today is not going to be covered in the final exam or is going to be on any lab or homework.",
+    "start_ms": 24920,
+    "end_ms": 45776,
+    "duration_ms": 20856,
+    "word_count": 63,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 45.776,
+    "text": "but it's a very nice introduction and applied introduction to neural networks.",
+    "start_ms": 45776,
+    "end_ms": 50776,
+    "duration_ms": 5000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 50.776,
+    "text": "I hope you enjoy it. We're going to actually split the lectures.",
+    "start_ms": 50776,
+    "end_ms": 54776,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 54.776,
+    "text": "I'm going to introduce neural network and do a little bit of a demo.",
+    "start_ms": 54776,
+    "end_ms": 58776,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 58.776,
+    "text": "And then Joy is also going to walk you through a very fun demo that you spend so much time on.",
+    "start_ms": 58776,
+    "end_ms": 63776,
+    "duration_ms": 5000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 64.504,
+    "text": "So with that out of the way, I want to talk a little bit about this logistics.",
+    "start_ms": 64504,
+    "end_ms": 70344,
+    "duration_ms": 5840,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 70.344,
+    "text": "I talked about it last time about course evaluation. If you feel other internal course evaluation and the campus course evaluation, you're going to get 25% towards your final course credit.",
+    "start_ms": 70344,
+    "end_ms": 81824,
+    "duration_ms": 11480,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 81.824,
+    "text": "If 90% of the class fills out both of these evaluation forms, then those who fill out the form is going to get an additional 0.5%.",
+    "start_ms": 81824,
+    "end_ms": 91824,
+    "duration_ms": 10000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 91.824,
+    "text": "So it's a great deal. Take advantage of it. We really want to get feedback in terms of how whether the parts in data 100 that are going well, whether the parts that needs a little bit more attention, because they feel like that the course again is a stable, but whether the things that you're observing that we can improve on.",
+    "start_ms": 91824,
+    "end_ms": 109544,
+    "duration_ms": 17720,
+    "word_count": 62,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 109.544,
+    "text": "One of the things that we kept hearing in prior semesters is introduction to neural networks.",
+    "start_ms": 109544,
+    "end_ms": 114704,
+    "duration_ms": 5160,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 114.704,
+    "text": "So there you go. This is a neural network lecture.",
+    "start_ms": 114704,
+    "end_ms": 117384,
+    "duration_ms": 2680,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 117.384,
+    "text": "So after this lecture, I'm hoping that you all have the confidence to actually go and learn more on your own, more about neural networks and more about deep learning.",
+    "start_ms": 117384,
+    "end_ms": 126733,
+    "duration_ms": 9349,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 126.733,
+    "text": "So this is just going to be a segue into it.",
+    "start_ms": 126733,
+    "end_ms": 129704,
+    "duration_ms": 2971,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 130.232,
+    "text": "So I'm going to start by talking a little bit about Some kind of a primer into how we can think about neural networks.",
+    "start_ms": 130232,
+    "end_ms": 139230,
+    "duration_ms": 8998,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 139.23,
+    "text": "I'm going to talk about brain first. So what is the structure of the brain we're not going to go into the details of how the brain works, but just realizing that brain is a very complex phenomenon and then the understanding of how brain works and how each individual neuron actually works is very kind of our understanding is very rudimentary and then.",
+    "start_ms": 139230,
+    "end_ms": 163680,
+    "duration_ms": 24450,
+    "word_count": 64,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 163.68,
+    "text": "what we're trying to get inspiration from in building neural networks is different concepts in brain.",
+    "start_ms": 163680,
+    "end_ms": 170040,
+    "duration_ms": 6360,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 170.04,
+    "text": "And there is a lot of collaboration between cognitive science, neuroscience, and also getting inspiration from those as people started building neural networks in different deep architectures that are now kind of very famous in the field.",
+    "start_ms": 170040,
+    "end_ms": 186440,
+    "duration_ms": 16400,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 186.44,
+    "text": "So a neuron, like brain has 10 billions of neurons, The switching time between the neurons is very fast.",
+    "start_ms": 186440,
+    "end_ms": 196279,
+    "duration_ms": 9839,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 196.279,
+    "text": "Each neuron tries to fire some kind of information, and then the other neurons is going to receive those spikes.",
+    "start_ms": 196279,
+    "end_ms": 202920,
+    "duration_ms": 6641,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 202.92,
+    "text": "And then these spikes are going to be propagated through the entire network of the brain and all of the neurons in the brain.",
+    "start_ms": 202920,
+    "end_ms": 211600,
+    "duration_ms": 8680,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 211.6,
+    "text": "There are generally hundreds of operations being done per second.",
+    "start_ms": 211600,
+    "end_ms": 214960,
+    "duration_ms": 3360,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 214.96,
+    "text": "So that's how you can also think about how we want to make that the way that we're simulating neural networks is kind of working in the same way.",
+    "start_ms": 214960,
+    "end_ms": 224040,
+    "duration_ms": 9080,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 224.04,
+    "text": "But thinking about one individual neuron and different parts of an individual, like biological neuron, that we are trying to simulate in an artificial neuron, is kind of different pieces.",
+    "start_ms": 224040,
+    "end_ms": 237040,
+    "duration_ms": 13000,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 237.04,
+    "text": "So the different pieces of a neuron, there's like, den writes that neurons have, and these den writes are actually different branches that reach signal.",
+    "start_ms": 237040,
+    "end_ms": 247040,
+    "duration_ms": 10000,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 247.04,
+    "text": "signal. So you're thinking about then rice being here. So it is kind of spread that branch like it receives the signals through different chemical reactions that that appears between multiple neurons that we have.",
+    "start_ms": 247040,
+    "end_ms": 259902,
+    "duration_ms": 12862,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 259.902,
+    "text": "There is so more cell body which is kind of a unit that tries to collect information and aggregate information and decide whether the neuron is going to be activated or not activated.",
+    "start_ms": 259902,
+    "end_ms": 270906,
+    "duration_ms": 11004,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 270.906,
+    "text": "So you can think about it as kind of a processing unit in a biological neuron that we have.",
+    "start_ms": 270906,
+    "end_ms": 277515,
+    "duration_ms": 6609,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 277.515,
+    "text": "Once the process is actually done and then axon is going to transmit all of those signals to the synopsis and these synopsis are the connections that we're making or the neuron is making two other neurons to pass information along.",
+    "start_ms": 277515,
+    "end_ms": 292826,
+    "duration_ms": 15311,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 292.826,
+    "text": "So you can think about these synopsis as different parts in different connections between different neurons that that either is going to send a chemical reaction to activate the next neuron or not activate the next neuron.",
+    "start_ms": 292826,
+    "end_ms": 310000,
+    "duration_ms": 17174,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 310.0,
+    "text": "So, we are calling these synopsis as excitatory synopsis or inhibitory synopsis.",
+    "start_ms": 310000,
+    "end_ms": 315199,
+    "duration_ms": 5199,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 315.199,
+    "text": "Excitedory means that the next neuron is going to fire.",
+    "start_ms": 315199,
+    "end_ms": 317880,
+    "duration_ms": 2681,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 317.88,
+    "text": "It has received indication that some kind of stimulation has happened in the previous neuron or inhibitory means that there is lack of enough information or signal in the previous neurons that there's no enough signal or chemical reactions that can be passed through the entire network.",
+    "start_ms": 317880,
+    "end_ms": 335640,
+    "duration_ms": 17760,
+    "word_count": 47,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 336.504,
+    "text": "So what we're actually trying to mimic in an artificial neuron is exactly the same thing.",
+    "start_ms": 336504,
+    "end_ms": 341624,
+    "duration_ms": 5120,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 341.624,
+    "text": "So we're trying to read inputs through the end rights.",
+    "start_ms": 341624,
+    "end_ms": 345024,
+    "duration_ms": 3400,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 345.024,
+    "text": "We have a processing unit and then we're trying to actually transmit those information that be processed into the next neurons.",
+    "start_ms": 345024,
+    "end_ms": 352464,
+    "duration_ms": 7440,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 352.464,
+    "text": "And we want to make sure that as we process the information, as we have some kind of activation or information that we're trying to share with other neurons, those activations are also So kind of working in the same way, they're excited or in inhibitory meaning that the next neuron is going to be activated or not activated.",
+    "start_ms": 352464,
+    "end_ms": 369263,
+    "duration_ms": 16799,
+    "word_count": 59,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 370.224,
+    "text": "So what we're trying to do, again, artificial neuron has a similar kind of reaction.",
+    "start_ms": 370224,
+    "end_ms": 375743,
+    "duration_ms": 5519,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 375.743,
+    "text": "So remember that we had dendrites, so these dendrites as inputs.",
+    "start_ms": 375743,
+    "end_ms": 380264,
+    "duration_ms": 4521,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 380.264,
+    "text": "So you're thinking about these dendrites inputs receiving information through the synaptic connections to the previous neurons.",
+    "start_ms": 380264,
+    "end_ms": 386743,
+    "duration_ms": 6479,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 386.743,
+    "text": "So here we also have the same thing. So we have inputs going into the neuron that we have.",
+    "start_ms": 386743,
+    "end_ms": 393324,
+    "duration_ms": 6581,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 393.324,
+    "text": "And then the neuron actually is going to use it similar cell body in order to calculate a weighted combination of those inputs or those reactions that it has received in order to decide what the output is going to be.",
+    "start_ms": 393324,
+    "end_ms": 407444,
+    "duration_ms": 14120,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 407.444,
+    "text": "And the output is going to be a function that is applied to a weighted combination of inputs that it has received.",
+    "start_ms": 407444,
+    "end_ms": 414244,
+    "duration_ms": 6800,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 414.244,
+    "text": "So these equations you've seen them before. So we're going to formally define what function F is going to look like whether those parameters, whether those inputs, and so on and so forth in the first part of today's lecture.",
+    "start_ms": 414244,
+    "end_ms": 424824,
+    "duration_ms": 10580,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 425.592,
+    "text": "So let's go through the very first and the simplest way that we can think about the neuron.",
+    "start_ms": 425592,
+    "end_ms": 431352,
+    "duration_ms": 5760,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 431.352,
+    "text": "We can think about the neuron as just the artificial neuron as just a simple linear regression.",
+    "start_ms": 431352,
+    "end_ms": 436232,
+    "duration_ms": 4880,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 436.232,
+    "text": "It has inputs going into the neuron, right? And the simplest thing that we learned was linear regression.",
+    "start_ms": 436232,
+    "end_ms": 441632,
+    "duration_ms": 5400,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 441.632,
+    "text": "So what do we do? We have all of those inputs and then I would say that, okay, I'm going to get those inputs.",
+    "start_ms": 441632,
+    "end_ms": 446952,
+    "duration_ms": 5320,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 446.952,
+    "text": "I'm going to multiply these inputs with different weights. I'm going to combine them.",
+    "start_ms": 446952,
+    "end_ms": 451272,
+    "duration_ms": 4320,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 451.272,
+    "text": "This is a linear function and this linear function is going to give me value that for the purpose of this lecture I'm just going to call this value as an activation.",
+    "start_ms": 451272,
+    "end_ms": 461472,
+    "duration_ms": 10200,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 461.472,
+    "text": "So this is kind of an indication that looking at the weighted combination of those inputs that we have received either through the input or through the connections from different neurons are we going to activate this neuron or not activate this neuron.",
+    "start_ms": 461472,
+    "end_ms": 475832,
+    "duration_ms": 14360,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 475.832,
+    "text": "And this why has value right now is our activation for that purpose.",
+    "start_ms": 475832,
+    "end_ms": 480512,
+    "duration_ms": 4680,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 480.512,
+    "text": "So a very simple kind of structure. If you actually think about it in terms of like, schematically, how is going to relate to kind of a biological neuron?",
+    "start_ms": 480512,
+    "end_ms": 492072,
+    "duration_ms": 11560,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 492.072,
+    "text": "We have all of those inputs. So notice that I have x1 through xd.",
+    "start_ms": 492072,
+    "end_ms": 497032,
+    "duration_ms": 4960,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 497.032,
+    "text": "And then I also have one indication for the biosterm.",
+    "start_ms": 497032,
+    "end_ms": 500312,
+    "duration_ms": 3280,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 500.312,
+    "text": "Remember the biostrict that we had. So we would augment the feature space that we have one column of one values.",
+    "start_ms": 500312,
+    "end_ms": 506312,
+    "duration_ms": 6000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 506.312,
+    "text": "And then that was the input that would correspond to the bias term or the theta zero that we have.",
+    "start_ms": 506312,
+    "end_ms": 512032,
+    "duration_ms": 5720,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 512.032,
+    "text": "So what we're going to do is we're going to weight all of these inputs.",
+    "start_ms": 512032,
+    "end_ms": 515192,
+    "duration_ms": 3160,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 515.192,
+    "text": "So the weight associated to the bias term is going to be just the bias parameter theta zero.",
+    "start_ms": 515192,
+    "end_ms": 520472,
+    "duration_ms": 5280,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 520.472,
+    "text": "The weight associated to x1 is going to be theta one and all the way to the last feature is going to be theta d.",
+    "start_ms": 520472,
+    "end_ms": 527472,
+    "duration_ms": 7000,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 527.472,
+    "text": "So we're going to multiply them. So calculating a weighted kind of combination of all of these ones and then we're summing up all of these way, the multiplications that we calculated through the inputs and the parameters that we have.",
+    "start_ms": 527472,
+    "end_ms": 542313,
+    "duration_ms": 14841,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 542.313,
+    "text": "So that's a summation unit. Remember that I said, so more cell body is a summation and activation unit.",
+    "start_ms": 542313,
+    "end_ms": 548131,
+    "duration_ms": 5818,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 548.131,
+    "text": "So this is a summation piece that we're going to value the information that we're receiving from different inputs differently through the weights that we received.",
+    "start_ms": 548131,
+    "end_ms": 556330,
+    "duration_ms": 8199,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 556.33,
+    "text": "So the weight of tet A1, tet A2D and tet A0, they're all going to be different values that we're going learn and what we're going to do is we're calculating this weighted combination.",
+    "start_ms": 556330,
+    "end_ms": 569992,
+    "duration_ms": 13662,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 569.756,
+    "text": "our activation and output. So very simple artificial neuron. But again, remember that I said that a similar cell body is going to actually have summation unit plus also some activation function.",
+    "start_ms": 569756,
+    "end_ms": 584224,
+    "duration_ms": 14468,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 584.224,
+    "text": "So what does that activation function look like? I don't want to directly say that, okay, I'm calculating a weighted combination of inputs and there you go.",
+    "start_ms": 584224,
+    "end_ms": 591180,
+    "duration_ms": 6956,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 591.18,
+    "text": "This is your activation. I want to actually do some thresholding or some apply some kind of function so that I can control what the output is going to be.",
+    "start_ms": 591180,
+    "end_ms": 599224,
+    "duration_ms": 8044,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 599.224,
+    "text": "going to be. I don't want to give the direct control to all of those inputs that we have.",
+    "start_ms": 599224,
+    "end_ms": 603544,
+    "duration_ms": 4320,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 603.544,
+    "text": "They do have direct control, but I also want to add some kind of a linear or non-linear function as an activation function.",
+    "start_ms": 603544,
+    "end_ms": 610464,
+    "duration_ms": 6920,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 610.464,
+    "text": "So the way that that looks like is that, again, we're calculating the weighted combination of inputs that we have, right?",
+    "start_ms": 610464,
+    "end_ms": 618969,
+    "duration_ms": 8505,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 618.969,
+    "text": "But on top I hope that what I'm going to do here is that I'm applying this activation function, function f.",
+    "start_ms": 618969,
+    "end_ms": 625264,
+    "duration_ms": 6295,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 625.816,
+    "text": "So again, what that looks like, schematically in this graph is that I had this summation unit.",
+    "start_ms": 625816,
+    "end_ms": 631816,
+    "duration_ms": 6000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 631.816,
+    "text": "I will calculate the output. I'll pass the output to the activation function.",
+    "start_ms": 631816,
+    "end_ms": 635816,
+    "duration_ms": 4000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 635.816,
+    "text": "The activation function is now going to output a value that again, the whole idea of this activation function is that we can control what value we put.",
+    "start_ms": 635816,
+    "end_ms": 645816,
+    "duration_ms": 10000,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 645.816,
+    "text": "And what is the range of the values that the neuron can generate so that it cannot generate.",
+    "start_ms": 645816,
+    "end_ms": 651816,
+    "duration_ms": 6000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 651.816,
+    "text": "values from negative infinity to positive infinity. So we want to make sure that the output range is always controlled.",
+    "start_ms": 651816,
+    "end_ms": 658296,
+    "duration_ms": 6480,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 658.296,
+    "text": "So we could probably say that the output range is going to be between 0 and 1.",
+    "start_ms": 658296,
+    "end_ms": 662816,
+    "duration_ms": 4520,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 662.816,
+    "text": "Or the output range of dysfunction is going to be between negative 1 and 1.",
+    "start_ms": 662816,
+    "end_ms": 666296,
+    "duration_ms": 3480,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 666.296,
+    "text": "Negative 1, meaning that I'm trying to inhibit the neuron from firing.",
+    "start_ms": 666296,
+    "end_ms": 670216,
+    "duration_ms": 3920,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 670.216,
+    "text": "Positive 1 means that I'm trying to excite the output so that the next neuron is actually going to receive a positive value and then decide whether it wants to fire or not fire, based on this feature that it received.",
+    "start_ms": 670216,
+    "end_ms": 683696,
+    "duration_ms": 13480,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 683.696,
+    "text": "So that's the whole purpose of having activation function. It puts a reasonable output range for a specific neuron.",
+    "start_ms": 683696,
+    "end_ms": 691256,
+    "duration_ms": 7560,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 691.256,
+    "text": "And then now my output is actually going to be the result of applying.",
+    "start_ms": 691256,
+    "end_ms": 696176,
+    "duration_ms": 4920,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 696.632,
+    "text": "This activation function to the summation value or this z-input activation that I had, and then I have y-hat value.",
+    "start_ms": 696632,
+    "end_ms": 705632,
+    "duration_ms": 9000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 706.264,
+    "text": "So this whole thing is just the entire idea of neuron.",
+    "start_ms": 706264,
+    "end_ms": 709944,
+    "duration_ms": 3680,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 709.944,
+    "text": "So you know all the different pieces together. You have learned different kinds of ways that we're trying to build different linear models.",
+    "start_ms": 709944,
+    "end_ms": 718744,
+    "duration_ms": 8800,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 718.744,
+    "text": "We optimize how we can actually come up with different features, do fence the different linear models.",
+    "start_ms": 718744,
+    "end_ms": 724264,
+    "duration_ms": 5520,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 724.264,
+    "text": "We're going to talk a little bit about what does function, the activation function f is going to look like.",
+    "start_ms": 724264,
+    "end_ms": 728824,
+    "duration_ms": 4560,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 728.824,
+    "text": "So what kind of activation functions we can have. One simple way is to just say that the activation function is going to be y equal to x input in, output out.",
+    "start_ms": 728824,
+    "end_ms": 739026,
+    "duration_ms": 10202,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 739.026,
+    "text": "So the same input output, one to one correspondence, but we're going to talk about different kinds of activation functions that we have.",
+    "start_ms": 739026,
+    "end_ms": 752584,
+    "duration_ms": 13558,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 752.184,
+    "text": "referring to different concepts in neural network, but if you dig deep and then have the patience to kind of learn about all different elements, it's just very not complicated.",
+    "start_ms": 752184,
+    "end_ms": 761704,
+    "duration_ms": 9520,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 761.704,
+    "text": "So the opposite of the things that people would think.",
+    "start_ms": 761704,
+    "end_ms": 763864,
+    "duration_ms": 2160,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 764.792,
+    "text": "So now let's talk about the first activation. Remember just a notion of being active, being not active, having the output being equal to one or output being equal to zero.",
+    "start_ms": 764792,
+    "end_ms": 777272,
+    "duration_ms": 12480,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 777.272,
+    "text": "What if I decide my activation function to be just a simple step function?",
+    "start_ms": 777272,
+    "end_ms": 782752,
+    "duration_ms": 5480,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 782.752,
+    "text": "The way that I'm going to define this a step function is simple, that I would say that if the input activation is greater than or equal to zero, I'm going to say that the neuron is activated.",
+    "start_ms": 782752,
+    "end_ms": 793632,
+    "duration_ms": 10880,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 793.632,
+    "text": "If the input, the weighted combination of inputs, or the input activation is a negative value, that means that there is lack of information from the inputs for me to say that the neuron is activated.",
+    "start_ms": 793632,
+    "end_ms": 806952,
+    "duration_ms": 13320,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 806.952,
+    "text": "Therefore, I would say that the output is equal to zero, right?",
+    "start_ms": 806952,
+    "end_ms": 811032,
+    "duration_ms": 4080,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 811.032,
+    "text": "A simple step function. So what's happening here is that when you're on calculating the weighted combination of inputs and that's negative, I would say that this is you activated again the other way is going to be activating a neuron.",
+    "start_ms": 811032,
+    "end_ms": 827552,
+    "duration_ms": 16520,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 827.552,
+    "text": "So what's happening here is that again I do the summation as usual and then I'll pass it through activation function right now my activation function is a step function simple step function with the threshold at zero and then I'll get the output production.",
+    "start_ms": 827552,
+    "end_ms": 841552,
+    "duration_ms": 14000,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 842.456,
+    "text": "So what's happening after this is that if I have a data set and for simplicity, I'm assuming that my data set is a two dimensional data set.",
+    "start_ms": 842456,
+    "end_ms": 850856,
+    "duration_ms": 8400,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 850.856,
+    "text": "And the task that I'm going to run is a binary classification.",
+    "start_ms": 850856,
+    "end_ms": 854756,
+    "duration_ms": 3900,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 854.756,
+    "text": "I want to say whether the data points belong to class zero or class one.",
+    "start_ms": 854756,
+    "end_ms": 858856,
+    "duration_ms": 4100,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 858.856,
+    "text": "So one thing that I can do is I can actually use exactly the same method that I had, right?",
+    "start_ms": 858856,
+    "end_ms": 865056,
+    "duration_ms": 6200,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 865.056,
+    "text": "I'm going to say that I'm calculating the activation or the input activation.",
+    "start_ms": 865056,
+    "end_ms": 870356,
+    "duration_ms": 5300,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 870.356,
+    "text": "I'm going to calculate the weighted combination of inputs or the dot product, which means the tetah vector and the x vector that's going to give me the input activation z.",
+    "start_ms": 870356,
+    "end_ms": 880458,
+    "duration_ms": 10102,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 880.458,
+    "text": "And I would say that this right here is my decision boundary, where z is equal to zero.",
+    "start_ms": 880458,
+    "end_ms": 887276,
+    "duration_ms": 6818,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 887.8,
+    "text": "And if I apply my step function here, I would say that any point that is above on or above this line is going to be like the class one and anything below this line is going to be is going to be like the class zero.",
+    "start_ms": 887800,
+    "end_ms": 902240,
+    "duration_ms": 14440,
+    "word_count": 47,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 902.24,
+    "text": "Again, this is a line of z equal to zero.",
+    "start_ms": 902240,
+    "end_ms": 904880,
+    "duration_ms": 2640,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 904.88,
+    "text": "Anything above the line is going to be classified as class one.",
+    "start_ms": 904880,
+    "end_ms": 907840,
+    "duration_ms": 2960,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 907.84,
+    "text": "Anything below it is going to be classified as class zero.",
+    "start_ms": 907840,
+    "end_ms": 910600,
+    "duration_ms": 2760,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 910.6,
+    "text": "So that's why we need to have an activation function or like one example of why we need to have an activation function because we want to use input activations to turn them into classifications, into decisions, whether the neuron is activated or not, or decisions into whether the data point belongs to class 0 or class 1.",
+    "start_ms": 910600,
+    "end_ms": 930440,
+    "duration_ms": 19840,
+    "word_count": 58,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 930.44,
+    "text": "So this is kind of a simple way. Again, that's the kind of a way that the activation function is working.",
+    "start_ms": 930440,
+    "end_ms": 937560,
+    "duration_ms": 7120,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 937.56,
+    "text": "Input Z is going in. Then it decides to do the classification for us.",
+    "start_ms": 937560,
+    "end_ms": 942440,
+    "duration_ms": 4880,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 942.44,
+    "text": "And then the way that it does the classification for us is that because the step function has a linear decision boundary, because now the characteristic for this z is that it's a linear model that I have right here.",
+    "start_ms": 942440,
+    "end_ms": 956640,
+    "duration_ms": 14200,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 956.64,
+    "text": "Then I have a line between the two classes. And because my data set was linearly separable, then I can actually directly cut through the two classes.",
+    "start_ms": 956640,
+    "end_ms": 965280,
+    "duration_ms": 8640,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 965.28,
+    "text": "Then I will have a perfect classification between the two classes.",
+    "start_ms": 965280,
+    "end_ms": 968800,
+    "duration_ms": 3520,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 968.92,
+    "text": "Very interesting stuff. So, this is step function is very similar to something that you've seen before.",
+    "start_ms": 968920,
+    "end_ms": 976024,
+    "duration_ms": 7104,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 976.024,
+    "text": "And actually, Joy and I were talking about when we were teaching you logistic regression, why did we not tell you about the step function?",
+    "start_ms": 976024,
+    "end_ms": 983544,
+    "duration_ms": 7520,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 983.544,
+    "text": "We could just simply say that when you're doing binary classification, you do activation, right?",
+    "start_ms": 983544,
+    "end_ms": 988544,
+    "duration_ms": 5000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 988.544,
+    "text": "Because logistic regression also had the calculation of that linear part, because you had to actually calculate z and then pass z to the signal function to get the probabilities.",
+    "start_ms": 988544,
+    "end_ms": 1000044,
+    "duration_ms": 11500,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1000.044,
+    "text": "One way of simplifying that was that, what if we told you that, OK, go ahead and calculate z, pass it through the step function, get two classes, class zero and class one.",
+    "start_ms": 1000044,
+    "end_ms": 1009744,
+    "duration_ms": 9700,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1010.168,
+    "text": "What's the issue with the step function that we did not teach you that I'm we instead talk about the sigma function.",
+    "start_ms": 1010168,
+    "end_ms": 1018808,
+    "duration_ms": 8640,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1019.288,
+    "text": "The issue is that if I was using that classifier and I wanted to train a classifier in terms of figuring out whether the parameters theta that I have in order to calculate z equal to the dot product within the theta vector and the x vector.",
+    "start_ms": 1019288,
+    "end_ms": 1036288,
+    "duration_ms": 17000,
+    "word_count": 47,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1036.288,
+    "text": "The issue when you're calculating the gradient descent function is that this function is not differentiable in all points.",
+    "start_ms": 1036288,
+    "end_ms": 1045548,
+    "duration_ms": 9260,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1045.548,
+    "text": "So the derivative at zero is not the fun. So that's part of the reason that we don't necessarily use this as the function in practice because we can actually optimize using that.",
+    "start_ms": 1045548,
+    "end_ms": 1058520,
+    "duration_ms": 12972,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1059.0,
+    "text": "The other situation is that if you relax this kind of transition between the class of zero and class of one, we could actually come up with the sigmoid function.",
+    "start_ms": 1059000,
+    "end_ms": 1069400,
+    "duration_ms": 10400,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1069.4,
+    "text": "So this is another way of us trying to make sure that at zero the function is differentiable, but it is still does the same thing that it maps the inputs into the range of zero and one.",
+    "start_ms": 1069400,
+    "end_ms": 1082000,
+    "duration_ms": 12600,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1082.0,
+    "text": "So it is between zero and one. It is a probability.",
+    "start_ms": 1082000,
+    "end_ms": 1084600,
+    "duration_ms": 2600,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1084.6,
+    "text": "if we use the threshold of 0.5, anything above it is going to be classified as class 1, anything below it is going to be classified as class 0.",
+    "start_ms": 1084600,
+    "end_ms": 1092300,
+    "duration_ms": 7700,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1092.984,
+    "text": "So again, a neuron had a summation unit. It has an activation function.",
+    "start_ms": 1092984,
+    "end_ms": 1098944,
+    "duration_ms": 5960,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1098.944,
+    "text": "We talked about the activation function. It can be just a simple linear function.",
+    "start_ms": 1098944,
+    "end_ms": 1103584,
+    "duration_ms": 4640,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1103.584,
+    "text": "It can also be a step function or it can be the sigmoid function.",
+    "start_ms": 1103584,
+    "end_ms": 1108464,
+    "duration_ms": 4880,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1108.464,
+    "text": "If we use sigmoid function as the activation function, the output of each neuron is going to be between 0 and 1.",
+    "start_ms": 1108464,
+    "end_ms": 1114784,
+    "duration_ms": 6320,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1114.784,
+    "text": "It's a probability. So we can actually try to optimize the tetavalu's in a neuron so that it outputs probabilities that are reasonable and can cut through between the two classes that we have and do the binary classification for a given neuron that we have.",
+    "start_ms": 1114784,
+    "end_ms": 1131384,
+    "duration_ms": 16600,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1132.152,
+    "text": "So now I want to talk about the power of a neuron and why do we not stop at neuron right because it sounds like that the neuron is simple you've learned about all of the mechanics of different pieces of neuron but why not stop there so I'm going to talk a little bit about.",
+    "start_ms": 1132152,
+    "end_ms": 1147152,
+    "duration_ms": 15000,
+    "word_count": 56,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1147.928,
+    "text": "The analogy of neuron and the gates and logical gates that we can build.",
+    "start_ms": 1147928,
+    "end_ms": 1153208,
+    "duration_ms": 5280,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1153.208,
+    "text": "And we're going to take a look at this limitation and we'll try to solve that limitation by building a neural network together.",
+    "start_ms": 1153208,
+    "end_ms": 1159208,
+    "duration_ms": 6000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1159.208,
+    "text": "And if that's a teaser into the next part of the five minutes of the lecture that we're going to spend on.",
+    "start_ms": 1159208,
+    "end_ms": 1164888,
+    "duration_ms": 5680,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1165.496,
+    "text": "So the first thing that we want to simulate is that what if I have that function?",
+    "start_ms": 1165496,
+    "end_ms": 1170696,
+    "duration_ms": 5200,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1170.696,
+    "text": "Again, anything in machine learning is a function. So let's say that I have a function that takes in the values x1 and x2, and then it tries to map it to the output y.",
+    "start_ms": 1170696,
+    "end_ms": 1183796,
+    "duration_ms": 13100,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1183.796,
+    "text": "And the output y happens to be corresponding to the AND gate that I have.",
+    "start_ms": 1183796,
+    "end_ms": 1188796,
+    "duration_ms": 5000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1188.796,
+    "text": "Right? So notice that the y value is only equal to 1 when both x1 and x2 are equal to 1 and in other places it's equal to zero.",
+    "start_ms": 1188796,
+    "end_ms": 1197376,
+    "duration_ms": 8580,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1197.376,
+    "text": "If I draw what's happening in my feature space is that if I plot x1 versus x2 and you notice that only in this case, y is equal to one and in other cases, y is equal to zero that I showed with the red dots.",
+    "start_ms": 1197376,
+    "end_ms": 1213375,
+    "duration_ms": 15999,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1213.375,
+    "text": "What I want to actually do is to build a simple neuron with the step function activation that has a threshold of zero obviously with those parameters that I have, right?",
+    "start_ms": 1213375,
+    "end_ms": 1225616,
+    "duration_ms": 12241,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1225.616,
+    "text": "So we always have the bias term. We always have all of the inputs going in.",
+    "start_ms": 1225616,
+    "end_ms": 1232096,
+    "duration_ms": 6480,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1232.096,
+    "text": "So I have input x1, I have input x2, because these are the two inputs that I had into the function.",
+    "start_ms": 1232096,
+    "end_ms": 1238336,
+    "duration_ms": 6240,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1238.336,
+    "text": "Then we have the corresponding tetah values, tetah1 and tetah2.",
+    "start_ms": 1238336,
+    "end_ms": 1242456,
+    "duration_ms": 4120,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1242.456,
+    "text": "What is the combination of tetah0, tetah1 and tetah2 values that is going to give me the exact.",
+    "start_ms": 1242456,
+    "end_ms": 1249736,
+    "duration_ms": 7280,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1250.072,
+    "text": "and function that we have here. So take a look at this that Kind of intuition behind it is that I'm trying to find the characteristics for the line that cuts between the two classes.",
+    "start_ms": 1250072,
+    "end_ms": 1266936,
+    "duration_ms": 16864,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1267.192,
+    "text": "and then classifies anything above the line as class one and classifies anything below the line.",
+    "start_ms": 1267192,
+    "end_ms": 1272632,
+    "duration_ms": 5440,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1273.048,
+    "text": "As class zero. So let's take a look at this slide up.",
+    "start_ms": 1273048,
+    "end_ms": 1276488,
+    "duration_ms": 3440,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1276.696,
+    "text": "Which one of those combinations is actually going to give me AND gate?",
+    "start_ms": 1276696,
+    "end_ms": 1280696,
+    "duration_ms": 4000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1309.048,
+    "text": "These are some kind of suggestions for the parameters, but obviously there are more than one correct solution and how we can actually come up with a different combination of That is your thought of one in tattoos to realize the end function.",
+    "start_ms": 1309048,
+    "end_ms": 1324808,
+    "duration_ms": 15760,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1326.488,
+    "text": "I'm going to wait until 200 and then I'll show you how we can actually do it.",
+    "start_ms": 1326488,
+    "end_ms": 1331088,
+    "duration_ms": 4600,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1335.384,
+    "text": "That is... Probably not the right answer. Teta 0 equal to 0.",
+    "start_ms": 1335384,
+    "end_ms": 1340648,
+    "duration_ms": 5264,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1340.648,
+    "text": "You need to use the bias term. I guess that was the first choice.",
+    "start_ms": 1340648,
+    "end_ms": 1345048,
+    "duration_ms": 4400,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1345.048,
+    "text": "But let me actually go back and show you how I can actually do it.",
+    "start_ms": 1345048,
+    "end_ms": 1349528,
+    "duration_ms": 4480,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1349.528,
+    "text": "And why did I say that there is more than one correct solution here?",
+    "start_ms": 1349528,
+    "end_ms": 1353648,
+    "duration_ms": 4120,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1353.648,
+    "text": "So what I can actually do is that we have three unknowns.",
+    "start_ms": 1353648,
+    "end_ms": 1358048,
+    "duration_ms": 4400,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1358.048,
+    "text": "Right? So we have Teta 0, Teta 1 and Teta 2 that are unknowns.",
+    "start_ms": 1358048,
+    "end_ms": 1362048,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1362.048,
+    "text": "But I can actually write four equations in order to figure out, how can I actually come up with why values for all of these four rows that I have?",
+    "start_ms": 1362048,
+    "end_ms": 1372328,
+    "duration_ms": 10280,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1372.328,
+    "text": "Right? So I'm going to actually write down four equations there.",
+    "start_ms": 1372328,
+    "end_ms": 1376128,
+    "duration_ms": 3800,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1376.128,
+    "text": "So I'm assuming that, okay, if I go ahead and pass, say, x1 be equal to 1 and x2 equal to 0 into this neuron and then calculate the combination of those inputs that I pass, I need to make sure that the output is equal to 0.",
+    "start_ms": 1376128,
+    "end_ms": 1394328,
+    "duration_ms": 18200,
+    "word_count": 48,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1394.328,
+    "text": "And I want to make sure that the output is equal to 0.",
+    "start_ms": 1394328,
+    "end_ms": 1396568,
+    "duration_ms": 2240,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1396.568,
+    "text": "This means that I need to be on this side of this step function.",
+    "start_ms": 1396568,
+    "end_ms": 1400648,
+    "duration_ms": 4080,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1400.648,
+    "text": "That weighted combination needs to be less than 0. So I will write this out.",
+    "start_ms": 1400648,
+    "end_ms": 1405768,
+    "duration_ms": 5120,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1405.768,
+    "text": "I'll say that, OK, I have theta 0 plus theta 1 times x1 in this case is equal to 1 plus theta 2 times x2, which in this case is equal to 0.",
+    "start_ms": 1405768,
+    "end_ms": 1418608,
+    "duration_ms": 12840,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1418.608,
+    "text": "This all should be less than 0 for me to be able to output a 0 value.",
+    "start_ms": 1418608,
+    "end_ms": 1423648,
+    "duration_ms": 5040,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1423.648,
+    "text": "because that's what my step function is actually going to do.",
+    "start_ms": 1423648,
+    "end_ms": 1427368,
+    "duration_ms": 3720,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1427.368,
+    "text": "So I'm going to simplify this, theta zero plus theta one should be less than zero.",
+    "start_ms": 1427368,
+    "end_ms": 1432648,
+    "duration_ms": 5280,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1432.648,
+    "text": "Kind of similarly, I can write that as theta zero plus theta one plus theta two should be greater than or equal to zero.",
+    "start_ms": 1432648,
+    "end_ms": 1441247,
+    "duration_ms": 8599,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1441.4,
+    "text": "Right? Because this is the case that why should be equal to one?",
+    "start_ms": 1441400,
+    "end_ms": 1445733,
+    "duration_ms": 4333,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1445.733,
+    "text": "So I should have an activation that's greater than or equal to zero.",
+    "start_ms": 1445733,
+    "end_ms": 1451400,
+    "duration_ms": 5667,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1451.122,
+    "text": "going to write the third line here that teta 0 plus teta 1 times x times 0 plus teta 2 times 0 which is all 0 should be less than 0.",
+    "start_ms": 1451122,
+    "end_ms": 1461618,
+    "duration_ms": 10496,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1461.618,
+    "text": "So that's the equation for the third kind of input and for this other one I'm going to have teta 0 plus teta 2 be less than 0.",
+    "start_ms": 1461618,
+    "end_ms": 1471416,
+    "duration_ms": 9798,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1472.472,
+    "text": "Bye. Yes. Because the question is that how am I getting greater than or equal to zero for the second line?",
+    "start_ms": 1472472,
+    "end_ms": 1488168,
+    "duration_ms": 15696,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1488.168,
+    "text": "This is because my output is equal to one. This is the only case that the output is equal to one and based on the step function, we said that if z is greater than or equal to zero, the output is equal to one and if z is less than zero, the output is equal to zero.",
+    "start_ms": 1488168,
+    "end_ms": 1503768,
+    "duration_ms": 15600,
+    "word_count": 58,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1504.28,
+    "text": "So that's why for all of those other lines that I have zero, what I'm putting is, so these are all zeroes, so they all need to be less than zero, less than zero, less than zero except for the case that output is equal to one.",
+    "start_ms": 1504280,
+    "end_ms": 1517720,
+    "duration_ms": 13440,
+    "word_count": 47,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1517.72,
+    "text": "Great question. Okay, so let me actually solve it to show you what's happening.",
+    "start_ms": 1517720,
+    "end_ms": 1522640,
+    "duration_ms": 4920,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1522.64,
+    "text": "So you can see from this line that your tet to zero could not have been equal to zero.",
+    "start_ms": 1522640,
+    "end_ms": 1529400,
+    "duration_ms": 6760,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1529.4,
+    "text": "So that's how I kind of I could tell quickly that the choice that most of the students picked was not correct.",
+    "start_ms": 1529400,
+    "end_ms": 1537260,
+    "duration_ms": 7860,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1537.26,
+    "text": "So hypothetically, let's say that I go ahead and set that to zero equal to negative one.",
+    "start_ms": 1537260,
+    "end_ms": 1542060,
+    "duration_ms": 4800,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1542.06,
+    "text": "Right? And again, notice here that I have four equations, three unknowns.",
+    "start_ms": 1542060,
+    "end_ms": 1547460,
+    "duration_ms": 5400,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1547.46,
+    "text": "So that's the degree, that's the next degree of freedom that I have.",
+    "start_ms": 1547460,
+    "end_ms": 1550360,
+    "duration_ms": 2900,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1550.36,
+    "text": "That's why I have more than one correct solution here.",
+    "start_ms": 1550360,
+    "end_ms": 1552760,
+    "duration_ms": 2400,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1552.76,
+    "text": "So I can put multiple different lines between all of these, between these two classes.",
+    "start_ms": 1552760,
+    "end_ms": 1558660,
+    "duration_ms": 5900,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1558.66,
+    "text": "And all of those lines would be correct. But we're going to take a look at the probabilistic view of this and we'll see that only one of those lines is going to maximize the loss function that we have.",
+    "start_ms": 1558660,
+    "end_ms": 1567860,
+    "duration_ms": 9200,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1567.86,
+    "text": "And that's, I think what Joey is going to go over and show you what's going to happen.",
+    "start_ms": 1567860,
+    "end_ms": 1572860,
+    "duration_ms": 5000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1572.824,
+    "text": "So let's take a look at this case. So here in this case, I'm saying that, okay, the kind of another information that I'm getting here is that I need to have tet-0, tet-1 and tet-2 to be a positive value.",
+    "start_ms": 1572824,
+    "end_ms": 1588584,
+    "duration_ms": 15760,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1588.584,
+    "text": "So that's kind of a hint for me that tet-1 and tet-2 should be a positive value.",
+    "start_ms": 1588584,
+    "end_ms": 1594224,
+    "duration_ms": 5640,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1594.224,
+    "text": "But not so positive that only one of them by itself can push the summation of of teta 0 plus teta 2 to be a positive value.",
+    "start_ms": 1594224,
+    "end_ms": 1604384,
+    "duration_ms": 10160,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1604.384,
+    "text": "So I want something positive, but not so positive. So for example, here I would say that, OK, if teta 2 is equal to, for example, 0.5, and if also teta 1 is also, so I'm going to write it here, if teta 1 is also equal to 0.5, so I'm going to highlight all of these.",
+    "start_ms": 1604384,
+    "end_ms": 1625584,
+    "duration_ms": 21200,
+    "word_count": 57,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1625.72,
+    "text": "for you, teta 1.5, teta 2.5, and then teta 1, negative 1.",
+    "start_ms": 1625720,
+    "end_ms": 1630797,
+    "duration_ms": 5077,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1630.797,
+    "text": "So you would be able to see that all of these equations are satisfied because then this big summation that was of concern here is going to be exactly equal to zero.",
+    "start_ms": 1630797,
+    "end_ms": 1643440,
+    "duration_ms": 12643,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1643.96,
+    "text": "Question. That's a valid point. I think the degrees of freedom in this case are coming from the case that We have equations that are that are simplifying tetah1 and tetat2 in some of the cases.",
+    "start_ms": 1643960,
+    "end_ms": 1679624,
+    "duration_ms": 35664,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1679.624,
+    "text": "Right? So for example, tetah0 being a negative value is a constraining kind of equation, right?",
+    "start_ms": 1679624,
+    "end_ms": 1686419,
+    "duration_ms": 6795,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1686.419,
+    "text": "But then what you would see is that then this is going to be a limiting equation right here, but then tetah1 and tetat2 are actually also acting as symmetric kind of variables.",
+    "start_ms": 1686419,
+    "end_ms": 1698264,
+    "duration_ms": 11845,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1698.264,
+    "text": "So in that sense, this equation right here, and this equation right here, are not two separate equations.",
+    "start_ms": 1698264,
+    "end_ms": 1708623,
+    "duration_ms": 10359,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1709.016,
+    "text": "because there's symmetric. Great. Good question. Alright, so that was kind of a warm-up.",
+    "start_ms": 1709016,
+    "end_ms": 1716661,
+    "duration_ms": 7645,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1716.661,
+    "text": "So we were able to build a neuron that actually does the AND gate for us.",
+    "start_ms": 1716661,
+    "end_ms": 1721328,
+    "duration_ms": 4667,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1721.328,
+    "text": "Now let's take a look at this other one. So what if I want to build an OR gate?",
+    "start_ms": 1721328,
+    "end_ms": 1726328,
+    "duration_ms": 5000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1726.232,
+    "text": "So this is all on you to actually experiment and then figure out what are the optimum parameters for tetas 0, teta 1 and teta 2 so that I can build and or get.",
+    "start_ms": 1726232,
+    "end_ms": 1737232,
+    "duration_ms": 11000,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1737.232,
+    "text": "So this is another slide of question. Go ahead, spend few minutes on it.",
+    "start_ms": 1737232,
+    "end_ms": 1742349,
+    "duration_ms": 5117,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1742.349,
+    "text": "This is going to be a nice practice. You can use the same technique that I had.",
+    "start_ms": 1742349,
+    "end_ms": 1758140,
+    "duration_ms": 15791,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1758.456,
+    "text": "You can guess that is zero and then you can use kind of the same symmetric property between I'm going to touch the one and touch the two and then be able to find out what.",
+    "start_ms": 1758456,
+    "end_ms": 1768176,
+    "duration_ms": 9720,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1769.208,
+    "text": "uh... optimal parameters i need to have Yes, your answer should be in form of teta 0 equal to something that the one equal to something.",
+    "start_ms": 1769208,
+    "end_ms": 1787696,
+    "duration_ms": 18488,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1789.208,
+    "text": "I'm guessing that that answer might be correct. Okay, some negative, bioster, some positive.",
+    "start_ms": 1789208,
+    "end_ms": 1808376,
+    "duration_ms": 19168,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1808.984,
+    "text": "Oh! Values for PET-1 and PET-2. Let's go ahead and give this a try.",
+    "start_ms": 1808984,
+    "end_ms": 1819880,
+    "duration_ms": 10896,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1820.504,
+    "text": "So if I go ahead and say I think one suggestion was that Uh, that...",
+    "start_ms": 1820504,
+    "end_ms": 1827816,
+    "duration_ms": 7312,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1827.768,
+    "text": "One thing that I saw was that someone was suggesting that it was zero to be negative point four.",
+    "start_ms": 1827768,
+    "end_ms": 1832888,
+    "duration_ms": 5120,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1832.888,
+    "text": "This is because we just want to make sure that If I don't have activation on x1 and x2, if x1 and x2 are both equal to zero and no activation or no input, is coming through the input channels right there, I don't want the neuron to be activated.",
+    "start_ms": 1832888,
+    "end_ms": 1849416,
+    "duration_ms": 16528,
+    "word_count": 50,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1849.416,
+    "text": "So that's why a negative weight for the tetra zero by itself is going to be very important.",
+    "start_ms": 1849416,
+    "end_ms": 1855416,
+    "duration_ms": 6000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1855.416,
+    "text": "But at the same time, we want to make sure that we pick the weights for x1 and x2 So that if at least one of them is activated, this summation is actually positive, right?",
+    "start_ms": 1855416,
+    "end_ms": 1866576,
+    "duration_ms": 11160,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1866.576,
+    "text": "So what's the value that I can pick for tet-1?",
+    "start_ms": 1866576,
+    "end_ms": 1870336,
+    "duration_ms": 3760,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1870.336,
+    "text": "So that when tet-1 is only, or the x-1 is only activated, and I sum it up with negative point four, it is greater than or equal to zero.",
+    "start_ms": 1870336,
+    "end_ms": 1880776,
+    "duration_ms": 10440,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1881.144,
+    "text": "So it can be 0.4 or above. So for example here if I pick 0.5 and here I pick 0.5 then I have all of the optimum values that I want in order to actually realize the or gate.",
+    "start_ms": 1881144,
+    "end_ms": 1894144,
+    "duration_ms": 13000,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1894.52,
+    "text": "So notice that again the task of creating a neuron is again for us to come up with the optimum parameters.",
+    "start_ms": 1894520,
+    "end_ms": 1901720,
+    "duration_ms": 7200,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1901.72,
+    "text": "And once we find the optimum parameters, then we have a function.",
+    "start_ms": 1901720,
+    "end_ms": 1905320,
+    "duration_ms": 3600,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1905.32,
+    "text": "And that function takes inputs and then generates the output perfectly and then it classifies points into classes of zeroes and months.",
+    "start_ms": 1905320,
+    "end_ms": 1913320,
+    "duration_ms": 8000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1913.592,
+    "text": "But now let's take a look at x or gate.",
+    "start_ms": 1913592,
+    "end_ms": 1917392,
+    "duration_ms": 3800,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1917.392,
+    "text": "So for the x or gate, what's happening is that the x or value is going output is going to be equal to 1 in the cases that only one of the two is active.",
+    "start_ms": 1917392,
+    "end_ms": 1928592,
+    "duration_ms": 11200,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1928.592,
+    "text": "So again, if you're looking at the output is that only for this case and for this case, the output is equal to 1 and in other in all other cases, the output is equal to 0.",
+    "start_ms": 1928592,
+    "end_ms": 1939092,
+    "duration_ms": 10500,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1939.32,
+    "text": "So a question for you is that How can we build the X or Gate?",
+    "start_ms": 1939320,
+    "end_ms": 1943944,
+    "duration_ms": 4624,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1946.36,
+    "text": "Just brainstorm ideas. So I have an x or gate.",
+    "start_ms": 1946360,
+    "end_ms": 1951068,
+    "duration_ms": 4708,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1951.068,
+    "text": "I want to do a binary classification between class zero and class one.",
+    "start_ms": 1951068,
+    "end_ms": 1955176,
+    "duration_ms": 4108,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1955.176,
+    "text": "But now there is an issue that class zero and class one are kind of differently structured than what I saw in the AND gate and OR gate.",
+    "start_ms": 1955176,
+    "end_ms": 1963416,
+    "duration_ms": 8240,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1966.744,
+    "text": "Negative theta zero, changing activation function, combination of n and or gate.",
+    "start_ms": 1966744,
+    "end_ms": 1972544,
+    "duration_ms": 5800,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1976.792,
+    "text": "neurons, two functions. So that's kind of the idea. Again, I give you the hint on the plot that if I want to actually be able to build a classifier, I need to have a classifier for one of these green kind of notes separately and I need to have another classifier for the top green note separately in order to be able to separate out my classes, my data points to be be like the class one.",
+    "start_ms": 1976792,
+    "end_ms": 2004992,
+    "duration_ms": 28200,
+    "word_count": 78,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2004.992,
+    "text": "So then the other question is that how many neurons do I need a minimum in order to find out, in order to build this x-ore gate?",
+    "start_ms": 2004992,
+    "end_ms": 2013232,
+    "duration_ms": 8240,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2015.096,
+    "text": "I'm definitely needing more than one. Who is closed, but not closed enough?",
+    "start_ms": 2015096,
+    "end_ms": 2022880,
+    "duration_ms": 7784,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2027.416,
+    "text": "or but there is a minimum. I need to have the minimum of three nodes in order or three neurons in order to build this function.",
+    "start_ms": 2027416,
+    "end_ms": 2035793,
+    "duration_ms": 8377,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2035.793,
+    "text": "I need to have one classifier for one line. I need to have another classifier for the other line.",
+    "start_ms": 2035793,
+    "end_ms": 2041916,
+    "duration_ms": 6123,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2041.916,
+    "text": "And then I need to have a way of combining the two.",
+    "start_ms": 2041916,
+    "end_ms": 2045756,
+    "duration_ms": 3840,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2045.756,
+    "text": "So combining the two is this turd line right here that is actually going to actually need to be a classifier or another neuron that I need to build.",
+    "start_ms": 2045756,
+    "end_ms": 2055276,
+    "duration_ms": 9520,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2055.276,
+    "text": "So because I have tree linear kind of lines or linear classifiers here, I will need at least minimum tree neurons.",
+    "start_ms": 2055276,
+    "end_ms": 2063876,
+    "duration_ms": 8600,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2063.876,
+    "text": "So the way that it works is that, and the way, and why we need to actually have tree neurons is that if you actually try to separate out this truce table function using this chunk of normal form, so what's happening is that I can actually say that I'm separating this value of 1, which corresponds to this node right here in one truce table.",
+    "start_ms": 2063876,
+    "end_ms": 2088876,
+    "duration_ms": 25000,
+    "word_count": 66,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2088.876,
+    "text": "So I'm going to build actually the classifier right here for this is specific truce table.",
+    "start_ms": 2088876,
+    "end_ms": 2094716,
+    "duration_ms": 5840,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2094.716,
+    "text": "And then I'm going to build another classifier that's going to actually give me that...",
+    "start_ms": 2094716,
+    "end_ms": 2100315,
+    "duration_ms": 5599,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2100.824,
+    "text": "Classifier for this other node, right? So this is another true staple and then what I need is actually taking the or between the two.",
+    "start_ms": 2100824,
+    "end_ms": 2108594,
+    "duration_ms": 7770,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2108.594,
+    "text": "So I would say that either you have to be classified into class one using the bottom classifier or you need to be classified into class one using the top classifier and then I'm going to take the or between the two and if you meet at least one of them then the output is going to be equal to one.",
+    "start_ms": 2108594,
+    "end_ms": 2124819,
+    "duration_ms": 16225,
+    "word_count": 61,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2124.819,
+    "text": "So that's why you would see that this is one neuron.",
+    "start_ms": 2124819,
+    "end_ms": 2128546,
+    "duration_ms": 3727,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2128.546,
+    "text": "This right here is one neuron and then I would need to have another neuron in order to combine them and that's the minimum.",
+    "start_ms": 2128546,
+    "end_ms": 2135023,
+    "duration_ms": 6477,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2135.023,
+    "text": "And that's where the idea of neural network comes into play that there is the limitation that each neuron has because each neuron has a linear decision boundary.",
+    "start_ms": 2135023,
+    "end_ms": 2145764,
+    "duration_ms": 10741,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2145.764,
+    "text": "And what I need to do is if my decision boundary becomes non-linear, I need to combine multiple different linear decision boundaries together in order to build a non-linear decision boundary.",
+    "start_ms": 2145764,
+    "end_ms": 2156724,
+    "duration_ms": 10960,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2157.176,
+    "text": "So that's exactly what's happening. So let me quickly go through a demo and show you how this is actually going to happen.",
+    "start_ms": 2157176,
+    "end_ms": 2166176,
+    "duration_ms": 9000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2166.52,
+    "text": "Let me restart this quickly. Okay, so let's take a look.",
+    "start_ms": 2166520,
+    "end_ms": 2182424,
+    "duration_ms": 15904,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2182.424,
+    "text": "So I'm here actually going to create a bunch of different gates.",
+    "start_ms": 2182424,
+    "end_ms": 2186904,
+    "duration_ms": 4480,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2187.624,
+    "text": "So I'm creating and gate or gate and x or gate to show you how it actually going to build classifiers for each one of these different gates that we have.",
+    "start_ms": 2187624,
+    "end_ms": 2197490,
+    "duration_ms": 9866,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2197.49,
+    "text": "The other thing that we do is actually showing you that we can come up with number of samples, we can pick the gate and then we can change the noise level.",
+    "start_ms": 2197490,
+    "end_ms": 2207224,
+    "duration_ms": 9734,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2207.224,
+    "text": "So for example, here if I go ahead and say that, I want AND gate with this specific noise level.",
+    "start_ms": 2207224,
+    "end_ms": 2213104,
+    "duration_ms": 5880,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2213.104,
+    "text": "So you would see that I only have one class of one.",
+    "start_ms": 2213104,
+    "end_ms": 2216464,
+    "duration_ms": 3360,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2216.464,
+    "text": "So this right here belongs to the data points to belong to class of one, and every red dot belongs to class of zero.",
+    "start_ms": 2216464,
+    "end_ms": 2224744,
+    "duration_ms": 8280,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2224.744,
+    "text": "So what I want to do is I want to build a classifier for this AND gate.",
+    "start_ms": 2224744,
+    "end_ms": 2228424,
+    "duration_ms": 3680,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2228.888,
+    "text": "So let's take a look at how we can actually do this with just a simple logistic regression.",
+    "start_ms": 2228888,
+    "end_ms": 2234488,
+    "duration_ms": 5600,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2234.488,
+    "text": "His logistic regression with the F-stein was that... It logistics function by itself with a neuron so it can just assume that if you're calculating a weighted combination of inputs we're passing it to the logistic activation the logistic activation is going to give me probability again if the probability is above 50% I've classified into class one if it is below the 50% I classified as class zero.",
+    "start_ms": 2234488,
+    "end_ms": 2258880,
+    "duration_ms": 24392,
+    "word_count": 69,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2258.88,
+    "text": "So this is kind of performing logistic regression using scikit-learn, splitting the data as usual, creating a logistic function, fitting it to our training data.",
+    "start_ms": 2258880,
+    "end_ms": 2268300,
+    "duration_ms": 9420,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2268.3,
+    "text": "And then what we would do is we'll take a look at the training and the test error that we have.",
+    "start_ms": 2268300,
+    "end_ms": 2273360,
+    "duration_ms": 5060,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2273.656,
+    "text": "So, dysfunction plus decision boundary beyond the scope for data 100, but let's take a look at the output.",
+    "start_ms": 2273656,
+    "end_ms": 2280156,
+    "duration_ms": 6500,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2280.824,
+    "text": "So you see that now my output is actually showing me that we were able to classify with 100% accuracy between the two classes on the AND gate.",
+    "start_ms": 2280824,
+    "end_ms": 2291324,
+    "duration_ms": 10500,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2291.324,
+    "text": "So this is kind of visualizing exactly what you'd seen in bit logistic regression before.",
+    "start_ms": 2291324,
+    "end_ms": 2297824,
+    "duration_ms": 6500,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2297.824,
+    "text": "So if I change the gate to OR gate. You would see that now it retrains again.",
+    "start_ms": 2297824,
+    "end_ms": 2303232,
+    "duration_ms": 5408,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2303.232,
+    "text": "It finds the decision boundary using the logistic function. Again, the logistic function is going to have teta 0, teta 1 and teta 2.",
+    "start_ms": 2303232,
+    "end_ms": 2311432,
+    "duration_ms": 8200,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2311.432,
+    "text": "And the line is actually the equation for the optimum set of parameters for the logistic function.",
+    "start_ms": 2311432,
+    "end_ms": 2319352,
+    "duration_ms": 7920,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2319.352,
+    "text": "If I go ahead and show you the probabilities, you would see that in the far left part, the model is confident that any data point that would be here is going to be classified as class 0.",
+    "start_ms": 2319352,
+    "end_ms": 2331512,
+    "duration_ms": 12160,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2331.512,
+    "text": "And then as we move here, it is going to have lower probability for class 0 and then getting higher probability for class 1.",
+    "start_ms": 2331512,
+    "end_ms": 2339592,
+    "duration_ms": 8080,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2339.592,
+    "text": "And then as we move to the blue regions, then it's going to be more confident into classifying the data point as class 1.",
+    "start_ms": 2339592,
+    "end_ms": 2346872,
+    "duration_ms": 7280,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2346.872,
+    "text": "So what the logistic regression is actually doing is that it finds the decision boundary of z equal to 0 that cuts between the two kind of sets of data points such that the kind of a combination of those probabilities is maximized.",
+    "start_ms": 2346872,
+    "end_ms": 2364152,
+    "duration_ms": 17280,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2364.152,
+    "text": "But it's not talking about the notion of likelihood, but it tries to just generally look at the likelihood of all of these points that are on the plot and tries to maximize or put the points in the regions that are corresponding to each month of them.",
+    "start_ms": 2364152,
+    "end_ms": 2378112,
+    "duration_ms": 13960,
+    "word_count": 48,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2379.032,
+    "text": "So the next thing that I want to show you, and we're going to actually revisit this in the neural network part of today's lecture is PyTorch.",
+    "start_ms": 2379032,
+    "end_ms": 2386032,
+    "duration_ms": 7000,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2386.032,
+    "text": "So we could actually do exactly the same thing that we did with logistic aggression using scikit-learn using PyTorch.",
+    "start_ms": 2386032,
+    "end_ms": 2393032,
+    "duration_ms": 7000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2393.032,
+    "text": "And PyTorch is kind of an industry standard for using and building neural networks.",
+    "start_ms": 2393032,
+    "end_ms": 2399032,
+    "duration_ms": 6000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2399.032,
+    "text": "It's a little bit more complicated to use. You need to write a lot of code in order to do exactly the same thing, but it gives you a lot of control.",
+    "start_ms": 2399032,
+    "end_ms": 2407032,
+    "duration_ms": 8000,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2407.032,
+    "text": "So here what I'm doing is I'm importing Torch and I'm also importing some of the different utilities that I want to use.",
+    "start_ms": 2407032,
+    "end_ms": 2415912,
+    "duration_ms": 8880,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2415.912,
+    "text": "So for example here I would say that I want to actually use the neural network class, I want to have the optimizer from PyTorch and so on and so forth.",
+    "start_ms": 2415912,
+    "end_ms": 2424632,
+    "duration_ms": 8720,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2424.632,
+    "text": "So now we're going through exactly the same process that we had in building any kind of model that we had in data 100.",
+    "start_ms": 2424632,
+    "end_ms": 2431551,
+    "duration_ms": 6919,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2431.551,
+    "text": "So specifically here we would say that I need to prepare my data set.",
+    "start_ms": 2431551,
+    "end_ms": 2435592,
+    "duration_ms": 4041,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2436.024,
+    "text": "So the way that we use data sets or prepare data sets for pytorges to use is that we need to transform our data into tensors.",
+    "start_ms": 2436024,
+    "end_ms": 2444144,
+    "duration_ms": 8120,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2444.144,
+    "text": "Tensors is kind of similar to Numpy. It's also another kind of data structure that pytorges uses.",
+    "start_ms": 2444144,
+    "end_ms": 2450744,
+    "duration_ms": 6600,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2450.744,
+    "text": "It is helping in terms of storing the data. It is also helping in terms of storing the weights for the models that we're training and also updating those weights on the tensors as well.",
+    "start_ms": 2450744,
+    "end_ms": 2461624,
+    "duration_ms": 10880,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2461.624,
+    "text": "So let's take a look at what we do. We're creating a tensor dataset.",
+    "start_ms": 2461624,
+    "end_ms": 2465864,
+    "duration_ms": 4240,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2465.864,
+    "text": "It's a combination of my x that is transformed into a tensor.",
+    "start_ms": 2465864,
+    "end_ms": 2471984,
+    "duration_ms": 6120,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2471.984,
+    "text": "So, torshtot tensor transforms the dataset that I have, the x dataset that I have into tensors.",
+    "start_ms": 2471984,
+    "end_ms": 2478784,
+    "duration_ms": 6800,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2478.784,
+    "text": "It does exactly the same thing for y. And then what we do is actually do the train test split or random split using random split function from PyTorch.",
+    "start_ms": 2478784,
+    "end_ms": 2488424,
+    "duration_ms": 9640,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2488.424,
+    "text": "So, this is an easier way of doing training test split because because you can do multi-vase splits.",
+    "start_ms": 2488424,
+    "end_ms": 2494744,
+    "duration_ms": 6320,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2494.744,
+    "text": "So you can do splitting into training validation and test all in one place instead of keeping, like splitting data into two parts, two parts in multiple different calls.",
+    "start_ms": 2494744,
+    "end_ms": 2506624,
+    "duration_ms": 11880,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2506.624,
+    "text": "So here I would say that I'm passing my tensor dataset.",
+    "start_ms": 2506624,
+    "end_ms": 2510503,
+    "duration_ms": 3879,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2510.503,
+    "text": "I'm using 80% for training and 20% for testing for this case.",
+    "start_ms": 2510503,
+    "end_ms": 2515503,
+    "duration_ms": 5000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2516.632,
+    "text": "So now we need to define the model. So in order to define the model using PyTorch, we always need to define a class.",
+    "start_ms": 2516632,
+    "end_ms": 2526472,
+    "duration_ms": 9840,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2526.472,
+    "text": "The class that we're defining in PyTorch is actually going to be the way that you're going to define the neuron and define the actual activation function in the neuron.",
+    "start_ms": 2526472,
+    "end_ms": 2537112,
+    "duration_ms": 10640,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2537.112,
+    "text": "And also, kind of setting up the initialization for where you want to the tetasero-theta-1-theta-2 to be initialized.",
+    "start_ms": 2537112,
+    "end_ms": 2545192,
+    "duration_ms": 8080,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2545.192,
+    "text": "So here I'm creating this custom class. It's called Logistic Regression A.",
+    "start_ms": 2545192,
+    "end_ms": 2550712,
+    "duration_ms": 5520,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2550.712,
+    "text": "It is inheriting from NN.modules. So this is a neural network class from PyTorch that has all of the functionalities for you to deal with different models.",
+    "start_ms": 2550712,
+    "end_ms": 2561912,
+    "duration_ms": 11200,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2561.912,
+    "text": "So in the initialization function, what I'm doing is I'm just initializing.",
+    "start_ms": 2561912,
+    "end_ms": 2566392,
+    "duration_ms": 4480,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2566.392,
+    "text": "I'm saying that set the intercept of the model to be initialized with the value of 1 and set also the parameter for the model to be also initialized with a tensor of all one values.",
+    "start_ms": 2566392,
+    "end_ms": 2580432,
+    "duration_ms": 14040,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2580.432,
+    "text": "So initializing all of the weights with the value of one, we'll see that that's actually not working with neural networks.",
+    "start_ms": 2580432,
+    "end_ms": 2585712,
+    "duration_ms": 5280,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2585.712,
+    "text": "So we have to have a different creative way of designing a neural network, or initializing a neural network.",
+    "start_ms": 2585712,
+    "end_ms": 2591872,
+    "duration_ms": 6160,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2591.872,
+    "text": "So what we also do is we would say that now that you have all of those weights, you have intercept, you have W, go ahead and calculate a weighted combination of inputs.",
+    "start_ms": 2591872,
+    "end_ms": 2603471,
+    "duration_ms": 11599,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2603.471,
+    "text": "So here is tet0 plus tet1 times, or tet0 plus the summation of teti times xi.",
+    "start_ms": 2603471,
+    "end_ms": 2611952,
+    "duration_ms": 8481,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2611.952,
+    "text": "So we're getting the activation, then we're actually calculating sigmoid of that activation, and sigmoid of activation is going to be the output that you want.",
+    "start_ms": 2611952,
+    "end_ms": 2620272,
+    "duration_ms": 8320,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2620.272,
+    "text": "So it's a lot of code for doing exactly the same thing, but it will be useful when we're actually building a neural network.",
+    "start_ms": 2620272,
+    "end_ms": 2626712,
+    "duration_ms": 6440,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2626.712,
+    "text": "So right now I'm building a neural network only with one new rock.",
+    "start_ms": 2626712,
+    "end_ms": 2629432,
+    "duration_ms": 2720,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2630.328,
+    "text": "So this is also another way instead of defining weights and parameters separately.",
+    "start_ms": 2630328,
+    "end_ms": 2635228,
+    "duration_ms": 4900,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2635.228,
+    "text": "I would say that I just want to have a linear layer that just takes the parameters and inputs and calculated linear combination of them.",
+    "start_ms": 2635228,
+    "end_ms": 2642528,
+    "duration_ms": 7300,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2642.528,
+    "text": "And then the output here is going to be the sigmoid of the linear calculation of the inputs given also the weights that we have.",
+    "start_ms": 2642528,
+    "end_ms": 2652628,
+    "duration_ms": 10100,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2653.304,
+    "text": "So let me go ahead and run these. So we're taking the instance of this logistic regression model, where we're specifying that we have two inputs, the dimensionality of the input.",
+    "start_ms": 2653304,
+    "end_ms": 2664224,
+    "duration_ms": 10920,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2664.224,
+    "text": "It's two because I had x1 and x2. So the next thing that we do in all of the models that we build is defining the loss function.",
+    "start_ms": 2664224,
+    "end_ms": 2672104,
+    "duration_ms": 7880,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2672.104,
+    "text": "So the loss function that we're going to use is binary cross entropy.",
+    "start_ms": 2672104,
+    "end_ms": 2675184,
+    "duration_ms": 3080,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2675.184,
+    "text": "You learn binary cross entropy before. So this is the function that's available again, tripite torch, so we're defining the loss.",
+    "start_ms": 2675184,
+    "end_ms": 2682504,
+    "duration_ms": 7320,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2682.231,
+    "text": "I have the model I have the last now I have to actually go ahead and train it and update the parameters using the gradient descent or using some kind of optimizer.",
+    "start_ms": 2682231,
+    "end_ms": 2691444,
+    "duration_ms": 9213,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2691.444,
+    "text": "So here is what's happening. So we would say that in different batches go ahead and get one batch in go ahead and create a loader that every time that I call that loader is going to give me one batch for the training.",
+    "start_ms": 2691444,
+    "end_ms": 2708644,
+    "duration_ms": 17200,
+    "word_count": 44,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2708.644,
+    "text": "And what we do is we will also initialize our optimizer.",
+    "start_ms": 2708644,
+    "end_ms": 2712563,
+    "duration_ms": 3919,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2712.563,
+    "text": "So here I'm saying that the optimizer is going to be a stochastic grade in the sun.",
+    "start_ms": 2712563,
+    "end_ms": 2716369,
+    "duration_ms": 3806,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2716.369,
+    "text": "And then I would say that you're going to go ahead and update the model parameters, learning grade is equal to 0.5.",
+    "start_ms": 2716369,
+    "end_ms": 2723204,
+    "duration_ms": 6835,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2723.204,
+    "text": "And the rest is kind of simple. We would go ahead and say that, okay, go ahead, get predictions, get the loss.",
+    "start_ms": 2723204,
+    "end_ms": 2730564,
+    "duration_ms": 7360,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2730.904,
+    "text": "Update the loss and then ask the optimizer to actually do one update based on the optimizer rule.",
+    "start_ms": 2730904,
+    "end_ms": 2738504,
+    "duration_ms": 7600,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2739.16,
+    "text": "So we're gonna actually run it. and then see how it's actually going to do the training.",
+    "start_ms": 2739160,
+    "end_ms": 2747125,
+    "duration_ms": 7965,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2747.125,
+    "text": "So different epochs what we have the training error for each one of those epochs and the test error that we'd seen in each one of those epochs.",
+    "start_ms": 2747125,
+    "end_ms": 2755292,
+    "duration_ms": 8167,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2755.292,
+    "text": "And if I go ahead and visualize what's actually happening.",
+    "start_ms": 2755292,
+    "end_ms": 2758792,
+    "duration_ms": 3500,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2760.28,
+    "text": "You would be able to see that. Okay, what's happening is that it went ahead created all of those did the update through all of those iterations and then at the end it's not giving me this decision boundary that we have.",
+    "start_ms": 2760280,
+    "end_ms": 2773222,
+    "duration_ms": 12942,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2773.222,
+    "text": "So if I go ahead and for example change this to an or a gate and I increase the noise level you would actually see that the model is actually training through multiple different epochs who would see that the loss is starts from some random initialization or some random loss and then it will keep reducing and so on and so forth.",
+    "start_ms": 2773222,
+    "end_ms": 2797832,
+    "duration_ms": 24610,
+    "word_count": 63,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2798.392,
+    "text": "And what you're actually seeing is that the loss is not as stable because my model is noisy.",
+    "start_ms": 2798392,
+    "end_ms": 2803592,
+    "duration_ms": 5200,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2803.592,
+    "text": "In different batches with different configurations it's actually going to do, is going to have a different loss and overall it tries to trend down and reduce the loss for the training data.",
+    "start_ms": 2803592,
+    "end_ms": 2816012,
+    "duration_ms": 12420,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2816.952,
+    "text": "So that was a quick demo on what's happening with these neurons.",
+    "start_ms": 2816952,
+    "end_ms": 2822512,
+    "duration_ms": 5560,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2822.512,
+    "text": "But what I didn't show you was that with all of these beautiful things that we had with and then, or and the nice decision boundary, I don't get that much of a nice decision boundary for X or.",
+    "start_ms": 2822512,
+    "end_ms": 2834992,
+    "duration_ms": 12480,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2834.992,
+    "text": "Because if you take a look at the X or, it tries to just put a line and this line actually is not going to be very optimum because the data is not linearly separable.",
+    "start_ms": 2834992,
+    "end_ms": 2845592,
+    "duration_ms": 10600,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2845.592,
+    "text": "And you would see that in the training, what's happening is that it's kind of hopeless.",
+    "start_ms": 2845592,
+    "end_ms": 2850392,
+    "duration_ms": 4800,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2850.392,
+    "text": "It sticks at a very high loss and it can't optimize the loss.",
+    "start_ms": 2850392,
+    "end_ms": 2854592,
+    "duration_ms": 4200,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2854.592,
+    "text": "That's kind of the way that you would know that your model is not complex enough to learn the patterns that you want.",
+    "start_ms": 2854592,
+    "end_ms": 2860872,
+    "duration_ms": 6280,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2860.872,
+    "text": "So nothing is actually being optimized in the same way that we saw things being optimized or lost being reduced, for example, when I had the end gate.",
+    "start_ms": 2860872,
+    "end_ms": 2869752,
+    "duration_ms": 8880,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2869.752,
+    "text": "So take a look at the end gate. It tries to generally reduce the loss from 0.6 to 0.4 and then so on and so forth, but with the x or that's actually not.",
+    "start_ms": 2869752,
+    "end_ms": 2879752,
+    "duration_ms": 10000,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2880.12,
+    "text": "possible and the sticks around 0.7 or high 0.6 values.",
+    "start_ms": 2880120,
+    "end_ms": 2887120,
+    "duration_ms": 7000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2886.718,
+    "text": "I'm going to quickly show you neural network. Why do we need to use this idea of neural network and what's different in neural network?",
+    "start_ms": 2886718,
+    "end_ms": 2895216,
+    "duration_ms": 8498,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2895.216,
+    "text": "So effectively, what's happening is that I said that we need to come by multiple neurons.",
+    "start_ms": 2895216,
+    "end_ms": 2899136,
+    "duration_ms": 3920,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2899.136,
+    "text": "The neurons are going to read input from each other and then they're going to do the processing and then calculating the output.",
+    "start_ms": 2899136,
+    "end_ms": 2905496,
+    "duration_ms": 6360,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2905.496,
+    "text": "This was a simple neuron, multiple inputs, activation sigmoid, we played with it for end or an x or gate that we had.",
+    "start_ms": 2905496,
+    "end_ms": 2912336,
+    "duration_ms": 6840,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2912.336,
+    "text": "The inputs can actually come from different neurons, It's kind of in the same way that in a brain, different neurons are connected to each other and they do the processing, they pass the output and then the next neuron is going to receive it.",
+    "start_ms": 2912336,
+    "end_ms": 2925936,
+    "duration_ms": 13600,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2925.936,
+    "text": "So we'll see that we can have multiple neurons kind of connected to it together into kind of a neural network, a structure that we have.",
+    "start_ms": 2925936,
+    "end_ms": 2934576,
+    "duration_ms": 8640,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2934.576,
+    "text": "So the configuration that we decide for how the neurons are connected together is going to give us a different function.",
+    "start_ms": 2934576,
+    "end_ms": 2942376,
+    "duration_ms": 7800,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2942.376,
+    "text": "What's happening is that all of these connections are having different weights.",
+    "start_ms": 2942376,
+    "end_ms": 2946656,
+    "duration_ms": 4280,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2946.656,
+    "text": "And what we do in the training is that we go ahead and do one update on all of those weights in order to make sure that our function is optimized and our weights.",
+    "start_ms": 2946656,
+    "end_ms": 2956055,
+    "duration_ms": 9399,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2956.055,
+    "text": "Or we find a combination of weights that is accurately classifying the data points or doing the tasks that we actually want to do.",
+    "start_ms": 2956055,
+    "end_ms": 2965096,
+    "duration_ms": 9041,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2965.624,
+    "text": "So when we say fully connected feed-forward network, that means that all the connections are being made from back, from the previous layer to the next layer, and then all the nodes are connected to each other.",
+    "start_ms": 2965624,
+    "end_ms": 2978064,
+    "duration_ms": 12440,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2978.064,
+    "text": "So for example, here you would see that I have one node right here, and then this node is connected to all of the neurons in the next layer.",
+    "start_ms": 2978064,
+    "end_ms": 2986984,
+    "duration_ms": 8920,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2986.984,
+    "text": "So you would see that there is connection between this neuron and both of the neurons in the next layer.",
+    "start_ms": 2986984,
+    "end_ms": 2991584,
+    "duration_ms": 4600,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2991.584,
+    "text": "So fully connected means that everything is fully connected, Feet forward means that the information is being fed forward from the first layer to the next layer.",
+    "start_ms": 2991584,
+    "end_ms": 2999824,
+    "duration_ms": 8240,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3000.664,
+    "text": "So what you're seeing here is that I have inputs.",
+    "start_ms": 3000664,
+    "end_ms": 3002964,
+    "duration_ms": 2300,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3002.964,
+    "text": "I have, for example, weights on each one of these connections.",
+    "start_ms": 3002964,
+    "end_ms": 3008224,
+    "duration_ms": 5260,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3008.224,
+    "text": "So the value of one is the bias term and then I have weights on all of those connections.",
+    "start_ms": 3008224,
+    "end_ms": 3013264,
+    "duration_ms": 5040,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3013.264,
+    "text": "And hypothetically, if I go ahead and say that I'm inputting the value of one and negative one.",
+    "start_ms": 3013264,
+    "end_ms": 3019584,
+    "duration_ms": 6320,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3019.584,
+    "text": "So assume that this is my x-fun and assume that this is my x-2.",
+    "start_ms": 3019584,
+    "end_ms": 3023824,
+    "duration_ms": 4240,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3024.12,
+    "text": "What's happening in a feed forward neural network is that those inputs are going to actually Calculate the incoming Z to the neuron.",
+    "start_ms": 3024120,
+    "end_ms": 3033480,
+    "duration_ms": 9360,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3033.848,
+    "text": "And the incoming z to this neuron is going to be 1 multiplied to 1.",
+    "start_ms": 3033848,
+    "end_ms": 3039128,
+    "duration_ms": 5280,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3039.384,
+    "text": "and the negative one multiplied to negative two and then adding the bias term so this is going to give me activation or the input activation of Four.",
+    "start_ms": 3039384,
+    "end_ms": 3050732,
+    "duration_ms": 11348,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3051.192,
+    "text": "So what's happening with that input activation of four is that this is my z equal to four is going to be passed to the activation function.",
+    "start_ms": 3051192,
+    "end_ms": 3058192,
+    "duration_ms": 7000,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3058.192,
+    "text": "The activation function is going to decide that the output is going to be point nine eight.",
+    "start_ms": 3058192,
+    "end_ms": 3063192,
+    "duration_ms": 5000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3063.192,
+    "text": "So that's a high activation. This neuron is active. Then depending on the weight between this neuron and for example this other neuron that we have here, whether this weight is positive or this weight is negative.",
+    "start_ms": 3063192,
+    "end_ms": 3077192,
+    "duration_ms": 14000,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3077.192,
+    "text": "Then the next neuron is going to decide whether it uses that input in order to activate itself or deactivate itself.",
+    "start_ms": 3077192,
+    "end_ms": 3084712,
+    "duration_ms": 7520,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3084.712,
+    "text": "Because positive connections are going to amplify excitation and the negative base are going to try to inhibit the neuron from activating.",
+    "start_ms": 3084712,
+    "end_ms": 3094752,
+    "duration_ms": 10040,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3094.752,
+    "text": "Because then it draws the activation to be closer to zero.",
+    "start_ms": 3094752,
+    "end_ms": 3098112,
+    "duration_ms": 3360,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3098.112,
+    "text": "So I'll do exactly the same thing, but the other node is equal to negative two.",
+    "start_ms": 3098112,
+    "end_ms": 3102552,
+    "duration_ms": 4440,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3102.552,
+    "text": "The output is going to be 0.12. And then now I have the inputs available at the second layer.",
+    "start_ms": 3102552,
+    "end_ms": 3109952,
+    "duration_ms": 7400,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3109.952,
+    "text": "So the inputs of the second layer are 0.98.12. Then they can be fed forward and we can really calculate the output from each one of the layers before the output is going to the next layer.",
+    "start_ms": 3109952,
+    "end_ms": 3121632,
+    "duration_ms": 11680,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3121.632,
+    "text": "So sequentially all of those values are going to be calculated.",
+    "start_ms": 3121632,
+    "end_ms": 3125632,
+    "duration_ms": 4000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3125.632,
+    "text": "So what you notice is that when my input was one and negative one, my output is 0.62 and 0.83.",
+    "start_ms": 3125632,
+    "end_ms": 3131912,
+    "duration_ms": 6280,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3132.344,
+    "text": "If I change the input to 0 and 0, I'll get a different output.",
+    "start_ms": 3132344,
+    "end_ms": 3135944,
+    "duration_ms": 3600,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3136.184,
+    "text": "So effectively what's happening is that this neural network is a function.",
+    "start_ms": 3136184,
+    "end_ms": 3140824,
+    "duration_ms": 4640,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3141.08,
+    "text": "Remember that we had a function for linear regression. We had a function for a logistic regression.",
+    "start_ms": 3141080,
+    "end_ms": 3147600,
+    "duration_ms": 6520,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3147.6,
+    "text": "Neural network is also a function. It's just a very complicated function, but multiple different parameters connected to each other so that we can actually learn a more complex function.",
+    "start_ms": 3147600,
+    "end_ms": 3158880,
+    "duration_ms": 11280,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3158.88,
+    "text": "So this is a function input vector going in, output vector going out.",
+    "start_ms": 3158880,
+    "end_ms": 3163520,
+    "duration_ms": 4640,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3163.52,
+    "text": "For example, for the vector of 1 and negative 1, I got this output for another input.",
+    "start_ms": 3163520,
+    "end_ms": 3168600,
+    "duration_ms": 5080,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3168.6,
+    "text": "I'm going to get another output. But the bottom line is that a neural network is structured that you build is going to give you a function set.",
+    "start_ms": 3168600,
+    "end_ms": 3177640,
+    "duration_ms": 9040,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3178.008,
+    "text": "Why am I saying functions set? Because for every combination of all combinations of theta values that you have on the network, you'll have a different function.",
+    "start_ms": 3178008,
+    "end_ms": 3188260,
+    "duration_ms": 10252,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3188.26,
+    "text": "You change the parameters, you'll have a different function. That's why the architecture itself is going to give you a function set that what we're trying to do through the training is that find the optimum function in the function set, meaning that find the optimum set of parameters in the entire network that does the job with the higher accuracy or with the lower loss that we want.",
+    "start_ms": 3188260,
+    "end_ms": 3212780,
+    "duration_ms": 24520,
+    "word_count": 69,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3213.72,
+    "text": "So I'm going to show you some terminology generally in neural network, we would say that we have an input layer, input goes in, we have multiple layers so we can actually stack layers on top of each other and we also have different neurons or different sizes in each one of the layers.",
+    "start_ms": 3213720,
+    "end_ms": 3231720,
+    "duration_ms": 18000,
+    "word_count": 54,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3231.72,
+    "text": "I can say that okay, layer 2 is going to have 10 neurons or layer 2 is going to have 100 neurons and then I can actually build this structure however I want.",
+    "start_ms": 3231720,
+    "end_ms": 3240220,
+    "duration_ms": 8500,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3240.22,
+    "text": "one. I can decide on the number of layers. I can decide on the number of neurons in each one of the layers.",
+    "start_ms": 3240220,
+    "end_ms": 3245264,
+    "duration_ms": 5044,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3245.264,
+    "text": "If it is a fully connected network, all the neurons are going to be connected to the next layer neurons.",
+    "start_ms": 3245264,
+    "end_ms": 3251168,
+    "duration_ms": 5904,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3251.168,
+    "text": "And then at the end, I'm going to also have the output layer.",
+    "start_ms": 3251168,
+    "end_ms": 3254780,
+    "duration_ms": 3612,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3255.192,
+    "text": "So what's happening is that I have input layer, I have output layer and anything in between is called hidden layer.",
+    "start_ms": 3255192,
+    "end_ms": 3261192,
+    "duration_ms": 6000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3261.976,
+    "text": "When you're talking about deep neural network, that means that a neural network that has multiple hidden layers.",
+    "start_ms": 3261976,
+    "end_ms": 3267976,
+    "duration_ms": 6000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3267.976,
+    "text": "So that's just simple as that. Why is having multiple hidden layers important?",
+    "start_ms": 3267976,
+    "end_ms": 3272776,
+    "duration_ms": 4800,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3272.776,
+    "text": "It's because the neural network is going to get more complex, it's going to learn higher complexity features.",
+    "start_ms": 3272776,
+    "end_ms": 3279976,
+    "duration_ms": 7200,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3280.888,
+    "text": "So I'm going to talk to you about why we keep adding neurons and why did I say that as we add number of number of layers, we're going to learn more complex features.",
+    "start_ms": 3280888,
+    "end_ms": 3291688,
+    "duration_ms": 10800,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3291.688,
+    "text": "I'm going to start with a simple example or a simple data set.",
+    "start_ms": 3291688,
+    "end_ms": 3296232,
+    "duration_ms": 4544,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3296.232,
+    "text": "So the test that I'm going to walk you through is handwritten digit classification.",
+    "start_ms": 3296232,
+    "end_ms": 3300989,
+    "duration_ms": 4757,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3300.989,
+    "text": "Assumes that, assume that there is all of these black and white images of handwritten digits, black and white means that I have pixels that are either they have ink.",
+    "start_ms": 3300989,
+    "end_ms": 3312152,
+    "duration_ms": 11163,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3312.712,
+    "text": "I'm going to show those pixels with the value of one or they don't have ink or white and I I should have, but the value of 0.",
+    "start_ms": 3312712,
+    "end_ms": 3320472,
+    "duration_ms": 7760,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3320.472,
+    "text": "So what I'm going to do is I have assuming I have one handwritten digit or image of the handwritten digit.",
+    "start_ms": 3320472,
+    "end_ms": 3329432,
+    "duration_ms": 8960,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3329.432,
+    "text": "Let's assume that I actually go ahead and say that I resize all of these images so that these images are 9 by 7.",
+    "start_ms": 3329432,
+    "end_ms": 3340111,
+    "duration_ms": 10679,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3340.111,
+    "text": "So I have 63 different pixels. So the way that we actually are going to process this kind of image in order to classify it into 10 different classes.",
+    "start_ms": 3340111,
+    "end_ms": 3351952,
+    "duration_ms": 11841,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3351.952,
+    "text": "I have class 0, class 1, all the way to class of digit 9 is that I will serialize all of these pixels.",
+    "start_ms": 3351952,
+    "end_ms": 3358992,
+    "duration_ms": 7040,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3358.992,
+    "text": "I would say that I'm going to take all of the first row.",
+    "start_ms": 3358992,
+    "end_ms": 3362152,
+    "duration_ms": 3160,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3362.152,
+    "text": "I'm going to say that that's input 1, 2, 3, 4, 5, 6, 7.",
+    "start_ms": 3362152,
+    "end_ms": 3366952,
+    "duration_ms": 4800,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3366.952,
+    "text": "And then I'm going to take the second row. I would say that that's pixel input 8, 9, and then so on and so forth.",
+    "start_ms": 3366952,
+    "end_ms": 3372312,
+    "duration_ms": 5360,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3372.312,
+    "text": "So we will serialize it from the top left to the bottom right.",
+    "start_ms": 3372312,
+    "end_ms": 3376952,
+    "duration_ms": 4640,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3377.592,
+    "text": "And then what I would do is I would say that, okay, these are the inputs.",
+    "start_ms": 3377592,
+    "end_ms": 3381192,
+    "duration_ms": 3600,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3381.192,
+    "text": "I have 60 tree inputs instead of two and they're going to go into multiple different layers and so on and so forth.",
+    "start_ms": 3381192,
+    "end_ms": 3388632,
+    "duration_ms": 7440,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3388.632,
+    "text": "And my task is going to do classification. So the output probability or the output labels that I have here is that what is the probability of image belonging to class zero?",
+    "start_ms": 3388632,
+    "end_ms": 3399512,
+    "duration_ms": 10880,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3399.512,
+    "text": "What is the probability of the image belonging to class one all the way to image belonging to class nine?",
+    "start_ms": 3399512,
+    "end_ms": 3404712,
+    "duration_ms": 5200,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3405.368,
+    "text": "Okay, so that's a simple task that I have. But hypothetically, if I want to understand why did I have multiple different layers, and what does each one of these neurons do?",
+    "start_ms": 3405368,
+    "end_ms": 3416088,
+    "duration_ms": 10720,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3416.088,
+    "text": "Let's assume that I'm going to take a look at this neuron in the second layer, and I would say that, okay, this neuron is connected to the input neurons, and I would say that my neuron has a strong connection to the first seven pixels.",
+    "start_ms": 3416088,
+    "end_ms": 3430328,
+    "duration_ms": 14240,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3430.584,
+    "text": "and it has weak connections to the rest of the pixels.",
+    "start_ms": 3430584,
+    "end_ms": 3434384,
+    "duration_ms": 3800,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3434.384,
+    "text": "What kind of feature is this neuron detecting? Again, when the connection is weak, that means that irrespective of what you put in the input, it's just going to be zeroed out.",
+    "start_ms": 3434384,
+    "end_ms": 3452274,
+    "duration_ms": 17890,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3452.274,
+    "text": "So assume that all of these weights are weights that are very close to zero, irrespective of these pixel values, whether they're equal to 1 or zero, they're going to be multiplied with zero so they're not going to have any impact on the output that this neuron creates, right?",
+    "start_ms": 3452274,
+    "end_ms": 3471944,
+    "duration_ms": 19670,
+    "word_count": 50,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3471.866,
+    "text": "looks like that it's paying attention to the first seven pixels.",
+    "start_ms": 3471866,
+    "end_ms": 3476144,
+    "duration_ms": 4278,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3476.44,
+    "text": "Right? What are those seven first seven pixels that I have?",
+    "start_ms": 3476440,
+    "end_ms": 3479988,
+    "duration_ms": 3548,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3479.988,
+    "text": "I said that these first seven pixels are the first row or pixels in the first row that I have.",
+    "start_ms": 3479988,
+    "end_ms": 3486440,
+    "duration_ms": 6452,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3487.096,
+    "text": "What does it mean for my neuron paying attention to the first row?",
+    "start_ms": 3487096,
+    "end_ms": 3490936,
+    "duration_ms": 3840,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3490.936,
+    "text": "It means that this neuron is only going to be activated if there is a strong summation of activation in the inputs meaning that it's going to output one if most of these pixel values are equal to one meaning that if most of those pixel values are black right?",
+    "start_ms": 3490936,
+    "end_ms": 3510696,
+    "duration_ms": 19760,
+    "word_count": 50,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3510.84,
+    "text": "That means that I want to have a horizontal black line at the top.",
+    "start_ms": 3510840,
+    "end_ms": 3514840,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3514.84,
+    "text": "So that's what this feature is actually detecting. This is hypothetically, this is like assuming that after the training, you look at one moon neuron and then you see that there is a strong positive waste of recene.",
+    "start_ms": 3514840,
+    "end_ms": 3526840,
+    "duration_ms": 12000,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3527.896,
+    "text": "So the other thing that we can actually take a look at is that, okay, what if this neuron, this, this is another neuron, has positive connection to, for example, the first three pixels, then it has zero, the weight of zero connected to the, to the rest of the four, and then another three is strong weights and then another four weak weights and so on and so forth.",
+    "start_ms": 3527896,
+    "end_ms": 3552971,
+    "duration_ms": 25075,
+    "word_count": 70,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3552.971,
+    "text": "So again, And that looks like that. We want to have a strong signal here in the first tree.",
+    "start_ms": 3552971,
+    "end_ms": 3559736,
+    "duration_ms": 6765,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3559.736,
+    "text": "Then we're going to ignore everything else right here. Then we want to have another strong signal right here.",
+    "start_ms": 3559736,
+    "end_ms": 3566456,
+    "duration_ms": 6720,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3566.456,
+    "text": "Ignore everything else. The strong signal. Ignore everything else. What does that give us?",
+    "start_ms": 3566456,
+    "end_ms": 3572536,
+    "duration_ms": 6080,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3572.536,
+    "text": "That is actually giving us what we're interested in is a dark circle or a dark area in the top left corner.",
+    "start_ms": 3572536,
+    "end_ms": 3578816,
+    "duration_ms": 6280,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3579.064,
+    "text": "So that's how you can interpret what a neuron is actually doing.",
+    "start_ms": 3579064,
+    "end_ms": 3582664,
+    "duration_ms": 3600,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3582.664,
+    "text": "And in the first layer, neurons are going to be very simple.",
+    "start_ms": 3582664,
+    "end_ms": 3585944,
+    "duration_ms": 3280,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3585.944,
+    "text": "They're looking at the input pixels and they're trying to find features in different regions of the image so that those features can be used for the final task of digit classification.",
+    "start_ms": 3585944,
+    "end_ms": 3596184,
+    "duration_ms": 10240,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3596.184,
+    "text": "Question. There's a good question that is this assuming that there is bias term or not?",
+    "start_ms": 3596184,
+    "end_ms": 3612096,
+    "duration_ms": 15912,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3612.096,
+    "text": "So this is like a very simple explanation of a feature.",
+    "start_ms": 3612096,
+    "end_ms": 3615136,
+    "duration_ms": 3040,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3615.136,
+    "text": "Assume that there is no bias term and just assume that those are the only kind of connections that I have.",
+    "start_ms": 3615136,
+    "end_ms": 3621376,
+    "duration_ms": 6240,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3621.376,
+    "text": "I have a bunch of strong connections and a bunch of weak connections and the idea of weak connection is that those neurons or those inputs, whatever they say, we ignore.",
+    "start_ms": 3621376,
+    "end_ms": 3630096,
+    "duration_ms": 8720,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3630.096,
+    "text": "We don't listen to them. We don't look at them and then we pay attention to the strong connections.",
+    "start_ms": 3630096,
+    "end_ms": 3635616,
+    "duration_ms": 5520,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3635.616,
+    "text": "Right, so the term attention that you'll hear probably in deep learning is kind of coming from the same idea that like which area or what feature we're paying attention to So here we're picking dark area in the specific region, so that's kind of generally one feature detector.",
+    "start_ms": 3635616,
+    "end_ms": 3654784,
+    "duration_ms": 19168,
+    "word_count": 49,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3654.784,
+    "text": "So you can think about each one of those neurons as actually small feature detectors that we have.",
+    "start_ms": 3654784,
+    "end_ms": 3660344,
+    "duration_ms": 5560,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3660.344,
+    "text": "But each one of these features are actually very simple.",
+    "start_ms": 3660344,
+    "end_ms": 3663624,
+    "duration_ms": 3280,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3663.624,
+    "text": "What we need is a very complicated set of features, or a complicated set of feature detectors in order to complete the job.",
+    "start_ms": 3663624,
+    "end_ms": 3671624,
+    "duration_ms": 8000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3671.624,
+    "text": "So for example, if you're looking at all of the different variety of handwritten digits that we have.",
+    "start_ms": 3671624,
+    "end_ms": 3677384,
+    "duration_ms": 5760,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3677.384,
+    "text": "In order to be able to do this 9-way classification or 10-way classification that we have, we need to have, for example, detect vertical lines.",
+    "start_ms": 3677384,
+    "end_ms": 3686104,
+    "duration_ms": 8720,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3686.104,
+    "text": "If there is a vertical line, there is more probability that, for example, a digit is 1 compared to a digit being equal to 0.",
+    "start_ms": 3686104,
+    "end_ms": 3694024,
+    "duration_ms": 7920,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3694.024,
+    "text": "That's how you can think about why those features are important.",
+    "start_ms": 3694024,
+    "end_ms": 3698264,
+    "duration_ms": 4240,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3698.264,
+    "text": "For example, we might need to detect horizontal lines. If you have a horizontal line, it's more likely for your digit to be, for example, a digit of two compared to a digit of one.",
+    "start_ms": 3698264,
+    "end_ms": 3708783,
+    "duration_ms": 10519,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3708.783,
+    "text": "So you can think about those features being very important in aggregate when you're trying to find patterns to distinguish between the classes.",
+    "start_ms": 3708783,
+    "end_ms": 3717264,
+    "duration_ms": 8481,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3717.264,
+    "text": "And then obviously, we can also find circles. Like one doesn't have circle, but two or nine or six, they can have circles in those images.",
+    "start_ms": 3717264,
+    "end_ms": 3726264,
+    "duration_ms": 9000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3726.264,
+    "text": "But the issue is that I have a small feature detectors.",
+    "start_ms": 3726264,
+    "end_ms": 3729424,
+    "duration_ms": 3160,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3729.424,
+    "text": "I showed you that, OK, I can detect a horizontal line.",
+    "start_ms": 3729424,
+    "end_ms": 3732943,
+    "duration_ms": 3519,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3732.944,
+    "text": "I can detect a vertical line, I can detect kind of a circle or black area in the rich region.",
+    "start_ms": 3732944,
+    "end_ms": 3739484,
+    "duration_ms": 6540,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3739.484,
+    "text": "But they are always positioned specific, because I was connecting to the first seven pixels.",
+    "start_ms": 3739484,
+    "end_ms": 3744704,
+    "duration_ms": 5220,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3744.704,
+    "text": "I was connecting to the second seven pixels, for example.",
+    "start_ms": 3744704,
+    "end_ms": 3748504,
+    "duration_ms": 3800,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3748.504,
+    "text": "So it was always position dependent. How can I actually make it position invariant?",
+    "start_ms": 3748504,
+    "end_ms": 3753904,
+    "duration_ms": 5400,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3754.936,
+    "text": "In order to make a position in variance, so you can think about having the input layer going into the first layer, the first layer being a bunch of different weak learners.",
+    "start_ms": 3754936,
+    "end_ms": 3764936,
+    "duration_ms": 10000,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3764.936,
+    "text": "Or they are detecting lower level features for us. So I can build for example one neuron that detects the first line or first horizontal line second horizontal line third horizontal line and so on and so forth.",
+    "start_ms": 3764936,
+    "end_ms": 3778936,
+    "duration_ms": 14000,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3779.416,
+    "text": "and then I can add position invariance by taking or between them.",
+    "start_ms": 3779416,
+    "end_ms": 3783776,
+    "duration_ms": 4360,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3783.776,
+    "text": "I can say that do you have a horizontal line at all or not and we know how we can build or gate.",
+    "start_ms": 3783776,
+    "end_ms": 3789856,
+    "duration_ms": 6080,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3789.856,
+    "text": "So that's why we need to add layers. You can see that the neuron that I have in the second layer is more complex than the neuron in the first layer.",
+    "start_ms": 3789856,
+    "end_ms": 3798096,
+    "duration_ms": 8240,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3798.096,
+    "text": "Because the second one, not only that it detects the horizontal line but is also not positioned as specific.",
+    "start_ms": 3798096,
+    "end_ms": 3804696,
+    "duration_ms": 6600,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3804.696,
+    "text": "I can do exactly the same thing with other features.",
+    "start_ms": 3804696,
+    "end_ms": 3807256,
+    "duration_ms": 2560,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3807.256,
+    "text": "I can detect vertical lines anywhere, I can detect circles, any verse on and so forth.",
+    "start_ms": 3807256,
+    "end_ms": 3813416,
+    "duration_ms": 6160,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3813.416,
+    "text": "And then what I can do is I can actually add another layer that takes into this information and says that okay, like, What if I have a vertical line and I have circles but I don't have a horizontal line.",
+    "start_ms": 3813416,
+    "end_ms": 3828800,
+    "duration_ms": 15384,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3828.8,
+    "text": "I'm not paying attention to horizontal line. I'm just going to ignore whatever you say.",
+    "start_ms": 3828800,
+    "end_ms": 3832600,
+    "duration_ms": 3800,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3833.048,
+    "text": "So what kind of digit am I extracting here? This is probably a digit of nine or a digit of six right so that's why then combining all of those with different kinds of combination of weights is going to actually help you to actually do the full classification test.",
+    "start_ms": 3833048,
+    "end_ms": 3850712,
+    "duration_ms": 17664,
+    "word_count": 50,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3851.416,
+    "text": "So what I'll do is I will actually skip the next part.",
+    "start_ms": 3851416,
+    "end_ms": 3855616,
+    "duration_ms": 4200,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3855.616,
+    "text": "So the next part is actually going to talk about why, how we can actually do multi-class classification.",
+    "start_ms": 3855616,
+    "end_ms": 3862776,
+    "duration_ms": 7160,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3862.776,
+    "text": "The idea is that we have multi-different classes and what we need to do is we take all of these activations.",
+    "start_ms": 3862776,
+    "end_ms": 3870536,
+    "duration_ms": 7760,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3870.536,
+    "text": "And instead of using those activations directly, we will normalize those activations so that those activations form a probability function.",
+    "start_ms": 3870536,
+    "end_ms": 3878896,
+    "duration_ms": 8360,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3878.896,
+    "text": "And then you can actually compare the probability of class 0 versus probability of class 1 and so on and so forth.",
+    "start_ms": 3878896,
+    "end_ms": 3885596,
+    "duration_ms": 6700,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3885.596,
+    "text": "So what's happening is that instead of me passing each one of those activations in the output layer to a sigmoid function and get independent probabilities, then what I'll have is I will actually have something that's called softmax layer.",
+    "start_ms": 3885596,
+    "end_ms": 3900396,
+    "duration_ms": 14800,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3900.792,
+    "text": "That is actually going to take these activations in the input.",
+    "start_ms": 3900792,
+    "end_ms": 3905392,
+    "duration_ms": 4600,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3905.392,
+    "text": "It will apply a certain function called softmax function. Again, I'm not going to go over that.",
+    "start_ms": 3905392,
+    "end_ms": 3910592,
+    "duration_ms": 5200,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3910.592,
+    "text": "That will turn the output layer into a set of probabilities as opposed to individual probabilities.",
+    "start_ms": 3910592,
+    "end_ms": 3917392,
+    "duration_ms": 6800,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3917.392,
+    "text": "So now we can compare them a little bit more.",
+    "start_ms": 3917392,
+    "end_ms": 3919892,
+    "duration_ms": 2500,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3919.892,
+    "text": "Concretely, that is more likely for the data point that we have to belong to class 1 as opposed to class 2 because the probability is 88% as opposed to 12%.",
+    "start_ms": 3919892,
+    "end_ms": 3930792,
+    "duration_ms": 10900,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3931.608,
+    "text": "So. The next piece is kind of simple. The idea of, now you know that the idea of deep neural network is that we add multiple different hidden layers.",
+    "start_ms": 3931608,
+    "end_ms": 3942968,
+    "duration_ms": 11360,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3942.968,
+    "text": "If we add multiple different hidden layers, the complexity of the function that we're going to train is going to increase.",
+    "start_ms": 3942968,
+    "end_ms": 3949368,
+    "duration_ms": 6400,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3949.368,
+    "text": "And then we are going to be able to learn more non-linear patterns.",
+    "start_ms": 3949368,
+    "end_ms": 3954368,
+    "duration_ms": 5000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3954.368,
+    "text": "The general idea comes from universality term in universality term.",
+    "start_ms": 3954368,
+    "end_ms": 3959088,
+    "duration_ms": 4720,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3959.088,
+    "text": "They're saying that we can learn any function that maps an end-dimensional input to an M-dimensional output.",
+    "start_ms": 3959088,
+    "end_ms": 3968368,
+    "duration_ms": 9280,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3968.728,
+    "text": "Using one hidden one neural network with one hidden layer that is large enough so the look the neural that that hidden layer should be large enough for us to be able to realize that function.",
+    "start_ms": 3968728,
+    "end_ms": 3981728,
+    "duration_ms": 13000,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3981.728,
+    "text": "But the idea is that if we go ahead and want to realize any complex function, the size of that layer is going to grow very big and it's going to be a very exponential.",
+    "start_ms": 3981728,
+    "end_ms": 3994928,
+    "duration_ms": 13200,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3994.928,
+    "text": "So the idea that we'll use is we'll actually try to break down this entire fact, hidden layer, and stack them together and make it a deep neural network.",
+    "start_ms": 3994928,
+    "end_ms": 4005368,
+    "duration_ms": 10440,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4005.368,
+    "text": "And if you actually go ahead and take a look at the visualization that I link here, it's very useful for you to get some ideas.",
+    "start_ms": 4005368,
+    "end_ms": 4012567,
+    "duration_ms": 7199,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4012.567,
+    "text": "So we use ideas from logic circuit. Then in logic circuit, we can actually build any function with two layers.",
+    "start_ms": 4012567,
+    "end_ms": 4019408,
+    "duration_ms": 6841,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4019.408,
+    "text": "But if we actually stack them into multiple different layers, the number of gates that we're actually going to use is going to be reduced.",
+    "start_ms": 4019408,
+    "end_ms": 4026448,
+    "duration_ms": 7040,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4026.448,
+    "text": "So that's also the same thing that we know we can realize any function with one hidden layer of large size or large number of neurons.",
+    "start_ms": 4026448,
+    "end_ms": 4037008,
+    "duration_ms": 10560,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4037.008,
+    "text": "But if we actually stack them together, we're going to actually require less number of neurons and less number of neurons means less number of parameters that we have.",
+    "start_ms": 4037008,
+    "end_ms": 4046928,
+    "duration_ms": 9920,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4046.928,
+    "text": "If we have less number of parameters, their training is going to be simpler, and then we're going to require less data to do the training for us.",
+    "start_ms": 4046928,
+    "end_ms": 4054568,
+    "duration_ms": 7640,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4055.256,
+    "text": "So I want to quickly move us to the demo.",
+    "start_ms": 4055256,
+    "end_ms": 4058710,
+    "duration_ms": 3454,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4058.71,
+    "text": "We have 10-12 minutes to take a look at a very fun...",
+    "start_ms": 4058710,
+    "end_ms": 4062856,
+    "duration_ms": 4146,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4063.384,
+    "text": "Demel for us on Neural Network and PyTorch. Thank you very much.",
+    "start_ms": 4063384,
+    "end_ms": 4068624,
+    "duration_ms": 5240,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4068.952,
+    "text": "I love this stuff. I should get some background stories.",
+    "start_ms": 4068952,
+    "end_ms": 4071504,
+    "duration_ms": 2552,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4071.504,
+    "text": "It's kind of fun. So we're playing digits. Did you know we were using this stuff in like the early 1990s?",
+    "start_ms": 4071504,
+    "end_ms": 4076916,
+    "duration_ms": 5412,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4076.916,
+    "text": "In fact, when you're shipping, you know, sending a message in mail, or if you went to an ATM, that's an automated teller machine.",
+    "start_ms": 4076916,
+    "end_ms": 4083372,
+    "duration_ms": 6456,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4083.372,
+    "text": "It's a place where you stick your card and get cash out of.",
+    "start_ms": 4083372,
+    "end_ms": 4085972,
+    "duration_ms": 2600,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4085.972,
+    "text": "If you went to one of those, if you went to a positive check, which is something people used to do, you would read the check using this technology in the 90s.",
+    "start_ms": 4085972,
+    "end_ms": 4093572,
+    "duration_ms": 7600,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4093.572,
+    "text": "Early 90s is crazy. It's this old stuff. There was a period in time when it was terror like...",
+    "start_ms": 4093572,
+    "end_ms": 4098812,
+    "duration_ms": 5240,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4099.032,
+    "text": "That was a grad student. Early 2000s, when we didn't research this stuff, it wasn't trendy because the models didn't work.",
+    "start_ms": 4099032,
+    "end_ms": 4104772,
+    "duration_ms": 5740,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4104.772,
+    "text": "There's a classic result that said we couldn't scale these things to really, really complex function out making these things exponentially big.",
+    "start_ms": 4104772,
+    "end_ms": 4111612,
+    "duration_ms": 6840,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4111.612,
+    "text": "And then I guess in the 2010s, 2015 era, we switched back to everything as a neural net.",
+    "start_ms": 4111612,
+    "end_ms": 4117332,
+    "duration_ms": 5720,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4117.332,
+    "text": "And so now we do almost all the things we do in neural nets today.",
+    "start_ms": 4117332,
+    "end_ms": 4120932,
+    "duration_ms": 3600,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4120.932,
+    "text": "Scikit-learn is a cool package. It doesn't do neural nets, so.",
+    "start_ms": 4120932,
+    "end_ms": 4124732,
+    "duration_ms": 3800,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4125.336,
+    "text": "We don't use that for this part of the class.",
+    "start_ms": 4125336,
+    "end_ms": 4127736,
+    "duration_ms": 2400,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4127.736,
+    "text": "So I'm going to show you a notebook that I spent too much time tweaking.",
+    "start_ms": 4127736,
+    "end_ms": 4130736,
+    "duration_ms": 3000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4130.736,
+    "text": "But it's fun notebook. So we're going to look at an interesting task.",
+    "start_ms": 4130736,
+    "end_ms": 4134736,
+    "duration_ms": 4000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4134.736,
+    "text": "So a lot of this visualization code is way out of scope for this class.",
+    "start_ms": 4134736,
+    "end_ms": 4137736,
+    "duration_ms": 3000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4137.736,
+    "text": "But if you want to learn about how to do fun visualizations, check it out.",
+    "start_ms": 4137736,
+    "end_ms": 4140736,
+    "duration_ms": 3000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4140.736,
+    "text": "Let's just go ahead and run through this and set up our toy data set.",
+    "start_ms": 4140736,
+    "end_ms": 4144136,
+    "duration_ms": 3400,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4144.136,
+    "text": "So here's our new toy data set. Is this linearly separable?",
+    "start_ms": 4144136,
+    "end_ms": 4148360,
+    "duration_ms": 4224,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4148.664,
+    "text": "No. So let's go ahead and build a neural network to process this data.",
+    "start_ms": 4148664,
+    "end_ms": 4152528,
+    "duration_ms": 3864,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4153.24,
+    "text": "Perdelo, sir. I was performing a create tensors. One thing I was kind of neat here, I'm using these 32-bit tensors, these 32-bit precision tensors.",
+    "start_ms": 4153240,
+    "end_ms": 4162520,
+    "duration_ms": 9280,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4162.52,
+    "text": "The reason we work with tensors in PyTorch is often actually also been working on a GPU.",
+    "start_ms": 4162520,
+    "end_ms": 4167520,
+    "duration_ms": 5000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4167.52,
+    "text": "I'm not showing this today, but it's very easy to tell PyTorch to move this tensor to a GPU, and then when I do this matrix multiply all this math, it will all run on my GPU many, many times faster.",
+    "start_ms": 4167520,
+    "end_ms": 4177520,
+    "duration_ms": 10000,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4177.52,
+    "text": "There's another reason we use tensors. Alright, time for the set.",
+    "start_ms": 4177520,
+    "end_ms": 4181248,
+    "duration_ms": 3728,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4181.248,
+    "text": "Choop. All right, so logistic regression model. Here I'm going to use the linear layer.",
+    "start_ms": 4181248,
+    "end_ms": 4188036,
+    "duration_ms": 6788,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4188.036,
+    "text": "So linear layer is a bias plus these weights. So it's a standard layer we've been talking about the whole way through.",
+    "start_ms": 4188036,
+    "end_ms": 4193476,
+    "duration_ms": 5440,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4193.476,
+    "text": "When we build networks, we don't typically write individual parameters today.",
+    "start_ms": 4193476,
+    "end_ms": 4196576,
+    "duration_ms": 3100,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4196.576,
+    "text": "We say, I want a linear layer, I want a con layer, I want these transformer blocks.",
+    "start_ms": 4196576,
+    "end_ms": 4200556,
+    "duration_ms": 3980,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4200.556,
+    "text": "So it's very easy to write one function. Like that to express really interesting architectures.",
+    "start_ms": 4200556,
+    "end_ms": 4206352,
+    "duration_ms": 5796,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4206.352,
+    "text": "And so there's architecture representing the fact that full collections of networks I can put as just one layer inside of my model.",
+    "start_ms": 4206352,
+    "end_ms": 4212352,
+    "duration_ms": 6000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4212.352,
+    "text": "And so when you look at PyTorch code for, you know, state-the-art models, they might have like five or six lines where it says like this giant architecture connected to this other giant architecture.",
+    "start_ms": 4212352,
+    "end_ms": 4220352,
+    "duration_ms": 8000,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4220.352,
+    "text": "That's my model. So in these init functions, I'm defining the thing that my models have a linear layer, that's it, this is a registered regression model starting small.",
+    "start_ms": 4220352,
+    "end_ms": 4229256,
+    "duration_ms": 8904,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4230.136,
+    "text": "The forward function is where all the magic happens. This is the function that would take an input.",
+    "start_ms": 4230136,
+    "end_ms": 4237496,
+    "duration_ms": 7360,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4237.368,
+    "text": "And when I write this word function I'm telling the model I'm telling pie torch how to compute the output of this model it's building up the architecture not just you know defining the parameters but actually using them to make a producer result from some input.",
+    "start_ms": 4237368,
+    "end_ms": 4251912,
+    "duration_ms": 14544,
+    "word_count": 47,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4255.0,
+    "text": "We're using cross-entry P loss. We use the binary cross-entry loss before.",
+    "start_ms": 4255000,
+    "end_ms": 4259000,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4259.512,
+    "text": "Little subtleties. So before I was predicting one number, the probability of class one, now I'm going to start to predict the probability of class zero if you end, because I want to do multi-class.",
+    "start_ms": 4259512,
+    "end_ms": 4267512,
+    "duration_ms": 8000,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4267.512,
+    "text": "In binary, I have two classes. So I'm going to predict two probabilities.",
+    "start_ms": 4267512,
+    "end_ms": 4269845,
+    "duration_ms": 2333,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4269.845,
+    "text": "So you go back to my forward function, and compute p, but it would turn two numbers, one minus p and p.",
+    "start_ms": 4269845,
+    "end_ms": 4277512,
+    "duration_ms": 7667,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4277.512,
+    "text": "Right? Probably class zero, one minus P, probably class one, P.",
+    "start_ms": 4277512,
+    "end_ms": 4283032,
+    "duration_ms": 5520,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4283.032,
+    "text": "Now I can use a cross-entity loss, which will work for any number of dimensions.",
+    "start_ms": 4283032,
+    "end_ms": 4286552,
+    "duration_ms": 3520,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4287.512,
+    "text": "Sure any number of classes. Some more visualization code that I spent too much time on, so just it's pretty cool.",
+    "start_ms": 4287512,
+    "end_ms": 4293940,
+    "duration_ms": 6428,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4293.94,
+    "text": "I won't walk through it. I do want to walk to the optimizer.",
+    "start_ms": 4293940,
+    "end_ms": 4296280,
+    "duration_ms": 2340,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4296.28,
+    "text": "So I taught SGD in this class. I promised you this was what we use in state-yard systems.",
+    "start_ms": 4296280,
+    "end_ms": 4300555,
+    "duration_ms": 4275,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4300.555,
+    "text": "So here is state-yard code doing this. As NARG has said before, we're using these data loaders.",
+    "start_ms": 4300555,
+    "end_ms": 4306920,
+    "duration_ms": 6365,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4306.92,
+    "text": "They're going to allow us to pull a batch of data into the computation.",
+    "start_ms": 4306920,
+    "end_ms": 4310200,
+    "duration_ms": 3280,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4311.16,
+    "text": "The loss of help is move stuff to GPU. So if we were computer GPU this would take care of that for us.",
+    "start_ms": 4311160,
+    "end_ms": 4315560,
+    "duration_ms": 4400,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4316.056,
+    "text": "I just want to walk to this code because this is sshd.",
+    "start_ms": 4316056,
+    "end_ms": 4318296,
+    "duration_ms": 2240,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4318.296,
+    "text": "It's review for for the exam. I loop over E-Pox, but it wasn't E-Pox.",
+    "start_ms": 4318296,
+    "end_ms": 4322472,
+    "duration_ms": 4176,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4324.152,
+    "text": "One pass to the data. Within each pot, it was in each epoch.",
+    "start_ms": 4324152,
+    "end_ms": 4328984,
+    "duration_ms": 4832,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4328.984,
+    "text": "I'm going to pull a batch of data out. So batch number, it's just an ID.",
+    "start_ms": 4328984,
+    "end_ms": 4332184,
+    "duration_ms": 3200,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4332.6,
+    "text": "And that's going to be a subset of my data, a little block of X and Ys.",
+    "start_ms": 4332600,
+    "end_ms": 4336200,
+    "duration_ms": 3600,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4338.136,
+    "text": "I'm shuffling it, doing SGD. I set my optimizer to zero so I'm initializing optimization step.",
+    "start_ms": 4338136,
+    "end_ms": 4344208,
+    "duration_ms": 6072,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4344.952,
+    "text": "I compute a prediction by just running my Model on X.",
+    "start_ms": 4344952,
+    "end_ms": 4347952,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4349.816,
+    "text": "and I can beat the loss. Where is gradient descent happening?",
+    "start_ms": 4349816,
+    "end_ms": 4353360,
+    "duration_ms": 3544,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4353.36,
+    "text": "This is gradient descent. in the backwards step. the lost.",
+    "start_ms": 4353360,
+    "end_ms": 4360352,
+    "duration_ms": 6992,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4360.6,
+    "text": "I'm computing the gradient. This is Calculus in 2025, right?",
+    "start_ms": 4360600,
+    "end_ms": 4365928,
+    "duration_ms": 5328,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4366.328,
+    "text": "We just say backward. This system automatically does all the math to compute the gradient.",
+    "start_ms": 4366328,
+    "end_ms": 4370968,
+    "duration_ms": 4640,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4371.736,
+    "text": "The optimizer. Is going to then take that gradient and do the weight update to my model parameters.",
+    "start_ms": 4371736,
+    "end_ms": 4377144,
+    "duration_ms": 5408,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4378.776,
+    "text": "Here I'm using the Adam Optimizer, which is Stady Optimizer, so it's Stady Art Code.",
+    "start_ms": 4378776,
+    "end_ms": 4382376,
+    "duration_ms": 3600,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4382.648,
+    "text": "This optimizer is to cast a gradient, but it's setting a bunch of extra parameters to make sure this thing is stable.",
+    "start_ms": 4382648,
+    "end_ms": 4387648,
+    "duration_ms": 5000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4388.216,
+    "text": "Now we can try running this. That's my code. Moving through it now you can see...",
+    "start_ms": 4388216,
+    "end_ms": 4393992,
+    "duration_ms": 5776,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4394.488,
+    "text": "Oops, I... You can see... trying to solve a logistic regression model for this data set.",
+    "start_ms": 4394488,
+    "end_ms": 4400376,
+    "duration_ms": 5888,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4402.04,
+    "text": "The loss is going down. Why is it going down?",
+    "start_ms": 4402040,
+    "end_ms": 4404040,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4405.496,
+    "text": "I can't fit this state of logistic regression. A good review for the exam.",
+    "start_ms": 4405496,
+    "end_ms": 4410760,
+    "duration_ms": 5264,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4411.064,
+    "text": "I'm changing the logistic regression model so that it is flat as possible saying I don't know.",
+    "start_ms": 4411064,
+    "end_ms": 4417064,
+    "duration_ms": 6000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4417.4,
+    "text": "Probably 0.5 all the way through here. It could be class 1 or class 2.",
+    "start_ms": 4417400,
+    "end_ms": 4420600,
+    "duration_ms": 3200,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4422.2,
+    "text": "So I use logistic regression and I fit something that's truly non-non-separable.",
+    "start_ms": 4422200,
+    "end_ms": 4426440,
+    "duration_ms": 4240,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4426.776,
+    "text": "The best I can guess, the best model is just, I don't know, .5 the Hueh Hueh.",
+    "start_ms": 4426776,
+    "end_ms": 4430176,
+    "duration_ms": 3400,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4430.176,
+    "text": "So there is an improvement. But still a terrible model, right?",
+    "start_ms": 4430176,
+    "end_ms": 4432776,
+    "duration_ms": 2600,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4432.776,
+    "text": "Makes bad predictions. That's Dylan Earl Network. So I'm going to build a neural network with two hidden layers.",
+    "start_ms": 4432776,
+    "end_ms": 4439912,
+    "duration_ms": 7136,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4440.216,
+    "text": "So I have a 2 by 8 and 8 by 8 and I'm going to convert that 8 by 8 back to 1.",
+    "start_ms": 4440216,
+    "end_ms": 4445496,
+    "duration_ms": 5280,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4445.496,
+    "text": "So it's a two hidden layers I take two inputs, make an 8, 8 neuron layer, beat an 8 neuron, 8 input to 8 output neuron layer and then combine those results.",
+    "start_ms": 4445496,
+    "end_ms": 4470056,
+    "duration_ms": 24560,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4470.2,
+    "text": "I apply that hidden layer. That's just a linear layer.",
+    "start_ms": 4470200,
+    "end_ms": 4473552,
+    "duration_ms": 3352,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4473.552,
+    "text": "Then I put a tan H non-linearity. I could use any number of non-linearities tan H is another one.",
+    "start_ms": 4473552,
+    "end_ms": 4477952,
+    "duration_ms": 4400,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4477.952,
+    "text": "It's like a sigmoid bit goes from negative 1 to 1.",
+    "start_ms": 4477952,
+    "end_ms": 4480452,
+    "duration_ms": 2500,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4481.88,
+    "text": "Then I take the output of that, that's the output my first in layer, I call that x again, I make that the input to my next in layer.",
+    "start_ms": 4481880,
+    "end_ms": 4487880,
+    "duration_ms": 6000,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4490.136,
+    "text": "And I take its output and make that the input to my next hidden layer.",
+    "start_ms": 4490136,
+    "end_ms": 4494136,
+    "duration_ms": 4000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4497.08,
+    "text": "Output is the final layer that's combining those into one number.",
+    "start_ms": 4497080,
+    "end_ms": 4500600,
+    "duration_ms": 3520,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4500.856,
+    "text": "I take the sigmoid to make that a zero one thing, a probability, and now I've computed a neural net.",
+    "start_ms": 4500856,
+    "end_ms": 4505856,
+    "duration_ms": 5000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4507.352,
+    "text": "So I did. So input through a non-linear, through a, a, a, a layer that takes two inputs and produces eight outputs.",
+    "start_ms": 4507352,
+    "end_ms": 4514576,
+    "duration_ms": 7224,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4515.128,
+    "text": "That's my new output. Now I have eight dimensions, eight hidden outputs.",
+    "start_ms": 4515128,
+    "end_ms": 4518556,
+    "duration_ms": 3428,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4518.556,
+    "text": "I feed that into something that's eight by eight. So it takes eight things in, produce another eight.",
+    "start_ms": 4518556,
+    "end_ms": 4522928,
+    "duration_ms": 4372,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4522.928,
+    "text": "And I take those eight and collect them back to one.",
+    "start_ms": 4522928,
+    "end_ms": 4525128,
+    "duration_ms": 2200,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4527.288,
+    "text": "When we build neural nets, we can't initialize the weights to just zero or one.",
+    "start_ms": 4527288,
+    "end_ms": 4531528,
+    "duration_ms": 4240,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4531.528,
+    "text": "It won't work. In fact, you could think through it by make all my weight zero what happens to these models.",
+    "start_ms": 4531528,
+    "end_ms": 4536408,
+    "duration_ms": 4880,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4536.408,
+    "text": "I can no longer optimize them. So we tend to initialize them to something that's close to zero, so it's a stable optimization process, but not truly zero.",
+    "start_ms": 4536408,
+    "end_ms": 4543918,
+    "duration_ms": 7510,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4543.918,
+    "text": "There's a whole field of how to better optimize your models or how to better initialize them.",
+    "start_ms": 4543918,
+    "end_ms": 4554248,
+    "duration_ms": 10330,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4554.226,
+    "text": "I have a model. I can initialize my weights for that model and I can use the same logistic regression or optimization code I use for logistic regression for this neural net.",
+    "start_ms": 4554226,
+    "end_ms": 4563544,
+    "duration_ms": 9318,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4563.544,
+    "text": "Same code. And now we get to see it happen.",
+    "start_ms": 4563544,
+    "end_ms": 4566054,
+    "duration_ms": 2510,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4566.054,
+    "text": "This is the cool stuff. So this is now we're running in real time.",
+    "start_ms": 4566054,
+    "end_ms": 4569256,
+    "duration_ms": 3202,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4569.848,
+    "text": "It's trying to classify this data. These are the decision boundaries you can zoom out a little bit so it's going on.",
+    "start_ms": 4569848,
+    "end_ms": 4574848,
+    "duration_ms": 5000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4575.672,
+    "text": "This is decision boundary it's learning to try to classify this.",
+    "start_ms": 4575672,
+    "end_ms": 4578291,
+    "duration_ms": 2619,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4578.291,
+    "text": "This is the loss as it goes in real time.",
+    "start_ms": 4578291,
+    "end_ms": 4580672,
+    "duration_ms": 2381,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4580.672,
+    "text": "So you know a little bit. You can see it's getting closer and closer to fitting the data.",
+    "start_ms": 4580672,
+    "end_ms": 4584672,
+    "duration_ms": 4000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4584.632,
+    "text": "So this is my three hidden layer neural network optimizing for this data set.",
+    "start_ms": 4584632,
+    "end_ms": 4589272,
+    "duration_ms": 4640,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4589.272,
+    "text": "And when I am done. which is going slowly. When I'm done, I should have something that is pretty close to fitting my data.",
+    "start_ms": 4589272,
+    "end_ms": 4599960,
+    "duration_ms": 10688,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4600.632,
+    "text": "You super cool, right? You'll notice that probably transitions are some uncertainty of zoom in here that we can Zoom in here.",
+    "start_ms": 4600632,
+    "end_ms": 4609473,
+    "duration_ms": 8841,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4609.473,
+    "text": "There's some transition that Z values my probability as I go from class zero, Z is zero.",
+    "start_ms": 4609473,
+    "end_ms": 4614786,
+    "duration_ms": 5313,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4614.786,
+    "text": "I'll over here to class one, getting higher probability, being class one.",
+    "start_ms": 4614786,
+    "end_ms": 4618536,
+    "duration_ms": 3750,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4618.536,
+    "text": "You saw my loss. This is the cross-century loss. Is it decreased?",
+    "start_ms": 4618536,
+    "end_ms": 4622536,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4622.264,
+    "text": "All the way to 0.45. Cross entry is hard to interpret, but that's the loss is going down, so I did optimize my model.",
+    "start_ms": 4622264,
+    "end_ms": 4629264,
+    "duration_ms": 7000,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4629.912,
+    "text": "So that is one example of a simple architecture. You can play with this offline.",
+    "start_ms": 4629912,
+    "end_ms": 4635784,
+    "duration_ms": 5872,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4635.784,
+    "text": "Here's a neural network module, a narysexure. This is a very good one.",
+    "start_ms": 4635784,
+    "end_ms": 4639937,
+    "duration_ms": 4153,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4639.937,
+    "text": "This module lets you pick different activation functions, different number of hidden layers, number of neurons in each hidden layer.",
+    "start_ms": 4639937,
+    "end_ms": 4649784,
+    "duration_ms": 9847,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4649.634,
+    "text": "these and see how they fail or succeed. So this is now an interactive visualization.",
+    "start_ms": 4649634,
+    "end_ms": 4656504,
+    "duration_ms": 6870,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4656.504,
+    "text": "So I can change this as two hidden layers. I can say I want.",
+    "start_ms": 4656504,
+    "end_ms": 4659504,
+    "duration_ms": 3000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4659.896,
+    "text": "Let's do three hidden layers. Can run the optimization again.",
+    "start_ms": 4659896,
+    "end_ms": 4663316,
+    "duration_ms": 3420,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4663.316,
+    "text": "It's pretty good. I can change the learning rate and batch sizes.",
+    "start_ms": 4663316,
+    "end_ms": 4666708,
+    "duration_ms": 3392,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4666.708,
+    "text": "You know, we talked about these in class because you need to know them if I set them wrong.",
+    "start_ms": 4666708,
+    "end_ms": 4670008,
+    "duration_ms": 3300,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4670.488,
+    "text": "But this high maybe I said the batch size low what's gonna happen.",
+    "start_ms": 4670488,
+    "end_ms": 4673088,
+    "duration_ms": 2600,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4673.688,
+    "text": "It's gonna go all over the place. Can optimize. Right.",
+    "start_ms": 4673688,
+    "end_ms": 4676674,
+    "duration_ms": 2986,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4676.674,
+    "text": "So these are why we need to know about these parameters for test to cast the gradient.",
+    "start_ms": 4676674,
+    "end_ms": 4680216,
+    "duration_ms": 3542,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4680.216,
+    "text": "This is how you will set these models. In practice, you will download someone else's model and change these things until you get results that go down and look nice and smooth.",
+    "start_ms": 4680216,
+    "end_ms": 4688072,
+    "duration_ms": 7856,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4688.408,
+    "text": "If you're looking at a learning curve like this you go, hmm, that is too noisy.",
+    "start_ms": 4688408,
+    "end_ms": 4691408,
+    "duration_ms": 3000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4691.408,
+    "text": "Let's make the batch size a little bigger. and it's make the linear a little bit smaller.",
+    "start_ms": 4691408,
+    "end_ms": 4696424,
+    "duration_ms": 5016,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4698.104,
+    "text": "That's a better learning, better curve. So I'm pretty happy with that result.",
+    "start_ms": 4698104,
+    "end_ms": 4701104,
+    "duration_ms": 3000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4701.528,
+    "text": "So this is how you would use neural networks in practice.",
+    "start_ms": 4701528,
+    "end_ms": 4703640,
+    "duration_ms": 2112,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4703.64,
+    "text": "You'd build these models. You would probably download someone's optimization loop and you'd tune these parameters.",
+    "start_ms": 4703640,
+    "end_ms": 4707928,
+    "duration_ms": 4288,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4708.184,
+    "text": "As you build more models and you go and learn about PyTorch, you'll learn how to build these individual layers and compose other people's models as building blocks inside of your room.",
+    "start_ms": 4708184,
+    "end_ms": 4716344,
+    "duration_ms": 8160,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4716.664,
+    "text": "This is stuff you can learn pretty easily if you go to the PyTroTrups site.",
+    "start_ms": 4716664,
+    "end_ms": 4720220,
+    "duration_ms": 3556,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4720.22,
+    "text": "There are demos in one hour you can build a classifier that does, you know, the digits problem as well as was done in the 1990s and in fact what is used today.",
+    "start_ms": 4720220,
+    "end_ms": 4729104,
+    "duration_ms": 8884,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4729.104,
+    "text": "So this is the basics of neural networks. If you come to lecture on Thursday, we will talk about how large language models work and I will explain all the details of how we train them and why they're able to make, well, I guess how they make the predictions they make today.",
+    "start_ms": 4729104,
+    "end_ms": 4743777,
+    "duration_ms": 14673,
+    "word_count": 53,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4743.777,
+    "text": "So I hope to see you all on Thursday for large language models.",
+    "start_ms": 4743777,
+    "end_ms": 4747624,
+    "duration_ms": 3847,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4748.504,
+    "text": "\u77e5\u6076 Thank you.",
+    "start_ms": 4748504,
+    "end_ms": 4750636,
+    "duration_ms": 2132,
+    "word_count": 3,
+    "avg_confidence": 90
+  }
+]

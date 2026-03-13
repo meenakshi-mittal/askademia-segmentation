@@ -1,0 +1,6626 @@
+[
+  {
+    "timestamp": 0.024,
+    "text": "Excellent. That means we start. Okay, so today is a fun day.",
+    "start_ms": 24,
+    "end_ms": 7112,
+    "duration_ms": 7088,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 7.8,
+    "text": "I will probably say this at the beginning of every lecture, but this is one of my favorite topics today, so we're doing Exploratory day analysis.",
+    "start_ms": 7800,
+    "end_ms": 16231,
+    "duration_ms": 8431,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 16.231,
+    "text": "Please join the Slido I will tell you why I'm excited about EDA in a moment.",
+    "start_ms": 16231,
+    "end_ms": 22600,
+    "duration_ms": 6369,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 22.808,
+    "text": "We did some EDA, Exploratory Day Analysis of the Pre-Smaster Survey.",
+    "start_ms": 22808,
+    "end_ms": 26968,
+    "duration_ms": 4160,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 27.288,
+    "text": "And I thought it would be fun to share that with you all today.",
+    "start_ms": 27288,
+    "end_ms": 29288,
+    "duration_ms": 2000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 33.016,
+    "text": "To first start with, what is the math experience of students in this class?",
+    "start_ms": 33016,
+    "end_ms": 37656,
+    "duration_ms": 4640,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 39.032,
+    "text": "and in these plots the left side of the plot this is low and this goes to high right so we have our bars in the appropriate order So, what do we see from this picture?",
+    "start_ms": 39032,
+    "end_ms": 52088,
+    "duration_ms": 13056,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 54.52,
+    "text": "What kinds of distributions are these? We haven't taught you how to read about these, but did eight did talk a bit about these.",
+    "start_ms": 54520,
+    "end_ms": 59800,
+    "duration_ms": 5280,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 60.376,
+    "text": "Goodbye, Moodle. So some of you think I'm amazing at calculus.",
+    "start_ms": 60376,
+    "end_ms": 65372,
+    "duration_ms": 4996,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 66.552,
+    "text": "Some experience. Uh, linear algebra. This is pretty standard. So we think pretty good linear algebra and then so is And maybe some of you were down here too.",
+    "start_ms": 66552,
+    "end_ms": 76744,
+    "duration_ms": 10192,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 77.592,
+    "text": "Alright, linear algebra will talk about a moment, but... Bymodal, we have two classes here.",
+    "start_ms": 77592,
+    "end_ms": 83100,
+    "duration_ms": 5508,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 83.1,
+    "text": "And probability. Much more you have. You know some basic.",
+    "start_ms": 83100,
+    "end_ms": 87048,
+    "duration_ms": 3948,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 87.704,
+    "text": "You're familiar already? Some limited experience. class will use all of these concepts.",
+    "start_ms": 87704,
+    "end_ms": 93528,
+    "duration_ms": 5824,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 94.104,
+    "text": "And we've designed it so that if you're here... Or here?",
+    "start_ms": 94104,
+    "end_ms": 97920,
+    "duration_ms": 3816,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 98.2,
+    "text": "Or here, you should be able to follow Allah. You might have to work a little bit harder.",
+    "start_ms": 98200,
+    "end_ms": 104232,
+    "duration_ms": 6032,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 103.992,
+    "text": "If you're here... Come to office hours. Go to section.",
+    "start_ms": 103992,
+    "end_ms": 107833,
+    "duration_ms": 3841,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 107.833,
+    "text": "Get help. It's possible. In fact, you can do just fine.",
+    "start_ms": 107833,
+    "end_ms": 111900,
+    "duration_ms": 4067,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 112.152,
+    "text": "If you're here or here. We're here. So I'm guessing for most of you can find someone in a bar near you.",
+    "start_ms": 112152,
+    "end_ms": 121512,
+    "duration_ms": 9360,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 121.88,
+    "text": "So you are not alone, and it comes to death.",
+    "start_ms": 121880,
+    "end_ms": 123880,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 128.728,
+    "text": "Coding Experience. We have here. is a... Bye, my little distribution.",
+    "start_ms": 128728,
+    "end_ms": 136392,
+    "duration_ms": 7664,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 136.408,
+    "text": "This is a pretty Gaussian distribution. I love it. We don't often see those in this situation.",
+    "start_ms": 136408,
+    "end_ms": 141208,
+    "duration_ms": 4800,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 141.72,
+    "text": "And this is... Giving me the finger. Numpai. Switch your back up.",
+    "start_ms": 141720,
+    "end_ms": 148872,
+    "duration_ms": 7152,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 148.872,
+    "text": "Do you have a python? Many of you... Have some basic familiarity with Python.",
+    "start_ms": 148872,
+    "end_ms": 154208,
+    "duration_ms": 5336,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 154.208,
+    "text": "Maybe coming from day 8. Some basic familiarity with Python.",
+    "start_ms": 154208,
+    "end_ms": 157608,
+    "duration_ms": 3400,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 158.712,
+    "text": "So we go on, good at Python. Are you really?",
+    "start_ms": 158712,
+    "end_ms": 162138,
+    "duration_ms": 3426,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 162.138,
+    "text": "You will learn more in this class. Do not worry.",
+    "start_ms": 162138,
+    "end_ms": 164600,
+    "duration_ms": 2462,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 164.6,
+    "text": "Alright. This class kinda likes people in this situation. But there aren't many people here.",
+    "start_ms": 164600,
+    "end_ms": 173512,
+    "duration_ms": 8912,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 173.848,
+    "text": "So if you're over here, you might have to work a little bit harder.",
+    "start_ms": 173848,
+    "end_ms": 176848,
+    "duration_ms": 3000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 176.848,
+    "text": "That's the point of this class. You'll learn some stuff.",
+    "start_ms": 176848,
+    "end_ms": 178848,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 179.128,
+    "text": "And by the end of this class you will move over to this box.",
+    "start_ms": 179128,
+    "end_ms": 181928,
+    "duration_ms": 2800,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 185.112,
+    "text": "Numphile. Many of you think I know a little bit of NMPI, and that makes sense because the Lord of Classes before this class, you have some exposure to NMPI.",
+    "start_ms": 185112,
+    "end_ms": 195008,
+    "duration_ms": 9896,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 196.024,
+    "text": "This is fine. In fact, you will probably stay here in this class.",
+    "start_ms": 196024,
+    "end_ms": 200340,
+    "duration_ms": 4316,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 200.34,
+    "text": "We're not going to use an extensive amount of numpy, most of what you do in this class will be with pandas.",
+    "start_ms": 200340,
+    "end_ms": 204220,
+    "duration_ms": 3880,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 206.328,
+    "text": "Maybe we'll get some people to go over here, or that finger, get some more galsy and like, like, shape.",
+    "start_ms": 206328,
+    "end_ms": 210844,
+    "duration_ms": 4516,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 210.844,
+    "text": "But yeah, this is where most people are for an umpai.",
+    "start_ms": 210844,
+    "end_ms": 213328,
+    "duration_ms": 2484,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 214.2,
+    "text": "Seek o! Where have you seen Sequel before? 61, let's move out of the sequel.",
+    "start_ms": 214200,
+    "end_ms": 220808,
+    "duration_ms": 6608,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 221.112,
+    "text": "Maybe some prior experience. Sequel is a very important concept.",
+    "start_ms": 221112,
+    "end_ms": 224452,
+    "duration_ms": 3340,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 225.112,
+    "text": "We expect people to be kind of here. And in this class you will get to be somewhere here.",
+    "start_ms": 225112,
+    "end_ms": 230752,
+    "duration_ms": 5640,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 231.096,
+    "text": "Now between these two. So we'll do a fair amount of SQL.",
+    "start_ms": 231096,
+    "end_ms": 234567,
+    "duration_ms": 3471,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 234.567,
+    "text": "You will not be the world's experts at SQL, but you'll be able to become the world's experts at SQL with a little bit more practice.",
+    "start_ms": 234567,
+    "end_ms": 239920,
+    "duration_ms": 5353,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 239.928,
+    "text": "Okay, so you get some basics in Tico. Alright, so again.",
+    "start_ms": 239928,
+    "end_ms": 243744,
+    "duration_ms": 3816,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 244.088,
+    "text": "I'm guessing everyone finds himself in one of these bars.",
+    "start_ms": 244088,
+    "end_ms": 246588,
+    "duration_ms": 2500,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 246.588,
+    "text": "If you find yourself on the left parts of these plots, that is OK.",
+    "start_ms": 246588,
+    "end_ms": 250288,
+    "duration_ms": 3700,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 250.712,
+    "text": "Just come to us, Harris. Good discussion. Get help. You can make it to the right sides of these plots.",
+    "start_ms": 250712,
+    "end_ms": 255712,
+    "duration_ms": 5000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 260.504,
+    "text": "Did an Alice's experience begin to date Inference making these predictions reasoning about the world.",
+    "start_ms": 260504,
+    "end_ms": 266960,
+    "duration_ms": 6456,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 267.128,
+    "text": "Again, when you take in day eight, so you'll have some familiarity with that.",
+    "start_ms": 267128,
+    "end_ms": 270808,
+    "duration_ms": 3680,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 270.808,
+    "text": "In this class, we'll move you in this direction. Will you become the world expert?",
+    "start_ms": 270808,
+    "end_ms": 274884,
+    "duration_ms": 4076,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 274.884,
+    "text": "No, but you'll be like right here. If you have significant experience.",
+    "start_ms": 274884,
+    "end_ms": 280312,
+    "duration_ms": 5428,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 280.728,
+    "text": "We'll teach you some new things. In this class. So do not worry wherever you are on this plot.",
+    "start_ms": 280728,
+    "end_ms": 286536,
+    "duration_ms": 5808,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 286.536,
+    "text": "But again, if you said I've never done any inference before.",
+    "start_ms": 286536,
+    "end_ms": 289536,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 289.536,
+    "text": "Take a look at the day-to-day curriculum. There's some good book.",
+    "start_ms": 289536,
+    "end_ms": 292536,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 292.536,
+    "text": "I get you moving in this direction. D-visualization. So, familiarity is good.",
+    "start_ms": 292536,
+    "end_ms": 299240,
+    "duration_ms": 6704,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 299.352,
+    "text": "This class, we're gonna do a lot of that. You will not be the world's Best data visualizer, but you will learn some really cool visualization techniques.",
+    "start_ms": 299352,
+    "end_ms": 307896,
+    "duration_ms": 8544,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 307.896,
+    "text": "Allow this class we'll touch on how to visualize data, both to tell a story, to do research, and also to to learn about the data itself.",
+    "start_ms": 307896,
+    "end_ms": 314376,
+    "duration_ms": 6480,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 316.216,
+    "text": "For no prior experience. Who's never visualized data? Come on, you've used a spreadsheet before.",
+    "start_ms": 316216,
+    "end_ms": 322912,
+    "duration_ms": 6696,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 323.576,
+    "text": "must have drawn up this plot looks familiar to you.",
+    "start_ms": 323576,
+    "end_ms": 326216,
+    "duration_ms": 2640,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 326.216,
+    "text": "So yes, we have no prior experience. That's okay. You will get that experience pretty quickly.",
+    "start_ms": 326216,
+    "end_ms": 330616,
+    "duration_ms": 4400,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 330.872,
+    "text": "Again, if you're in these two categories here, take a look at the data curriculum.",
+    "start_ms": 330872,
+    "end_ms": 334872,
+    "duration_ms": 4000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 335.32,
+    "text": "There's a great online book you can skim it. I did in three hours.",
+    "start_ms": 335320,
+    "end_ms": 339564,
+    "duration_ms": 4244,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 339.564,
+    "text": "Just scroll right through it. And you'll get some some idea of these bigger concepts.",
+    "start_ms": 339564,
+    "end_ms": 343621,
+    "duration_ms": 4057,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 343.621,
+    "text": "Again, we will try to move you from here to here.",
+    "start_ms": 343621,
+    "end_ms": 346314,
+    "duration_ms": 2693,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 346.314,
+    "text": "We'd like you to be in this box, ideally, but if you're not, we'll work with you.",
+    "start_ms": 346314,
+    "end_ms": 350200,
+    "duration_ms": 3886,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 355.992,
+    "text": "So negative, okay. What are the potential challenges? What potential challenges do you anticipate in data 100 and how can we help?",
+    "start_ms": 355992,
+    "end_ms": 363832,
+    "duration_ms": 7840,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 363.832,
+    "text": "Well that was two questions we have one wordle. This plot is always entertaining look at.",
+    "start_ms": 363832,
+    "end_ms": 369032,
+    "duration_ms": 5200,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 369.464,
+    "text": "The number one challenge is... Linear time. No. So a word all is a data visualization.",
+    "start_ms": 369464,
+    "end_ms": 377816,
+    "duration_ms": 8352,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 377.816,
+    "text": "It's not necessarily a great one, but it's a fun one.",
+    "start_ms": 377816,
+    "end_ms": 380280,
+    "duration_ms": 2464,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 380.28,
+    "text": "We make the size of the word, correspond to the number of occurrences of that word and the strings you guys gave us.",
+    "start_ms": 380280,
+    "end_ms": 385200,
+    "duration_ms": 4920,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 385.2,
+    "text": "We'll talk about strings on Tuesday. Is the biggest challenge.",
+    "start_ms": 385200,
+    "end_ms": 393716,
+    "duration_ms": 8516,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 393.716,
+    "text": "I think that's actually correct. Time is your biggest challenge.",
+    "start_ms": 393716,
+    "end_ms": 398251,
+    "duration_ms": 4535,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 398.251,
+    "text": "You have to manage your time. This class, unfortunately, takes time.",
+    "start_ms": 398251,
+    "end_ms": 402376,
+    "duration_ms": 4125,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 402.52,
+    "text": "Learning the material takes even more time. So if you want to be in this class, you need time.",
+    "start_ms": 402520,
+    "end_ms": 408020,
+    "duration_ms": 5500,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 408.02,
+    "text": "If you want to really learn the material, help yourself and your future careers.",
+    "start_ms": 408020,
+    "end_ms": 411520,
+    "duration_ms": 3500,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 411.672,
+    "text": "More time still. Find a way to make time. Walk it out on your counter.",
+    "start_ms": 411672,
+    "end_ms": 418713,
+    "duration_ms": 7041,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 418.713,
+    "text": "I'm going to work on day to 100 for this time.",
+    "start_ms": 418713,
+    "end_ms": 420888,
+    "duration_ms": 2175,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 421.336,
+    "text": "A trick. I need to dedicate time. That is a big challenge.",
+    "start_ms": 421336,
+    "end_ms": 425181,
+    "duration_ms": 3845,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 425.181,
+    "text": "It's a big challenge in life too. linear a big challenge.",
+    "start_ms": 425181,
+    "end_ms": 430536,
+    "duration_ms": 5355,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 430.552,
+    "text": "What is linear? the rise of challenge. I assume linear was meant to be followed by algebra.",
+    "start_ms": 430552,
+    "end_ms": 438320,
+    "duration_ms": 7768,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 439.96,
+    "text": "Linear algebra has historically been a source of concern for students in this class.",
+    "start_ms": 439960,
+    "end_ms": 445400,
+    "duration_ms": 5440,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 445.56,
+    "text": "We do use linear algebra in this class. Do not think of it as a challenge.",
+    "start_ms": 445560,
+    "end_ms": 449866,
+    "duration_ms": 4306,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 449.866,
+    "text": "Think of it as an opportunity. We are not going to use crazy linear algebra we're going to use Pretty basic linear algebra.",
+    "start_ms": 449866,
+    "end_ms": 456696,
+    "duration_ms": 6830,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 457.208,
+    "text": "If you've worked with matrices before... You should be in pretty good shape.",
+    "start_ms": 457208,
+    "end_ms": 461384,
+    "duration_ms": 4176,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 461.944,
+    "text": "Go into it saying I know enough. But I'll have to pay attention and put the time in.",
+    "start_ms": 461944,
+    "end_ms": 467260,
+    "duration_ms": 5316,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 468.472,
+    "text": "to figure out what I don't know. What other issues help?",
+    "start_ms": 468472,
+    "end_ms": 474496,
+    "duration_ms": 6024,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 477.944,
+    "text": "Office hours. Offsourers can get busy. Go to office hours.",
+    "start_ms": 477944,
+    "end_ms": 482530,
+    "duration_ms": 4586,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 482.53,
+    "text": "If you can't get help from a TA. Talk to the people.",
+    "start_ms": 482530,
+    "end_ms": 486816,
+    "duration_ms": 4286,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 487.576,
+    "text": "I'm stuck on question one part a has anyone worked on that yeah working on it.",
+    "start_ms": 487576,
+    "end_ms": 491576,
+    "duration_ms": 4000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 492.472,
+    "text": "Find others to get help. When I was an undergrad, the TAs were terrible.",
+    "start_ms": 492472,
+    "end_ms": 497684,
+    "duration_ms": 5212,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 497.684,
+    "text": "The only way I made it to college is I learned to work with people.",
+    "start_ms": 497684,
+    "end_ms": 500384,
+    "duration_ms": 2700,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 500.664,
+    "text": "And it was a good part of college. In fact, the best part of college was learning how to work with people and the network I built in doing that.",
+    "start_ms": 500664,
+    "end_ms": 505664,
+    "duration_ms": 5000,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 506.264,
+    "text": "So help. Help yourself. Go to go to office hours meet with other people.",
+    "start_ms": 506264,
+    "end_ms": 511984,
+    "duration_ms": 5720,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 513.944,
+    "text": "Coding, another area of challenge. Work through stuff. When you encounter a coding problem, don't go, oh, I need to get help.",
+    "start_ms": 513944,
+    "end_ms": 522792,
+    "duration_ms": 8848,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 522.792,
+    "text": "Someone who is wrong with my code. Look at it.",
+    "start_ms": 522792,
+    "end_ms": 525920,
+    "duration_ms": 3128,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 526.552,
+    "text": "What is wrong with my coat? The error messages are long.",
+    "start_ms": 526552,
+    "end_ms": 529422,
+    "duration_ms": 2870,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 529.422,
+    "text": "Learn how to read them. Learn how to scroll to the bottom, ignore everything and set that last line, and say, type error.",
+    "start_ms": 529422,
+    "end_ms": 533940,
+    "duration_ms": 4518,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 533.94,
+    "text": "Okay, what is that to OIC? I use the wrong variable.",
+    "start_ms": 533940,
+    "end_ms": 536940,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 537.752,
+    "text": "Learn how to read those messages. That's a skill we don't teach you in lecture, but probably one of the more valuable skills you'll pick up in this class.",
+    "start_ms": 537752,
+    "end_ms": 544396,
+    "duration_ms": 6644,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 547.704,
+    "text": "So we want you to succeed. How can you get help?",
+    "start_ms": 547704,
+    "end_ms": 550504,
+    "duration_ms": 2800,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 550.776,
+    "text": "I give you a few ways. Work with us. We'll work with you.",
+    "start_ms": 550776,
+    "end_ms": 555400,
+    "duration_ms": 4624,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 557.624,
+    "text": "People are worried. You can look online. Maybe ask questions in the ed or in and slide up.",
+    "start_ms": 557624,
+    "end_ms": 564896,
+    "duration_ms": 7272,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 567.32,
+    "text": "Alright, this is the fun part. are you excited about?",
+    "start_ms": 567320,
+    "end_ms": 570856,
+    "duration_ms": 3536,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 570.776,
+    "text": "Every year this changes. And every year I'm shocked to see this.",
+    "start_ms": 570776,
+    "end_ms": 576520,
+    "duration_ms": 5744,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 577.208,
+    "text": "Why is everyone so excited about Pandas? It's awful. I don't get it.",
+    "start_ms": 577208,
+    "end_ms": 583048,
+    "duration_ms": 5840,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 583.608,
+    "text": "It is what everyone uses. It is a skill that you get in this class that will help you in life.",
+    "start_ms": 583608,
+    "end_ms": 587640,
+    "duration_ms": 4032,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 587.64,
+    "text": "So I get it. You sure? Maybe you meant you were thinking it was the animal.",
+    "start_ms": 587640,
+    "end_ms": 593160,
+    "duration_ms": 5520,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 594.2,
+    "text": "Anyways, Pandas. Comment. Every year of events is pandas. Visualization.",
+    "start_ms": 594200,
+    "end_ms": 599688,
+    "duration_ms": 5488,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 600.344,
+    "text": "I like this one too. You do a lot of visualization in this class.",
+    "start_ms": 600344,
+    "end_ms": 604616,
+    "duration_ms": 4272,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 604.616,
+    "text": "You will teach you new tools, the professional tools and tools you would use in the workplace.",
+    "start_ms": 604616,
+    "end_ms": 609616,
+    "duration_ms": 5000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 609.624,
+    "text": "You'll make cool plots. You learn how to do it.",
+    "start_ms": 609624,
+    "end_ms": 611624,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 612.312,
+    "text": "How to reason about them, how to critique other people's plots that plot is garbage used colors incorrectly.",
+    "start_ms": 612312,
+    "end_ms": 617312,
+    "duration_ms": 5000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 617.312,
+    "text": "You'll learn how to do that here. Excellent. Shikko Why are people so excited about the sequel?",
+    "start_ms": 617312,
+    "end_ms": 624808,
+    "duration_ms": 7496,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 626.04,
+    "text": "It's ancient. It's all caps language. Like before I was born, which is way before you all were born.",
+    "start_ms": 626040,
+    "end_ms": 632592,
+    "duration_ms": 6552,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 633.528,
+    "text": "Sequel is very useful. People use this ancient language all the time, today, to do analysis of the latest data on the latest technology.",
+    "start_ms": 633528,
+    "end_ms": 642608,
+    "duration_ms": 9080,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 642.608,
+    "text": "So, good skill to have. Data? I'm excited about data too.",
+    "start_ms": 642608,
+    "end_ms": 648872,
+    "duration_ms": 6264,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 648.818,
+    "text": "is awesome. I'm guessing you met data 100 but we'll just go with it.",
+    "start_ms": 648818,
+    "end_ms": 651880,
+    "duration_ms": 3062,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 652.376,
+    "text": "This class is all about data and being excited about data, EVAs is that.",
+    "start_ms": 652376,
+    "end_ms": 656856,
+    "duration_ms": 4480,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 657.176,
+    "text": "and what we can do with it. Modeling will do a fair amount of modeling.",
+    "start_ms": 657176,
+    "end_ms": 660936,
+    "duration_ms": 3760,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 661.336,
+    "text": "In fact, the second half of the class we dedicated the modeling, so you'll get a chance to model away.",
+    "start_ms": 661336,
+    "end_ms": 665336,
+    "duration_ms": 4000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 665.336,
+    "text": "We'll learn various kinds of models, for various kinds of modeling problems.",
+    "start_ms": 665336,
+    "end_ms": 669336,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 669.336,
+    "text": "But more importantly, you'll learn a general pattern of techniques that doesn't just apply the modeling in this class.",
+    "start_ms": 669336,
+    "end_ms": 675336,
+    "duration_ms": 6000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 675.704,
+    "text": "Pleist to all modeling. And one of those such modeling is this.",
+    "start_ms": 675704,
+    "end_ms": 680268,
+    "duration_ms": 4564,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 682.744,
+    "text": "L L M. Raise your hand if you go, I know what L L M is.",
+    "start_ms": 682744,
+    "end_ms": 686744,
+    "duration_ms": 4000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 687.672,
+    "text": "So you're kind of like, what is lllm? Okay, that's okay.",
+    "start_ms": 687672,
+    "end_ms": 691051,
+    "duration_ms": 3379,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 691.051,
+    "text": "You should know it's crazy that people know what this is.",
+    "start_ms": 691051,
+    "end_ms": 694525,
+    "duration_ms": 3474,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 694.525,
+    "text": "This is large language modeling. We'll have a whole lecture on this.",
+    "start_ms": 694525,
+    "end_ms": 698952,
+    "duration_ms": 4427,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 698.68,
+    "text": "You will. At the end of that lecture, no longer find these things as magic.",
+    "start_ms": 698680,
+    "end_ms": 703912,
+    "duration_ms": 5232,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 704.6,
+    "text": "You'll find it be... More magic. But you will understand the basic ideas behind them.",
+    "start_ms": 704600,
+    "end_ms": 709008,
+    "duration_ms": 4408,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 710.072,
+    "text": "and it will blow your mind that those ideas are enough to make chat GPT work.",
+    "start_ms": 710072,
+    "end_ms": 714072,
+    "duration_ms": 4000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 715.992,
+    "text": "But we teach you the concepts that make this work in this class.",
+    "start_ms": 715992,
+    "end_ms": 718992,
+    "duration_ms": 3000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 719.832,
+    "text": "Sing along in that. So a very exciting semester. I'm excited to be here.",
+    "start_ms": 719832,
+    "end_ms": 723752,
+    "duration_ms": 3920,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 723.752,
+    "text": "Again, I'm Joey Gonzalez at one of the co-instructors in case you miss the first lecture.",
+    "start_ms": 723752,
+    "end_ms": 727192,
+    "duration_ms": 3440,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 727.608,
+    "text": "And it is time. Talk. Oh wait, one more poll.",
+    "start_ms": 727608,
+    "end_ms": 731286,
+    "duration_ms": 3678,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 731.286,
+    "text": "Okay. Let's do this first. How comfortable are you with Pandas?",
+    "start_ms": 731286,
+    "end_ms": 735736,
+    "duration_ms": 4450,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 737.688,
+    "text": "At this point in the class which if you are very comfortable i'm shocked I'm still not comfortable with pandas.",
+    "start_ms": 737688,
+    "end_ms": 743432,
+    "duration_ms": 5744,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 743.96,
+    "text": "What do you think? We do these poles for attendance.",
+    "start_ms": 743960,
+    "end_ms": 751624,
+    "duration_ms": 7664,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 751.624,
+    "text": "This one's pretty easy. Can't give it a wrong answer.",
+    "start_ms": 751624,
+    "end_ms": 755176,
+    "duration_ms": 3552,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 756.984,
+    "text": "Alright, can I go look at it? Let's see what happens.",
+    "start_ms": 756984,
+    "end_ms": 758984,
+    "duration_ms": 2000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 761.208,
+    "text": "Middle finger. Okay. People who... That's how I feel that pan is still so very good in the middle.",
+    "start_ms": 761208,
+    "end_ms": 769752,
+    "duration_ms": 8544,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 770.552,
+    "text": "Alright, as a class goes, you'll be more and more comfortable pandas.",
+    "start_ms": 770552,
+    "end_ms": 773552,
+    "duration_ms": 3000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 773.552,
+    "text": "You'll also realize you don't know pandas as you learn more about pandas, or that it makes no sense.",
+    "start_ms": 773552,
+    "end_ms": 778802,
+    "duration_ms": 5250,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 778.802,
+    "text": "It's okay. You'll come to love and not so much, Pandas.",
+    "start_ms": 778802,
+    "end_ms": 783944,
+    "duration_ms": 5142,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 785.112,
+    "text": "The animals are great, the code is... Alright, uh, has everyone done it?",
+    "start_ms": 785112,
+    "end_ms": 789848,
+    "duration_ms": 4736,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 789.848,
+    "text": "Have enough people come on vote vote vote. Also vote in Life Experiment.",
+    "start_ms": 789848,
+    "end_ms": 796072,
+    "duration_ms": 6224,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 798.584,
+    "text": "Alright, let's move. Yes, so I'm excited about this lecture.",
+    "start_ms": 798584,
+    "end_ms": 803208,
+    "duration_ms": 4624,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 803.416,
+    "text": "Because it's about that wrangling EDA. I am less excited about Data Wrangling, but is it a big part of the EDA?",
+    "start_ms": 803416,
+    "end_ms": 809872,
+    "duration_ms": 6456,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 809.872,
+    "text": "I am thrilled about EDA. EDA is, it's basically unboxing for data scientists.",
+    "start_ms": 809872,
+    "end_ms": 815192,
+    "duration_ms": 5320,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 815.192,
+    "text": "It's awesome. It is exploratory data analysis. It is probably one of the most fun parts of data science but it's kind of a pain to teach.",
+    "start_ms": 815192,
+    "end_ms": 823352,
+    "duration_ms": 8160,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 823.352,
+    "text": "It's like how do I teach you how to do it on boxing?",
+    "start_ms": 823352,
+    "end_ms": 826352,
+    "duration_ms": 3000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 826.488,
+    "text": "Open it up. Alright, so we're at this part of the cycle.",
+    "start_ms": 826488,
+    "end_ms": 830440,
+    "duration_ms": 3952,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 831.064,
+    "text": "Right here. And maybe the most important part of being at this part of the cycle is you got data.",
+    "start_ms": 831064,
+    "end_ms": 836440,
+    "duration_ms": 5376,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 837.784,
+    "text": "And your job is to understand that data. Not the world yet.",
+    "start_ms": 837784,
+    "end_ms": 841507,
+    "duration_ms": 3723,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 841.507,
+    "text": "The data. What data do I have? You just got a present or the thing you bought on Amazon.",
+    "start_ms": 841507,
+    "end_ms": 846171,
+    "duration_ms": 4664,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 846.171,
+    "text": "You unbox it. What do I have? That's where we are.",
+    "start_ms": 846171,
+    "end_ms": 849920,
+    "duration_ms": 3749,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 851.48,
+    "text": "Yes, so it is the unboxing of data. And they said, it's kind of an attitude.",
+    "start_ms": 851480,
+    "end_ms": 856264,
+    "duration_ms": 4784,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 857.016,
+    "text": "state of flexibility a willingness to look for those things that we believe are not there as well as those that we believe to be there is by john to keep Very famous guy would be early statisticians, early data scientists.",
+    "start_ms": 857016,
+    "end_ms": 871400,
+    "duration_ms": 14384,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 871.736,
+    "text": "Venting the bit. a lot of work in computer science and statistics.",
+    "start_ms": 871736,
+    "end_ms": 878052,
+    "duration_ms": 6316,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 879.096,
+    "text": "So I like this because it's fun. It is also hard to teach so we built a mechanism to try to teach it.",
+    "start_ms": 879096,
+    "end_ms": 885096,
+    "duration_ms": 6000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 888.696,
+    "text": "before I do that. uses an unboxing analogy? You get a new thing.",
+    "start_ms": 888696,
+    "end_ms": 894482,
+    "duration_ms": 5786,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 894.482,
+    "text": "I ordered a new camping stove. because there was a sale in our eye.",
+    "start_ms": 894482,
+    "end_ms": 898888,
+    "duration_ms": 4406,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 898.759,
+    "text": "new camping stove, what do you do when you get that box?",
+    "start_ms": 898759,
+    "end_ms": 900770,
+    "duration_ms": 2011,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 900.77,
+    "text": "How do you want to unbox it? You open the box carefully.",
+    "start_ms": 900770,
+    "end_ms": 904712,
+    "duration_ms": 3942,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 904.536,
+    "text": "What do I have in the box? The manual. What do I do with the manual?",
+    "start_ms": 904536,
+    "end_ms": 907496,
+    "duration_ms": 2960,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 907.496,
+    "text": "Toss it. What is the manual? They're so looking what's in the box, what do I have?",
+    "start_ms": 907496,
+    "end_ms": 912264,
+    "duration_ms": 4768,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 912.984,
+    "text": "Well, that's weird. It's got four parts. Oh shoot, I forgot to get the gas, so I'm missing things.",
+    "start_ms": 912984,
+    "end_ms": 920024,
+    "duration_ms": 7040,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 920.024,
+    "text": "This is exactly what we're doing in EDA. You get some data.",
+    "start_ms": 920024,
+    "end_ms": 923086,
+    "duration_ms": 3062,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 923.086,
+    "text": "It has a manual too. Should you throw it away?",
+    "start_ms": 923086,
+    "end_ms": 925944,
+    "duration_ms": 2858,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 926.136,
+    "text": "Yes. You should look at the data. You should also look at the manual.",
+    "start_ms": 926136,
+    "end_ms": 930009,
+    "duration_ms": 3873,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 930.009,
+    "text": "It's important. But here's the thing about data. Unlike my stove or kind of like my stove, the manuals are often out of date, wrong and correct, poorly worded.",
+    "start_ms": 930009,
+    "end_ms": 938056,
+    "duration_ms": 8047,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 938.488,
+    "text": "So you need to look at the product, the data first.",
+    "start_ms": 938488,
+    "end_ms": 941488,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 941.88,
+    "text": "I need to look at the manual and you don't understand where the manual is wrong or the manual is right.",
+    "start_ms": 941880,
+    "end_ms": 946880,
+    "duration_ms": 5000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 946.904,
+    "text": "You'd understand the data, this is what we're doing in this class, in EDA.",
+    "start_ms": 946904,
+    "end_ms": 950184,
+    "duration_ms": 3280,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 951.736,
+    "text": "Alright, so like I said, it's hard to teach you how to do it on boxing.",
+    "start_ms": 951736,
+    "end_ms": 955256,
+    "duration_ms": 3520,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 955.768,
+    "text": "So instead we built a set of steps to think through.",
+    "start_ms": 955768,
+    "end_ms": 958768,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 959.096,
+    "text": "When you're working with data. the steps. So first, what's the structure?",
+    "start_ms": 959096,
+    "end_ms": 963256,
+    "duration_ms": 4160,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 963.256,
+    "text": "What's the shape of my data? Is it a rectangle?",
+    "start_ms": 963256,
+    "end_ms": 966690,
+    "duration_ms": 3434,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 966.69,
+    "text": "Is it a circle? Is it a tree? I don't know.",
+    "start_ms": 966690,
+    "end_ms": 969184,
+    "duration_ms": 2494,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 969.496,
+    "text": "We'll talk about different kinds of shapes. What's the granularity?",
+    "start_ms": 969496,
+    "end_ms": 973640,
+    "duration_ms": 4144,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 973.912,
+    "text": "What is the granularity of my data? What is each piece of data represent?",
+    "start_ms": 973912,
+    "end_ms": 978312,
+    "duration_ms": 4400,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 979.064,
+    "text": "Are they all the same kinds of things? Let's just go.",
+    "start_ms": 979064,
+    "end_ms": 982048,
+    "duration_ms": 2984,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 983.128,
+    "text": "Did I get all the data? of the data the thing I was hoping to get?",
+    "start_ms": 983128,
+    "end_ms": 987720,
+    "duration_ms": 4592,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 988.12,
+    "text": "Tempurality, special kind of scope. Where does it live in time?",
+    "start_ms": 988120,
+    "end_ms": 992648,
+    "duration_ms": 4528,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 993.08,
+    "text": "Time is so important as we said in the beginning of this class.",
+    "start_ms": 993080,
+    "end_ms": 996280,
+    "duration_ms": 3200,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 996.28,
+    "text": "The time and data is also important. When are when are the data created what does a time stamp mean in my data?",
+    "start_ms": 996280,
+    "end_ms": 1002216,
+    "duration_ms": 5936,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1002.744,
+    "text": "and faithfulness. Is the data good? Do I have buggy data is my stove broken my missing records in my data right So if you're unboxing a product you'd ask similar kinds of questions at least for these two maybe.",
+    "start_ms": 1002744,
+    "end_ms": 1018052,
+    "duration_ms": 15308,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1018.36,
+    "text": "And then these are really kind of data-specific ideas. So go to each of these.",
+    "start_ms": 1018360,
+    "end_ms": 1023256,
+    "duration_ms": 4896,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1023.576,
+    "text": "We'll serve structure. This probably we spend most of our time.",
+    "start_ms": 1023576,
+    "end_ms": 1027528,
+    "duration_ms": 3952,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1028.472,
+    "text": "What is the shape of my data? In Data Science, we like rectangular data.",
+    "start_ms": 1028472,
+    "end_ms": 1034864,
+    "duration_ms": 6392,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1036.632,
+    "text": "Because regular structures are easy to manipulate and analyze. Have rows?",
+    "start_ms": 1036632,
+    "end_ms": 1042432,
+    "duration_ms": 5800,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1043.8,
+    "text": "Columns? Easy to work with. You've used spreadsheets in your life.",
+    "start_ms": 1043800,
+    "end_ms": 1050024,
+    "duration_ms": 6224,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1050.024,
+    "text": "Easy to think about. The part of data cleaning... I did a...",
+    "start_ms": 1050024,
+    "end_ms": 1055584,
+    "duration_ms": 5560,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1055.672,
+    "text": "Prep process, maybe data wrangling is a word, is about transforming whatever data I have to be more rectangular.",
+    "start_ms": 1055672,
+    "end_ms": 1061672,
+    "duration_ms": 6000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1062.232,
+    "text": "Why would they do not interact, Tangle? Who makes data that's not a spreadsheet?",
+    "start_ms": 1062232,
+    "end_ms": 1066232,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1067.896,
+    "text": "Often, data isn't rectangular. And even the data that you thought was rectangular has like...",
+    "start_ms": 1067896,
+    "end_ms": 1072296,
+    "duration_ms": 4400,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1072.856,
+    "text": "a list of things inside one of these these rows or these cells That's a mess.",
+    "start_ms": 1072856,
+    "end_ms": 1078918,
+    "duration_ms": 6062,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1078.918,
+    "text": "I want everything to be the same. I want all things to be.",
+    "start_ms": 1078918,
+    "end_ms": 1082168,
+    "duration_ms": 3250,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1082.168,
+    "text": "No. One thing in each box. So, there are two kinds of rectangular data, tables and matrices.",
+    "start_ms": 1082168,
+    "end_ms": 1090776,
+    "duration_ms": 8608,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1091.64,
+    "text": "I'll find more, but to the first approximation, Z2, we're going to focus on this class.",
+    "start_ms": 1091640,
+    "end_ms": 1095160,
+    "duration_ms": 3520,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1095.736,
+    "text": "What's the difference? So tables. Also there's data frames for the pandas of fission autos Is a collection of names?",
+    "start_ms": 1095736,
+    "end_ms": 1106040,
+    "duration_ms": 10304,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1106.52,
+    "text": "Columns with different types. That's weird. You would have thought it's a collection of rows.",
+    "start_ms": 1106520,
+    "end_ms": 1111520,
+    "duration_ms": 5000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1111.52,
+    "text": "No, it's a collection of columns. Okay, that's one way to look at it.",
+    "start_ms": 1111520,
+    "end_ms": 1115240,
+    "duration_ms": 3720,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1115.608,
+    "text": "We in the data world like to think of our data as a collection of these things columns as features I stick together to make a table.",
+    "start_ms": 1115608,
+    "end_ms": 1121608,
+    "duration_ms": 6000,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1121.912,
+    "text": "and each of the features, each of these rows link a collection of these columns.",
+    "start_ms": 1121912,
+    "end_ms": 1126552,
+    "duration_ms": 4640,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1127.736,
+    "text": "So I have named columns, they can have different types, and they're manipulated using data transformation languages.",
+    "start_ms": 1127736,
+    "end_ms": 1134736,
+    "duration_ms": 7000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1136.024,
+    "text": "McMath, filter, group by joint, which I love these, but there's also and And us.",
+    "start_ms": 1136024,
+    "end_ms": 1143584,
+    "duration_ms": 7560,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1145.208,
+    "text": "And that's what you did the last week, week and a half.",
+    "start_ms": 1145208,
+    "end_ms": 1148808,
+    "duration_ms": 3600,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1149.048,
+    "text": "and we'll continue to do throughout the semester. There's another kind of data.",
+    "start_ms": 1149048,
+    "end_ms": 1154152,
+    "duration_ms": 5104,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1154.124,
+    "text": "Matrix Why don't we use matrices for everything? Well, matrices typically just have numeric data, though.",
+    "start_ms": 1154124,
+    "end_ms": 1165096,
+    "duration_ms": 10972,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1165.096,
+    "text": "If you know numpy and some of you do, you can put other things inside of those matrices.",
+    "start_ms": 1165096,
+    "end_ms": 1169896,
+    "duration_ms": 4800,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1170.808,
+    "text": "But they all have the same type. Every entry in the matrix is the same type.",
+    "start_ms": 1170808,
+    "end_ms": 1176232,
+    "duration_ms": 5424,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1177.624,
+    "text": "These are manipulated using the language of linear algebra. I can say as a grad student, I was like, eh, I don't like pandas.",
+    "start_ms": 1177624,
+    "end_ms": 1185496,
+    "duration_ms": 7872,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1185.784,
+    "text": "I tried to do everything with matrices. There's a long time ago.",
+    "start_ms": 1185784,
+    "end_ms": 1189768,
+    "duration_ms": 3984,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1189.512,
+    "text": "was a total mess. can make a matrix for, you know, this column is a string of a string matrix.",
+    "start_ms": 1189512,
+    "end_ms": 1195136,
+    "duration_ms": 5624,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1195.136,
+    "text": "You know, a number columns, so it might be number matrix.",
+    "start_ms": 1195136,
+    "end_ms": 1198161,
+    "duration_ms": 3025,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1198.161,
+    "text": "You can make this work. But it's a pain. often work with data frames in this class.",
+    "start_ms": 1198161,
+    "end_ms": 1203981,
+    "duration_ms": 5820,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1203.981,
+    "text": "In fact, most of the time we'll be data frames or tables.",
+    "start_ms": 1203981,
+    "end_ms": 1207112,
+    "duration_ms": 3131,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1207.112,
+    "text": "And this will allow us to work with these kind of interesting data which has different types.",
+    "start_ms": 1207112,
+    "end_ms": 1211112,
+    "duration_ms": 4000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1211.768,
+    "text": "the kinds of information. And the column names are remarkably important because if you spend your whole time saying column one, column two, three, it's very hard to keep track of what's going on.",
+    "start_ms": 1211768,
+    "end_ms": 1221128,
+    "duration_ms": 9360,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1221.816,
+    "text": "and in the process of doing this and you're gonna make lots of columns and the names matter because you're gonna look at it later and go what was they doing what is column three all very important.",
+    "start_ms": 1221816,
+    "end_ms": 1232200,
+    "duration_ms": 10384,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1232.44,
+    "text": "So we work with tables. Alright, so in this lecture, I'm going to try to work through a case study using some tuberculosis data.",
+    "start_ms": 1232440,
+    "end_ms": 1241576,
+    "duration_ms": 9136,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1241.656,
+    "text": "It's kind of an EDN itself. There was this interesting result that was already known at this point in time that the number of reported tuberculosis cases decreased sharply in 2020.",
+    "start_ms": 1241656,
+    "end_ms": 1253246,
+    "duration_ms": 11590,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1253.246,
+    "text": "What's going on in 2020? There's an election. COVID, yeah, that's right.",
+    "start_ms": 1253246,
+    "end_ms": 1261940,
+    "duration_ms": 8694,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1261.94,
+    "text": "COVID happened in 2020 and Somehow I got rid of tuberculosis.",
+    "start_ms": 1261940,
+    "end_ms": 1266696,
+    "duration_ms": 4756,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1267.832,
+    "text": "Crazy! Is that what really happened? else happened that was kinda weird.",
+    "start_ms": 1267832,
+    "end_ms": 1272584,
+    "duration_ms": 4752,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1272.696,
+    "text": "from 2020 to 2021 then there was this big spike.",
+    "start_ms": 1272696,
+    "end_ms": 1277816,
+    "duration_ms": 5120,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1277.816,
+    "text": "I'm 0.4% increase in tuberculosis. What is? I went down and the middle of COVID it spikes up again.",
+    "start_ms": 1277816,
+    "end_ms": 1285692,
+    "duration_ms": 7876,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1288.664,
+    "text": "What could be the causes? Beware stuck at home. COVID or tuberculosis isn't spreading its an airborne disease.",
+    "start_ms": 1288664,
+    "end_ms": 1297304,
+    "duration_ms": 8640,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1297.304,
+    "text": "People wearing masks all of a sudden. Maybe it's spreading less.",
+    "start_ms": 1297304,
+    "end_ms": 1299784,
+    "duration_ms": 2480,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1299.784,
+    "text": "Also, people have tuberculosis. They're like, I'm stuck at home and I'm coughing.",
+    "start_ms": 1299784,
+    "end_ms": 1303784,
+    "duration_ms": 4000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1303.784,
+    "text": "Sprite COVID. So reporting was also down. as they got better at the pandemic, I should go get this cough checked.",
+    "start_ms": 1303784,
+    "end_ms": 1311557,
+    "duration_ms": 7773,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1311.557,
+    "text": "Go to the doctor. So a lot of things are going on.",
+    "start_ms": 1311557,
+    "end_ms": 1315928,
+    "duration_ms": 4371,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1315.928,
+    "text": "There was a study to understand kind of these trends.",
+    "start_ms": 1315928,
+    "end_ms": 1317928,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1317.928,
+    "text": "We're going to look at some of the data in that study and try to recreate some of these calculations.",
+    "start_ms": 1317928,
+    "end_ms": 1321928,
+    "duration_ms": 4000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1324.6,
+    "text": "So can we produce these results using government data? Alright, so we get to start our demo.",
+    "start_ms": 1324600,
+    "end_ms": 1330504,
+    "duration_ms": 5904,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1332.344,
+    "text": "We're gonna work through probably the most. Comment. you will encounter when you're playing with data in this small.",
+    "start_ms": 1332344,
+    "end_ms": 1338712,
+    "duration_ms": 6368,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1339.192,
+    "text": "You go send me your data. Pretty standard text formats, things like comma separated values.",
+    "start_ms": 1339192,
+    "end_ms": 1346840,
+    "duration_ms": 7648,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1347.448,
+    "text": "So they tabular format. I have rows or records are delimited by new lines or carriage return new lines.",
+    "start_ms": 1347448,
+    "end_ms": 1354448,
+    "duration_ms": 7000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1354.448,
+    "text": "This is everyone that's not in the Windows ecosystem. And then the old Windows ecosystem you had two characters to say this is the end of a line.",
+    "start_ms": 1354448,
+    "end_ms": 1361448,
+    "duration_ms": 7000,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1362.392,
+    "text": "If you're using an editor you don't see any of this stuff in the worries.",
+    "start_ms": 1362392,
+    "end_ms": 1364392,
+    "duration_ms": 2000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1365.528,
+    "text": "Then we have columns that are fields with names, and they're often limited again by columns.",
+    "start_ms": 1365528,
+    "end_ms": 1369528,
+    "duration_ms": 4000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1369.816,
+    "text": "Alright, so let's actually play with some data. So these should all be posted so everyone can try to file along and zoom in a little bit.",
+    "start_ms": 1369816,
+    "end_ms": 1377936,
+    "duration_ms": 8120,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1380.44,
+    "text": "Alright. So lecture five, part one, tuberculosis. All of these lectures began with some imports.",
+    "start_ms": 1380440,
+    "end_ms": 1386200,
+    "duration_ms": 5760,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1386.2,
+    "text": "I'm just importing them. You don't really need to understand what's going on in these right now.",
+    "start_ms": 1386200,
+    "end_ms": 1389960,
+    "duration_ms": 3760,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1389.96,
+    "text": "But you know, if you wanted to learn some more Python, maybe figure out what each of these things is doing.",
+    "start_ms": 1389960,
+    "end_ms": 1393800,
+    "duration_ms": 3840,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1395.064,
+    "text": "I don't need most of them, but we'll do it.",
+    "start_ms": 1395064,
+    "end_ms": 1397000,
+    "duration_ms": 1936,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1397.0,
+    "text": "We'll start here. Alright, so I've imported some stuff. I want to show you something that jumps a little bit away from lecture for a moment.",
+    "start_ms": 1397000,
+    "end_ms": 1402440,
+    "duration_ms": 5440,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1403.672,
+    "text": "Here's the data. Let's look at this data. This is the actual website.",
+    "start_ms": 1403672,
+    "end_ms": 1413136,
+    "duration_ms": 9464,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1413.752,
+    "text": "Did I got a webpage? probably some other data on this image too.",
+    "start_ms": 1413752,
+    "end_ms": 1417008,
+    "duration_ms": 3256,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1417.008,
+    "text": "Yeah, some more data on this image. Would it be convenient if I could just pull this data into data science and do my panda stuff on it?",
+    "start_ms": 1417008,
+    "end_ms": 1422888,
+    "duration_ms": 5880,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1423.512,
+    "text": "But you can. And it's actually easy. Pandas can read HTML.",
+    "start_ms": 1423512,
+    "end_ms": 1429768,
+    "duration_ms": 6256,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1431.832,
+    "text": "Bye website with the cool table. Thought you could visualize it differently?",
+    "start_ms": 1431832,
+    "end_ms": 1435656,
+    "duration_ms": 3824,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1435.352,
+    "text": "Try PENDA's red HTML. Pass in the URL of the website you get that you want and you'll get a collection a list of tables.",
+    "start_ms": 1435352,
+    "end_ms": 1443720,
+    "duration_ms": 8368,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1443.72,
+    "text": "I want the very first table or table zero. So let's run this.",
+    "start_ms": 1443720,
+    "end_ms": 1448032,
+    "duration_ms": 4312,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1450.2,
+    "text": "That gets the first table. As Data Frame. I'm already going.",
+    "start_ms": 1450200,
+    "end_ms": 1455688,
+    "duration_ms": 5488,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1456.696,
+    "text": "Now in this lecture I'm going to work on CSV files but I want you to know this because You can do data science on things are interesting to you.",
+    "start_ms": 1456696,
+    "end_ms": 1463504,
+    "duration_ms": 6808,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1463.504,
+    "text": "And one way to learn stuff in this class is to not do everything, to do everything in this class, but in addition, do something that is exciting to you.",
+    "start_ms": 1463504,
+    "end_ms": 1470504,
+    "duration_ms": 7000,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1471.128,
+    "text": "There's probably a data set in the world you're like, hey.",
+    "start_ms": 1471128,
+    "end_ms": 1473128,
+    "duration_ms": 2000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1473.24,
+    "text": "What would happen if I did this? It is very easy to start playing thinner.",
+    "start_ms": 1473240,
+    "end_ms": 1477448,
+    "duration_ms": 4208,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1478.84,
+    "text": "Alright, so that's an external website. Someone already d This is what it looks like.",
+    "start_ms": 1478840,
+    "end_ms": 1483744,
+    "duration_ms": 4904,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1483.744,
+    "text": "A good idea. I also note that this data is kind of interesting.",
+    "start_ms": 1483744,
+    "end_ms": 1486244,
+    "duration_ms": 2500,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1486.244,
+    "text": "It has like multiple sets of column headers, like group column headers, then column headers for, you know, the specific years, uh, US jurisdiction.",
+    "start_ms": 1486244,
+    "end_ms": 1495104,
+    "duration_ms": 8860,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1495.104,
+    "text": "Yeah, lots of stuff going on this table. We're going to look at the CSV version of it.",
+    "start_ms": 1495104,
+    "end_ms": 1498904,
+    "duration_ms": 3800,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1499.832,
+    "text": "We'll use pennas.read CSV. Is a pretty common function you'll use this throughout the class.",
+    "start_ms": 1499832,
+    "end_ms": 1506072,
+    "duration_ms": 6240,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1506.072,
+    "text": "It's going to read a comma separated values file on my data or on my laptop.",
+    "start_ms": 1506072,
+    "end_ms": 1510312,
+    "duration_ms": 4240,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1511.096,
+    "text": "Before I do that... One of the things that I do in my unboxing data is I don't go straight to Pandas.",
+    "start_ms": 1511096,
+    "end_ms": 1517896,
+    "duration_ms": 6800,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1518.68,
+    "text": "I don't go straight to Python. go straight to clicking on things.",
+    "start_ms": 1518680,
+    "end_ms": 1522285,
+    "duration_ms": 3605,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1522.285,
+    "text": "Let's click on things. I have the data here. This is a little browser on the right.",
+    "start_ms": 1522285,
+    "end_ms": 1526376,
+    "duration_ms": 4091,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1526.904,
+    "text": "Are you ready to hear? I want to look at this CDC tuberculosis table.",
+    "start_ms": 1526904,
+    "end_ms": 1533016,
+    "duration_ms": 6112,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1533.304,
+    "text": "So I want to look at the CSP version. You now have this cool file browser in your Jupiter environment.",
+    "start_ms": 1533304,
+    "end_ms": 1538744,
+    "duration_ms": 5440,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1539.256,
+    "text": "Click away. Hang a little spreadsheet right here. can look at the data as a spreadsheet.",
+    "start_ms": 1539256,
+    "end_ms": 1544468,
+    "duration_ms": 5212,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1544.468,
+    "text": "I can scroll around. Probably even edit things, no I can't edit it here.",
+    "start_ms": 1544468,
+    "end_ms": 1549096,
+    "duration_ms": 4628,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1549.688,
+    "text": "You've got these columns, I've got columns here and another column here, we kind of expected that.",
+    "start_ms": 1549688,
+    "end_ms": 1554748,
+    "duration_ms": 5060,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1554.748,
+    "text": "So you have like this. Years here and then this TV incident probably applies to these groups of columns here.",
+    "start_ms": 1554748,
+    "end_ms": 1559600,
+    "duration_ms": 4852,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1559.6,
+    "text": "The fun stuff going on. This is viewing it as a spreadsheet.",
+    "start_ms": 1559600,
+    "end_ms": 1564120,
+    "duration_ms": 4520,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1564.12,
+    "text": "The computer determined that the limiter was a comma. I could have said, you know what?",
+    "start_ms": 1564120,
+    "end_ms": 1567320,
+    "duration_ms": 3200,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1567.32,
+    "text": "I think the limiter is a semicolon. It's not. It makes a mess of my table.",
+    "start_ms": 1567320,
+    "end_ms": 1571120,
+    "duration_ms": 3800,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1571.12,
+    "text": "So my my records are separated. My fields column was separated by commas.",
+    "start_ms": 1571120,
+    "end_ms": 1575720,
+    "duration_ms": 4600,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1576.792,
+    "text": "There's another way to open up stuff in your Jupyter environment.",
+    "start_ms": 1576792,
+    "end_ms": 1579392,
+    "duration_ms": 2600,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1579.392,
+    "text": "You can right-click. You can see open with... Editor You can see the raw data.",
+    "start_ms": 1579392,
+    "end_ms": 1585952,
+    "duration_ms": 6560,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1587.384,
+    "text": "Can you even edit the raw data? Don't do that.",
+    "start_ms": 1587384,
+    "end_ms": 1589384,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1589.72,
+    "text": "Don't edit data. Be the day as it is if you want to make transformations and you might make those in your code so you can save what you did.",
+    "start_ms": 1589720,
+    "end_ms": 1596736,
+    "duration_ms": 7016,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1597.88,
+    "text": "Don't edit the data. Alright back to EDA. Alright, so that's how you click around.",
+    "start_ms": 1597880,
+    "end_ms": 1606472,
+    "duration_ms": 8592,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1606.648,
+    "text": "You can also use my time to take a look at your data.",
+    "start_ms": 1606648,
+    "end_ms": 1609928,
+    "duration_ms": 3280,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1610.36,
+    "text": "So here I use the open function so we'll teach a little python here.",
+    "start_ms": 1610360,
+    "end_ms": 1614222,
+    "duration_ms": 3862,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1614.222,
+    "text": "This opens up a file object. Let's me read from the data on my computer.",
+    "start_ms": 1614222,
+    "end_ms": 1618360,
+    "duration_ms": 4138,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1619.608,
+    "text": "So, opening up this file in the Data folder, CDC to Rekyllis, the CSV, and opening up for reading.",
+    "start_ms": 1619608,
+    "end_ms": 1624608,
+    "duration_ms": 5000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1625.048,
+    "text": "I'm still being as this file object F. Right now I can loop through the fields of Earth.",
+    "start_ms": 1625048,
+    "end_ms": 1631128,
+    "duration_ms": 6080,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1631.768,
+    "text": "So a little bit fancy spiked on syntax here, but I'm looping over F, but I've decided to numerate it, so I'm going to get pairs of the row number and then the row from F.",
+    "start_ms": 1631768,
+    "end_ms": 1640866,
+    "duration_ms": 9098,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1640.866,
+    "text": "The row is actually just one line of F at a time.",
+    "start_ms": 1640866,
+    "end_ms": 1642808,
+    "duration_ms": 1942,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1643.832,
+    "text": "Then we do this three times because I don't want to run the entire file just and look at a few lights.",
+    "start_ms": 1643832,
+    "end_ms": 1649191,
+    "duration_ms": 5359,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1649.074,
+    "text": "think it's either lines of the file. You're like, wow, what's the space between the lines?",
+    "start_ms": 1649074,
+    "end_ms": 1653716,
+    "duration_ms": 4642,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1653.716,
+    "text": "But when I do this, print is saying... Put the row, put a new line at the end when you're done.",
+    "start_ms": 1653716,
+    "end_ms": 1659168,
+    "duration_ms": 5452,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1659.168,
+    "text": "Print it out, next line. But the row already has a new line at the end.",
+    "start_ms": 1659168,
+    "end_ms": 1663168,
+    "duration_ms": 4000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1663.64,
+    "text": "So you're two new lights. I want to see what's going on in the file.",
+    "start_ms": 1663640,
+    "end_ms": 1667240,
+    "duration_ms": 3600,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1667.24,
+    "text": "Another really cool piece of Python syntax is the Ripper function.",
+    "start_ms": 1667240,
+    "end_ms": 1672040,
+    "duration_ms": 4800,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1671.968,
+    "text": "lets me get the raw representation of that string. So let's run this.",
+    "start_ms": 1671968,
+    "end_ms": 1675530,
+    "duration_ms": 3562,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1675.53,
+    "text": "So instead of printing the string with the new line characteristic, converting those new line characters into a slash N to say there's a new line.",
+    "start_ms": 1675530,
+    "end_ms": 1683096,
+    "duration_ms": 7566,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1683.576,
+    "text": "So now all those hidden characters as tabs spaces. Spaces stay there.",
+    "start_ms": 1683576,
+    "end_ms": 1688196,
+    "duration_ms": 4620,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1688.196,
+    "text": "Tabs, new lines, all those other things are now visible and I can see what's going on in my file.",
+    "start_ms": 1688196,
+    "end_ms": 1692544,
+    "duration_ms": 4348,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1692.984,
+    "text": "We have weird, uh, weird files. This can be very useful for reading what's going on in your data.",
+    "start_ms": 1692984,
+    "end_ms": 1697784,
+    "duration_ms": 4800,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1699.576,
+    "text": "So came to my office hours how do I know what these functions do?",
+    "start_ms": 1699576,
+    "end_ms": 1702856,
+    "duration_ms": 3280,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1705.56,
+    "text": "I look it up. lazy to do that so how do I look up stuff quickly.",
+    "start_ms": 1705560,
+    "end_ms": 1709564,
+    "duration_ms": 4004,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1711.032,
+    "text": "Show contextual help. Now, I just put my mouse everythings.",
+    "start_ms": 1711032,
+    "end_ms": 1716528,
+    "duration_ms": 5496,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1717.688,
+    "text": "and explains what's going on, a repper. It turns a canonical string representation of object.",
+    "start_ms": 1717688,
+    "end_ms": 1721688,
+    "duration_ms": 4000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1723.416,
+    "text": "I don't know what that means, I can go search on the internet and get some more explanation.",
+    "start_ms": 1723416,
+    "end_ms": 1726616,
+    "duration_ms": 3200,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1728.408,
+    "text": "Let's put this on real. See for I. Yeah, so individual variables, I can see what's going on.",
+    "start_ms": 1728408,
+    "end_ms": 1734344,
+    "duration_ms": 5936,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1734.344,
+    "text": "It's a very useful tool. So when you're confused, learn how to use help.",
+    "start_ms": 1734344,
+    "end_ms": 1737824,
+    "duration_ms": 3480,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1738.424,
+    "text": "Not the off-sourced kind, but the computer kind. One other cool trick for those who are like, huh?",
+    "start_ms": 1738424,
+    "end_ms": 1745384,
+    "duration_ms": 6960,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1745.976,
+    "text": "I shall ask you as a kick-cut. Alright, I'm not going to go on a brief tangent because my tangents are never brief, but there's some code you can read for how to read larger files.",
+    "start_ms": 1745976,
+    "end_ms": 1755944,
+    "duration_ms": 9968,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1756.312,
+    "text": "that the this is when you have really big files be careful because you can open up a big file in your browser and your browser like okay and Python's like okay here's a million lines of text in your browser crashes And it crashes in a way like, oh, let's fix it.",
+    "start_ms": 1756312,
+    "end_ms": 1771416,
+    "duration_ms": 15104,
+    "word_count": 53,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1771.416,
+    "text": "You open up the notebook again in your browser crashes.",
+    "start_ms": 1771416,
+    "end_ms": 1774216,
+    "duration_ms": 2800,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1774.68,
+    "text": "So you need a way to clear that notebook, there are tools to do that.",
+    "start_ms": 1774680,
+    "end_ms": 1777320,
+    "duration_ms": 2640,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1777.32,
+    "text": "So just be careful opening up massive things in your browser.",
+    "start_ms": 1777320,
+    "end_ms": 1780320,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1783.736,
+    "text": "and tangent. return to slides. Okay, very good. Alright, so that is uh, but we didn't read the CSV file, do we?",
+    "start_ms": 1783736,
+    "end_ms": 1790840,
+    "duration_ms": 7104,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1791.512,
+    "text": "It's over. We do not okay so let's finish it i need to go the end of this tangent But so now I want to read the CSV file.",
+    "start_ms": 1791512,
+    "end_ms": 1799176,
+    "duration_ms": 7664,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1799.128,
+    "text": "So, read CSV is a very useful function built into pandas.",
+    "start_ms": 1799128,
+    "end_ms": 1803208,
+    "duration_ms": 4080,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1803.208,
+    "text": "It's kind of one of the more powerful functions because it figures crazy stuff out.",
+    "start_ms": 1803208,
+    "end_ms": 1807448,
+    "duration_ms": 4240,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1807.64,
+    "text": "You give it a CSV file that I can often guess what you're trying to do.",
+    "start_ms": 1807640,
+    "end_ms": 1811240,
+    "duration_ms": 3600,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1812.216,
+    "text": "Alright, so I'm getting at the file name. I'm gonna run it.",
+    "start_ms": 1812216,
+    "end_ms": 1815872,
+    "duration_ms": 3656,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1816.088,
+    "text": "I get this data frame. It's figured out. That's a comma separated value file.",
+    "start_ms": 1816088,
+    "end_ms": 1821566,
+    "duration_ms": 5478,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1821.566,
+    "text": "I did say CSV so it's an default. the fall assumption and loaded my data in.",
+    "start_ms": 1821566,
+    "end_ms": 1825939,
+    "duration_ms": 4373,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1825.939,
+    "text": "So I have a data friend. This is unnamed column.",
+    "start_ms": 1825939,
+    "end_ms": 1831032,
+    "duration_ms": 5093,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1833.496,
+    "text": "That's because remember there's these two rows. There's this first row which just had these like TB cases and TB incidents and the second row seemed to have the actual column names.",
+    "start_ms": 1833496,
+    "end_ms": 1850696,
+    "duration_ms": 17200,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1850.477,
+    "text": "actual columns on row one, not the row zero of that file.",
+    "start_ms": 1850477,
+    "end_ms": 1853608,
+    "duration_ms": 3131,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1854.264,
+    "text": "Alright, so let's clean up a little bit. Alright, so now I threw away the stuff that came before this, so I have 2019, 2020, 2021.",
+    "start_ms": 1854264,
+    "end_ms": 1860984,
+    "duration_ms": 6720,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1860.984,
+    "text": "And then when it was loading, it's like, wait a second, you have column name 2019 again?",
+    "start_ms": 1860984,
+    "end_ms": 1864984,
+    "duration_ms": 4000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1865.624,
+    "text": "Independent of that one. so I can differentiate it. 2019.1 mean I have no idea so I go back to my filing okay.",
+    "start_ms": 1865624,
+    "end_ms": 1873320,
+    "duration_ms": 7696,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1873.72,
+    "text": "Aha! 1219 occurs under this TB incidence thing. That's probably TB incidence 2019.",
+    "start_ms": 1873720,
+    "end_ms": 1879160,
+    "duration_ms": 5440,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1879.416,
+    "text": "and then uh... 2019 over here is no tb cases 2019 No TV cases 2020.",
+    "start_ms": 1879416,
+    "end_ms": 1885800,
+    "duration_ms": 6384,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1888.248,
+    "text": "How do you know what this function does? How do I know to do header?",
+    "start_ms": 1888248,
+    "end_ms": 1891048,
+    "duration_ms": 2800,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1893.368,
+    "text": "Read the documentation. Or... Shift tap. Hit Shift Tap. the documentation pops up and you can start guessing.",
+    "start_ms": 1893368,
+    "end_ms": 1903256,
+    "duration_ms": 9888,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1903.256,
+    "text": "Oh, there's a delimiter names. Engine? There's a CSV engine.",
+    "start_ms": 1903256,
+    "end_ms": 1906856,
+    "duration_ms": 3600,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1906.856,
+    "text": "Yeah, you can change the way it does stuff. Skip initial spaces, skip rows, skip footer, number of rows to load.",
+    "start_ms": 1906856,
+    "end_ms": 1914072,
+    "duration_ms": 7216,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1914.36,
+    "text": "For Bose? Sure. What do these things do? I don't know.",
+    "start_ms": 1914360,
+    "end_ms": 1917293,
+    "duration_ms": 2933,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1917.293,
+    "text": "You scroll down and it explains each of these things.",
+    "start_ms": 1917293,
+    "end_ms": 1919960,
+    "duration_ms": 2667,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1921.048,
+    "text": "So shift tap when you're confused shift tap Shift-Tap. Command I.",
+    "start_ms": 1921048,
+    "end_ms": 1933120,
+    "duration_ms": 12072,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1933.528,
+    "text": "goes to the context menu and on my mac it's currently not working so i've been clicking here uh...",
+    "start_ms": 1933528,
+    "end_ms": 1938176,
+    "duration_ms": 4648,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1938.176,
+    "text": "command i brings up the same thing on the side also like uh my cursor here and it shows me the data too.",
+    "start_ms": 1938176,
+    "end_ms": 1947752,
+    "duration_ms": 9576,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1948.344,
+    "text": "so that reads into my Python environment. If the thing hasn't been run yet, if I hadn't run the cell and I had done this, it will show me nothing.",
+    "start_ms": 1948344,
+    "end_ms": 1956144,
+    "duration_ms": 7800,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1956.144,
+    "text": "Why? Because TBDF doesn't exist yet until you run this cell.",
+    "start_ms": 1956144,
+    "end_ms": 1959548,
+    "duration_ms": 3404,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1960.6,
+    "text": "This is actually reading into what's in the Python environment right now.",
+    "start_ms": 1960600,
+    "end_ms": 1963800,
+    "duration_ms": 3200,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1964.92,
+    "text": "I know what's in the Python environment. You know? We list all the variables that are in your Bimeprint.",
+    "start_ms": 1964920,
+    "end_ms": 1979496,
+    "duration_ms": 14576,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1982.456,
+    "text": "crazy name for a bunch. Okay. Alright, so let's clean up the data.",
+    "start_ms": 1982456,
+    "end_ms": 1990344,
+    "duration_ms": 7888,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1990.223,
+    "text": "use another function built into PANETS, rename. So what does rename do?",
+    "start_ms": 1990223,
+    "end_ms": 1994842,
+    "duration_ms": 4619,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1994.842,
+    "text": "I don't know. Shift up. Okay, rename columns or index labels.",
+    "start_ms": 1994842,
+    "end_ms": 1999912,
+    "duration_ms": 5070,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2000.632,
+    "text": "Sounds good. I want to rename columns. 2019 should be TB cases 2019 2020 should be TB cases 2020 So I built this dictionary.",
+    "start_ms": 2000632,
+    "end_ms": 2008672,
+    "duration_ms": 8040,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2008.672,
+    "text": "How do I know to do that? I don't know, let's see, shift up.",
+    "start_ms": 2008672,
+    "end_ms": 2012584,
+    "duration_ms": 3912,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2012.664,
+    "text": "Colors? MAPER is a dictionary, dictionary-like object or a function.",
+    "start_ms": 2012664,
+    "end_ms": 2017568,
+    "duration_ms": 4904,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2017.568,
+    "text": "Dictionary-like object, also known as a dictionary, is a mapping from the thing that it was before to the thing that I wanted to be.",
+    "start_ms": 2017568,
+    "end_ms": 2023368,
+    "duration_ms": 5800,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2024.6,
+    "text": "I will take a shot. Rename Cubs. You will do this a lot.",
+    "start_ms": 2024600,
+    "end_ms": 2029352,
+    "duration_ms": 4752,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2029.72,
+    "text": "I ever work with Google surveys. When you get the the call names the the call name is the entire question.",
+    "start_ms": 2029720,
+    "end_ms": 2036096,
+    "duration_ms": 6376,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2036.536,
+    "text": "It's really hard to work with that column when it's that long.",
+    "start_ms": 2036536,
+    "end_ms": 2038896,
+    "duration_ms": 2360,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2038.896,
+    "text": "Rename it as like question one or you know data 100 interests data 100 fears.",
+    "start_ms": 2038896,
+    "end_ms": 2044136,
+    "duration_ms": 5240,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2044.792,
+    "text": "So you will often be renaming cops. Now we return to slides.",
+    "start_ms": 2044792,
+    "end_ms": 2050184,
+    "duration_ms": 5392,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2052.152,
+    "text": "Where do you come back to structure? Let's talk about granularity.",
+    "start_ms": 2052152,
+    "end_ms": 2055816,
+    "duration_ms": 3664,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2058.36,
+    "text": "How ors or fine is my data? Hold on, in by that.",
+    "start_ms": 2058360,
+    "end_ms": 2062144,
+    "duration_ms": 3784,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2064.376,
+    "text": "What does it rare represent? Maybe I'm looking at uh...",
+    "start_ms": 2064376,
+    "end_ms": 2072456,
+    "duration_ms": 8080,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2073.688,
+    "text": "Graids in his class. Each row could be a student and the overall grade, each row could be a student.",
+    "start_ms": 2073688,
+    "end_ms": 2080312,
+    "duration_ms": 6624,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2080.696,
+    "text": "and a particular assignment. So the granular could be the aggregate information about a student or it could be the information about each assignment for each student.",
+    "start_ms": 2080696,
+    "end_ms": 2089448,
+    "duration_ms": 8752,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2090.84,
+    "text": "Which one's finer? Salon. Each assignment for each student is like really detailed zoomed in on that student.",
+    "start_ms": 2090840,
+    "end_ms": 2098360,
+    "duration_ms": 7520,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2100.12,
+    "text": "How do we go? Courser. I suppose I start with this really fine thing.",
+    "start_ms": 2100120,
+    "end_ms": 2105096,
+    "duration_ms": 4976,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2106.584,
+    "text": "You learned about a panda's function for this? I want to group.",
+    "start_ms": 2106584,
+    "end_ms": 2114532,
+    "duration_ms": 7948,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2115.128,
+    "text": "My records. My Rose, all the Rose, one student put them together.",
+    "start_ms": 2115128,
+    "end_ms": 2119504,
+    "duration_ms": 4376,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2119.504,
+    "text": "Group by. Sublaboration to change my granularity. Before we get there again.",
+    "start_ms": 2119504,
+    "end_ms": 2125864,
+    "duration_ms": 6360,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2125.863,
+    "text": "your data and you should ask, what is the granular of my data?",
+    "start_ms": 2125863,
+    "end_ms": 2128008,
+    "duration_ms": 2145,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2128.728,
+    "text": "Could it ever be more than one? Why would someone do that?",
+    "start_ms": 2128728,
+    "end_ms": 2135844,
+    "duration_ms": 7116,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2137.4,
+    "text": "Good question. Why would someone do that? They're here. This is government data.",
+    "start_ms": 2137400,
+    "end_ms": 2146472,
+    "duration_ms": 9072,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2147.096,
+    "text": "Have you ever been to the state total? Get in next year up.",
+    "start_ms": 2147096,
+    "end_ms": 2152384,
+    "duration_ms": 5288,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2152.536,
+    "text": "Why do people do that? Because humans read these tables and they're like, oh, well, I want the turtle.",
+    "start_ms": 2152536,
+    "end_ms": 2156936,
+    "duration_ms": 4400,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2156.936,
+    "text": "Normally they put it at the bottom, but it's hard to associate the turtle with the columns, so maybe sometimes put the rope at the top.",
+    "start_ms": 2156936,
+    "end_ms": 2162536,
+    "duration_ms": 5600,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2162.648,
+    "text": "The total column. Total row. Unfortunately, in the real world...",
+    "start_ms": 2162648,
+    "end_ms": 2169176,
+    "duration_ms": 6528,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2169.528,
+    "text": "People like to mix these things so you get different granularities.",
+    "start_ms": 2169528,
+    "end_ms": 2172568,
+    "duration_ms": 3040,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2173.304,
+    "text": "So what does record record represent? Could be individual purchases, a person, a group of users.",
+    "start_ms": 2173304,
+    "end_ms": 2179544,
+    "duration_ms": 6240,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2179.928,
+    "text": "We can go from the granularity of a single assignment over here.",
+    "start_ms": 2179928,
+    "end_ms": 2183288,
+    "duration_ms": 3360,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2183.736,
+    "text": "to the score for the entire class over here. And it is common for these things to be mixed.",
+    "start_ms": 2183736,
+    "end_ms": 2189832,
+    "duration_ms": 6096,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2190.488,
+    "text": "So you can get what are called roll ups, aggregates, and your table.",
+    "start_ms": 2190488,
+    "end_ms": 2194248,
+    "duration_ms": 3760,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2197.528,
+    "text": "As records and you need to recognize those in the documentation they probably won't talk about it obviously the totals row is a total So now you're going to hear the records for the tuberculosis cases.",
+    "start_ms": 2197528,
+    "end_ms": 2207816,
+    "duration_ms": 10288,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2209.208,
+    "text": "So you need to recognize you have relapse and deal with them.",
+    "start_ms": 2209208,
+    "end_ms": 2211708,
+    "duration_ms": 2500,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2215.864,
+    "text": "It did our course. How do I get the records?",
+    "start_ms": 2215864,
+    "end_ms": 2218264,
+    "duration_ms": 2400,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2221.272,
+    "text": "Yeah, this better way for this. It might have aggregated data.",
+    "start_ms": 2221272,
+    "end_ms": 2224552,
+    "duration_ms": 3280,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2225.304,
+    "text": "I wasn't aggregated. Student grades. I have your grade for the for homeworks.",
+    "start_ms": 2225304,
+    "end_ms": 2233155,
+    "duration_ms": 7851,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2233.155,
+    "text": "How is that computed? In this class it's complicated, right?",
+    "start_ms": 2233155,
+    "end_ms": 2239048,
+    "duration_ms": 5893,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2239.448,
+    "text": "The average you have some drops, there's lots of stuff going on that goes from the individual grades so that average is great.",
+    "start_ms": 2239448,
+    "end_ms": 2243948,
+    "duration_ms": 4500,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2246.072,
+    "text": "You need to get that out. Hopefully the documentation explains when things are aggregated.",
+    "start_ms": 2246072,
+    "end_ms": 2251496,
+    "duration_ms": 5424,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2251.8,
+    "text": "How they were. Brick and... row they don't document, obviously it's the Sumps.",
+    "start_ms": 2251800,
+    "end_ms": 2257144,
+    "duration_ms": 5344,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2257.528,
+    "text": "In this data set we'll find that it's actually in fact not always the sum.",
+    "start_ms": 2257528,
+    "end_ms": 2260328,
+    "duration_ms": 2800,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2262.136,
+    "text": "Alright, this is the way. and there are many ways in which these aggregates can be computed sampling averaging some combination of two.",
+    "start_ms": 2262136,
+    "end_ms": 2275280,
+    "duration_ms": 13144,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2277.112,
+    "text": "Alright, so we're going to dig further into this. We'll work out the tuberculosis incidence.",
+    "start_ms": 2277112,
+    "end_ms": 2282344,
+    "duration_ms": 5232,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2283.16,
+    "text": "Bye. What is incidents? So I play some basic probabilities but proportions, the kind of the data analog to these probabilities.",
+    "start_ms": 2283160,
+    "end_ms": 2292536,
+    "duration_ms": 9376,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2294.264,
+    "text": "It's since in this case is defined in cases per 100,000 persons.",
+    "start_ms": 2294264,
+    "end_ms": 2299064,
+    "duration_ms": 4800,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2299.736,
+    "text": "I like this, you know, it could be written many ways.",
+    "start_ms": 2299736,
+    "end_ms": 2301621,
+    "duration_ms": 1885,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2301.621,
+    "text": "I actually like to wait and think about this way.",
+    "start_ms": 2301621,
+    "end_ms": 2303336,
+    "duration_ms": 1715,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2303.336,
+    "text": "So there's this number. which is the number of cases divided by the population.",
+    "start_ms": 2303336,
+    "end_ms": 2308316,
+    "duration_ms": 4980,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2309.464,
+    "text": "Alright, what's interesting here is that if I say there were 50 cases in 2021 and then 52K, that's too low.",
+    "start_ms": 2309464,
+    "end_ms": 2315064,
+    "duration_ms": 5600,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2315.064,
+    "text": "But I say there are 50,000 cases in 2021 and 50...",
+    "start_ms": 2315064,
+    "end_ms": 2318024,
+    "duration_ms": 2960,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2318.744,
+    "text": "3,022. That good or bad, how's how do you read about that?",
+    "start_ms": 2318744,
+    "end_ms": 2324536,
+    "duration_ms": 5792,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2325.112,
+    "text": "Did the population change? Maybe a bunch of people... Perished in 2020 2021.",
+    "start_ms": 2325112,
+    "end_ms": 2330760,
+    "duration_ms": 5648,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2332.152,
+    "text": "So when reasoning about data, especially these kinds of proportions, these kinds of population order statistics, we often think about it in terms of proportion.",
+    "start_ms": 2332152,
+    "end_ms": 2340552,
+    "duration_ms": 8400,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2341.08,
+    "text": "Divided by the population. So instead, there's .000-001. And then there is zero zero one one?",
+    "start_ms": 2341080,
+    "end_ms": 2349256,
+    "duration_ms": 8176,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2350.232,
+    "text": "There's also a hard number to talk about, so we often scale these by 100,000.",
+    "start_ms": 2350232,
+    "end_ms": 2354232,
+    "duration_ms": 4000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2354.392,
+    "text": "So how many people in a hundred thousand? and tuberculosis.",
+    "start_ms": 2354392,
+    "end_ms": 2357600,
+    "duration_ms": 3208,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2357.976,
+    "text": "So we define incidents in this way, understanding how these things are defined is pretty important in EDA.",
+    "start_ms": 2357976,
+    "end_ms": 2363976,
+    "duration_ms": 6000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2367.224,
+    "text": "This is what we want to compute this thing here.",
+    "start_ms": 2367224,
+    "end_ms": 2369179,
+    "duration_ms": 1955,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2369.179,
+    "text": "So we're going to try to compute incidents. We need some things.",
+    "start_ms": 2369179,
+    "end_ms": 2373640,
+    "duration_ms": 4461,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2373.976,
+    "text": "What do we need? We have this we got number of tb cases right let's go back to our data.",
+    "start_ms": 2373976,
+    "end_ms": 2380240,
+    "duration_ms": 6264,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2382.296,
+    "text": "So you have TV cases. We should do granularity. Let's finish granular for us and we'll do the instance.",
+    "start_ms": 2382296,
+    "end_ms": 2392432,
+    "duration_ms": 10136,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2392.432,
+    "text": "Okay. So we talk about granularity, I actually have an example of granularity in this step up, so we'll go through it.",
+    "start_ms": 2392432,
+    "end_ms": 2397640,
+    "duration_ms": 5208,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2398.136,
+    "text": "Take our data. Are you pointed out the total? That seems a bit weird, right?",
+    "start_ms": 2398136,
+    "end_ms": 2402440,
+    "duration_ms": 4304,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2402.872,
+    "text": "That's a different granularity record. We could actually check how is this total computed?",
+    "start_ms": 2402872,
+    "end_ms": 2408546,
+    "duration_ms": 5674,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2408.546,
+    "text": "Is it really the total of each of these rows?",
+    "start_ms": 2408546,
+    "end_ms": 2410904,
+    "duration_ms": 2358,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2413.368,
+    "text": "What's it gonna do? Good drop. The zeros. Roll. Now my channel looks like this.",
+    "start_ms": 2413368,
+    "end_ms": 2422520,
+    "duration_ms": 9152,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2422.968,
+    "text": "Did it modify the table? Cops here. Gordon, thank you for your time.",
+    "start_ms": 2422968,
+    "end_ms": 2428792,
+    "duration_ms": 5824,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2429.592,
+    "text": "Everything. I think, yeah, basically everything, unless you say, uh...",
+    "start_ms": 2429592,
+    "end_ms": 2433592,
+    "duration_ms": 4000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2434.616,
+    "text": "We'll see. Unless you say. In place equals true. is going to not modify that variable that return a new thing.",
+    "start_ms": 2434616,
+    "end_ms": 2443656,
+    "duration_ms": 9040,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2444.216,
+    "text": "Why do this because we'd like when TV DF is created for it to be the same throughout the notebook.",
+    "start_ms": 2444216,
+    "end_ms": 2449216,
+    "duration_ms": 5000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2449.784,
+    "text": "So we want to do all these transformations we should do them all once and then have just tbdf.",
+    "start_ms": 2449784,
+    "end_ms": 2453384,
+    "duration_ms": 3600,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2453.944,
+    "text": "And anything we do to it from then on should make new data frames.",
+    "start_ms": 2453944,
+    "end_ms": 2457144,
+    "duration_ms": 3200,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2459.672,
+    "text": "That's when dropped the zero throw. If I drop the zero throw and then take the sun, what should I get?",
+    "start_ms": 2459672,
+    "end_ms": 2465704,
+    "duration_ms": 6032,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2466.712,
+    "text": "All this do. Aggregate the entire table. I'm going to roll up all the rows and I should get the fiddle.",
+    "start_ms": 2466712,
+    "end_ms": 2473941,
+    "duration_ms": 7229,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2473.941,
+    "text": "Let's do it. Dig it through. Well, pretty. I got...",
+    "start_ms": 2473941,
+    "end_ms": 2493164,
+    "duration_ms": 19223,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2493.848,
+    "text": "What is this number? I can't even parse this number.",
+    "start_ms": 2493848,
+    "end_ms": 2495848,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2496.728,
+    "text": "It's a big number. rhetorical here. So I'll go ahead and show you.",
+    "start_ms": 2496728,
+    "end_ms": 2504520,
+    "duration_ms": 7792,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2504.888,
+    "text": "When I loaded this data with read CSV. It decided that these things are objects.",
+    "start_ms": 2504888,
+    "end_ms": 2511740,
+    "duration_ms": 6852,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2513.272,
+    "text": "2019 2020 2021. What does that mean to you? an object.",
+    "start_ms": 2513272,
+    "end_ms": 2517728,
+    "duration_ms": 4456,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2518.904,
+    "text": "It's the type of data, how it's stored on the machine.",
+    "start_ms": 2518904,
+    "end_ms": 2521904,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2522.808,
+    "text": "So in Python, objects are the things that aren't numbers like ins floats and bullions.",
+    "start_ms": 2522808,
+    "end_ms": 2528808,
+    "duration_ms": 6000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2529.624,
+    "text": "Objects of things like strings. List's dictionaries, all these more complex objects.",
+    "start_ms": 2529624,
+    "end_ms": 2535780,
+    "duration_ms": 6156,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2535.78,
+    "text": "Again, include strings. So this is here is a complex object.",
+    "start_ms": 2535780,
+    "end_ms": 2543344,
+    "duration_ms": 7564,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2543.896,
+    "text": "Why is that a complex object? Probably a string. Why do we think that might be a string?",
+    "start_ms": 2543896,
+    "end_ms": 2547896,
+    "duration_ms": 4000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2551.32,
+    "text": "I think it goes. 2,111. You gotta come out there.",
+    "start_ms": 2551320,
+    "end_ms": 2556399,
+    "duration_ms": 5079,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2556.399,
+    "text": "What's that come up? Confirmation, that's a string. So we need to tell it, it guess that what it was reading here was not a number, it was a string because it saw a comma.",
+    "start_ms": 2556399,
+    "end_ms": 2569176,
+    "duration_ms": 12777,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2569.752,
+    "text": "You'll fix that. How do we do it? Oh, we're getting away, Hummer.",
+    "start_ms": 2569752,
+    "end_ms": 2577680,
+    "duration_ms": 7928,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2577.68,
+    "text": "Alright, well... We'll bleed it for a second so hit shift tab and I go okay so I got these commas I would start scrolling through this.",
+    "start_ms": 2577680,
+    "end_ms": 2585416,
+    "duration_ms": 7736,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2586.04,
+    "text": "I find when thousands takes a string, or what does thousands do?",
+    "start_ms": 2586040,
+    "end_ms": 2589340,
+    "duration_ms": 3300,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2589.34,
+    "text": "Scroll down a lot. She was in a quick way to search this.",
+    "start_ms": 2589340,
+    "end_ms": 2593608,
+    "duration_ms": 4268,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2593.848,
+    "text": "There is go to command i, we'll bring up that context menu on the side.",
+    "start_ms": 2593848,
+    "end_ms": 2597848,
+    "duration_ms": 4000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2599.768,
+    "text": "which we hear. Thousands. Okay, thousands. This is hard to read.",
+    "start_ms": 2599768,
+    "end_ms": 2606600,
+    "duration_ms": 6832,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2607.544,
+    "text": "Fortunately, Again. Thousands Okay, thousands of strings optional. I'm not going to provide it.",
+    "start_ms": 2607544,
+    "end_ms": 2615632,
+    "duration_ms": 8088,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2615.632,
+    "text": "Character acting as a thousand-separator in numerical values. Come as the separator.",
+    "start_ms": 2615632,
+    "end_ms": 2624632,
+    "duration_ms": 9000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2624.632,
+    "text": "Interesting. So we go back over here, let me say.",
+    "start_ms": 2624632,
+    "end_ms": 2628744,
+    "duration_ms": 4112,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2628.952,
+    "text": "Thousands equals Kama. I need to get... typo Renamed it.",
+    "start_ms": 2628952,
+    "end_ms": 2636352,
+    "duration_ms": 7400,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2637.368,
+    "text": "Is this a skip something? De Marnus. We need my columns.",
+    "start_ms": 2637368,
+    "end_ms": 2643757,
+    "duration_ms": 6389,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2643.757,
+    "text": "Very good. Trillion. here too. Now I think I have things I've rename my columns and I've...",
+    "start_ms": 2643757,
+    "end_ms": 2654480,
+    "duration_ms": 10723,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2654.648,
+    "text": "Change my numbers to actually be numbers so I can do analysis.",
+    "start_ms": 2654648,
+    "end_ms": 2657928,
+    "duration_ms": 3280,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2661.464,
+    "text": "Can you be worried about those commas? Oh, it's a beer problem.",
+    "start_ms": 2661464,
+    "end_ms": 2667776,
+    "duration_ms": 6312,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2673.848,
+    "text": "Comma separated data. So how did it know what to do?",
+    "start_ms": 2673848,
+    "end_ms": 2677608,
+    "duration_ms": 3760,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2678.136,
+    "text": "when it loaded in this this file It seemed to load it correctly.",
+    "start_ms": 2678136,
+    "end_ms": 2683944,
+    "duration_ms": 5808,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2683.992,
+    "text": "But I said karma separate. Fions. I'm also gonna have commas inside of my fields.",
+    "start_ms": 2683992,
+    "end_ms": 2689160,
+    "duration_ms": 5168,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2692.472,
+    "text": "Do you see this? She quoted. Again, you're doing this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, But did they put commas inside of the records because that's going to be a pain to load?",
+    "start_ms": 2692472,
+    "end_ms": 2705608,
+    "duration_ms": 13136,
+    "word_count": 136,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2707.512,
+    "text": "Modern data often does this quoting, it's good, and they put the quotes there.",
+    "start_ms": 2707512,
+    "end_ms": 2712312,
+    "duration_ms": 4800,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2712.856,
+    "text": "That tells the computer that, well, okay, this thing... Has commas in it?",
+    "start_ms": 2712856,
+    "end_ms": 2716525,
+    "duration_ms": 3669,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2716.525,
+    "text": "It also tells a computer this thing is probably a string.",
+    "start_ms": 2716525,
+    "end_ms": 2719576,
+    "duration_ms": 3051,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2719.96,
+    "text": "This is got commas in it, other funny characters. But if I want another quote.",
+    "start_ms": 2719960,
+    "end_ms": 2728872,
+    "duration_ms": 8912,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2730.168,
+    "text": "I need to mark that code as well. Oh, don't let it get dark.",
+    "start_ms": 2730168,
+    "end_ms": 2734728,
+    "duration_ms": 4560,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2735.0,
+    "text": "So data can be messy when I talk about data cleaning, it's deal with these kinds of problems in your data.",
+    "start_ms": 2735000,
+    "end_ms": 2739540,
+    "duration_ms": 4540,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2739.54,
+    "text": "Yeah. Yeah, so what if I had an old data set and they didn't do this coding?",
+    "start_ms": 2739540,
+    "end_ms": 2748796,
+    "duration_ms": 9256,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2749.08,
+    "text": "is really hard. I don't know, is this a new column here or is this a common side of it?",
+    "start_ms": 2749080,
+    "end_ms": 2757352,
+    "duration_ms": 8272,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2757.784,
+    "text": "A number. These are things you will deal with when it's this bad if I didn't quote it's really hard to solve these problems.",
+    "start_ms": 2757784,
+    "end_ms": 2765032,
+    "duration_ms": 7248,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2765.032,
+    "text": "You will often do the following. Drop the rope. We'll talk about that a little bit.",
+    "start_ms": 2765032,
+    "end_ms": 2770375,
+    "duration_ms": 5343,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2770.375,
+    "text": "So what to do when you just can't picture data.",
+    "start_ms": 2770375,
+    "end_ms": 2772728,
+    "duration_ms": 2353,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2773.112,
+    "text": "Bye. got it in we changed the thousands We told the...",
+    "start_ms": 2773112,
+    "end_ms": 2780840,
+    "duration_ms": 7728,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2781.336,
+    "text": "Python Pandas library that that comes as a thousands marker.",
+    "start_ms": 2781336,
+    "end_ms": 2784290,
+    "duration_ms": 2954,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2784.29,
+    "text": "So now we have data looks like this the commas are gone.",
+    "start_ms": 2784290,
+    "end_ms": 2787836,
+    "duration_ms": 3546,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2788.888,
+    "text": "because it's not showing the commas in the environment. If I drop the first row and I take the sum...",
+    "start_ms": 2788888,
+    "end_ms": 2796040,
+    "duration_ms": 7152,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2797.08,
+    "text": "I get 8,800, what was that up here? 8,900. So the rollup does in fact, naturally computed.",
+    "start_ms": 2797080,
+    "end_ms": 2805288,
+    "duration_ms": 8208,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2805.288,
+    "text": "So if I compute the sums, I get The same thing for the first three.",
+    "start_ms": 2805288,
+    "end_ms": 2810184,
+    "duration_ms": 4896,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2811.64,
+    "text": "Call them. So 7-1-7-3. 7173-7860, and I did my own calculation, 7860, and then the total number of- Total number of TV instances 2.71.",
+    "start_ms": 2811640,
+    "end_ms": 2825640,
+    "duration_ms": 14000,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2826.424,
+    "text": "1.77 plus 7.9. Plus a lot of other stuff is 2.71.",
+    "start_ms": 2826424,
+    "end_ms": 2831240,
+    "duration_ms": 4816,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2832.6,
+    "text": "How was that turtle? Probably they computed it for the population.",
+    "start_ms": 2832600,
+    "end_ms": 2840728,
+    "duration_ms": 8128,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2841.272,
+    "text": "I do in fact know that because at the end of this notebook which we won't get to you can actually try to work through these calculations as well.",
+    "start_ms": 2841272,
+    "end_ms": 2847272,
+    "duration_ms": 6000,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2847.608,
+    "text": "But when they mean totally mean the aggregate for the population.",
+    "start_ms": 2847608,
+    "end_ms": 2850408,
+    "duration_ms": 2800,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2851.48,
+    "text": "So the aggregate TV incidence. So I was supposed to do this.",
+    "start_ms": 2851480,
+    "end_ms": 2859224,
+    "duration_ms": 7744,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2859.48,
+    "text": "Then I went back over here and said, right, we want to finish this calculation.",
+    "start_ms": 2859480,
+    "end_ms": 2862280,
+    "duration_ms": 2800,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2862.28,
+    "text": "We have all this case information now. We're just missing the population.",
+    "start_ms": 2862280,
+    "end_ms": 2866120,
+    "duration_ms": 3840,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2869.368,
+    "text": "So a lot of what we do in exporter data analysis will reveal that we're missing something.",
+    "start_ms": 2869368,
+    "end_ms": 2874808,
+    "duration_ms": 5440,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2875.384,
+    "text": "Much like unboxing my new stove for camping, I realized I was shooting at the gas That's the kind of stuff.",
+    "start_ms": 2875384,
+    "end_ms": 2882304,
+    "duration_ms": 6920,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2882.36,
+    "text": "Right. Bye. And you won't know that perhaps until you start taking the thing apart.",
+    "start_ms": 2882360,
+    "end_ms": 2887256,
+    "duration_ms": 4896,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2887.928,
+    "text": "Looking at what you have. Here, I realize I need something else, I need the population data.",
+    "start_ms": 2887928,
+    "end_ms": 2893704,
+    "duration_ms": 5776,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2896.088,
+    "text": "Right. So, you know, we got the geographic equation. Let's do that now.",
+    "start_ms": 2896088,
+    "end_ms": 2900061,
+    "duration_ms": 3973,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2900.061,
+    "text": "I think we can jump to the demo. So get census data.",
+    "start_ms": 2900061,
+    "end_ms": 2905192,
+    "duration_ms": 5131,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2904.696,
+    "text": "from the US government. dialed it into the data folder.",
+    "start_ms": 2904696,
+    "end_ms": 2908009,
+    "duration_ms": 3313,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2908.009,
+    "text": "It's in CSV form. Let's go take a look again.",
+    "start_ms": 2908009,
+    "end_ms": 2910232,
+    "duration_ms": 2223,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2910.936,
+    "text": "so you can add ST estimated census. 2001 Oh boy.",
+    "start_ms": 2910936,
+    "end_ms": 2920128,
+    "duration_ms": 9192,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2920.568,
+    "text": "What is going on here? Let's just look at this.",
+    "start_ms": 2920568,
+    "end_ms": 2924320,
+    "duration_ms": 3752,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2924.32,
+    "text": "And this is real data. We're not like cooking it to make it look bad.",
+    "start_ms": 2924320,
+    "end_ms": 2927320,
+    "duration_ms": 3000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2927.992,
+    "text": "This is how they decided to ship it. Table with Rose, so in the table we have this like extra table with Rose, some weird character in action, what that is.",
+    "start_ms": 2927992,
+    "end_ms": 2938152,
+    "duration_ms": 10160,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2938.392,
+    "text": "Is it tap? Yeah, table throws, head and calma, so some descriptions and documentation.",
+    "start_ms": 2938392,
+    "end_ms": 2944344,
+    "duration_ms": 5952,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2944.888,
+    "text": "uh leading dots indicate some parts so lots of stuff going on the The table form when I just make treat as a comma separated table.",
+    "start_ms": 2944888,
+    "end_ms": 2955357,
+    "duration_ms": 10469,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2955.357,
+    "text": "It's kind of good. It's got leading dots interesting. these?",
+    "start_ms": 2955357,
+    "end_ms": 2960936,
+    "duration_ms": 5579,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2961.976,
+    "text": "What's your granularity? rethink We got the United States, we got the Northeast, and we've got...",
+    "start_ms": 2961976,
+    "end_ms": 2970280,
+    "duration_ms": 8304,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2972.664,
+    "text": "Let's see in the next video. Delaware. Right, so we have data different granularities in our table.",
+    "start_ms": 2972664,
+    "end_ms": 2980028,
+    "duration_ms": 7364,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2981.4,
+    "text": "And again, this is real data, but the world will give you.",
+    "start_ms": 2981400,
+    "end_ms": 2985400,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2985.88,
+    "text": "So we we looked at this data and it's got some headers going on as well.",
+    "start_ms": 2985880,
+    "end_ms": 2989880,
+    "duration_ms": 4000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2989.88,
+    "text": "So like there's a bunch of information up here. So comments and it looks like the real information.",
+    "start_ms": 2989880,
+    "end_ms": 2994380,
+    "duration_ms": 4500,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2995.128,
+    "text": "Maybe starts here. Concert please. Fourth row. at location number three.",
+    "start_ms": 2995128,
+    "end_ms": 3003240,
+    "duration_ms": 8112,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3007.896,
+    "text": "Get moving on together. All right, so we're going to load in this data so we get.",
+    "start_ms": 3007896,
+    "end_ms": 3011240,
+    "duration_ms": 3344,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3014.296,
+    "text": "What's going on here? So there's an extra space to the beginning, so there's a name to column.",
+    "start_ms": 3014296,
+    "end_ms": 3020568,
+    "duration_ms": 6272,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3021.24,
+    "text": "We have Celsius estimated Celsius census estimated estimates base years.",
+    "start_ms": 3021240,
+    "end_ms": 3028440,
+    "duration_ms": 7200,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3029.048,
+    "text": "So you have some of the data about the population broken down by years.",
+    "start_ms": 3029048,
+    "end_ms": 3032248,
+    "duration_ms": 3200,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3034.136,
+    "text": "We went in Delta thousands we pulled it in we have all these man man is not a number So these are just missing values these are probably notes at the bottom of the file that we should have ignored But the pan is loaded it in is additional rows.",
+    "start_ms": 3034136,
+    "end_ms": 3047436,
+    "duration_ms": 13300,
+    "word_count": 50,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3047.436,
+    "text": "So these really aren't really records in the first place We're going to do a fair amount of data cleaning in this class.",
+    "start_ms": 3047436,
+    "end_ms": 3056800,
+    "duration_ms": 9364,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3056.8,
+    "text": "You'll do it in the homework assignments. It basically boils down to using lots of PANAs functions to transform this data into a table that you'd want to work with.",
+    "start_ms": 3056800,
+    "end_ms": 3064584,
+    "duration_ms": 7784,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3064.584,
+    "text": "So I'm going to rename the unnamed columns here, it's supposed to be a geographic area.",
+    "start_ms": 3064584,
+    "end_ms": 3069584,
+    "duration_ms": 5000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3069.584,
+    "text": "I'm going to drop the census and estimated estimates base columns.",
+    "start_ms": 3069584,
+    "end_ms": 3074084,
+    "duration_ms": 4500,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3074.084,
+    "text": "I don't need those. I want the census the global census.",
+    "start_ms": 3074084,
+    "end_ms": 3078584,
+    "duration_ms": 4500,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3078.584,
+    "text": "We do that every 10 years. I just want the actual year by year accounts.",
+    "start_ms": 3078584,
+    "end_ms": 3081584,
+    "duration_ms": 3000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3083.352,
+    "text": "I'm going to call this magic convert d types function, which is going to, if I have an integer that's encoded as a floating point number, I'm going to make it an integer.",
+    "start_ms": 3083352,
+    "end_ms": 3091852,
+    "duration_ms": 8500,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3093.048,
+    "text": "And then we do drop in a. Drop not a number.",
+    "start_ms": 3093048,
+    "end_ms": 3097504,
+    "duration_ms": 4456,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3097.504,
+    "text": "Drop all my dance. Might be dangerous, we'll do it.",
+    "start_ms": 3097504,
+    "end_ms": 3101064,
+    "duration_ms": 3560,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3102.296,
+    "text": "Come back to dropping in a moment. Alright, so what happens when I run all these things back to back?",
+    "start_ms": 3102296,
+    "end_ms": 3107356,
+    "duration_ms": 5060,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3108.28,
+    "text": "I think Professor Noir as you said this in the last lecture, but I've done something here just as a style to make it easy to read my code.",
+    "start_ms": 3108280,
+    "end_ms": 3114280,
+    "duration_ms": 6000,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3114.28,
+    "text": "I put parentheses so that the Python interpreter knows that this is just one long line, but instead of this being one long line that goes off the page.",
+    "start_ms": 3114280,
+    "end_ms": 3121280,
+    "duration_ms": 7000,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3121.976,
+    "text": "I've put new lines in it, I've broken it down into steps.",
+    "start_ms": 3121976,
+    "end_ms": 3125976,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3125.976,
+    "text": "Each of these is an object, a function call on this object.",
+    "start_ms": 3125976,
+    "end_ms": 3129976,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3130.072,
+    "text": "This whole thing here produces a new data frame that I then apply the drop.",
+    "start_ms": 3130072,
+    "end_ms": 3135512,
+    "duration_ms": 5440,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3135.832,
+    "text": "Operation 2. This whole thing, we use a new data frame that I apply the, apply the convert d types operation to, and so on.",
+    "start_ms": 3135832,
+    "end_ms": 3143868,
+    "duration_ms": 8036,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3144.6,
+    "text": "Much easier to read this way. Break your steps down, document them, you're like, okay, I know what's going on here.",
+    "start_ms": 3144600,
+    "end_ms": 3149355,
+    "duration_ms": 4755,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3149.355,
+    "text": "We'll sleep. And here's my data. Done this process. I have the geographic area.",
+    "start_ms": 3149355,
+    "end_ms": 3154344,
+    "duration_ms": 4989,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3154.344,
+    "text": "I have a year. This is looking good. I have the aggregate for the United States.",
+    "start_ms": 3154344,
+    "end_ms": 3158793,
+    "duration_ms": 4449,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3158.793,
+    "text": "I have the aggregate for Northeast Midwest Southwest. I'm going to have this dot business dot Washington.",
+    "start_ms": 3158793,
+    "end_ms": 3163520,
+    "duration_ms": 4727,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3163.864,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3163864,
+    "end_ms": 3163994,
+    "duration_ms": 130,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3163.994,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3163994,
+    "end_ms": 3164125,
+    "duration_ms": 131,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3164.125,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3164125,
+    "end_ms": 3164256,
+    "duration_ms": 131,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3164.256,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3164256,
+    "end_ms": 3164387,
+    "duration_ms": 131,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3164.387,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3164387,
+    "end_ms": 3164518,
+    "duration_ms": 131,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3164.518,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3164518,
+    "end_ms": 3164649,
+    "duration_ms": 131,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3164.649,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3164649,
+    "end_ms": 3164780,
+    "duration_ms": 131,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3164.78,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3164780,
+    "end_ms": 3164911,
+    "duration_ms": 131,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3164.911,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3164911,
+    "end_ms": 3165042,
+    "duration_ms": 131,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3165.042,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3165042,
+    "end_ms": 3165173,
+    "duration_ms": 131,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3165.173,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3165173,
+    "end_ms": 3165304,
+    "duration_ms": 131,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3165.304,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3165304,
+    "end_ms": 3165435,
+    "duration_ms": 131,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3165.435,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3165435,
+    "end_ms": 3165566,
+    "duration_ms": 131,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3165.566,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3165566,
+    "end_ms": 3165697,
+    "duration_ms": 131,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3165.697,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3165697,
+    "end_ms": 3165828,
+    "duration_ms": 131,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3165.828,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3165828,
+    "end_ms": 3165959,
+    "duration_ms": 131,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3165.959,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3165959,
+    "end_ms": 3166090,
+    "duration_ms": 131,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3166.09,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3166090,
+    "end_ms": 3166220,
+    "duration_ms": 130,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3166.22,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3166220,
+    "end_ms": 3166351,
+    "duration_ms": 131,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3166.351,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3166351,
+    "end_ms": 3166482,
+    "duration_ms": 131,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3166.482,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3166482,
+    "end_ms": 3166613,
+    "duration_ms": 131,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3166.613,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3166613,
+    "end_ms": 3166744,
+    "duration_ms": 131,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3166.744,
+    "text": ". . . Why don't Puerto Rico get a dot?",
+    "start_ms": 3166744,
+    "end_ms": 3169064,
+    "duration_ms": 2320,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3170.104,
+    "text": "Pretty good should have a dot. Alright, Puerto Rico is not a state, so it does not get it done.",
+    "start_ms": 3170104,
+    "end_ms": 3175560,
+    "duration_ms": 5456,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3178.808,
+    "text": "Okay. Let's run this. So these dots are kind of annoying.",
+    "start_ms": 3178808,
+    "end_ms": 3184229,
+    "duration_ms": 5421,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3184.229,
+    "text": "I don't want dot Washington. I just want Washington. We're going to do more string manipulation in them in next week actually.",
+    "start_ms": 3184229,
+    "end_ms": 3191816,
+    "duration_ms": 7587,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3191.816,
+    "text": "Here I'm going to take the geographic area column and I'm using a string operator on that column.",
+    "start_ms": 3191816,
+    "end_ms": 3196958,
+    "duration_ms": 5142,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3196.958,
+    "text": "So you'll start learning about these string and date operators.",
+    "start_ms": 3196958,
+    "end_ms": 3199816,
+    "duration_ms": 2858,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3199.816,
+    "text": "if I take a series that is a a series of objects and those objects happen to be strings and I can do dot str and there's a whole bunch of really useful functions that allow me to transform those strings.",
+    "start_ms": 3199816,
+    "end_ms": 3211723,
+    "duration_ms": 11907,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3211.723,
+    "text": "So I'm going to say I want to strip off periods at the beginning or end of those strings.",
+    "start_ms": 3211723,
+    "end_ms": 3217208,
+    "duration_ms": 5485,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3217.72,
+    "text": "That'll do. And I'm going to put that back in the geographic area call.",
+    "start_ms": 3217720,
+    "end_ms": 3222312,
+    "duration_ms": 4592,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3222.584,
+    "text": "So now... O'Dots. Data cleaning. We're dinner angry. I've been going fast, do anyone have questions?",
+    "start_ms": 3222584,
+    "end_ms": 3233576,
+    "duration_ms": 10992,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3241.528,
+    "text": "So those the twenty tens. Long time ago. need the 2020s.",
+    "start_ms": 3241528,
+    "end_ms": 3247016,
+    "duration_ms": 5488,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3247.016,
+    "text": "I want to look at 2019s, I need the 2010s, I want to look at 2020, 2021, so I need the 2020s.",
+    "start_ms": 3247016,
+    "end_ms": 3252720,
+    "duration_ms": 5704,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3253.336,
+    "text": "Same process again, same types of transformations. Here I've put this all in one cell.",
+    "start_ms": 3253336,
+    "end_ms": 3257896,
+    "duration_ms": 4560,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3257.896,
+    "text": "This is better because when I'm done the cell, that data frame is fixed.",
+    "start_ms": 3257896,
+    "end_ms": 3261416,
+    "duration_ms": 3520,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3261.976,
+    "text": "Today I'm going to work with, I've seen clean. Y'all.",
+    "start_ms": 3261976,
+    "end_ms": 3267552,
+    "duration_ms": 5576,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3267.352,
+    "text": "2021 2021 2022 should update this data download the latest version and get 2023 as well.",
+    "start_ms": 3267352,
+    "end_ms": 3272792,
+    "duration_ms": 5440,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3274.936,
+    "text": "Return to slides. Demo complete structure. We're going to do something.",
+    "start_ms": 3274936,
+    "end_ms": 3280609,
+    "duration_ms": 5673,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3280.609,
+    "text": "We're a little bit behind schedule so I'm going to jump to a break from it.",
+    "start_ms": 3280609,
+    "end_ms": 3284328,
+    "duration_ms": 3719,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3284.328,
+    "text": "We'll come back to some of these. structured tasks. Make sure a lot bit behind schedule.",
+    "start_ms": 3284328,
+    "end_ms": 3290920,
+    "duration_ms": 6592,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3291.992,
+    "text": "TOOP So let's do this. Let's take a three minute break, do a short interlude, and then we'll continue.",
+    "start_ms": 3291992,
+    "end_ms": 3299144,
+    "duration_ms": 7152,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3300.12,
+    "text": "on some of this structure. So I'm bad at time and five minutes has to go a little bit faster because I'm behind on lecture.",
+    "start_ms": 3300120,
+    "end_ms": 3497352,
+    "duration_ms": 197232,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3497.352,
+    "text": "So that was a five minute break that was two minutes long.",
+    "start_ms": 3497352,
+    "end_ms": 3500792,
+    "duration_ms": 3440,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3502.936,
+    "text": "Here's what I do so I want to try to get through enough today so that we can do fun stuff with strings on Tuesday.",
+    "start_ms": 3502936,
+    "end_ms": 3509436,
+    "duration_ms": 6500,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3509.436,
+    "text": "We've been again playing with this data I brought in this population data that I want to connect back to my.",
+    "start_ms": 3509436,
+    "end_ms": 3516436,
+    "duration_ms": 7000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3516.76,
+    "text": "My tuberculosis numbers from the beginning of the lecture. And to do this, I want to bring in a new concept that is important when we think about data.",
+    "start_ms": 3516760,
+    "end_ms": 3527304,
+    "duration_ms": 10544,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3527.304,
+    "text": "And that is that we are often going to be operating on not one, but many.",
+    "start_ms": 3527304,
+    "end_ms": 3531304,
+    "duration_ms": 4000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3531.256,
+    "text": "Hopefully nice and rectangular. Be well. It applies. And in order to bring these things together, we have to use The Join function.",
+    "start_ms": 3531256,
+    "end_ms": 3543080,
+    "duration_ms": 11824,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3542.968,
+    "text": "Which in pandas? is called merch. and also join, it was actually too.",
+    "start_ms": 3542968,
+    "end_ms": 3549448,
+    "duration_ms": 6480,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3550.168,
+    "text": "In this class we're going to focus on merge because it is the more general version of join.",
+    "start_ms": 3550168,
+    "end_ms": 3554488,
+    "duration_ms": 4320,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3554.488,
+    "text": "It does everything that a join should do. and it's also what you learned in the last lecture.",
+    "start_ms": 3554488,
+    "end_ms": 3559048,
+    "duration_ms": 4560,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3559.544,
+    "text": "Now I'm going to talk about how you use it and what you should be looking at in your data when you think about using it.",
+    "start_ms": 3559544,
+    "end_ms": 3564544,
+    "duration_ms": 5000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3566.744,
+    "text": "And to do that, we need to think about ease.",
+    "start_ms": 3566744,
+    "end_ms": 3569744,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3570.936,
+    "text": "So when I look at my data... I need to figure out where some part of one piece of data References another part of another piece of data.",
+    "start_ms": 3570936,
+    "end_ms": 3579580,
+    "duration_ms": 8644,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3580.568,
+    "text": "And this is done by understanding the first, the concept of the primary key.",
+    "start_ms": 3580568,
+    "end_ms": 3585568,
+    "duration_ms": 5000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3589.624,
+    "text": "So the primary key is going to be The column, and this sometimes confuses people, or set of columns, so it can be more than one column.",
+    "start_ms": 3589624,
+    "end_ms": 3597504,
+    "duration_ms": 7880,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3598.104,
+    "text": "That uniquely determines the values in the remaining columns. Actually, abstractly a primary key is something that would be true forever if I kept filling in that table.",
+    "start_ms": 3598104,
+    "end_ms": 3610640,
+    "duration_ms": 12536,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3610.64,
+    "text": "But we're looking at, I have some data. In the day I have what is the primary key.",
+    "start_ms": 3610640,
+    "end_ms": 3615548,
+    "duration_ms": 4908,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3616.792,
+    "text": "Let's get some of this. have customers.csv. It seems I have a customer ID and an address.",
+    "start_ms": 3616792,
+    "end_ms": 3622424,
+    "duration_ms": 5632,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3624.184,
+    "text": "Use your intuition what would be the primary key. It's possible to people live at the same address.",
+    "start_ms": 3624184,
+    "end_ms": 3635176,
+    "duration_ms": 10992,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3636.472,
+    "text": "But every customer should have. their own customer ID. So, custom ID.",
+    "start_ms": 3636472,
+    "end_ms": 3642920,
+    "duration_ms": 6448,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3642.892,
+    "text": "determine your address. Could it be more than one address?",
+    "start_ms": 3642892,
+    "end_ms": 3649224,
+    "duration_ms": 6332,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3650.328,
+    "text": "That in this world. You only get one address if that's correct.",
+    "start_ms": 3650328,
+    "end_ms": 3654120,
+    "duration_ms": 3792,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3654.36,
+    "text": "If customers have a way to address. This would not be a primary key in this table.",
+    "start_ms": 3654360,
+    "end_ms": 3660296,
+    "duration_ms": 5936,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3665.4,
+    "text": "Here's the other one. You can order a number. Each order gets its own number, then you have the associated customer order and the date to a reverse place.",
+    "start_ms": 3665400,
+    "end_ms": 3673816,
+    "duration_ms": 8416,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3674.2,
+    "text": "good to live Again. If that is the primary key and if that's a reasonable assumption of the primary key, then I would say, well, I can't have more than one customer in order.",
+    "start_ms": 3674200,
+    "end_ms": 3685560,
+    "duration_ms": 11360,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3686.488,
+    "text": "for more than one date for an order. This intuitive is the concept that I...",
+    "start_ms": 3686488,
+    "end_ms": 3693296,
+    "duration_ms": 6808,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3693.88,
+    "text": "In database systems actually has a formal definition but when you're working with data you're going to be thinking what is the primary key in this table.",
+    "start_ms": 3693880,
+    "end_ms": 3700200,
+    "duration_ms": 6320,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3700.504,
+    "text": "What's the thing that determines all the other rooms? Is it the state, for example, the region?",
+    "start_ms": 3700504,
+    "end_ms": 3705192,
+    "duration_ms": 4688,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3705.192,
+    "text": "This is Washington. This is Puerto Rico. That determines the values for the rest of the columns.",
+    "start_ms": 3705192,
+    "end_ms": 3710832,
+    "duration_ms": 5640,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3713.24,
+    "text": "It's gonna be unique. And what do we need this?",
+    "start_ms": 3713240,
+    "end_ms": 3718504,
+    "duration_ms": 5264,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3718.504,
+    "text": "Because of foreign keys. or he's amazing. These are the keys that reference back to a primary key.",
+    "start_ms": 3718504,
+    "end_ms": 3725552,
+    "duration_ms": 7048,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3726.84,
+    "text": "Another table. So here Customer ideas are foreign key referencing back the primary key.",
+    "start_ms": 3726840,
+    "end_ms": 3734648,
+    "duration_ms": 7808,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3735.576,
+    "text": "and you're on a table. When you have these relationships, it's time to join Warren Penn as Merch.",
+    "start_ms": 3735576,
+    "end_ms": 3742040,
+    "duration_ms": 6464,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3743.64,
+    "text": "You need to bring these tables together. Start to reason about, date I want this row.",
+    "start_ms": 3743640,
+    "end_ms": 3747400,
+    "duration_ms": 3760,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3747.768,
+    "text": "Perhaps, or maybe actually won this row. Here I want to attach inside of this row.",
+    "start_ms": 3747768,
+    "end_ms": 3753552,
+    "duration_ms": 5784,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3758.072,
+    "text": "In sequel, spent a lot of time working with these in in sequel, it's actually annotated.",
+    "start_ms": 3758072,
+    "end_ms": 3762372,
+    "duration_ms": 4300,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3762.372,
+    "text": "He's calm as a primary key. This calm over here is a foreign key that references back to this other table.",
+    "start_ms": 3762372,
+    "end_ms": 3766832,
+    "duration_ms": 4460,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3767.128,
+    "text": "So in sequence, great, you don't have to figure this stuff out, it's in the schema.",
+    "start_ms": 3767128,
+    "end_ms": 3770408,
+    "duration_ms": 3280,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3771.064,
+    "text": "if the scheme is well organized. In pandas and CSV land it's up to you.",
+    "start_ms": 3771064,
+    "end_ms": 3776064,
+    "duration_ms": 5000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3776.064,
+    "text": "Forget this stuff out. Thanks for joining us. We are all ready for the next episode of the show.",
+    "start_ms": 3776064,
+    "end_ms": 3782824,
+    "duration_ms": 6760,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3782.968,
+    "text": "Got the pace. The Joane, aka Merge in Pentez. I'm going to join these tables.",
+    "start_ms": 3782968,
+    "end_ms": 3791297,
+    "duration_ms": 8329,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3791.297,
+    "text": "So I have the following three tables. Other museums display function to look at three things at once.",
+    "start_ms": 3791297,
+    "end_ms": 3796969,
+    "duration_ms": 5672,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3796.969,
+    "text": "Nice print, nice neatly displayed. So I'm looking at the last two rows of the table, the TV DF data frame.",
+    "start_ms": 3796969,
+    "end_ms": 3804104,
+    "duration_ms": 7135,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3804.104,
+    "text": "And I'm looking at the last two rows of census 2010s and census 2020s.",
+    "start_ms": 3804104,
+    "end_ms": 3808024,
+    "duration_ms": 3920,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3809.464,
+    "text": "Alright, what's my keys? I think these are all primary keys, so I'm just going to connect primary keys to the H table.",
+    "start_ms": 3809464,
+    "end_ms": 3816288,
+    "duration_ms": 6824,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3817.336,
+    "text": "So the primary key to the table is Wisconsin. Let's do Wyoming.",
+    "start_ms": 3817336,
+    "end_ms": 3820748,
+    "duration_ms": 3412,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3820.748,
+    "text": "Wyoming has the following information attached to it in this table.",
+    "start_ms": 3820748,
+    "end_ms": 3823640,
+    "duration_ms": 2892,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3823.64,
+    "text": "I want to link that to the Wyoming row in this table and the Wyoming row in this table.",
+    "start_ms": 3823640,
+    "end_ms": 3827800,
+    "duration_ms": 4160,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3829.368,
+    "text": "So three tables, three primary keys, I can just stick them together.",
+    "start_ms": 3829368,
+    "end_ms": 3832368,
+    "duration_ms": 3000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3833.496,
+    "text": "There should be one giant table. and you learn how to do this last lecture.",
+    "start_ms": 3833496,
+    "end_ms": 3838792,
+    "duration_ms": 5296,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3839.736,
+    "text": "I'm sorry. I'm going to take the tuberculosis data frame.",
+    "start_ms": 3839736,
+    "end_ms": 3842760,
+    "duration_ms": 3024,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3843.48,
+    "text": "I'm gonna merge aka join. with the census data print.",
+    "start_ms": 3843480,
+    "end_ms": 3848872,
+    "duration_ms": 5392,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3849.592,
+    "text": "The right side joins merges have a left side, the A and the right side, the B that I'm joining together.",
+    "start_ms": 3849592,
+    "end_ms": 3856592,
+    "duration_ms": 7000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3857.208,
+    "text": "So this is the left, then this is the right.",
+    "start_ms": 3857208,
+    "end_ms": 3860008,
+    "duration_ms": 2800,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3860.92,
+    "text": "You can see this is on the here so make it more clear.",
+    "start_ms": 3860920,
+    "end_ms": 3867920,
+    "duration_ms": 7000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3872.696,
+    "text": "Let's do lightbacks. Alright, so little other stuff going on here.",
+    "start_ms": 3872696,
+    "end_ms": 3876872,
+    "duration_ms": 4176,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3877.208,
+    "text": "Shift tab. Merge has these... How on left on all these things it will start to make sense as you play with it more and you'll do the snowbirds and when we look at sequel spend a lot more time talking about Some of these criteria.",
+    "start_ms": 3877208,
+    "end_ms": 3891688,
+    "duration_ms": 14480,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3891.832,
+    "text": "The one thing you do need to know is when I'm merging, the left should use the US jurisdiction column.",
+    "start_ms": 3891832,
+    "end_ms": 3897512,
+    "duration_ms": 5680,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3897.512,
+    "text": "So that is... Let's go up here left is this table.",
+    "start_ms": 3897512,
+    "end_ms": 3900936,
+    "duration_ms": 3424,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3901.048,
+    "text": "So I went the US jurisdiction comms, you do the thing I match on the left table.",
+    "start_ms": 3901048,
+    "end_ms": 3904408,
+    "duration_ms": 3360,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3904.952,
+    "text": "With the thing I match on the right table, which is a geographic area.",
+    "start_ms": 3904952,
+    "end_ms": 3907952,
+    "duration_ms": 3000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3908.92,
+    "text": "The right table is this one here, so geographic area.",
+    "start_ms": 3908920,
+    "end_ms": 3911920,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3911.92,
+    "text": "So we're these, you know, we're having Wyoming here, I will match with Wyoming here, and those two rows will be stuck.",
+    "start_ms": 3911920,
+    "end_ms": 3916920,
+    "duration_ms": 5000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3917.848,
+    "text": "Beside each other. Birch Let's see what we got. So I did the merge.",
+    "start_ms": 3917848,
+    "end_ms": 3927912,
+    "duration_ms": 10064,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3927.874,
+    "text": "the first table is its work-gillest's table. Then I joined it with the 2010 data.",
+    "start_ms": 3927874,
+    "end_ms": 3933128,
+    "duration_ms": 5254,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3934.2,
+    "text": "and you got the gary at x. Comment on something for a moment.",
+    "start_ms": 3934200,
+    "end_ms": 3938184,
+    "duration_ms": 3984,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3941.816,
+    "text": "to one merge of time. Okay, so I did the first merge, so I have the left table is my tuberculosis table and the right table is this geographic data table.",
+    "start_ms": 3941816,
+    "end_ms": 3950684,
+    "duration_ms": 8868,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3952.024,
+    "text": "When I put a second margin there. Which emerging again.",
+    "start_ms": 3952024,
+    "end_ms": 3956008,
+    "duration_ms": 3984,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3957.272,
+    "text": "is back. I have a degree x what's that. Well other table, the 2020 data.",
+    "start_ms": 3957272,
+    "end_ms": 3966536,
+    "duration_ms": 9264,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3967.704,
+    "text": "How do you graph a career why When I merged two things and there's a collision on the column names...",
+    "start_ms": 3967704,
+    "end_ms": 3973640,
+    "duration_ms": 5936,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3974.52,
+    "text": "Panda's Adds in X or what? or another letter if i keep merging I forgot what it does.",
+    "start_ms": 3974520,
+    "end_ms": 3981228,
+    "duration_ms": 6708,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3981.228,
+    "text": "You can actually change its behavior in this case. It is that it looks like it.",
+    "start_ms": 3981228,
+    "end_ms": 3986088,
+    "duration_ms": 4860,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3986.008,
+    "text": "I'm sorry. suffixes, you'll add an X and a Y when there's a collision.",
+    "start_ms": 3986008,
+    "end_ms": 3990472,
+    "duration_ms": 4464,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3990.904,
+    "text": "but a left and the right tips. Alright, questions on merch?",
+    "start_ms": 3990904,
+    "end_ms": 3997000,
+    "duration_ms": 6096,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4000.376,
+    "text": "Wonderful. I'm going to clean up the data but let's not do that now as I want to keep going.",
+    "start_ms": 4000376,
+    "end_ms": 4008104,
+    "duration_ms": 7728,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4008.568,
+    "text": "Trees on merge. You look at tabs up right here, Data.",
+    "start_ms": 4008568,
+    "end_ms": 4013000,
+    "duration_ms": 4432,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4013.304,
+    "text": "Cap's upper data is a lot like, how much separate data?",
+    "start_ms": 4013304,
+    "end_ms": 4015904,
+    "duration_ms": 2600,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4015.904,
+    "text": "Except the data is separated by... Caps. So, uh, same new line, new line, limiter, but instead of using a comma here, use have character slash T is the way of saying the tab character in your keyboard.",
+    "start_ms": 4015904,
+    "end_ms": 4029064,
+    "duration_ms": 13160,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4030.552,
+    "text": "These are also very common. We already discussed this before we have to deal with of hooded characters.",
+    "start_ms": 4030552,
+    "end_ms": 4037112,
+    "duration_ms": 6560,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4037.784,
+    "text": "If I have data that's got lots of commas in it and I don't want to do all this quoting I could use a tab separated table and then the commas I did because they're now totally fine.",
+    "start_ms": 4037784,
+    "end_ms": 4047344,
+    "duration_ms": 9560,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4047.96,
+    "text": "Comas aren't delimiters, taps on. In practice, it doesn't matter.",
+    "start_ms": 4047960,
+    "end_ms": 4051915,
+    "duration_ms": 3955,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4051.915,
+    "text": "I see these more and more. People learn to quote, so it's not such a big deal.",
+    "start_ms": 4051915,
+    "end_ms": 4057596,
+    "duration_ms": 5681,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4060.664,
+    "text": "Alright, I want to talk briefly about non rectangular data, because you will encounter these in the real world.",
+    "start_ms": 4060664,
+    "end_ms": 4066264,
+    "duration_ms": 5600,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4066.616,
+    "text": "Bye. So I said, maybe it's hard to imagine data that isn't in the form of a spreadsheet or I'm a separated values table or SQL database, but you will often work with data that is semi-rectangular, things like tensors, which have like the position latitude, position, and longitude and elevation, and then a temperature at each location, so it forms a volume, this cubic structure here.",
+    "start_ms": 4066616,
+    "end_ms": 4092256,
+    "duration_ms": 25640,
+    "word_count": 67,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4093.496,
+    "text": "And he's going to be encoded in many different forms.",
+    "start_ms": 4093496,
+    "end_ms": 4095496,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4095.496,
+    "text": "They might be sliced as a collection of tables. They might be encoded in some zigzag clever z-ordering on some file.",
+    "start_ms": 4095496,
+    "end_ms": 4101496,
+    "duration_ms": 6000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4101.496,
+    "text": "And you'll use different tools to work with this kind of data.",
+    "start_ms": 4101496,
+    "end_ms": 4104496,
+    "duration_ms": 3000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4105.208,
+    "text": "If you're interested in this, there's something called X-Ray. X-rays like pandas on steroids.",
+    "start_ms": 4105208,
+    "end_ms": 4111880,
+    "duration_ms": 6672,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4113.08,
+    "text": "Which is both good and bad. So check out X-ray if you're working at really complex geographic data.",
+    "start_ms": 4113080,
+    "end_ms": 4118080,
+    "duration_ms": 5000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4118.08,
+    "text": "It's kind of rich three, three-dimensional structure. I did my whole PhD looking at this kind of data.",
+    "start_ms": 4118080,
+    "end_ms": 4124716,
+    "duration_ms": 6636,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4124.716,
+    "text": "Graphs. Social Networks Not rectangular. You can transform these indirect angles, make lists of relationships, but you'll find that there are different tools for working with this kind of data.",
+    "start_ms": 4124716,
+    "end_ms": 4137240,
+    "duration_ms": 12524,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4137.112,
+    "text": "The last kind of what I spend a few minutes on is Jason.",
+    "start_ms": 4137112,
+    "end_ms": 4139912,
+    "duration_ms": 2800,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4140.792,
+    "text": "This is very common. Who's work to chase on the floor?",
+    "start_ms": 4140792,
+    "end_ms": 4146216,
+    "duration_ms": 5424,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4146.52,
+    "text": "Good, you're not ready. Jason. is the JavaScript Object notation.",
+    "start_ms": 4146520,
+    "end_ms": 4152936,
+    "duration_ms": 6416,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4153.72,
+    "text": "Shavascript Is the modern language of the web? Websites build an HTML but all that clicky stuff you do all those web apps powered by JavaScript.",
+    "start_ms": 4153720,
+    "end_ms": 4164456,
+    "duration_ms": 10736,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4164.504,
+    "text": "JavaScript stores data. In Jason. This is a second lecture notebook.",
+    "start_ms": 4164504,
+    "end_ms": 4181064,
+    "duration_ms": 16560,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4182.104,
+    "text": "I'm gonna spend only a little bit of time on this.",
+    "start_ms": 4182104,
+    "end_ms": 4184104,
+    "duration_ms": 2000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4184.104,
+    "text": "Did CSV, CSV, it's kind of boring. Jason. All right.",
+    "start_ms": 4184104,
+    "end_ms": 4188751,
+    "duration_ms": 4647,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4188.751,
+    "text": "This is a U-till function that you'll see in a lot of these these work assignments.",
+    "start_ms": 4188751,
+    "end_ms": 4191909,
+    "duration_ms": 3158,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4191.909,
+    "text": "So function actually I wrote the very first time I taught this class to fetch and download data to your computer.",
+    "start_ms": 4191909,
+    "end_ms": 4198233,
+    "duration_ms": 6324,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4198.233,
+    "text": "This will download a JSON file. the city of Berkeley for confirmed COVID cases.",
+    "start_ms": 4198233,
+    "end_ms": 4203432,
+    "duration_ms": 5199,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4203.432,
+    "text": "It fetches and downloads it so that if I run it again, I don't keep downloading it.",
+    "start_ms": 4203432,
+    "end_ms": 4206792,
+    "duration_ms": 3360,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4206.792,
+    "text": "It's very important so that the Jupiter Hub doesn't hit the city of Berkeley's website millions of times for each student.",
+    "start_ms": 4206792,
+    "end_ms": 4212272,
+    "duration_ms": 5480,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4212.272,
+    "text": "It's also important for you. Download your data and save a copy because guess what?",
+    "start_ms": 4212272,
+    "end_ms": 4216752,
+    "duration_ms": 4480,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4217.368,
+    "text": "Data changes. In fact, early versions of the class I did not do that and some of the lectures broke because I didn't have a copy of the data check done.",
+    "start_ms": 4217368,
+    "end_ms": 4226032,
+    "duration_ms": 8664,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4226.424,
+    "text": "So make a copy of your data so you have a checkpoint in time for your analysis.",
+    "start_ms": 4226424,
+    "end_ms": 4229704,
+    "duration_ms": 3280,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4231.416,
+    "text": "Alright, so I've downloaded this data. I hope it's downloaded it and very good.",
+    "start_ms": 4231416,
+    "end_ms": 4235416,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4236.312,
+    "text": "I guess 26. Alright, it's been saved to get... okay.",
+    "start_ms": 4236312,
+    "end_ms": 4241000,
+    "duration_ms": 4688,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4241.368,
+    "text": "There are various tools in your computing environment that you can use to look at data.",
+    "start_ms": 4241368,
+    "end_ms": 4245768,
+    "duration_ms": 4400,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4245.768,
+    "text": "I'm going to skip those for now. I want to just start to explore this JSON representation.",
+    "start_ms": 4245768,
+    "end_ms": 4250248,
+    "duration_ms": 4480,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4251.128,
+    "text": "Alright, so the first thing that's kind of cool about these Json objects is that the jupor environment has a way to browse through them.",
+    "start_ms": 4251128,
+    "end_ms": 4257048,
+    "duration_ms": 5920,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4257.048,
+    "text": "Looks like this. When I double click I get something that looks like this.",
+    "start_ms": 4257048,
+    "end_ms": 4260328,
+    "duration_ms": 3280,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4260.952,
+    "text": "It's a treat. Jason stores data as a tree. What do I mean by a tree?",
+    "start_ms": 4260952,
+    "end_ms": 4265856,
+    "duration_ms": 4904,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4267.064,
+    "text": "Here's the root of the tree, it's even called the root.",
+    "start_ms": 4267064,
+    "end_ms": 4269704,
+    "duration_ms": 2640,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4270.328,
+    "text": "And then out of that there are fields. The Meta field expands into a single field.",
+    "start_ms": 4270328,
+    "end_ms": 4275612,
+    "duration_ms": 5284,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4276.088,
+    "text": "Little branch, one branch. The view thing expands into all these different piece of information.",
+    "start_ms": 4276088,
+    "end_ms": 4280488,
+    "duration_ms": 4400,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4283.64,
+    "text": "That's encoding information. about the metadata of this file. Some of these meta-informations like columns expand even more into a list of things where each thing has more formation like the field name.",
+    "start_ms": 4283640,
+    "end_ms": 4296112,
+    "duration_ms": 12472,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4298.904,
+    "text": "So I have this data which has all of this documentation built into this data.",
+    "start_ms": 4298904,
+    "end_ms": 4302624,
+    "duration_ms": 3720,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4303.992,
+    "text": "Before you get ahead of myself, what does this actually look like?",
+    "start_ms": 4303992,
+    "end_ms": 4306392,
+    "duration_ms": 2400,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4306.392,
+    "text": "Open a sub. It is actually just a text data format.",
+    "start_ms": 4306392,
+    "end_ms": 4308992,
+    "duration_ms": 2600,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4310.488,
+    "text": "Looks like this. Got these squiggly brackets, it's got fields are always quoted.",
+    "start_ms": 4310488,
+    "end_ms": 4314488,
+    "duration_ms": 4000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4314.904,
+    "text": "Colin says the values of this meta points this giant block of information inside of it.",
+    "start_ms": 4314904,
+    "end_ms": 4320803,
+    "duration_ms": 5899,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4320.803,
+    "text": "There are lists with objects as little squeedly brackets for more objects inside of it.",
+    "start_ms": 4320803,
+    "end_ms": 4325384,
+    "duration_ms": 4581,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4326.616,
+    "text": "Let's represent really rich structure and data. kind of human readable so you can jump in and see what's going on.",
+    "start_ms": 4326616,
+    "end_ms": 4335464,
+    "duration_ms": 8848,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4338.232,
+    "text": "and We can load this very efficiently. the pettis. So I'm going to jump ahead to...",
+    "start_ms": 4338232,
+    "end_ms": 4350032,
+    "duration_ms": 11800,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4350.032,
+    "text": "Ah, let's put it. Lower the data. So when I load it into Python using the Python load tool, this looks me loaded just an object to become a Python dictionary so I can access its individual fields and get its keys.",
+    "start_ms": 4350032,
+    "end_ms": 4363220,
+    "duration_ms": 13188,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4363.96,
+    "text": "i can get the uh the keys of the key so in python to access a field i see square brackets sedictionary If you don't know this, you should go maybe review some Python.",
+    "start_ms": 4363960,
+    "end_ms": 4373300,
+    "duration_ms": 9340,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4373.3,
+    "text": "So this is a dictionary to work with dictionaries. I'm going to use the square brackets and then the key inside the square brackets pulls the next thing.",
+    "start_ms": 4373300,
+    "end_ms": 4380000,
+    "duration_ms": 6700,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4380.6,
+    "text": "This is like traversing side of the meta. the root so i click meta now i get what's inside of this this mid object at the Meta object, it has another inside of view.",
+    "start_ms": 4380600,
+    "end_ms": 4393224,
+    "duration_ms": 12624,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4393.224,
+    "text": "So I go back over here. The go matter has view and I open up view.",
+    "start_ms": 4393224,
+    "end_ms": 4397948,
+    "duration_ms": 4724,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4398.36,
+    "text": "I just did here so I open up view. I get list of keys inside of you.",
+    "start_ms": 4398360,
+    "end_ms": 4401640,
+    "duration_ms": 3280,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4402.552,
+    "text": "So I get these keys and so on so I can recursively Dive into this data.",
+    "start_ms": 4402552,
+    "end_ms": 4408224,
+    "duration_ms": 5672,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4408.224,
+    "text": "It's a treat. I'm not going to go further into loading.",
+    "start_ms": 4408224,
+    "end_ms": 4415710,
+    "duration_ms": 7486,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4415.71,
+    "text": "You guys can work through playing with the tools here for important importing into pandas.",
+    "start_ms": 4415710,
+    "end_ms": 4419624,
+    "duration_ms": 3914,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4420.088,
+    "text": "I want to keep going so I can get to one last concept before we go to the next.",
+    "start_ms": 4420088,
+    "end_ms": 4423688,
+    "duration_ms": 3600,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4425.464,
+    "text": "Um Let's talk about types. 5 minutes. We can do it.",
+    "start_ms": 4425464,
+    "end_ms": 4432512,
+    "duration_ms": 7048,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4432.512,
+    "text": "Let's talk about types. What is the type of data?",
+    "start_ms": 4432512,
+    "end_ms": 4434997,
+    "duration_ms": 2485,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4434.997,
+    "text": "How do I encode data in my table? Peach column represents a very, when I have my data in a nice, you know, regular granular form, each thing is a variable.",
+    "start_ms": 4434997,
+    "end_ms": 4446296,
+    "duration_ms": 11299,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4446.296,
+    "text": "So like, TB case is a thing I'm trying to reason about a measurement.",
+    "start_ms": 4446296,
+    "end_ms": 4449656,
+    "duration_ms": 3360,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4450.04,
+    "text": "I'm in there are two common properties in these things.",
+    "start_ms": 4450040,
+    "end_ms": 4452040,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4452.04,
+    "text": "One is the data type. The storage type, how is it stored in the computer?",
+    "start_ms": 4452040,
+    "end_ms": 4456656,
+    "duration_ms": 4616,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4458.808,
+    "text": "This is encoded in .d type. Could be an integer floating point number float a Boolean of zero true false thing an object.",
+    "start_ms": 4458808,
+    "end_ms": 4466936,
+    "duration_ms": 8128,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4467.352,
+    "text": "You're stringing a list and so on. That is how it is stored.",
+    "start_ms": 4467352,
+    "end_ms": 4471432,
+    "duration_ms": 4080,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4471.672,
+    "text": "Effects the panofunctions we can use. What's more critical? Is the type of variable it is and this is going to affect the analysis we do on it how we visualize it and so on.",
+    "start_ms": 4471672,
+    "end_ms": 4483412,
+    "duration_ms": 11740,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4484.344,
+    "text": "So to answer this you're going to have to use your knowledge of what is a TV case.",
+    "start_ms": 4484344,
+    "end_ms": 4488744,
+    "duration_ms": 4400,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4490.2,
+    "text": "You're in an exploit day yourself. You often consult code books that might tell you...",
+    "start_ms": 4490200,
+    "end_ms": 4495024,
+    "duration_ms": 4824,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4495.352,
+    "text": "When I'm about to tell you these various types and then again, we'll affect how you visualize it and how you interpret the data.",
+    "start_ms": 4495352,
+    "end_ms": 4500352,
+    "duration_ms": 5000,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4501.56,
+    "text": "Alright, so we're going to go through this, we'll review it again in the next lecture and we'll go from there.",
+    "start_ms": 4501560,
+    "end_ms": 4505560,
+    "duration_ms": 4000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4505.784,
+    "text": "Let's get the basics out. A variable can be one of two basic types.",
+    "start_ms": 4505784,
+    "end_ms": 4511184,
+    "duration_ms": 5400,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4511.832,
+    "text": "It can be qualitative, things like, often called categorical, or it can be quantitative.",
+    "start_ms": 4511832,
+    "end_ms": 4517592,
+    "duration_ms": 5760,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4518.424,
+    "text": "Numbers. Kind of. Let's have a quantitative. They were probably quantitative continuous.",
+    "start_ms": 4518424,
+    "end_ms": 4525692,
+    "duration_ms": 7268,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4526.168,
+    "text": "Like a temperature or a price, or could be quantitative discrete.",
+    "start_ms": 4526168,
+    "end_ms": 4530168,
+    "duration_ms": 4000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4531.064,
+    "text": "The number of siblings. The distinction between discrete and continuous isn't that important.",
+    "start_ms": 4531064,
+    "end_ms": 4537176,
+    "duration_ms": 6112,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4538.488,
+    "text": "So for this class, we'll try to treat these, you know, quantitative.",
+    "start_ms": 4538488,
+    "end_ms": 4542888,
+    "duration_ms": 4400,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4542.888,
+    "text": "It's worth knowing these because, you know, in some situations, a more appropriate visualization for a continuous variable may not be appropriate for discrete variable.",
+    "start_ms": 4542888,
+    "end_ms": 4550688,
+    "duration_ms": 7800,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4552.632,
+    "text": "But as important you be able to recognize this data is quantitative.",
+    "start_ms": 4552632,
+    "end_ms": 4555932,
+    "duration_ms": 3300,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4558.68,
+    "text": "These are often the easier ones. Now we'll talk about qualitative where things get a little bit more messy.",
+    "start_ms": 4558680,
+    "end_ms": 4563680,
+    "duration_ms": 5000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4564.216,
+    "text": "So, qualitative has two subtypes. Ordinals. And nominal. Let's talk about nominal first, because that's probably the easiest of all these types.",
+    "start_ms": 4564216,
+    "end_ms": 4575992,
+    "duration_ms": 11776,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4576.664,
+    "text": "Nominal to the name. nominal is referring to names. Your name would be a nominal value.",
+    "start_ms": 4576664,
+    "end_ms": 4586492,
+    "duration_ms": 9828,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4587.992,
+    "text": "Political affiliation. Generally, it could be a nominal value. KELID number.",
+    "start_ms": 4587992,
+    "end_ms": 4595200,
+    "duration_ms": 7208,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4596.76,
+    "text": "It's actually normal. It's a number, but it's really just a way of referencing you.",
+    "start_ms": 4596760,
+    "end_ms": 4600760,
+    "duration_ms": 4000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4601.624,
+    "text": "Don't take the average of CalID numbers that doesn't make sense.",
+    "start_ms": 4601624,
+    "end_ms": 4604624,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4605.752,
+    "text": "So these can be actual numbers, but you're treating them as categories as names.",
+    "start_ms": 4605752,
+    "end_ms": 4611432,
+    "duration_ms": 5680,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4613.016,
+    "text": "The one that is most tricky for students is ordinal.",
+    "start_ms": 4613016,
+    "end_ms": 4616296,
+    "duration_ms": 3280,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4617.912,
+    "text": "These are names like low, medium, and high. They haven't afforded.",
+    "start_ms": 4617912,
+    "end_ms": 4623680,
+    "duration_ms": 5768,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4627.192,
+    "text": "Preferences. Bubble of the education. Why do I need a distinction between these two things?",
+    "start_ms": 4627192,
+    "end_ms": 4632616,
+    "duration_ms": 5424,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4635.672,
+    "text": "When I look at data and I say this nominal the way I visualize it's actually very different than the data that the way I would treat ordinal data.",
+    "start_ms": 4635672,
+    "end_ms": 4641872,
+    "duration_ms": 6200,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4644.376,
+    "text": "And it's actually very different the way I would treat the data on the left here.",
+    "start_ms": 4644376,
+    "end_ms": 4647376,
+    "duration_ms": 3000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4647.376,
+    "text": "So these quantitative fields. So when you look at data, you're going to need to figure out what kind of data it is.",
+    "start_ms": 4647376,
+    "end_ms": 4654512,
+    "duration_ms": 7136,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4654.512,
+    "text": "This also makes great exam questions, by the way. I give you a table.",
+    "start_ms": 4654512,
+    "end_ms": 4658378,
+    "duration_ms": 3866,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4658.378,
+    "text": "What kind of data is it quantitative? Is it qualitative?",
+    "start_ms": 4658378,
+    "end_ms": 4661112,
+    "duration_ms": 2734,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4661.112,
+    "text": "If it's qualitative, is it ordinal or nominal? And that'll affect the kinds of downstream analysis you will do.",
+    "start_ms": 4661112,
+    "end_ms": 4666492,
+    "duration_ms": 5380,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4667.64,
+    "text": "And in the next lecture... We'll actually work through some examples of these kinds of types.",
+    "start_ms": 4667640,
+    "end_ms": 4673672,
+    "duration_ms": 6032,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4673.672,
+    "text": "And the wrap up EDA, and start to talk about text analysis, which is a big part of finishing up EDA.",
+    "start_ms": 4673672,
+    "end_ms": 4679112,
+    "duration_ms": 5440,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4681.336,
+    "text": "Oh, I need one more slide up. Sorry, here's one more slide in case you did not get it.",
+    "start_ms": 4681336,
+    "end_ms": 4687435,
+    "duration_ms": 6099,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4687.435,
+    "text": "I'll leave it up. Thank you.",
+    "start_ms": 4687435,
+    "end_ms": 4690528,
+    "duration_ms": 3093,
+    "word_count": 6,
+    "avg_confidence": 90
+  }
+]

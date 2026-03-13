@@ -1,0 +1,4700 @@
+[
+  {
+    "timestamp": 4.632,
+    "text": "Good morning everyone. Welcome back. Welcome to another fun data 100 lecture.",
+    "start_ms": 4632,
+    "end_ms": 10940,
+    "duration_ms": 6308,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 10.94,
+    "text": "This lecture is a disc labor has been one of the favorite lectures of a student.",
+    "start_ms": 10940,
+    "end_ms": 16952,
+    "duration_ms": 6012,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 16.952,
+    "text": "So in the post kind of survey, we found that a lot of students like to learn about visualization.",
+    "start_ms": 16952,
+    "end_ms": 22514,
+    "duration_ms": 5562,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 22.514,
+    "text": "So that's what we're going to do today and also on Tuesday of next week.",
+    "start_ms": 22514,
+    "end_ms": 28392,
+    "duration_ms": 5878,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 28.392,
+    "text": "So today is going to be our lecture, visualization one, which basically what we're going to do is we're going to talk about why we need to do visualization, what kind of visualization do we need to use and act the actual code that will help us to do to make different visualization plots so that you can make your own plots in different cases and we learn some Python libraries and the relationship between those libraries as well.",
+    "start_ms": 28392,
+    "end_ms": 56472,
+    "duration_ms": 28080,
+    "word_count": 79,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 56.472,
+    "text": "So first off, I'm going to start by talking about why do we care about visualization and what is the goal of visualization.",
+    "start_ms": 56472,
+    "end_ms": 64472,
+    "duration_ms": 8000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 64.472,
+    "text": "So this is kind of the data science life cycle that by now you're all familiar with.",
+    "start_ms": 64472,
+    "end_ms": 69472,
+    "duration_ms": 5000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 69.472,
+    "text": "We have spent a lot of time in exploratory data analysis.",
+    "start_ms": 69472,
+    "end_ms": 72472,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 72.472,
+    "text": "We've seen how we can manipulate the data, how can we do an imputation, how can we make sense of whether our data is in the right format or not.",
+    "start_ms": 72472,
+    "end_ms": 80472,
+    "duration_ms": 8000,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 80.472,
+    "text": "We've seen a lot of the string functions, right? So last lecture was a lot of the string functions and regular expressions.",
+    "start_ms": 80472,
+    "end_ms": 87472,
+    "duration_ms": 7000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 87.472,
+    "text": "What we're going to do today is actually make a visualization of our data set after we do a little bit of data cleaning.",
+    "start_ms": 87472,
+    "end_ms": 95472,
+    "duration_ms": 8000,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 95.472,
+    "text": "So we'll make visualization so that we summarize the trends and then we basically try to understand whether our data is ready for the next phase of the data science lifecycle, life cycle which is going to be the prediction and inference that we're going to go into pretty quickly in a couple of weeks we're going to see a lot of modeling.",
+    "start_ms": 95472,
+    "end_ms": 117752,
+    "duration_ms": 22280,
+    "word_count": 63,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 118.808,
+    "text": "in data 100. So the places that we will do visualization in a data science life cycle, as you can see, is in two places.",
+    "start_ms": 118808,
+    "end_ms": 126559,
+    "duration_ms": 7751,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 126.559,
+    "text": "I also kind of bolded the report decision and solutions.",
+    "start_ms": 126559,
+    "end_ms": 130336,
+    "duration_ms": 3777,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 130.336,
+    "text": "So either we make visualization in the EDA phase or we make visualization in the part that we'll make reports or we're trying to share our insights when stakeholders are outsiders or outsiders of the data science life cycle.",
+    "start_ms": 130336,
+    "end_ms": 145961,
+    "duration_ms": 15625,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 145.961,
+    "text": "You have also seen visualization before so it's not going to be entirely new to how we make visualization in different plots.",
+    "start_ms": 145961,
+    "end_ms": 153234,
+    "duration_ms": 7273,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 153.234,
+    "text": "It's just going to be a different programming library that you will learn and we're going to also talk a little bit about the science behind making visualization and how to make a very effective visualization in data 100.",
+    "start_ms": 153234,
+    "end_ms": 165959,
+    "duration_ms": 12725,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 165.959,
+    "text": "You've seen line plot in data 8, those coming from data 8, you've seen a scatter plot and also homework 1, you had also plotted the histograms and data tends to really like histograms.",
+    "start_ms": 165959,
+    "end_ms": 178367,
+    "duration_ms": 12408,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 178.367,
+    "text": "And we're going to talk a little bit about histograms and how we can applaud it using the tools that you have in data 100.",
+    "start_ms": 178367,
+    "end_ms": 185328,
+    "duration_ms": 6961,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 185.328,
+    "text": "So the goal of general visualization, kind of going back to the data style cycle that I showed you is to kind of provide a high level description of the data or a high level visual of the data to ourselves or to communicate transmit the viewers.",
+    "start_ms": 185328,
+    "end_ms": 201408,
+    "duration_ms": 16080,
+    "word_count": 47,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 201.408,
+    "text": "So to put it formally, we in data 100 call the specifically two goals for visualization.",
+    "start_ms": 201408,
+    "end_ms": 208968,
+    "duration_ms": 7560,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 208.968,
+    "text": "There's one goal that it will help you understand your data a little bit better.",
+    "start_ms": 208968,
+    "end_ms": 213207,
+    "duration_ms": 4239,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 213.207,
+    "text": "So this is going to be part of your exploratory data analysis.",
+    "start_ms": 213207,
+    "end_ms": 216688,
+    "duration_ms": 3481,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 216.688,
+    "text": "What you're basically doing here is that you try to make some visual of your data, some columns, to make sense of the data.",
+    "start_ms": 216688,
+    "end_ms": 225007,
+    "duration_ms": 8319,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 225.007,
+    "text": "And also, you're trying to make sure that the visuals that you're creating are very kind of flexible, lightweight, and then you can iteratively change it to different columns and quickly visualize the trends in your data.",
+    "start_ms": 225007,
+    "end_ms": 237888,
+    "duration_ms": 12881,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 237.888,
+    "text": "We don't want to spend too much time in here, but we also want to make sure that we have a visual sense of a summary of the data in one column or in a specific set of columns.",
+    "start_ms": 237888,
+    "end_ms": 247368,
+    "duration_ms": 9480,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 247.672,
+    "text": "And the goal to that we want to call out for is the communicating the results with the stakeholders.",
+    "start_ms": 247672,
+    "end_ms": 253912,
+    "duration_ms": 6240,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 253.912,
+    "text": "This is what we're going to spend a lot of time in the next lecture talking about how to effectively use visualization that are very descriptive.",
+    "start_ms": 253912,
+    "end_ms": 261544,
+    "duration_ms": 7632,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 261.544,
+    "text": "It has the entire kind of, it utilizes all the channels of information that you can have with the viewer.",
+    "start_ms": 261544,
+    "end_ms": 269201,
+    "duration_ms": 7657,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 269.201,
+    "text": "Make sure that the plot is labeled properly. It has a title.",
+    "start_ms": 269201,
+    "end_ms": 272907,
+    "duration_ms": 3706,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 272.907,
+    "text": "It has access labeled and whatnot. And what kind of visual should we use in order to effectively communicate the results of the model.",
+    "start_ms": 272907,
+    "end_ms": 279992,
+    "duration_ms": 7085,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 279.992,
+    "text": "So kind of thinking about these two goals, generally you can see that we're not going to be about making pretty plots, although we will make pretty plots.",
+    "start_ms": 279992,
+    "end_ms": 289672,
+    "duration_ms": 9680,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 289.672,
+    "text": "But the idea here is to figure out. What is the pre-thinking that we need to do in order to make an effective plot and what is the audience of the plot is it going to be yourself as part of the idea or is it going to be stakeholders so that you can make effective decision in terms of how much time do you want to spend it and how much how much care you should put into the details of the plot that you're creating.",
+    "start_ms": 289672,
+    "end_ms": 316600,
+    "duration_ms": 26928,
+    "word_count": 87,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 316.6,
+    "text": "So in that sense, these two lectures are divided between the lecture one or today's lecture is just generally talking about different kinds of plots looking into different types of variables and then figuring out what is the appropriate type of plot that we can use for those visualizations.",
+    "start_ms": 316600,
+    "end_ms": 333000,
+    "duration_ms": 16400,
+    "word_count": 49,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 333.56,
+    "text": "We will also try to learn a specific technique that you haven't seen before is called carnal density estimation in order to estimate trends in a distribution.",
+    "start_ms": 333560,
+    "end_ms": 343195,
+    "duration_ms": 9635,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 343.195,
+    "text": "And we're going to talk about what distribution is. But we're going to basically see how we can plot kind of a normalized way of histograms to make sense of the distribution of the trends in a data set.",
+    "start_ms": 343195,
+    "end_ms": 356568,
+    "duration_ms": 13373,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 356.568,
+    "text": "In the second half, which is on Tuesday's lecture, we're going to come back and we're going to talk about different transformations that you need to do in order to make sure that your data is actually ready for the modeling.",
+    "start_ms": 356568,
+    "end_ms": 367942,
+    "duration_ms": 11374,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 367.942,
+    "text": "So today we're going to see that, okay, I'm going to do the visualization and although Although my data is clean, it is not in the format that necessarily I want.",
+    "start_ms": 367942,
+    "end_ms": 376480,
+    "duration_ms": 8538,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 376.48,
+    "text": "So that's the part that we have a loop in the Explorer 3D analysis phase that we go back to the transformation and then we plot again up until the point that it takes the form that we exactly want before we move on to the modeling phase.",
+    "start_ms": 376480,
+    "end_ms": 389320,
+    "duration_ms": 12840,
+    "word_count": 48,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 389.32,
+    "text": "And we're going to talk about the science behind visualization and a little bit information channels how to utilize it effectively again in the next lecture.",
+    "start_ms": 389320,
+    "end_ms": 397400,
+    "duration_ms": 8080,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 397.816,
+    "text": "So to start by talking about the most frequent way or the kind of the task of visualization, which is visualizing distributions in your data set or in the data science life cycle.",
+    "start_ms": 397816,
+    "end_ms": 412712,
+    "duration_ms": 14896,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 412.712,
+    "text": "What is a distribution? To put it simply distribution is the summary of your data.",
+    "start_ms": 412712,
+    "end_ms": 417712,
+    "duration_ms": 5000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 417.712,
+    "text": "What kind of summary? This summary has two pieces. So before I define it as the summary has the set of unique values that a variable in your distribution can take.",
+    "start_ms": 417712,
+    "end_ms": 429212,
+    "duration_ms": 11500,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 429.212,
+    "text": "And then the frequency with which each one of them will come up.",
+    "start_ms": 429212,
+    "end_ms": 432212,
+    "duration_ms": 3000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 433.112,
+    "text": "Right, so let me give you an example to make sense of what do I mean by that.",
+    "start_ms": 433112,
+    "end_ms": 438152,
+    "duration_ms": 5040,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 438.152,
+    "text": "Let's think about all faculty at Cal. Each faculty has a home department, right?",
+    "start_ms": 438152,
+    "end_ms": 442254,
+    "duration_ms": 4102,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 442.254,
+    "text": "So if you have a data set of faculty names and the department affiliations and whatnot, if you want to summarize this data set so that you make a distribution out of it, what you need to do is you need to make sure that you capture all the unique departments that exist in the data set, right?",
+    "start_ms": 442254,
+    "end_ms": 459551,
+    "duration_ms": 17297,
+    "word_count": 58,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 459.551,
+    "text": "So that's where you are looking at the set of values in your distribution.",
+    "start_ms": 459551,
+    "end_ms": 464200,
+    "duration_ms": 4649,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 464.2,
+    "text": "And then what you're going to look at, additionally is that we need an additional piece of information which is what is the number of faculty that are basically housed within each one of those departments, right?",
+    "start_ms": 464200,
+    "end_ms": 476984,
+    "duration_ms": 12784,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 476.984,
+    "text": "So that's the frequency with which each one of those departments have came up in your, have come up in your, um, in the entire distribution into the summarized entire data set as a distribution.",
+    "start_ms": 476984,
+    "end_ms": 496120,
+    "duration_ms": 19136,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 497.144,
+    "text": "What we will also make sure that we understand is that because we're looking at the distribution of all possible values in the data set, when we're looking at the proportion of faculty that are affiliated with each one of those departments, the summation of those proportions should add up to be 100 percent, because we're capturing everyone, right?",
+    "start_ms": 497144,
+    "end_ms": 514384,
+    "duration_ms": 17240,
+    "word_count": 59,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 514.384,
+    "text": "We also need to make sure that all departments are representative in our population, meaning that the probability or the proportion of faculty belonging to each individual department is gonna be.",
+    "start_ms": 514384,
+    "end_ms": 526584,
+    "duration_ms": 12200,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 526.34,
+    "text": "zero or greater than or equal to zero if you have a department that doesn't have a faculty for whatever reason that's going to be a missing value in your data set.",
+    "start_ms": 526340,
+    "end_ms": 535752,
+    "duration_ms": 9412,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 535.752,
+    "text": "The additional information is that we also need to make sure that if you're looking at all of the samples in our data set and we're looking at the allocation of each one of those samples into different different values in your set.",
+    "start_ms": 535752,
+    "end_ms": 550752,
+    "duration_ms": 15000,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 550.752,
+    "text": "you need to make sure that the sum of the total number of values that you have adds up to be equal to your entire data set size.",
+    "start_ms": 550752,
+    "end_ms": 558752,
+    "duration_ms": 8000,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 558.752,
+    "text": "So you're not missing an instance. So making sure that there is literally one-to-one correspondence between your data set and the summary of the distribution that you're creating.",
+    "start_ms": 558752,
+    "end_ms": 569752,
+    "duration_ms": 11000,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 569.746,
+    "text": "let's put it into practice. This is an example of a bar chart.",
+    "start_ms": 569746,
+    "end_ms": 572996,
+    "duration_ms": 3250,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 572.996,
+    "text": "So we're going to see bar chart in a sec.",
+    "start_ms": 572996,
+    "end_ms": 575496,
+    "duration_ms": 2500,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 575.496,
+    "text": "But let's take a look at this example and see if this bar chart or those chart shows a distribution to you or not.",
+    "start_ms": 575496,
+    "end_ms": 583496,
+    "duration_ms": 8000,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 586.84,
+    "text": "This is going to be your kind of first attempt in data 100 kind of to.",
+    "start_ms": 586840,
+    "end_ms": 591000,
+    "duration_ms": 4160,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 591.8,
+    "text": "See a plot. See if a plot communicates all the ideas or not.",
+    "start_ms": 591800,
+    "end_ms": 595623,
+    "duration_ms": 3823,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 595.623,
+    "text": "Notice that it has a title. The first way that you make sense of a plot is to read the title.",
+    "start_ms": 595623,
+    "end_ms": 601800,
+    "duration_ms": 6177,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 601.8,
+    "text": "And then you have to also take a look at the axis labels and make sure that you are understanding what's plotted on the x axis, what's plotted on the y axis.",
+    "start_ms": 601800,
+    "end_ms": 609800,
+    "duration_ms": 8000,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 609.816,
+    "text": "And then this side whether this is a distribution or not.",
+    "start_ms": 609816,
+    "end_ms": 613016,
+    "duration_ms": 3200,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 619.416,
+    "text": "275, I'll wait for 400, that's my guess. No, it is not a distribution.",
+    "start_ms": 619416,
+    "end_ms": 638496,
+    "duration_ms": 19080,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 638.496,
+    "text": "So overwhelming majority of you said no. And the reason is that when we were looking at what's plotted here, what's plotted is...",
+    "start_ms": 638496,
+    "end_ms": 646856,
+    "duration_ms": 8360,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 648.344,
+    "text": "What is it the percentage of teens who say that they ever post about their whatever on social media and you can think about this as being multi select option that things can post on about multiple things.",
+    "start_ms": 648344,
+    "end_ms": 660344,
+    "duration_ms": 12000,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 660.344,
+    "text": "So it's not that one individual thing is going to be reflected in a single category versus they can be reflected in multiple categories.",
+    "start_ms": 660344,
+    "end_ms": 668344,
+    "duration_ms": 8000,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 668.344,
+    "text": "So it doesn't meet the criteria that we want that we can basically summarize one individual or one instance in one category and then basically calculate the frequency of that category as the total number of individuals who will ever basically post about that specific category on social media.",
+    "start_ms": 668344,
+    "end_ms": 688104,
+    "duration_ms": 19760,
+    "word_count": 49,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 688.104,
+    "text": "So that's why this is not a distribution. Let's try this one.",
+    "start_ms": 688104,
+    "end_ms": 692424,
+    "duration_ms": 4320,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 692.424,
+    "text": "So this is the share of American adults in each one of the income tiers.",
+    "start_ms": 692424,
+    "end_ms": 697384,
+    "duration_ms": 4960,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 697.384,
+    "text": "Is this a distribution or not? 400 this is the distribution and the reason is that we can't have an individual belonging to multiple categories every individual will belong to one of those categories so the summation will be summarizing the entire summation of this percentage adds up to 100%.",
+    "start_ms": 697384,
+    "end_ms": 738120,
+    "duration_ms": 40736,
+    "word_count": 50,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 738.12,
+    "text": "We can validate it and then every individual is captured in one of those income tiers, which is exactly what we want.",
+    "start_ms": 738120,
+    "end_ms": 745320,
+    "duration_ms": 7200,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 745.32,
+    "text": "So now going into a little bit deeper into actually making visualizations.",
+    "start_ms": 745320,
+    "end_ms": 750800,
+    "duration_ms": 5480,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 750.8,
+    "text": "So we know what is a distribution. We want to go ahead and plot distribution.",
+    "start_ms": 750800,
+    "end_ms": 754960,
+    "duration_ms": 4160,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 754.96,
+    "text": "But we can have different types of variables or different types of distributions that we can play with.",
+    "start_ms": 754960,
+    "end_ms": 760520,
+    "duration_ms": 5560,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 760.52,
+    "text": "In the last lecture, you'd seen that we have two general categories of variables.",
+    "start_ms": 760520,
+    "end_ms": 764920,
+    "duration_ms": 4400,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 764.92,
+    "text": "We have quantitative variables, and we need to have different visuals for different categories of different types of variables.",
+    "start_ms": 764920,
+    "end_ms": 774640,
+    "duration_ms": 9720,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 774.64,
+    "text": "And you're going to see why that's the case and why we think about the type of variable before making any of those visualizations.",
+    "start_ms": 774640,
+    "end_ms": 783799,
+    "duration_ms": 9159,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 783.799,
+    "text": "So we're going to start by bar plot. So bar plot is going to be mostly used when we're going to plot a qualitative variable, whether that be ordinal or nominal qualitative variable.",
+    "start_ms": 783799,
+    "end_ms": 797200,
+    "duration_ms": 13401,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 797.2,
+    "text": "And sometimes we might also use bar plot for quantitative discrete variables.",
+    "start_ms": 797200,
+    "end_ms": 803600,
+    "duration_ms": 6400,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 803.6,
+    "text": "And quantitative discrete because if the number of instances is as small, then we can technically think about those as small number of options of those discrete quantitative values to be also kind of categorized.",
+    "start_ms": 803600,
+    "end_ms": 816700,
+    "duration_ms": 13100,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 816.7,
+    "text": "And that's why we can also apply to that case.",
+    "start_ms": 816700,
+    "end_ms": 819700,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 819.7,
+    "text": "What you saw in the previous slide of call was a bar chart.",
+    "start_ms": 819700,
+    "end_ms": 824700,
+    "duration_ms": 5000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 824.7,
+    "text": "So this was a bar chart, again, an pollinated variable.",
+    "start_ms": 824700,
+    "end_ms": 828300,
+    "duration_ms": 3600,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 828.3,
+    "text": "You can see that what we are encoding, thinking about information channels that you're receiving is that what we encoded was the lengths.",
+    "start_ms": 828300,
+    "end_ms": 836860,
+    "duration_ms": 8560,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 836.86,
+    "text": "So the lengths of each one of these bars is showing you the proportion of, or the percentage of individuals in each one of those categories.",
+    "start_ms": 836860,
+    "end_ms": 844660,
+    "duration_ms": 7800,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 844.66,
+    "text": "What you're also seeing is that we are not using the vids information in any way, right?",
+    "start_ms": 844660,
+    "end_ms": 850091,
+    "duration_ms": 5431,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 850.091,
+    "text": "So the vids does not encode any information. So you can think about, okay, I have a two-dimensional plot and I have color on top of that.",
+    "start_ms": 850091,
+    "end_ms": 858602,
+    "duration_ms": 8511,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 858.602,
+    "text": "So technically this is the basic level 4 information channels that I'm only sorry 3 information channels that I'm only using 1 information channel which is along the x-axis which is I'm using for the links of these bars I'm not using any information about the links of the or the width of these bars and I'm not using any information about the color so the color does not include any information so this is a very basic bar plot And what we're going to work with in terms of visualizing different trends is we're going to work with the World Bank data set.",
+    "start_ms": 858602,
+    "end_ms": 892848,
+    "duration_ms": 34246,
+    "word_count": 104,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 892.848,
+    "text": "So this is a data set that has 160 different countries and then it has different kinds of development statistics about different countries and it also has the content association of those countries.",
+    "start_ms": 892848,
+    "end_ms": 905848,
+    "duration_ms": 13000,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 905.848,
+    "text": "Why did I say content and association? Because think about the faculty association to each one of those departments that I talked about before.",
+    "start_ms": 905848,
+    "end_ms": 914528,
+    "duration_ms": 8680,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 914.528,
+    "text": "What I can do is I can plot the distribution of these countries in different continents, counting how many countries we have in each continent and then see the trends.",
+    "start_ms": 914528,
+    "end_ms": 924808,
+    "duration_ms": 10280,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 925.496,
+    "text": "So what we're going to see today and also on Tuesday is two main programming library that we'll be using for Plotting.",
+    "start_ms": 925496,
+    "end_ms": 934632,
+    "duration_ms": 9136,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 934.632,
+    "text": "You might have heard them, you might have seen us importing them in some of the notebooks.",
+    "start_ms": 934632,
+    "end_ms": 939448,
+    "duration_ms": 4816,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 939.448,
+    "text": "We're going to talk about MAT plotlib and seabourne. And the good thing about them is that each one of them follow a specific template for different plotting functions.",
+    "start_ms": 939448,
+    "end_ms": 949950,
+    "duration_ms": 10502,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 949.95,
+    "text": "It's just that the name of the function that plots different types of plots is going to be different, but the template for how we invoke them is going to be exactly the same, or mostly the same.",
+    "start_ms": 949950,
+    "end_ms": 961039,
+    "duration_ms": 11089,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 961.039,
+    "text": "The template for MAC plotlet is that it basically gets a sequence.",
+    "start_ms": 961039,
+    "end_ms": 966460,
+    "duration_ms": 5421,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 966.46,
+    "text": "What is a sequence? A sequence can be a list, it can be an array, it can be a series object, or what have you.",
+    "start_ms": 966460,
+    "end_ms": 972904,
+    "duration_ms": 6444,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 972.904,
+    "text": "And then it gets a sequence of items that needs to be plotted on the x-axis, it gets a sequence of items that needs to be plotted on the y-axis and it will go ahead them plot them and use the proper name of the plot that you want to plot.",
+    "start_ms": 972904,
+    "end_ms": 987656,
+    "duration_ms": 14752,
+    "word_count": 51,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 987.656,
+    "text": "Pass the sequences, it will do its own magic. So the 10th foot for invoking any math plotlet function would be first to import math plotlet.",
+    "start_ms": 987656,
+    "end_ms": 996077,
+    "duration_ms": 8421,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 996.077,
+    "text": "So I say import math plotlet. I tried to remember this alias PLT that we're using for math bloodlip as a short form for plots.",
+    "start_ms": 996077,
+    "end_ms": 1006904,
+    "duration_ms": 10827,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1006.904,
+    "text": "So you just remember that this is kind of the core programming that we're gonna be using.",
+    "start_ms": 1006904,
+    "end_ms": 1011904,
+    "duration_ms": 5000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1011.992,
+    "text": "And then the way that I'm evoking it as I'll...",
+    "start_ms": 1011992,
+    "end_ms": 1014992,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1015.192,
+    "text": "directly say PLT dot whatever name of the plotting function I have right so this is the name of the plotting function then I go ahead and pass the sequence of values that I want again the sequence can be any sequence it can be a less it can be an array or a cambia series object.",
+    "start_ms": 1015192,
+    "end_ms": 1033224,
+    "duration_ms": 18032,
+    "word_count": 57,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1033.912,
+    "text": "So and take a look at the example that I wanted to go over.",
+    "start_ms": 1033912,
+    "end_ms": 1039744,
+    "duration_ms": 5832,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1039.992,
+    "text": "Where is my cursor here? I'll go here. And one more thing that I forgot to do is hide this.",
+    "start_ms": 1039992,
+    "end_ms": 1065336,
+    "duration_ms": 25344,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1065.336,
+    "text": "All right, cool. So we're working on this specific example.",
+    "start_ms": 1065336,
+    "end_ms": 1070776,
+    "duration_ms": 5440,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1070.776,
+    "text": "Again, the work bank data set that we're working with.",
+    "start_ms": 1070776,
+    "end_ms": 1073816,
+    "duration_ms": 3040,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1073.816,
+    "text": "So as you can see, I'm importing. Uh... is it on there?",
+    "start_ms": 1073816,
+    "end_ms": 1079712,
+    "duration_ms": 5896,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1083.32,
+    "text": "I'm importing all of the functions that I want and then Nice, lots of...",
+    "start_ms": 1083320,
+    "end_ms": 1093480,
+    "duration_ms": 10160,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1093.912,
+    "text": "It's not cooperating. Watch your what's going on. Let me really love this.",
+    "start_ms": 1093912,
+    "end_ms": 1142632,
+    "duration_ms": 48720,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1147.864,
+    "text": "Cool. So importing all of the functions that we bond and this is the dataset that will be loading.",
+    "start_ms": 1147864,
+    "end_ms": 1155348,
+    "duration_ms": 7484,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1155.348,
+    "text": "So I'm loading the word bank dataset. It's also uploaded on your student repo.",
+    "start_ms": 1155348,
+    "end_ms": 1160864,
+    "duration_ms": 5516,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1160.864,
+    "text": "So if we take a look at the head of this Data set, what you're seeing is that, okay, all of those, the development statistics that we saw, we have 47 different columns, and then I'm showing you the head of this distribution, or this data frame.",
+    "start_ms": 1160864,
+    "end_ms": 1178622,
+    "duration_ms": 17758,
+    "word_count": 47,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1178.622,
+    "text": "What you're seeing is that I have 166 different countries, and again, for all of those 47 columns that we have.",
+    "start_ms": 1178622,
+    "end_ms": 1185025,
+    "duration_ms": 6403,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1185.025,
+    "text": "So what I want to do next is I want to go ahead and actually.",
+    "start_ms": 1185025,
+    "end_ms": 1189520,
+    "duration_ms": 4495,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1189.72,
+    "text": "Calculate the distribution of countries that I have in different continents.",
+    "start_ms": 1189720,
+    "end_ms": 1194720,
+    "duration_ms": 5000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1194.72,
+    "text": "How do I calculate the distribution? You remember that we had value accounts, right?",
+    "start_ms": 1194720,
+    "end_ms": 1199720,
+    "duration_ms": 5000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1199.72,
+    "text": "So what I can say is I can say that I have a board bank data frame.",
+    "start_ms": 1199720,
+    "end_ms": 1202720,
+    "duration_ms": 3000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1202.72,
+    "text": "I'm going to go ahead and grab the continent. um the continent column and i would say value counts and we will be able to see the trend.",
+    "start_ms": 1202720,
+    "end_ms": 1215612,
+    "duration_ms": 12892,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1215.612,
+    "text": "Right. So this is exactly the summary that we wanted.",
+    "start_ms": 1215612,
+    "end_ms": 1218772,
+    "duration_ms": 3160,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1218.772,
+    "text": "So this is summarizing whether those sets of values that I'll have for the content and what's the frequency with which each one of them is actually coming up.",
+    "start_ms": 1218772,
+    "end_ms": 1227432,
+    "duration_ms": 8660,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1227.432,
+    "text": "So the next thing that I want to do is I want to actually go ahead and plot this distribution using a bar plot because why bar plot, bar plot because all of those continents are qualitative variables.",
+    "start_ms": 1227432,
+    "end_ms": 1239432,
+    "duration_ms": 12000,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1239.432,
+    "text": "So, or qualitative values that I can actually plot using the bar plot that we talked about.",
+    "start_ms": 1239432,
+    "end_ms": 1244232,
+    "duration_ms": 4800,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1244.871,
+    "text": "So, the first thing that I'll do is I'll actually make a serious object.",
+    "start_ms": 1244871,
+    "end_ms": 1254632,
+    "duration_ms": 9761,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1254.216,
+    "text": "which is exactly the same word bank. Continent, column. Valley accounts.",
+    "start_ms": 1254216,
+    "end_ms": 1262568,
+    "duration_ms": 8352,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1263.736,
+    "text": "And so now everything is stored in the continent and what I can do is now go ahead and make the bar plot.",
+    "start_ms": 1263736,
+    "end_ms": 1269736,
+    "duration_ms": 6000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1269.736,
+    "text": "Remember the syntax for math plot that I talked about, I can directly invoke on the PLT elius that I already imported, and I would basically say PLT.4, and that's the plotting function for creating a bar plot.",
+    "start_ms": 1269736,
+    "end_ms": 1282816,
+    "duration_ms": 13080,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1283.416,
+    "text": "I needed to pass two sequence of values. So the two sequence of values first I'm going to pass the x-axis then I'm going to pass the values that I want to plot on the y-axis.",
+    "start_ms": 1283416,
+    "end_ms": 1293184,
+    "duration_ms": 9768,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1293.184,
+    "text": "What am I plotting on the x-axis? I want to have one continent or different continents to be shown on the x-axis.",
+    "start_ms": 1293184,
+    "end_ms": 1301816,
+    "duration_ms": 8632,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1301.816,
+    "text": "So what I can do is basically say that okay look at what I had in this series object at the top up here.",
+    "start_ms": 1301816,
+    "end_ms": 1308604,
+    "duration_ms": 6788,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1308.604,
+    "text": "So in this series object. The x-axis that I want to plot is the index and then the values are actually going to be the values that I want to in code in the via access, which is going to be basically deciding about the lengths of each one of those bars that I have.",
+    "start_ms": 1308604,
+    "end_ms": 1326520,
+    "duration_ms": 17916,
+    "word_count": 55,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1326.404,
+    "text": "what I'll do is I'll pass those sequences that I had.",
+    "start_ms": 1326404,
+    "end_ms": 1329704,
+    "duration_ms": 3300,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1330.072,
+    "text": "So, what is the sequence under x-axis? The sequence under x-axis is...",
+    "start_ms": 1330072,
+    "end_ms": 1335572,
+    "duration_ms": 5500,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1336.312,
+    "text": "Um... Now it should work. The sequence is actually going to be...",
+    "start_ms": 1336312,
+    "end_ms": 1357464,
+    "duration_ms": 21152,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1357.912,
+    "text": "Continence.index. So that's the index that I want on the x-axis.",
+    "start_ms": 1357912,
+    "end_ms": 1363054,
+    "duration_ms": 5142,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1363.054,
+    "text": "Then I need to have continents dot values. Remember that there were two attributes that I had in a series object index and values.",
+    "start_ms": 1363054,
+    "end_ms": 1371522,
+    "duration_ms": 8468,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1371.522,
+    "text": "Then if I go ahead and plot what you'll see is this plot exactly as we intend.",
+    "start_ms": 1371522,
+    "end_ms": 1379272,
+    "duration_ms": 7750,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1379.021,
+    "text": "is that this is string thing that is also kind of printed out here.",
+    "start_ms": 1379021,
+    "end_ms": 1383688,
+    "duration_ms": 4667,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1383.688,
+    "text": "This is because if you don't put a semicolon at the end of the last line of your plotting function, it will basically try to plot or print out whatever the last element that you plotted was.",
+    "start_ms": 1383688,
+    "end_ms": 1394688,
+    "duration_ms": 11000,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1394.688,
+    "text": "So here it's telling me that it created a bar, continue, continue object and just talks about something about that specific object that we don't necessarily want.",
+    "start_ms": 1394688,
+    "end_ms": 1403688,
+    "duration_ms": 9000,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1403.688,
+    "text": "So what I can do is I can go ahead and say I'm gonna put a semicolon here.",
+    "start_ms": 1403688,
+    "end_ms": 1408088,
+    "duration_ms": 4400,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1408.088,
+    "text": "Run it again. That a string is now gone. So the other thing that I want to do is remember that I said that every time that you're creating a plot you want to make sure that you're communicating communicating every information about the plot with a viewer or someone that you're sending this plot to right now I have some information on those on the x-axis but I need to also be clear that those values are different continents on the y-axis I should say that that's the count of different countries and then I also need to have a title.",
+    "start_ms": 1408088,
+    "end_ms": 1438372,
+    "duration_ms": 30284,
+    "word_count": 102,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1438.712,
+    "text": "So that's why what we're going to do is we're going to set some values here.",
+    "start_ms": 1438712,
+    "end_ms": 1443112,
+    "duration_ms": 4400,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1443.112,
+    "text": "So I'm going to say plt.x label to be equal to whatever I'm plotting under x-axis, which is going to be continents is what I plotted.",
+    "start_ms": 1443112,
+    "end_ms": 1454872,
+    "duration_ms": 11760,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1455.224,
+    "text": "I can also see PLT.Y label. and then say this is a count of the countries.",
+    "start_ms": 1455224,
+    "end_ms": 1464592,
+    "duration_ms": 9368,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1466.008,
+    "text": "and then i can also say that plt dot title And then here I would say that uh...",
+    "start_ms": 1466008,
+    "end_ms": 1473052,
+    "duration_ms": 7044,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1473.496,
+    "text": "that is distributed. or distribution of countries and the friend.",
+    "start_ms": 1473496,
+    "end_ms": 1481820,
+    "duration_ms": 8324,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1482.104,
+    "text": "Consonance. Right, and then we'll go and do is put a semicolon at the end of the last plotting function.",
+    "start_ms": 1482104,
+    "end_ms": 1490184,
+    "duration_ms": 8080,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1490.584,
+    "text": "um plodded again it doesn't like me to miss this stuff X label.",
+    "start_ms": 1490584,
+    "end_ms": 1499720,
+    "duration_ms": 9136,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1499.768,
+    "text": "and then you're seeing that now I have the plot with x-axis label y-axis label and also the title for the plot.",
+    "start_ms": 1499768,
+    "end_ms": 1507768,
+    "duration_ms": 8000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1507.768,
+    "text": "This is going to be the trend that will be working with.",
+    "start_ms": 1507768,
+    "end_ms": 1510648,
+    "duration_ms": 2880,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1510.648,
+    "text": "So every time that we have a map plotlet function, we call the function, we pass the sequences of values, we set that x-axis label, y-axis label, put the title and then move forward.",
+    "start_ms": 1510648,
+    "end_ms": 1527608,
+    "duration_ms": 16960,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1527.582,
+    "text": "thing is using native pandas plotting Um, so I could directly go ahead and say that instead of like creating that serious object and getting the index and getting the values I could directly go ahead and say that okay, go ahead and grab The continent column and calculate value counts that you actually did and then I would say that plot a function for me.",
+    "start_ms": 1527582,
+    "end_ms": 1551024,
+    "duration_ms": 23442,
+    "word_count": 66,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1551.512,
+    "text": "and then in the plot function i would say that the kind of plot that you're gonna be plotting is a bar plot.",
+    "start_ms": 1551512,
+    "end_ms": 1557512,
+    "duration_ms": 6000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1557.656,
+    "text": "and simply is that with pandas native native plotting we can actually invoke a map plot lib.",
+    "start_ms": 1557656,
+    "end_ms": 1564656,
+    "duration_ms": 7000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1564.952,
+    "text": "The mac the mac counts and then i would say plt.title I would just simply say distribution of Countries.",
+    "start_ms": 1564952,
+    "end_ms": 1598688,
+    "duration_ms": 33736,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1599.704,
+    "text": "The Friend. Convenants. Auntie, that's... Right. Cool. And put the semicolon and then I have my plot exactly plotted in the same way.",
+    "start_ms": 1599704,
+    "end_ms": 1613352,
+    "duration_ms": 13648,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1613.352,
+    "text": "Under the hood map plot lib is invoked. So that's why I always have access to PLT in order to control the access labels and put the title and whatnot.",
+    "start_ms": 1613352,
+    "end_ms": 1621352,
+    "duration_ms": 8000,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1622.488,
+    "text": "So going back to Verriver, so I'm going to restart this and kind of going over exactly the same template that we saw.",
+    "start_ms": 1622488,
+    "end_ms": 1631888,
+    "duration_ms": 9400,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1631.888,
+    "text": "We imported, we call the plotting function, we pass the sequences of values, we can label them, we extend that, we can call x label, y label, title, set up, send all of those values to the plotting.",
+    "start_ms": 1631888,
+    "end_ms": 1643968,
+    "duration_ms": 12080,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1643.968,
+    "text": "We can exactly what you saw was directly called PLT dot bar, plot the stuff that we want, And we want to make sure that the order of the values that we're passing is exactly x first and then y second or alternatively you could say that what if I forget the order of passing the values in those cases you could make sure that you're naming your argument.",
+    "start_ms": 1643968,
+    "end_ms": 1668096,
+    "duration_ms": 24128,
+    "word_count": 69,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1668.096,
+    "text": "So here I'm saying that x is equal to x is equal to.",
+    "start_ms": 1668096,
+    "end_ms": 1672768,
+    "duration_ms": 4672,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1674.104,
+    "text": "Content is dot index and then I would say hide is equal to Content is values and then you could really reorder them and whatnot But otherwise if you're not passing the argument labels you need to make sure that you preserve the ordering that you had So, um, X values, Y values that we passed, we plotted it, we saw the native, um, pandas plotting, uh, with dot plot passing the kind of the plot.",
+    "start_ms": 1674104,
+    "end_ms": 1699096,
+    "duration_ms": 24992,
+    "word_count": 76,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1699.096,
+    "text": "In this case was, um, bar and it was actually going to plot it, we could also go ahead and label it additionally.",
+    "start_ms": 1699096,
+    "end_ms": 1705496,
+    "duration_ms": 6400,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1706.104,
+    "text": "So that's the syntax for a map, but live pretty easy moving forward.",
+    "start_ms": 1706104,
+    "end_ms": 1710504,
+    "duration_ms": 4400,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1710.504,
+    "text": "But I'm going to just basically do as I'll say to you that, okay, there's histogram that we want to plot.",
+    "start_ms": 1710504,
+    "end_ms": 1715704,
+    "duration_ms": 5200,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1715.704,
+    "text": "What was the framework exactly called whatever function and then pass the sequence of values and then we'll be plotting that.",
+    "start_ms": 1715704,
+    "end_ms": 1721624,
+    "duration_ms": 5920,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1721.624,
+    "text": "So everything is going to make sense and fall into place.",
+    "start_ms": 1721624,
+    "end_ms": 1725384,
+    "duration_ms": 3760,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1725.384,
+    "text": "I'm now moving on to the C board. I want to tell you that C-born is just the wrapper on top of matplotlet.",
+    "start_ms": 1725384,
+    "end_ms": 1732672,
+    "duration_ms": 7288,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1732.672,
+    "text": "But it's just an easier framework and a higher level language to work with.",
+    "start_ms": 1732672,
+    "end_ms": 1736672,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1736.672,
+    "text": "It does a lot of the functionalities by default for us, so we don't actually need to do a lot of stylization that we want to do or do.",
+    "start_ms": 1736672,
+    "end_ms": 1744672,
+    "duration_ms": 8000,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1744.672,
+    "text": "Doing the value, you can somewhat not in order to calculate the counts of different, different items.",
+    "start_ms": 1744672,
+    "end_ms": 1749672,
+    "duration_ms": 5000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1749.672,
+    "text": "items. So it infers a lot of the style designs from the function that we're invoking.",
+    "start_ms": 1749672,
+    "end_ms": 1754294,
+    "duration_ms": 4622,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1754.294,
+    "text": "But under the hood, it's actually a matte, lovely library that's plotting stuff.",
+    "start_ms": 1754294,
+    "end_ms": 1758985,
+    "duration_ms": 4691,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1758.985,
+    "text": "So think about just your learning one language, but you're learning to work with one framework with two different interfaces.",
+    "start_ms": 1758985,
+    "end_ms": 1766312,
+    "duration_ms": 7327,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1766.712,
+    "text": "With the C-born, the way that we're invoking it is slightly different.",
+    "start_ms": 1766712,
+    "end_ms": 1771032,
+    "duration_ms": 4320,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1771.032,
+    "text": "The template for us this time with C-born is that we pass a data frame and then we pass the label for the columns that we want to plot on the x-axis and on the y-axis.",
+    "start_ms": 1771032,
+    "end_ms": 1782272,
+    "duration_ms": 11240,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1782.272,
+    "text": "So we work with labels. You remember that I was telling you that we will work a lot with the labels and not necessarily with integer positions.",
+    "start_ms": 1782272,
+    "end_ms": 1789552,
+    "duration_ms": 7280,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1789.552,
+    "text": "This is one of those reasons that it's easier to interpret what we're plotting using this plot function.",
+    "start_ms": 1789552,
+    "end_ms": 1795112,
+    "duration_ms": 5560,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1795.736,
+    "text": "How do we import C-Born? We basically say import C-Born as SNS and that's the usual or usual alias that we use for C-Born.",
+    "start_ms": 1795736,
+    "end_ms": 1805257,
+    "duration_ms": 9521,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1805.257,
+    "text": "So the SNS stop-plotting function, passing the entire data frame, passing the columns that you want to plot, and that's exactly what we'll be doing.",
+    "start_ms": 1805257,
+    "end_ms": 1814762,
+    "duration_ms": 9505,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1814.762,
+    "text": "How do we deal with labeling axes and then put a title?",
+    "start_ms": 1814762,
+    "end_ms": 1818912,
+    "duration_ms": 4150,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1818.912,
+    "text": "We know that it's basically under the hood and Macbublib plot that It is being drawn technically, so what we can do is we can use the same control.",
+    "start_ms": 1818912,
+    "end_ms": 1828896,
+    "duration_ms": 9984,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1828.896,
+    "text": "Use PLT.x label, PLT.y label, PLT.tidal in order to put labels and put title and move on.",
+    "start_ms": 1828896,
+    "end_ms": 1835176,
+    "duration_ms": 6280,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1835.576,
+    "text": "Okay. So let's take a look at what it looks like for us to do exactly the same bar plot kind of plotting that we were doing, but this time doing it with Seaborn.",
+    "start_ms": 1835576,
+    "end_ms": 1848568,
+    "duration_ms": 12992,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1848.568,
+    "text": "So what I'll do is I'll say that SNS, I already imported it at the top, I would say go ahead and plot a count plot.",
+    "start_ms": 1848568,
+    "end_ms": 1856322,
+    "duration_ms": 7754,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1856.322,
+    "text": "The only thing that you need to do is just to remember that there was a function that was creating the bar plot and it was called count plot in Seaborn.",
+    "start_ms": 1856322,
+    "end_ms": 1865568,
+    "duration_ms": 9246,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1865.568,
+    "text": "and you're gonna get that actually in the reference sheets for your exams as well.",
+    "start_ms": 1865568,
+    "end_ms": 1869548,
+    "duration_ms": 3980,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1869.548,
+    "text": "As long as you can make it distinction between them and it can make sense of what you're reading as count plot.",
+    "start_ms": 1869548,
+    "end_ms": 1874087,
+    "duration_ms": 4539,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1874.087,
+    "text": "Okay, we'll do count things. So it will do the counts on the bar of the bar plot then you can basically use everything that we're teaching you.",
+    "start_ms": 1874087,
+    "end_ms": 1883328,
+    "duration_ms": 9241,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1883.328,
+    "text": "So count plot, I said that we're passing the data.",
+    "start_ms": 1883328,
+    "end_ms": 1886808,
+    "duration_ms": 3480,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1886.808,
+    "text": "So either you can pass data equal to WB or you could just directly pass WB as the first argument it will infer that it's the data set argument that you're passing.",
+    "start_ms": 1886808,
+    "end_ms": 1897368,
+    "duration_ms": 10560,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1898.136,
+    "text": "And then I would say for the x, what I want is actually continent or I want to pass the continent and let's uh let's see I'm sorry.",
+    "start_ms": 1898136,
+    "end_ms": 1914120,
+    "duration_ms": 15984,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1916.792,
+    "text": "It was continent, right? Oh, incident. Yes, thank you. See the beautiful plot.",
+    "start_ms": 1916792,
+    "end_ms": 1927376,
+    "duration_ms": 10584,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1927.376,
+    "text": "So... why seaborn is sometimes nicer to play with. I didn't need to calculate the value accounts.",
+    "start_ms": 1927376,
+    "end_ms": 1932438,
+    "duration_ms": 5062,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1932.438,
+    "text": "I didn't need to color it in any way. I didn't need to put the label on the x axis on the y axis.",
+    "start_ms": 1932438,
+    "end_ms": 1939438,
+    "duration_ms": 7000,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1939.438,
+    "text": "It did all of that for me. The only thing that I might need to do is actually to make sure that it has a title.",
+    "start_ms": 1939438,
+    "end_ms": 1946520,
+    "duration_ms": 7082,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1946.52,
+    "text": "And I use Mac plus lip that's under the hood in order to put a title.",
+    "start_ms": 1946520,
+    "end_ms": 1950840,
+    "duration_ms": 4320,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1950.84,
+    "text": "I would say title equal to distribution. And I'll just despair you with the rest of the typing.",
+    "start_ms": 1950840,
+    "end_ms": 1958040,
+    "duration_ms": 7200,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1958.712,
+    "text": "So, and then it will add the label or the title automatically, right?",
+    "start_ms": 1958712,
+    "end_ms": 1963552,
+    "duration_ms": 4840,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1963.552,
+    "text": "So this is pretty neat. It has this stylistic features.",
+    "start_ms": 1963552,
+    "end_ms": 1966418,
+    "duration_ms": 2866,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1966.418,
+    "text": "It will do the counting under the hood. So it's really easy for us to work with it.",
+    "start_ms": 1966418,
+    "end_ms": 1971112,
+    "duration_ms": 4694,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1971.544,
+    "text": "But let's see if we can actually go ahead and use this bar plot on another type of variable.",
+    "start_ms": 1971544,
+    "end_ms": 1977384,
+    "duration_ms": 5840,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1977.384,
+    "text": "Say for example, so far we have been dealing with a qualitative variable.",
+    "start_ms": 1977384,
+    "end_ms": 1980784,
+    "duration_ms": 3400,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1980.784,
+    "text": "What if I want to go ahead and for example, do a count plot on a quantitative variable?",
+    "start_ms": 1980784,
+    "end_ms": 1987224,
+    "duration_ms": 6440,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1987.224,
+    "text": "So this quantitative variable is basically the gross national income or I'll refer to as GNI for the rest of the lecture.",
+    "start_ms": 1987224,
+    "end_ms": 1995624,
+    "duration_ms": 8400,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1995.624,
+    "text": "So for this GNI you're seeing that all of those quantitative values that we have, right?",
+    "start_ms": 1995624,
+    "end_ms": 2000424,
+    "duration_ms": 4800,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2000.424,
+    "text": "If I go ahead and just do the count plot on it, you saw that it took a long time for it to generate it, because under the hood it's doing all of those value count calculation itself, and then it created this count plot for me, which really doesn't make sense.",
+    "start_ms": 2000424,
+    "end_ms": 2018024,
+    "duration_ms": 17600,
+    "word_count": 52,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2018.024,
+    "text": "I can make sense of what data is being presented here.",
+    "start_ms": 2018024,
+    "end_ms": 2020744,
+    "duration_ms": 2720,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2020.744,
+    "text": "But if you take a look for all of those instances that are really overplotted on the x-axis, that's an example that we're calling it overplotting, because I can't really read each one of those positions for each one of those bars.",
+    "start_ms": 2020744,
+    "end_ms": 2034264,
+    "duration_ms": 13520,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2034.264,
+    "text": "And then the height of the bars, you're seeing that for most cases, it's equal to one, right?",
+    "start_ms": 2034264,
+    "end_ms": 2040504,
+    "duration_ms": 6240,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2040.952,
+    "text": "which means that that was a value that only appeared once.",
+    "start_ms": 2040952,
+    "end_ms": 2044792,
+    "duration_ms": 3840,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2044.792,
+    "text": "So that's not the right way of visualizing quantitative values.",
+    "start_ms": 2044792,
+    "end_ms": 2048392,
+    "duration_ms": 3600,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2048.392,
+    "text": "So this is one of the reasons that we say bar plot is really good for qualitative, qualitative variable distribution, but not necessarily for quantitative ones.",
+    "start_ms": 2048392,
+    "end_ms": 2059272,
+    "duration_ms": 10880,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2059.272,
+    "text": "But if I had just only a few different quantitative values that I could actually have nice bars, then I could probably use that.",
+    "start_ms": 2059272,
+    "end_ms": 2067512,
+    "duration_ms": 8240,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2067.512,
+    "text": "So that's kind of the caveat here that we will try to be a verus.",
+    "start_ms": 2067512,
+    "end_ms": 2072952,
+    "duration_ms": 5440,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2073.496,
+    "text": "So we saw this camp plot. It was nice. We saw that for a quantitative distribution.",
+    "start_ms": 2073496,
+    "end_ms": 2079286,
+    "duration_ms": 5790,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2079.286,
+    "text": "It might not be helpful. And now we want to see what is the helpful way to visualize the distribution of a quantitative variable.",
+    "start_ms": 2079286,
+    "end_ms": 2086896,
+    "duration_ms": 7610,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2086.896,
+    "text": "So we're going to talk about in the next part.",
+    "start_ms": 2086896,
+    "end_ms": 2090096,
+    "duration_ms": 3200,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2090.392,
+    "text": "Box plot, violin plot, and histograms. You'd seen histograms a lot, but here we're going to basically see what information you can gather from histograms and how can we summarize information in histograms in today's lecture.",
+    "start_ms": 2090392,
+    "end_ms": 2103732,
+    "duration_ms": 13340,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2104.152,
+    "text": "So let's start with boxblood and violent plot. Simple syntax.",
+    "start_ms": 2104152,
+    "end_ms": 2108752,
+    "duration_ms": 4600,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2108.752,
+    "text": "You call sns.boxblood or you call sns.violent plot and you will get the boxblood and violent plot.",
+    "start_ms": 2108752,
+    "end_ms": 2117632,
+    "duration_ms": 8880,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2117.632,
+    "text": "What you're seeing is that generally they communicate the same set of information.",
+    "start_ms": 2117632,
+    "end_ms": 2124312,
+    "duration_ms": 6680,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2124.312,
+    "text": "What we're seeing is that the boxblood is generally showing you the trend of the distribution of your data.",
+    "start_ms": 2124312,
+    "end_ms": 2130432,
+    "duration_ms": 6120,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2130.432,
+    "text": "It shows me that the middle 50% of our data is within that box.",
+    "start_ms": 2130432,
+    "end_ms": 2135432,
+    "duration_ms": 5000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2135.512,
+    "text": "And then we're gonna talk about different elements that are visualized in the box plot and kind of make sense of what is visualized there.",
+    "start_ms": 2135512,
+    "end_ms": 2141712,
+    "duration_ms": 6200,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2141.976,
+    "text": "Violin plot is very similar, but it also has the additional channel that this widths of this violin part is also encoding some information.",
+    "start_ms": 2141976,
+    "end_ms": 2151846,
+    "duration_ms": 9870,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2151.846,
+    "text": "It is a density function on top of a box plot, so we will tell you that what is the probability or what's the proportion of the data points that are exactly at any given point on that Y axis that you're going up, right?",
+    "start_ms": 2151846,
+    "end_ms": 2165611,
+    "duration_ms": 13765,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2165.611,
+    "text": "Whereas the box plot basically tells you that There are some points here, but I'm not going to tell you how many of each do you have, right?",
+    "start_ms": 2165611,
+    "end_ms": 2173576,
+    "duration_ms": 7965,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2173.576,
+    "text": "But I'm just going to tell you that on aggregate, 50% of your data is within the box.",
+    "start_ms": 2173576,
+    "end_ms": 2178776,
+    "duration_ms": 5200,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2178.968,
+    "text": "So let's move on and talk a little bit about What is encoded in box, blood and violent blood?",
+    "start_ms": 2178968,
+    "end_ms": 2186148,
+    "duration_ms": 7180,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2186.148,
+    "text": "So essentially box, blood is plotting, quartiles. What is a quartile?",
+    "start_ms": 2186148,
+    "end_ms": 2192028,
+    "duration_ms": 5880,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2192.028,
+    "text": "Core distance for four. So quartile means that we have a data set.",
+    "start_ms": 2192028,
+    "end_ms": 2195628,
+    "duration_ms": 3600,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2195.628,
+    "text": "We're going to sort it and we're going to chunk it into quarters.",
+    "start_ms": 2195628,
+    "end_ms": 2200268,
+    "duration_ms": 4640,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2200.268,
+    "text": "Right? So when we chunk it into quarters, then what we have is that I'm looking at the distribution.",
+    "start_ms": 2200268,
+    "end_ms": 2206468,
+    "duration_ms": 6200,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2206.468,
+    "text": "And I'm going to say that if I look at the lower 25% of my data, or what we call 25th percentile, what is the point or what is the quartile that we're going to call a Q1 that encodes that value?",
+    "start_ms": 2206468,
+    "end_ms": 2221563,
+    "duration_ms": 15095,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2221.563,
+    "text": "That Q1 is the point that 25 percent or first quartile is the point that 25 percent of the data is on it or below it.",
+    "start_ms": 2221563,
+    "end_ms": 2239308,
+    "duration_ms": 17745,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2239.066,
+    "text": "median. So basically this here and this point is our Q2 or median, which basically says that I have 50% of the data on or below this exact point.",
+    "start_ms": 2239066,
+    "end_ms": 2250424,
+    "duration_ms": 11358,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2250.808,
+    "text": "So the distance between Q1 and Q2 is obviously a quarter, right?",
+    "start_ms": 2250808,
+    "end_ms": 2254968,
+    "duration_ms": 4160,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2254.968,
+    "text": "And the distance from all the weight from the minimum up until Q1 is 25% right or a quarter of your data set.",
+    "start_ms": 2254968,
+    "end_ms": 2262248,
+    "duration_ms": 7280,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2262.248,
+    "text": "And then similarly we also have upper profile or Q3 which is also 75% which basically says that 75% of the data is on or below this exact point.",
+    "start_ms": 2262248,
+    "end_ms": 2274708,
+    "duration_ms": 12460,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2275.128,
+    "text": "Which means that 25% is above it. Right? That's how you can think about chunking your data set.",
+    "start_ms": 2275128,
+    "end_ms": 2280384,
+    "duration_ms": 5256,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2280.384,
+    "text": "When you sort it, you chunk it into four different pieces and you're basically looking at the trend in your data.",
+    "start_ms": 2280384,
+    "end_ms": 2286408,
+    "duration_ms": 6024,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2287.0,
+    "text": "What's important when we are understanding these partials is that we want to figure out what is the spread of our data.",
+    "start_ms": 2287000,
+    "end_ms": 2295340,
+    "duration_ms": 8340,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2295.34,
+    "text": "What we're interested in other words is that we want to see what is the interval that carries the middle 50% of our data.",
+    "start_ms": 2295340,
+    "end_ms": 2303100,
+    "duration_ms": 7760,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2303.1,
+    "text": "We want to make sure that our data is centralized as much as possible so that the majority of our data or the 50% of the middle 50% of our data is very centered.",
+    "start_ms": 2303100,
+    "end_ms": 2313840,
+    "duration_ms": 10740,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2313.84,
+    "text": "meaning that the range between Q1 and Q3 is as small as possible.",
+    "start_ms": 2313840,
+    "end_ms": 2318800,
+    "duration_ms": 4960,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2319.288,
+    "text": "What do we call this rent? We call this rent interquartile rent, which is effectively Q3 minus Q1.",
+    "start_ms": 2319288,
+    "end_ms": 2327288,
+    "duration_ms": 8000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2327.608,
+    "text": "So this interquartel range is showing you the spread of the data.",
+    "start_ms": 2327608,
+    "end_ms": 2331308,
+    "duration_ms": 3700,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2331.308,
+    "text": "It basically tells you that, okay, if interquartel range is 10 units, it will tell you that 50% of your data is within 10 units.",
+    "start_ms": 2331308,
+    "end_ms": 2339308,
+    "duration_ms": 8000,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2339.992,
+    "text": "So you will basically have some kind of a spike up distribution in that ten units of the values in your distribution.",
+    "start_ms": 2339992,
+    "end_ms": 2347832,
+    "duration_ms": 7840,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2347.832,
+    "text": "If your inter quartet range is equal to five. In order to fit 50% of the data into that range, you need to have a sharp risk bike.",
+    "start_ms": 2347832,
+    "end_ms": 2357080,
+    "duration_ms": 9248,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2357.08,
+    "text": "So that's basically showing you how centered your data is going to be.",
+    "start_ms": 2357080,
+    "end_ms": 2361240,
+    "duration_ms": 4160,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2361.24,
+    "text": "The larger this intercarter range is going to be, it's basically going to show you that your data is more spreaded out.",
+    "start_ms": 2361240,
+    "end_ms": 2368120,
+    "duration_ms": 6880,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2368.12,
+    "text": "The smaller this value is, it will show you that your data is more centered around, or between around I would say Q2 or median and so on and so forth.",
+    "start_ms": 2368120,
+    "end_ms": 2378120,
+    "duration_ms": 10000,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2378.552,
+    "text": "So what is included in the box plot is exactly that information.",
+    "start_ms": 2378552,
+    "end_ms": 2382956,
+    "duration_ms": 4404,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2382.956,
+    "text": "The box shows you Q1, it will show you Q2 or median and it will show you Q3, right?",
+    "start_ms": 2382956,
+    "end_ms": 2389456,
+    "duration_ms": 6500,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2389.456,
+    "text": "So that's where the box is. So that basically means that if you have a smaller box, your data is more centered.",
+    "start_ms": 2389456,
+    "end_ms": 2394696,
+    "duration_ms": 5240,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2394.696,
+    "text": "If you have a larger or wider box, that means that your data has a wider distribution, so your data points are more spreaded out in the sense.",
+    "start_ms": 2394696,
+    "end_ms": 2404392,
+    "duration_ms": 9696,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2404.664,
+    "text": "So what are those kind of viscures that are at the top or at the bottom?",
+    "start_ms": 2404664,
+    "end_ms": 2409944,
+    "duration_ms": 5280,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2409.944,
+    "text": "What we would say is that empirically, we calculated and we said that a reasonable range of the data that has the center between or center 50% between Q1 and Q3 can be spreaded out.",
+    "start_ms": 2409944,
+    "end_ms": 2425224,
+    "duration_ms": 15280,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2425.816,
+    "text": "1.5 times inter-clot, 1.5 times inter-clot, RTL range below Q1 and 1.5 times interquart TL range above Q3.",
+    "start_ms": 2425816,
+    "end_ms": 2437616,
+    "duration_ms": 11800,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2438.04,
+    "text": "So let's take a look one more time. We would say that if this is my center of the data, this is very 50% of the data is.",
+    "start_ms": 2438040,
+    "end_ms": 2445040,
+    "duration_ms": 7000,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2445.592,
+    "text": "empirically using some kind of a notion of Gaussian distribution, you can basically say that if I want to be sure that my data is from the same distribution and I'm not including all the outliers, I can extend these legs and I can say that I can go for the duration of 1.5 times interquarty range.",
+    "start_ms": 2445592,
+    "end_ms": 2466592,
+    "duration_ms": 21000,
+    "word_count": 57,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2467.032,
+    "text": "below the q1 and 1.5 times inter quartile range above q3 and that's a reasonable range.",
+    "start_ms": 2467032,
+    "end_ms": 2475352,
+    "duration_ms": 8320,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2475.352,
+    "text": "That reasonable range means that I'm sure with 99.97% that my data should be within this especially grunge between the upper viscayr and the lower viscayr.",
+    "start_ms": 2475352,
+    "end_ms": 2487112,
+    "duration_ms": 11760,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2487.896,
+    "text": "Anything below it and anything below the lower risk or anything above that per risk is going to be an outlier.",
+    "start_ms": 2487896,
+    "end_ms": 2494896,
+    "duration_ms": 7000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2494.896,
+    "text": "That means that it's very unlikely that those data sets or data points are from the same distribution or the same trend that we'd seen.",
+    "start_ms": 2494896,
+    "end_ms": 2501896,
+    "duration_ms": 7000,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2502.744,
+    "text": "So I'm not going to go over why 1.5 times interquartar range, but I want if you're interested, go and take a look at this link.",
+    "start_ms": 2502744,
+    "end_ms": 2511584,
+    "duration_ms": 8840,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2511.584,
+    "text": "It's basically an empirical way of saying that how can we make sure that we are summarizing the distribution based on the assumption that the distribution is a Gaussian distribution and make sure that any data point that we see any data point that we sample from this distribution is going to be within the lower viscure and upper viscure with 99.7.",
+    "start_ms": 2511584,
+    "end_ms": 2532664,
+    "duration_ms": 21080,
+    "word_count": 62,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2532.744,
+    "text": "percent probability. So that's a summary of the box plot.",
+    "start_ms": 2532744,
+    "end_ms": 2537439,
+    "duration_ms": 4695,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2537.439,
+    "text": "So that's why we need to visualize our quantitative values using a box plot because this basically summarizes the entire trend.",
+    "start_ms": 2537439,
+    "end_ms": 2545076,
+    "duration_ms": 7637,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2545.076,
+    "text": "I don't need to know individual values, but I just need to know the distribution of it.",
+    "start_ms": 2545076,
+    "end_ms": 2549928,
+    "duration_ms": 4852,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2550.424,
+    "text": "a violin plot. plots, box plot, and on top of that, it shows you the density function on the curves.",
+    "start_ms": 2550424,
+    "end_ms": 2559432,
+    "duration_ms": 9008,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2559.432,
+    "text": "So if you look closely, what you're seeing here is that I have Q2 sitting here in the middle, I have Q3, and then I also have Q1, and I have upper viscuers and also lower viscuers here.",
+    "start_ms": 2559432,
+    "end_ms": 2572792,
+    "duration_ms": 13360,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2573.352,
+    "text": "But what you're seeing is that it will also show you that, okay, not only that you have Q1 and Q2 at those places, but let me tell you what's the probability distribution of the values between Q1 and Q2 so that you know how it is spreaded out in between.",
+    "start_ms": 2573352,
+    "end_ms": 2588893,
+    "duration_ms": 15541,
+    "word_count": 51,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2588.893,
+    "text": "So it's kind of a nice way of getting more information.",
+    "start_ms": 2588893,
+    "end_ms": 2592413,
+    "duration_ms": 3520,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2592.413,
+    "text": "Again, the syntax of how to plot violin plot or box plot is to just simply use S and S dot box plot or S and S dot violin plot.",
+    "start_ms": 2592413,
+    "end_ms": 2601661,
+    "duration_ms": 9248,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2601.661,
+    "text": "You pass the dataset or the data frame and then you specify which axis you want to plot or which column you want to plot and which axis you want to plot it on.",
+    "start_ms": 2601661,
+    "end_ms": 2612184,
+    "duration_ms": 10523,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2612.184,
+    "text": "So effectively here I'm saying that I want to plot GDP, right?",
+    "start_ms": 2612184,
+    "end_ms": 2616216,
+    "duration_ms": 4032,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2616.216,
+    "text": "So this is gross domestic product and I'm saying that I want to plot that along the y-axis because I am only using one dimension effectively.",
+    "start_ms": 2616216,
+    "end_ms": 2625532,
+    "duration_ms": 9316,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2625.532,
+    "text": "If I would say x equal to GDP, it would give me a violent plot that was horizontal.",
+    "start_ms": 2625532,
+    "end_ms": 2631392,
+    "duration_ms": 5860,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2631.392,
+    "text": "So that's kind of how you can control whether you want to do a box let horizontally over vertically.",
+    "start_ms": 2631392,
+    "end_ms": 2637192,
+    "duration_ms": 5800,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2637.192,
+    "text": "Faster. So the question is what's the use case of violent flood versus the box plot?",
+    "start_ms": 2637192,
+    "end_ms": 2648832,
+    "duration_ms": 11640,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2648.832,
+    "text": "If you really want to care about the distribution of your data points between quartiles or generally figure out how extended the likes of this distribution are and then better they're like peaks and whatnot in between Q in between minimum in Q1 and between Q3 and maximum, you might want to do a violent blood.",
+    "start_ms": 2648832,
+    "end_ms": 2673312,
+    "duration_ms": 24480,
+    "word_count": 56,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2673.312,
+    "text": "Otherwise, box blood is going to summarize everything, just equally well.",
+    "start_ms": 2673312,
+    "end_ms": 2678152,
+    "duration_ms": 4840,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2679.416,
+    "text": "Any other questions? Cool, sounds like easy peasy, right? So it's just...",
+    "start_ms": 2679416,
+    "end_ms": 2687576,
+    "duration_ms": 8160,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2687.96,
+    "text": "Making sense of every time that you're seeing a box plot, what are you seeing and every time that you have a variable qualitative quantitative, you know why you make certain decisions about each individual one of them.",
+    "start_ms": 2687960,
+    "end_ms": 2699560,
+    "duration_ms": 11600,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2700.28,
+    "text": "Say, I want to include multiple different variables. So far, we've been thinking about only like encoding or showing one column or the distribution of one variable.",
+    "start_ms": 2700280,
+    "end_ms": 2710400,
+    "duration_ms": 10120,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2710.4,
+    "text": "Say, for example, I want to show the distribution of GDP for different continents.",
+    "start_ms": 2710400,
+    "end_ms": 2717240,
+    "duration_ms": 6840,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2717.24,
+    "text": "So for each individual continent, I want to have a box plot that that box plot shows GDP for data-specific continent.",
+    "start_ms": 2717240,
+    "end_ms": 2725080,
+    "duration_ms": 7840,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2725.08,
+    "text": "So I can use side by side, side by side box blood or side by side violent blood.",
+    "start_ms": 2725080,
+    "end_ms": 2731520,
+    "duration_ms": 6440,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2731.52,
+    "text": "You don't need to do any control over it. You just need to specify that, OK, on the x-axis, I want different continents.",
+    "start_ms": 2731520,
+    "end_ms": 2737000,
+    "duration_ms": 5480,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2737.0,
+    "text": "It will go ahead and just do group by ag and whatnot.",
+    "start_ms": 2737000,
+    "end_ms": 2741280,
+    "duration_ms": 4280,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2741.28,
+    "text": "And it will calculate all of those values. That's the beauty of C-born.",
+    "start_ms": 2741280,
+    "end_ms": 2744840,
+    "duration_ms": 3560,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2744.84,
+    "text": "And then on the y-axis, you're saying that, oh, you want the box bloods actually, or the box blood distribution values.",
+    "start_ms": 2744840,
+    "end_ms": 2751680,
+    "duration_ms": 6840,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2751.68,
+    "text": "And that's why you're calling the box blood. under Y axis I have all of those GDP values plotted and it will basically give you this colorful plot.",
+    "start_ms": 2751680,
+    "end_ms": 2765880,
+    "duration_ms": 14200,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2765.826,
+    "text": "multiple values can be presented and plotted at the same time.",
+    "start_ms": 2765826,
+    "end_ms": 2768748,
+    "duration_ms": 2922,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2769.944,
+    "text": "So moving on to histograms. So we said that for quantitative values we are looking at box blog, we're looking at violin plus and the other way of summarizing trends is histogram.",
+    "start_ms": 2769944,
+    "end_ms": 2781144,
+    "duration_ms": 11200,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2781.144,
+    "text": "I'm not going to go into the details of histogram beyond just reminding you that with the histogram the way that their histograms are calculated is that the y-axis is encoded in a way that it shows in a way that the area of each bar encodes the percentage of data points that you have in each one of those categories.",
+    "start_ms": 2781144,
+    "end_ms": 2803432,
+    "duration_ms": 22288,
+    "word_count": 61,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2803.432,
+    "text": "So think about histogram as a way of us sorting the entire quantity, the list of quantitative values that we have, bin them, right?",
+    "start_ms": 2803432,
+    "end_ms": 2812792,
+    "duration_ms": 9360,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2812.792,
+    "text": "So you can basically see that there is a bin for anything between 0 and for example, 17,000 and so on and so forth.",
+    "start_ms": 2812792,
+    "end_ms": 2821032,
+    "duration_ms": 8240,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2821.032,
+    "text": "And total, we have five different bins. And then we are calculating or we're plotting these bars in a way that the area actually encodes the percentage.",
+    "start_ms": 2821032,
+    "end_ms": 2830832,
+    "duration_ms": 9800,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2830.832,
+    "text": "So for example, in this case, what we're seeing is that for this very first bin, the percentage of data points that we have in the first bin is equal to the area of that bin.",
+    "start_ms": 2830832,
+    "end_ms": 2841072,
+    "duration_ms": 10240,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2841.072,
+    "text": "So we're calculating which times height and this is going to give us 78%.",
+    "start_ms": 2841072,
+    "end_ms": 2845792,
+    "duration_ms": 4720,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2845.792,
+    "text": "So 78% of the data in the first bin and so on and so forth.",
+    "start_ms": 2845792,
+    "end_ms": 2849672,
+    "duration_ms": 3880,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2849.672,
+    "text": "The way that we encode the height is such that We arrive at the area being 78 percent.",
+    "start_ms": 2849672,
+    "end_ms": 2855995,
+    "duration_ms": 6323,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2855.995,
+    "text": "That's what we call density. Right? It's not exactly the probability, but it's a value that when you calculate the area of that bin, you get at the probability distribution for a single value or for a single range of values.",
+    "start_ms": 2855995,
+    "end_ms": 2877560,
+    "duration_ms": 21565,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2878.04,
+    "text": "There are different ways that we can plot histograms using map bloodlub using seaborne.",
+    "start_ms": 2878040,
+    "end_ms": 2882520,
+    "duration_ms": 4480,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2882.52,
+    "text": "It's slightly different syntax, mostly kind of map bloodlub use his function.",
+    "start_ms": 2882520,
+    "end_ms": 2888280,
+    "duration_ms": 5760,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2888.28,
+    "text": "Seaborne uses his plot function. and um What we have again at the normal kind of setup for calling a map level function pass x values and basically say that okay now go ahead and encode all of these x values and undivided access we say that we want the density to be plotted as opposed to the count because if you don't provide it it will basically give you that okay you want it to have x values I'm gonna I'll just give you the count.",
+    "start_ms": 2888280,
+    "end_ms": 2917704,
+    "duration_ms": 29424,
+    "word_count": 87,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2917.704,
+    "text": "But here you're saying that I want density so that there is scale in a way that the area is proportional to the probability of the data point.",
+    "start_ms": 2917704,
+    "end_ms": 2928704,
+    "duration_ms": 11000,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2928.704,
+    "text": "For the hist plot, we are using exactly the same kind of trend passing the data frame passing the column that we want to actually plot.",
+    "start_ms": 2928704,
+    "end_ms": 2937704,
+    "duration_ms": 9000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2937.704,
+    "text": "plot, and then we are also saying that the statistic that we want to plot is going to be is density instead of count.",
+    "start_ms": 2937704,
+    "end_ms": 2946304,
+    "duration_ms": 8600,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2946.304,
+    "text": "So that's kind of the control that you have. I'll leave it to you to go ahead and take a look at the documentation because there are different controls that you have about what you want to plot on the Vi-Axis and so on and so forth.",
+    "start_ms": 2946304,
+    "end_ms": 2957184,
+    "duration_ms": 10880,
+    "word_count": 47,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2957.184,
+    "text": "You can also count... Create, define the number of bins that you want to have in each one of the categories.",
+    "start_ms": 2957184,
+    "end_ms": 2962672,
+    "duration_ms": 5488,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2962.672,
+    "text": "Instead of the function itself deciding how many bins you want to have.",
+    "start_ms": 2962672,
+    "end_ms": 2967192,
+    "duration_ms": 4520,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2967.192,
+    "text": "You could directly say I want five bins, I want ten bins and so on and so forth.",
+    "start_ms": 2967192,
+    "end_ms": 2970952,
+    "duration_ms": 3760,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2972.216,
+    "text": "So we could also have overlayed histograms and the same way that we had side by side box plots in order to encode two variables.",
+    "start_ms": 2972216,
+    "end_ms": 2980816,
+    "duration_ms": 8600,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2980.816,
+    "text": "If we have two variables that we want to encode, we could actually use the color or the hue information in order to do that.",
+    "start_ms": 2980816,
+    "end_ms": 2987816,
+    "duration_ms": 7000,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2988.184,
+    "text": "So what I plotted here is that I calculated whether a country is in the north-sand hemisphere or southern hemisphere and I basically said that okay I want to look at the GNI or the north-sand hemisphere countries versus the southern hemisphere countries and I want to look at the distribution.",
+    "start_ms": 2988184,
+    "end_ms": 3006242,
+    "duration_ms": 18058,
+    "word_count": 51,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3006.242,
+    "text": "It plots one histogram with one color, it plots another histogram on top of that that's why we call it overlayed histogram with two different colors.",
+    "start_ms": 3006242,
+    "end_ms": 3016067,
+    "duration_ms": 9825,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3016.067,
+    "text": "You You can see that the color attribute is going to come from the hemisphere column that I created.",
+    "start_ms": 3016067,
+    "end_ms": 3026144,
+    "duration_ms": 10077,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3026.144,
+    "text": "So it basically says that, okay, I'm going to segment them based on hemisphere.",
+    "start_ms": 3026144,
+    "end_ms": 3029504,
+    "duration_ms": 3360,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3029.504,
+    "text": "I'm going to basically have the orange one for Northern part and then the blue one for the southern part.",
+    "start_ms": 3029504,
+    "end_ms": 3035504,
+    "duration_ms": 6000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3035.504,
+    "text": "And additionally, what they will do is it will create this legend for us.",
+    "start_ms": 3035504,
+    "end_ms": 3040544,
+    "duration_ms": 5040,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3040.544,
+    "text": "Most of the time, if color is involved in any way, we might want to add legend so that be at that additional contact, contextual information about what's flooded in orange and what's flooded in blue.",
+    "start_ms": 3040544,
+    "end_ms": 3051783,
+    "duration_ms": 11239,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3051.783,
+    "text": "And that's called a legend. So, some more kind of information that you can gather from histograms.",
+    "start_ms": 3051783,
+    "end_ms": 3059696,
+    "duration_ms": 7913,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3059.696,
+    "text": "These are the things that you've not seen in data 8.",
+    "start_ms": 3059696,
+    "end_ms": 3062216,
+    "duration_ms": 2520,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3062.216,
+    "text": "Looking at the histogram and the reason that we plot histogram is to figure out that the kind of the distribution of the quantitative variable that we have.",
+    "start_ms": 3062216,
+    "end_ms": 3070376,
+    "duration_ms": 8160,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3070.376,
+    "text": "So for example, here on the left, you're seeing that there is a long tail in the right side of the distribution.",
+    "start_ms": 3070376,
+    "end_ms": 3077456,
+    "duration_ms": 7080,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3077.456,
+    "text": "We call it a right tail distribution. So a right tail distribution is going to be probabil, probabilismatically because when we are going to do the modeling, they're going to be large values that are less represented in the data, but they still exist and they might bias your model in some way.",
+    "start_ms": 3077456,
+    "end_ms": 3093776,
+    "duration_ms": 16320,
+    "word_count": 53,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3093.776,
+    "text": "So we need to fix all of these issues before getting into the modeling.",
+    "start_ms": 3093776,
+    "end_ms": 3097776,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3097.776,
+    "text": "In the other part, you see a long left tail, we call it a left-discute distribution.",
+    "start_ms": 3097776,
+    "end_ms": 3106136,
+    "duration_ms": 8360,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3106.136,
+    "text": "What we are really interested in is look at the trend, look at the histogram and make sure that our data is not left-discute or right-discute in a sense, and our data is kind of normally distributed so that we can work with it is slightly better.",
+    "start_ms": 3106136,
+    "end_ms": 3121736,
+    "duration_ms": 15600,
+    "word_count": 47,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3121.736,
+    "text": "We're gonna go into the details of what kind of issues that they can create and how to fix these issues in the next lecture and also in the modeling lectures to come.",
+    "start_ms": 3121736,
+    "end_ms": 3130736,
+    "duration_ms": 9000,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3131.256,
+    "text": "The additional information that we can gather is mode. Mode is basically showing you whether the peaks in your distribution or whether the peaks in your histogram.",
+    "start_ms": 3131256,
+    "end_ms": 3141456,
+    "duration_ms": 10200,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3141.456,
+    "text": "We can have one peak, we call it unimodal, we can have two peaks, we call it bi-modal, we can have more than one peak, but we don't go and say try-modal and whatnot, we would just call it multi-modal data sets.",
+    "start_ms": 3141456,
+    "end_ms": 3154696,
+    "duration_ms": 13240,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3154.696,
+    "text": "So this kind of mode information is going to be exactly what we might want to gather and we might want to summarize in our data.",
+    "start_ms": 3154696,
+    "end_ms": 3162696,
+    "duration_ms": 8000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3162.696,
+    "text": "But we're going to see why that's important and why we need to summarize it a little bit more to make sure that we understand the mode of our distribution understanding whether it's unimodal or bymodal in future lectures and also in modeling lectures, particularly.",
+    "start_ms": 3162696,
+    "end_ms": 3177696,
+    "duration_ms": 15000,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3178.712,
+    "text": "So let's take a two minute break and then after the break I'm going to come back and talk a little bit about.",
+    "start_ms": 3178712,
+    "end_ms": 3184312,
+    "duration_ms": 5600,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3184.76,
+    "text": "How to summarize trends in histograms using kernel density estimates.",
+    "start_ms": 3184760,
+    "end_ms": 3189240,
+    "duration_ms": 4480,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3282.872,
+    "text": "So let's get back. 5 4 3 2 And one, so, kernel-lensity estimation.",
+    "start_ms": 3282872,
+    "end_ms": 3292343,
+    "duration_ms": 9471,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3292.343,
+    "text": "It's a very cool topic. I want you to think about kernel-lensity estimate and why we need to do that.",
+    "start_ms": 3292343,
+    "end_ms": 3301066,
+    "duration_ms": 8723,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3301.066,
+    "text": "As, like, for example, I have two things on a table.",
+    "start_ms": 3301066,
+    "end_ms": 3305408,
+    "duration_ms": 4342,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3305.408,
+    "text": "I have two data points, right? And I want to summarize the trends in my data point, or I have like multiple different bars.",
+    "start_ms": 3305408,
+    "end_ms": 3311736,
+    "duration_ms": 6328,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3311.736,
+    "text": "And I want to summarize it, but I don't want to show the entire data set or data points that I have to the user so that they make sense of what's happening.",
+    "start_ms": 3311736,
+    "end_ms": 3320648,
+    "duration_ms": 8912,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3320.648,
+    "text": "What I can do is I can put a fabric on top of all of these data points and then show them the trend or the shape of that fabric.",
+    "start_ms": 3320648,
+    "end_ms": 3329266,
+    "duration_ms": 8618,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3329.266,
+    "text": "So depending on the thickness of that fabric, they might even only see the tallest one or they might see if the fabric is a little bit lighter in texture.",
+    "start_ms": 3329266,
+    "end_ms": 3338444,
+    "duration_ms": 9178,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3338.444,
+    "text": "They might also to see some of the details of the other peaks or other data points that I have in my trend.",
+    "start_ms": 3338444,
+    "end_ms": 3344568,
+    "duration_ms": 6124,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3344.568,
+    "text": "So I want you to think about kernel density estimation as a way that we're trying to...",
+    "start_ms": 3344568,
+    "end_ms": 3349168,
+    "duration_ms": 4600,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3349.4,
+    "text": "Put kind of a fabric on top of our bars in a histogram and make sense of how can we normalize or how can we give a general visual about what's happening in the trend of our dataset.",
+    "start_ms": 3349400,
+    "end_ms": 3363800,
+    "duration_ms": 14400,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3364.184,
+    "text": "Why is it important in the first place? So let me show you why it's important.",
+    "start_ms": 3364184,
+    "end_ms": 3369144,
+    "duration_ms": 4960,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3369.432,
+    "text": "So if I go ahead here and basically say that These are for the previous part.",
+    "start_ms": 3369432,
+    "end_ms": 3376744,
+    "duration_ms": 7312,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3378.232,
+    "text": "Um, it's... You Run. All above selected cell. If I go ahead and hear, for example, plot my histogram with five bins, right?",
+    "start_ms": 3378232,
+    "end_ms": 3398304,
+    "duration_ms": 20072,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3398.304,
+    "text": "So what you're seeing is that you're seeing it just a unimodal distribution.",
+    "start_ms": 3398304,
+    "end_ms": 3403304,
+    "duration_ms": 5000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3403.304,
+    "text": "So there's one top peak and then everything else is going to be around it.",
+    "start_ms": 3403304,
+    "end_ms": 3407304,
+    "duration_ms": 4000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3407.304,
+    "text": "If I go ahead and show you, for example, what happens if I have 10 bins in my distribution.",
+    "start_ms": 3407304,
+    "end_ms": 3414304,
+    "duration_ms": 7000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3414.304,
+    "text": "I would say that, okay, I want you to plot HIV rate in the WB data frame, the stat being density, the density is plotted here on the ViAxis.",
+    "start_ms": 3414304,
+    "end_ms": 3425404,
+    "duration_ms": 11100,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3425.404,
+    "text": "And I want you to specifically use 10 bins. Don't infer how many bins I want.",
+    "start_ms": 3425404,
+    "end_ms": 3429464,
+    "duration_ms": 4060,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3429.464,
+    "text": "Use exactly 10 bins. You might want to arrive or you might arrive at the decision that your distribution is by model.",
+    "start_ms": 3429464,
+    "end_ms": 3437304,
+    "duration_ms": 7840,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3437.304,
+    "text": "Versus if I go ahead and say that, okay, the number of bins is equal to 20, then your decision might be very different.",
+    "start_ms": 3437304,
+    "end_ms": 3445424,
+    "duration_ms": 8120,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3445.424,
+    "text": "You might want to say that your distribution is multi-modal.",
+    "start_ms": 3445424,
+    "end_ms": 3448384,
+    "duration_ms": 2960,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3448.384,
+    "text": "So because the decision that we're making about the mode of the distribution and sometimes also about the skewness of the distribution is going to be controlled by this kind of arbitrary variable, we might want to go ahead and say that I'm going to smooth this entire distribution and I'm going to give you a kernel density estimation.",
+    "start_ms": 3448384,
+    "end_ms": 3468384,
+    "duration_ms": 20000,
+    "word_count": 59,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3468.384,
+    "text": "And a kernel density estimation is again, It tends to defunction that is kind of similar to the histogram, but it's more smooth.",
+    "start_ms": 3468384,
+    "end_ms": 3476264,
+    "duration_ms": 7880,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3476.264,
+    "text": "And how do we do this smoothness or making our plots or our curve more smooth?",
+    "start_ms": 3476264,
+    "end_ms": 3482904,
+    "duration_ms": 6640,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3482.904,
+    "text": "We will basically use the idea that I'm going to assume that every time that you want to sample a sample data point from your entire distribution and you go out in the valve, it's more likely that you will sample from the bars that are more represented in your distribution and you're going to sample less from the bins that are not represented that much.",
+    "start_ms": 3482904,
+    "end_ms": 3503264,
+    "duration_ms": 20360,
+    "word_count": 66,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3503.896,
+    "text": "So I'm going to basically put a probability. this probability function on top of each one of the data points and then I'll sum up all of those probability functions and scale them in order to make sense of what's the general trend what's the probability that my data point is going to be sampled if I go at a sample again I'm going to sample a data point from the exact same distribution.",
+    "start_ms": 3503896,
+    "end_ms": 3526576,
+    "duration_ms": 22680,
+    "word_count": 74,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3526.576,
+    "text": "So that was a love of complicated, but let me tell you.",
+    "start_ms": 3526576,
+    "end_ms": 3530336,
+    "duration_ms": 3760,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3531.064,
+    "text": "How we build a probabilistic notion into visualizing a distribution.",
+    "start_ms": 3531064,
+    "end_ms": 3537064,
+    "duration_ms": 6000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3537.064,
+    "text": "So the core part of the kernel density estimation or how we're going to make this estimation is based on a kernel function.",
+    "start_ms": 3537064,
+    "end_ms": 3544544,
+    "duration_ms": 7480,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3544.888,
+    "text": "What is a kernel function? The kernel function says that I'm the probability function.",
+    "start_ms": 3544888,
+    "end_ms": 3550472,
+    "duration_ms": 5584,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3551.128,
+    "text": "And this probability function represents that what is the likelihood that every time that you sample a data point you will basically exactly get the same data point or you will get the data point that is slightly higher in value or is slightly lower in value.",
+    "start_ms": 3551128,
+    "end_ms": 3567528,
+    "duration_ms": 16400,
+    "word_count": 47,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3567.528,
+    "text": "Say for example, I have the hiv rate sample one data point with the value equal to 20.",
+    "start_ms": 3567528,
+    "end_ms": 3574328,
+    "duration_ms": 6800,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3574.808,
+    "text": "In order for me to model the probability or the likelihood for me to be able to sample this data point again, I would say that there is a probabilistic word that is it is more likely for me to sample exactly the same data point.",
+    "start_ms": 3574808,
+    "end_ms": 3588908,
+    "duration_ms": 14100,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3588.908,
+    "text": "So there is a high probability here or a high density here when I'm going to basically say what's the probability that I'm going to get the same data point and as you increase the value or as you decrease the value.",
+    "start_ms": 3588908,
+    "end_ms": 3603216,
+    "duration_ms": 14308,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3603.416,
+    "text": "It is less likely less likely or less probable for you to sample those data points.",
+    "start_ms": 3603416,
+    "end_ms": 3609176,
+    "duration_ms": 5760,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3609.176,
+    "text": "That's how I'm going to build a probabilistic model. Right.",
+    "start_ms": 3609176,
+    "end_ms": 3613122,
+    "duration_ms": 3946,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3613.122,
+    "text": "So this basically says that based on all of your observations that you have, if you're assuming that your observations and your data set are your ground truths, and you're building a probability function on top of each individual data point that you have, you sum up or aggregate all of this information together, then you have a probability function that models the entire distribution.",
+    "start_ms": 3613122,
+    "end_ms": 3634136,
+    "duration_ms": 21014,
+    "word_count": 65,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3634.136,
+    "text": "What you see in the kernel is how we can model the the probability or the likelihood of observing one sample or one row in your data frame or in your data set.",
+    "start_ms": 3634136,
+    "end_ms": 3646104,
+    "duration_ms": 11968,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3646.104,
+    "text": "But what we basically want to do is do exactly the same thing for all of the data points that we have in our data frame.",
+    "start_ms": 3646104,
+    "end_ms": 3651703,
+    "duration_ms": 5599,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3652.152,
+    "text": "So what you're seeing in this kernel is that this kernel is a probability function.",
+    "start_ms": 3652152,
+    "end_ms": 3655888,
+    "duration_ms": 3736,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3655.888,
+    "text": "All of the values starting from zero all the way to that 4D that I show they're all positive value.",
+    "start_ms": 3655888,
+    "end_ms": 3662632,
+    "duration_ms": 6744,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3662.632,
+    "text": "Right? So that's what we want from a probability. You can go ahead and calculate that the area under the care is equal to 1.",
+    "start_ms": 3662632,
+    "end_ms": 3669152,
+    "duration_ms": 6520,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3669.152,
+    "text": "Right? And it makes sense kind of for us to model this exact data point with HIV rate equal to 20 using this bill care function because it's more likely for you to get something that you think Think is your ground trust as you went out in the, in the world and you collected the data.",
+    "start_ms": 3669152,
+    "end_ms": 3685512,
+    "duration_ms": 16360,
+    "word_count": 57,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3685.512,
+    "text": "And as you go to 21 to 22 or 30, then the probability of you observing those samples is going to drop, right?",
+    "start_ms": 3685512,
+    "end_ms": 3695272,
+    "duration_ms": 9760,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3695.272,
+    "text": "So that's basically what we're basically modeling with this kernel function.",
+    "start_ms": 3695272,
+    "end_ms": 3699751,
+    "duration_ms": 4479,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3699.751,
+    "text": "But exactly what we want is to model the entire data set, not only a single data point.",
+    "start_ms": 3699751,
+    "end_ms": 3705592,
+    "duration_ms": 5841,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3705.592,
+    "text": "So what we'll do is we'll basically say that let me put the kernel on top of all of the individual data points that I have, right?",
+    "start_ms": 3705592,
+    "end_ms": 3713912,
+    "duration_ms": 8320,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3713.912,
+    "text": "Because each one of them should be modeled with a probability function.",
+    "start_ms": 3713912,
+    "end_ms": 3716992,
+    "duration_ms": 3080,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3717.336,
+    "text": "And let me sum up all of those probability functions in order to build a probability distribution for the entire data set that I have.",
+    "start_ms": 3717336,
+    "end_ms": 3726731,
+    "duration_ms": 9395,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3726.731,
+    "text": "But the caveat that when you're looking at the entire probability distribution of your data set, you need to make sure that the area under the care over the entire distribution should be equal to one.",
+    "start_ms": 3726731,
+    "end_ms": 3736816,
+    "duration_ms": 10085,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3736.816,
+    "text": "As opposed to here, the probability the area under the care for this care and all for a single data point is equal to one.",
+    "start_ms": 3736816,
+    "end_ms": 3745080,
+    "duration_ms": 8264,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3745.08,
+    "text": "So That's kind of only the middle part that we'll try to find a solution for.",
+    "start_ms": 3745080,
+    "end_ms": 3750136,
+    "duration_ms": 5056,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3751.064,
+    "text": "So again, because I want to model each individual data point, but I can do is I can go ahead and say that that nice bell-carved shape, which is the Gaussian kernel, I'm going to put it on each individual data point that I have.",
+    "start_ms": 3751064,
+    "end_ms": 3767544,
+    "duration_ms": 16480,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3767.544,
+    "text": "So here is kind of a random toy example with five different data points that I created.",
+    "start_ms": 3767544,
+    "end_ms": 3773024,
+    "duration_ms": 5480,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3773.024,
+    "text": "We can plot something like this, which has indicators for different data points using something that's called rock blood.",
+    "start_ms": 3773024,
+    "end_ms": 3779584,
+    "duration_ms": 6560,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3779.584,
+    "text": "So we're going to see rock flood also more in the next lecture.",
+    "start_ms": 3779584,
+    "end_ms": 3782704,
+    "duration_ms": 3120,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3782.704,
+    "text": "But I have indicators for each one of those data points, 2.1, and so on and so forth.",
+    "start_ms": 3782704,
+    "end_ms": 3788304,
+    "duration_ms": 5600,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3788.304,
+    "text": "I want to turn this data set into something that I can understand from a probabilistic view.",
+    "start_ms": 3788304,
+    "end_ms": 3794704,
+    "duration_ms": 6400,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3794.704,
+    "text": "And I want to plot the probability distribution over this entire distribution that I have.",
+    "start_ms": 3794704,
+    "end_ms": 3799984,
+    "duration_ms": 5280,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3800.088,
+    "text": "So modeling each individual, one of them using a kernel is going to basically give me all of these five gousines that I have.",
+    "start_ms": 3800088,
+    "end_ms": 3809088,
+    "duration_ms": 9000,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3809.088,
+    "text": "So five gousines, if I take a look at each individual, one of these gousines, then that's basically how we model each individual data point.",
+    "start_ms": 3809088,
+    "end_ms": 3818088,
+    "duration_ms": 9000,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3818.36,
+    "text": "But in order for me to model the entire thing, I want to summarize or sum up all of these galsunes.",
+    "start_ms": 3818360,
+    "end_ms": 3825197,
+    "duration_ms": 6837,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3825.197,
+    "text": "Why do we sum up all of these galsunes? Because, for example, in this specific area, that I have two points that are very close to each other, or in this specific area that I have two data points that are close to each other.",
+    "start_ms": 3825197,
+    "end_ms": 3838156,
+    "duration_ms": 12959,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3838.156,
+    "text": "I want to say that, okay, I have one sample here, I have one sample here, this is the probability distribution for this one, this is for our distribution for this either one.",
+    "start_ms": 3838156,
+    "end_ms": 3846120,
+    "duration_ms": 7964,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3846.488,
+    "text": "Looking at this region, it's very likely that you will get one of these two values or a value between these two values That's why I need to sum up all of those kernels in order to just basically make sense of what's happening in aggregate The only caveat is that I have five data points, right?",
+    "start_ms": 3846488,
+    "end_ms": 3864216,
+    "duration_ms": 17728,
+    "word_count": 57,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3864.216,
+    "text": "And then each one of these kernels, the area under these curves is equal to one.",
+    "start_ms": 3864216,
+    "end_ms": 3869096,
+    "duration_ms": 4880,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3869.096,
+    "text": "If I sum up all of these areas, it will sum up to be equal to five.",
+    "start_ms": 3869096,
+    "end_ms": 3874376,
+    "duration_ms": 5280,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3875.096,
+    "text": "And five is not going to give me a probability distribution.",
+    "start_ms": 3875096,
+    "end_ms": 3884296,
+    "duration_ms": 9200,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3884.127,
+    "text": "of these kernel functions so that the heights are one fifths of their original height, so that the area under the curve of each individual one of them is one fifths, which then if I combine five of them together it will give me area under the curve of equal to one.",
+    "start_ms": 3884127,
+    "end_ms": 3904776,
+    "duration_ms": 20649,
+    "word_count": 52,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3904.728,
+    "text": "dividing it by N? It's because you're saying that okay if I go in the Vile and Sample.",
+    "start_ms": 3904728,
+    "end_ms": 3910600,
+    "duration_ms": 5872,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3911.096,
+    "text": "It is one over I'm getting one over and probability that I'm going to get this sample in a data frame of n samples.",
+    "start_ms": 3911096,
+    "end_ms": 3919816,
+    "duration_ms": 8720,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3919.816,
+    "text": "So that's basically what you're doing right and then one over n is the maximum probability that you'll get.",
+    "start_ms": 3919816,
+    "end_ms": 3925856,
+    "duration_ms": 6040,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3925.856,
+    "text": "So that's why the area not that maximum probability or the share of a given data point that you have.",
+    "start_ms": 3925856,
+    "end_ms": 3932056,
+    "duration_ms": 6200,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3932.056,
+    "text": "So that's why it makes sense for the area under the cares for each individual point point to be one over n.",
+    "start_ms": 3932056,
+    "end_ms": 3937696,
+    "duration_ms": 5640,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3938.168,
+    "text": "So I'm going to scale it. A scaling down here is going to give me all of these kernels, which then I can go ahead and sum them up together and then get this kernel density estimate.",
+    "start_ms": 3938168,
+    "end_ms": 3948968,
+    "duration_ms": 10800,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3949.528,
+    "text": "So that's the entire process. So without looking at the data, I give you five data points.",
+    "start_ms": 3949528,
+    "end_ms": 3954610,
+    "duration_ms": 5082,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3954.61,
+    "text": "If you plot kernel density estimation and you plot it with the assumption that your bandwidth is equal to one, which is going to be the shape of that bell curve, which is kind of controlling how narrow or how wide that bell curve is going to be.",
+    "start_ms": 3954610,
+    "end_ms": 3970030,
+    "duration_ms": 15420,
+    "word_count": 48,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3970.03,
+    "text": "This is going to be the trend that you're getting, which kind of makes sense.",
+    "start_ms": 3970030,
+    "end_ms": 3973957,
+    "duration_ms": 3927,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3973.957,
+    "text": "What you're expecting here is that you have two peaks here and then this data point contributes more to these first two samples and these two samples are kind of more cluster together.",
+    "start_ms": 3973957,
+    "end_ms": 3984888,
+    "duration_ms": 10931,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3984.888,
+    "text": "So that's where one mode comes here and another higher mode comes before it because it gets the contribution from the third data point in the middle.",
+    "start_ms": 3984888,
+    "end_ms": 3993311,
+    "duration_ms": 8423,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3993.311,
+    "text": "So kind of making sense of thinking about I had those five with six and now I'm trying to put a fabric on top of them and that fabric is going to tell me that okay you have a peak here or two points that are stacked on top of each other frequency around two and then, or three points.",
+    "start_ms": 3993311,
+    "end_ms": 4010185,
+    "duration_ms": 16874,
+    "word_count": 60,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4010.185,
+    "text": "And then you have two points that are stacked on top of each other around six and that's the trend.",
+    "start_ms": 4010185,
+    "end_ms": 4017608,
+    "duration_ms": 7423,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4017.4,
+    "text": "So the final result that I'll get is something like this.",
+    "start_ms": 4017400,
+    "end_ms": 4022400,
+    "duration_ms": 5000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4022.4,
+    "text": "You can plot this kernel density estimate plot using KDE plot.",
+    "start_ms": 4022400,
+    "end_ms": 4027400,
+    "duration_ms": 5000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4027.4,
+    "text": "So that's the syntax. That was the math behind that.",
+    "start_ms": 4027400,
+    "end_ms": 4030400,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4030.4,
+    "text": "How do we arrive at it? And this is the kind of the plotting function that we have.",
+    "start_ms": 4030400,
+    "end_ms": 4035400,
+    "duration_ms": 5000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4035.4,
+    "text": "So we call C born KDE plot. We say that, okay, my data set or my data frame is called points.",
+    "start_ms": 4035400,
+    "end_ms": 4043400,
+    "duration_ms": 8000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4043.4,
+    "text": "Here I'm saying that my bandwidth is equal to 0.65.",
+    "start_ms": 4043400,
+    "end_ms": 4047000,
+    "duration_ms": 3600,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4047.0,
+    "text": "This is like really arbitrary value that I just chose in order for this plot to really look good.",
+    "start_ms": 4047000,
+    "end_ms": 4053800,
+    "duration_ms": 6800,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4053.8,
+    "text": "Which basically says that, okay, if you have a bandwidth of what, one, this is gonna be the shape of your bell curve.",
+    "start_ms": 4053800,
+    "end_ms": 4060600,
+    "duration_ms": 6800,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4060.6,
+    "text": "And if you, Decrease the bandwidths, then basically what you're going to have is that the bandwidths or the standard division is going to get the small larger going to have this spike here Build here, which is what's happening in this case.",
+    "start_ms": 4060600,
+    "end_ms": 4073752,
+    "duration_ms": 13152,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4073.752,
+    "text": "On top of the KDE plot, you can call all of these plotting functions on top of each other.",
+    "start_ms": 4073752,
+    "end_ms": 4079340,
+    "duration_ms": 5588,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4079.34,
+    "text": "Under the hood, there is a figure that each plot function just writes on it.",
+    "start_ms": 4079340,
+    "end_ms": 4083752,
+    "duration_ms": 4412,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4083.752,
+    "text": "it. So I first plot the KDE, then on top of that, I go ahead and plot the his plot, because I want to see the histograms.",
+    "start_ms": 4083752,
+    "end_ms": 4091823,
+    "duration_ms": 8071,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4091.823,
+    "text": "So the KDE plot gives you this histogram. We'll give you all of these bars that you have, which I'm telling you that I want this stat to be density, because the KDE plot is going to give me density, and I want the number of bins to be equal to two.",
+    "start_ms": 4091823,
+    "end_ms": 4106192,
+    "duration_ms": 14369,
+    "word_count": 52,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4106.192,
+    "text": "That's why I see two bins. That's all the control we have.",
+    "start_ms": 4106192,
+    "end_ms": 4109272,
+    "duration_ms": 3080,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4109.272,
+    "text": "There's also another way that you can plot it using only the his plot.",
+    "start_ms": 4109272,
+    "end_ms": 4113192,
+    "duration_ms": 3920,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4113.192,
+    "text": "without making two separate calls. That was for you to see that there is a KDE function that you can directly call and just to get this newscare.",
+    "start_ms": 4113192,
+    "end_ms": 4120792,
+    "duration_ms": 7600,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4120.792,
+    "text": "But if you want to get both of them together, you can call his plot.",
+    "start_ms": 4120792,
+    "end_ms": 4124991,
+    "duration_ms": 4199,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4124.991,
+    "text": "You can, I'm just going to walk you through all these arguments.",
+    "start_ms": 4124991,
+    "end_ms": 4128712,
+    "duration_ms": 3721,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4128.712,
+    "text": "Passing the data frame, saying that I want two bins in my histogram, I'm saying that I want the KDE to be plotted as well.",
+    "start_ms": 4128712,
+    "end_ms": 4137192,
+    "duration_ms": 8480,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4137.192,
+    "text": "It knows that I want KDE. So I say KDE equal to true.",
+    "start_ms": 4137192,
+    "end_ms": 4140672,
+    "duration_ms": 3480,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4140.672,
+    "text": "The default value is false. If you say kd equal to true, it'll make another call to the kd function, and it will plot that as well.",
+    "start_ms": 4140672,
+    "end_ms": 4148632,
+    "duration_ms": 7960,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4148.632,
+    "text": "I'm saying that I want this that to be density, and that's why density is plotted right here.",
+    "start_ms": 4148632,
+    "end_ms": 4153632,
+    "duration_ms": 5000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4153.632,
+    "text": "And there are some more controls here that are kind of out of scope, but I wanted you to see as well.",
+    "start_ms": 4153632,
+    "end_ms": 4159632,
+    "duration_ms": 6000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4159.632,
+    "text": "Here, I'm saying that I want to pass some arguments for the kde function.",
+    "start_ms": 4159632,
+    "end_ms": 4165632,
+    "duration_ms": 6000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4165.632,
+    "text": "And I'm passing them kind of in a dictionary format.",
+    "start_ms": 4165632,
+    "end_ms": 4168632,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4168.632,
+    "text": "format. What are they? One of them is the argument or the control that I had before.",
+    "start_ms": 4168632,
+    "end_ms": 4174412,
+    "duration_ms": 5780,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4174.412,
+    "text": "The bandwidth method or the alpha is equal to 0.65, which is equal to the kind of the arbitrary number that I picked before.",
+    "start_ms": 4174412,
+    "end_ms": 4183336,
+    "duration_ms": 8924,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4183.336,
+    "text": "Here, I'm also saying that I want hot to be equal to tree.",
+    "start_ms": 4183336,
+    "end_ms": 4188392,
+    "duration_ms": 5056,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4188.392,
+    "text": "Hot to be cool to tree is kind of a nice thing, which will tell you that, okay, go ahead and extend the tails of this distribution, tree standard deviation from the minimum and from the maximum.",
+    "start_ms": 4188392,
+    "end_ms": 4200032,
+    "duration_ms": 11640,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4200.032,
+    "text": "So that's why you're seeing all of these hearts right here.",
+    "start_ms": 4200032,
+    "end_ms": 4205632,
+    "duration_ms": 5600,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4205.632,
+    "text": "This is because we're not cutting it at the exact location of the pins, but we're just letting it to smoothly drop onto zero and tree standard deviation.",
+    "start_ms": 4205632,
+    "end_ms": 4216272,
+    "duration_ms": 10640,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4217.752,
+    "text": "from the maximum or from the minimum of these parts.",
+    "start_ms": 4217752,
+    "end_ms": 4221352,
+    "duration_ms": 3600,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4222.104,
+    "text": "So math behind the mechanics behind how we can create it.",
+    "start_ms": 4222104,
+    "end_ms": 4226304,
+    "duration_ms": 4200,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4226.304,
+    "text": "There's also another function that can plot histograms, that can also give us the KDE functions.",
+    "start_ms": 4226304,
+    "end_ms": 4234824,
+    "duration_ms": 8520,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4234.824,
+    "text": "And that's called this plot. This plot is what it gets is it will get something that's called kind.",
+    "start_ms": 4234824,
+    "end_ms": 4242704,
+    "duration_ms": 7880,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4243.128,
+    "text": "Which is similar to the native panda plotting. Remember that I would do plot kind equal to bar.",
+    "start_ms": 4243128,
+    "end_ms": 4248222,
+    "duration_ms": 5094,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4248.222,
+    "text": "This is kind of the same thing. This plot is a wrapper on top of the KDE plot his plots on and so forth so that you don't need to remember which one is which.",
+    "start_ms": 4248222,
+    "end_ms": 4258128,
+    "duration_ms": 9906,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4258.128,
+    "text": "So you just directly call this plot, meaning that I want to plot the distribution.",
+    "start_ms": 4258128,
+    "end_ms": 4262528,
+    "duration_ms": 4400,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4262.768,
+    "text": "But what do I want to plot about the distribution?",
+    "start_ms": 4262768,
+    "end_ms": 4265248,
+    "duration_ms": 2480,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4265.528,
+    "text": "I want to plot using the WB data set. I want to plot GNI data.",
+    "start_ms": 4265528,
+    "end_ms": 4270488,
+    "duration_ms": 4960,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4270.808,
+    "text": "I want to call that the type to be or the kind to be histogram.",
+    "start_ms": 4270808,
+    "end_ms": 4275168,
+    "duration_ms": 4360,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4275.488,
+    "text": "And I want the stat that you're showing on the y-axis to be density.",
+    "start_ms": 4275488,
+    "end_ms": 4278888,
+    "duration_ms": 3400,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4279.128,
+    "text": "It will create histogram for you. You could say that, okay, I'm doing this plot, but here I'm saying that the kind is equal to KDE.",
+    "start_ms": 4279128,
+    "end_ms": 4287408,
+    "duration_ms": 8280,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4287.408,
+    "text": "You don't need to specify that this stat is density because by default this stat is density because it is a density function at the end when you're creating the KDE plot.",
+    "start_ms": 4287408,
+    "end_ms": 4296908,
+    "duration_ms": 9500,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4296.908,
+    "text": "There's also this last thing that is called ECDF plot, which is empirical cumulative distribution function, which basically tells you like the cumulative distribution function that you want to create that like what is the percentage of data points that are below each individual data point.",
+    "start_ms": 4296908,
+    "end_ms": 4314908,
+    "duration_ms": 18000,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4314.908,
+    "text": "So you can go crazy instead of having the distribution plot, you can have the ECDF plot as well.",
+    "start_ms": 4314908,
+    "end_ms": 4323428,
+    "duration_ms": 8520,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4323.428,
+    "text": "So on that aside, let's go back to the steps that we took in order to create the KDE plot.",
+    "start_ms": 4323428,
+    "end_ms": 4330348,
+    "duration_ms": 6920,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4330.348,
+    "text": "Remember that we had three different steps. So I'm going to put that in one equation and show you what those three steps were.",
+    "start_ms": 4330348,
+    "end_ms": 4337788,
+    "duration_ms": 7440,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4337.788,
+    "text": "It sounds a little bit complicated, but it is not.",
+    "start_ms": 4337788,
+    "end_ms": 4340908,
+    "duration_ms": 3120,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4340.908,
+    "text": "So the first step for us was to put the kernel on top of each one of those locations, right?",
+    "start_ms": 4340908,
+    "end_ms": 4347188,
+    "duration_ms": 6280,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4347.48,
+    "text": "When I say putting a kernel on top of each one of those locations, that means that we would say that I want a function that is on the x axis, it can take different x values.",
+    "start_ms": 4347480,
+    "end_ms": 4359480,
+    "duration_ms": 12000,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4359.48,
+    "text": "But it is centered around x i, it is centered around each one of the sample data points that you have because we're putting each one of these kernels on top of each individual data point.",
+    "start_ms": 4359480,
+    "end_ms": 4371480,
+    "duration_ms": 12000,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4371.48,
+    "text": "Okay. Alpha x and x i basically is the kernel function alpha is the bandwidth of that kernel function x is a value that it can take it can be any value on the x axis x i is various the center of that curve so you're basically thinking about putting the curve on each one of the data points.",
+    "start_ms": 4371480,
+    "end_ms": 4393560,
+    "duration_ms": 22080,
+    "word_count": 60,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4393.816,
+    "text": "Then what we did was effectively a scaling it down.",
+    "start_ms": 4393816,
+    "end_ms": 4396834,
+    "duration_ms": 3018,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4396.834,
+    "text": "Remember, this was a scaling it down by a factor of 1 over n if you have n data points.",
+    "start_ms": 4396834,
+    "end_ms": 4402872,
+    "duration_ms": 6038,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4402.872,
+    "text": "And then the other factor here is that you're going to sum up over all of the possible data points that you have.",
+    "start_ms": 4402872,
+    "end_ms": 4409816,
+    "duration_ms": 6944,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4409.816,
+    "text": "If you have n different data points, you need to put a kernel on top of each individual one of them.",
+    "start_ms": 4409816,
+    "end_ms": 4414816,
+    "duration_ms": 5000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4414.816,
+    "text": "That's where your i comes from. That's why we're, that's where your x i comes from.",
+    "start_ms": 4414816,
+    "end_ms": 4419816,
+    "duration_ms": 5000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4419.816,
+    "text": "So put a kernel on top of each one of them, scale it down, sum it up, and at the end you have a function.",
+    "start_ms": 4419816,
+    "end_ms": 4425816,
+    "duration_ms": 6000,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4425.816,
+    "text": "And what is this function? This is a function of x.",
+    "start_ms": 4425816,
+    "end_ms": 4428816,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4428.816,
+    "text": "X can take any values. And then this function is parametrized by alpha.",
+    "start_ms": 4428816,
+    "end_ms": 4433816,
+    "duration_ms": 5000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4433.816,
+    "text": "depending on the choice of alpha, then the type of the care and elensity estimate, the KDE function that you're going to get at the end is going to be different.",
+    "start_ms": 4433816,
+    "end_ms": 4442536,
+    "duration_ms": 8720,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4443.224,
+    "text": "So quickly going over different types of kernels. We have the Gaussian kernel.",
+    "start_ms": 4443224,
+    "end_ms": 4447734,
+    "duration_ms": 4510,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4447.734,
+    "text": "The equation for a Gaussian kernel is not that important.",
+    "start_ms": 4447734,
+    "end_ms": 4451203,
+    "duration_ms": 3469,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4451.203,
+    "text": "You might have seen it before. The Gaussian kernel is that bell curve shape kind of function that you have that is centered around X i.",
+    "start_ms": 4451203,
+    "end_ms": 4460224,
+    "duration_ms": 9021,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4460.224,
+    "text": "So you would see that the maximum value that this curve can take is at the point that x is equal to x i.",
+    "start_ms": 4460224,
+    "end_ms": 4467104,
+    "duration_ms": 6880,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4467.104,
+    "text": "So that that numerator is equal to zero. So that e to the power of zero is equal to one.",
+    "start_ms": 4467104,
+    "end_ms": 4473224,
+    "duration_ms": 6120,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4473.224,
+    "text": "That's where we have the maximum value. And then as x is going to deviate from x i on both sides, then the probability is going to drop.",
+    "start_ms": 4473224,
+    "end_ms": 4482024,
+    "duration_ms": 8800,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4482.024,
+    "text": "And if you calculate this summation for of this function over all possible values, you will see that the area under the curve is equal to 1.",
+    "start_ms": 4482024,
+    "end_ms": 4490584,
+    "duration_ms": 8560,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4490.584,
+    "text": "And obviously, you know that this function is always positive, so it is a probability function that we can work with.",
+    "start_ms": 4490584,
+    "end_ms": 4496784,
+    "duration_ms": 6200,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4497.176,
+    "text": "So these are some details that center the wrong x i and Alpha controls the bandwidth.",
+    "start_ms": 4497176,
+    "end_ms": 4504248,
+    "duration_ms": 7072,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4504.248,
+    "text": "So here you're seeing that when I say that the kernel function is parametrized by alpha and I keep using alpha or bandwidth, it's because alpha appears here and alpha appears here, and alpha controls that bandwidth.",
+    "start_ms": 4504248,
+    "end_ms": 4517288,
+    "duration_ms": 13040,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4517.288,
+    "text": "So it will basically tell you that as you're moving away, if you're looking at that exponent thing at the top here, it will tell you that as you're moving away from Xi, how sharp should you drop the probability.",
+    "start_ms": 4517288,
+    "end_ms": 4532048,
+    "duration_ms": 14760,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4532.312,
+    "text": "Right, when alpha is a large value, you should drop the probability sharply because the denominator is large.",
+    "start_ms": 4532312,
+    "end_ms": 4539612,
+    "duration_ms": 7300,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4539.612,
+    "text": "Right, so that's how you can make sense of why alpha controls the bandwidth and because you're dropping sharply, it's going to be making a very kind of makes a very kind of centered peak.",
+    "start_ms": 4539612,
+    "end_ms": 4555012,
+    "duration_ms": 15400,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4555.96,
+    "text": "The effect of band myths we can see it here.",
+    "start_ms": 4555960,
+    "end_ms": 4558520,
+    "duration_ms": 2560,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4558.52,
+    "text": "We could say that, okay, if I have a distribution and my distribution, if I look at it from the histogram perspective is like this, and I use different band myths, you're seeing that with alpha equal to point point 1, it is going to be very spiky, because I'm putting a spiky stuff on top of the data points and I'm averaging all of them.",
+    "start_ms": 4558520,
+    "end_ms": 4578804,
+    "duration_ms": 20284,
+    "word_count": 66,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4578.804,
+    "text": "So those spikes are not going to merge together and form a nice kind of curvey shape.",
+    "start_ms": 4578804,
+    "end_ms": 4584160,
+    "duration_ms": 5356,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4584.16,
+    "text": "If I increase alpha to equal to one, I will start losing some of those noise that I saw in the previous case, but there is still some noise exists in my data.",
+    "start_ms": 4584160,
+    "end_ms": 4594912,
+    "duration_ms": 10752,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4594.912,
+    "text": "If I increase alpha to be equal to two, you're seeing that my curve is getting smoother and it's smoother in this case as well.",
+    "start_ms": 4594912,
+    "end_ms": 4602096,
+    "duration_ms": 7184,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4602.096,
+    "text": "So the choice of alpha is really your choice, but you just know that based on the alpha, you're changing, remember that fabric thing, you're changing the density of that fabric.",
+    "start_ms": 4602096,
+    "end_ms": 4612231,
+    "duration_ms": 10135,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4612.231,
+    "text": "So if your alpha is going to be a very high alpha, you're putting a very thick fabric on top of your distribution.",
+    "start_ms": 4612231,
+    "end_ms": 4619292,
+    "duration_ms": 7061,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4619.292,
+    "text": "So only the single peak is going to be captured.",
+    "start_ms": 4619292,
+    "end_ms": 4622197,
+    "duration_ms": 2905,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4622.197,
+    "text": "If you keep like lightening or choosing a fabric that's a little bit lighter, you will get a sense of all of those smaller peaks or smaller trends.",
+    "start_ms": 4622197,
+    "end_ms": 4630446,
+    "duration_ms": 8249,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4630.446,
+    "text": "So that's kind of a choice when you're making in order to make sure that do you understand enough about your distribution, do you understand what is the mood of your distribution and the skewness of the distribution and so on and so forth.",
+    "start_ms": 4630446,
+    "end_ms": 4644480,
+    "duration_ms": 14034,
+    "word_count": 44,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4644.48,
+    "text": "There are other types of kernels such as box car kernel.",
+    "start_ms": 4644480,
+    "end_ms": 4648480,
+    "duration_ms": 4000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4648.48,
+    "text": "It's not going to be used in practice, but you would basically see that it's still parametrized by alpha.",
+    "start_ms": 4648480,
+    "end_ms": 4653480,
+    "duration_ms": 5000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4653.48,
+    "text": "It still has the center on x i's and the shape is going to be something like this.",
+    "start_ms": 4653480,
+    "end_ms": 4659480,
+    "duration_ms": 6000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4659.48,
+    "text": "Area under the box is always equal to one. It's center that x i, for example, in this case, it's equal to four.",
+    "start_ms": 4659480,
+    "end_ms": 4666480,
+    "duration_ms": 7000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4666.48,
+    "text": "for and then it takes in a value for the height or for the density so that the area under the curve is equal to one.",
+    "start_ms": 4666480,
+    "end_ms": 4674906,
+    "duration_ms": 8426,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4674.906,
+    "text": "And if we apply boxcar instead of the Gaussian kernel for the kernel density estimation, this is the kernel density estimation that we're going to see with a different kernel.",
+    "start_ms": 4674906,
+    "end_ms": 4685529,
+    "duration_ms": 10623,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4685.529,
+    "text": "But in practice most of the time we'll use Gaussian kernel.",
+    "start_ms": 4685529,
+    "end_ms": 4688635,
+    "duration_ms": 3106,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4688.635,
+    "text": "So we'll always see all of those like curvy shapes or nice curves that you're seeing that you are in the demo today.",
+    "start_ms": 4688635,
+    "end_ms": 4696960,
+    "duration_ms": 8325,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4697.304,
+    "text": "So this is the last thing. Just as a practice if you haven't had a chance to respond to any of this slide Let's go ahead and tell us which one of these are a carnal density estimate plot or a KDE plot.",
+    "start_ms": 4697304,
+    "end_ms": 4712456,
+    "duration_ms": 15152,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4712.984,
+    "text": "You can see that depending on the on the kernel function it can take different shapes but what's important is that the area under the care should be equal to one the function should always be positive for all of the data points for it to be a probability function so those are the important pieces And I believe this is the last slide of the day.",
+    "start_ms": 4712984,
+    "end_ms": 4734396,
+    "duration_ms": 21412,
+    "word_count": 67,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4735.0,
+    "text": "If you are done... a great weekend. I will see you next week on Tuesday.",
+    "start_ms": 4735000,
+    "end_ms": 4739736,
+    "duration_ms": 4736,
+    "word_count": 15,
+    "avg_confidence": 90
+  }
+]

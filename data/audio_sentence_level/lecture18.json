@@ -1,0 +1,5132 @@
+[
+  {
+    "timestamp": 2.36,
+    "text": "We didn't record that. Excellent. Okay. Yes, so welcome back to data 100.",
+    "start_ms": 2360,
+    "end_ms": 7740,
+    "duration_ms": 5380,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 7.74,
+    "text": "I hope you enjoyed the beginning. We are going to pick up where we left off last time.",
+    "start_ms": 7740,
+    "end_ms": 14328,
+    "duration_ms": 6588,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 14.936,
+    "text": "Join the Slido. I started looking at some of your feedback.",
+    "start_ms": 14936,
+    "end_ms": 19072,
+    "duration_ms": 4136,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 19.072,
+    "text": "Please do fill the feedback form. I sometimes go too fast, sometimes go too slow, which checks out.",
+    "start_ms": 19072,
+    "end_ms": 24922,
+    "duration_ms": 5850,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 24.922,
+    "text": "So today I'm going to try to go appropriately fast and slow when necessary.",
+    "start_ms": 24922,
+    "end_ms": 29472,
+    "duration_ms": 4550,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 29.472,
+    "text": "And part of that is we're going to go a little bit faster in the beginning so we can get some of the more technical stuff at the end with some more time.",
+    "start_ms": 29472,
+    "end_ms": 34472,
+    "duration_ms": 5000,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 35.384,
+    "text": "Alright, some brief recap. In last lecture, we started playing random variables.",
+    "start_ms": 35384,
+    "end_ms": 40440,
+    "duration_ms": 5056,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 40.44,
+    "text": "We started talking about distributions, we started with P of X.",
+    "start_ms": 40440,
+    "end_ms": 43080,
+    "duration_ms": 2640,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 43.96,
+    "text": "And then we spent a fair amount of time on these operators.",
+    "start_ms": 43960,
+    "end_ms": 46120,
+    "duration_ms": 2160,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 46.12,
+    "text": "Very important. The expectation to find as this. about some of the important properties of these operators, so linearity of expectation you're here.",
+    "start_ms": 46120,
+    "end_ms": 60392,
+    "duration_ms": 14272,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 60.392,
+    "text": "And then variance isn't quite linear, but how did you know, A, X, plus B?",
+    "start_ms": 60392,
+    "end_ms": 65892,
+    "duration_ms": 5500,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 65.892,
+    "text": "Here's remembered little little letters are constants and these are random variables to the capillaries.",
+    "start_ms": 65892,
+    "end_ms": 71392,
+    "duration_ms": 5500,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 71.392,
+    "text": "So. Quick recap and we'll get to practice these some more today.",
+    "start_ms": 71392,
+    "end_ms": 75480,
+    "duration_ms": 4088,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 78.84,
+    "text": "Two more uh... we showed last lecture, so the expectation of two random variables.",
+    "start_ms": 78840,
+    "end_ms": 84440,
+    "duration_ms": 5600,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 85.432,
+    "text": "Does matter what they are any random variables, they could be dependent, whatever.",
+    "start_ms": 85432,
+    "end_ms": 89032,
+    "duration_ms": 3600,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 89.24,
+    "text": "The sum of them is the sum of the expectations of really useful property.",
+    "start_ms": 89240,
+    "end_ms": 93540,
+    "duration_ms": 4300,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 95.096,
+    "text": "And then we also talked about the variance of the sum of two variables.",
+    "start_ms": 95096,
+    "end_ms": 98616,
+    "duration_ms": 3520,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 98.872,
+    "text": "Which is the sum of the variances plus... And now it does matter if independent or not, to co-variance those two variables.",
+    "start_ms": 98872,
+    "end_ms": 105656,
+    "duration_ms": 6784,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 108.664,
+    "text": "So we covered last time. If they are independent, we have this nice property, then it is zero.",
+    "start_ms": 108664,
+    "end_ms": 116418,
+    "duration_ms": 7754,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 116.418,
+    "text": "That's great. So we get, you know, something that looks like expectations, but they're not, we have to account for the co-grants.",
+    "start_ms": 116418,
+    "end_ms": 121432,
+    "duration_ms": 5014,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 122.808,
+    "text": "Alright, one more property we did not get to cover last time that we'll use today.",
+    "start_ms": 122808,
+    "end_ms": 126445,
+    "duration_ms": 3637,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 126.445,
+    "text": "So review it. Is it the if x and y are independent random variables?",
+    "start_ms": 126445,
+    "end_ms": 132852,
+    "duration_ms": 6407,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 133.176,
+    "text": "Then the expectation of the product of those variables is the product of the expectation.",
+    "start_ms": 133176,
+    "end_ms": 139676,
+    "duration_ms": 6500,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 140.632,
+    "text": "I'll wait for that. Let's run good. Is a proof.",
+    "start_ms": 140632,
+    "end_ms": 145280,
+    "duration_ms": 4648,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 146.264,
+    "text": "This is a definition. of the expectation of product 2 variables.",
+    "start_ms": 146264,
+    "end_ms": 150120,
+    "duration_ms": 3856,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 150.552,
+    "text": "to the sun. Hello. A B Product those variables times the joint probability, a joint probability is a probability density over two.",
+    "start_ms": 150552,
+    "end_ms": 160064,
+    "duration_ms": 9512,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 160.792,
+    "text": "Random variables here, two and more. So all possible probabilities all possible ways X and Y could go in the chance of each of those possible outcomes.",
+    "start_ms": 160792,
+    "end_ms": 170360,
+    "duration_ms": 9568,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 171.736,
+    "text": "And best of all, thank you. It's going dependent. They're independent, that gives me this.",
+    "start_ms": 171736,
+    "end_ms": 177880,
+    "duration_ms": 6144,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 178.936,
+    "text": "The product of the probabilities is the same as the joint probability.",
+    "start_ms": 178936,
+    "end_ms": 182936,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 182.968,
+    "text": "Is only true. You're after an appenate. and We can now take this sum and break into two separate sums.",
+    "start_ms": 182968,
+    "end_ms": 194952,
+    "duration_ms": 11984,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 194.952,
+    "text": "So this here is just algebra, right? Separate sums. I'm more algebra here.",
+    "start_ms": 194952,
+    "end_ms": 202760,
+    "duration_ms": 7808,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 202.68,
+    "text": "So I did here. This is the definition of the expectation of x and this is the definition of the expectation of y.",
+    "start_ms": 202680,
+    "end_ms": 207680,
+    "duration_ms": 5000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 209.24,
+    "text": "And to just proven this. .\" And for those who are reviewing the slides online here are the key points.",
+    "start_ms": 209240,
+    "end_ms": 219316,
+    "duration_ms": 10076,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 220.632,
+    "text": "Alright, so now I've brought one more property in. Go away.",
+    "start_ms": 220632,
+    "end_ms": 224640,
+    "duration_ms": 4008,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 224.888,
+    "text": "So, the Theranopenet we have this last property. Alright, so these are the properties from last lecture.",
+    "start_ms": 224888,
+    "end_ms": 230472,
+    "duration_ms": 5584,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 232.056,
+    "text": "You don't remember them? They're here, we're going to use them all today to get some practice.",
+    "start_ms": 232056,
+    "end_ms": 237064,
+    "duration_ms": 5008,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 237.88,
+    "text": "So let's talk about some common distributions. We'll start with Bernoulli.",
+    "start_ms": 237880,
+    "end_ms": 242392,
+    "duration_ms": 4512,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 242.392,
+    "text": "By no may I, we won't talk about these. You'll see some of these, maybe the end of this lecture, we'll talk briefly about the normal again.",
+    "start_ms": 242392,
+    "end_ms": 248269,
+    "duration_ms": 5877,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 248.269,
+    "text": "But we're going to look at the these two distributions, they're closely related, and they'll show us how to use these properties.",
+    "start_ms": 248269,
+    "end_ms": 257352,
+    "duration_ms": 9083,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 257.332,
+    "text": "up here for reference. Let's talk about the Bernoulli. Evernally?",
+    "start_ms": 257332,
+    "end_ms": 268064,
+    "duration_ms": 10732,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 268.664,
+    "text": "We often write a distribution, say, x is distributed quite a brutally, we'd write it like this.",
+    "start_ms": 268664,
+    "end_ms": 273404,
+    "duration_ms": 4740,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 273.404,
+    "text": "Again, p here is my parameter. And that's a thing I pick where I learn or I estimate.",
+    "start_ms": 273404,
+    "end_ms": 279736,
+    "duration_ms": 6332,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 280.248,
+    "text": "And this p says that with probably 1 or probably p, we'll have really random variable b1, if probably 1 minus p, the outcome of the random variable b0.",
+    "start_ms": 280248,
+    "end_ms": 291048,
+    "duration_ms": 10800,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 291.832,
+    "text": "So often used as an indicator, an indicator and a variable, sorry, an indicator and a variable in various kinds of analyses.",
+    "start_ms": 291832,
+    "end_ms": 298832,
+    "duration_ms": 7000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 301.08,
+    "text": "So what is the expectation of X? We can just use the definition of expectation.",
+    "start_ms": 301080,
+    "end_ms": 305320,
+    "duration_ms": 4240,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 305.784,
+    "text": "it is p a brief discussion about this last time.",
+    "start_ms": 305784,
+    "end_ms": 309256,
+    "duration_ms": 3472,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 309.256,
+    "text": "It's kind of weird that a variable that is either 0 or 1 and only 0 or 1 has an expected value which is the number between 0 and 1.",
+    "start_ms": 309256,
+    "end_ms": 316256,
+    "duration_ms": 7000,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 317.528,
+    "text": "0.5. For flipping a coin, PUS 0.5. That is the definition of the expectation.",
+    "start_ms": 317528,
+    "end_ms": 323592,
+    "duration_ms": 6064,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 327.576,
+    "text": "Devarians, we can calculate using the computational form of the variance.",
+    "start_ms": 327576,
+    "end_ms": 331013,
+    "duration_ms": 3437,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 331.013,
+    "text": "That's this one right here. It's the variance. A Vax.",
+    "start_ms": 331013,
+    "end_ms": 336616,
+    "duration_ms": 5603,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 336.611,
+    "text": "to the expectation of x squared minus the square of the expectation.",
+    "start_ms": 336611,
+    "end_ms": 341480,
+    "duration_ms": 4869,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 341.48,
+    "text": "We've already computed this. This expectation of x squared we take x squared is 1 is 1 squared times p and it is 0, 0 squared is 0, 0 times 1 minus p.",
+    "start_ms": 341480,
+    "end_ms": 354928,
+    "duration_ms": 13448,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 354.853,
+    "text": "is again. So this equation right here. This equation right here.",
+    "start_ms": 354853,
+    "end_ms": 361928,
+    "duration_ms": 7075,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 361.464,
+    "text": "Becomes this. p minus p squared, which can be rewritten as p times 1 minus p.",
+    "start_ms": 361464,
+    "end_ms": 371280,
+    "duration_ms": 9816,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 371.48,
+    "text": "The highest variance is when P is what? This kind of looks like this, I think, a plot of this.",
+    "start_ms": 371480,
+    "end_ms": 375480,
+    "duration_ms": 4000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 377.08,
+    "text": "0. Here's one. High experience is when P equals 0.5.",
+    "start_ms": 377080,
+    "end_ms": 381080,
+    "duration_ms": 4000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 382.552,
+    "text": "Most random outcome, the P equals 1, it's always heads, a very billy doll.",
+    "start_ms": 382552,
+    "end_ms": 386552,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 387.128,
+    "text": "St.P equals 0, it's always 0. Every bit of... Okay, well...",
+    "start_ms": 387128,
+    "end_ms": 395304,
+    "duration_ms": 8176,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 395.12,
+    "text": "P, what I just said in text form. There's a little plot you can try here if you want.",
+    "start_ms": 395120,
+    "end_ms": 399832,
+    "duration_ms": 4712,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 400.472,
+    "text": "But I do it on the slide. Okay, next one.",
+    "start_ms": 400472,
+    "end_ms": 404312,
+    "duration_ms": 3840,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 404.312,
+    "text": "Now we get to build stuff with our with our variables.",
+    "start_ms": 404312,
+    "end_ms": 407832,
+    "duration_ms": 3520,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 407.832,
+    "text": "So the binomial... There's two primers, NNP. This is the number of 1, so y is number of 1s of n independent Bernoulli trials.",
+    "start_ms": 407832,
+    "end_ms": 419432,
+    "duration_ms": 11600,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 422.52,
+    "text": "So we can write y, but here's the density function for y, which is kind of complicated.",
+    "start_ms": 422520,
+    "end_ms": 427520,
+    "duration_ms": 5000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 428.472,
+    "text": "Biscid Bynomial coefficients. Let's see expectation. Take some work to work through the actual expectation using the definition.",
+    "start_ms": 428472,
+    "end_ms": 436472,
+    "duration_ms": 8000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 436.472,
+    "text": "Isn't easy way to do it. We can say why?",
+    "start_ms": 436472,
+    "end_ms": 439784,
+    "duration_ms": 3312,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 439.784,
+    "text": "Is this some of some random variables? We can use our properties from before.",
+    "start_ms": 439784,
+    "end_ms": 445224,
+    "duration_ms": 5440,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 445.848,
+    "text": "So what's the expectation of why? The expectation of y is the sum of the expectations of these random variables.",
+    "start_ms": 445848,
+    "end_ms": 456504,
+    "duration_ms": 10656,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 456.92,
+    "text": "These are Bernoulli. Bernoulli P. Random Variables. We know the expectation of a Bernoulli.",
+    "start_ms": 456920,
+    "end_ms": 463640,
+    "duration_ms": 6720,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 464.152,
+    "text": "Single-buttally random variable is P, and we have N of them, so we have N times P.",
+    "start_ms": 464152,
+    "end_ms": 469352,
+    "duration_ms": 5200,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 470.872,
+    "text": "We derive the expectation. No need to use this complicated equation.",
+    "start_ms": 470872,
+    "end_ms": 475208,
+    "duration_ms": 4336,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 475.208,
+    "text": "It was complicated. We used... The definition here. We use Nothin' and Abandoned.",
+    "start_ms": 475208,
+    "end_ms": 485384,
+    "duration_ms": 10176,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 487.064,
+    "text": "For the very ends. We're using another important thing here.",
+    "start_ms": 487064,
+    "end_ms": 492043,
+    "duration_ms": 4979,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 492.043,
+    "text": "They're independent. What can we say about the sum of variance of random variables?",
+    "start_ms": 492043,
+    "end_ms": 496080,
+    "duration_ms": 4037,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 498.296,
+    "text": "I think the variance of y is the sum of the variances.",
+    "start_ms": 498296,
+    "end_ms": 501176,
+    "duration_ms": 2880,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 501.176,
+    "text": "We have to usually co-bearance terms if they're not independent, but they are.",
+    "start_ms": 501176,
+    "end_ms": 504296,
+    "duration_ms": 3120,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 504.696,
+    "text": "So we're just the sum of the rancors. We have N of them as before, N, and the variants, oh no sorry.",
+    "start_ms": 504696,
+    "end_ms": 511128,
+    "duration_ms": 6432,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 511.512,
+    "text": "The variants... And a variance of a single one of them was p times 1 minus p.",
+    "start_ms": 511512,
+    "end_ms": 517512,
+    "duration_ms": 6000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 521.048,
+    "text": "So, we use our properties and we can now derive properties of more interesting random variables.",
+    "start_ms": 521048,
+    "end_ms": 525208,
+    "duration_ms": 4160,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 526.456,
+    "text": "Questions? I think I have a question for you all.",
+    "start_ms": 526456,
+    "end_ms": 533720,
+    "duration_ms": 7264,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 534.296,
+    "text": "Oh, exercise. Excellent. I was supposed to give away money but I didn't bring money in so pretend we're doing this with money involved.",
+    "start_ms": 534296,
+    "end_ms": 542412,
+    "duration_ms": 8116,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 543.0,
+    "text": "Alright, so we're going to, you guys are going to pretend to make money here.",
+    "start_ms": 543000,
+    "end_ms": 546360,
+    "duration_ms": 3360,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 546.36,
+    "text": "So you can win a cash prize. Based on a number of heads, you get in a series of 20 coin flips.",
+    "start_ms": 546360,
+    "end_ms": 552840,
+    "duration_ms": 6480,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 552.84,
+    "text": "Okay, so I have 20 Bernoulli. with P let's say it's a fair coin so P equals 0.5.",
+    "start_ms": 552840,
+    "end_ms": 560312,
+    "duration_ms": 7472,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 561.784,
+    "text": "This is my random variable. Which Payout Strategy? What do you want?",
+    "start_ms": 561784,
+    "end_ms": 567264,
+    "duration_ms": 5480,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 568.12,
+    "text": "You can have optional. Which is... $10 on the first coin and $10 on the second coin.",
+    "start_ms": 568120,
+    "end_ms": 575688,
+    "duration_ms": 7568,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 579.096,
+    "text": "You have option B, which is one dollar for each coin flip that lands heads.",
+    "start_ms": 579096,
+    "end_ms": 583096,
+    "duration_ms": 4000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 587.288,
+    "text": "Which is $20 on the first coin flip. Which one do you want?",
+    "start_ms": 587288,
+    "end_ms": 594048,
+    "duration_ms": 6760,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 594.84,
+    "text": "I'm Slayer. is the best pal. What do you look like?",
+    "start_ms": 594840,
+    "end_ms": 610920,
+    "duration_ms": 16080,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 611.256,
+    "text": "Shun's riskier. If you want to have the highest chance of winning the most money, which would you pick?",
+    "start_ms": 611256,
+    "end_ms": 622040,
+    "duration_ms": 10784,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 622.552,
+    "text": "Let's just pick which one you want right now. We can...",
+    "start_ms": 622552,
+    "end_ms": 624552,
+    "duration_ms": 2000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 625.432,
+    "text": "Work through these more nuanced questions in a moment. Put your bed.",
+    "start_ms": 625432,
+    "end_ms": 631144,
+    "duration_ms": 5712,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 633.368,
+    "text": "There's no right answer. Let's see something. I want to see you bet and come back and see you learn to change your bets.",
+    "start_ms": 633368,
+    "end_ms": 649424,
+    "duration_ms": 16056,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 651.096,
+    "text": "Alright, so people like B. Why do people like be?",
+    "start_ms": 651096,
+    "end_ms": 655912,
+    "duration_ms": 4816,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 655.768,
+    "text": "Do you want to say in the audience what we like be?",
+    "start_ms": 655768,
+    "end_ms": 657768,
+    "duration_ms": 2000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 659.32,
+    "text": "The back. Yeah, all right. So you're on to it.",
+    "start_ms": 659320,
+    "end_ms": 682835,
+    "duration_ms": 23515,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 682.835,
+    "text": "We're thinking about expectations or we're thinking about variants as seen earlier in the earlier slides.",
+    "start_ms": 682835,
+    "end_ms": 688035,
+    "duration_ms": 5200,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 688.035,
+    "text": "I think they're all going to have the same expectation.",
+    "start_ms": 688035,
+    "end_ms": 690403,
+    "duration_ms": 2368,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 690.403,
+    "text": "We'll drive that in a moment. But they might have different spread, different variants.",
+    "start_ms": 690403,
+    "end_ms": 694952,
+    "duration_ms": 4549,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 694.952,
+    "text": "So they all have the same expectation, which one do you take?",
+    "start_ms": 694952,
+    "end_ms": 706632,
+    "duration_ms": 11680,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 717.048,
+    "text": "Yeah, B's probably more reliable payout because there's more chance of getting.",
+    "start_ms": 717048,
+    "end_ms": 720048,
+    "duration_ms": 3000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 720.048,
+    "text": "I'm going to not run the demo, but I'm just going to show you what the demo would look like.",
+    "start_ms": 720048,
+    "end_ms": 725048,
+    "duration_ms": 5000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 725.048,
+    "text": "You can run the notebook where we simulate this 10,000 times a C, no outcome would have been the best.",
+    "start_ms": 725048,
+    "end_ms": 730048,
+    "duration_ms": 5000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 730.048,
+    "text": "in your options A, B and C. And these are what your pads look like.",
+    "start_ms": 730048,
+    "end_ms": 734568,
+    "duration_ms": 4520,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 734.68,
+    "text": "And you know this one looks pretty good if I landed in this bucket right 50 50 chance I walk away of $20 So I'll say 50 50 chance I walk away of nothing I want to walk away if something they have the same expectations this one's more concentrated here so chance I'll get some money.",
+    "start_ms": 734680,
+    "end_ms": 749392,
+    "duration_ms": 14712,
+    "word_count": 57,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 750.616,
+    "text": "Maybe not as much. all the money in the world i'm going to Vegas i don't know maybe i put all my odds on on the last one and go go big So it depends on your your risk preference.",
+    "start_ms": 750616,
+    "end_ms": 760232,
+    "duration_ms": 9616,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 761.944,
+    "text": "These are the kinds of analysis you do for any variables and think about these situations.",
+    "start_ms": 761944,
+    "end_ms": 765624,
+    "duration_ms": 3680,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 765.624,
+    "text": "It's a good way to build some intuition. Let's just quickly go through the analysis.",
+    "start_ms": 765624,
+    "end_ms": 770024,
+    "duration_ms": 4400,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 770.936,
+    "text": "We'll do it hopefully. Alright, so let's do it. Expectations.",
+    "start_ms": 770936,
+    "end_ms": 775736,
+    "duration_ms": 4800,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 775.736,
+    "text": "We think they're the same. Let's calculate them out. So we're just going to use linearity of expectation in each one of these, right?",
+    "start_ms": 775736,
+    "end_ms": 781818,
+    "duration_ms": 6082,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 781.818,
+    "text": "So we've got a point of view here, so we've got our peltz and then the expectation of each of these x-sis is just 0.5.",
+    "start_ms": 781818,
+    "end_ms": 790712,
+    "duration_ms": 8894,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 791.224,
+    "text": "So we get a payout of 10 and 10, so 10.",
+    "start_ms": 791224,
+    "end_ms": 794062,
+    "duration_ms": 2838,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 794.062,
+    "text": "We get a .5, so 50 cents for each of our 20 plays, so 20 flips, so 10 dollar payout.",
+    "start_ms": 794062,
+    "end_ms": 799224,
+    "duration_ms": 5162,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 799.224,
+    "text": "Then here we get a 50% chance of getting $20 and a 0, you know, 50% chance of getting nothing, so our expectation is 10.",
+    "start_ms": 799224,
+    "end_ms": 806224,
+    "duration_ms": 7000,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 807.16,
+    "text": "So the expectations are all good. But very it's so very it's Do the same kinds of analysis here, right?",
+    "start_ms": 807160,
+    "end_ms": 814208,
+    "duration_ms": 7048,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 814.208,
+    "text": "So these coefficients are now squared. We know the variance is 0.5 times 1 minus 0.5 or 0.25 for each of the X-size.",
+    "start_ms": 814208,
+    "end_ms": 821808,
+    "duration_ms": 7600,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 821.808,
+    "text": "So we can work out the variance for each of these.",
+    "start_ms": 821808,
+    "end_ms": 824008,
+    "duration_ms": 2200,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 824.008,
+    "text": "Variants of 50. Does it much lower variance of 5?",
+    "start_ms": 824008,
+    "end_ms": 827234,
+    "duration_ms": 3226,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 827.234,
+    "text": "This has a much higher variance of 100. So the less spread.",
+    "start_ms": 827234,
+    "end_ms": 834022,
+    "duration_ms": 6788,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 834.022,
+    "text": "So more confident that this one's going to give us something close to 10.",
+    "start_ms": 834022,
+    "end_ms": 842920,
+    "duration_ms": 8898,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 844.824,
+    "text": "So it's kind of a risk preferences. Me, I choose this one.",
+    "start_ms": 844824,
+    "end_ms": 849032,
+    "duration_ms": 4208,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 849.56,
+    "text": "Waku Esmae Can compute standard deviation, take the square root.",
+    "start_ms": 849560,
+    "end_ms": 856008,
+    "duration_ms": 6448,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 856.008,
+    "text": "And again, if you go through notebook, you can try doing the simulation.",
+    "start_ms": 856008,
+    "end_ms": 858008,
+    "duration_ms": 2000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 858.008,
+    "text": "It's pretty straightforward. So go to chances to practice using some of the random number generator.",
+    "start_ms": 858008,
+    "end_ms": 862008,
+    "duration_ms": 4000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 862.008,
+    "text": "So, take a look at the notebook after lecture. So there is a notebook, we'll skip that.",
+    "start_ms": 862008,
+    "end_ms": 867880,
+    "duration_ms": 5872,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 868.728,
+    "text": "Let's talk about the sample mean. This is probably one of the more important random variables we'll study in this class.",
+    "start_ms": 868728,
+    "end_ms": 873608,
+    "duration_ms": 4880,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 873.608,
+    "text": "Because this isn't the kind of, the variable that describes the concentration of our samples when we compute averages, which is something we'll do a lot of in data science.",
+    "start_ms": 873608,
+    "end_ms": 883208,
+    "duration_ms": 9600,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 883.608,
+    "text": "Alright, so sample mean, the average of my data, my sample, my data.",
+    "start_ms": 883608,
+    "end_ms": 887608,
+    "duration_ms": 4000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 888.216,
+    "text": "When we're working as samples, each of our data points is around a variable.",
+    "start_ms": 888216,
+    "end_ms": 891496,
+    "duration_ms": 3280,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 891.832,
+    "text": "Right. So sample mean is just what a rn times the a number of these random variables.",
+    "start_ms": 891832,
+    "end_ms": 896592,
+    "duration_ms": 4760,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 898.232,
+    "text": "So we can do this analysis of the expectation. It's just some of the expectations.",
+    "start_ms": 898232,
+    "end_ms": 903272,
+    "duration_ms": 5040,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 903.272,
+    "text": "And each of these random variables is a sample from the population.",
+    "start_ms": 903272,
+    "end_ms": 907272,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 907.48,
+    "text": "Praminer and in a few moments i'll make this more formal but if you kind of think there's a true mean for the height of people in this class but you have a sample.",
+    "start_ms": 907480,
+    "end_ms": 915800,
+    "duration_ms": 8320,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 916.184,
+    "text": "And each of those people are sort of drawn from some distribution whose you know the mean of that distribution is the true mean.",
+    "start_ms": 916184,
+    "end_ms": 923184,
+    "duration_ms": 7000,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 923.544,
+    "text": "So if I knew the true mean... than the expectation of my sample mean should actually be the true mean.",
+    "start_ms": 923544,
+    "end_ms": 930808,
+    "duration_ms": 7264,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 933.432,
+    "text": "It's a good thing. Talk about that in more moment.",
+    "start_ms": 933432,
+    "end_ms": 937371,
+    "duration_ms": 3939,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 937.371,
+    "text": "So, I variance. So, it's a variance of my sample mean.",
+    "start_ms": 937371,
+    "end_ms": 939960,
+    "duration_ms": 2589,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 941.016,
+    "text": "Well remember I'm going to take a I have this one over in here so I got a square at whenever I'm squared.",
+    "start_ms": 941016,
+    "end_ms": 946316,
+    "duration_ms": 5300,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 946.68,
+    "text": "Uh, times of variance this sum. I drew this iID Identically, independently distributed.",
+    "start_ms": 946680,
+    "end_ms": 954364,
+    "duration_ms": 7684,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 956.952,
+    "text": "So independently distributed. So I can make this zero. to Cobi Rince is zero.",
+    "start_ms": 956952,
+    "end_ms": 964390,
+    "duration_ms": 7438,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 964.39,
+    "text": "So now just these some of the variances. This is N of these sigma's.",
+    "start_ms": 964390,
+    "end_ms": 969718,
+    "duration_ms": 5328,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 969.718,
+    "text": "So I'll assume that each of the X-I's has a population, in the population's sand deviation of sigma.",
+    "start_ms": 969718,
+    "end_ms": 976704,
+    "duration_ms": 6986,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 977.144,
+    "text": "I don't know that in practice. But I guess it now, maybe.",
+    "start_ms": 977144,
+    "end_ms": 983848,
+    "duration_ms": 6704,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 984.376,
+    "text": "So I look at the variance here. My beer is my sample.",
+    "start_ms": 984376,
+    "end_ms": 989096,
+    "duration_ms": 4720,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 990.104,
+    "text": "It should be... I knew the population sigma. Sigma Square over N.",
+    "start_ms": 990104,
+    "end_ms": 995432,
+    "duration_ms": 5328,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 997.528,
+    "text": "So if I knew the population variance, the variance in my simple is sigma square to Red.",
+    "start_ms": 997528,
+    "end_ms": 1002648,
+    "duration_ms": 5120,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1005.08,
+    "text": "Does that mean there's some inherent variability in the population?",
+    "start_ms": 1005080,
+    "end_ms": 1008120,
+    "duration_ms": 3040,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1008.12,
+    "text": "There's the students in this class. But did I make my sample bigger?",
+    "start_ms": 1008120,
+    "end_ms": 1011848,
+    "duration_ms": 3728,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1013.752,
+    "text": "My expectation. of x is going to be center on this and the spread of the distribution of my x bars spread the sample means if I took many different samples it's going to get smaller.",
+    "start_ms": 1013752,
+    "end_ms": 1031052,
+    "duration_ms": 17300,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1030.68,
+    "text": "Question. Where does sigma squared come? So the variance of xi is sigma squared.",
+    "start_ms": 1030680,
+    "end_ms": 1040616,
+    "duration_ms": 9936,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1040.616,
+    "text": "The standard deviation is sigma. So I'm assuming my x-i's, the random variables are i-a-d with a variance of sigma squared.",
+    "start_ms": 1040616,
+    "end_ms": 1049192,
+    "duration_ms": 8576,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1050.008,
+    "text": "Wish I could erase. Here I can't variance. So, we go to the next slide.",
+    "start_ms": 1050008,
+    "end_ms": 1059016,
+    "duration_ms": 9008,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1062.104,
+    "text": "It's a big deal. So this means that as I get more data...",
+    "start_ms": 1062104,
+    "end_ms": 1065864,
+    "duration_ms": 3760,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1067.864,
+    "text": "This X bar is going to have less and less variability.",
+    "start_ms": 1067864,
+    "end_ms": 1070864,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1071.704,
+    "text": "It's gonna have some because there's just variability in the people, right?",
+    "start_ms": 1071704,
+    "end_ms": 1074664,
+    "duration_ms": 2960,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1074.664,
+    "text": "I get all the data in the class, I stop to jump to variability in the class itself.",
+    "start_ms": 1074664,
+    "end_ms": 1077944,
+    "duration_ms": 3280,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1079.288,
+    "text": "There's some variability. But as it gets larger, the variability is going to decrease.",
+    "start_ms": 1079288,
+    "end_ms": 1083112,
+    "duration_ms": 3824,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1084.12,
+    "text": "and the assumptions I made are... I ID. and that there's some variance.",
+    "start_ms": 1084120,
+    "end_ms": 1092040,
+    "duration_ms": 7920,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1091.864,
+    "text": "for exercise. galaxy and I just said it has some variance.",
+    "start_ms": 1091864,
+    "end_ms": 1095144,
+    "duration_ms": 3280,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1096.024,
+    "text": "It could be anything. And here we are soon. Did they're identically distributed?",
+    "start_ms": 1096024,
+    "end_ms": 1103560,
+    "duration_ms": 7536,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1103.64,
+    "text": "And again, I, that I know the expectation of any one of their random variables.",
+    "start_ms": 1103640,
+    "end_ms": 1106640,
+    "duration_ms": 3000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1108.28,
+    "text": "I didn't even need independence here. It's pretty cool. So it's a neat concentration result.",
+    "start_ms": 1108280,
+    "end_ms": 1115400,
+    "duration_ms": 7120,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1116.248,
+    "text": "Take the square root of this guy here. We get this year, standard deviation.",
+    "start_ms": 1116248,
+    "end_ms": 1119848,
+    "duration_ms": 3600,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1120.12,
+    "text": "Simple units. So distribution of X bar? What's the distribution of these sample means?",
+    "start_ms": 1120120,
+    "end_ms": 1129976,
+    "duration_ms": 9856,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1129.976,
+    "text": "To run this process over and over again, many, many different samples, X-BAR is a random variable to have a shape.",
+    "start_ms": 1129976,
+    "end_ms": 1135576,
+    "duration_ms": 5600,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1136.632,
+    "text": "And that distribution. is normally distributed. This is in parentheses where we should be in bold.",
+    "start_ms": 1136632,
+    "end_ms": 1143771,
+    "duration_ms": 7139,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1143.771,
+    "text": "In the limit... Okay. So as I get more and more samples.",
+    "start_ms": 1143771,
+    "end_ms": 1149744,
+    "duration_ms": 5973,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1150.328,
+    "text": "and his end gets bigger. Yes, I'm going to look at bigger samples for my population.",
+    "start_ms": 1150328,
+    "end_ms": 1154844,
+    "duration_ms": 4516,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1155.192,
+    "text": "Um. This end gets bigger. That's the limit in n.",
+    "start_ms": 1155192,
+    "end_ms": 1160008,
+    "duration_ms": 4816,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1161.112,
+    "text": "This is going to look normally distributed regardless of X which is kind of cool.",
+    "start_ms": 1161112,
+    "end_ms": 1165112,
+    "duration_ms": 4000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1165.752,
+    "text": "Coin flips, whatever you want. Doesn't have to be a Gaussian.",
+    "start_ms": 1165752,
+    "end_ms": 1169112,
+    "duration_ms": 3360,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1169.496,
+    "text": "But this thing here, this sample mean will become more and more Gaussian shaped.",
+    "start_ms": 1169496,
+    "end_ms": 1175256,
+    "duration_ms": 5760,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1175.928,
+    "text": "More more pointed, which is nice, kind of converging to some uh Edith Deeram.",
+    "start_ms": 1175928,
+    "end_ms": 1183432,
+    "duration_ms": 7504,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1184.184,
+    "text": "Which we won't prove again in this class either. So in day 8 we talked about it and evoked it here you got to see the derivation using expectation and variance of these two key properties.",
+    "start_ms": 1184184,
+    "end_ms": 1193184,
+    "duration_ms": 9000,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1194.184,
+    "text": "In stat 140 you'll get to understand this actually fairly technical idea a little bit more more detail.",
+    "start_ms": 1194184,
+    "end_ms": 1200184,
+    "duration_ms": 6000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1200.6,
+    "text": "What you should take away from this is that we get this concentration.",
+    "start_ms": 1200600,
+    "end_ms": 1203800,
+    "duration_ms": 3200,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1203.8,
+    "text": "Does I get bigger and bigger samples? These standard deviation of my estimator of my mean.",
+    "start_ms": 1203800,
+    "end_ms": 1209600,
+    "duration_ms": 5800,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1210.456,
+    "text": "Reduces by 1 over again or the variance reduces by 1 over n.",
+    "start_ms": 1210456,
+    "end_ms": 1213656,
+    "duration_ms": 3200,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1215.48,
+    "text": "Questions? Keep going. You need to hold this slide in.",
+    "start_ms": 1215480,
+    "end_ms": 1224416,
+    "duration_ms": 8936,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1225.208,
+    "text": "Alright, so you've said this already now. So we have this distribution as my n gets bigger.",
+    "start_ms": 1225208,
+    "end_ms": 1229368,
+    "duration_ms": 4160,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1229.368,
+    "text": "My sample mean will start to look more and more Gaussian and more and more peaked.",
+    "start_ms": 1229368,
+    "end_ms": 1233368,
+    "duration_ms": 4000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1233.368,
+    "text": "Just nice and we peaked right around the mean. She's a good thing to be.",
+    "start_ms": 1233368,
+    "end_ms": 1241128,
+    "duration_ms": 7760,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1240.654,
+    "text": "an unbiased estimator. That is the expectation, the sample mean of my, if I can be the mean of my sample, that is unbiased estimate of the mean of the distribution.",
+    "start_ms": 1240654,
+    "end_ms": 1257160,
+    "duration_ms": 16506,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1257.02,
+    "text": "is mu, the expectation of the thing I just computed.",
+    "start_ms": 1257020,
+    "end_ms": 1259992,
+    "duration_ms": 2972,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1261.112,
+    "text": "Is dethroming? It will always be this way. And sometimes the statistics will build things where this is not the case.",
+    "start_ms": 1261112,
+    "end_ms": 1269768,
+    "duration_ms": 8656,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1269.768,
+    "text": "And we might actually want that. We'll talk about that.",
+    "start_ms": 1269768,
+    "end_ms": 1273736,
+    "duration_ms": 3968,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1273.6,
+    "text": "out to the section. Stand deviation. Okay, as we said earlier, it's the square root law from day to eight.",
+    "start_ms": 1273600,
+    "end_ms": 1281864,
+    "duration_ms": 8264,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1282.232,
+    "text": "So as your sample size increases by that factor, the same deviation decreases by the square root of that factor.",
+    "start_ms": 1282232,
+    "end_ms": 1289232,
+    "duration_ms": 7000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1291.064,
+    "text": "So my errors are getting smaller. Unfortunately, at the rate of the square root and standard deviation, but...",
+    "start_ms": 1291064,
+    "end_ms": 1295464,
+    "duration_ms": 4400,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1296.376,
+    "text": "Stogriath. So, the symphony is more likely to be close to the...",
+    "start_ms": 1296376,
+    "end_ms": 1301832,
+    "duration_ms": 5456,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1302.136,
+    "text": "Population mean if we have a larger sample size. Just why we want bigger and bigger samples.",
+    "start_ms": 1302136,
+    "end_ms": 1307936,
+    "duration_ms": 5800,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1310.872,
+    "text": "Questions? Alright, people do have questions put on Slido or try to answer it.",
+    "start_ms": 1310872,
+    "end_ms": 1318696,
+    "duration_ms": 7824,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1319.576,
+    "text": "Now we get to go to the exciting part populations and sample statistics and we're going to do this analysis of our training air and the bias variance trade off using these tools.",
+    "start_ms": 1319576,
+    "end_ms": 1328576,
+    "duration_ms": 9000,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1330.744,
+    "text": "Alright, so... we have wanted to draw conclusions about populations.",
+    "start_ms": 1330744,
+    "end_ms": 1335024,
+    "duration_ms": 4280,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1335.96,
+    "text": "Rolling, giving a random sample. that me? So I draw a random sample from my population.",
+    "start_ms": 1335960,
+    "end_ms": 1341884,
+    "duration_ms": 5924,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1342.744,
+    "text": "with replacement or in practice we probably don't but if our sample is big enough we're gonna just we'll go with replacement so the analysis works out So I spent some time, I'll just reiterate this.",
+    "start_ms": 1342744,
+    "end_ms": 1360516,
+    "duration_ms": 17772,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1360.516,
+    "text": "Why do we do it with replacement? Because if I start pulling stuff from my population, I'm changing the population distribution.",
+    "start_ms": 1360516,
+    "end_ms": 1367116,
+    "duration_ms": 6600,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1367.448,
+    "text": "So I put it back and I keep sampling each one as an IID draw from that population or independent that don't influence each other.",
+    "start_ms": 1367448,
+    "end_ms": 1373448,
+    "duration_ms": 6000,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1373.448,
+    "text": "So with replacement makes all the math easy. Alright, so we've got our sample.",
+    "start_ms": 1373448,
+    "end_ms": 1385320,
+    "duration_ms": 11872,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1385.528,
+    "text": "Got our population? is the thing I wish I knew.",
+    "start_ms": 1385528,
+    "end_ms": 1389160,
+    "duration_ms": 3632,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1389.24,
+    "text": "The average height of people. They don't have it. This is the thing I can compute my sample statistic, which might be the average height of my sample.",
+    "start_ms": 1389240,
+    "end_ms": 1397656,
+    "duration_ms": 8416,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1399.16,
+    "text": "Could be the average height of my sample minus 1.",
+    "start_ms": 1399160,
+    "end_ms": 1401160,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1402.136,
+    "text": "Back to be another estimate. that a good one? Is it biased?",
+    "start_ms": 1402136,
+    "end_ms": 1409152,
+    "duration_ms": 7016,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1418.904,
+    "text": "Goodbye. I guess I asked the question soft answer, right?",
+    "start_ms": 1418904,
+    "end_ms": 1422568,
+    "duration_ms": 3664,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1423.192,
+    "text": "If I take my sample, take the average, subtract one.",
+    "start_ms": 1423192,
+    "end_ms": 1426268,
+    "duration_ms": 3076,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1426.268,
+    "text": "That isn't S. Demit, I can say that's what I think the population mean is.",
+    "start_ms": 1426268,
+    "end_ms": 1430192,
+    "duration_ms": 3924,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1431.224,
+    "text": "Buzz a Bicycle see expectation what I just did. Population mean that's good minus one that's not so good.",
+    "start_ms": 1431224,
+    "end_ms": 1440136,
+    "duration_ms": 8912,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1440.568,
+    "text": "Great. So it's Bice. We might do stuff like that in a moment.",
+    "start_ms": 1440568,
+    "end_ms": 1447448,
+    "duration_ms": 6880,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1447.448,
+    "text": "Do you might be a reason to do that? We can build any statistic we want.",
+    "start_ms": 1447448,
+    "end_ms": 1451880,
+    "duration_ms": 4432,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1453.24,
+    "text": "We hope this statistic tells us something about this parameter.",
+    "start_ms": 1453240,
+    "end_ms": 1456040,
+    "duration_ms": 2800,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1457.624,
+    "text": "We seldom know this. estimate this, that's what that means.",
+    "start_ms": 1457624,
+    "end_ms": 1461264,
+    "duration_ms": 3640,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1461.264,
+    "text": "Our goal is to use this here, sample statistic to try to infer something about the population parameter.",
+    "start_ms": 1461264,
+    "end_ms": 1466824,
+    "duration_ms": 5560,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1468.984,
+    "text": "estimate Alright, got that. Very good. We are using the sample statistic as an estimator of the true population parameter.",
+    "start_ms": 1468984,
+    "end_ms": 1478520,
+    "duration_ms": 9536,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1479.224,
+    "text": "We call these plug and estimators and we're going to well you know what this data hat is my guess for theta.",
+    "start_ms": 1479224,
+    "end_ms": 1483224,
+    "duration_ms": 4000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1485.624,
+    "text": "Well, it's good, man. Court and point here, our sample is random, so the statistic is a random variable.",
+    "start_ms": 1485624,
+    "end_ms": 1493760,
+    "duration_ms": 8136,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1493.76,
+    "text": "This is a random variable. Is this a random variable?",
+    "start_ms": 1493760,
+    "end_ms": 1496560,
+    "duration_ms": 2800,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1499.768,
+    "text": "Is it around a variable? No, it's not a remember why it's not a rememberable.",
+    "start_ms": 1499768,
+    "end_ms": 1504508,
+    "duration_ms": 4740,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1504.696,
+    "text": "This is a truth. the truth. It is what is the value for the population.",
+    "start_ms": 1504696,
+    "end_ms": 1509552,
+    "duration_ms": 4856,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1509.552,
+    "text": "If I had the population I'd calculate it would be a number and it would be done.",
+    "start_ms": 1509552,
+    "end_ms": 1512560,
+    "duration_ms": 3008,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1513.848,
+    "text": "But I don't have it, it is not a random variable.",
+    "start_ms": 1513848,
+    "end_ms": 1515848,
+    "duration_ms": 2000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1517.624,
+    "text": "This I do have, I computed this on my sample.",
+    "start_ms": 1517624,
+    "end_ms": 1520904,
+    "duration_ms": 3280,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1521.624,
+    "text": "My sample is random. This is random variable. And you might see why I want to have tools to analyze random variables because I'm building random variables.",
+    "start_ms": 1521624,
+    "end_ms": 1532008,
+    "duration_ms": 10384,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1532.376,
+    "text": "To guess something I don't know. And I want to know is it?",
+    "start_ms": 1532376,
+    "end_ms": 1536392,
+    "duration_ms": 4016,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1536.386,
+    "text": "is it unbiased? Does it not actually think that I'm trying to test it?",
+    "start_ms": 1536386,
+    "end_ms": 1540120,
+    "duration_ms": 3734,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1541.752,
+    "text": "Do you guys all sample mean as an example of a statistic?",
+    "start_ms": 1541752,
+    "end_ms": 1544252,
+    "duration_ms": 2500,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1544.568,
+    "text": "Who used to estimate the population mean? It's not about estimate because an expectation that's what mean.",
+    "start_ms": 1544568,
+    "end_ms": 1550144,
+    "duration_ms": 5576,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1550.52,
+    "text": "Is the population me? That's important questions are. What is the expected air?",
+    "start_ms": 1550520,
+    "end_ms": 1558792,
+    "duration_ms": 8272,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1559.576,
+    "text": "The air in the rest of the day. How is it?",
+    "start_ms": 1559576,
+    "end_ms": 1562576,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1562.576,
+    "text": "So you expect it air? How close is our estimate on average?",
+    "start_ms": 1562576,
+    "end_ms": 1566552,
+    "duration_ms": 3976,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1568.056,
+    "text": "Is it biased? House spread out is our estimate. What's this very building?",
+    "start_ms": 1568056,
+    "end_ms": 1575112,
+    "duration_ms": 7056,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1576.312,
+    "text": "These are the things we care about. Now remember this could be the mean it could also be coefficients of my really cool new model right.",
+    "start_ms": 1576312,
+    "end_ms": 1583584,
+    "duration_ms": 7272,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1583.96,
+    "text": "And I imagine if I had all the data in the world, the entire population, there is a true model, a true linear model perhaps that fits that data.",
+    "start_ms": 1583960,
+    "end_ms": 1590760,
+    "duration_ms": 6800,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1592.472,
+    "text": "But I only have a sample, and I built my linear model and my sample.",
+    "start_ms": 1592472,
+    "end_ms": 1595472,
+    "duration_ms": 3000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1596.248,
+    "text": "Is it good? Let's see. So how close is our estimate to the parameter we have the mean squared error we've been using that for a while?",
+    "start_ms": 1596248,
+    "end_ms": 1606424,
+    "duration_ms": 10176,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1606.68,
+    "text": "It looks like this expectation. What's the bias? Let's see the expected difference.",
+    "start_ms": 1606680,
+    "end_ms": 1619240,
+    "duration_ms": 12560,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1619.736,
+    "text": "Between our sample parameter and the true population remember this is not a random variable this this is a random variable The variable.",
+    "start_ms": 1619736,
+    "end_ms": 1627762,
+    "duration_ms": 8026,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1627.762,
+    "text": "This is a constant. So we can simplify this expression.",
+    "start_ms": 1627762,
+    "end_ms": 1631816,
+    "duration_ms": 4054,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1632.184,
+    "text": "What's the difference between the expected thing and the true thing?",
+    "start_ms": 1632184,
+    "end_ms": 1635464,
+    "duration_ms": 3280,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1645.208,
+    "text": "If the bias of this thing here is zero. The mean is this, so if this is the mean and I'm trying to compete the mean, this would be zero, then we say it's unbiased.",
+    "start_ms": 1645208,
+    "end_ms": 1655912,
+    "duration_ms": 10704,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1656.888,
+    "text": "And these are good estimators so they don't have a bias.",
+    "start_ms": 1656888,
+    "end_ms": 1659888,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1660.088,
+    "text": "But there's a trade-off, which again is the point of this lecture.",
+    "start_ms": 1660088,
+    "end_ms": 1662588,
+    "duration_ms": 2500,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1663.576,
+    "text": "The last thing to worry about is the variability in our estimator.",
+    "start_ms": 1663576,
+    "end_ms": 1666076,
+    "duration_ms": 2500,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1667.416,
+    "text": "How much does it change? Why is there a variability?",
+    "start_ms": 1667416,
+    "end_ms": 1671128,
+    "duration_ms": 3712,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1671.128,
+    "text": "Where's that variability come from? The sample. Every simple take produces a new set of data on which I fit my model.",
+    "start_ms": 1671128,
+    "end_ms": 1680632,
+    "duration_ms": 9504,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1680.92,
+    "text": "That model is now a random variable because it was from a sample.",
+    "start_ms": 1680920,
+    "end_ms": 1684200,
+    "duration_ms": 3280,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1684.376,
+    "text": "And there's going to be variability in that model and I want that variability ideally to be small.",
+    "start_ms": 1684376,
+    "end_ms": 1689016,
+    "duration_ms": 4640,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1689.848,
+    "text": "And I let that estimator to be unbiased. Questions? Yes.",
+    "start_ms": 1689848,
+    "end_ms": 1704524,
+    "duration_ms": 14676,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1705.816,
+    "text": "Yeah, so it would be nice if this was an unbiased estimator.",
+    "start_ms": 1705816,
+    "end_ms": 1708856,
+    "duration_ms": 3040,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1708.856,
+    "text": "Because in the variants, the commensuator would... would be the SD remaining air.",
+    "start_ms": 1708856,
+    "end_ms": 1713640,
+    "duration_ms": 4784,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1713.976,
+    "text": "You'll see it when it's actually a subtle last piece we need to talk to, where that could still be incorrect, but that's a modding assumption I'll show you in a moment.",
+    "start_ms": 1713976,
+    "end_ms": 1721816,
+    "duration_ms": 7840,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1722.552,
+    "text": "Alright, so you're hitting on the big idea. Our air is really built out of these two things and somehow they contribute.",
+    "start_ms": 1722552,
+    "end_ms": 1730016,
+    "duration_ms": 7464,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1730.552,
+    "text": "to this thing. and we want them to both be small.",
+    "start_ms": 1730552,
+    "end_ms": 1734568,
+    "duration_ms": 4016,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1735.576,
+    "text": "but like in most things in life. They are a trade-off.",
+    "start_ms": 1735576,
+    "end_ms": 1738765,
+    "duration_ms": 3189,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1738.765,
+    "text": "And we're going to figure out how to manage that trade-off.",
+    "start_ms": 1738765,
+    "end_ms": 1741112,
+    "duration_ms": 2347,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1741.688,
+    "text": "the trail of the train bias Inference. Let's do it.",
+    "start_ms": 1741688,
+    "end_ms": 1749032,
+    "duration_ms": 7344,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1749.208,
+    "text": "Alright, so I'm going to start the picture before we do math.",
+    "start_ms": 1749208,
+    "end_ms": 1751608,
+    "duration_ms": 2400,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1751.608,
+    "text": "There will be math throughout the rest of the lecture, but this will hopefully build the basic intuition.",
+    "start_ms": 1751608,
+    "end_ms": 1756808,
+    "duration_ms": 5200,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1757.144,
+    "text": "What we're going to do here. I'm an amateur archer not very good.",
+    "start_ms": 1757144,
+    "end_ms": 1762362,
+    "duration_ms": 5218,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1762.362,
+    "text": "There's an archer range in Berkeley so if people like archery should check it out.",
+    "start_ms": 1762362,
+    "end_ms": 1766072,
+    "duration_ms": 3710,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1766.072,
+    "text": "Here's a target. Right here. Target our goal is to get the bullseye of a center this little thing right here Let's see the center of the target as the population data.",
+    "start_ms": 1766072,
+    "end_ms": 1777960,
+    "duration_ms": 11888,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1778.712,
+    "text": "And each of our arrows is a guess for that primer.",
+    "start_ms": 1778712,
+    "end_ms": 1782432,
+    "duration_ms": 3720,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1783.032,
+    "text": "Each hour corresponds to a, we took a sample of data and we computed a data hut.",
+    "start_ms": 1783032,
+    "end_ms": 1787032,
+    "duration_ms": 4000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1787.64,
+    "text": "This is one of my theta hats. I want to think about the spread and the bias.",
+    "start_ms": 1787640,
+    "end_ms": 1796688,
+    "duration_ms": 9048,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1796.92,
+    "text": "in this picture. Synology Here are 4 targets. Which target demonstrates high variance and low bias?",
+    "start_ms": 1796920,
+    "end_ms": 1808520,
+    "duration_ms": 11600,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1810.2,
+    "text": "Do the analogy backwards I'm not going to explain it.",
+    "start_ms": 1810200,
+    "end_ms": 1812600,
+    "duration_ms": 2400,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1812.6,
+    "text": "Building up what you already understand from bias and variance up to this point.",
+    "start_ms": 1812600,
+    "end_ms": 1816800,
+    "duration_ms": 4200,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1817.4,
+    "text": "Let's do this later. which target demonstrates high variance and low bias.",
+    "start_ms": 1817400,
+    "end_ms": 1822268,
+    "duration_ms": 4868,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1846.008,
+    "text": "The stender is the goal. The eros are my estimates.",
+    "start_ms": 1846008,
+    "end_ms": 1850556,
+    "duration_ms": 4548,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1853.592,
+    "text": "I wish I had low bias low variance in my archery.",
+    "start_ms": 1853592,
+    "end_ms": 1856872,
+    "duration_ms": 3280,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1860.28,
+    "text": "The practice I often have something else. Alright, let's see what we got.",
+    "start_ms": 1860280,
+    "end_ms": 1876608,
+    "duration_ms": 16328,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1878.36,
+    "text": "Cool, so I didn't explain the analogy you already sort of understand by a single Let's go to see it.",
+    "start_ms": 1878360,
+    "end_ms": 1882480,
+    "duration_ms": 4120,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1883.416,
+    "text": "What's a show? This is me when I first started.",
+    "start_ms": 1883416,
+    "end_ms": 1888712,
+    "duration_ms": 5296,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1889.144,
+    "text": "No, that's not even me when I first started, B's when I started, but, uh, so this is, I go to the range and I'm like, I'm all over the target, but I'm kind of in the center all over the target, right?",
+    "start_ms": 1889144,
+    "end_ms": 1898144,
+    "duration_ms": 9000,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1900.472,
+    "text": "Why is this bad and like in the right vicinity just the errors are all over the place on high variability?",
+    "start_ms": 1900472,
+    "end_ms": 1905472,
+    "duration_ms": 5000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1908.568,
+    "text": "We think of our modeling process. This is what I set my...",
+    "start_ms": 1908568,
+    "end_ms": 1911068,
+    "duration_ms": 2500,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1911.8,
+    "text": "My mouth really, uh... Pretty complex to confide anything so it's kind of in the right area but every sample I get I get a wildly different model.",
+    "start_ms": 1911800,
+    "end_ms": 1919596,
+    "duration_ms": 7796,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1922.264,
+    "text": "That's hi variants, Lil Bias. What over here? This is me.",
+    "start_ms": 1922264,
+    "end_ms": 1927688,
+    "duration_ms": 5424,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1931.032,
+    "text": "I have and I'm not even in the right ballpark.",
+    "start_ms": 1931032,
+    "end_ms": 1935312,
+    "duration_ms": 4280,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1935.312,
+    "text": "I'm aiming off to the side. I got some bias.",
+    "start_ms": 1935312,
+    "end_ms": 1938312,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1938.488,
+    "text": "That's- this is the worst place to be. High bias, high variance.",
+    "start_ms": 1938488,
+    "end_ms": 1942088,
+    "duration_ms": 3600,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1943.512,
+    "text": "I just got a fancy new bow. That's safe. All of a sudden...",
+    "start_ms": 1943512,
+    "end_ms": 1949640,
+    "duration_ms": 6128,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1949.618,
+    "text": "are going in the same spot. Have no variants. Hi, bias.",
+    "start_ms": 1949618,
+    "end_ms": 1954608,
+    "duration_ms": 4990,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1954.608,
+    "text": "Right? And I tune my sights to align it to the center.",
+    "start_ms": 1954608,
+    "end_ms": 1959088,
+    "duration_ms": 4480,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1960.248,
+    "text": "Low variance, low bias. This is where we want to be.",
+    "start_ms": 1960248,
+    "end_ms": 1965096,
+    "duration_ms": 4848,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1966.616,
+    "text": "These are where we often are in modeling. and the trade office to get to here.",
+    "start_ms": 1966616,
+    "end_ms": 1971144,
+    "duration_ms": 4528,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1971.128,
+    "text": "And often we'll find that we're moving between these two dimensions.",
+    "start_ms": 1971128,
+    "end_ms": 1974128,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1974.616,
+    "text": "We can bring our things together, our estimates are more consistent, but they're off.",
+    "start_ms": 1974616,
+    "end_ms": 1978216,
+    "duration_ms": 3600,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1978.712,
+    "text": "We make them more accurate but they're more varied. That's the trade-off.",
+    "start_ms": 1978712,
+    "end_ms": 1983616,
+    "duration_ms": 4904,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1985.08,
+    "text": "That's in pictures. More pictures for those who are hearing online.",
+    "start_ms": 1985080,
+    "end_ms": 1989352,
+    "duration_ms": 4272,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1990.904,
+    "text": "Now let's actually turn this into a training prediction error analysis using these earlier mathematical tools.",
+    "start_ms": 1990904,
+    "end_ms": 1995904,
+    "duration_ms": 5000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1999.736,
+    "text": "So this is our modeling task from the past. We're minimizing some loss.",
+    "start_ms": 1999736,
+    "end_ms": 2004552,
+    "duration_ms": 4816,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2005.944,
+    "text": "This is trying to fit our data right here, this whole thing.",
+    "start_ms": 2005944,
+    "end_ms": 2008444,
+    "duration_ms": 2500,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2008.444,
+    "text": "Let's fit the data. We will don't fit the data too well.",
+    "start_ms": 2008444,
+    "end_ms": 2012616,
+    "duration_ms": 4172,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2012.92,
+    "text": "We got this extra penalty. We pick a hyper-proud lambda, you just pick this, you tune it with cross-validation, then there's this penalty on theta.",
+    "start_ms": 2012920,
+    "end_ms": 2020888,
+    "duration_ms": 7968,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2021.848,
+    "text": "I'm minimizing over all my choice of theaters. And so I want to keep this penalty is a penalty on making my theta.",
+    "start_ms": 2021848,
+    "end_ms": 2029496,
+    "duration_ms": 7648,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2029.752,
+    "text": "Too big. Having too many non-zero values in my theta too many features.",
+    "start_ms": 2029752,
+    "end_ms": 2035064,
+    "duration_ms": 5312,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2039.64,
+    "text": "What do you think this is controlling? and is straight off.",
+    "start_ms": 2039640,
+    "end_ms": 2043784,
+    "duration_ms": 4144,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2044.216,
+    "text": "Bye, super- Let's have it this one. This one says hit the bull's eye.",
+    "start_ms": 2044216,
+    "end_ms": 2053660,
+    "duration_ms": 9444,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2054.968,
+    "text": "So this is going to be my bias control. If that's the bias control this must be controlling my variability.",
+    "start_ms": 2054968,
+    "end_ms": 2061736,
+    "duration_ms": 6768,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2063.48,
+    "text": "This is my two tools. Right. Remember in our story.",
+    "start_ms": 2063480,
+    "end_ms": 2069800,
+    "duration_ms": 6320,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2070.072,
+    "text": "We see a sample using the data points. Of some complex process could be this green line.",
+    "start_ms": 2070072,
+    "end_ms": 2075704,
+    "duration_ms": 5632,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2075.704,
+    "text": "Sorry, we fit our sample of this process here. Oh no, okay.",
+    "start_ms": 2075704,
+    "end_ms": 2081128,
+    "duration_ms": 5424,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2080.824,
+    "text": "from how the button. so this is what I see on this data, you know what, here's the curve.",
+    "start_ms": 2080824,
+    "end_ms": 2086392,
+    "duration_ms": 5568,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2086.968,
+    "text": "I fit it nearly perfectly. This green light here. Here is the model's best fit.",
+    "start_ms": 2086968,
+    "end_ms": 2094728,
+    "duration_ms": 7760,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2096.792,
+    "text": "Maybe I set this to zero, so I have no regularization.",
+    "start_ms": 2096792,
+    "end_ms": 2099236,
+    "duration_ms": 2444,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2099.236,
+    "text": "That's my best fit on my data. BOLZAY Got my bias done.",
+    "start_ms": 2099236,
+    "end_ms": 2105024,
+    "duration_ms": 5788,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2106.872,
+    "text": "Okay, now what happens when I fit my model, I have this data hat.",
+    "start_ms": 2106872,
+    "end_ms": 2110872,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2111.544,
+    "text": "And a new point comes along. This is the real world.",
+    "start_ms": 2111544,
+    "end_ms": 2114816,
+    "duration_ms": 3272,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2115.32,
+    "text": "You've got a good estimate of how someone will do in data 100 next semester based on their data 8 grades.",
+    "start_ms": 2115320,
+    "end_ms": 2120320,
+    "duration_ms": 5000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2121.112,
+    "text": "So, new student comes along you, I've got your profile here, these are your features.",
+    "start_ms": 2121112,
+    "end_ms": 2125278,
+    "duration_ms": 4166,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2125.278,
+    "text": "Here's my estimate. what your grade will be. It's based on this model I've chosen and this parameter I've learned from my data.",
+    "start_ms": 2125278,
+    "end_ms": 2135256,
+    "duration_ms": 9978,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2134.893,
+    "text": "Sinistris. So that's kind of a new test point here.",
+    "start_ms": 2134893,
+    "end_ms": 2138634,
+    "duration_ms": 3741,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2138.634,
+    "text": "Here's my prediction. I don't have data for this point yet.",
+    "start_ms": 2138634,
+    "end_ms": 2140650,
+    "duration_ms": 2016,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2140.65,
+    "text": "It's a new student. They haven't taken data 100 yet.",
+    "start_ms": 2140650,
+    "end_ms": 2142484,
+    "duration_ms": 1834,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2143.544,
+    "text": "So I just get a prediction. And I wonder what the air is when they actually do take data 100.",
+    "start_ms": 2143544,
+    "end_ms": 2151464,
+    "duration_ms": 7920,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2151.464,
+    "text": "Don't know yet. Haven't seen it. There is some grade they will get when they take their 100, but I want to, you know, estimate my difference between that.",
+    "start_ms": 2151464,
+    "end_ms": 2158944,
+    "duration_ms": 7480,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2159.768,
+    "text": "Great they get and what I predicted. to picture. That difference is here, it's red line.",
+    "start_ms": 2159768,
+    "end_ms": 2170024,
+    "duration_ms": 10256,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2170.68,
+    "text": "Let's see if they get this grade in the class after they take it.",
+    "start_ms": 2170680,
+    "end_ms": 2173180,
+    "duration_ms": 2500,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2174.072,
+    "text": "This is the error that I'm interested in. All right, questions about this set up.",
+    "start_ms": 2174072,
+    "end_ms": 2181512,
+    "duration_ms": 7440,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2184.76,
+    "text": "Basic modeling setup. is the modeling set we use almost all modeling tasks.",
+    "start_ms": 2184760,
+    "end_ms": 2189688,
+    "duration_ms": 4928,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2189.688,
+    "text": "Has this basic flavor. What are the random variables here?",
+    "start_ms": 2189688,
+    "end_ms": 2195880,
+    "duration_ms": 6192,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2197.56,
+    "text": "So my data is random and my training, this is my training data here.",
+    "start_ms": 2197560,
+    "end_ms": 2200960,
+    "duration_ms": 3400,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2201.56,
+    "text": "This is random, this is sample. If this is a random variable and this is a random variable...",
+    "start_ms": 2201560,
+    "end_ms": 2207048,
+    "duration_ms": 5488,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2207.608,
+    "text": "This is also random variable. I've said that already, so that's random variable, which makes...",
+    "start_ms": 2207608,
+    "end_ms": 2211608,
+    "duration_ms": 4000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2212.12,
+    "text": "This whole function here is sort of a random variable.",
+    "start_ms": 2212120,
+    "end_ms": 2215420,
+    "duration_ms": 3300,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2215.768,
+    "text": "X is not. That's the new story came in. That's the fix.",
+    "start_ms": 2215768,
+    "end_ms": 2218168,
+    "duration_ms": 2400,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2218.168,
+    "text": "I'm going to give you that. Some of the students' grades.",
+    "start_ms": 2218168,
+    "end_ms": 2221736,
+    "duration_ms": 3568,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2222.072,
+    "text": "But what I predict about the grades is a random variable.",
+    "start_ms": 2222072,
+    "end_ms": 2225112,
+    "duration_ms": 3040,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2226.552,
+    "text": "Because state is random variable. And then what they actually get.",
+    "start_ms": 2226552,
+    "end_ms": 2235208,
+    "duration_ms": 8656,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2235.384,
+    "text": "That semester. We haven't seen it yet, so that is also a random variable.",
+    "start_ms": 2235384,
+    "end_ms": 2239920,
+    "duration_ms": 4536,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2239.92,
+    "text": "For what happens, I don't know what it's going to be.",
+    "start_ms": 2239920,
+    "end_ms": 2242920,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2242.92,
+    "text": "It's a random variable. I'm going to introduce a modeling assumption about how that random variable comes to be.",
+    "start_ms": 2242920,
+    "end_ms": 2250840,
+    "duration_ms": 7920,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2252.248,
+    "text": "It's an important one. is some truth, some true underlying relationship G.",
+    "start_ms": 2252248,
+    "end_ms": 2258224,
+    "duration_ms": 5976,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2258.776,
+    "text": "This relationship between the X. and the why. know this.",
+    "start_ms": 2258776,
+    "end_ms": 2263293,
+    "duration_ms": 4517,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2263.293,
+    "text": "It is the truth. It is out there. I don't have access to it.",
+    "start_ms": 2263293,
+    "end_ms": 2267528,
+    "duration_ms": 4235,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2268.408,
+    "text": "Whenever I observe something... I want to see this in the observation noise.",
+    "start_ms": 2268408,
+    "end_ms": 2273176,
+    "duration_ms": 4768,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2273.176,
+    "text": "I'll introduce a new idea here. I can't ever observe something perfectly.",
+    "start_ms": 2273176,
+    "end_ms": 2277571,
+    "duration_ms": 4395,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2277.571,
+    "text": "My measurement process is all... There's some observation noise. I'm going to cut that slide.",
+    "start_ms": 2277571,
+    "end_ms": 2284480,
+    "duration_ms": 6909,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2284.696,
+    "text": "So whatever I see is the truth. plus the noise.",
+    "start_ms": 2284696,
+    "end_ms": 2289320,
+    "duration_ms": 4624,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2289.237,
+    "text": "just can't do anything about it. Nice. Okay, this is going to be a random variable as well.",
+    "start_ms": 2289237,
+    "end_ms": 2295464,
+    "duration_ms": 6227,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2300.376,
+    "text": "So my response wise are in a variable. I want to zoom.",
+    "start_ms": 2300376,
+    "end_ms": 2304584,
+    "duration_ms": 4208,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2304.49,
+    "text": "noise is a random air. And I'm going to make the fine two assumptions for this lecture.",
+    "start_ms": 2304490,
+    "end_ms": 2312264,
+    "duration_ms": 7774,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2313.304,
+    "text": "You could change these, but I'm going to stick with these assumptions.",
+    "start_ms": 2313304,
+    "end_ms": 2315784,
+    "duration_ms": 2480,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2315.784,
+    "text": "These will make the analysis pretty straightforward. You could also assume there's no noise at all.",
+    "start_ms": 2315784,
+    "end_ms": 2321032,
+    "duration_ms": 5248,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2321.464,
+    "text": "Many people will do that but i want to have a little noise the world's imperfect.",
+    "start_ms": 2321464,
+    "end_ms": 2325624,
+    "duration_ms": 4160,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2326.36,
+    "text": "I'm going to assume that in expectation I measure the right thing.",
+    "start_ms": 2326360,
+    "end_ms": 2329360,
+    "duration_ms": 3000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2329.56,
+    "text": "Noise vacation is zero. it's kind of symmetric if you will.",
+    "start_ms": 2329560,
+    "end_ms": 2334312,
+    "duration_ms": 4752,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2334.264,
+    "text": "And the variance is sigma squared. I don't really need to know that, but I'm going to use that in the analysis.",
+    "start_ms": 2334264,
+    "end_ms": 2340424,
+    "duration_ms": 6160,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2340.424,
+    "text": "So let's assume there is some variance sigma squared. So, if this is the truth, the red line...",
+    "start_ms": 2340424,
+    "end_ms": 2352552,
+    "duration_ms": 12128,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2353.848,
+    "text": "Maybe this blue dots are the population, those are all the students that were drawn from this truth.",
+    "start_ms": 2353848,
+    "end_ms": 2358348,
+    "duration_ms": 4500,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2359.384,
+    "text": "And then each of these green or purple dots are different samples.",
+    "start_ms": 2359384,
+    "end_ms": 2363224,
+    "duration_ms": 3840,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2363.224,
+    "text": "So I got one sample. Another sample. Right. She's dots or samples.",
+    "start_ms": 2363224,
+    "end_ms": 2369286,
+    "duration_ms": 6062,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2369.286,
+    "text": "These lines would be fit to some model on those samples.",
+    "start_ms": 2369286,
+    "end_ms": 2372696,
+    "duration_ms": 3410,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2373.592,
+    "text": "So there's variability in the choice of models I get depending on which sample I take from the population.",
+    "start_ms": 2373592,
+    "end_ms": 2378192,
+    "duration_ms": 4600,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2380.952,
+    "text": "My goal now is to understand that variability. and the bias between these sepals.",
+    "start_ms": 2380952,
+    "end_ms": 2386472,
+    "duration_ms": 5520,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2386.776,
+    "text": "and the truth. Burry said this so when I make a prediction at a point and when you go out my function, I'm going to a random variable for that estimate, for that location.",
+    "start_ms": 2386776,
+    "end_ms": 2402968,
+    "duration_ms": 16192,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2405.496,
+    "text": "Alright, so now what I'm going to do is try to use the tools of bias invariance or expectation to actually derive...",
+    "start_ms": 2405496,
+    "end_ms": 2411496,
+    "duration_ms": 6000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2411.672,
+    "text": "This relationship for the squared loss because it's pretty neat.",
+    "start_ms": 2411672,
+    "end_ms": 2415352,
+    "duration_ms": 3680,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2416.216,
+    "text": "This will try to explain what we showed in previous lectures that is we increase our complexity.",
+    "start_ms": 2416216,
+    "end_ms": 2421216,
+    "duration_ms": 5000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2421.72,
+    "text": "Greetings, what up? Training your went down, bias decreased on our data.",
+    "start_ms": 2421720,
+    "end_ms": 2426424,
+    "duration_ms": 4704,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2427.096,
+    "text": "A bit of validation or static what? Did feel like there's a tradeoff for getting better and better fits today and getting worse and worse predictions on the world.",
+    "start_ms": 2427096,
+    "end_ms": 2434720,
+    "duration_ms": 7624,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2437.688,
+    "text": "We're going to show that there are these two pieces, model variants and model bias squared, that make up this test error.",
+    "start_ms": 2437688,
+    "end_ms": 2443128,
+    "duration_ms": 5440,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2448.312,
+    "text": "Alright, so we're going to build this plot. So suppose my test point is here, the red line is truth.",
+    "start_ms": 2448312,
+    "end_ms": 2453312,
+    "duration_ms": 5000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2453.688,
+    "text": "These are my data points. I have a new accent testing at.",
+    "start_ms": 2453688,
+    "end_ms": 2457314,
+    "duration_ms": 3626,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2457.314,
+    "text": "The green curve is my prediction. Build on the right here.",
+    "start_ms": 2457314,
+    "end_ms": 2461800,
+    "duration_ms": 4486,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2462.616,
+    "text": "And then why is what I actually observe when I go to see that that particular data point.",
+    "start_ms": 2462616,
+    "end_ms": 2467616,
+    "duration_ms": 5000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2469.496,
+    "text": "So my error, I residual... There's gonna be difference between why hat and why.",
+    "start_ms": 2469496,
+    "end_ms": 2473960,
+    "duration_ms": 4464,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2476.248,
+    "text": "Good start. And G is the truth that I don't know.",
+    "start_ms": 2476248,
+    "end_ms": 2479272,
+    "duration_ms": 3024,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2479.768,
+    "text": "There's some point there. We'll break this residual down. to observation variants.",
+    "start_ms": 2479768,
+    "end_ms": 2488584,
+    "duration_ms": 8816,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2488.584,
+    "text": "It's this noise component. Model variants of variability of our models, of our estimates, and model bias.",
+    "start_ms": 2488584,
+    "end_ms": 2495680,
+    "duration_ms": 7096,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2496.248,
+    "text": "This inherent gap between our model and expectation and the truth.",
+    "start_ms": 2496248,
+    "end_ms": 2500248,
+    "duration_ms": 4000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2503.288,
+    "text": "We're going to show that this model risk is going to be the sum of these things, the the observation variance, the model bias squared, and the model variance.",
+    "start_ms": 2503288,
+    "end_ms": 2510768,
+    "duration_ms": 7480,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2511.352,
+    "text": "We drive that formally. I'm the training data sets I could generate.",
+    "start_ms": 2511352,
+    "end_ms": 2532616,
+    "duration_ms": 21264,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2533.208,
+    "text": "Thoughts of random variables in this. How am I going to do this?",
+    "start_ms": 2533208,
+    "end_ms": 2538312,
+    "duration_ms": 5104,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2540.824,
+    "text": "Do what air refily actually freighted it. So it's source of chance air.",
+    "start_ms": 2540824,
+    "end_ms": 2543778,
+    "duration_ms": 2954,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2543.778,
+    "text": "Source of air. There's chance air and there's bias. So what is the source of chance there?",
+    "start_ms": 2543778,
+    "end_ms": 2548520,
+    "duration_ms": 4742,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2548.984,
+    "text": "We have randomness in our observations. This comes from our epsilon, there's just noise.",
+    "start_ms": 2548984,
+    "end_ms": 2553224,
+    "duration_ms": 4240,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2553.224,
+    "text": "That's one source of chance here we just can't do anything about.",
+    "start_ms": 2553224,
+    "end_ms": 2555704,
+    "duration_ms": 2480,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2557.176,
+    "text": "Another source of chance there is a randomness in our sample.",
+    "start_ms": 2557176,
+    "end_ms": 2560176,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2560.44,
+    "text": "Our training sample should say training here. To sample use a triner data.",
+    "start_ms": 2560440,
+    "end_ms": 2569080,
+    "duration_ms": 8640,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2569.08,
+    "text": "Those are source of chance there. Buys, these are not random errors, I'm not due to chance, but it's due to our model being different from the underlying function G.",
+    "start_ms": 2569080,
+    "end_ms": 2578032,
+    "duration_ms": 8952,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2584.024,
+    "text": "That's it, now break this down. So we have this.",
+    "start_ms": 2584024,
+    "end_ms": 2588768,
+    "duration_ms": 4744,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2588.92,
+    "text": "Observational noise. This is the gap between G and the Y that we actually end up ultimately observing.",
+    "start_ms": 2588920,
+    "end_ms": 2593920,
+    "duration_ms": 5000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2594.264,
+    "text": "And again we could see many different lies depending on the measurement process itself.",
+    "start_ms": 2594264,
+    "end_ms": 2598744,
+    "duration_ms": 4480,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2601.336,
+    "text": "about why. is there a verbi? So we have some observational variants that I told you before is Sigma.",
+    "start_ms": 2601336,
+    "end_ms": 2609272,
+    "duration_ms": 7936,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2609.72,
+    "text": "That accounts for this variation. and live from G. Is it a measurement error?",
+    "start_ms": 2609720,
+    "end_ms": 2618024,
+    "duration_ms": 8304,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2618.006,
+    "text": "also think of this as acting like noise in some you know there's some true function it's just.",
+    "start_ms": 2618006,
+    "end_ms": 2622596,
+    "duration_ms": 4590,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2623.288,
+    "text": "We have some inherent randomness we're going to pull that out and put it in epsilon and say G is a constant function.",
+    "start_ms": 2623288,
+    "end_ms": 2628288,
+    "duration_ms": 5000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2628.344,
+    "text": "There's a fixed function. There's no much we can do about this source of air.",
+    "start_ms": 2628344,
+    "end_ms": 2632712,
+    "duration_ms": 4368,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2633.368,
+    "text": "This is kind of the irreducible air in modeling. Take better measurements.",
+    "start_ms": 2633368,
+    "end_ms": 2637984,
+    "duration_ms": 4616,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2637.984,
+    "text": "That's about it. Let's get the interesting stuff, some model variants.",
+    "start_ms": 2637984,
+    "end_ms": 2641928,
+    "duration_ms": 3944,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2642.36,
+    "text": "This comes from all the different samples I could get.",
+    "start_ms": 2642360,
+    "end_ms": 2644860,
+    "duration_ms": 2500,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2645.304,
+    "text": "On my data. This is like a reasonable fitting process so you'll find that any kind of fitting process you do even if it's not crazy millions of features will still have some variability depending on which sample you took.",
+    "start_ms": 2645304,
+    "end_ms": 2662584,
+    "duration_ms": 17280,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2662.488,
+    "text": "And this is going to be described as the variance in my estimate.",
+    "start_ms": 2662488,
+    "end_ms": 2665488,
+    "duration_ms": 3000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2667.48,
+    "text": "So this is a random variable. This is the variance not random variable.",
+    "start_ms": 2667480,
+    "end_ms": 2669980,
+    "duration_ms": 2500,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2672.12,
+    "text": "This comes from different samples. Overfitting is a common cause of this variability.",
+    "start_ms": 2672120,
+    "end_ms": 2682120,
+    "duration_ms": 10000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2681.808,
+    "text": "is using regularization. So bringing in. Regularization. Twin mechanism. You'll see as you use more advanced modeling techniques, there's built-in other procedures to deal for your organization.",
+    "start_ms": 2681808,
+    "end_ms": 2692756,
+    "duration_ms": 10948,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2695.544,
+    "text": "Do the way we can do is get more data.",
+    "start_ms": 2695544,
+    "end_ms": 2697544,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2699.64,
+    "text": "This is what made AI work today. We made our models way more complicated.",
+    "start_ms": 2699640,
+    "end_ms": 2703240,
+    "duration_ms": 3600,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2703.512,
+    "text": "Rather than try to regularize them, we just got more data.",
+    "start_ms": 2703512,
+    "end_ms": 2706012,
+    "duration_ms": 2500,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2707.032,
+    "text": "Made a big difference. So, more data is available. Managers variants.",
+    "start_ms": 2707032,
+    "end_ms": 2713640,
+    "duration_ms": 6608,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2713.464,
+    "text": "The model bias, again, this is the gap between G.",
+    "start_ms": 2713464,
+    "end_ms": 2716464,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2717.112,
+    "text": "and our model. In expectation. This is not a random variable, aren't it?",
+    "start_ms": 2717112,
+    "end_ms": 2725544,
+    "duration_ms": 8432,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2726.68,
+    "text": "This is constant, this is also, you know. Not or any variable again.",
+    "start_ms": 2726680,
+    "end_ms": 2731944,
+    "duration_ms": 5264,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2734.968,
+    "text": "How to interpret bias. often don't think about the sign of bias, but just in this form whenever it and it like this.",
+    "start_ms": 2734968,
+    "end_ms": 2742696,
+    "duration_ms": 7728,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2742.488,
+    "text": "If I look at the bias, if it is positive...",
+    "start_ms": 2742488,
+    "end_ms": 2745488,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2745.72,
+    "text": "Then we're underestimating the value of our data. On average.",
+    "start_ms": 2745720,
+    "end_ms": 2750344,
+    "duration_ms": 4624,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2750.063,
+    "text": "it's negative or overestimating, and if it's zero... We have an unbiased estimator.",
+    "start_ms": 2750063,
+    "end_ms": 2755112,
+    "duration_ms": 5049,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2754.872,
+    "text": "We often strive to get to that zero on bias.",
+    "start_ms": 2754872,
+    "end_ms": 2757872,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2757.872,
+    "text": "And try to manage variance other techniques. Would you see the variants and buy us off from Organods?",
+    "start_ms": 2757872,
+    "end_ms": 2764616,
+    "duration_ms": 6744,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2769.304,
+    "text": "What kind of bias would regularization introduce? Quick intuitions, good check.",
+    "start_ms": 2769304,
+    "end_ms": 2778536,
+    "duration_ms": 9232,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2778.536,
+    "text": "Here's my... Plot, here's my data. I have really aggressive regularization.",
+    "start_ms": 2778536,
+    "end_ms": 2785640,
+    "duration_ms": 7104,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2785.944,
+    "text": "What would I model look like? Flight line, zeroes, 3-0 everywhere.",
+    "start_ms": 2785944,
+    "end_ms": 2794360,
+    "duration_ms": 8416,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2795.288,
+    "text": "So I have underestimating. I did it. Alright, of course it couldn't be my data looks like this.",
+    "start_ms": 2795288,
+    "end_ms": 2801404,
+    "duration_ms": 6116,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2802.296,
+    "text": "Regress of organization again here. What rest of me am I dead?",
+    "start_ms": 2802296,
+    "end_ms": 2806600,
+    "duration_ms": 4304,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2807.256,
+    "text": "So is not changing a lot, it's always zero. No matter what sample I take, I'm still gonna get zero model.",
+    "start_ms": 2807256,
+    "end_ms": 2813160,
+    "duration_ms": 5904,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2814.648,
+    "text": "But his bias, Loverrence. Questions up to this point. 3D Warman Questions on the slider?",
+    "start_ms": 2814648,
+    "end_ms": 2826280,
+    "duration_ms": 11632,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2826.034,
+    "text": "was like, okay. Okay. I'm going to slowly. When we're under fitting.",
+    "start_ms": 2826034,
+    "end_ms": 2839112,
+    "duration_ms": 13078,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2839.96,
+    "text": "What can we do? We've often overriggerized. I sufficiently optimized or lost, so maybe we didn't tune our our gradient descent and we didn't minimize the function.",
+    "start_ms": 2839960,
+    "end_ms": 2851944,
+    "duration_ms": 11984,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2851.944,
+    "text": "So we're still stuck at something close to zero maybe.",
+    "start_ms": 2851944,
+    "end_ms": 2854344,
+    "duration_ms": 2400,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2855.064,
+    "text": "Or as we've learned recently... We can make models much more complex, adding more features, adding non-linearities and so on.",
+    "start_ms": 2855064,
+    "end_ms": 2863208,
+    "duration_ms": 8144,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2863.208,
+    "text": "And this is what a lot of modern AI has done is really push model complexity.",
+    "start_ms": 2863208,
+    "end_ms": 2867928,
+    "duration_ms": 4720,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2868.408,
+    "text": "and finding other mechanisms to deal with the consequences of all that model complexity.",
+    "start_ms": 2868408,
+    "end_ms": 2872408,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2873.272,
+    "text": "What are the consequences of all that model complexity? Thanks.",
+    "start_ms": 2873272,
+    "end_ms": 2882112,
+    "duration_ms": 8840,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2883.48,
+    "text": "Some more very billionaire models. Okay, so let's do the math finally.",
+    "start_ms": 2883480,
+    "end_ms": 2888520,
+    "duration_ms": 5040,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2889.08,
+    "text": "So we have a residual. We have our the trick We take the Epsilon, this is our one source of noise, that gave us why.",
+    "start_ms": 2889080,
+    "end_ms": 2899896,
+    "duration_ms": 10816,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2900.216,
+    "text": "So now our residual can be expressed as Epsilon plus The Derts Fain G and Y-Hat.",
+    "start_ms": 2900216,
+    "end_ms": 2906152,
+    "duration_ms": 5936,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2907.576,
+    "text": "Okay, this is the only random variable here. This is a fixed unknown.",
+    "start_ms": 2907576,
+    "end_ms": 2912536,
+    "duration_ms": 4960,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2920.504,
+    "text": "Swarth noting actually point this out here that G. The expectation of y is g.",
+    "start_ms": 2920504,
+    "end_ms": 2925160,
+    "duration_ms": 4656,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2925.16,
+    "text": "Why is that? You should be able to answer that question.",
+    "start_ms": 2925160,
+    "end_ms": 2929864,
+    "duration_ms": 4704,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2930.456,
+    "text": "The expectation of y is the expectation of g. Let's see the expectation of epsilon.",
+    "start_ms": 2930456,
+    "end_ms": 2935880,
+    "duration_ms": 5424,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2935.768,
+    "text": "Exploration G is... See? Let's see the expectation maps line.",
+    "start_ms": 2935768,
+    "end_ms": 2940328,
+    "duration_ms": 4560,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2940.888,
+    "text": "Z. Good. You're awake. Alright, and then there is this.",
+    "start_ms": 2940888,
+    "end_ms": 2948166,
+    "duration_ms": 7278,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2948.166,
+    "text": "This is the expectation of y hat. Just the point in this line.",
+    "start_ms": 2948166,
+    "end_ms": 2952568,
+    "duration_ms": 4402,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2952.568,
+    "text": "We're going to use that to do our analysis. So the fixed constant.",
+    "start_ms": 2952568,
+    "end_ms": 2955768,
+    "duration_ms": 3200,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2956.888,
+    "text": "and we can break this this total air into these three parts we have this epsilon part We have g minus the expectation of y.",
+    "start_ms": 2956888,
+    "end_ms": 2968504,
+    "duration_ms": 11616,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2970.168,
+    "text": "And then we have the expectation of y minus c.",
+    "start_ms": 2970168,
+    "end_ms": 2972168,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2972.984,
+    "text": "Y, the expression Y hat minus 6 minus Y hat.",
+    "start_ms": 2972984,
+    "end_ms": 2976484,
+    "duration_ms": 3500,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2978.104,
+    "text": "Can you see where this is going? This feels very biosee here, right?",
+    "start_ms": 2978104,
+    "end_ms": 2983656,
+    "duration_ms": 5552,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2984.536,
+    "text": "This feels kind of like a variance thing here. Just not to see that our Eric can be broken down into three basic parts.",
+    "start_ms": 2984536,
+    "end_ms": 2992464,
+    "duration_ms": 7928,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2993.368,
+    "text": "Let's keep going. Random deviation. I'll clear this slide. This is a notion of random deviation.",
+    "start_ms": 2993368,
+    "end_ms": 3003228,
+    "duration_ms": 9860,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3003.8,
+    "text": "And this is kind of a bias. Yeah, these flights can be in any water.",
+    "start_ms": 3003800,
+    "end_ms": 3010072,
+    "duration_ms": 6272,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3010.072,
+    "text": "I'm just trying them here. You can adjust and you'll see that you get you can still do the same basic breakdown.",
+    "start_ms": 3010072,
+    "end_ms": 3014472,
+    "duration_ms": 4400,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3015.896,
+    "text": "Alright, so here's what we're gonna show. We've got this gap between y and y hat.",
+    "start_ms": 3015896,
+    "end_ms": 3021571,
+    "duration_ms": 5675,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3021.571,
+    "text": "That's our air. We're going to square it. We want to stay this in a moment.",
+    "start_ms": 3021571,
+    "end_ms": 3025590,
+    "duration_ms": 4019,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3025.59,
+    "text": "It can be broken down into these three parts. This piece...",
+    "start_ms": 3025590,
+    "end_ms": 3029856,
+    "duration_ms": 4266,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3030.552,
+    "text": "This piece... and this piece. This is a constant, this is our bias, so fix constant.",
+    "start_ms": 3030552,
+    "end_ms": 3037455,
+    "duration_ms": 6903,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3037.455,
+    "text": "This has a random variable in it. This has a random variable it does or...",
+    "start_ms": 3037455,
+    "end_ms": 3041704,
+    "duration_ms": 4249,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3041.816,
+    "text": "Random Then all we did really is we just subtracted and added this term from G minus G plus epsilon minus Y hat of X.",
+    "start_ms": 3041816,
+    "end_ms": 3053752,
+    "duration_ms": 11936,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3053.752,
+    "text": "Great. G plus epsilon minus y hat of x, we're just subtracting and adding this thing.",
+    "start_ms": 3053752,
+    "end_ms": 3059128,
+    "duration_ms": 5376,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3061.496,
+    "text": "Just algebra. Well, it's so exciting we're about to do.",
+    "start_ms": 3061496,
+    "end_ms": 3068429,
+    "duration_ms": 6933,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3068.429,
+    "text": "We have 30 minutes. Let's do this. Let's take a quick stretch break for two minutes.",
+    "start_ms": 3068429,
+    "end_ms": 3072408,
+    "duration_ms": 3979,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3072.408,
+    "text": "Then we're going to go through some amazing math that I think we might even finish early have a few minutes to talk about it.",
+    "start_ms": 3072408,
+    "end_ms": 3077848,
+    "duration_ms": 5440,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3078.296,
+    "text": "Stretch two minutes. We'll keep going. Zoom people, come the class.",
+    "start_ms": 3078296,
+    "end_ms": 3221144,
+    "duration_ms": 142848,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3222.104,
+    "text": "Just awkward up here. More people. Next lecture. Come to class.",
+    "start_ms": 3222104,
+    "end_ms": 3229280,
+    "duration_ms": 7176,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3232.184,
+    "text": "That kind of feels like two minutes. I should probably get a stopwatch at some point.",
+    "start_ms": 3232184,
+    "end_ms": 3236936,
+    "duration_ms": 4752,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3237.272,
+    "text": "Alright, let's call it two minutes. Let's do some algebra to be fun.",
+    "start_ms": 3237272,
+    "end_ms": 3240738,
+    "duration_ms": 3466,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3240.738,
+    "text": "I think. Alright, remember our goal. We got why? What we actually observed, but what we will observe for that person's grey perhaps and our estimate.",
+    "start_ms": 3240738,
+    "end_ms": 3249992,
+    "duration_ms": 9254,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3250.68,
+    "text": "Based on all the modeling and all the stuff we did with the training on some validation blah blah we have a our model is like a little implicit theta hat in here.",
+    "start_ms": 3250680,
+    "end_ms": 3258960,
+    "duration_ms": 8280,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3259.544,
+    "text": "Now we're trying to understand this difference. I'm going to try to break it down and we did into these three parts.",
+    "start_ms": 3259544,
+    "end_ms": 3264840,
+    "duration_ms": 5296,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3265.24,
+    "text": "and we're gonna now look at Computing the square of this, an expectation, or loss, or risk, or mean square air.",
+    "start_ms": 3265240,
+    "end_ms": 3274120,
+    "duration_ms": 8880,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3275.416,
+    "text": "So you already have this equation from the previous slide.",
+    "start_ms": 3275416,
+    "end_ms": 3277816,
+    "duration_ms": 2400,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3278.584,
+    "text": "A lot of letters here, so I'm going to make them simple.",
+    "start_ms": 3278584,
+    "end_ms": 3280984,
+    "duration_ms": 2400,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3280.984,
+    "text": "So we're going to call this letter here. This whole thing is going to be the A term.",
+    "start_ms": 3280984,
+    "end_ms": 3285144,
+    "duration_ms": 4160,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3285.144,
+    "text": "It's a little A because there's no random mess in this.",
+    "start_ms": 3285144,
+    "end_ms": 3287704,
+    "duration_ms": 2560,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3287.96,
+    "text": "This is a this is the truth and the expectation of something is not a random variable.",
+    "start_ms": 3287960,
+    "end_ms": 3292360,
+    "duration_ms": 4400,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3293.272,
+    "text": "The B term, it's a capital B, there is randomness.",
+    "start_ms": 3293272,
+    "end_ms": 3296712,
+    "duration_ms": 3440,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3296.712,
+    "text": "Not here, but here. Remember this depends on the theta hat on my simple.",
+    "start_ms": 3296712,
+    "end_ms": 3300632,
+    "duration_ms": 3920,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3300.632,
+    "text": "And the C term is boring, it's just epsilon. I don't know why I made it C, could just let that epsilon.",
+    "start_ms": 3300632,
+    "end_ms": 3305094,
+    "duration_ms": 4462,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3305.094,
+    "text": "Anyways, C is epsilon. Okay, also around the variables, so capital C.",
+    "start_ms": 3305094,
+    "end_ms": 3308744,
+    "duration_ms": 3650,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3311.992,
+    "text": "So, the model risk, the thing we care about. Is the expectation?",
+    "start_ms": 3311992,
+    "end_ms": 3317672,
+    "duration_ms": 5680,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3317.848,
+    "text": "This square, so what is the expected squared loss? Look, can you see why?",
+    "start_ms": 3317848,
+    "end_ms": 3322624,
+    "duration_ms": 4776,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3322.624,
+    "text": "The way I had... And we can write it. this.",
+    "start_ms": 3322624,
+    "end_ms": 3327072,
+    "duration_ms": 4448,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3328.696,
+    "text": "A, POSSIB, POSSI, Squat Right? Because we just plugged in this, jup.",
+    "start_ms": 3328696,
+    "end_ms": 3334728,
+    "duration_ms": 6032,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3335.48,
+    "text": "That's this whole thing here. Just tuck that right there.",
+    "start_ms": 3335480,
+    "end_ms": 3338520,
+    "duration_ms": 3040,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3339.736,
+    "text": "It is algebra time. We take the square of all this.",
+    "start_ms": 3339736,
+    "end_ms": 3345384,
+    "duration_ms": 5648,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3345.656,
+    "text": "And I believe that is a squared plus b squared plus c squared plus 2ab plus 2ac plus 2bc.",
+    "start_ms": 3345656,
+    "end_ms": 3352296,
+    "duration_ms": 6640,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3353.016,
+    "text": "Great. But we had some expectations to deal with. We use linearity of expectation and we broke that into the sum of expectations.",
+    "start_ms": 3353016,
+    "end_ms": 3361296,
+    "duration_ms": 8280,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3361.528,
+    "text": "of it a squared b squared c squared They pulled the 2A out.",
+    "start_ms": 3361528,
+    "end_ms": 3367029,
+    "duration_ms": 5501,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3367.029,
+    "text": "It would have been an expectation of 2A times B, but you know, 2A is a constant, so I pulled that out.",
+    "start_ms": 3367029,
+    "end_ms": 3371104,
+    "duration_ms": 4075,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3372.024,
+    "text": "And it's again 2A times C, 2A is a constant, so I pulled that out.",
+    "start_ms": 3372024,
+    "end_ms": 3376384,
+    "duration_ms": 4360,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3376.384,
+    "text": "And then 2, 2 is a constant times BC. Uh, I couldn't play anything else out.",
+    "start_ms": 3376384,
+    "end_ms": 3382120,
+    "duration_ms": 5736,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3382.488,
+    "text": "Stop there. That's a setup so far just algebra. and linearity of expectation.",
+    "start_ms": 3382488,
+    "end_ms": 3389608,
+    "duration_ms": 7120,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3391.224,
+    "text": "Well, I wrote it down. right here I'm going to call this the interesting stuff on top.",
+    "start_ms": 3391224,
+    "end_ms": 3396664,
+    "duration_ms": 5440,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3399.064,
+    "text": "But we got some uninteresting stuff down here. Cross Terms life, cross-terms always seem to cancel out, or at least not all proofs they've ever done.",
+    "start_ms": 3399064,
+    "end_ms": 3408392,
+    "duration_ms": 9328,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3408.392,
+    "text": "So we're going to study these cross-terms and try to make them go away.",
+    "start_ms": 3408392,
+    "end_ms": 3411192,
+    "duration_ms": 2800,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3411.928,
+    "text": "and see if they are in fact in port glue, or if they are just zero.",
+    "start_ms": 3411928,
+    "end_ms": 3415208,
+    "duration_ms": 3280,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3416.44,
+    "text": "So let's do the cross terms. Crossdamps. So I copied them here.",
+    "start_ms": 3416440,
+    "end_ms": 3424360,
+    "duration_ms": 7920,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3424.984,
+    "text": "Let's go to the proof. Step 1. in C, which in retrospect, I should not have done, so I should have just made this epsilon to begin with.",
+    "start_ms": 3424984,
+    "end_ms": 3434887,
+    "duration_ms": 9903,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3434.887,
+    "text": "But anyways, so C is epsilon. Big step there. I think that's all I changed so see you in the next episode.",
+    "start_ms": 3434887,
+    "end_ms": 3440168,
+    "duration_ms": 5281,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3441.688,
+    "text": "This is a good time right now, right? We like that.",
+    "start_ms": 3441688,
+    "end_ms": 3444152,
+    "duration_ms": 2464,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3444.152,
+    "text": "What's this gonna be? Let's see the expectation maps line.",
+    "start_ms": 3444152,
+    "end_ms": 3448808,
+    "duration_ms": 4656,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3450.936,
+    "text": "Zero, we assume that. Okay, that's going to be helpful.",
+    "start_ms": 3450936,
+    "end_ms": 3453436,
+    "duration_ms": 2500,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3453.624,
+    "text": "Does your head have to think about? look at this one.",
+    "start_ms": 3453624,
+    "end_ms": 3457000,
+    "duration_ms": 3376,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3457.08,
+    "text": "Be... This whole thing here. Doesn't depend on epsilon. and epsilon are independent.",
+    "start_ms": 3457080,
+    "end_ms": 3464936,
+    "duration_ms": 7856,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3466.712,
+    "text": "Okay? Because note this is a new epsilon for my new y.",
+    "start_ms": 3466712,
+    "end_ms": 3469912,
+    "duration_ms": 3200,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3471.064,
+    "text": "These might have their own upslands in that process, but they're independent.",
+    "start_ms": 3471064,
+    "end_ms": 3473864,
+    "duration_ms": 2800,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3474.36,
+    "text": "because the upslimes are independent noise. Okay. Because they're independent that new property interest at the beginning of lecture means I can break this into this.",
+    "start_ms": 3474360,
+    "end_ms": 3482792,
+    "duration_ms": 8432,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3484.472,
+    "text": "Now we're cooking, right? Where we said the expectation. Uh...",
+    "start_ms": 3484472,
+    "end_ms": 3490272,
+    "duration_ms": 5800,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3490.36,
+    "text": "Epsilon zero we assume that that's our modeling assumption unbiased noise.",
+    "start_ms": 3490360,
+    "end_ms": 3496672,
+    "duration_ms": 6312,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3497.528,
+    "text": "To work truly how to promise this point. But this...",
+    "start_ms": 3497528,
+    "end_ms": 3502056,
+    "duration_ms": 4528,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3501.842,
+    "text": "means this. this goes to zero. So we can get rid of this whole set of terms to convene it.",
+    "start_ms": 3501842,
+    "end_ms": 3508040,
+    "duration_ms": 6198,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3508.888,
+    "text": "Let's left. This piece right here. can expand B, it's this piece right here.",
+    "start_ms": 3508888,
+    "end_ms": 3514152,
+    "duration_ms": 5264,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3515.544,
+    "text": "Let's do that. We just put in B. What is this expectation?",
+    "start_ms": 3515544,
+    "end_ms": 3521224,
+    "duration_ms": 5680,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3520.792,
+    "text": "Right here. Like her son. What is this expectation? This is constant so I can pull this expectation through, but parenthesis here.",
+    "start_ms": 3520792,
+    "end_ms": 3532964,
+    "duration_ms": 12172,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3533.528,
+    "text": "This expectation, but this expectation over here. Now your next rotation of y hat minus the expectation of y hat.",
+    "start_ms": 3533528,
+    "end_ms": 3543056,
+    "duration_ms": 9528,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3544.28,
+    "text": "What's that? Oh, I give it away, it's bummer. Um, that's zero.",
+    "start_ms": 3544280,
+    "end_ms": 3549896,
+    "duration_ms": 5616,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3550.264,
+    "text": "Right. Times 2A. Alright, so we've shown all the cross terms.",
+    "start_ms": 3550264,
+    "end_ms": 3556424,
+    "duration_ms": 6160,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3557.848,
+    "text": "For zero. We did make assumptions, right? We assume that's important.",
+    "start_ms": 3557848,
+    "end_ms": 3563688,
+    "duration_ms": 5840,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3563.544,
+    "text": "And this. Those are reminding assumptions. Let's just get rid of all these cross terms, and it's a pretty reasonable set of assumptions.",
+    "start_ms": 3563544,
+    "end_ms": 3569964,
+    "duration_ms": 6420,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3575.384,
+    "text": "Now what do we got? We're left with the interesting terms right here.",
+    "start_ms": 3575384,
+    "end_ms": 3580840,
+    "duration_ms": 5456,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3582.04,
+    "text": "So let's break these down some more. Cost of it's gone.",
+    "start_ms": 3582040,
+    "end_ms": 3586728,
+    "duration_ms": 4688,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3586.424,
+    "text": "The interesting terms. So, you have expectation of a squared plus expectation of b squared, expectation of c, remember these are random variables.",
+    "start_ms": 3586424,
+    "end_ms": 3597378,
+    "duration_ms": 10954,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3597.378,
+    "text": "This is not... This is the expectation of a squared, right?",
+    "start_ms": 3597378,
+    "end_ms": 3602376,
+    "duration_ms": 4998,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3604.632,
+    "text": "This is the expectation of B-Squid. Okay. Expectation and B-Squid.",
+    "start_ms": 3604632,
+    "end_ms": 3610408,
+    "duration_ms": 5776,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3611.256,
+    "text": "Yup, good. and the expectation of C-square. That was easy.",
+    "start_ms": 3611256,
+    "end_ms": 3617010,
+    "duration_ms": 5754,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3617.01,
+    "text": "We just copied it in here. Okay. We can simplify this.",
+    "start_ms": 3617010,
+    "end_ms": 3621364,
+    "duration_ms": 4354,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3621.364,
+    "text": "This piece right here. Where are the random variables? There are none.",
+    "start_ms": 3621364,
+    "end_ms": 3627776,
+    "duration_ms": 6412,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3629.336,
+    "text": "I put the whole thing in. Okay. Well, we can get rid of this.",
+    "start_ms": 3629336,
+    "end_ms": 3632024,
+    "duration_ms": 2688,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3632.024,
+    "text": "So you don't need those. It's no random variables in that.",
+    "start_ms": 3632024,
+    "end_ms": 3634136,
+    "duration_ms": 2112,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3634.456,
+    "text": "How about this one? This is a random variable. This is not.",
+    "start_ms": 3634456,
+    "end_ms": 3639144,
+    "duration_ms": 4688,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3639.352,
+    "text": "I'm gonna leave this alone for a second, because I kinda like the way this looks.",
+    "start_ms": 3639352,
+    "end_ms": 3642352,
+    "duration_ms": 3000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3642.84,
+    "text": "And the expectation of epsilon squared is... Sigma Square. Why is that?",
+    "start_ms": 3642840,
+    "end_ms": 3660864,
+    "duration_ms": 18024,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3661.688,
+    "text": "Thank you for watching. So the variance is that? What's the other definition of variance equation?",
+    "start_ms": 3661688,
+    "end_ms": 3667304,
+    "duration_ms": 5616,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3668.376,
+    "text": "The variance is equal to what? Oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops, oops It's equal to what?",
+    "start_ms": 3668376,
+    "end_ms": 3679560,
+    "duration_ms": 11184,
+    "word_count": 122,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3680.12,
+    "text": "The expectation. of epsilon squared. minus the expectation. That's line.",
+    "start_ms": 3680120,
+    "end_ms": 3690496,
+    "duration_ms": 10376,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3691.8,
+    "text": "Square. This is zero. So the variance of epsilon, which is sigma squared, equals the expectation.",
+    "start_ms": 3691800,
+    "end_ms": 3702376,
+    "duration_ms": 10576,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3702.584,
+    "text": "of epsilon squared. from the computational formula for the banks.",
+    "start_ms": 3702584,
+    "end_ms": 3709864,
+    "duration_ms": 7280,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3714.712,
+    "text": "So this equation. More assumption. This kind of looks like a bias.",
+    "start_ms": 3714712,
+    "end_ms": 3722699,
+    "duration_ms": 7987,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3722.699,
+    "text": "This can look like a variance. It looks like my noise.",
+    "start_ms": 3722699,
+    "end_ms": 3725144,
+    "duration_ms": 2445,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3727.96,
+    "text": "Okay, we're going to do variance. Is defined? of X is defined as this.",
+    "start_ms": 3727960,
+    "end_ms": 3733832,
+    "duration_ms": 5872,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3734.52,
+    "text": "It's symmetric so we can flip the sign in the interior since it's squared.",
+    "start_ms": 3734520,
+    "end_ms": 3737800,
+    "duration_ms": 3280,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3738.776,
+    "text": "To this... Here. Is the variance of y? The variability of my predictions.",
+    "start_ms": 3738776,
+    "end_ms": 3747464,
+    "duration_ms": 8688,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3747.48,
+    "text": "Due to my training my simple variability. Very so this was...",
+    "start_ms": 3747480,
+    "end_ms": 3755624,
+    "duration_ms": 8144,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3755.16,
+    "text": "bias definition from earlier So we get the punch sign result for this lecture.",
+    "start_ms": 3755160,
+    "end_ms": 3760072,
+    "duration_ms": 4912,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3760.76,
+    "text": "Way ahead of schedule, which is awesome. So the model risk, this thing right here...",
+    "start_ms": 3760760,
+    "end_ms": 3764904,
+    "duration_ms": 4144,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3765.912,
+    "text": "Can be broken down into three key parts, model bias squared.",
+    "start_ms": 3765912,
+    "end_ms": 3769912,
+    "duration_ms": 4000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3770.424,
+    "text": "If you just arrived, that's this thing here. Difference between the truth.",
+    "start_ms": 3770424,
+    "end_ms": 3774424,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3774.552,
+    "text": "and we get an expectation. Overall, our training samples. Overall, the ways we could construct our training data.",
+    "start_ms": 3774552,
+    "end_ms": 3779928,
+    "duration_ms": 5376,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3781.144,
+    "text": "Square because everything isn't square units here Variance of the model itself, the variability of the Predictions and this variability comes from the variability in our training data.",
+    "start_ms": 3781144,
+    "end_ms": 3792984,
+    "duration_ms": 11840,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3794.904,
+    "text": "What's this observational variance we can do nothing about, just built into our measurement process itself.",
+    "start_ms": 3794904,
+    "end_ms": 3799404,
+    "duration_ms": 4500,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3800.536,
+    "text": "This completely explains... I expect a model risk. When we measure it in the squared form, so squared loss here.",
+    "start_ms": 3800536,
+    "end_ms": 3808680,
+    "duration_ms": 8144,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3808.68,
+    "text": "We change this loss as analysis would no longer work.",
+    "start_ms": 3808680,
+    "end_ms": 3811080,
+    "duration_ms": 2400,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3811.288,
+    "text": "We're looking at the squared loss right here. Which is one of the reasons we like this square there because we can do these kinds of analyses.",
+    "start_ms": 3811288,
+    "end_ms": 3820440,
+    "duration_ms": 9152,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3820.76,
+    "text": "It's also a pretty standard loss. What you would use in most regression situations.",
+    "start_ms": 3820760,
+    "end_ms": 3825608,
+    "duration_ms": 4848,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3828.952,
+    "text": "So we can do this formally for a square delost.",
+    "start_ms": 3828952,
+    "end_ms": 3831112,
+    "duration_ms": 2160,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3831.112,
+    "text": "We can show this in practice these same concepts hold, but the math would be much more complicated to show.",
+    "start_ms": 3831112,
+    "end_ms": 3836632,
+    "duration_ms": 5520,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3840.056,
+    "text": "and the assumptions we made. or something about the observation process.",
+    "start_ms": 3840056,
+    "end_ms": 3843816,
+    "duration_ms": 3760,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3844.12,
+    "text": "that it it's unbiased we have unbiased noise so zero mean and that it has some known variance sigma If you can't control...",
+    "start_ms": 3844120,
+    "end_ms": 3852832,
+    "duration_ms": 8712,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3853.112,
+    "text": "The rest of this was making no additional assumptions. Just independence for our data.",
+    "start_ms": 3853112,
+    "end_ms": 3859080,
+    "duration_ms": 5968,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3860.504,
+    "text": "It's pretty crazy, right? So interpretation, not risk is an expectation, therefore it's a fixed number.",
+    "start_ms": 3860504,
+    "end_ms": 3867768,
+    "duration_ms": 7264,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3868.92,
+    "text": "Forgive us. The ups and reshall variants cannot be addressed, but just discuss that.",
+    "start_ms": 3868920,
+    "end_ms": 3873704,
+    "duration_ms": 4784,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3873.848,
+    "text": "The bias for N-strader is a tradeoff between these two elements and how we manage them.",
+    "start_ms": 3873848,
+    "end_ms": 3877448,
+    "duration_ms": 3600,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3878.008,
+    "text": "And in life, often as we reduce bias, we're going to increase model variance.",
+    "start_ms": 3878008,
+    "end_ms": 3881368,
+    "duration_ms": 3360,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3881.912,
+    "text": "Or as we reduce model variants we're going to have to add bias to our model.",
+    "start_ms": 3881912,
+    "end_ms": 3885912,
+    "duration_ms": 4000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3890.264,
+    "text": "Go to keep those low. Alright, so we're still in the 30.",
+    "start_ms": 3890264,
+    "end_ms": 3898528,
+    "duration_ms": 8264,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3899.416,
+    "text": "We're going to try to manage these two things with our regularization parameter.",
+    "start_ms": 3899416,
+    "end_ms": 3902536,
+    "duration_ms": 3120,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3902.536,
+    "text": "Right, and so we had the, let's go back to the equations, we're almost done.",
+    "start_ms": 3902536,
+    "end_ms": 3906136,
+    "duration_ms": 3600,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3906.936,
+    "text": "you so Okay. Now I know you guys stand too slow.",
+    "start_ms": 3906936,
+    "end_ms": 3923816,
+    "duration_ms": 16880,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3924.6,
+    "text": "Come on, English. Thank you. This was Pirate Pranik and Jump Man I can't um Remember, this is our control over bias and variance, right?",
+    "start_ms": 3924600,
+    "end_ms": 3934040,
+    "duration_ms": 9440,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3934.04,
+    "text": "And is this parameter in the, what we've learned so far that lets us control this trade off between bias and variance?",
+    "start_ms": 3934040,
+    "end_ms": 3940040,
+    "duration_ms": 6000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3940.568,
+    "text": "As we make this bigger We're increasing the bias term.",
+    "start_ms": 3940568,
+    "end_ms": 3945032,
+    "duration_ms": 4464,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3945.208,
+    "text": "and reducing the variance term in that earlier equation. As we make this smaller, so as lambda...",
+    "start_ms": 3945208,
+    "end_ms": 3950952,
+    "duration_ms": 5744,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3952.472,
+    "text": "Bigger Big. or lambda implies More bias. Lest Rains. Right, Slor-Landa gives us...",
+    "start_ms": 3952472,
+    "end_ms": 3968488,
+    "duration_ms": 16016,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3968.568,
+    "text": "List bias, more variants. That is a trade-off for controlling.",
+    "start_ms": 3968568,
+    "end_ms": 3971768,
+    "duration_ms": 3200,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3972.216,
+    "text": "Okay, I'm back to slide. we go. So this is, I believe, the end of the lecture.",
+    "start_ms": 3972216,
+    "end_ms": 3979392,
+    "duration_ms": 7176,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3979.392,
+    "text": "So this was the key takeaway for this lecture. This is bias variance trade-off.",
+    "start_ms": 3979392,
+    "end_ms": 3983224,
+    "duration_ms": 3832,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3984.376,
+    "text": "Next lecture, we're going to return to bootstrap and start to analyze what the an empirical estimate of what this variability might be by resampling our data and then running the training process, essentially simulating what this analysis is trying to do in the closed form.",
+    "start_ms": 3984376,
+    "end_ms": 3998318,
+    "duration_ms": 13942,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3998.318,
+    "text": "What happens in expectation over all of our training data sets.",
+    "start_ms": 3998318,
+    "end_ms": 4001096,
+    "duration_ms": 2778,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4001.752,
+    "text": "So that is it, finished early. For those on Zoom, please come to Next Lecture.",
+    "start_ms": 4001752,
+    "end_ms": 4005300,
+    "duration_ms": 3548,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4005.3,
+    "text": "Be more fun. Thank you. Bye everyone.",
+    "start_ms": 4005300,
+    "end_ms": 4009672,
+    "duration_ms": 4372,
+    "word_count": 7,
+    "avg_confidence": 90
+  }
+]

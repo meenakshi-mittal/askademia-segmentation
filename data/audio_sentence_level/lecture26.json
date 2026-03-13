@@ -1,0 +1,4835 @@
+[
+  {
+    "timestamp": 2.296,
+    "text": "Good morning everyone. Thanks for coming to our very last lecture before Thanksgiving.",
+    "start_ms": 2296,
+    "end_ms": 8376,
+    "duration_ms": 6080,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 9.336,
+    "text": "So today's topic is very interesting. So as we promise every week is going to have an entirely new topic after the term and today is just going to be a whole new topic.",
+    "start_ms": 9336,
+    "end_ms": 21704,
+    "duration_ms": 12368,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 21.704,
+    "text": "But before I get into the topic for today, which is clustering, I want to remind you of the campus final course survey and also our internal core survey.",
+    "start_ms": 21704,
+    "end_ms": 31976,
+    "duration_ms": 10272,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 31.976,
+    "text": "So if you scan this QR code or if you go to that link and there's also a post on Ed that you can get access to the internal.",
+    "start_ms": 31976,
+    "end_ms": 41056,
+    "duration_ms": 9080,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 41.56,
+    "text": "Anonymous course e-vow that you can fill out. If you fill out those internal survey and also the campus survey, then each individual person is going to get 0.5% extra bonus point towards your final course grade.",
+    "start_ms": 41560,
+    "end_ms": 56240,
+    "duration_ms": 14680,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 56.24,
+    "text": "Because the class is not curved, that's a really good deal.",
+    "start_ms": 56240,
+    "end_ms": 59240,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 59.24,
+    "text": "The other deal that we usually offer in Data 100 is that if 90% of the class fills out those of the surveys, both internal and the campus survey then we're going to offer everyone who fill that both at a survey and additional 0.5%.",
+    "start_ms": 59240,
+    "end_ms": 76040,
+    "duration_ms": 16800,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 76.04,
+    "text": "So that's a whole percentage point that can... put you in a different great then.",
+    "start_ms": 76040,
+    "end_ms": 80952,
+    "duration_ms": 4912,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 80.952,
+    "text": "We're really interested in getting feedback from different elements of the course that you like or the things that you are suggesting that the improve.",
+    "start_ms": 80952,
+    "end_ms": 88692,
+    "duration_ms": 7740,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 88.692,
+    "text": "In the future semesters again because I keep teaching the course every semester that I can actually get that feedback and implemented and then keep improving the course.",
+    "start_ms": 88692,
+    "end_ms": 98692,
+    "duration_ms": 10000,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 98.692,
+    "text": "I feel like data 100 is now at the stable point where like the homeworks and the core column and everything is a stable but again.",
+    "start_ms": 98692,
+    "end_ms": 106692,
+    "duration_ms": 8000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 106.692,
+    "text": "any feedback that you have in terms of refining the course a little bit further that will help us greatly.",
+    "start_ms": 106692,
+    "end_ms": 113412,
+    "duration_ms": 6720,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 113.412,
+    "text": "So the link is there. There's all same permission on Ed.",
+    "start_ms": 113412,
+    "end_ms": 117092,
+    "duration_ms": 3680,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 117.092,
+    "text": "So please fill out both of the surveys. I think both of them or the campus surveys going to be due on Sunday.",
+    "start_ms": 117092,
+    "end_ms": 125092,
+    "duration_ms": 8000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 126.168,
+    "text": "At the end of the RR week so that's the deadline that you usually have for being able to complete both of the service.",
+    "start_ms": 126168,
+    "end_ms": 134668,
+    "duration_ms": 8500,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 134.668,
+    "text": "So with that added away today's lecture 26 so we're going to talk about clustering so this is just one lecture on one topic.",
+    "start_ms": 134668,
+    "end_ms": 142868,
+    "duration_ms": 8200,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 142.868,
+    "text": "I'll try to cover a few things or two main algorithms and treat loss functions and clustering which is very exciting.",
+    "start_ms": 142868,
+    "end_ms": 150868,
+    "duration_ms": 8000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 150.868,
+    "text": "and then we will move on to neural networks, onto user lecture and then we'll come back on the Thursday lecture of the last week of the instruction to talk about large language models and also wrap up data 100 for you.",
+    "start_ms": 150868,
+    "end_ms": 165208,
+    "duration_ms": 14340,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 165.208,
+    "text": "So I'm going to start by just introducing clustering and giving you some examples of different tasks that we can do with clustering.",
+    "start_ms": 165208,
+    "end_ms": 174828,
+    "duration_ms": 9620,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 174.828,
+    "text": "Clustering is a really powerful technique in terms of the fact that it can do sophisticated modeling for us, and it can also help us do pre-processing in the data.",
+    "start_ms": 174828,
+    "end_ms": 185808,
+    "duration_ms": 10980,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 185.808,
+    "text": "And it has also great categories of applications as well.",
+    "start_ms": 185808,
+    "end_ms": 189727,
+    "duration_ms": 3919,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 189.727,
+    "text": "So in terms of where we are in the entire taxonomy of machine learning, we had seen a bunch of supervised learning algorithms, and we had also seen one example of unsupervised learning algorithm.",
+    "start_ms": 189727,
+    "end_ms": 201048,
+    "duration_ms": 11321,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 201.048,
+    "text": "So what you're seeing in the right hand side is that clustering is also an unsupervised learning algorithm.",
+    "start_ms": 201048,
+    "end_ms": 207128,
+    "duration_ms": 6080,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 207.128,
+    "text": "So what was supervised learning algorithm? Remember that supervised learning algorithm is any algorithm that is learning a function that maps an input to an output.",
+    "start_ms": 207128,
+    "end_ms": 217208,
+    "duration_ms": 10080,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 217.208,
+    "text": "So for example, you have input on different house features and you're doing house price prediction.",
+    "start_ms": 217208,
+    "end_ms": 222088,
+    "duration_ms": 4880,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 222.088,
+    "text": "So that's the regression task. We have also seen classification tasks using logistic regression, right?",
+    "start_ms": 222088,
+    "end_ms": 227688,
+    "duration_ms": 5600,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 227.688,
+    "text": "So all of those cases that we have input features and then we also have targets in terms of outputs that can be real value numbers or scalar values or classification, those are categories of supervised learning algorithms.",
+    "start_ms": 227688,
+    "end_ms": 242968,
+    "duration_ms": 15280,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 242.968,
+    "text": "In unsupervised learning algorithms, we talked about the fact that either we don't have the labels or we don't want to use the labels, but we're just using the characteristics and the data in order to learn some information from the underlying pattern in our feature space.",
+    "start_ms": 242968,
+    "end_ms": 258408,
+    "duration_ms": 15440,
+    "word_count": 47,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 258.408,
+    "text": "We had seen dimensional reproduction using principal component analysis in the previous week, which is very helpful in terms of reducing dimensionality of your feature space into principal components that then you can use in order to do modeling before you go into any modeling or before you do any kind of visualization in the data.",
+    "start_ms": 258408,
+    "end_ms": 278448,
+    "duration_ms": 20040,
+    "word_count": 56,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 278.448,
+    "text": "We also have clustering that we're going to talk about today, which in that case, we are trying to segment our data points into different clusters or categories.",
+    "start_ms": 278448,
+    "end_ms": 288448,
+    "duration_ms": 10000,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 288.448,
+    "text": "or categories. So we're going to take a look at different kinds of examples of clustering algorithms that will help us do that.",
+    "start_ms": 288448,
+    "end_ms": 295728,
+    "duration_ms": 7280,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 295.728,
+    "text": "But again, in clustering algorithms, we're assuming that we don't have the labels either.",
+    "start_ms": 295728,
+    "end_ms": 299848,
+    "duration_ms": 4120,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 299.848,
+    "text": "We don't have the labels or we're just discarding the label and not using them in the clustering kind of process.",
+    "start_ms": 299848,
+    "end_ms": 306328,
+    "duration_ms": 6480,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 306.776,
+    "text": "So let me walk you through three examples. These are examples that I recently added to the slides so that you have like more sense of how clustering can be used in different fields and different kind of application.",
+    "start_ms": 306776,
+    "end_ms": 320456,
+    "duration_ms": 13680,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 320.456,
+    "text": "One example is image compression. So digital images are generally large in order to transmit them over the web or store them.",
+    "start_ms": 320456,
+    "end_ms": 329496,
+    "duration_ms": 9040,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 329.496,
+    "text": "We're spending a lot of resources. So one way is to simplify the visual information that we have on the images so that then the image is compressed using minimum amount of, or the minimum required amount of kind of color features or different channels so that the image can still convey the thing that it wants to convey, but then it is compressed in terms of the space that it takes.",
+    "start_ms": 329496,
+    "end_ms": 352736,
+    "duration_ms": 23240,
+    "word_count": 72,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 352.736,
+    "text": "One way to do it is using clustering. This is just one way to do doing image compression or different techniques that I'm going to talk about them briefly next.",
+    "start_ms": 352736,
+    "end_ms": 362936,
+    "duration_ms": 10200,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 362.936,
+    "text": "But one way to do it is to simplify color information that we have in the images.",
+    "start_ms": 362936,
+    "end_ms": 368216,
+    "duration_ms": 5280,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 368.216,
+    "text": "So what if we can use the pixels on the image?",
+    "start_ms": 368216,
+    "end_ms": 371491,
+    "duration_ms": 3275,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 371.491,
+    "text": "So each pixel has a color, right? RGB value, if it's a color, a colored image.",
+    "start_ms": 371491,
+    "end_ms": 377176,
+    "duration_ms": 5685,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 377.176,
+    "text": "And what we can do is actually cluster or categorize pixels with different kind of color values into different clusters and then simplify the color in each cluster using only a unified or a single color.",
+    "start_ms": 377176,
+    "end_ms": 392616,
+    "duration_ms": 15440,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 392.616,
+    "text": "So meaning that we're grouping similar colors together and then we're going to represent all of the colors in one cluster using the color in the center of that cluster.",
+    "start_ms": 392616,
+    "end_ms": 402376,
+    "duration_ms": 9760,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 402.376,
+    "text": "That's just a representation. So the diversity of the colors that you might see like different versions of red or different versions of black or gray are going to be simplified into like one kind of representative color for that specific cluster.",
+    "start_ms": 402376,
+    "end_ms": 419016,
+    "duration_ms": 16640,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 419.016,
+    "text": "If the lecture has to have something about my cat, so this is an example of image compression that I ran on the picture of Pishi.",
+    "start_ms": 419016,
+    "end_ms": 428256,
+    "duration_ms": 9240,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 428.256,
+    "text": "And what you can see is the original image. So I always like to think about Pishi as being only having two colors.",
+    "start_ms": 428256,
+    "end_ms": 435736,
+    "duration_ms": 7480,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 435.736,
+    "text": "But as you're seeing the compressed image on the right hand side, depending on the number of clusters, it starts from two and then it goes all over until, I'm not sure if you're seeing that, oh, if you take a look at, for example, the...",
+    "start_ms": 435736,
+    "end_ms": 449376,
+    "duration_ms": 13640,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 450.008,
+    "text": "the color of the eye. It starts from two clusters to be like grayish, whiteish, and then it goes all the way to actually showing the green kind of color.",
+    "start_ms": 450008,
+    "end_ms": 460932,
+    "duration_ms": 10924,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 460.932,
+    "text": "So that's kind of how we're simplifying colors. So all of these pixels are clustered together into two clusters initially.",
+    "start_ms": 460932,
+    "end_ms": 468183,
+    "duration_ms": 7251,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 468.183,
+    "text": "So probably black and white or like a representative of black, brown, the entire pixel under a representative white, and then it tries to diversify as I increase the resolution or as I increase the number of clusters that it can accept.",
+    "start_ms": 468183,
+    "end_ms": 483208,
+    "duration_ms": 15025,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 483.32,
+    "text": "There are other different image compression techniques that are beyond the scope for data 100.",
+    "start_ms": 483320,
+    "end_ms": 488640,
+    "duration_ms": 5320,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 488.64,
+    "text": "This example is also beyond the scope. This is just an example to show you that it actually, once you learn the techniques, there are different applications that you can use it for and it's truly fun.",
+    "start_ms": 488640,
+    "end_ms": 498560,
+    "duration_ms": 9920,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 498.56,
+    "text": "So transform based version, prediction based image compression and also using deep learning in order to do image compression using auto encoders and whatnot.",
+    "start_ms": 498560,
+    "end_ms": 510200,
+    "duration_ms": 11640,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 510.296,
+    "text": "Clustering can also be used in social networks. So if you have a social network, and a social network platform, and you want to basically categorize individuals who have more interactions with each other into different clusters, and do some kind of community modeling, or be able to make recommendations of like, this is a connection recommendation for a person, because like you interact with these individuals, and this individual, this third individual is also kind of interacting with the same group of people, maybe you want to connect with them and make those kinds of recommendations or also doing some marketing to a cluster with the specific characteristics, kind of user analysis.",
+    "start_ms": 510296,
+    "end_ms": 551411,
+    "duration_ms": 41115,
+    "word_count": 113,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 551.411,
+    "text": "All of these kinds of studies require doing some sort of clustering because we don't have the labels.",
+    "start_ms": 551411,
+    "end_ms": 559556,
+    "duration_ms": 8145,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 559.556,
+    "text": "We don't actually know for fact whether individuals are within a cluster or a community or not.",
+    "start_ms": 559556,
+    "end_ms": 564544,
+    "duration_ms": 4988,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 564.544,
+    "text": "One thing that we We can look at the interactions that they have with each other and then be able to cluster behaviors or cluster communities separately.",
+    "start_ms": 564544,
+    "end_ms": 575296,
+    "duration_ms": 10752,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 575.296,
+    "text": "This is an example like synthetic example from, for example, something that's called karate club.",
+    "start_ms": 575296,
+    "end_ms": 585096,
+    "duration_ms": 9800,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 585.096,
+    "text": "What you can see is that the notes on this kind of network are members of the club and then the edges are interactions that they have with them.",
+    "start_ms": 585096,
+    "end_ms": 593696,
+    "duration_ms": 8600,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 593.696,
+    "text": "And if you try to actually cluster all of these individuals into four different clusters, what you would see is that, okay, these are the people that these individuals are going to have more interaction with.",
+    "start_ms": 593696,
+    "end_ms": 604256,
+    "duration_ms": 10560,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 604.256,
+    "text": "And then if you want to learn communities and information from it, this is one way that you can do so.",
+    "start_ms": 604256,
+    "end_ms": 609656,
+    "duration_ms": 5400,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 610.584,
+    "text": "One last example is that plastering can also be used on large data sets such as climate data sets and be used in climate sciences.",
+    "start_ms": 610584,
+    "end_ms": 619904,
+    "duration_ms": 9320,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 619.904,
+    "text": "So if you want to for example identify regional climate trends or global climate trends and be able to do environmental modeling and things like that and do monitoring of the environmental trends, we can actually do that with clustering.",
+    "start_ms": 619904,
+    "end_ms": 636424,
+    "duration_ms": 16520,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 636.424,
+    "text": "So this is an example that I ran on a data set that has the temperature data or average temperature data from different regions.",
+    "start_ms": 636424,
+    "end_ms": 644024,
+    "duration_ms": 7600,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 644.024,
+    "text": "And if you go ahead and cluster them into four different groups and four different groups are also shown by that color map from zero the way to tree.",
+    "start_ms": 644024,
+    "end_ms": 652624,
+    "duration_ms": 8600,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 652.624,
+    "text": "What you're seeing is that, okay, these different regions now show a similar pattern in terms of the temperature.",
+    "start_ms": 652624,
+    "end_ms": 659224,
+    "duration_ms": 6600,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 659.224,
+    "text": "so you can kind of find and validate, okay, like, whether the point on California has the same temperature and has similar temperature kind of patterns.",
+    "start_ms": 659224,
+    "end_ms": 671704,
+    "duration_ms": 12480,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 672.824,
+    "text": "Compared to Hawaii or not so this is kind of one example that a simple algorithm can handle a very large unlabeled data set very efficiently to provide some kind of information for us to use.",
+    "start_ms": 672824,
+    "end_ms": 684944,
+    "duration_ms": 12120,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 684.944,
+    "text": "I also want to put it out there that clustering Hand by itself be the modeling that you are doing on a data set or it can be used as a pre-processing that you will do in order to do feature extraction So you could do clustering, learn clusters, and use the cluster assignment as a feature of the data.",
+    "start_ms": 684944,
+    "end_ms": 704424,
+    "duration_ms": 19480,
+    "word_count": 60,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 704.424,
+    "text": "And then later on, you can actually use that in the downstream kind of any modeling that you want to do.",
+    "start_ms": 704424,
+    "end_ms": 709784,
+    "duration_ms": 5360,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 709.784,
+    "text": "This is kind of beyond the scope for data 100, but just know that everything that you're learning can be pieces of puzzle that you're putting together in order to do proper modeling and proper feature engineering altogether.",
+    "start_ms": 709784,
+    "end_ms": 721224,
+    "duration_ms": 11440,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 722.072,
+    "text": "So let's now get into talking about different versions of clustering algorithms that we'll see and what is kind of the general taxonomy of clustering approaches.",
+    "start_ms": 722072,
+    "end_ms": 735832,
+    "duration_ms": 13760,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 735.832,
+    "text": "In clustering, what we have is we have two separate kind of categories of learning.",
+    "start_ms": 735832,
+    "end_ms": 741912,
+    "duration_ms": 6080,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 741.912,
+    "text": "There is one category of learning that is hierarchical and there is another category of learning algorithms that are partitional.",
+    "start_ms": 741912,
+    "end_ms": 749912,
+    "duration_ms": 8000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 749.912,
+    "text": "So hierarchical means that what we're trying to do is we're trying to assume that all of the data points that we have, all of those unlabeled data points, each individual data point is one cluster.",
+    "start_ms": 749912,
+    "end_ms": 760672,
+    "duration_ms": 10760,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 760.672,
+    "text": "So initially, if you're starting from a training set of size n, for example, you have n different clusters.",
+    "start_ms": 760672,
+    "end_ms": 766572,
+    "duration_ms": 5900,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 766.572,
+    "text": "If your goal is to go down to having only four clusters or three clusters, what we will do is hierarchically, we'll go ahead and link data points together and combine them together and will form more complex and more complex or bigger and bigger clusters, a plentil the point that we have four or three or however many clusters that you want.",
+    "start_ms": 766572,
+    "end_ms": 786992,
+    "duration_ms": 20420,
+    "word_count": 63,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 786.992,
+    "text": "We're going to talk about different kind of linking mechanisms and different ways that we'll try to combine clusters together in the second half of today's lecture.",
+    "start_ms": 786992,
+    "end_ms": 795592,
+    "duration_ms": 8600,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 795.592,
+    "text": "In terms of the Partitional Approaches, Partitional Approaches generally assume that you have a big data set and you want to find a criteria to partition different parts into different clusters.",
+    "start_ms": 795592,
+    "end_ms": 806652,
+    "duration_ms": 11060,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 806.652,
+    "text": "It's a different approach. So there is bottom-up approach versus top-to-bottom approach that we have between hierarchical and partitional approaches.",
+    "start_ms": 806652,
+    "end_ms": 814462,
+    "duration_ms": 7810,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 814.462,
+    "text": "There are different versions of partitional approaches and for the purpose of data 100 we're going to only see one algorithm of that category and we're going to talk about k-minis clustering.",
+    "start_ms": 814462,
+    "end_ms": 825725,
+    "duration_ms": 11263,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 825.725,
+    "text": "It's going to be very useful, it's going to be very simple.",
+    "start_ms": 825725,
+    "end_ms": 828978,
+    "duration_ms": 3253,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 828.978,
+    "text": "I'm going to walk you through the algorithm and I have visuals to show you how the algorithm actually runs In the demo code that I will not go over in the lecture, but you can actually see it on the website.",
+    "start_ms": 828978,
+    "end_ms": 841711,
+    "duration_ms": 12733,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 841.711,
+    "text": "You can actually see how it can be implemented. But then again, there is off-the-shelf K-means function that you can use in order to apply K-means to a data set and then transform your data into assigning it into different clusters.",
+    "start_ms": 841711,
+    "end_ms": 857151,
+    "duration_ms": 15440,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 857.56,
+    "text": "So let's go down and then see K-min's clustering. What is K-min's clustering?",
+    "start_ms": 857560,
+    "end_ms": 864060,
+    "duration_ms": 6500,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 864.06,
+    "text": "K-min's clustering has three pieces. There is initialization piece and there is two step in the training piece.",
+    "start_ms": 864060,
+    "end_ms": 872080,
+    "duration_ms": 8020,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 872.08,
+    "text": "So the initialization piece says that assume that you want to cluster your data set into K different clusters, right?",
+    "start_ms": 872080,
+    "end_ms": 881760,
+    "duration_ms": 9680,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 881.76,
+    "text": "So this is a hyperparameter. By now you know what hyperparameters mean.",
+    "start_ms": 881760,
+    "end_ms": 886560,
+    "duration_ms": 4800,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 886.56,
+    "text": "This is something that you're deciding ahead of time, and we're going to talk about how we can actually figure out and try to optimize for the right value for k.",
+    "start_ms": 886560,
+    "end_ms": 896000,
+    "duration_ms": 9440,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 896.0,
+    "text": "But let's assume that we have a k that we picked as a priori.",
+    "start_ms": 896000,
+    "end_ms": 901760,
+    "duration_ms": 5760,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 901.76,
+    "text": "And then what we're going to do is we will say that I'm going to randomly place k centers on the feature space.",
+    "start_ms": 901760,
+    "end_ms": 910240,
+    "duration_ms": 8480,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 910.488,
+    "text": "So this is the initialization phase. This is kind of similar to us doing great in this then we had no idea where we're going but we tried to actually do that.",
+    "start_ms": 910488,
+    "end_ms": 919528,
+    "duration_ms": 9040,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 919.528,
+    "text": "Uh do initialization from some point for all the parameters and then we were incrementally trying to update and do a local search version in order to get to the optimum.",
+    "start_ms": 919528,
+    "end_ms": 929208,
+    "duration_ms": 9680,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 929.208,
+    "text": "This is kind of the same thing we don't know how to get to the optimum but what we can do is that we we can say that I'm going to actually start from a random place and then incrementally move these centers to the right places that they should be.",
+    "start_ms": 929208,
+    "end_ms": 943528,
+    "duration_ms": 14320,
+    "word_count": 51,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 943.528,
+    "text": "So that's why the initialization is random. So we randomly place K centers and then the actual algorithm starts.",
+    "start_ms": 943528,
+    "end_ms": 951048,
+    "duration_ms": 7520,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 951.048,
+    "text": "The actual algorithm has two parts. There is a part that it says that once you have the centers on the future space, let's go ahead and uh, color all the points according to the closest center.",
+    "start_ms": 951048,
+    "end_ms": 965428,
+    "duration_ms": 14380,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 965.72,
+    "text": "This is that is called cluster assignment. So I have all of those clusters.",
+    "start_ms": 965720,
+    "end_ms": 969905,
+    "duration_ms": 4185,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 969.905,
+    "text": "I put all of those cluster centers and now I just want to associate points to the centers.",
+    "start_ms": 969905,
+    "end_ms": 975617,
+    "duration_ms": 5712,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 975.617,
+    "text": "It's kind of natural that I'm going to allocate points to the cluster that is closest to that point because I want to actually have a sense of segmenting this entire data set and then segmenting means that the data points should be closer to their centers.",
+    "start_ms": 975617,
+    "end_ms": 989553,
+    "duration_ms": 13936,
+    "word_count": 47,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 989.553,
+    "text": "So that's the first thing. The second step that I would do is after all of the points are assigned to those clusters, what I would do is I would double check to make sure that the centers are actually the centers of those clusters.",
+    "start_ms": 989553,
+    "end_ms": 1004280,
+    "duration_ms": 14727,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1005.16,
+    "text": "Because we can randomly initialize centers somewhere that is not necessarily the center of the data points, but once we allocate points into the clusters, we might want to move the centers back to the center of the points that are assigned to those clusters.",
+    "start_ms": 1005160,
+    "end_ms": 1019320,
+    "duration_ms": 14160,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1019.896,
+    "text": "That's a lot of words. Let's see an example. So the example is that this is my raw data set.",
+    "start_ms": 1019896,
+    "end_ms": 1024896,
+    "duration_ms": 5000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1024.896,
+    "text": "As you can see, there is no label nothing going on here.",
+    "start_ms": 1024896,
+    "end_ms": 1027896,
+    "duration_ms": 3000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1027.896,
+    "text": "And this is a two-dimensional feature space. We can run clustering in a higher dimensional space and it can actually handle it.",
+    "start_ms": 1027896,
+    "end_ms": 1036067,
+    "duration_ms": 8171,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1036.067,
+    "text": "But for the visualization purpose, I picked this data set that only the two features and this data says that the visualization is simpler.",
+    "start_ms": 1036067,
+    "end_ms": 1044824,
+    "duration_ms": 8757,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1044.824,
+    "text": "So the initialization step says that go ahead and initialize two random centers.",
+    "start_ms": 1044824,
+    "end_ms": 1049699,
+    "duration_ms": 4875,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1049.699,
+    "text": "We'll do that. And as you can imagine, because we did not control for the initialization piece, the centers can actually be initialized anywhere.",
+    "start_ms": 1049699,
+    "end_ms": 1058824,
+    "duration_ms": 9125,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1059.64,
+    "text": "But the thing that we'll do in the next step is that we're going to actually go ahead and color the points according to the closest center of the cluster.",
+    "start_ms": 1059640,
+    "end_ms": 1070276,
+    "duration_ms": 10636,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1070.276,
+    "text": "This is just... Class of assignment. So what I'll do is I'll basically go ahead and say that okay looking at this point right here I'm looking at the distance of this point to the center blue and the center orange and it looks like that the center blue is closer so I'm going to color it as blue But for example, I point right here is closer to the orange Center so it's going to be colored as orange So what that's what we're going to do and this this is like the Uh assignments that these points are going to get.",
+    "start_ms": 1070276,
+    "end_ms": 1101768,
+    "duration_ms": 31492,
+    "word_count": 103,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1102.328,
+    "text": "Now you can see why I have the second step of moving the centers to the center of the clusters, right?",
+    "start_ms": 1102328,
+    "end_ms": 1109528,
+    "duration_ms": 7200,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1109.528,
+    "text": "Because now my centers are not necessarily center centers, so they need to be moved to be the center of those points.",
+    "start_ms": 1109528,
+    "end_ms": 1116928,
+    "duration_ms": 7400,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1116.928,
+    "text": "So what we'll do is we'll take a look at this cluster right here.",
+    "start_ms": 1116928,
+    "end_ms": 1120328,
+    "duration_ms": 3400,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1120.328,
+    "text": "We will take a look at this cluster right here.",
+    "start_ms": 1120328,
+    "end_ms": 1123928,
+    "duration_ms": 3600,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1123.928,
+    "text": "We will calculate the center actually, and then we'll move these data points to the center of those clusters that they have.",
+    "start_ms": 1123928,
+    "end_ms": 1131928,
+    "duration_ms": 8000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1131.928,
+    "text": "This is one full iteration. Eteration 0 is just randomly initialized in case centers, in iteration 1 what we did was center cluster assignment center update.",
+    "start_ms": 1131928,
+    "end_ms": 1143208,
+    "duration_ms": 11280,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1143.208,
+    "text": "Then we'll do again cluster assignment center update. And we'll repeat this process until convergence.",
+    "start_ms": 1143208,
+    "end_ms": 1149048,
+    "duration_ms": 5840,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1149.048,
+    "text": "And we're going to talk about what convergence is going to look like.",
+    "start_ms": 1149048,
+    "end_ms": 1151928,
+    "duration_ms": 2880,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1151.928,
+    "text": "So repeating these two steps that we have, up until the point that we see convergence.",
+    "start_ms": 1151928,
+    "end_ms": 1157688,
+    "duration_ms": 5760,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1157.688,
+    "text": "Convergence generally means that if the centers don't move or the colors don't move, that's the point that we would say that we have reached convergence.",
+    "start_ms": 1157688,
+    "end_ms": 1166888,
+    "duration_ms": 9200,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1166.888,
+    "text": "And after that point, if you run it further, then nothing is going to change, so you might as well want to end that.",
+    "start_ms": 1166888,
+    "end_ms": 1171848,
+    "duration_ms": 4960,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1172.968,
+    "text": "I'll go right them right there. Okay, let's go down for more steps.",
+    "start_ms": 1172968,
+    "end_ms": 1177194,
+    "duration_ms": 4226,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1177.194,
+    "text": "So that was iteration one. Now my centers are in a different position.",
+    "start_ms": 1177194,
+    "end_ms": 1181744,
+    "duration_ms": 4550,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1181.744,
+    "text": "So if I go ahead and color the points, then the points are going to be colored like this.",
+    "start_ms": 1181744,
+    "end_ms": 1187244,
+    "duration_ms": 5500,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1187.244,
+    "text": "In order to see the differences better, I suggest that you only take a like or keep track of the center of the blue cluster and also all of these points right over here so that you can see the differences.",
+    "start_ms": 1187244,
+    "end_ms": 1199551,
+    "duration_ms": 12307,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1199.551,
+    "text": "Other points, other orange points are really hard to track.",
+    "start_ms": 1199551,
+    "end_ms": 1202244,
+    "duration_ms": 2693,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1203.096,
+    "text": "So we colored everything, but now if you take a look, for example, again, take a look at the center of the blue cluster.",
+    "start_ms": 1203096,
+    "end_ms": 1212096,
+    "duration_ms": 9000,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1212.096,
+    "text": "The issue is that the center of the blue cluster is not so much in the center because I have a blob of all of those blue points down there.",
+    "start_ms": 1212096,
+    "end_ms": 1219096,
+    "duration_ms": 7000,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1219.096,
+    "text": "So the center needs to be moved down a little bit closer to kind of aided average of the number of points that I have in the two sides of the center.",
+    "start_ms": 1219096,
+    "end_ms": 1229096,
+    "duration_ms": 10000,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1229.096,
+    "text": "So we're recolored them already and now removing them. So notice from here to here that the blue center actually shifted a little bit down.",
+    "start_ms": 1229096,
+    "end_ms": 1239216,
+    "duration_ms": 10120,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1239.928,
+    "text": "So, centers move, therefore we're expecting that now the colors need to also be changed.",
+    "start_ms": 1239928,
+    "end_ms": 1245928,
+    "duration_ms": 6000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1245.928,
+    "text": "So what I'm going to do is color them one more time.",
+    "start_ms": 1245928,
+    "end_ms": 1248928,
+    "duration_ms": 3000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1248.928,
+    "text": "Again, notice that now I only have only these two blue points right here, as opposed to I had like five before probably.",
+    "start_ms": 1248928,
+    "end_ms": 1256928,
+    "duration_ms": 8000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1256.696,
+    "text": "Okay, so coloring them again and then taking a look at the centers.",
+    "start_ms": 1256696,
+    "end_ms": 1261496,
+    "duration_ms": 4800,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1261.496,
+    "text": "So the center of the blue cluster is right here, but it can actually be moved a little bit closer to be the actual center.",
+    "start_ms": 1261496,
+    "end_ms": 1269096,
+    "duration_ms": 7600,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1269.096,
+    "text": "So if I go ahead and move the centers, that's what you're going to see.",
+    "start_ms": 1269096,
+    "end_ms": 1273110,
+    "duration_ms": 4014,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1273.11,
+    "text": "So one more time, the center was the center was here and now move the little bit down.",
+    "start_ms": 1273110,
+    "end_ms": 1278536,
+    "duration_ms": 5426,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1278.904,
+    "text": "I'll go ahead again and color the clusters so coloring the clusters now is going to give me only one blue point right there And then I can actually go ahead and Move the centers one more time and if I move the centers one more time and then colored them again I won't see any changes in the coloring if I don't see changes in the coloring What does that mean with the centers move again?",
+    "start_ms": 1278904,
+    "end_ms": 1301704,
+    "duration_ms": 22800,
+    "word_count": 77,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1303.864,
+    "text": "If colors are not changing, centers are not changing. If centers are not changing, again, the colors are not going to change.",
+    "start_ms": 1303864,
+    "end_ms": 1310584,
+    "duration_ms": 6720,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1310.584,
+    "text": "So the algorithm is a stable at this point. So this is the point that the algorithm is going to converge and because there is no color change and no center change, if we went ahead and tried iteration 6 or 7 and whatnot, we would not be able to see any changes.",
+    "start_ms": 1310584,
+    "end_ms": 1327144,
+    "duration_ms": 16560,
+    "word_count": 53,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1327.144,
+    "text": "So that shows us that there is convergence going on.",
+    "start_ms": 1327144,
+    "end_ms": 1331304,
+    "duration_ms": 4160,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1331.304,
+    "text": "and actually for iteration 4 to iteration 5. Um, we yeah, that's the same thing.",
+    "start_ms": 1331304,
+    "end_ms": 1338184,
+    "duration_ms": 6880,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1338.184,
+    "text": "Centres moved us lightly, but because the colors didn't change, um, then the centers are not going to change after iteration five, um, and moving forward.",
+    "start_ms": 1338184,
+    "end_ms": 1346824,
+    "duration_ms": 8640,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1347.992,
+    "text": "So that was Cayman's clustering. That's the easiest algorithm you will learn in data 100.",
+    "start_ms": 1347992,
+    "end_ms": 1353672,
+    "duration_ms": 5680,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1354.312,
+    "text": "And actually the next one is also easy, which is the hierarchical clustering.",
+    "start_ms": 1354312,
+    "end_ms": 1358632,
+    "duration_ms": 4320,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1359.192,
+    "text": "But that's kind of the entire gist of Cayman's clustering.",
+    "start_ms": 1359192,
+    "end_ms": 1362392,
+    "duration_ms": 3200,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1362.392,
+    "text": "Just note that it's a very powerful technique. It can be applied on to unlabeled data.",
+    "start_ms": 1362392,
+    "end_ms": 1368359,
+    "duration_ms": 5967,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1368.359,
+    "text": "It has different implications for larger data sets, not unlabeled data sets, or data sets that labels are noisy and you don't want to rely on the and labels.",
+    "start_ms": 1368359,
+    "end_ms": 1377728,
+    "duration_ms": 9369,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1377.728,
+    "text": "In all of those cases, you might want to actually try a combination of different things, including doing clustering.",
+    "start_ms": 1377728,
+    "end_ms": 1383752,
+    "duration_ms": 6024,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1383.752,
+    "text": "For those who have heard about canyons neighbors, if you've not heard about it, forget about it, don't listen to me for the next 45 seconds.",
+    "start_ms": 1383752,
+    "end_ms": 1391552,
+    "duration_ms": 7800,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1391.552,
+    "text": "But if you've heard about canyons in the ears neighbors in data 8, know that it's an entirely different algorithm than canyons clustering.",
+    "start_ms": 1391552,
+    "end_ms": 1399601,
+    "duration_ms": 8049,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1399.601,
+    "text": "They both have canyons, but they are entirely different things.",
+    "start_ms": 1399601,
+    "end_ms": 1404152,
+    "duration_ms": 4551,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1404.152,
+    "text": "Cameous clustering is unsupervised. It is used for clustering purposes.",
+    "start_ms": 1404152,
+    "end_ms": 1411152,
+    "duration_ms": 7000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1411.152,
+    "text": "K-nearest neighbors is actually used mostly for classifications. Sometimes it's also used for regression as well, but generally know that it's kind of a different technique that's used.",
+    "start_ms": 1411152,
+    "end_ms": 1424192,
+    "duration_ms": 13040,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1424.751,
+    "text": "And it doesn't cluster items. It just looks that the nearest neighbors to make a decision about what the label or what the outcome for a data point is going to be.",
+    "start_ms": 1424751,
+    "end_ms": 1434671,
+    "duration_ms": 9920,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1434.671,
+    "text": "So, the entire different things just want to put it out there that you don't get these two algorithms confused with each other.",
+    "start_ms": 1434671,
+    "end_ms": 1441872,
+    "duration_ms": 7201,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1442.104,
+    "text": "Questions so far? There are a lot of questions on Slido, but yes, question.",
+    "start_ms": 1442104,
+    "end_ms": 1448488,
+    "duration_ms": 6384,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1451.192,
+    "text": "Does Kamin always convert? Was that a question? I think it will converge and then we're going to take a look at the metric that we're going to use in order to measure camions or measure the quality of camions and because it is always trying to minimize a certain objective function, there is a minimum point that it will achieve.",
+    "start_ms": 1451192,
+    "end_ms": 1474496,
+    "duration_ms": 23304,
+    "word_count": 61,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1474.496,
+    "text": "But the issue is that came is not guaranteed to find the global optimum.",
+    "start_ms": 1474496,
+    "end_ms": 1480216,
+    "duration_ms": 5720,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1480.216,
+    "text": "Every time that you saw us randomly initialize something and then make iterative movement, think about that as a local search algorithm, that's a good thing that you will learn in CS188.",
+    "start_ms": 1480216,
+    "end_ms": 1491496,
+    "duration_ms": 11280,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1491.496,
+    "text": "If you take 188, I tell students that you will learn a lot of like...",
+    "start_ms": 1491496,
+    "end_ms": 1495496,
+    "duration_ms": 4000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1495.928,
+    "text": "need techniques that other courses might not teach you from one aviate so that's a that's a good course to take some time but Because it's a local search algorithm and there is no direct solution for us actually finding the optimum number of clusters and then finding the optimum placement for the clusters.",
+    "start_ms": 1495928,
+    "end_ms": 1515048,
+    "duration_ms": 19120,
+    "word_count": 54,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1515.048,
+    "text": "We're not guaranteed to reach the global optimum. But we will reach some stable point.",
+    "start_ms": 1515048,
+    "end_ms": 1522696,
+    "duration_ms": 7648,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1525.24,
+    "text": "Good question. So let's not talk about this loss function.",
+    "start_ms": 1525240,
+    "end_ms": 1528816,
+    "duration_ms": 3576,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1528.816,
+    "text": "I feel like I'm the loss function person except for I think Joey taught us entropy loss.",
+    "start_ms": 1528816,
+    "end_ms": 1536831,
+    "duration_ms": 8015,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1536.831,
+    "text": "But let's take a look at this inertia and build the intuition behind why inertia is a loss function that came in clustering is trying to optimize.",
+    "start_ms": 1536831,
+    "end_ms": 1548851,
+    "duration_ms": 12020,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1548.851,
+    "text": "So say if I pick the same data set that we have before and I go by randomly saying that I want to put four clusters, right?",
+    "start_ms": 1548851,
+    "end_ms": 1557160,
+    "duration_ms": 8309,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1557.16,
+    "text": "And I randomly initialize the placement of four different center of clusters, and then at the end of the algorithm, I get those four clusters.",
+    "start_ms": 1557160,
+    "end_ms": 1565326,
+    "duration_ms": 8166,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1565.326,
+    "text": "Let's assume that I go ahead and redo exactly the same thing multiple times with different random initializations.",
+    "start_ms": 1565326,
+    "end_ms": 1571818,
+    "duration_ms": 6492,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1571.818,
+    "text": "So the seed was set to be 25 then 29 then 40, so that's why the initializations are different.",
+    "start_ms": 1571818,
+    "end_ms": 1578768,
+    "duration_ms": 6950,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1578.768,
+    "text": "That's why depending on the initialization, you might land into at different local optimum solutions, right?",
+    "start_ms": 1578768,
+    "end_ms": 1587320,
+    "duration_ms": 8552,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1587.32,
+    "text": "So you're seeing ABC as different kinds of clustering that we're doing.",
+    "start_ms": 1587320,
+    "end_ms": 1593320,
+    "duration_ms": 6000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1593.32,
+    "text": "Take a look at them, which one do you like better?",
+    "start_ms": 1593320,
+    "end_ms": 1596440,
+    "duration_ms": 3120,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1596.76,
+    "text": "That's the first slide of the day. There's good question about whether the radius of those clusters are the same.",
+    "start_ms": 1596760,
+    "end_ms": 1626584,
+    "duration_ms": 29824,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1626.584,
+    "text": "We're going to talk about the issue it came in the clustering and why we're going to see a and that you're a different clustering algorithm.",
+    "start_ms": 1626584,
+    "end_ms": 1633444,
+    "duration_ms": 6860,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1633.444,
+    "text": "And we'll give you intuition about. In different cases handling different datasets.",
+    "start_ms": 1633444,
+    "end_ms": 1638768,
+    "duration_ms": 5324,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1639.608,
+    "text": "Which one of them is going to be more suitable?",
+    "start_ms": 1639608,
+    "end_ms": 1641888,
+    "duration_ms": 2280,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1641.888,
+    "text": "You're good. I mean, I wonder if we have 150 folks before Thanksgiving.",
+    "start_ms": 1641888,
+    "end_ms": 1649464,
+    "duration_ms": 7576,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1649.752,
+    "text": "Yay, we do. Okay, let's see. Most of you picked A and you thought that A is a better clustering for K equal to four.",
+    "start_ms": 1649752,
+    "end_ms": 1659683,
+    "duration_ms": 9931,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1659.683,
+    "text": "There's one thing that better K equal to four was necessary at all or not.",
+    "start_ms": 1659683,
+    "end_ms": 1664236,
+    "duration_ms": 4553,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1664.236,
+    "text": "But just hypothetically, let's say I wanted to do K equal to four, looking at all of those clusters, it's kind of natural that A is a better option.",
+    "start_ms": 1664236,
+    "end_ms": 1674065,
+    "duration_ms": 9829,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1674.065,
+    "text": "But in order to decide why A was visually more appealing than B and C, we need to come up with some notion of a loss function.",
+    "start_ms": 1674065,
+    "end_ms": 1682207,
+    "duration_ms": 8142,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1682.207,
+    "text": "What kind of loss function or what kind of metric do we want to use so that we say that, okay, option A was good and option B and C were not as good.",
+    "start_ms": 1682207,
+    "end_ms": 1692631,
+    "duration_ms": 10424,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1692.631,
+    "text": "So how can we actually quantitatively measure the goodness of A and help that option C is?",
+    "start_ms": 1692631,
+    "end_ms": 1700832,
+    "duration_ms": 8201,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1700.832,
+    "text": "So bring your ideas in. Whether some evaluation metrics that we can use in order to distinguish between A and C.",
+    "start_ms": 1700832,
+    "end_ms": 1709192,
+    "duration_ms": 8360,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1713.72,
+    "text": "I'm going to let you see what's going on. No, you should not stay in their shop, like what is in their shop?",
+    "start_ms": 1713720,
+    "end_ms": 1719628,
+    "duration_ms": 5908,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1725.56,
+    "text": "There is a notion of distance. There is a notion of distance to what you think is important.",
+    "start_ms": 1725560,
+    "end_ms": 1731560,
+    "duration_ms": 6000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1731.64,
+    "text": "Distance to other points. What points are those other points that points in the same cluster?",
+    "start_ms": 1731640,
+    "end_ms": 1737720,
+    "duration_ms": 6080,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1738.552,
+    "text": "Is it the center of the cluster? Distance from the Century Okay, I like it that the inertia is getting smaller and smaller.",
+    "start_ms": 1738552,
+    "end_ms": 1751656,
+    "duration_ms": 13104,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1752.504,
+    "text": "distance from other points. We need a lost function. Happy Thanksgiving.",
+    "start_ms": 1752504,
+    "end_ms": 1760104,
+    "duration_ms": 7600,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1760.104,
+    "text": "All right. So moving on. Yes, the answer is that if we actually take a look at how central our central point is in each one of those clusters and then have the measure of the quality of each one of those clusters, then that's a metric that we can use.",
+    "start_ms": 1760104,
+    "end_ms": 1776824,
+    "duration_ms": 16720,
+    "word_count": 51,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1776.824,
+    "text": "So effectively inertia means that what if I go ahead and calculate a scored distance of the data points to the center and calculate some of those the squads of the distances.",
+    "start_ms": 1776824,
+    "end_ms": 1790304,
+    "duration_ms": 13480,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1790.304,
+    "text": "And then I call this inertia. One issue that inertia has is that it is going to penalize large clusters, large but coherent clusters.",
+    "start_ms": 1790304,
+    "end_ms": 1799144,
+    "duration_ms": 8840,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1799.144,
+    "text": "What we can also do is we can also say that, okay, what if I go ahead and do evaded some of all of those squared distances, meaning that I'm going to divide each one of those sum of squared distances by the number of data points that I have in that cluster.",
+    "start_ms": 1799144,
+    "end_ms": 1815304,
+    "duration_ms": 16160,
+    "word_count": 53,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1815.304,
+    "text": "So then average I look at what is the average square distance of the points to the center of the cluster.",
+    "start_ms": 1815304,
+    "end_ms": 1821504,
+    "duration_ms": 6200,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1822.392,
+    "text": "Why are we looking at this squared again? By this point, it should be super trivial.",
+    "start_ms": 1822392,
+    "end_ms": 1827152,
+    "duration_ms": 4760,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1827.152,
+    "text": "Why are we not looking at just the distance? As a single value.",
+    "start_ms": 1827152,
+    "end_ms": 1833896,
+    "duration_ms": 6744,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1835.448,
+    "text": "Ember scoring the distance. Ideas We are thinner than last right?",
+    "start_ms": 1835448,
+    "end_ms": 1844520,
+    "duration_ms": 9072,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1850.392,
+    "text": "The distance is always a positive value. So if you're just looking at the lengths distance so it can be...",
+    "start_ms": 1850392,
+    "end_ms": 1859512,
+    "duration_ms": 9120,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1859.272,
+    "text": "the notion of L1 and L2, kind of norm that we had, right?",
+    "start_ms": 1859272,
+    "end_ms": 1863216,
+    "duration_ms": 3944,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1863.216,
+    "text": "So, a squared distance is are going to penalize larger deviations more.",
+    "start_ms": 1863216,
+    "end_ms": 1868696,
+    "duration_ms": 5480,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1868.696,
+    "text": "And then therefore, it tries to actually bring everything closer to the center.",
+    "start_ms": 1868696,
+    "end_ms": 1873216,
+    "duration_ms": 4520,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1873.216,
+    "text": "And because it brings everything to the center, then it actually tries to have coherent clusters that way.",
+    "start_ms": 1873216,
+    "end_ms": 1880216,
+    "duration_ms": 7000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1880.216,
+    "text": "So, this is our last function, inertia, distortion. It turns out that the inertia is the loss function that is being optimized by K-Mins clustering because of the way that it tries to move the center to the center of the data points.",
+    "start_ms": 1880216,
+    "end_ms": 1895496,
+    "duration_ms": 15280,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1895.496,
+    "text": "It tries to minimize inertia there and then at the point that it tries to assign data points to the closest center.",
+    "start_ms": 1895496,
+    "end_ms": 1901816,
+    "duration_ms": 6320,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1901.816,
+    "text": "So it tries to also figure out which one of the which one of the centers is closer so in both of those the steps it tries to minimize some notion or some factor related to inertia.",
+    "start_ms": 1901816,
+    "end_ms": 1914808,
+    "duration_ms": 12992,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1914.808,
+    "text": "If I go ahead and take a look at the inertia for all of those cases you would see that the inertia for the first one was 44 inertia for the second one was 45 so it was very close but the inertia for the right most one was 54 so that's why it was substantially worse than the first option that we had seen.",
+    "start_ms": 1914808,
+    "end_ms": 1932568,
+    "duration_ms": 17760,
+    "word_count": 65,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1933.624,
+    "text": "So what's happening with the payments and inertia is that as I told you, payments is optimizing inertia.",
+    "start_ms": 1933624,
+    "end_ms": 1941304,
+    "duration_ms": 7680,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1941.304,
+    "text": "But the issue is that payments is not going to be able to most of the cases find the global optimum.",
+    "start_ms": 1941304,
+    "end_ms": 1947344,
+    "duration_ms": 6040,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1947.344,
+    "text": "And the reason is that this problem is NP-hard solving this problem is very difficult directly.",
+    "start_ms": 1947344,
+    "end_ms": 1953704,
+    "duration_ms": 6360,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1953.704,
+    "text": "And that's why we always throw in some kind of a local search algorithm in order to incrementally optimize and get to the optimum point.",
+    "start_ms": 1953704,
+    "end_ms": 1961144,
+    "duration_ms": 7440,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1961.144,
+    "text": "But then we had an algorithm. Why wasn't this came in algorithm able to get us to the optimum?",
+    "start_ms": 1961144,
+    "end_ms": 1968544,
+    "duration_ms": 7400,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1968.544,
+    "text": "Because it was minimizing inertia in every step, every step of those, in every iteration that we had two steps, each one of those two steps, we validated that it tries to minimize some notion of the inertia.",
+    "start_ms": 1968544,
+    "end_ms": 1980143,
+    "duration_ms": 11599,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1980.143,
+    "text": "But the issue is that why isn't it effective in terms of finding the global optimum?",
+    "start_ms": 1980143,
+    "end_ms": 1986064,
+    "duration_ms": 5921,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1986.064,
+    "text": "And the issue is that we have two optimizers that none of these two optimizers is taking the full control.",
+    "start_ms": 1986064,
+    "end_ms": 1993344,
+    "duration_ms": 7280,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1993.344,
+    "text": "The first optimizer that we had holds the center position constant, and then it tries to only allocate points to the right cluster.",
+    "start_ms": 1993344,
+    "end_ms": 2002384,
+    "duration_ms": 9040,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2002.384,
+    "text": "And then the second optimizer is actually holding the data colors constant, but then it actually tries to now optimize the center positions.",
+    "start_ms": 2002384,
+    "end_ms": 2012224,
+    "duration_ms": 9840,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2012.224,
+    "text": "So there are two things that needs to be optimizers.",
+    "start_ms": 2012224,
+    "end_ms": 2014664,
+    "duration_ms": 2440,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2014.664,
+    "text": "The coloring thing that needs to be optimized, and there is also the center position that needs to be optimized.",
+    "start_ms": 2014664,
+    "end_ms": 2019824,
+    "duration_ms": 5160,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2019.824,
+    "text": "And because these two steps are kind of sequential to each other and they're not taking a full control of those of those variables, then they're not able to find the global optimum for us.",
+    "start_ms": 2019824,
+    "end_ms": 2031824,
+    "duration_ms": 12000,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2031.824,
+    "text": "But what's the one way that we can actually solve it and find the direct optimum solution for this kind of clustering task?",
+    "start_ms": 2031824,
+    "end_ms": 2041984,
+    "duration_ms": 10160,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2041.984,
+    "text": "And this is a very hard problem. So let's assume that hypothetically, I'm not concerned with the runtime.",
+    "start_ms": 2041984,
+    "end_ms": 2048647,
+    "duration_ms": 6663,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2048.647,
+    "text": "I can just go ahead and I have end different data points.",
+    "start_ms": 2048647,
+    "end_ms": 2052100,
+    "duration_ms": 3453,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2052.1,
+    "text": "I want to cluster them into K different clusters and K is picked in advance as you know.",
+    "start_ms": 2052100,
+    "end_ms": 2058144,
+    "duration_ms": 6044,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2058.584,
+    "text": "If I'm not worried about the runtime, how can I get to the optimum, optimum solution of K-means?",
+    "start_ms": 2058584,
+    "end_ms": 2065924,
+    "duration_ms": 7340,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2065.924,
+    "text": "An optimum, optimum solution of K-means is that I just need to make sure that if I'm considering that every data point can have, can be assigned to any cluster that it wants, right?",
+    "start_ms": 2065924,
+    "end_ms": 2078264,
+    "duration_ms": 12340,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2078.264,
+    "text": "And by any cluster that it wants, that means that, for example, a data point that we're looking, 0.1 can be red or can be green or can be orange and data.2 can also select all of those options.",
+    "start_ms": 2078264,
+    "end_ms": 2093980,
+    "duration_ms": 15716,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2093.98,
+    "text": "For every given data point, we have k options, k option for data.1, k option for data.2, k option for data.3, and then so on and so forth for k options for data.n.",
+    "start_ms": 2093980,
+    "end_ms": 2105344,
+    "duration_ms": 11364,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2105.344,
+    "text": "So we can reduce this clustering kind of problem into a coloring problem where we're just not concerned with the the center is anymore, and we're just going to color each one of the data points that we have.",
+    "start_ms": 2105344,
+    "end_ms": 2118384,
+    "duration_ms": 13040,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2118.384,
+    "text": "The number of options that we have here is k to the n number of colorings that we can have, because again, every data point can have, it can take different k different colors and be assigned to any cluster that they want.",
+    "start_ms": 2118384,
+    "end_ms": 2133024,
+    "duration_ms": 14640,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2133.024,
+    "text": "So what we'll do is we will look at all of these colorings, we will actually go through a loop for all of these colorings, what we'll do is we'll go ahead and find the cluster center of each one of those colors because a full coloring is there.",
+    "start_ms": 2133024,
+    "end_ms": 2147372,
+    "duration_ms": 14348,
+    "word_count": 49,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2147.372,
+    "text": "So it just needs to find the center of all of those clusters.",
+    "start_ms": 2147372,
+    "end_ms": 2151224,
+    "duration_ms": 3852,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2151.224,
+    "text": "Once you find the center, you can actually calculate the inertia.",
+    "start_ms": 2151224,
+    "end_ms": 2155152,
+    "duration_ms": 3928,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2155.152,
+    "text": "Once you calculate the inertia, then you can actually keep track of what is the best inertia that you had seen across all of these K to the end potential colorings.",
+    "start_ms": 2155152,
+    "end_ms": 2166224,
+    "duration_ms": 11072,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2166.224,
+    "text": "And because K to the N is an exponential runtime, that's why this problem is hard to solve, is categorized as an NP-hard problem that we can solve it directly.",
+    "start_ms": 2166224,
+    "end_ms": 2174904,
+    "duration_ms": 8680,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2174.904,
+    "text": "Because as N increases, this is an exponential runtime that we can actually do.",
+    "start_ms": 2174904,
+    "end_ms": 2181744,
+    "duration_ms": 6840,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2181.744,
+    "text": "And the only way that we can actually find is pseudo.",
+    "start_ms": 2181744,
+    "end_ms": 2185064,
+    "duration_ms": 3320,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2185.272,
+    "text": "Kind of optimum solution is to go through this local search algorithm that we talked about through a k-means that will iteratively move us through some local minimum kind of scenario.",
+    "start_ms": 2185272,
+    "end_ms": 2195272,
+    "duration_ms": 10000,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2196.44,
+    "text": "There are different kinds of ways to make sure that the algorithm, the solution that we find is a good solution and it's better than kind of random.",
+    "start_ms": 2196440,
+    "end_ms": 2207791,
+    "duration_ms": 11351,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2207.791,
+    "text": "We can actually keep restarting from different initialization points. point.",
+    "start_ms": 2207791,
+    "end_ms": 2211864,
+    "duration_ms": 4073,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2211.864,
+    "text": "So you initialize one with case centers, find the optimum solution, find the inertia, and you re-initialize for, for example, M number of times up until the point that you are satisfied with the inertia that you got.",
+    "start_ms": 2211864,
+    "end_ms": 2225741,
+    "duration_ms": 13877,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2225.741,
+    "text": "And then you keep track of which inertia or which clustering was the minimum.",
+    "start_ms": 2225741,
+    "end_ms": 2229235,
+    "duration_ms": 3494,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2229.235,
+    "text": "So that's kind of the only way or one of the ways that we can actually optimize it a little bit further, but we cannot actually run this exponential time runtime.",
+    "start_ms": 2229235,
+    "end_ms": 2239920,
+    "duration_ms": 10685,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2241.048,
+    "text": "So, with that kind of mechanic and explanation out of the way, I want to now talk a little bit about the issues with Cayman's clustering.",
+    "start_ms": 2241048,
+    "end_ms": 2251048,
+    "duration_ms": 10000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2251.048,
+    "text": "So take a look at what's happening if I run Cayman's clustering.",
+    "start_ms": 2251048,
+    "end_ms": 2255048,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2255.048,
+    "text": "So when I run Cayman's clustering, remember that I only, at the point that the algorithm converged, I had this single data point that was closer to the orange cluster as opposed to the blue cluster, but it was still labeled as blue.",
+    "start_ms": 2255048,
+    "end_ms": 2268888,
+    "duration_ms": 13840,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2268.888,
+    "text": "But the ideal scenario is that we probably want something close to this left one.",
+    "start_ms": 2268888,
+    "end_ms": 2275408,
+    "duration_ms": 6520,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2275.704,
+    "text": "And this is the issue that we'll have with with Kameh's clustering because Kameh's clustering says that okay the inertia on this one is 87 and the inertia on this one that visually is more appealing to us is 94.",
+    "start_ms": 2275704,
+    "end_ms": 2289704,
+    "duration_ms": 14000,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2290.104,
+    "text": "There was one slide that we can actually have, which one is better.",
+    "start_ms": 2290104,
+    "end_ms": 2294904,
+    "duration_ms": 4800,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2294.904,
+    "text": "I assume you all will say A is better, but if you haven't responded to previous polls, feel free to respond, and then I'll move on to explaining what the issue is exactly and how to solve it.",
+    "start_ms": 2294904,
+    "end_ms": 2305624,
+    "duration_ms": 10720,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2315.32,
+    "text": "So why is the right one better or the left one better in our opinion as opposed to the right one and why inertia and the right one that came in's clustering is giving us is is lower than the inertia and the one that is visually more appealing to us.",
+    "start_ms": 2315320,
+    "end_ms": 2333320,
+    "duration_ms": 18000,
+    "word_count": 51,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2333.32,
+    "text": "The issue is that camions clustering is not going to consider, is only concerned with the distances.",
+    "start_ms": 2333320,
+    "end_ms": 2339320,
+    "duration_ms": 6000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2339.32,
+    "text": "It's not concerned with the blobbyness of each one of those clusters.",
+    "start_ms": 2339320,
+    "end_ms": 2343320,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2343.32,
+    "text": "So for example, in this case, it says that, oh, this data point belongs to the cluster blue because it is closer to this center as opposed to this other center.",
+    "start_ms": 2343320,
+    "end_ms": 2352320,
+    "duration_ms": 9000,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2352.32,
+    "text": "But it doesn't consider the fact that we want to have a complete separation between the clusters and we're not kind of in an ideal situation if a single tone data point is actually close to an irrelevant class the right over there.",
+    "start_ms": 2352320,
+    "end_ms": 2367320,
+    "duration_ms": 15000,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2367.32,
+    "text": "So that's why that's the thing that came in as clustering is not considering.",
+    "start_ms": 2367320,
+    "end_ms": 2371640,
+    "duration_ms": 4320,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2371.64,
+    "text": "Whether that's wrong or not, that's the separate story, but we're actually trying to find a new algorithm that that new algorithm tries to solve this issue a little bit, and then it tries to consider blobbing us or how well cluster data points are to the closest cluster that they're in using some new loss function that we're going to talk about.",
+    "start_ms": 2371640,
+    "end_ms": 2394280,
+    "duration_ms": 22640,
+    "word_count": 63,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2393.976,
+    "text": "So let's take a two minute break and then we're going to come back and actually talk about this new algorithm which is going to use the bottom of approach or a plumb rate of approach.",
+    "start_ms": 2393976,
+    "end_ms": 2405976,
+    "duration_ms": 12000,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2405.976,
+    "text": "So take a two minute stand up a stretch and then we'll see the next part.",
+    "start_ms": 2405976,
+    "end_ms": 2410976,
+    "duration_ms": 5000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2438.104,
+    "text": "Are we doing so far? Clustering is like on an easier kind of side of topics, but it's really useful.",
+    "start_ms": 2438104,
+    "end_ms": 2447256,
+    "duration_ms": 9152,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2447.672,
+    "text": "We're actually going to see one lab in clustering but no home break.",
+    "start_ms": 2447672,
+    "end_ms": 2453112,
+    "duration_ms": 5440,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2453.112,
+    "text": "But it's definitely going to be something that you're using your research very frequently.",
+    "start_ms": 2453112,
+    "end_ms": 2458632,
+    "duration_ms": 5520,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2473.464,
+    "text": "So let's see this hierarchical approach. So with this hierarchical approach, we've seen the issue that we have before.",
+    "start_ms": 2473464,
+    "end_ms": 2481224,
+    "duration_ms": 7760,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2481.224,
+    "text": "That the issue was that if you're using some notion of inertia that only looks at the distances, without considering the closeness of the data points to the right cluster, that's going to be concerning.",
+    "start_ms": 2481224,
+    "end_ms": 2493384,
+    "duration_ms": 12160,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2493.384,
+    "text": "What we can actually do is we can actually go ahead assume that all of the data points are in different clusters.",
+    "start_ms": 2493384,
+    "end_ms": 2499544,
+    "duration_ms": 6160,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2499.544,
+    "text": "And then the closest points to each other or the proposes clusters to each other will go ahead and combine them together upon to the point that we build enough clusters that we want.",
+    "start_ms": 2499544,
+    "end_ms": 2510184,
+    "duration_ms": 10640,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2510.584,
+    "text": "So in this approach what we'll do as I as I said before is that we'll start with all of the data points as a separate cluster.",
+    "start_ms": 2510584,
+    "end_ms": 2518084,
+    "duration_ms": 7500,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2518.084,
+    "text": "We'll keep merging similar clusters or data points to each other up until the point that we have enough clusters that we want and that's why it's called bottom up approach or a collaborative approach.",
+    "start_ms": 2518084,
+    "end_ms": 2528584,
+    "duration_ms": 10500,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2529.208,
+    "text": "The way that we decide which two clusters or two data points are going to be connected to each other is called linkage criterion.",
+    "start_ms": 2529208,
+    "end_ms": 2536208,
+    "duration_ms": 7000,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2536.208,
+    "text": "And then the way that we're going to talk about this linkage criterion is that we can decide about our own policy of how we're going to combine these clusters together.",
+    "start_ms": 2536208,
+    "end_ms": 2547208,
+    "duration_ms": 11000,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2547.208,
+    "text": "There is the single linkage criteria that the single linkage criteria says that look at two clusters and these two clusters at distance between these two clusters is the distance of the closest data points of these two clusters to each other.",
+    "start_ms": 2547208,
+    "end_ms": 2563208,
+    "duration_ms": 16000,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2563.208,
+    "text": "other. So it basically says that we are looking at the similarity of the most similar data points in two clusters.",
+    "start_ms": 2563208,
+    "end_ms": 2572072,
+    "duration_ms": 8864,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2572.072,
+    "text": "So as long as the two data points that are closest to each other and those two clusters are close to each other, then those two clusters are going to be merged to each other.",
+    "start_ms": 2572072,
+    "end_ms": 2587368,
+    "duration_ms": 15296,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2587.364,
+    "text": "work. We have eight data points, eight clusters to start, but what we can actually look at is we're looking at the distance of each one of these clusters to other clusters that we have.",
+    "start_ms": 2587364,
+    "end_ms": 2599304,
+    "duration_ms": 11940,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2599.304,
+    "text": "In this case, it's very simple because our clusters are only single data point clusters.",
+    "start_ms": 2599304,
+    "end_ms": 2603304,
+    "duration_ms": 4000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2603.304,
+    "text": "What I can actually do is I can say that the distance between these two clusters is this line, the distance between this cluster and this cluster is this line, the distance between this cluster and this cluster is this line.",
+    "start_ms": 2603304,
+    "end_ms": 2615132,
+    "duration_ms": 11828,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2615.132,
+    "text": "But again, we're going to go with the priority of merging the closest clusters to each other.",
+    "start_ms": 2615132,
+    "end_ms": 2621515,
+    "duration_ms": 6383,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2621.515,
+    "text": "So whether the candidate closes clusters, again the candidate closes clusters are these pairs that we're seeing right here.",
+    "start_ms": 2621515,
+    "end_ms": 2628812,
+    "duration_ms": 7297,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2628.812,
+    "text": "So that's the very first step that will start. So we'll go ahead and combine, for example, of these pairs together, that's one cluster of two, and then I have six other data points as single clusters right there.",
+    "start_ms": 2628812,
+    "end_ms": 2643024,
+    "duration_ms": 14212,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2643.576,
+    "text": "So now looking at the distances one more time. If I want to go ahead and measure the distance of that cluster with two points with, for example, this cluster single point right over here, the distance is going to be based on the single linkage is going to be the closest distance.",
+    "start_ms": 2643576,
+    "end_ms": 2662576,
+    "duration_ms": 19000,
+    "word_count": 53,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2662.576,
+    "text": "So between the left one and the right one, the closest distance is going to be the distance between the right one and the state of point.",
+    "start_ms": 2662576,
+    "end_ms": 2669576,
+    "duration_ms": 7000,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2669.576,
+    "text": "right? So that's where the similarity of the most similar or finding the closest distance or the minimum distance between the points is very important.",
+    "start_ms": 2669576,
+    "end_ms": 2679253,
+    "duration_ms": 9677,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2679.253,
+    "text": "That's the criteria that we're looking. The distance between that cluster with two points and this data point right here again.",
+    "start_ms": 2679253,
+    "end_ms": 2687576,
+    "duration_ms": 8323,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2687.96,
+    "text": "Which of those points in the cluster of two is closer to this single data point.",
+    "start_ms": 2687960,
+    "end_ms": 2694260,
+    "duration_ms": 6300,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2694.46,
+    "text": "It's going to be this point right that's the distance again looking at the distances for example between this cluster and this data point right here the closest distance is going to be this and so on and so forth again looking at all of these distances I'm still.",
+    "start_ms": 2694460,
+    "end_ms": 2709960,
+    "duration_ms": 15500,
+    "word_count": 49,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2710.2,
+    "text": "Convince that all of those red distances are closer. So we'll keep combining those pairs and we'll not look at any other distances up until the point that any of them can actually be meaningful or can be the closest kind of distance between two clusters that we can combine.",
+    "start_ms": 2710200,
+    "end_ms": 2727520,
+    "duration_ms": 17320,
+    "word_count": 50,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2727.52,
+    "text": "So I'm going to go ahead remove these ones and then we're going to find the next candidate.",
+    "start_ms": 2727520,
+    "end_ms": 2733058,
+    "duration_ms": 5538,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2733.058,
+    "text": "So now looking at the distances between these four clusters that I have.",
+    "start_ms": 2733058,
+    "end_ms": 2737790,
+    "duration_ms": 4732,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2737.79,
+    "text": "So what's the distance between the two top clusters that I have?",
+    "start_ms": 2737790,
+    "end_ms": 2742959,
+    "duration_ms": 5169,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2743.48,
+    "text": "the distance between the closest points. So it's going to be the distance between these two.",
+    "start_ms": 2743480,
+    "end_ms": 2749702,
+    "duration_ms": 6222,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2749.702,
+    "text": "Same thing also for the bottom two clusters for the top row and the bottom row between these two clusters.",
+    "start_ms": 2749702,
+    "end_ms": 2757480,
+    "duration_ms": 7778,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2757.48,
+    "text": "The distance is going to be one of these distances that is going to be minimum as opposed to diagonal distance because that's closer and also the same thing here.",
+    "start_ms": 2757480,
+    "end_ms": 2767480,
+    "duration_ms": 10000,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2767.48,
+    "text": "here and obviously this cluster and this cluster are far from each other but the minimum distance between them is this line.",
+    "start_ms": 2767480,
+    "end_ms": 2775480,
+    "duration_ms": 8000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2775.96,
+    "text": "So of all of these combinations which one of those lines looks shorter to you?",
+    "start_ms": 2775960,
+    "end_ms": 2781160,
+    "duration_ms": 5200,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2784.216,
+    "text": "either the top row or the bottom row. So we will go ahead and combine the top row clusters first, and then the bottom row clusters second, and then we're going to combine everything up until a point that we have one cluster.",
+    "start_ms": 2784216,
+    "end_ms": 2798856,
+    "duration_ms": 14640,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2798.856,
+    "text": "So there is one thing that either you will go all the way up until a point that you have one cluster, and then later on come down and then figure out how many clusters you want to have.",
+    "start_ms": 2798856,
+    "end_ms": 2808376,
+    "duration_ms": 9520,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2808.376,
+    "text": "So you will break it up to, for example, three steps, and then get your tree clusters that you want it.",
+    "start_ms": 2808376,
+    "end_ms": 2814136,
+    "duration_ms": 5760,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2814.136,
+    "text": "or you can stop at 3 if you know ahead of time that your case equal to 3 so you don't need to go all the way to 1.",
+    "start_ms": 2814136,
+    "end_ms": 2821136,
+    "duration_ms": 7000,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2821.432,
+    "text": "So there are different kinds of, as I said, linkage criteria, which there is another version that looks at the average distances as opposed to the closest distances that's called average linkage.",
+    "start_ms": 2821432,
+    "end_ms": 2832432,
+    "duration_ms": 11000,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2832.432,
+    "text": "There is also a complete linkage that looks at the maximum distances between the clusters.",
+    "start_ms": 2832432,
+    "end_ms": 2839432,
+    "duration_ms": 7000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2839.432,
+    "text": "That essentially tries to make sure that the two far parts of the clusters are close to each other before merging them.",
+    "start_ms": 2839432,
+    "end_ms": 2847632,
+    "duration_ms": 8200,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2847.632,
+    "text": "So that kind of enforces a little bit of blobbyness in a sense that came in clustering was not giving us.",
+    "start_ms": 2847632,
+    "end_ms": 2853832,
+    "duration_ms": 6200,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2854.264,
+    "text": "Again, let's look at an example. We have all of these eight points.",
+    "start_ms": 2854264,
+    "end_ms": 2859764,
+    "duration_ms": 5500,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2859.764,
+    "text": "We'll go ahead and combine all of these pairs first.",
+    "start_ms": 2859764,
+    "end_ms": 2863264,
+    "duration_ms": 3500,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2863.264,
+    "text": "And then if you're looking at the complete linkage, if I show you the distances and this kind of for for clusters that I have that distance between these two clusters is this line probably, this line probably because we're looking at the maximum distances.",
+    "start_ms": 2863264,
+    "end_ms": 2881264,
+    "duration_ms": 18000,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2881.264,
+    "text": "between this cluster top left and then the bottom right, the maximum distance is the far, the distance between the far data points, and then also from the top two clusters, this is the maximum distance, this is also the maximum distance, the far points.",
+    "start_ms": 2881264,
+    "end_ms": 2898783,
+    "duration_ms": 17519,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2899.584,
+    "text": "So given all of this, what is the next two clusters that should become bind?",
+    "start_ms": 2899584,
+    "end_ms": 2910224,
+    "duration_ms": 10640,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2909.948,
+    "text": "long. diagonal wise it's also very aligned between the top left one and the bottom right one.",
+    "start_ms": 2909948,
+    "end_ms": 2915800,
+    "duration_ms": 5852,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2915.8,
+    "text": "So it looks like that the top bottom directly is the best choice and then this is also the best choice and then we're combining it into one cluster.",
+    "start_ms": 2915800,
+    "end_ms": 2924877,
+    "duration_ms": 9077,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2924.877,
+    "text": "So that's how we're going to progress for I'm having eight clusters and then going all the way to having only one cluster remain it.",
+    "start_ms": 2924877,
+    "end_ms": 2932840,
+    "duration_ms": 7963,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2933.24,
+    "text": "So one thing that we can actually do is see one more example on the same dataset.",
+    "start_ms": 2933240,
+    "end_ms": 2938360,
+    "duration_ms": 5120,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2938.36,
+    "text": "You kind of see whether it is actually going to solve the issue that we had, but that single blue data point that we had near the entire kind of orange data set that we had.",
+    "start_ms": 2938360,
+    "end_ms": 2949880,
+    "duration_ms": 11520,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2950.44,
+    "text": "So I'm going to start with 12 data points, right?",
+    "start_ms": 2950440,
+    "end_ms": 2953734,
+    "duration_ms": 3294,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2953.734,
+    "text": "Initially I'm assigning each one of those data points to have a label for a single cluster.",
+    "start_ms": 2953734,
+    "end_ms": 2959360,
+    "duration_ms": 5626,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2959.36,
+    "text": "So I'm starting cluster ID zero all the way to to cluster ID 11.",
+    "start_ms": 2959360,
+    "end_ms": 2964440,
+    "duration_ms": 5080,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2964.44,
+    "text": "You can look at the distances. It's a two-dimensional feature space.",
+    "start_ms": 2964440,
+    "end_ms": 2968280,
+    "duration_ms": 3840,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2968.28,
+    "text": "What I'll do is I will incrementally show you the candidate distances that we have, and then we'll keep merging those two clusters together or the candidate clusters together.",
+    "start_ms": 2968280,
+    "end_ms": 2979520,
+    "duration_ms": 11240,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2979.52,
+    "text": "One thing that I want to show you initially is that, again, all of those labels are the same, but looking at the distances between, for example, 10 and 11, the legend here says that the distance is the shortest distance that we can have.",
+    "start_ms": 2979520,
+    "end_ms": 2993220,
+    "duration_ms": 13700,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2993.22,
+    "text": "The distance is 0.14. So those are the candidates to data points or two clusters that should be merged with each other.",
+    "start_ms": 2993220,
+    "end_ms": 3001160,
+    "duration_ms": 7940,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3001.16,
+    "text": "So what we're going to do is we're going to merge them.",
+    "start_ms": 3001160,
+    "end_ms": 3003360,
+    "duration_ms": 2200,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3003.36,
+    "text": "Now we have one cluster with two points labeled with 10.",
+    "start_ms": 3003360,
+    "end_ms": 3007640,
+    "duration_ms": 4280,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3008.568,
+    "text": "Now take a look at all of the rest of the annotations that I have.",
+    "start_ms": 3008568,
+    "end_ms": 3012048,
+    "duration_ms": 3480,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3012.048,
+    "text": "So I have the annotations for the distance between 0 and 4 to be 0.22.",
+    "start_ms": 3012048,
+    "end_ms": 3018488,
+    "duration_ms": 6440,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3018.488,
+    "text": "And then what you're seeing is the distance between 1 and 5 is also 0.22.",
+    "start_ms": 3018488,
+    "end_ms": 3023688,
+    "duration_ms": 5200,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3023.688,
+    "text": "And the distance between 7 and 9 is 0.3. And I didn't look at all of, I didn't annotate all of the distances because again, visually you can see that all of them are, the rest of them are not viable.",
+    "start_ms": 3023688,
+    "end_ms": 3035808,
+    "duration_ms": 12120,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3035.808,
+    "text": "I'm only showing the top tree lowest distances between the candidate clusters.",
+    "start_ms": 3035808,
+    "end_ms": 3042548,
+    "duration_ms": 6740,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3042.548,
+    "text": "So between 1 and 5 and 0 and 4, we can pick any of them and actually go ahead and combine them.",
+    "start_ms": 3042548,
+    "end_ms": 3048608,
+    "duration_ms": 6060,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3048.608,
+    "text": "Let's assume that we're going to go ahead and merge 0 and 4 with each other.",
+    "start_ms": 3048608,
+    "end_ms": 3052368,
+    "duration_ms": 3760,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3052.368,
+    "text": "So 0 and 4 are merged and now I have one cluster of 0.",
+    "start_ms": 3052368,
+    "end_ms": 3056408,
+    "duration_ms": 4040,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3057.368,
+    "text": "Okay, now you can see the remaining distances that I have.",
+    "start_ms": 3057368,
+    "end_ms": 3061265,
+    "duration_ms": 3897,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3061.265,
+    "text": "I still have 1 and 5 remaining. I still have 7 and 9 here and then I still have the distance between 6 and 8.",
+    "start_ms": 3061265,
+    "end_ms": 3070208,
+    "duration_ms": 8943,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3070.208,
+    "text": "And looking at the distances, again 1 and 5 is going to be my next candidate.",
+    "start_ms": 3070208,
+    "end_ms": 3074688,
+    "duration_ms": 4480,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3074.688,
+    "text": "So I'm going to go ahead and combine 1 and 5.",
+    "start_ms": 3074688,
+    "end_ms": 3077768,
+    "duration_ms": 3080,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3077.768,
+    "text": "And now I have one big cluster of one. So now I have one one cluster of one with two points one cluster of 10 with two points and then I have all of those other clusters right over there.",
+    "start_ms": 3077768,
+    "end_ms": 3089888,
+    "duration_ms": 12120,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3089.888,
+    "text": "And then the rest of the distances you can again see what is the next candidate that I can pick.",
+    "start_ms": 3089888,
+    "end_ms": 3095888,
+    "duration_ms": 6000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3098.52,
+    "text": "So looking at the colors, the next candidate looks like that that's going to be seven and nine.",
+    "start_ms": 3098520,
+    "end_ms": 3104120,
+    "duration_ms": 5600,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3104.12,
+    "text": "But before I talk about that, I want to show you why I draw the line between for the distance between the cluster tree and cluster zero to be that below line instead of a line connecting the data point tree to the other zero.",
+    "start_ms": 3104120,
+    "end_ms": 3118477,
+    "duration_ms": 14357,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3118.477,
+    "text": "And that's because we're our criteria is that we're going to go with complete linkage.",
+    "start_ms": 3118477,
+    "end_ms": 3123240,
+    "duration_ms": 4763,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3123.24,
+    "text": "So between those two lines, the line that was drawn right here is the longest line.",
+    "start_ms": 3123240,
+    "end_ms": 3129455,
+    "duration_ms": 6215,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3129.455,
+    "text": "So that's why the distance between the cluster, zero and cluster tree right now is annotated to be equal to 0.36 that corresponds to this line that's shown.",
+    "start_ms": 3129455,
+    "end_ms": 3138840,
+    "duration_ms": 9385,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3139.416,
+    "text": "But if I go ahead and combine seven and nine, which has the lowest kind of distance that we're seeing point three, then I'll have one cluster with seven and seven right there.",
+    "start_ms": 3139416,
+    "end_ms": 3151016,
+    "duration_ms": 11600,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3151.992,
+    "text": "So what's the next cluster that I should next to clusters that I should come mine?",
+    "start_ms": 3151992,
+    "end_ms": 3156632,
+    "duration_ms": 4640,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3159.448,
+    "text": "And that's also a nice example. Look at the distance between cluster 1 and cluster 10.",
+    "start_ms": 3159448,
+    "end_ms": 3164088,
+    "duration_ms": 4640,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3164.6,
+    "text": "Finding the far points from cluster 10 and cluster 1 connecting them calculating the distance.",
+    "start_ms": 3164600,
+    "end_ms": 3170860,
+    "duration_ms": 6260,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3170.86,
+    "text": "It looks like that distance is 0.41 based on the color.",
+    "start_ms": 3170860,
+    "end_ms": 3174860,
+    "duration_ms": 4000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3174.86,
+    "text": "But based on all of the other distances we're seeing looks like 6 and 8 is our next candidate.",
+    "start_ms": 3174860,
+    "end_ms": 3180860,
+    "duration_ms": 6000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3180.86,
+    "text": "So I'm going to go ahead and combine 6 and 8.",
+    "start_ms": 3180860,
+    "end_ms": 3183200,
+    "duration_ms": 2340,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3183.768,
+    "text": "The next candidates are you can see that one in ten is a still a candidate zero and three is a still a candidate but now I also can consider the distance between three and six again notice that I pick the distance between three and this data point as opposed to this other data point because it was giving me a longer distance because I'm interested in actually Creating clusters that the far ends are also close to each other.",
+    "start_ms": 3183768,
+    "end_ms": 3212480,
+    "duration_ms": 28712,
+    "word_count": 81,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3212.48,
+    "text": "So looking at what we have here, zero and tree looks to be the next candidate to become mine.",
+    "start_ms": 3212480,
+    "end_ms": 3218480,
+    "duration_ms": 6000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3218.48,
+    "text": "Now I have one big cluster of tree, one cluster of seven, one cluster of six, one cluster of pen, one, and then a single data point for cluster two.",
+    "start_ms": 3218480,
+    "end_ms": 3228480,
+    "duration_ms": 10000,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3229.336,
+    "text": "Again, looking at what's happening here, it's very obvious that 10 and 1 needs to be connected to each other.",
+    "start_ms": 3229336,
+    "end_ms": 3235656,
+    "duration_ms": 6320,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3235.656,
+    "text": "So we're connecting 10 and 1. Now I will have a big cluster of L1s, then I have a bunch of other distances to consider as the next step.",
+    "start_ms": 3235656,
+    "end_ms": 3244536,
+    "duration_ms": 8880,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3244.536,
+    "text": "So how many clusters do I have right now? One cluster, two, three, four, and five clusters.",
+    "start_ms": 3244536,
+    "end_ms": 3250936,
+    "duration_ms": 6400,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3250.936,
+    "text": "So you can again keep combining clusters up on the look point that you have enough number of clusters that you decided ahead of time or you can go all the way to one and then later on look at the composition of what's happening and then figure out which K was the What's the right number?",
+    "start_ms": 3250936,
+    "end_ms": 3269992,
+    "duration_ms": 19056,
+    "word_count": 57,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3269.992,
+    "text": "So based on what we're seeing right here, looks like that the distance between 0 and 7 is the closest distance.",
+    "start_ms": 3269992,
+    "end_ms": 3276952,
+    "duration_ms": 6960,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3276.952,
+    "text": "You might also think that 0 and 6 is closer.",
+    "start_ms": 3276952,
+    "end_ms": 3279885,
+    "duration_ms": 2933,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3279.885,
+    "text": "The numbers are very close, but that's why I put the numbers because looking at the lines is not going to be very informative.",
+    "start_ms": 3279885,
+    "end_ms": 3286547,
+    "duration_ms": 6662,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3286.547,
+    "text": "So 0 and 7 are going to be combined. Now I have one big cluster of 0.",
+    "start_ms": 3286547,
+    "end_ms": 3291912,
+    "duration_ms": 5365,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3291.912,
+    "text": "Now look at how the distances are now changed because of the complete linkage.",
+    "start_ms": 3291912,
+    "end_ms": 3297112,
+    "duration_ms": 5200,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3297.112,
+    "text": "So now 2 is connected to the 4 point in the cluster 0.",
+    "start_ms": 3297112,
+    "end_ms": 3302712,
+    "duration_ms": 5600,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3302.712,
+    "text": "Now between the cluster 6 and cluster 2, the farthest points that I have is comparing this data point 6 and this data point in cluster 0 and then kind of similarly for comparing cluster 1 and cluster 6 as you can see.",
+    "start_ms": 3302712,
+    "end_ms": 3319752,
+    "duration_ms": 17040,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3320.056,
+    "text": "The closest distance again by considering even the complete linkage is going to be combining cluster 0 and cluster 6.",
+    "start_ms": 3320056,
+    "end_ms": 3329156,
+    "duration_ms": 9100,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3329.156,
+    "text": "We'll combine them. Now we have three clusters, yes, three clusters left and the top three distances are shown.",
+    "start_ms": 3329156,
+    "end_ms": 3338056,
+    "duration_ms": 8900,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3338.056,
+    "text": "So again, 0 and 2 are going to be combined here.",
+    "start_ms": 3338056,
+    "end_ms": 3341556,
+    "duration_ms": 3500,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3341.556,
+    "text": "And this is the important part. If we did not do it in the bottom-up approach, you remember what was happening with this data point that was closer to the center of these data points as opposed to the center of these data points and it was going to be misclassified or misclustered.",
+    "start_ms": 3341556,
+    "end_ms": 3359176,
+    "duration_ms": 17620,
+    "word_count": 53,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3359.176,
+    "text": "In this case, it's not going to be the same because it was already clustered close to this other data point that it's closer to.",
+    "start_ms": 3359176,
+    "end_ms": 3367296,
+    "duration_ms": 8120,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3367.296,
+    "text": "So that was a done deal. It is going to go wherever that other data point is going to go.",
+    "start_ms": 3367296,
+    "end_ms": 3372376,
+    "duration_ms": 5080,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3372.376,
+    "text": "That's how kind of this blob is going to evolve and build on top of each other from kind of a bottom-up approach.",
+    "start_ms": 3372376,
+    "end_ms": 3380456,
+    "duration_ms": 8080,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3380.312,
+    "text": "So now in this case, zero and tree is going to be combined.",
+    "start_ms": 3380312,
+    "end_ms": 3384672,
+    "duration_ms": 4360,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3384.672,
+    "text": "Now I'm going to have one big cluster of all zeros and then one big cluster of all ones.",
+    "start_ms": 3384672,
+    "end_ms": 3391312,
+    "duration_ms": 6640,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3391.312,
+    "text": "And now you can see a full kind of separation between these two clusters.",
+    "start_ms": 3391312,
+    "end_ms": 3395112,
+    "duration_ms": 3800,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3395.512,
+    "text": "So again, depending on the shape of your data set, you can use different algorithms.",
+    "start_ms": 3395512,
+    "end_ms": 3400512,
+    "duration_ms": 5000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3400.512,
+    "text": "Came in's clustering was optimizing inertia and then this approach is trying to actually find separation between the different clusters that we have and then it builds from a bottom up approach.",
+    "start_ms": 3400512,
+    "end_ms": 3412512,
+    "duration_ms": 12000,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3413.72,
+    "text": "If we apply to the entire data set, you can actually see that yes, this data point that we had issues with now is correctly clustered into the right cluster of blues.",
+    "start_ms": 3413720,
+    "end_ms": 3425720,
+    "duration_ms": 12000,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3425.72,
+    "text": "So there is the concept of dendrogram. And dendrogram is kind of a tree structure that shows you on the leaves.",
+    "start_ms": 3425720,
+    "end_ms": 3434620,
+    "duration_ms": 8900,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3434.62,
+    "text": "We have all of the data points that we have.",
+    "start_ms": 3434620,
+    "end_ms": 3437020,
+    "duration_ms": 2400,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3437.02,
+    "text": "It's like over plotted right here, but it can assume that all of the data points.",
+    "start_ms": 3437020,
+    "end_ms": 3441220,
+    "duration_ms": 4200,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3441.22,
+    "text": "And then at every point that two data points are connected to each other, or two clusters are connected to each other, it will connect them together and move to the higher level in the tree.",
+    "start_ms": 3441220,
+    "end_ms": 3452540,
+    "duration_ms": 11320,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3452.54,
+    "text": "So for example here, if we consider this entire green thing as one cluster, and we consider this black thing as another cluster, in one clustering step that we combine these two, we actually add one layer to the tree.",
+    "start_ms": 3452540,
+    "end_ms": 3466700,
+    "duration_ms": 14160,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3466.7,
+    "text": "And now we have another cluster, right? And then this cluster can then later on be merged with this other cluster right here, and that's how it's going to go up all the way to the case that we only have one cluster remaining at the top.",
+    "start_ms": 3466700,
+    "end_ms": 3480660,
+    "duration_ms": 13960,
+    "word_count": 47,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3481.048,
+    "text": "So, dendrogram is kind of visualizing the order that these clusters are actually created in case you want to trace it back and in case you want to actually use this information later on.",
+    "start_ms": 3481048,
+    "end_ms": 3490988,
+    "duration_ms": 9940,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3491.928,
+    "text": "How can we actually use dendrogram in order to figure out what is the optimum number of k or the value for k?",
+    "start_ms": 3491928,
+    "end_ms": 3498928,
+    "duration_ms": 7000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3499.512,
+    "text": "This is kind of a empirical kind of way of doing it, but effectively the idea is that if you look at the dendrogram, and you're looking at these horizontal lines, these horizontal lines are showing you the placement for the clusters and when those clusters are combined together.",
+    "start_ms": 3499512,
+    "end_ms": 3515381,
+    "duration_ms": 15869,
+    "word_count": 49,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3515.381,
+    "text": "So for example, here it shows me that, okay, I had one cluster right here for all of these or all of those small data points that I had in the bottom right or bottom left of the graph.",
+    "start_ms": 3515381,
+    "end_ms": 3528012,
+    "duration_ms": 12631,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3528.012,
+    "text": "Then if I go ahead and cluster all of the data points in the top right part of the graph, and I go ahead and combine them together into one cluster, this is like H horizontal line is showing me the cluster creation.",
+    "start_ms": 3528012,
+    "end_ms": 3542792,
+    "duration_ms": 14780,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3542.792,
+    "text": "The idea is that if you look at the dendrogram and you're seeing a huge vertical gap between these horizontal lines, that shows that probably these two clusters did not align to each other.",
+    "start_ms": 3542792,
+    "end_ms": 3555812,
+    "duration_ms": 13020,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3555.812,
+    "text": "so the distance between them is huge, don't combine them.",
+    "start_ms": 3555812,
+    "end_ms": 3559172,
+    "duration_ms": 3360,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3559.172,
+    "text": "So what you will do is you identify that horizontal gap.",
+    "start_ms": 3559172,
+    "end_ms": 3562652,
+    "duration_ms": 3480,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3562.84,
+    "text": "and then you can actually place a line and you would say that at this line you would cut and you would not combine them any further.",
+    "start_ms": 3562840,
+    "end_ms": 3571160,
+    "duration_ms": 8320,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3571.48,
+    "text": "And in that case, what you can actually see is you can actually use this information to figure out how many clusters did you have at that point and the number of clusters that you have at that point is going to be the optimum.",
+    "start_ms": 3571480,
+    "end_ms": 3583480,
+    "duration_ms": 12000,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3583.48,
+    "text": "Number of clusters that you should use so you don't need to actually go as a priori and then decide what k is going to be but in this case, k equal to two or k equal to tree both are going to be.",
+    "start_ms": 3583480,
+    "end_ms": 3596480,
+    "duration_ms": 13000,
+    "word_count": 44,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3596.48,
+    "text": "good values to pick for this purpose. And definitely K equal to one is not going to be good because there is this huge vertical gap that we're observing right here.",
+    "start_ms": 3596480,
+    "end_ms": 3605720,
+    "duration_ms": 9240,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3606.264,
+    "text": "Look how it is just... A little bit of knowledge about how we can select K and we're going to actually talk a little bit more about how we can consider other aspects when we're deciding about what is the optimal number of K that we should pick.",
+    "start_ms": 3606264,
+    "end_ms": 3620064,
+    "duration_ms": 13800,
+    "word_count": 48,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3620.064,
+    "text": "And that's the next thing that we're going to actually see.",
+    "start_ms": 3620064,
+    "end_ms": 3623120,
+    "duration_ms": 3056,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3623.12,
+    "text": "So choosing the k, right, k is, as we said, is very subjective.",
+    "start_ms": 3623120,
+    "end_ms": 3629320,
+    "duration_ms": 6200,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3629.32,
+    "text": "It's a hyperparameter so you can also treat it as a subjective kind of hyperparameter that you're setting.",
+    "start_ms": 3629320,
+    "end_ms": 3634800,
+    "duration_ms": 5480,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3634.8,
+    "text": "So for example, if I'm looking at the states in the United States, and I want to cluster them, it's very subjective.",
+    "start_ms": 3634800,
+    "end_ms": 3642440,
+    "duration_ms": 7640,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3642.44,
+    "text": "Like how do you want to cluster all of these states?",
+    "start_ms": 3642440,
+    "end_ms": 3644639,
+    "duration_ms": 2199,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3644.639,
+    "text": "Do you want to cluster them based on the geographic location?",
+    "start_ms": 3644639,
+    "end_ms": 3649800,
+    "duration_ms": 5161,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3649.8,
+    "text": "Do you want to cluster them into four clusters? do you want to cluster them into two clusters, East and West, the states, or how do you want to actually do that?",
+    "start_ms": 3649800,
+    "end_ms": 3660220,
+    "duration_ms": 10420,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3660.22,
+    "text": "So it's very subjective. So you pick a K based on the use case that you're dealing with.",
+    "start_ms": 3660220,
+    "end_ms": 3665460,
+    "duration_ms": 5240,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3665.784,
+    "text": "If you want to actually be more systematic, you can use something that we did also in PCA.",
+    "start_ms": 3665784,
+    "end_ms": 3671704,
+    "duration_ms": 5920,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3671.704,
+    "text": "Remember this script plot that we had, we also have the same thing here.",
+    "start_ms": 3671704,
+    "end_ms": 3675535,
+    "duration_ms": 3831,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3675.535,
+    "text": "We could actually say that go ahead and do parameter search and try different values of k.",
+    "start_ms": 3675535,
+    "end_ms": 3681704,
+    "duration_ms": 6169,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3681.784,
+    "text": "For different values of K, so here is the plot of different values of K, K, equal to one, two, three, and so on and so forth.",
+    "start_ms": 3681784,
+    "end_ms": 3689544,
+    "duration_ms": 7760,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3689.544,
+    "text": "Go ahead and calculate, do the clustering and calculate the inertia.",
+    "start_ms": 3689544,
+    "end_ms": 3694184,
+    "duration_ms": 4640,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3694.184,
+    "text": "And then kind of see what the inertia is as you're increasing the number of K.",
+    "start_ms": 3694184,
+    "end_ms": 3699944,
+    "duration_ms": 5760,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3699.944,
+    "text": "One thing that I want to mention is that definitely as the number of clusters increases, inertia decreases because inertia was not weighted, right?",
+    "start_ms": 3699944,
+    "end_ms": 3709784,
+    "duration_ms": 9840,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3709.784,
+    "text": "inertia was the sum of the squared distances to the cluster center, right?",
+    "start_ms": 3709784,
+    "end_ms": 3714678,
+    "duration_ms": 4894,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3714.678,
+    "text": "And that was actually for different clusters, it was calculated separately and then it will, it will add up.",
+    "start_ms": 3714678,
+    "end_ms": 3721224,
+    "duration_ms": 6546,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3721.784,
+    "text": "But effectively, if you have more cluster centers, then each one of those data points are going to have a better chance of being closer to a center, so that some of the squared distances is going to be a smaller.",
+    "start_ms": 3721784,
+    "end_ms": 3734155,
+    "duration_ms": 12371,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3734.155,
+    "text": "So therefore, the inertia is going to decrease as k increases.",
+    "start_ms": 3734155,
+    "end_ms": 3738504,
+    "duration_ms": 4349,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3738.504,
+    "text": "And what we're going to do is we're going to identify the point that we have the diminishing return afterwards.",
+    "start_ms": 3738504,
+    "end_ms": 3743533,
+    "duration_ms": 5029,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3743.533,
+    "text": "So for example, in this case, we're seeing the diminishing return after k equal to 3.",
+    "start_ms": 3743533,
+    "end_ms": 3748703,
+    "duration_ms": 5170,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3748.703,
+    "text": "So that's why k equal to 2, k equal to 3 was the right number to pick as the number of clusters that we wanted to have.",
+    "start_ms": 3748703,
+    "end_ms": 3756792,
+    "duration_ms": 8089,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3756.792,
+    "text": "And that's also something that the dendrogram was also telling us.",
+    "start_ms": 3756792,
+    "end_ms": 3759966,
+    "duration_ms": 3174,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3759.966,
+    "text": "If you remember from the previous slide, we had the dendrogram that when we looked at the vertical gap, where I identified that k equal to 2 or 3 was also useful.",
+    "start_ms": 3759966,
+    "end_ms": 3769984,
+    "duration_ms": 10018,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3769.984,
+    "text": "But if I go ahead and actually run k equal to 6, obviously the inertia is going to be less because what's happening is that I have more opportunities or more placement of these cluster centers.",
+    "start_ms": 3769984,
+    "end_ms": 3783224,
+    "duration_ms": 13240,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3783.224,
+    "text": "And by these cluster centers, cluster center placement is where distances are going to be smaller.",
+    "start_ms": 3783224,
+    "end_ms": 3789304,
+    "duration_ms": 6080,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3789.304,
+    "text": "Because right now, for example, this data point is going to be closer to this center as as opposed to this data point being compared against this center or another center.",
+    "start_ms": 3789304,
+    "end_ms": 3799344,
+    "duration_ms": 10040,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3799.344,
+    "text": "So the distances are going to be a little bit more reasonable.",
+    "start_ms": 3799344,
+    "end_ms": 3802384,
+    "duration_ms": 3040,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3802.384,
+    "text": "That's why what we would say is that inertia is not going to consider is Effectively, if you're trying to optimize inertia, it will actually, you will overfit the data.",
+    "start_ms": 3802384,
+    "end_ms": 3815576,
+    "duration_ms": 13192,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3815.576,
+    "text": "Because it will keep increasing K and then it will never end.",
+    "start_ms": 3815576,
+    "end_ms": 3819076,
+    "duration_ms": 3500,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3819.076,
+    "text": "What you will do is you will use this album method on this screen plot in order to find the optimum value for K that you're observing diminishing return afterwards.",
+    "start_ms": 3819076,
+    "end_ms": 3828076,
+    "duration_ms": 9000,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3828.856,
+    "text": "There is another way for us to control K or identify K.",
+    "start_ms": 3828856,
+    "end_ms": 3834456,
+    "duration_ms": 5600,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3834.456,
+    "text": "That's the score that we can assign and that's called the silo head score.",
+    "start_ms": 3834456,
+    "end_ms": 3839156,
+    "duration_ms": 4700,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3839.156,
+    "text": "What is the silo head score? Silo head score says that I'm interested in just evaluating quality of clusters.",
+    "start_ms": 3839156,
+    "end_ms": 3847556,
+    "duration_ms": 8400,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3847.556,
+    "text": "I'm going to evaluate quality of the clusters for every data point that is clustered in this entire setting.",
+    "start_ms": 3847556,
+    "end_ms": 3855176,
+    "duration_ms": 7620,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3855.176,
+    "text": "So what we would say is that we would say that if I'm assigning a score to this data point right here in the center, it is vell cluster with the data points in the same cluster.",
+    "start_ms": 3855176,
+    "end_ms": 3865576,
+    "duration_ms": 10400,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3865.576,
+    "text": "And it has enough separation from the data points in another cluster.",
+    "start_ms": 3865576,
+    "end_ms": 3870096,
+    "duration_ms": 4520,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3870.096,
+    "text": "So we would say that the clustering for this data point is cohesive.",
+    "start_ms": 3870096,
+    "end_ms": 3874096,
+    "duration_ms": 4000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3874.096,
+    "text": "So therefore, I'm expecting a high silloy this for. For another data point, for example, this data point right here, We would say that it's not very close to the data points in its own cluster, but it is close to the data points in the opposing cluster.",
+    "start_ms": 3874096,
+    "end_ms": 3890096,
+    "duration_ms": 16000,
+    "word_count": 48,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3890.096,
+    "text": "So it has two bad things going on. So it's not cohesive within its own cluster.",
+    "start_ms": 3890096,
+    "end_ms": 3894896,
+    "duration_ms": 4800,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3894.896,
+    "text": "It doesn't see the separation from another cluster. So that's why it is going to have a low stilloydiscord.",
+    "start_ms": 3894896,
+    "end_ms": 3902496,
+    "duration_ms": 7600,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3902.496,
+    "text": "So the stilloydiscord is going to use two pieces of information.",
+    "start_ms": 3902496,
+    "end_ms": 3906496,
+    "duration_ms": 4000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3906.496,
+    "text": "So remember that I was talking about two things. So you should be vell cluster within the data points of your own cluster and you should have enough separation from the data points in the opposing cluster or the nearest cluster.",
+    "start_ms": 3906496,
+    "end_ms": 3918856,
+    "duration_ms": 12360,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3918.856,
+    "text": "So I'm going to refer to them but a. and B A is referring to the average distance to other points in the same cluster.",
+    "start_ms": 3918856,
+    "end_ms": 3927816,
+    "duration_ms": 8960,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3927.816,
+    "text": "So A needs to actually be a small value. So this smaller is the better because your distance to your own, to the data points to your own cluster should be small, meaning that you're very cohesive.",
+    "start_ms": 3927816,
+    "end_ms": 3947176,
+    "duration_ms": 19360,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3946.804,
+    "text": "of the point to average distance to the points in the closest cluster.",
+    "start_ms": 3946804,
+    "end_ms": 3952304,
+    "duration_ms": 5500,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3952.304,
+    "text": "So in this case, I have two clusters only. So A is going to look at the own cluster and then B is going to look at all of the points in the opposing cluster.",
+    "start_ms": 3952304,
+    "end_ms": 3962304,
+    "duration_ms": 10000,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3962.304,
+    "text": "And what we want to actually have here is that we want to make sure that our separation from the data points in the other cluster be a larger value.",
+    "start_ms": 3962304,
+    "end_ms": 3977264,
+    "duration_ms": 14960,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3977.246,
+    "text": "we decrease A. So the silloy the score is defined as this.",
+    "start_ms": 3977246,
+    "end_ms": 3984009,
+    "duration_ms": 6763,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3984.009,
+    "text": "B minus a divided by maximum of A and B.",
+    "start_ms": 3984009,
+    "end_ms": 3990536,
+    "duration_ms": 6527,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3990.241,
+    "text": "score is going to be a large value, right? And then dividing it by maximum is that we want to make sure that the distance or the separation between the data points in A and B is substantial.",
+    "start_ms": 3990241,
+    "end_ms": 4002680,
+    "duration_ms": 12439,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4002.68,
+    "text": "So that's why we're looking at the maximum between A and B as well as the denominator.",
+    "start_ms": 4002680,
+    "end_ms": 4007880,
+    "duration_ms": 5200,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4007.88,
+    "text": "And then actually if B is a large value, so the larger the denominator is, this smaller, the entire silhouette of the score is going to be.",
+    "start_ms": 4007880,
+    "end_ms": 4022840,
+    "duration_ms": 14960,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4022.808,
+    "text": "it's going to help us make blobby kind of Clusters that came in's clustering was not giving us so let's think about few things What is the highest value for a silhouette is score for any given point?",
+    "start_ms": 4022808,
+    "end_ms": 4036968,
+    "duration_ms": 14160,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4037.624,
+    "text": "And notice that we're calculating the score per data point.",
+    "start_ms": 4037624,
+    "end_ms": 4041124,
+    "duration_ms": 3500,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4041.124,
+    "text": "So what is the highest value of the the silloy of the sport.",
+    "start_ms": 4041124,
+    "end_ms": 4045124,
+    "duration_ms": 4000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4051.448,
+    "text": "Again, going back to the formula, it was B minus A divided by the maximum value, a maximum between A and B.",
+    "start_ms": 4051448,
+    "end_ms": 4058448,
+    "duration_ms": 7000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4073.368,
+    "text": "One incident. Okay, let's take a look at how we can do this calculation.",
+    "start_ms": 4073368,
+    "end_ms": 4081816,
+    "duration_ms": 8448,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4081.816,
+    "text": "The best case scenario is that all of the data points in the same cluster are on top of each other.",
+    "start_ms": 4081816,
+    "end_ms": 4087136,
+    "duration_ms": 5320,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4087.136,
+    "text": "So your distance to the data points in your own cluster is equal to zero, right?",
+    "start_ms": 4087136,
+    "end_ms": 4091416,
+    "duration_ms": 4280,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4091.416,
+    "text": "If your the distance between you and the data points in the same cluster is equal to zero and I'm going to write it here, it was b minus a divided by maximum of a m b.",
+    "start_ms": 4091416,
+    "end_ms": 4103416,
+    "duration_ms": 12000,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4103.416,
+    "text": "If a is equal to zero, this is going to be equal to b divided by maximum of zero and b, and the distances are always positive, so that maximum between zero and b is going to be b, so the maximum value is going to be b.",
+    "start_ms": 4103416,
+    "end_ms": 4116809,
+    "duration_ms": 13393,
+    "word_count": 48,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4116.809,
+    "text": "No, it's going to be one. So that's the maximum, the best case scenario for a silhouette score.",
+    "start_ms": 4116809,
+    "end_ms": 4122056,
+    "duration_ms": 5247,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4122.056,
+    "text": "Or if b is substantially larger than a, in that case, if b is substantially larger than a, b minus a is going to approximately be equal to B and then when you take the maximum between A and B, that's also B, so the fraction is going to be simplified to one.",
+    "start_ms": 4122056,
+    "end_ms": 4139065,
+    "duration_ms": 17009,
+    "word_count": 53,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4139.065,
+    "text": "So that's the maximum value that we can get. But I want you to also think about another thing.",
+    "start_ms": 4139065,
+    "end_ms": 4145580,
+    "duration_ms": 6515,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4145.58,
+    "text": "Can the stilloidless score be a negative value? Because we're trying to find a wrench.",
+    "start_ms": 4145580,
+    "end_ms": 4152328,
+    "duration_ms": 6748,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4163.256,
+    "text": "Think about this lowest scoring point. Can there be a case that this low scoring point?",
+    "start_ms": 4163256,
+    "end_ms": 4169456,
+    "duration_ms": 6200,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4169.88,
+    "text": "Have a negative silloy discord. answer is yes. And we can actually look at the cases that it can be negative.",
+    "start_ms": 4169880,
+    "end_ms": 4189869,
+    "duration_ms": 19989,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4189.869,
+    "text": "For example, in this case, the Silla discourse is negative point one tree because it's just that A in this case is greater than B.",
+    "start_ms": 4189869,
+    "end_ms": 4199834,
+    "duration_ms": 9965,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4199.834,
+    "text": "Because if you're looking at the average distance of this point to all of these other points, these distances seems to be larger than the distance of this point to other cluster that we have.",
+    "start_ms": 4199834,
+    "end_ms": 4212126,
+    "duration_ms": 12292,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4212.126,
+    "text": "So here we're measuring B, here we're measuring A, and A is a larger value than B, and therefore A minus B divided by maximum of AMB it just really doesn't matter what the denominator is the numerator is going to be less than zero the worst case scenario can happen when all of the data points in the opposing cluster are on top of each other right and you are also on top of that right and your misclustered so that's the worst case scenario it will happen very rarely it will happen it will probably happen in the cases that you train something on the training data you overfitted to the training data and at the test time your misclassifying a data point so in all of those cases We can actually have a negative silhouette score up to negative one.",
+    "start_ms": 4212126,
+    "end_ms": 4263440,
+    "duration_ms": 51314,
+    "word_count": 143,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4263.44,
+    "text": "So the range for the silhouette score as we saw is values between negative one and one.",
+    "start_ms": 4263440,
+    "end_ms": 4269720,
+    "duration_ms": 6280,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4270.072,
+    "text": "But how can we actually use the siloid score? And how is siloid score different than the inertia that we had?",
+    "start_ms": 4270072,
+    "end_ms": 4276312,
+    "duration_ms": 6240,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4276.312,
+    "text": "Remember inertia was not giving us what optimum K we can use.",
+    "start_ms": 4276312,
+    "end_ms": 4280512,
+    "duration_ms": 4200,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4280.512,
+    "text": "It was actually overfitting. It was actually using K in order to overfit to our data.",
+    "start_ms": 4280512,
+    "end_ms": 4287512,
+    "duration_ms": 7000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4287.512,
+    "text": "Because as K was increasing, the inertia was decreasing. So we did not use inertia in order to find K, but what we did was we used elbow method in order to find out what is the optimum value is going to be in what inertia value that's gonna give us.",
+    "start_ms": 4287512,
+    "end_ms": 4306872,
+    "duration_ms": 19360,
+    "word_count": 51,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4306.872,
+    "text": "With the siloid score, the higher the siloid score on average for all of the data points, that means that our data points are clustered well together.",
+    "start_ms": 4306872,
+    "end_ms": 4315192,
+    "duration_ms": 8320,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4315.192,
+    "text": "So it's given and they're blobby, they're separated and so on and so forth.",
+    "start_ms": 4315192,
+    "end_ms": 4319552,
+    "duration_ms": 4360,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4319.552,
+    "text": "So we consider the cohesiveness of the clusters and we also consider the separation.",
+    "start_ms": 4319552,
+    "end_ms": 4324992,
+    "duration_ms": 5440,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4324.992,
+    "text": "So it's kind of guaranteed. So one thing that we can do is if we are on this side of between two different k values, and they're equally good.",
+    "start_ms": 4324992,
+    "end_ms": 4333512,
+    "duration_ms": 8520,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4333.512,
+    "text": "So for example, in the data set, we'd seen that for k equal to 2k equal to 3, we were unsure which one of them we should pick.",
+    "start_ms": 4333512,
+    "end_ms": 4339992,
+    "duration_ms": 6480,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4339.992,
+    "text": "One thing that we can do is we can actually calculate the silhouette of score for each one of those k values and then figure out in each one of those scenarios how well the average silhouette of score is than therefore decide about what is the right value of kick.",
+    "start_ms": 4339992,
+    "end_ms": 4355672,
+    "duration_ms": 15680,
+    "word_count": 51,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4356.184,
+    "text": "So speaking of deciding between the siloed between k equal to 2 and k equal to 3, this plot right here is a siloed plot.",
+    "start_ms": 4356184,
+    "end_ms": 4366167,
+    "duration_ms": 9983,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4366.167,
+    "text": "So I showed you two plots today that you've not seen before and you're not expected to be able to draw it but you're expected to be able to interpret it.",
+    "start_ms": 4366167,
+    "end_ms": 4374984,
+    "duration_ms": 8817,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4374.984,
+    "text": "We had seen dendrogram but now we're seeing the siloed plot.",
+    "start_ms": 4374984,
+    "end_ms": 4384984,
+    "duration_ms": 10000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4384.856,
+    "text": "clusters. So this is exactly corresponding to this clustering that's happening here.",
+    "start_ms": 4384856,
+    "end_ms": 4389728,
+    "duration_ms": 4872,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4389.728,
+    "text": "So what you're seeing is that one. Part of it, this arc refers to the blue cluster and one arc refers to the orange cluster.",
+    "start_ms": 4389728,
+    "end_ms": 4398072,
+    "duration_ms": 8344,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4398.264,
+    "text": "On the y-axis you're seeing that the cluster labels, clusters, you run one, whatever you label before, and then you're also seeing that these numbers refer to how many data points you have in that cluster.",
+    "start_ms": 4398264,
+    "end_ms": 4410104,
+    "duration_ms": 11840,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4410.104,
+    "text": "So the y-axis, this cluster, or this arc is, that means that more data points are clustered into blue cluster as opposed to this orange cluster.",
+    "start_ms": 4410104,
+    "end_ms": 4419106,
+    "duration_ms": 9002,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4419.106,
+    "text": "And you can actually calculate, it's roughly between 10 and 110, so we're roughly having 100 data points in the blue cluster and then we're roughly having 50 data points in the orange cluster.",
+    "start_ms": 4419106,
+    "end_ms": 4430864,
+    "duration_ms": 11758,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4431.992,
+    "text": "Then how did we come up with the arcs? The arcs are actually sorted, siloediskores for all of the data points in that specific cluster.",
+    "start_ms": 4431992,
+    "end_ms": 4441312,
+    "duration_ms": 9320,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4441.312,
+    "text": "Remember that I was saying that this has a siloediskore of negative 0.1 tree.",
+    "start_ms": 4441312,
+    "end_ms": 4446552,
+    "duration_ms": 5240,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4446.552,
+    "text": "That's where that is, negative 0.1 tree. That's the indication of that data point.",
+    "start_ms": 4446552,
+    "end_ms": 4451472,
+    "duration_ms": 4920,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4451.472,
+    "text": "Then another data point, then another data point, then another data point.",
+    "start_ms": 4451472,
+    "end_ms": 4455432,
+    "duration_ms": 3960,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4455.432,
+    "text": "So we sort all of those siloediskores, and then they will all form an arc.",
+    "start_ms": 4455432,
+    "end_ms": 4461872,
+    "duration_ms": 6440,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4461.872,
+    "text": "if you're thinking about these values, these data points be sorted, and then also the, the silo scores also increasing.",
+    "start_ms": 4461872,
+    "end_ms": 4470592,
+    "duration_ms": 8720,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4470.592,
+    "text": "And you're seeing that we have a lot of the data points right here, so they're closer together, those are the center data points that we have in the cluster.",
+    "start_ms": 4470592,
+    "end_ms": 4477871,
+    "duration_ms": 7279,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4478.072,
+    "text": "So that's what's happening on average with the blue cluster.",
+    "start_ms": 4478072,
+    "end_ms": 4482272,
+    "duration_ms": 4200,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4482.272,
+    "text": "With the orange cluster, there are veil cluster with each other.",
+    "start_ms": 4482272,
+    "end_ms": 4486672,
+    "duration_ms": 4400,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4486.672,
+    "text": "There's no negative value for the silhouette of score for any data points in the orange cluster.",
+    "start_ms": 4486672,
+    "end_ms": 4491072,
+    "duration_ms": 4400,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4491.072,
+    "text": "It is veil separated from the other cluster as well.",
+    "start_ms": 4491072,
+    "end_ms": 4493872,
+    "duration_ms": 2800,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4493.872,
+    "text": "So the silhouette of scores are larger. So we're seeing that all of these data points are all of these silhouette of scores also are plotted on this kind of curve on the orange plot or on the orange cluster.",
+    "start_ms": 4493872,
+    "end_ms": 4507872,
+    "duration_ms": 14000,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4507.872,
+    "text": "What we want to actually see is we want to actually see the separation between these two clusters.",
+    "start_ms": 4507872,
+    "end_ms": 4515872,
+    "duration_ms": 8000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4515.872,
+    "text": "We want to actually look at the average kind of siloid discourse for all of the data points in one cluster versus this other cluster.",
+    "start_ms": 4515872,
+    "end_ms": 4523872,
+    "duration_ms": 8000,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4523.872,
+    "text": "Now we know that the quality of the orange cluster is better than the quality of the blue cluster just by looking at this plot.",
+    "start_ms": 4523872,
+    "end_ms": 4529872,
+    "duration_ms": 6000,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4529.872,
+    "text": "We're also observing that there is a bunch of different data points with negative siloid discourse, which is not ideal.",
+    "start_ms": 4529872,
+    "end_ms": 4535872,
+    "duration_ms": 6000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4535.872,
+    "text": "ideal. So if you want to consider that or take that into consideration when you're deciding about K, all of those are good indications.",
+    "start_ms": 4535872,
+    "end_ms": 4543096,
+    "duration_ms": 7224,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4543.096,
+    "text": "Then this dotted line right here or dashed line is the average silhouette of all of the points between all of those clusters.",
+    "start_ms": 4543096,
+    "end_ms": 4550680,
+    "duration_ms": 7584,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4550.68,
+    "text": "So we want to make sure that this average silhouette, a score is as high as possible.",
+    "start_ms": 4550680,
+    "end_ms": 4555987,
+    "duration_ms": 5307,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4555.987,
+    "text": "And we also want to make sure that all of the or most of the clusters are contributing to that average.",
+    "start_ms": 4555987,
+    "end_ms": 4562887,
+    "duration_ms": 6900,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4562.887,
+    "text": "What you're seeing right here is that The blue cluster is way above the average.",
+    "start_ms": 4562887,
+    "end_ms": 4567952,
+    "duration_ms": 5065,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4567.952,
+    "text": "And then the, sorry, the orange cluster is way above the average.",
+    "start_ms": 4567952,
+    "end_ms": 4571072,
+    "duration_ms": 3120,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4571.072,
+    "text": "And then the blue cluster is way below the average.",
+    "start_ms": 4571072,
+    "end_ms": 4573632,
+    "duration_ms": 2560,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4573.632,
+    "text": "We would have liked to see more balance between these two clusters.",
+    "start_ms": 4573632,
+    "end_ms": 4578352,
+    "duration_ms": 4720,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4578.352,
+    "text": "But what happens if I go ahead and do three clusters?",
+    "start_ms": 4578352,
+    "end_ms": 4581152,
+    "duration_ms": 2800,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4581.152,
+    "text": "So this is three cluster. And then you're seeing the cluster or the siloet plot for the siloet scores of those three clusters.",
+    "start_ms": 4581152,
+    "end_ms": 4590432,
+    "duration_ms": 9280,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4590.432,
+    "text": "So in this case, you're seeing that there is this blue cluster.",
+    "start_ms": 4590432,
+    "end_ms": 4594592,
+    "duration_ms": 4160,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4594.592,
+    "text": "It looks like that it is still has some negative score, probably something to deal with.",
+    "start_ms": 4594592,
+    "end_ms": 4600191,
+    "duration_ms": 5599,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4600.751,
+    "text": "This data point right here on the border, and then you're seeing all of these silhouette values for blue, for orange, and then for green cluster.",
+    "start_ms": 4600751,
+    "end_ms": 4609237,
+    "duration_ms": 8486,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4609.237,
+    "text": "So you're seeing that the orange cluster remains roughly the same compared to this one, orange cluster stays the same.",
+    "start_ms": 4609237,
+    "end_ms": 4618112,
+    "duration_ms": 8875,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4618.112,
+    "text": "It's just that the closest cluster now is a little bit closer than before.",
+    "start_ms": 4618112,
+    "end_ms": 4622657,
+    "duration_ms": 4545,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4622.657,
+    "text": "So the average the scores are going to be shrinking slightly.",
+    "start_ms": 4622657,
+    "end_ms": 4626952,
+    "duration_ms": 4295,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4626.952,
+    "text": "And then between the green cluster and the blue cluster and combining them to what it was before with the blue cluster, we're still seeing that the performance is not comparable.",
+    "start_ms": 4626952,
+    "end_ms": 4636952,
+    "duration_ms": 10000,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4636.952,
+    "text": "But then if you look at the average silhouette score for all of the points, the average silhouette score is less than what it was before.",
+    "start_ms": 4636952,
+    "end_ms": 4644872,
+    "duration_ms": 7920,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4644.872,
+    "text": "So that is the case that it will tell you that, OK, when you're looking at the elbow method, or when you're looking at the dendrogram, And you are sure whether you pick K equal to 2 or K equal to 3.",
+    "start_ms": 4644872,
+    "end_ms": 4655512,
+    "duration_ms": 10640,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4655.512,
+    "text": "This is a way to go. Just look at the shape of the silhouette, silhouette the score plot, and then you see which one you're more comfortable with.",
+    "start_ms": 4655512,
+    "end_ms": 4663431,
+    "duration_ms": 7919,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4663.431,
+    "text": "And again, being comfortable what is really subjective. So me deciding between these two, probably I would just go with the average silhouette the score and just not look at what's happening within each one of those individual clusters.",
+    "start_ms": 4663431,
+    "end_ms": 4678072,
+    "duration_ms": 14641,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4678.072,
+    "text": "So I want to end on this note that you can always consider the context as well.",
+    "start_ms": 4678072,
+    "end_ms": 4682528,
+    "duration_ms": 4456,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4682.528,
+    "text": "So if you have a company and you want to decide key shirt sizes and you want to decide whether you should do three size t-shirts, a small medium large or you do five t-shirt sizes.",
+    "start_ms": 4682528,
+    "end_ms": 4693720,
+    "duration_ms": 11192,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4693.72,
+    "text": "Obviously what they would do is they would actually calculate the cost of designing five versus three and then calculating the profit and then which the one that gives more profit is going to be the one that you're choosing.",
+    "start_ms": 4693720,
+    "end_ms": 4706912,
+    "duration_ms": 13192,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4706.912,
+    "text": "So not everything at the end of the day is going to be about the data.",
+    "start_ms": 4706912,
+    "end_ms": 4710552,
+    "duration_ms": 3640,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4710.552,
+    "text": "There is to some extent that you can propose that, okay, probably three and four are the better options.",
+    "start_ms": 4710552,
+    "end_ms": 4717072,
+    "duration_ms": 6520,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4717.072,
+    "text": "And four is not three and five are better options.",
+    "start_ms": 4717072,
+    "end_ms": 4719712,
+    "duration_ms": 2640,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4719.712,
+    "text": "And four to share sizes is not going to be ideal.",
+    "start_ms": 4719712,
+    "end_ms": 4722792,
+    "duration_ms": 3080,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4722.792,
+    "text": "But then making a decision about the final kind of use case is going to just depend on the application that you're using it for.",
+    "start_ms": 4722792,
+    "end_ms": 4730072,
+    "duration_ms": 7280,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4730.68,
+    "text": "So that's it today with the SQS clustering. We saw one full algorithm.",
+    "start_ms": 4730680,
+    "end_ms": 4735062,
+    "duration_ms": 4382,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4735.062,
+    "text": "We had seen two solutions. We had seen Cayman's clustering, very useful iterative approach, very fast to run compared to a collaborative clustering that we had seen next.",
+    "start_ms": 4735062,
+    "end_ms": 4747360,
+    "duration_ms": 12298,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4747.36,
+    "text": "We know that it has the issue that it might not give us the global optimum that we want.",
+    "start_ms": 4747360,
+    "end_ms": 4752986,
+    "duration_ms": 5626,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4752.986,
+    "text": "We had seen hierarchical approach. We had seen different linkage criteria and we had also seen that it is useful in the cases that came in this clustering is going to fail.",
+    "start_ms": 4752986,
+    "end_ms": 4762650,
+    "duration_ms": 9664,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4762.65,
+    "text": "We also talked about how we picked the parameter K, hyperparameter K.",
+    "start_ms": 4762650,
+    "end_ms": 4766573,
+    "duration_ms": 3923,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4766.573,
+    "text": "We said that we can actually intuitively decide in the example of the states in the United States.",
+    "start_ms": 4766573,
+    "end_ms": 4773866,
+    "duration_ms": 7293,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4773.866,
+    "text": "We can use the Albumet that's in the Loid score.",
+    "start_ms": 4773866,
+    "end_ms": 4777504,
+    "duration_ms": 3638,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4777.504,
+    "text": "We can also use real-world metrics and profit and the use case that we're dealing with.",
+    "start_ms": 4777504,
+    "end_ms": 4782840,
+    "duration_ms": 5336,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4783.48,
+    "text": "That's it for today. I'm going to come back on Tuesday after Thanksgiving and we're going to talk about neural networks.",
+    "start_ms": 4783480,
+    "end_ms": 4789952,
+    "duration_ms": 6472,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4789.952,
+    "text": "We're going to actually connect what you'd seen in logistic regression and then combine multiple logistic functions in order to build a neural network and we'll see fun and cool demos of neural network and then once you learn that you will easily learn large language models that we have on Thursday.",
+    "start_ms": 4789952,
+    "end_ms": 4805980,
+    "duration_ms": 16028,
+    "word_count": 52,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4806.424,
+    "text": "Thank you for coming. Happy Thanksgiving. Enjoy the break.",
+    "start_ms": 4806424,
+    "end_ms": 4809624,
+    "duration_ms": 3200,
+    "word_count": 9,
+    "avg_confidence": 90
+  }
+]

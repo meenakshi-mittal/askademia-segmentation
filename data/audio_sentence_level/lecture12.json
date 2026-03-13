@@ -1,0 +1,4619 @@
+[
+  {
+    "timestamp": 16.12,
+    "text": "Good morning, everyone. Welcome to our ordinary list discourse lecture.",
+    "start_ms": 16120,
+    "end_ms": 21320,
+    "duration_ms": 5200,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 21.32,
+    "text": "Most of those songs had ordinary and so kind of picking the right song for today.",
+    "start_ms": 21320,
+    "end_ms": 27400,
+    "duration_ms": 6080,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 27.4,
+    "text": "So today is going to be the last kind of linear regression lecture that we have.",
+    "start_ms": 27400,
+    "end_ms": 33480,
+    "duration_ms": 6080,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 33.48,
+    "text": "And starting from next lecture, we're going to move on to a more application side of linear regression that you're seeing or you have seen so far.",
+    "start_ms": 33480,
+    "end_ms": 43000,
+    "duration_ms": 9520,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 43.0,
+    "text": "So kind of a teaser of today's lecture, I gave it to you in the previous lecture I talked about the fact that today we're going to do multiple linear regression And what we're going to do is that we're going to have multiple different Attributes or features that we want to combine in order to make a specific prediction So this is kind of the outline for today.",
+    "start_ms": 43000,
+    "end_ms": 62016,
+    "duration_ms": 19016,
+    "word_count": 69,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 62.016,
+    "text": "I'm going to talk about Walk you through the modeling process the same forest that process that we saw previously with the simple linear regression and also with the constant model But this time we're going to see that with a multiple linear regression And then at the end we're going to talk about some of the properties of OLS or generally ceSquares and we're going to talk about evaluating the model that we have built so I'm going to start by introducing what what multiple linear regression is.",
+    "start_ms": 62016,
+    "end_ms": 91048,
+    "duration_ms": 29032,
+    "word_count": 89,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 91.048,
+    "text": "But before diving into the content of today's lecture, I also wanna give you a warning that every section of today's lecture is just gonna be me reviewing or reminding you of some linear algebra concepts and then using them.",
+    "start_ms": 91048,
+    "end_ms": 106568,
+    "duration_ms": 15520,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 106.568,
+    "text": "And then I'll keep building on top of the previous concept that we built.",
+    "start_ms": 106568,
+    "end_ms": 110648,
+    "duration_ms": 4080,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 110.648,
+    "text": "So it's gonna be pretty linear algebra, heavy math, heavy lecture that you will see today.",
+    "start_ms": 110648,
+    "end_ms": 117728,
+    "duration_ms": 7080,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 117.728,
+    "text": "I'm expecting that you all will watch, re-watch this lecture at least once more, to be able to do the homework and to grasp all the concepts clearly.",
+    "start_ms": 117728,
+    "end_ms": 129048,
+    "duration_ms": 11320,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 129.048,
+    "text": "So just know that the first time, if some of the concepts are not super clear, that's very expected.",
+    "start_ms": 129048,
+    "end_ms": 134568,
+    "duration_ms": 5520,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 134.568,
+    "text": "This is kind of a very math, heavy, involved lecture.",
+    "start_ms": 134568,
+    "end_ms": 138448,
+    "duration_ms": 3880,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 138.448,
+    "text": "But the good news is that from this point and on, everything is gonna get easier and it's gonna be more on the applied side of the thing and then we're gonna see, In the second half of data, 100 after the meet term, we're gonna see different applications, our different machine learning algorithms or techniques every week.",
+    "start_ms": 138448,
+    "end_ms": 155848,
+    "duration_ms": 17400,
+    "word_count": 58,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 155.848,
+    "text": "So things are gonna get easier, but you have to kind of get past this the specific lecture that we have.",
+    "start_ms": 155848,
+    "end_ms": 162488,
+    "duration_ms": 6640,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 162.488,
+    "text": "Okay, let's start. Multiple linear regression. What was that? What I described last time was that assume that I have multiple different features that I want to combine, and I want to combine them using your specifics the weights that I want to calculate, a weighted combination of the features that I have in my data point, up until the point that I am able to do a prediction why I had a single data point that I have.",
+    "start_ms": 162488,
+    "end_ms": 186888,
+    "duration_ms": 24400,
+    "word_count": 79,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 186.888,
+    "text": "So what are the parameters for this multiple linear regression model?",
+    "start_ms": 186888,
+    "end_ms": 189968,
+    "duration_ms": 3080,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 189.968,
+    "text": "What we have is tet2 0 or the same y-intercept bias term that we have been talking about previously, uh, bus in the, uh, in the constant model and also in the simple linear regression case.",
+    "start_ms": 189968,
+    "end_ms": 201559,
+    "duration_ms": 11591,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 201.559,
+    "text": "Um, And then also, teta 1, teta 2, all the way to teta p.",
+    "start_ms": 201559,
+    "end_ms": 205648,
+    "duration_ms": 4089,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 205.648,
+    "text": "If I have p different features, I have 1, teta 0, and then p different parameters for different features that I have.",
+    "start_ms": 205648,
+    "end_ms": 212808,
+    "duration_ms": 7160,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 212.808,
+    "text": "And there are my features. My features are x1, x2, and xp.",
+    "start_ms": 212808,
+    "end_ms": 217648,
+    "duration_ms": 4840,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 217.648,
+    "text": "So this is kind of this model that we're using.",
+    "start_ms": 217648,
+    "end_ms": 220887,
+    "duration_ms": 3239,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 220.887,
+    "text": "Is the linear model? Means that it is linear in terms of the teta.",
+    "start_ms": 220887,
+    "end_ms": 226088,
+    "duration_ms": 5201,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 226.088,
+    "text": "So it's a weighted linear combination of the teta. that those types of are weighted or scaled by each one of those XJ or each one of those attribute values that we have.",
+    "start_ms": 226088,
+    "end_ms": 236745,
+    "duration_ms": 10657,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 236.745,
+    "text": "That's why although we're multiplying a bunch of different terms then we're summing them all together, this is still a linear function or a linear model that we're dealing with.",
+    "start_ms": 236745,
+    "end_ms": 245608,
+    "duration_ms": 8863,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 246.296,
+    "text": "So in terms of the machine that we've been talking about before, what we have in multiple linear regression is that our features are going to be passed into this blue machine that I have.",
+    "start_ms": 246296,
+    "end_ms": 257696,
+    "duration_ms": 11400,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 257.696,
+    "text": "My features are, again, you saw x1x2 all the way to xp.",
+    "start_ms": 257696,
+    "end_ms": 261536,
+    "duration_ms": 3840,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 261.536,
+    "text": "It's a p-dimensional vector. If I combine all of those features together, it's going to be p different attributes and different information pieces for one single observation that I have that I'm showing that single observation using.",
+    "start_ms": 261536,
+    "end_ms": 275296,
+    "duration_ms": 13760,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 275.296,
+    "text": "this vector x bar, and then they are weighted using this parameter vector.",
+    "start_ms": 275296,
+    "end_ms": 280736,
+    "duration_ms": 5440,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 280.736,
+    "text": "That this parameter vector is theta 0 theta 1 all the way to theta p.",
+    "start_ms": 280736,
+    "end_ms": 284256,
+    "duration_ms": 3520,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 284.256,
+    "text": "And then obviously at the end, we know that we're getting out of this machine, but we're getting is the prediction.",
+    "start_ms": 284256,
+    "end_ms": 289136,
+    "duration_ms": 4880,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 289.136,
+    "text": "So notice that we have multi-dimensional input, multi-dimensional parameter model, and then what we're getting as the output is just a single prediction, and that's the scalar value or a value in real value number that we have.",
+    "start_ms": 289136,
+    "end_ms": 304175,
+    "duration_ms": 15039,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 304.176,
+    "text": "So it's just one dimensional data point of skill or value as the output.",
+    "start_ms": 304176,
+    "end_ms": 308176,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 309.08,
+    "text": "So I also gave you an example last time, a very simple example, or instead of having a constant model or having one feature using some and use a simple linear regression, what if I have two features?",
+    "start_ms": 309080,
+    "end_ms": 323080,
+    "duration_ms": 14000,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 323.08,
+    "text": "What if I have different snapshots of the lengths and weight of my cat over the years, and I want to use this data so that in future, future if I see a cat I can predict their age using the length and the weight.",
+    "start_ms": 323080,
+    "end_ms": 339000,
+    "duration_ms": 15920,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 339.0,
+    "text": "What I'll do is I'll go ahead and collect a bunch of different data points for name is Pishy.",
+    "start_ms": 339000,
+    "end_ms": 343680,
+    "duration_ms": 4680,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 343.68,
+    "text": "So we can see that likes just trying to stretch herself to get different lengths and then I'll collect another data point and so on and so forth.",
+    "start_ms": 343680,
+    "end_ms": 351520,
+    "duration_ms": 7840,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 351.52,
+    "text": "And what I'll do is I'll plug in all of these attributes that I have into a multiple regression model assuming that I have the parameters known for the weight and the length.",
+    "start_ms": 351520,
+    "end_ms": 363360,
+    "duration_ms": 11840,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 363.36,
+    "text": "So this is a parameter for the lengths, for example.",
+    "start_ms": 363360,
+    "end_ms": 365760,
+    "duration_ms": 2400,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 365.76,
+    "text": "This is a parameter for the weight. If I plug in any feature, any entry, or any observation for a cat such as, again, the lengths and the weight, what I can do is I can calculate a weighted combination of all of these features that I have.",
+    "start_ms": 365760,
+    "end_ms": 381280,
+    "duration_ms": 15520,
+    "word_count": 48,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 381.28,
+    "text": "And then add on also the tetasero value and then be able to get why I had or the projection for the age.",
+    "start_ms": 381280,
+    "end_ms": 387400,
+    "duration_ms": 6120,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 387.4,
+    "text": "So this is kind of the simplest case that you have two features.",
+    "start_ms": 387400,
+    "end_ms": 390400,
+    "duration_ms": 3000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 390.4,
+    "text": "But we're going to move on to using more features and try to scale this beyond two features and kind of generalize what kind of space we're living in with multiple regression.",
+    "start_ms": 390400,
+    "end_ms": 403520,
+    "duration_ms": 13120,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 403.52,
+    "text": "So today's lecture is gonna use a data set of NBA players from 2018, 2019, and we have different attributes from different players that we can use.",
+    "start_ms": 403520,
+    "end_ms": 414440,
+    "duration_ms": 10920,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 414.44,
+    "text": "The target or the target variable that we want to measure or we want to predict is the average number of points that those players are going to score in a given game.",
+    "start_ms": 414440,
+    "end_ms": 427119,
+    "duration_ms": 12679,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 427.119,
+    "text": "So that's the target value. That's this entire column that we have, but then we also have some input feature values that we can use.",
+    "start_ms": 427119,
+    "end_ms": 436320,
+    "duration_ms": 9201,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 436.32,
+    "text": "The input feature values that we have are going to be field goal.",
+    "start_ms": 436320,
+    "end_ms": 439439,
+    "duration_ms": 3119,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 439.439,
+    "text": "So the field goal is the number of two pointers that these players would score on average in a game.",
+    "start_ms": 439439,
+    "end_ms": 446480,
+    "duration_ms": 7041,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 446.48,
+    "text": "We also have a feature ASC or the number of average number of assists that they have in a given game.",
+    "start_ms": 446480,
+    "end_ms": 453960,
+    "duration_ms": 7480,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 453.96,
+    "text": "So this is the assists column. And then there is also a TPA or the number of tree pointers that they would score.",
+    "start_ms": 453960,
+    "end_ms": 459920,
+    "duration_ms": 5960,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 459.92,
+    "text": "And this is also the number of, this is exactly that feature.",
+    "start_ms": 459920,
+    "end_ms": 462920,
+    "duration_ms": 3000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 462.92,
+    "text": "So you can imagine that. In a regular scenario that we have a data frame with multiple different columns, this is how we would, this is kind of the data set or the shape of the data that we want to deal with, and we want to use this information in order to be able to predict that having information about field goal assist 3-PA4, another different player can be learned parameters so that we can calculate a weighted combination of those features together in order to predict the average number of points that they would score in a given game.",
+    "start_ms": 462920,
+    "end_ms": 494480,
+    "duration_ms": 31560,
+    "word_count": 101,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 494.936,
+    "text": "So for example, in this case, if I look at one specific row, this is the second player, what I can, what I know from this player is that this player has those specific features, and then in the ground truth, in the original dataset, but I have as the target value is that they scored an average of 0.7 points in a game.",
+    "start_ms": 494936,
+    "end_ms": 517736,
+    "duration_ms": 22800,
+    "word_count": 64,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 517.736,
+    "text": "So my model is then going to look like exactly the same kind of blue machine or the blue box that I was showing you that it is parametrized by all of those parameters that I have.",
+    "start_ms": 517736,
+    "end_ms": 528642,
+    "duration_ms": 10906,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 528.642,
+    "text": "And then the input feature vector is going to go in and the input feature vector you can verify that this is 0.4 right here, this is 0.8 right here, and this is 1.5.",
+    "start_ms": 528642,
+    "end_ms": 538239,
+    "duration_ms": 9597,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 538.239,
+    "text": "And what I'm expecting is to get a prediction that hopefully this prediction why had is going to be as close as possible to this ground truth value that I have.",
+    "start_ms": 538239,
+    "end_ms": 548336,
+    "duration_ms": 10097,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 548.336,
+    "text": "And we're going to talk about how to build parameters that are listed here so that this prediction is as close as possible to the ground-throughs values.",
+    "start_ms": 548336,
+    "end_ms": 556568,
+    "duration_ms": 8232,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 556.568,
+    "text": "And then how can we make sure that in the entire data set on average, all of our predictions are as close as possible to the target values that we have?",
+    "start_ms": 556568,
+    "end_ms": 564966,
+    "duration_ms": 8398,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 564.966,
+    "text": "That's our goal. And we're going to actually use linear algebra to just write equations that will do that for us exactly.",
+    "start_ms": 564966,
+    "end_ms": 571576,
+    "duration_ms": 6610,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 571.576,
+    "text": "Again, clocking in. These features and those attributes is going to give me this model exactly that I have tetasero, teta1, teta2, teta3, and then again each one of these features are corresponding to one specific attribute right here and then we're also going to tag along this tetasero which is our y interest up to as well in order to get the final product.",
+    "start_ms": 571576,
+    "end_ms": 596552,
+    "duration_ms": 24976,
+    "word_count": 65,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 596.632,
+    "text": "So four stage of modeling that we had remember that I told you that any modeling that we'll do in data 100 and you will do later on in your life is going to.",
+    "start_ms": 596632,
+    "end_ms": 608412,
+    "duration_ms": 11780,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 608.412,
+    "text": "Good through all of these four stages so what I'm going to talk about is that the first two stages are going to be pretty easy and we're going to use.",
+    "start_ms": 608412,
+    "end_ms": 617412,
+    "duration_ms": 9000,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 617.412,
+    "text": "Exactly the same notation or same concepts that we have had before, but this time because we're dealing with multiple different features, we might just need to use a different notation.",
+    "start_ms": 617412,
+    "end_ms": 627012,
+    "duration_ms": 9600,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 627.012,
+    "text": "And that's why we will deal with matrices and so on and so forth.",
+    "start_ms": 627012,
+    "end_ms": 630412,
+    "duration_ms": 3400,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 630.412,
+    "text": "So we decided that the model is going to be a multiple regression model.",
+    "start_ms": 630412,
+    "end_ms": 635012,
+    "duration_ms": 4600,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 635.012,
+    "text": "We also decided, we will decide today for simplicity that my last function is also going to be mean squared error.",
+    "start_ms": 635012,
+    "end_ms": 642532,
+    "duration_ms": 7520,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 642.532,
+    "text": "Remember that you also have seen mean absolute error, You're taking the absolute value of each one of the residuals and you use that as the loss function here.",
+    "start_ms": 642532,
+    "end_ms": 653892,
+    "duration_ms": 11360,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 653.892,
+    "text": "We're basically taking all the residuals, we're exclering all of the residuals and we're taking the average of all of those, the squares of the residuals, which is what we're calling it as MSC or mean scored error in our case.",
+    "start_ms": 653892,
+    "end_ms": 665132,
+    "duration_ms": 11240,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 666.136,
+    "text": "The title of today's lecture is called Ordinary Least the Squares.",
+    "start_ms": 666136,
+    "end_ms": 669576,
+    "duration_ms": 3440,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 669.576,
+    "text": "And Ordinary Least the Squares means that I'm going to have a model that is multiple regression, or multiple linear regression, has multiple different features, and then the last function is minus squared error.",
+    "start_ms": 669576,
+    "end_ms": 681261,
+    "duration_ms": 11685,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 681.261,
+    "text": "That's kind of the summary of what's happening there. It's called Ordinary is because it's just the general form of the equation and you're not limiting the model to have one, into or tree specific kind of features, but the notation that we'll be using is going to be generalizable that you can true in any number of features that you have, and any number of rows that you have, and then you will be able to do the modeling.",
+    "start_ms": 681261,
+    "end_ms": 703696,
+    "duration_ms": 22435,
+    "word_count": 80,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 703.696,
+    "text": "And then Mi Escort error is also going to be clear because you have target values, you have predictions you can calculate Mi Escort error between the two.",
+    "start_ms": 703696,
+    "end_ms": 711896,
+    "duration_ms": 8200,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 711.896,
+    "text": "Bless you. So what we will do as the turn of step is going to be doing the estimation, right?",
+    "start_ms": 711896,
+    "end_ms": 719912,
+    "duration_ms": 8016,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 719.912,
+    "text": "We fit the model, we have the objective function, we have the model, and we will go through a process that's called least the squares estimation in order to drive what is the optimum set of parameters, meaning that this time with this new approach, but I'm going to be after is find out the optimum tetahat vector.",
+    "start_ms": 719912,
+    "end_ms": 741272,
+    "duration_ms": 21360,
+    "word_count": 58,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 741.272,
+    "text": "because right now I don't have only tetra 0, tetra 1.",
+    "start_ms": 741272,
+    "end_ms": 744152,
+    "duration_ms": 2880,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 744.152,
+    "text": "It's just a bunch of different tetra values that I'll apply them into a vector.",
+    "start_ms": 744152,
+    "end_ms": 748392,
+    "duration_ms": 4240,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 748.392,
+    "text": "And I'm just going to call that tetra vector. And I put that hat because that's an estimated optimum set of values that I'll have for all of the tetra values that I will have.",
+    "start_ms": 748392,
+    "end_ms": 757752,
+    "duration_ms": 9360,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 758.456,
+    "text": "So I'm going to start with the first part. Again, every piece that I'll go through is going to have a reminder about linear algebra.",
+    "start_ms": 758456,
+    "end_ms": 765456,
+    "duration_ms": 7000,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 765.456,
+    "text": "And that's also true for the first phase. So remember multiple linear regression, weighted combination of all of those features.",
+    "start_ms": 765456,
+    "end_ms": 772456,
+    "duration_ms": 7000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 773.016,
+    "text": "I'm going to show you a technique that will help us write the entire equation of getting all of these predictions for all of the values that we have because we have multiple different values in the data frame, right?",
+    "start_ms": 773016,
+    "end_ms": 786016,
+    "duration_ms": 13000,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 786.016,
+    "text": "Multiple different observations in a data frame. How can we actually write it as a simple one equation using a matrix multiplication?",
+    "start_ms": 786016,
+    "end_ms": 796016,
+    "duration_ms": 10000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 796.44,
+    "text": "Okay, so this is going to be where the start of the magic is going to be happening.",
+    "start_ms": 796440,
+    "end_ms": 801240,
+    "duration_ms": 4800,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 801.464,
+    "text": "So why do I need to go through this entire, like, making the equation, uh, an equation that involves matrices?",
+    "start_ms": 801464,
+    "end_ms": 810064,
+    "duration_ms": 8600,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 810.064,
+    "text": "It's because the nature of my data right now is going to be different.",
+    "start_ms": 810064,
+    "end_ms": 813824,
+    "duration_ms": 3760,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 813.824,
+    "text": "Uh, for the simple linear regression, remember that I had one feature vector, and then I also had one target vector, uh, or one feature input column, and then one target vector column, um, that I had.",
+    "start_ms": 813824,
+    "end_ms": 825544,
+    "duration_ms": 11720,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 825.544,
+    "text": "And then I could directly use all of these values that I have for the features in order to get all of those predictions.",
+    "start_ms": 825544,
+    "end_ms": 831144,
+    "duration_ms": 5600,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 831.144,
+    "text": "and it was simply a bunch of different scalar values that I needed to deal with.",
+    "start_ms": 831144,
+    "end_ms": 835084,
+    "duration_ms": 3940,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 835.084,
+    "text": "So it was easy to calculate them and sum them and so on and so forth.",
+    "start_ms": 835084,
+    "end_ms": 838684,
+    "duration_ms": 3600,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 838.684,
+    "text": "When I was doing a constant model, there was no input feature.",
+    "start_ms": 838684,
+    "end_ms": 841844,
+    "duration_ms": 3160,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 841.844,
+    "text": "It was just the target values that I had for all of those YIs.",
+    "start_ms": 841844,
+    "end_ms": 847084,
+    "duration_ms": 5240,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 847.084,
+    "text": "And depending on the last function, we saw that there is going to be different ways of coming up with what the optimum tetasera hat value is going to be for the constant model.",
+    "start_ms": 847084,
+    "end_ms": 860004,
+    "duration_ms": 12920,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 860.004,
+    "text": "In this current case that we're dealing with, we have multiple different observations.",
+    "start_ms": 860004,
+    "end_ms": 864924,
+    "duration_ms": 4920,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 864.924,
+    "text": "So we will have those rows. Remember that here we have also row one, row two all the way to row n.",
+    "start_ms": 864924,
+    "end_ms": 872124,
+    "duration_ms": 7200,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 872.124,
+    "text": "We have n different data points. Here is also the same case that we have n different data points, but it just happens that you're only keeping track of the target values that we have.",
+    "start_ms": 872124,
+    "end_ms": 882844,
+    "duration_ms": 10720,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 882.844,
+    "text": "In the multiple regression case, what I have is still the same scenario where I have one observation as the entire row, but the issue is that my entire row is now involved with multiple different columns that I have.",
+    "start_ms": 882844,
+    "end_ms": 898324,
+    "duration_ms": 15480,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 898.324,
+    "text": "And in fact, it has P different features. And I need to think about how I can combine all of the observations and all of the features for all of the observations as a matrix.",
+    "start_ms": 898324,
+    "end_ms": 908764,
+    "duration_ms": 10440,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 908.764,
+    "text": "And if you take a look at this, this is matrix-like.",
+    "start_ms": 908764,
+    "end_ms": 911324,
+    "duration_ms": 2560,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 911.324,
+    "text": "And I'm going to exactly treat that as a matrix, but we're just going to drive the actual equation or the actual notation for the equation that we'll be using.",
+    "start_ms": 911324,
+    "end_ms": 920524,
+    "duration_ms": 9200,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 920.524,
+    "text": "Exactly the data set that we'll be using is this data set with three different input features and a target value as the average number of points that we're trying to predict.",
+    "start_ms": 920524,
+    "end_ms": 931003,
+    "duration_ms": 10479,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 931.416,
+    "text": "Okay, let's see how that's going to be happening. If I'm going to think about how I will look at this matrix and what each one of those rows represent and what each one of those columns represent and what are those.",
+    "start_ms": 931416,
+    "end_ms": 944416,
+    "duration_ms": 13000,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 944.76,
+    "text": "complicated indices that you see on the matrix. The way that you can think about it is that each one of the rows is one observation one row in your data frame.",
+    "start_ms": 944760,
+    "end_ms": 955426,
+    "duration_ms": 10666,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 955.426,
+    "text": "Right. And one row in the data frame again has multiple different features.",
+    "start_ms": 955426,
+    "end_ms": 959760,
+    "duration_ms": 4334,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 959.76,
+    "text": "And the way that I'm going to look at each one of these features is that, for example, I would say for observation, I.",
+    "start_ms": 959760,
+    "end_ms": 965760,
+    "duration_ms": 6000,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 965.76,
+    "text": "The first index of all of these attributes is always going to be I representing that this is ICE observation.",
+    "start_ms": 965760,
+    "end_ms": 973360,
+    "duration_ms": 7600,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 973.752,
+    "text": "But then as I'm going through multiple different features here, I would say that this is feature one of observation, i, this is feature two of observation, i, and then all the way to feature P of observation, i.",
+    "start_ms": 973752,
+    "end_ms": 986472,
+    "duration_ms": 12720,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 986.472,
+    "text": "So that's how you can think about how we're using all of those subscripts that we have, or those indices that we have in the matrix.",
+    "start_ms": 986472,
+    "end_ms": 994472,
+    "duration_ms": 8000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 994.472,
+    "text": "So the first index or the first subscript is always going to represent which observation you're at.",
+    "start_ms": 994472,
+    "end_ms": 1001392,
+    "duration_ms": 6920,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1001.392,
+    "text": "And then the second one or the second index represents which feature you're on.",
+    "start_ms": 1001392,
+    "end_ms": 1006032,
+    "duration_ms": 4640,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1006.032,
+    "text": "So for example, if you're looking at one entire column, what you will notice is that all of these, all of the second indices or second subscripts are exactly the same.",
+    "start_ms": 1006032,
+    "end_ms": 1017232,
+    "duration_ms": 11200,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1017.232,
+    "text": "So for example, I'm looking at the second column, second feature.",
+    "start_ms": 1017232,
+    "end_ms": 1019952,
+    "duration_ms": 2720,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1019.952,
+    "text": "So all of the second values are two. But what you're noticing here is that the first index value is one, two, all the way to end, showing that this is feature two of observation, one feature two of observation, two all the way to feature two of observation in.",
+    "start_ms": 1019952,
+    "end_ms": 1035792,
+    "duration_ms": 15840,
+    "word_count": 50,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1035.792,
+    "text": "So that's how I want you to think about it.",
+    "start_ms": 1035792,
+    "end_ms": 1038271,
+    "duration_ms": 2479,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1038.271,
+    "text": "And if you're looking at how this matrix is going to be represented in your data frame, it's exactly as that.",
+    "start_ms": 1038271,
+    "end_ms": 1044952,
+    "duration_ms": 6681,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1044.952,
+    "text": "And every time that you had a data frame, you had rows representing observations and columns representing different attributes or different features in the data frame.",
+    "start_ms": 1044952,
+    "end_ms": 1053592,
+    "duration_ms": 8640,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1053.592,
+    "text": "And that's how we're going to treat that in the matrix word as well.",
+    "start_ms": 1053592,
+    "end_ms": 1057592,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1058.04,
+    "text": "So if I'm going to go ahead and write the multiple linear regression, remember that multiple linear regression was telling me that?",
+    "start_ms": 1058040,
+    "end_ms": 1065080,
+    "duration_ms": 7040,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1065.272,
+    "text": "a wall that the prediction is going to be the weighted combination of those features weighted by the parameters that I have.",
+    "start_ms": 1065272,
+    "end_ms": 1073605,
+    "duration_ms": 8333,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1073.605,
+    "text": "So for example here I would say that this is feature one that is multiplied by the weight for feature one and this is also I would say feature two that is multiplied by the weight for feature two and then all the way to feature p which was green that is multiplied by the parameter for feature P, right?",
+    "start_ms": 1073605,
+    "end_ms": 1093712,
+    "duration_ms": 20107,
+    "word_count": 60,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1093.712,
+    "text": "So the TETA-I values are given as a priori. So you have to zero TETA-1 all the way to TET-TP.",
+    "start_ms": 1093712,
+    "end_ms": 1100752,
+    "duration_ms": 7040,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1100.752,
+    "text": "For every observation, you're basically going to take feature one feature to all the way to feature P, plug it into the equation, and we'll get the result.",
+    "start_ms": 1100752,
+    "end_ms": 1108392,
+    "duration_ms": 7640,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1108.392,
+    "text": "So effectively, what I can do is I can apply this equation to all of the rows.",
+    "start_ms": 1108392,
+    "end_ms": 1113872,
+    "duration_ms": 5480,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1113.872,
+    "text": "So I can go ahead and get the prediction for all of the observations that I have.",
+    "start_ms": 1113872,
+    "end_ms": 1117952,
+    "duration_ms": 4080,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1117.952,
+    "text": "Because this is a general form observation that I'll, that I'm showing in this case.",
+    "start_ms": 1117952,
+    "end_ms": 1123032,
+    "duration_ms": 5080,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1123.032,
+    "text": "So if I go ahead and exactly do that in order to get the prediction for data point one or observation one, what I'll do is I'll go ahead and say that get feature one of data point one, feature two of data point one all the way to feature P of data point one.",
+    "start_ms": 1123032,
+    "end_ms": 1140031,
+    "duration_ms": 16999,
+    "word_count": 55,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1140.248,
+    "text": "Wait them with those parameters that we have calculated the the summation of all of those way that all of those weights multiplied by the features and then that will give me why one hat.",
+    "start_ms": 1140248,
+    "end_ms": 1152248,
+    "duration_ms": 12000,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1152.568,
+    "text": "If you go ahead and take a look, I can exactly follow exactly the same thing and get the prediction for observation to and then all the way to prediction for observation n.",
+    "start_ms": 1152568,
+    "end_ms": 1161068,
+    "duration_ms": 8500,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1161.848,
+    "text": "So that's kind of how we should think about how we're combining all of those features for different observations in order to get all the predictions that we have.",
+    "start_ms": 1161848,
+    "end_ms": 1171288,
+    "duration_ms": 9440,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1171.928,
+    "text": "So I'm just going to move this bottom piece at the top in the next slide.",
+    "start_ms": 1171928,
+    "end_ms": 1178728,
+    "duration_ms": 6800,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1178.728,
+    "text": "And then we're going to take a look at how we can summarize it.",
+    "start_ms": 1178728,
+    "end_ms": 1182168,
+    "duration_ms": 3440,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1182.168,
+    "text": "But before I start summarizing it, I'm going to do a quick reminder of a dot product.",
+    "start_ms": 1182168,
+    "end_ms": 1187528,
+    "duration_ms": 5360,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1187.528,
+    "text": "And what dot product means? You probably have this from your Mass 54, or any other linear algebra course that you've taken.",
+    "start_ms": 1187528,
+    "end_ms": 1197128,
+    "duration_ms": 9600,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1197.128,
+    "text": "But the dot product between two vectors means that we're going to take a look at the two vectors should have the same size as the starter.",
+    "start_ms": 1197128,
+    "end_ms": 1206128,
+    "duration_ms": 9000,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1206.128,
+    "text": "And then you're going to multiply corresponding elements with each other.",
+    "start_ms": 1206128,
+    "end_ms": 1209033,
+    "duration_ms": 2905,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1209.033,
+    "text": "And then you're going to take the summation of all of those products.",
+    "start_ms": 1209033,
+    "end_ms": 1212467,
+    "duration_ms": 3434,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1212.467,
+    "text": "And then the final number is going to be a scalar value number or a real value number that you can use as the dot product between two vectors.",
+    "start_ms": 1212467,
+    "end_ms": 1220128,
+    "duration_ms": 7661,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1220.128,
+    "text": "vectors. So for example in this case if I have the two vectors u and v Each one of them is three-dimensional.",
+    "start_ms": 1220128,
+    "end_ms": 1226696,
+    "duration_ms": 6568,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1226.696,
+    "text": "What I will do is in order to calculate the dot product between these two vectors, I need to multiply corresponding elements and then I'll sum up all of those products, and then it will give me a single value.",
+    "start_ms": 1226696,
+    "end_ms": 1238456,
+    "duration_ms": 11760,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1238.456,
+    "text": "So if I'm thinking about this as how to calculate exactly the dot product between the vector v and vector u, I can also think about transposing one of them and multiplying it with the other vector.",
+    "start_ms": 1238456,
+    "end_ms": 1253176,
+    "duration_ms": 14720,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1253.176,
+    "text": "So again, in this case, this would be equal to saying that, okay, I'm going to transpose, for example, the vector u, this is going to give me 1, 2, 3, and then I'm going to multiply it with the column vector 1, 1, 1, 1.",
+    "start_ms": 1253176,
+    "end_ms": 1265976,
+    "duration_ms": 12800,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1265.976,
+    "text": "This is very simple, 1 row, 1 row vector, 1 column vector, so you would just do the normal matrix multiplication, which is going to give you 1 times 1 plus 2 times 1 plus 3 times 1, which is equal to 6.",
+    "start_ms": 1265976,
+    "end_ms": 1279496,
+    "duration_ms": 13520,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1279.496,
+    "text": "And in fact, if you were to actually do it exactly, but just doing the element wise product and the do the summation, you would also get the value 6 as a result.",
+    "start_ms": 1279496,
+    "end_ms": 1290375,
+    "duration_ms": 10879,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1291.256,
+    "text": "Something that I'll use later in today's lecture is that another way to think about the dot product is that you can calculate the dot product by This formula that the dot product between the vector u and vector v is equal to calculating the magnitude of or calculating the product of the magnitude or the length of each of those vectors u and v.",
+    "start_ms": 1291256,
+    "end_ms": 1315784,
+    "duration_ms": 24528,
+    "word_count": 65,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1316.152,
+    "text": "and then times cosine of the angle between the two vectors.",
+    "start_ms": 1316152,
+    "end_ms": 1320152,
+    "duration_ms": 4000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1320.44,
+    "text": "I'm going to talk about why that's going to be helpful, but just take that without proof from me that the dot product you can either calculate it or you can think about the dot product as being calculating the dot product between two vectors as being the lengths of one vector times lengths of another vector times they co-sign at the angle between the two.",
+    "start_ms": 1320440,
+    "end_ms": 1344600,
+    "duration_ms": 24160,
+    "word_count": 66,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1344.428,
+    "text": "have these two vectors, right? And I want to calculate the dot product between the two.",
+    "start_ms": 1344428,
+    "end_ms": 1349184,
+    "duration_ms": 4756,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1349.184,
+    "text": "This might also be equal to me calculating a projection of one unto another.",
+    "start_ms": 1349184,
+    "end_ms": 1354384,
+    "duration_ms": 5200,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1354.744,
+    "text": "Look at the lengths and just multiply this length with the length of this original vector that I have.",
+    "start_ms": 1354744,
+    "end_ms": 1360744,
+    "duration_ms": 6000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1360.744,
+    "text": "And that's also distinct, which effectively because the projection is using also the cosine of the angle between the two, it's effectively the same calculation that I have.",
+    "start_ms": 1360744,
+    "end_ms": 1370744,
+    "duration_ms": 10000,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1371.384,
+    "text": "So want you to think about as a takeaway here.",
+    "start_ms": 1371384,
+    "end_ms": 1376760,
+    "duration_ms": 5376,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1376.76,
+    "text": "The immediate takeaway that I have is that if I go ahead.",
+    "start_ms": 1376760,
+    "end_ms": 1380860,
+    "duration_ms": 4100,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1381.176,
+    "text": "And write the vector u as, for example, u1, u2, u3 in this specific case.",
+    "start_ms": 1381176,
+    "end_ms": 1389776,
+    "duration_ms": 8600,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1389.776,
+    "text": "And I define vector v as v1. V2 and also V3.",
+    "start_ms": 1389776,
+    "end_ms": 1396238,
+    "duration_ms": 6462,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1396.238,
+    "text": "The dot product between these two vectors U times V effectively means that I'm calculating U1 times V1 plus U2 times V2 plus U3 times V3.",
+    "start_ms": 1396238,
+    "end_ms": 1410448,
+    "duration_ms": 14210,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1410.744,
+    "text": "Why am I writing it with this notation is because I want you to notice that every time you've seen that your calculating is summation of The stuff that they are the same set of elements that are multiplied together but with different indices you can think about two vectors being kind of that you're calculating the dot product between those two vectors.",
+    "start_ms": 1410744,
+    "end_ms": 1433616,
+    "duration_ms": 22872,
+    "word_count": 63,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1433.616,
+    "text": "And this is kind of an intuition behind how you can identify when a dot product is being calculated.",
+    "start_ms": 1433616,
+    "end_ms": 1439376,
+    "duration_ms": 5760,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1440.6,
+    "text": "The place that I'm going to use that trick is going to be here.",
+    "start_ms": 1440600,
+    "end_ms": 1444280,
+    "duration_ms": 3680,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1444.28,
+    "text": "If you take a look at what I have in terms of for the part that I have tet 1 times x1, tet 2 times x still the way to tet p times xp, that's as if that there was a vector of tet values and there was a vector of x values and I'm calculating the dog product between the two.",
+    "start_ms": 1444280,
+    "end_ms": 1468440,
+    "duration_ms": 24160,
+    "word_count": 62,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1468.184,
+    "text": "equal to 10 to 0 plus the dot for like between those two vectors that I have.",
+    "start_ms": 1468184,
+    "end_ms": 1472368,
+    "duration_ms": 4184,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1472.76,
+    "text": "So it's going to be much simpler. Imagine that you will have data sets with millions of different features and you don't want to calculate those products manually and then some of all of those products manually in order to calculate in order to just do a simple prediction.",
+    "start_ms": 1472760,
+    "end_ms": 1488640,
+    "duration_ms": 15880,
+    "word_count": 49,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1488.64,
+    "text": "Let alone doing optimization later on that you will see that it's going to be more complicated.",
+    "start_ms": 1488640,
+    "end_ms": 1494240,
+    "duration_ms": 5600,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1494.24,
+    "text": "So here I'm calculating the product between two vectors. This can be optimized and parallelized, and then I'm just summing up tetasero as a second term.",
+    "start_ms": 1494240,
+    "end_ms": 1504560,
+    "duration_ms": 10320,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1505.016,
+    "text": "But still, I'm going to be a little bit greedy and I would say that I want everything to just be written as the duck product between two vectors.",
+    "start_ms": 1505016,
+    "end_ms": 1513474,
+    "duration_ms": 8458,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1513.474,
+    "text": "I don't want to have one duck product plus the summation.",
+    "start_ms": 1513474,
+    "end_ms": 1516682,
+    "duration_ms": 3208,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1516.682,
+    "text": "Is there a way that I can move pet to zero also into the duck product calculation that I have.",
+    "start_ms": 1516682,
+    "end_ms": 1522516,
+    "duration_ms": 5834,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1523.352,
+    "text": "The issue that I wasn't able to do it initially was that each one of these tetan- tetan- i values they had kind of a partner.",
+    "start_ms": 1523352,
+    "end_ms": 1532004,
+    "duration_ms": 8652,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1532.004,
+    "text": "This one had a partner of x1, this one had a partner of x2, this one had a partner of xp, so that's why I was able to just collect all the partners into one column vector x and then all of the tetan- values into tetan vector.",
+    "start_ms": 1532004,
+    "end_ms": 1546650,
+    "duration_ms": 14646,
+    "word_count": 48,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1546.65,
+    "text": "But then what I didn't have for Tetra 0 was that kind of partner that multiplied 2 tetra 0.",
+    "start_ms": 1546650,
+    "end_ms": 1553832,
+    "duration_ms": 7182,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1554.456,
+    "text": "But I can use a trick. What I can do is I can say that what if I assume that theta zero was multiplied by one?",
+    "start_ms": 1554456,
+    "end_ms": 1561456,
+    "duration_ms": 7000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1561.456,
+    "text": "Which in fact it was, right? and just use one as that Hrthner that is supposedly missing.",
+    "start_ms": 1561456,
+    "end_ms": 1570288,
+    "duration_ms": 8832,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1570.52,
+    "text": "And in this case, effectively, if I'm going to aggregate all of the Teta 0 or Teta i values into a column vector, and aggregate all of the partners into another vector, this other vector is going to have the value 1, and then x1, and then x2, and then xp, and so on and so forth, which is going to give me exactly this.",
+    "start_ms": 1570520,
+    "end_ms": 1591720,
+    "duration_ms": 21200,
+    "word_count": 65,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1592.888,
+    "text": "Bye. I'm just going to leave you with that to think about it for a sec.",
+    "start_ms": 1592888,
+    "end_ms": 1596848,
+    "duration_ms": 3960,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1597.272,
+    "text": "and just verify that the dot product between those two column vectors in fact is equal to that summation that i have at the top because if you calculate the dot product between or if you calculate the If you...",
+    "start_ms": 1597272,
+    "end_ms": 1609728,
+    "duration_ms": 12456,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1609.784,
+    "text": "Can I multiply element wise these two vectors? You're multiplying that to zero with one, that to one with x one, that to two with x two and so on and so forth.",
+    "start_ms": 1609784,
+    "end_ms": 1619151,
+    "duration_ms": 9367,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1619.151,
+    "text": "And then obviously that's going to give you your multiple regression equation.",
+    "start_ms": 1619151,
+    "end_ms": 1629224,
+    "duration_ms": 10073,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1629.15,
+    "text": "to just write our prediction task or that multiple regression equation in terms of the dot product between two vectors, x and theta, which we know that the dot product between x, the vector x and also the vector theta can be calculated using transposing x and multiplying it with theta as a normal matrix multiplication.",
+    "start_ms": 1629150,
+    "end_ms": 1648952,
+    "duration_ms": 19802,
+    "word_count": 56,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1648.952,
+    "text": "So that's theta, this is x, and then we'll be on our way.",
+    "start_ms": 1648952,
+    "end_ms": 1652552,
+    "duration_ms": 3600,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1652.952,
+    "text": "So what I can do is I can actually go ahead and apply exactly the same thing to all of these predictions that I wanted to do for uh, remember that for data point one for data point two for data point and all of the rows that I had in the data frame I had to calculate this long summation individually.",
+    "start_ms": 1652952,
+    "end_ms": 1670952,
+    "duration_ms": 18000,
+    "word_count": 62,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1670.952,
+    "text": "But now I will do is I can actually say that each one of these rows is going to be equal to.",
+    "start_ms": 1670952,
+    "end_ms": 1676952,
+    "duration_ms": 6000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1677.016,
+    "text": "The observation transposed times tetatovector or the dot product between that observation and the tetatovector that I have.",
+    "start_ms": 1677016,
+    "end_ms": 1684490,
+    "duration_ms": 7474,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1684.49,
+    "text": "In fact... That is a shortened version of writing all of those summations.",
+    "start_ms": 1684490,
+    "end_ms": 1689072,
+    "duration_ms": 4582,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1689.072,
+    "text": "So the prediction for data point 1 in this case is going to be just transposing the observation for data point 1 and just multiplying that with the 10th of vector that we have.",
+    "start_ms": 1689072,
+    "end_ms": 1701192,
+    "duration_ms": 12120,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1701.192,
+    "text": "And then you follow exactly the same thing for all of the other data points.",
+    "start_ms": 1701192,
+    "end_ms": 1705232,
+    "duration_ms": 4040,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1705.232,
+    "text": "And it's actually nice, condensed, it can be parallelized and that's an easier version of writing the entire long summation that we have.",
+    "start_ms": 1705232,
+    "end_ms": 1713752,
+    "duration_ms": 8520,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1714.968,
+    "text": "Okay, how are we doing so far? It should be good up until this point it really should make sense because it's really gonna pick up.",
+    "start_ms": 1714968,
+    "end_ms": 1724177,
+    "duration_ms": 9209,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1724.177,
+    "text": "Okay. Good sideways down. Good. Okay. gives me good feeling that I can still filter more complicated topics.",
+    "start_ms": 1724177,
+    "end_ms": 1735144,
+    "duration_ms": 10967,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1735.144,
+    "text": "So this is the same kind of equation that we had for each one of those observations, for each one of those predictions that I wanted to do.",
+    "start_ms": 1735144,
+    "end_ms": 1742424,
+    "duration_ms": 7280,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1742.424,
+    "text": "I am calculating those predictions using transposing the data point, multiplying it with the tetavector.",
+    "start_ms": 1742424,
+    "end_ms": 1748824,
+    "duration_ms": 6400,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1749.208,
+    "text": "What I want you to notice is that this heta vector is going to be a vector that's in common between all of those rows.",
+    "start_ms": 1749208,
+    "end_ms": 1756208,
+    "duration_ms": 7000,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1756.208,
+    "text": "So why am I going to separate them into multiple different equations?",
+    "start_ms": 1756208,
+    "end_ms": 1761208,
+    "duration_ms": 5000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1761.528,
+    "text": "Uh. multiple equations in the case that I could also aggregate all of those rows together and then multiply all of those rows together with the single petal vector that they have in common Again, if you take a look at what's happening with the NBA data set, so this is exactly the single observation that I have with three different features, and this is the target value that I have.",
+    "start_ms": 1761528,
+    "end_ms": 1786312,
+    "duration_ms": 24784,
+    "word_count": 71,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1786.312,
+    "text": "And in order for me to make a prediction, what I can do is I can say that my observation is now going to be 0.4, 0.4 right here.",
+    "start_ms": 1786312,
+    "end_ms": 1796812,
+    "duration_ms": 10500,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1797.144,
+    "text": "0.8, 0.8 right here as a feature and then 1.5, 1.5 right here.",
+    "start_ms": 1797144,
+    "end_ms": 1802744,
+    "duration_ms": 5600,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1802.744,
+    "text": "And then notice here that I have this one, which is the augmented bias that I added.",
+    "start_ms": 1802744,
+    "end_ms": 1810584,
+    "duration_ms": 7840,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1810.84,
+    "text": "And this is in fact called a bias trick because the trick that I use in order to find that to zero kind of company or something as the value one that then I Combined it with all the all the rest of the X's or the features that then I can have everything written as the doc product Within two vectors.",
+    "start_ms": 1810840,
+    "end_ms": 1831693,
+    "duration_ms": 20853,
+    "word_count": 62,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1831.693,
+    "text": "This is called a bias trick And this entry is actually going to be related to a feature that's simulating what's going to be multiplied by the tetah 0.",
+    "start_ms": 1831693,
+    "end_ms": 1841644,
+    "duration_ms": 9951,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1841.644,
+    "text": "My target value is obviously based on what I have here is going to be 1.7, and if I have the tetah vector with all of those tetah values, tetah 0, tetah 1, tetah 2, and tetah 3, then I can go ahead and calculate the dog product between X2 and tetah, or calculate X2 transcos times tetah and get all of these values.",
+    "start_ms": 1841644,
+    "end_ms": 1863740,
+    "duration_ms": 22096,
+    "word_count": 64,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1864.792,
+    "text": "One thing that I want you to notice is the dimensionality of all of these vectors that I'm dealing with.",
+    "start_ms": 1864792,
+    "end_ms": 1870392,
+    "duration_ms": 5600,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1870.392,
+    "text": "Because this dimensionality is going to be very helpful moving on.",
+    "start_ms": 1870392,
+    "end_ms": 1873592,
+    "duration_ms": 3200,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1873.592,
+    "text": "So the dimensionality of x2 or the observation, I'm saying that it's in r4 or is in the 4 dimensional space.",
+    "start_ms": 1873592,
+    "end_ms": 1884392,
+    "duration_ms": 10800,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1885.24,
+    "text": "It is correct because I have three different features, field goal assist and TPA, and then I added one more dimension for this bias term that I added right here.",
+    "start_ms": 1885240,
+    "end_ms": 1895800,
+    "duration_ms": 10560,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1895.8,
+    "text": "So always if you have p different features, the dimensionality of your observations is going to be p plus 1.",
+    "start_ms": 1895800,
+    "end_ms": 1903000,
+    "duration_ms": 7200,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1903.576,
+    "text": "He attributes for p different attributes that you obviously have for any observation and then one for the bias trick or the bias term that you're adding on top of that.",
+    "start_ms": 1903576,
+    "end_ms": 1913076,
+    "duration_ms": 9500,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1913.464,
+    "text": "The tetah vector is always going to be p plus 1 dimensional.",
+    "start_ms": 1913464,
+    "end_ms": 1919224,
+    "duration_ms": 5760,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1919.224,
+    "text": "So for example, in this case, it's going to be equal to 4 because I have 3 features plus the bias that to 0 that makes 4 different parameters.",
+    "start_ms": 1919224,
+    "end_ms": 1927344,
+    "duration_ms": 8120,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1927.344,
+    "text": "So it's always going to be p plus 1 again if you have p different features.",
+    "start_ms": 1927344,
+    "end_ms": 1931344,
+    "duration_ms": 4000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1931.344,
+    "text": "And always the target value and then the prediction value is going to be a real value number.",
+    "start_ms": 1931344,
+    "end_ms": 1938224,
+    "duration_ms": 6880,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1938.224,
+    "text": "So it's just the scalar value that we're predicting as the output.",
+    "start_ms": 1938224,
+    "end_ms": 1942104,
+    "duration_ms": 3880,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1942.104,
+    "text": "for not predicting a vector or predicting a single value.",
+    "start_ms": 1942104,
+    "end_ms": 1945544,
+    "duration_ms": 3440,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1945.544,
+    "text": "Because that's what the dot product is going to give you at the end.",
+    "start_ms": 1945544,
+    "end_ms": 1948344,
+    "duration_ms": 2800,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1949.464,
+    "text": "Okay. So let's take a look at what's happening here.",
+    "start_ms": 1949464,
+    "end_ms": 1953408,
+    "duration_ms": 3944,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1953.408,
+    "text": "These are all the equations that I had. I was saying that in order to get the prediction for data point one, I can go ahead and transpose the augmented observation that noticed that is augmented with this bias trick or this additional dimension that I added, multiplied with the tetavector that I have.",
+    "start_ms": 1953408,
+    "end_ms": 1972008,
+    "duration_ms": 18600,
+    "word_count": 54,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1972.008,
+    "text": "I can write exactly the same thing for all of the different data points that I have, such as Y2 and then Y2 hat and then YN hat and get all the predictions for all of the different vectors.",
+    "start_ms": 1972008,
+    "end_ms": 1982767,
+    "duration_ms": 10759,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1983.576,
+    "text": "are different rows that I have. One thing that I told you before is that if you notice that this TETA vector is the same or is as common between all of those rows and instead of me calculating all of those values independently.",
+    "start_ms": 1983576,
+    "end_ms": 1998040,
+    "duration_ms": 14464,
+    "word_count": 44,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1998.04,
+    "text": "What if I combine all of these x i transpose values into a matrix and just go ahead and multiply that matrix by the same TETA vector that all of those rows are going to be multiplied to.",
+    "start_ms": 1998040,
+    "end_ms": 2013040,
+    "duration_ms": 15000,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2013.336,
+    "text": "So in that case, if I'm treating this as an entire matrix, the matrix multiplication by default is going to go and multiply the first row with the tetavector and then it's going to go ahead and multiply the second row with the tetavector and so on and so forth.",
+    "start_ms": 2013336,
+    "end_ms": 2028836,
+    "duration_ms": 15500,
+    "word_count": 50,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2028.836,
+    "text": "Right. So that's a normal practice that I can do.",
+    "start_ms": 2028836,
+    "end_ms": 2031961,
+    "duration_ms": 3125,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2031.961,
+    "text": "So that's exactly what I'll do. What I'll get as a result of this matrix multiplication is that for each one of those rows that are multiplied by the theta vector, I'm getting a prediction.",
+    "start_ms": 2031961,
+    "end_ms": 2042472,
+    "duration_ms": 10511,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2042.472,
+    "text": "So I'm just going to stack all of those predictions together and I'm going to get a y vector, a y hat vector.",
+    "start_ms": 2042472,
+    "end_ms": 2048994,
+    "duration_ms": 6522,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2048.994,
+    "text": "So all of those predictions are going to be in one place.",
+    "start_ms": 2048994,
+    "end_ms": 2060792,
+    "duration_ms": 11798,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2060.717,
+    "text": "this was exactly your data frame right you just augmented it with one column of all of these one values.",
+    "start_ms": 2060717,
+    "end_ms": 2067536,
+    "duration_ms": 6819,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2068.312,
+    "text": "Once you have the TETA vector, you can just plug in the TETA vector right here.",
+    "start_ms": 2068312,
+    "end_ms": 2072912,
+    "duration_ms": 4600,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2072.912,
+    "text": "And you would multiply your entire... your entire data frame with that set of vector and as a result you're going to get all of those predictions in one shot in one vector.",
+    "start_ms": 2072912,
+    "end_ms": 2084752,
+    "duration_ms": 11840,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2085.24,
+    "text": "Right, so very, very kind of pretty way of doing all the predictions all advanced using a simple matrix multiplication.",
+    "start_ms": 2085240,
+    "end_ms": 2093240,
+    "duration_ms": 8000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2093.624,
+    "text": "This matrix that I created noticed that it has n rows and it has p plus one different columns.",
+    "start_ms": 2093624,
+    "end_ms": 2100624,
+    "duration_ms": 7000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2100.624,
+    "text": "And for each one of the observations obviously because I'm stacking them together and then p plus one for the number of columns because there is one column for all of those values of ones and then p for p different features that we are using in order to make the prediction.",
+    "start_ms": 2100624,
+    "end_ms": 2116624,
+    "duration_ms": 16000,
+    "word_count": 52,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2117.528,
+    "text": "So. What we're calling this matrix that I created is we're calling it a design matrix.",
+    "start_ms": 2117528,
+    "end_ms": 2124488,
+    "duration_ms": 6960,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2124.488,
+    "text": "This is exactly the subset or your data frame that you're going to use to do the modeling.",
+    "start_ms": 2124488,
+    "end_ms": 2130488,
+    "duration_ms": 6000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2130.488,
+    "text": "It's a matrix that's end by P plus one dimensional.",
+    "start_ms": 2130488,
+    "end_ms": 2133723,
+    "duration_ms": 3235,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2133.723,
+    "text": "And if you take a look at this entire design matrix and how it corresponds to the MBA data data set that we had.",
+    "start_ms": 2133723,
+    "end_ms": 2141488,
+    "duration_ms": 7765,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2141.488,
+    "text": "there is exactly the corresponding rows and columns. Again, that's my data frame.",
+    "start_ms": 2141488,
+    "end_ms": 2147048,
+    "duration_ms": 5560,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2147.048,
+    "text": "The only thing that I did was I added a bias column here with all the values of ones and everything else is the same.",
+    "start_ms": 2147048,
+    "end_ms": 2154568,
+    "duration_ms": 7520,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2154.568,
+    "text": "So. That's exactly this design matrix right here where each one of those rows is one observation each one of those columns is a feature and there's always a column that corresponds to bias or that bias trick that I add.",
+    "start_ms": 2154568,
+    "end_ms": 2167696,
+    "duration_ms": 13128,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2169.752,
+    "text": "Moving on and let's take a look at The dimensionality of each one of these vectors that I had.",
+    "start_ms": 2169752,
+    "end_ms": 2177280,
+    "duration_ms": 7528,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2177.28,
+    "text": "So remember that I was saying that this right here in the middle is my design matrix.",
+    "start_ms": 2177280,
+    "end_ms": 2182520,
+    "duration_ms": 5240,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2182.52,
+    "text": "And this is the augmented design, augmented data frame with the column of bias trig.",
+    "start_ms": 2182520,
+    "end_ms": 2187320,
+    "duration_ms": 4800,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2187.32,
+    "text": "So the dimensionality of this design matrix is always going to be n by p plus 1.",
+    "start_ms": 2187320,
+    "end_ms": 2192560,
+    "duration_ms": 5240,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2192.56,
+    "text": "This is what we already established. What is the dimensionality of the tetavector that we have?",
+    "start_ms": 2192560,
+    "end_ms": 2198392,
+    "duration_ms": 5832,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2198.392,
+    "text": "So we need to have one parameter corresponding to each one of those features.",
+    "start_ms": 2198392,
+    "end_ms": 2202632,
+    "duration_ms": 4240,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2202.632,
+    "text": "So we said that we have p different features because our features are going to be feature one feature to all the way to feature p.",
+    "start_ms": 2202632,
+    "end_ms": 2209112,
+    "duration_ms": 6480,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2209.112,
+    "text": "So we need to have one parameter corresponding to each one of those features.",
+    "start_ms": 2209112,
+    "end_ms": 2213432,
+    "duration_ms": 4320,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2213.432,
+    "text": "And then also we need to have a parameter for tet 0 for the bias term that we're adding in the model.",
+    "start_ms": 2213432,
+    "end_ms": 2219112,
+    "duration_ms": 5680,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2219.112,
+    "text": "So the dimensionality of my tetavector is then going to be a column vector of P plus 1 dimensional.",
+    "start_ms": 2219112,
+    "end_ms": 2226112,
+    "duration_ms": 7000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2227.0,
+    "text": "p features plus a biester so you're looking at that if you multiply the design matrix with the parameter vector what will be the dimensionality of the output or the result If you multiply a matrix as n by p plus 1 Buy a vector that's P plus 1 by 1.",
+    "start_ms": 2227000,
+    "end_ms": 2247132,
+    "duration_ms": 20132,
+    "word_count": 51,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2248.184,
+    "text": "It would be. and by one. And that's exactly what we're getting.",
+    "start_ms": 2248184,
+    "end_ms": 2253000,
+    "duration_ms": 4816,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2253.0,
+    "text": "So we're getting a column vector that has end different dimensions.",
+    "start_ms": 2253000,
+    "end_ms": 2258000,
+    "duration_ms": 5000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2258.0,
+    "text": "And those end values that we have are all of the predictions that we want for each one of those data points in our data set or each one of the observations that we want.",
+    "start_ms": 2258000,
+    "end_ms": 2266000,
+    "duration_ms": 8000,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2266.0,
+    "text": "This is how the dimensions do also match with each other.",
+    "start_ms": 2266000,
+    "end_ms": 2270000,
+    "duration_ms": 4000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2270.0,
+    "text": "So we have a column vector of all of these predictions that we have.",
+    "start_ms": 2270000,
+    "end_ms": 2275520,
+    "duration_ms": 5520,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2275.52,
+    "text": "And then our ground truth is also a column vector of all of these, all of these scalar values that we have.",
+    "start_ms": 2275520,
+    "end_ms": 2283640,
+    "duration_ms": 8120,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2283.64,
+    "text": "So we have two vectors of the same dimension. So we can calculate the distance between the two vectors.",
+    "start_ms": 2283640,
+    "end_ms": 2296160,
+    "duration_ms": 12520,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2295.918,
+    "text": "the predictions that I have. And this is a vector for all of the predictions that I have.",
+    "start_ms": 2295918,
+    "end_ms": 2302192,
+    "duration_ms": 6274,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2302.192,
+    "text": "I want to make sure that these two vectors are as close to each other as possible.",
+    "start_ms": 2302192,
+    "end_ms": 2306092,
+    "duration_ms": 3900,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2306.092,
+    "text": "So the best case scenario is that the distance between them is equal to zero.",
+    "start_ms": 2306092,
+    "end_ms": 2309692,
+    "duration_ms": 3600,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2309.692,
+    "text": "So I have perfect production. But in reality, we know that we can get perfect prediction.",
+    "start_ms": 2309692,
+    "end_ms": 2314692,
+    "duration_ms": 5000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2314.692,
+    "text": "But what we want to make sure is that the distance between these two is minimized.",
+    "start_ms": 2314692,
+    "end_ms": 2318892,
+    "duration_ms": 4200,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2319.48,
+    "text": "And that's what we're going to do in the next step.",
+    "start_ms": 2319480,
+    "end_ms": 2321980,
+    "duration_ms": 2500,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2325.496,
+    "text": "Before I go to the next step, this is a slider question for you.",
+    "start_ms": 2325496,
+    "end_ms": 2329504,
+    "duration_ms": 4008,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2329.504,
+    "text": "We talked a lot about, we have this multiple regression model that we call it a linear model.",
+    "start_ms": 2329504,
+    "end_ms": 2335952,
+    "duration_ms": 6448,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2335.952,
+    "text": "We had seen that a multiple regression model... or a linear model is a model that is a weighted combination of tetas, meaning that we can factor out the tetah vector as one vector and then multiply all the weights and all of the parameters or features as a separate matrix to it.",
+    "start_ms": 2335952,
+    "end_ms": 2357232,
+    "duration_ms": 21280,
+    "word_count": 53,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2357.232,
+    "text": "And in that case we would call a model, a linear model in tetah.",
+    "start_ms": 2357232,
+    "end_ms": 2361969,
+    "duration_ms": 4737,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2361.969,
+    "text": "So the question for you is that which one of these five options are linear in TETTA based on the description that I gave you.",
+    "start_ms": 2361969,
+    "end_ms": 2371572,
+    "duration_ms": 9603,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2373.56,
+    "text": "And I will stay here. I'm a lot of your response.",
+    "start_ms": 2373560,
+    "end_ms": 2378888,
+    "duration_ms": 5328,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2427.064,
+    "text": "Let's take a look. You're saying form five. Form five are obvious because they take exactly the same form of our linear regression, right?",
+    "start_ms": 2427064,
+    "end_ms": 2436624,
+    "duration_ms": 9560,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2436.624,
+    "text": "So they have a matrix that is multiplied by a vector of all of those theta values that I have.",
+    "start_ms": 2436624,
+    "end_ms": 2443864,
+    "duration_ms": 7240,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2444.12,
+    "text": "But we can go and take a look at one, two, and three, and then see which one of them are linear in tetan, which one of them are not linear in tetan.",
+    "start_ms": 2444120,
+    "end_ms": 2452120,
+    "duration_ms": 8000,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2452.12,
+    "text": "So it's starting with the first one. So the first one is linear in tetan because I can write it as the dot product between the two vectors and the two vectors are one vector fully have all the tetan values and non-transform tetan values.",
+    "start_ms": 2452120,
+    "end_ms": 2469120,
+    "duration_ms": 17000,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2469.12,
+    "text": "values and then another vector has all of those other values that I don't care if they're linear, they're not linear and whatever value they have.",
+    "start_ms": 2469120,
+    "end_ms": 2476000,
+    "duration_ms": 6880,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2476.0,
+    "text": "The only thing that I care about is that I can write my equation in a way that all the tetas values can be factored out into a vector.",
+    "start_ms": 2476000,
+    "end_ms": 2485440,
+    "duration_ms": 9440,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2485.44,
+    "text": "So here they're factored out into a vector, here they're factored out into a vector and option one is linear and tetas.",
+    "start_ms": 2485440,
+    "end_ms": 2493080,
+    "duration_ms": 7640,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2493.08,
+    "text": "And 2 is also linear in theta. Because again, it doesn't matter.",
+    "start_ms": 2493080,
+    "end_ms": 2498880,
+    "duration_ms": 5800,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2498.88,
+    "text": "That, for example, in this case, I have theta 2.",
+    "start_ms": 2498880,
+    "end_ms": 2503040,
+    "duration_ms": 4160,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2503.04,
+    "text": "And then I'm multiplying theta 2 with x2 and x3.",
+    "start_ms": 2503040,
+    "end_ms": 2506160,
+    "duration_ms": 3120,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2506.16,
+    "text": "That doesn't matter. What is happening, basically, is that when you're looking at your featured 2, so this is the bias term, this is feature 1, and this is feature 2, it just happens that you did feature in generating, that you're going to see, I think, next lecture, two lectures from now.",
+    "start_ms": 2506160,
+    "end_ms": 2523240,
+    "duration_ms": 17080,
+    "word_count": 53,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2523.24,
+    "text": "The widget feature engineering and we decided that instead of using x2 and x3 separately, I'm gonna use the product of those two terms together as a feature.",
+    "start_ms": 2523240,
+    "end_ms": 2532480,
+    "duration_ms": 9240,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2532.48,
+    "text": "So the features can be non-linear, but the parameter vector should stay intact and should stay linear and untransformed.",
+    "start_ms": 2532480,
+    "end_ms": 2542200,
+    "duration_ms": 9720,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2542.2,
+    "text": "What we're seeing in the last one is that last one is not...",
+    "start_ms": 2542200,
+    "end_ms": 2545160,
+    "duration_ms": 2960,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2545.624,
+    "text": "Linear in tetra there is no way that you can just factor out all the tethers into one vector and be able to create This term of tetra 3 times multiply with tetra 4 so only that the The third option is the only option that's not linear in KETTA.",
+    "start_ms": 2545624,
+    "end_ms": 2560552,
+    "duration_ms": 14928,
+    "word_count": 50,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2560.552,
+    "text": "So, kind of to set up the expectation that when we say that the model is linear in KETTA, what we mean exactly is that collect everything else into a matrix.",
+    "start_ms": 2560552,
+    "end_ms": 2575992,
+    "duration_ms": 15440,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2575.748,
+    "text": "every time that you want to do prediction. Uh or you want to prediction on your data set you would just create your design matrix you would multiply it with the tetha vector and then you would get all the predictions that you want in the output.",
+    "start_ms": 2575748,
+    "end_ms": 2590096,
+    "duration_ms": 14348,
+    "word_count": 47,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2590.84,
+    "text": "So the next piece. This is the second step of the modeling.",
+    "start_ms": 2590840,
+    "end_ms": 2596350,
+    "duration_ms": 5510,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2596.35,
+    "text": "Now we established what our model is. In fact, our model, as we talked about, is exactly this equation.",
+    "start_ms": 2596350,
+    "end_ms": 2603912,
+    "duration_ms": 7562,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2603.912,
+    "text": "So my multiple regression model is that why how does always equal to design matrix multiplied with the test of vector?",
+    "start_ms": 2603912,
+    "end_ms": 2611396,
+    "duration_ms": 7484,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2611.396,
+    "text": "The next step that I need to do is go ahead and and minimize the distance between all the predictions and all the ground-trust values y.",
+    "start_ms": 2611396,
+    "end_ms": 2622520,
+    "duration_ms": 11124,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2622.52,
+    "text": "And we said that we're going to use the loss value or the loss function of mean-squared error.",
+    "start_ms": 2622520,
+    "end_ms": 2627560,
+    "duration_ms": 5040,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2627.56,
+    "text": "And we're going to take a look at how we can use this effectively.",
+    "start_ms": 2627560,
+    "end_ms": 2630640,
+    "duration_ms": 3080,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2631.288,
+    "text": "So. What I'm going to show you is 11 more algebra, but show you why mean a scored error in this specific case with multiple different features is going to look like this function.",
+    "start_ms": 2631288,
+    "end_ms": 2645312,
+    "duration_ms": 14024,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2645.312,
+    "text": "It sounds a little bit complicated right now, but just to break it down, 11, we have this sign double vertical line around y minus y hat.",
+    "start_ms": 2645312,
+    "end_ms": 2656312,
+    "duration_ms": 11000,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2656.312,
+    "text": "have. This is kind of telling you that you're measuring some norm.",
+    "start_ms": 2656312,
+    "end_ms": 2661026,
+    "duration_ms": 4714,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2661.026,
+    "text": "Remember that you're every time you're thinking about the length of a vector or a normal a vector, we would just use this as specific notation.",
+    "start_ms": 2661026,
+    "end_ms": 2669012,
+    "duration_ms": 7986,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2669.012,
+    "text": "That's true. We're going to talk about that in this day.",
+    "start_ms": 2669012,
+    "end_ms": 2674784,
+    "duration_ms": 5772,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2674.784,
+    "text": "Okay. So, more linear algebra, so I'm going to do a quick reminder and then tell you what that subscript 2 actually is, which in fact is listed here.",
+    "start_ms": 2674784,
+    "end_ms": 2685495,
+    "duration_ms": 10711,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2685.495,
+    "text": "When we want to measure the lengths or size of a vector, we use norm of a vector.",
+    "start_ms": 2685495,
+    "end_ms": 2691648,
+    "duration_ms": 6153,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2691.648,
+    "text": "There are different norms for a vector. We have L1 norm, we have L2 norm.",
+    "start_ms": 2691648,
+    "end_ms": 2696349,
+    "duration_ms": 4701,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2696.349,
+    "text": "You've seen L1 loss and L2 losses before, when we were calculating minus squared error, or mean absolute error.",
+    "start_ms": 2696349,
+    "end_ms": 2704728,
+    "duration_ms": 8379,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2704.728,
+    "text": "So that's kind of for both of the L1 and L2 loss, that was kind of a measure of the distance or the length of the error vector that you have.",
+    "start_ms": 2704728,
+    "end_ms": 2713208,
+    "duration_ms": 8480,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2713.56,
+    "text": "In a general sense, if I have an n-dimensional vector, so here I have an n-dimensional vector x with the values x1x to all the way to xn.",
+    "start_ms": 2713560,
+    "end_ms": 2723560,
+    "duration_ms": 10000,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2723.832,
+    "text": "The L2 norm of this vector is going to be a square root of each one of the summation of x i is squares.",
+    "start_ms": 2723832,
+    "end_ms": 2732832,
+    "duration_ms": 9000,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2733.848,
+    "text": "Okay, so this is again a square root of the summation of all of these x i squares that I have over all of the dimensions that I have.",
+    "start_ms": 2733848,
+    "end_ms": 2742848,
+    "duration_ms": 9000,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2742.848,
+    "text": "Every time that I want to show L2 norm, I'll show it with this double vertical line and then the subscript 2 is showing you that you're taking the second order or the L2 norm or you're calculating a length based on L2 norm.",
+    "start_ms": 2742848,
+    "end_ms": 2757848,
+    "duration_ms": 15000,
+    "word_count": 44,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2758.392,
+    "text": "Okay, one thing that you might notice here, again, try to build intuition from everything that you know and every time that you're looking at the equation or some objective function.",
+    "start_ms": 2758392,
+    "end_ms": 2770072,
+    "duration_ms": 11680,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2770.68,
+    "text": "I'm talking about l2Norm here. The format of what you're seeing in the right hand side of the value for the l2Norm is kind of similar to the squared error function that you had seen before.",
+    "start_ms": 2770680,
+    "end_ms": 2783680,
+    "duration_ms": 13000,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2783.68,
+    "text": "So if you were thinking about X-I as being errors, and if you go ahead and score the errors and sum up all of the scores of the errors, this is kind of telling you that this is kind of a score of the errors, or we can use this notation to calculate the scores of the errors, the summation of the scores of the errors.",
+    "start_ms": 2783680,
+    "end_ms": 2802680,
+    "duration_ms": 19000,
+    "word_count": 66,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2803.128,
+    "text": "Right, I would say summation of the scores of the errors.",
+    "start_ms": 2803128,
+    "end_ms": 2806128,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2806.456,
+    "text": "But let's see how we can use it in practice.",
+    "start_ms": 2806456,
+    "end_ms": 2809136,
+    "duration_ms": 2680,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2809.136,
+    "text": "So this L2 norm can be used in order to, in order to, again, measure the lengths or size of a vector.",
+    "start_ms": 2809136,
+    "end_ms": 2817856,
+    "duration_ms": 8720,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2817.856,
+    "text": "And it's also kind of a generalization of Pythagorean theorem.",
+    "start_ms": 2817856,
+    "end_ms": 2823336,
+    "duration_ms": 5480,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2823.336,
+    "text": "So in Pythagorean term, you had that, okay, if one side is A, one side is B, this other side is going to have the lengths of a school root of A squared plus B squared.",
+    "start_ms": 2823336,
+    "end_ms": 2832936,
+    "duration_ms": 9600,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2832.936,
+    "text": "But we also know is that we can use and generalize this notation and say that, okay, if you have a vector of A and B, which means that across the x dimension, you have A units of distance across the y dimension, you have B units of distance.",
+    "start_ms": 2832936,
+    "end_ms": 2849296,
+    "duration_ms": 16360,
+    "word_count": 49,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2849.296,
+    "text": "The length of this vector from this equation is exactly going to be a score, which have A squared plus B squared.",
+    "start_ms": 2849296,
+    "end_ms": 2856176,
+    "duration_ms": 6880,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2856.176,
+    "text": "So kind of, it will tell you that this notion is going to help you measure the length of a vector.",
+    "start_ms": 2856176,
+    "end_ms": 2863576,
+    "duration_ms": 7400,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2863.256,
+    "text": "In addition to measuring the lengths of a vector, it can also help you measure the distance between two vectors.",
+    "start_ms": 2863256,
+    "end_ms": 2870256,
+    "duration_ms": 7000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2870.256,
+    "text": "So for example, again, if I have two vectors here A and B, in order for me to measure the distance between A and B, effectively I can say that this vector right here is going to be the vector of A minus B.",
+    "start_ms": 2870256,
+    "end_ms": 2885256,
+    "duration_ms": 15000,
+    "word_count": 44,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2885.752,
+    "text": "Right? That's the distance or the delta between A and B.",
+    "start_ms": 2885752,
+    "end_ms": 2889112,
+    "duration_ms": 3360,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2889.112,
+    "text": "And in order for me to measure the length of that A-B vector, I can calculate L2 norm of that vector A-B, which is what I wrote exactly right here.",
+    "start_ms": 2889112,
+    "end_ms": 2899352,
+    "duration_ms": 10240,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2900.408,
+    "text": "Why is it going to be helpful? Because remember that I said I have a vector of all the predictions, and I have the vector of all of the ground-trust values.",
+    "start_ms": 2900408,
+    "end_ms": 2908568,
+    "duration_ms": 8160,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2908.856,
+    "text": "And I want to calculate the distance between the two.",
+    "start_ms": 2908856,
+    "end_ms": 2911356,
+    "duration_ms": 2500,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2911.832,
+    "text": "So I can actually calculate the distance between the two by stop tracking one from the other.",
+    "start_ms": 2911832,
+    "end_ms": 2917332,
+    "duration_ms": 5500,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2917.816,
+    "text": "Which is going to give me all the residual values or is going to give me the residual vector, which then I can go ahead and calculate L2 norm of that residual vector and just measure the lengths of that residual vector in order to figure out how much loss I have and also write the the minuscord error objective function based on that value.",
+    "start_ms": 2917816,
+    "end_ms": 2937392,
+    "duration_ms": 19576,
+    "word_count": 65,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2937.392,
+    "text": "Again, this is the point that I was making that the entire summation of this x i squared values is kind of similar to what you're what you had seen in the objective function of calculating minus score there.",
+    "start_ms": 2937392,
+    "end_ms": 2950536,
+    "duration_ms": 13144,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2950.536,
+    "text": "So let's see how we can do that in practice.",
+    "start_ms": 2950536,
+    "end_ms": 2953416,
+    "duration_ms": 2880,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2953.592,
+    "text": "Remember your objective function from before it's called this is my cost function or objective function parametrized by teta depending on the teta value I'm going to get different why I had values or different predictions and I'm going to compare all of these predictions I'm going to calculate residuals, the squarter residuals, sum up all of those residuals, and also divided by n.",
+    "start_ms": 2953592,
+    "end_ms": 2981640,
+    "duration_ms": 28048,
+    "word_count": 64,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2981.64,
+    "text": "Calculating mean of the squars of the errors. Okay. From this previous slide, remember that this was the notation for me to calculate the L2 norm of a vector.",
+    "start_ms": 2981640,
+    "end_ms": 2995097,
+    "duration_ms": 13457,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2995.097,
+    "text": "So effectively, what you're seeing here inside the summation, I can just replicate this summation using this L2 norm part that I had from before.",
+    "start_ms": 2995097,
+    "end_ms": 3004730,
+    "duration_ms": 9633,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3004.73,
+    "text": "So again, assuming that what I'm doing in terms of calculating yi is minus yi hats, it's equal to me saying that I have a vector of all of the y values, grandfathers values.",
+    "start_ms": 3004730,
+    "end_ms": 3019379,
+    "duration_ms": 14649,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3019.379,
+    "text": "I have a vector of all of the prediction values.",
+    "start_ms": 3019379,
+    "end_ms": 3023280,
+    "duration_ms": 3901,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3023.28,
+    "text": "Go ahead and calculate L to norm. of this delta vector.",
+    "start_ms": 3023280,
+    "end_ms": 3028176,
+    "duration_ms": 4896,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3028.176,
+    "text": "So this is my delta vector. Go ahead and calculate the L2 norm.",
+    "start_ms": 3028176,
+    "end_ms": 3033560,
+    "duration_ms": 5384,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3033.56,
+    "text": "But because this L2 norm has this square root and we want to get rid of that, we will is square it one more time.",
+    "start_ms": 3033560,
+    "end_ms": 3040280,
+    "duration_ms": 6720,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3040.12,
+    "text": "So let me clean this up. and let's take a look at it one more time.",
+    "start_ms": 3040120,
+    "end_ms": 3044860,
+    "duration_ms": 4740,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3046.936,
+    "text": "So again, I have all the y-i's, I have all of the y-i hats, I need to calculate residuals and and the score the residuals.",
+    "start_ms": 3046936,
+    "end_ms": 3054375,
+    "duration_ms": 7439,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3054.375,
+    "text": "The place that I can get this summation is exactly going to be this l2 norm of this vector and then is square this l2 norm because I don't have a square within this case.",
+    "start_ms": 3054375,
+    "end_ms": 3066930,
+    "duration_ms": 12555,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3066.93,
+    "text": "So then again what's happening is that this is going to be this summation right here is going to be equal to me taking l to norm of y minus y hat vector.",
+    "start_ms": 3066930,
+    "end_ms": 3078047,
+    "duration_ms": 11117,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3078.04,
+    "text": "This is L2 norm, so that's where the subscript is coming from, and then taking it to the power of 2 so that I can get rid of the square root.",
+    "start_ms": 3078040,
+    "end_ms": 3085040,
+    "duration_ms": 7000,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3085.04,
+    "text": "So this is going to give me the summation right here, but then what I need also in addition to that is the factor or the coefficient of 1 over n.",
+    "start_ms": 3085040,
+    "end_ms": 3093040,
+    "duration_ms": 8000,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3093.04,
+    "text": "So that's why the entire objective function is going to be 1 over n times L2 norm is square of the residual vector.",
+    "start_ms": 3093040,
+    "end_ms": 3100040,
+    "duration_ms": 7000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3101.048,
+    "text": "Okay, this is going to be very simple. Uh, if condensed, so the entire prediction task wasn't make your multiplication.",
+    "start_ms": 3101048,
+    "end_ms": 3108448,
+    "duration_ms": 7400,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3108.448,
+    "text": "The entire objective function is that you're calculating one over n times the L2N on the square of a delta vector.",
+    "start_ms": 3108448,
+    "end_ms": 3116648,
+    "duration_ms": 8200,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3116.648,
+    "text": "So you have a vector, you just calculate the length of this vector, and your objective function is going to be a function of that.",
+    "start_ms": 3116648,
+    "end_ms": 3122348,
+    "duration_ms": 5700,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3122.348,
+    "text": "And everything is going to go from there. So what I want to do...",
+    "start_ms": 3122348,
+    "end_ms": 3126760,
+    "duration_ms": 4412,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3126.936,
+    "text": "is to make sure that the length of this vector is minimized.",
+    "start_ms": 3126936,
+    "end_ms": 3130736,
+    "duration_ms": 3800,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3130.736,
+    "text": "My objective function is to minimize the cost function, meaning that I need to minimize the length of that vector, which that vector is my residual vector that I have.",
+    "start_ms": 3130736,
+    "end_ms": 3140536,
+    "duration_ms": 9800,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3141.144,
+    "text": "So this is going to be what we'll be doing.",
+    "start_ms": 3141144,
+    "end_ms": 3144144,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3144.144,
+    "text": "But what I'm going to do is instead of calculating or doing vector calculus, which is out of a scope for this course, I'm going to just derive kind of geometrically what that Tata hat vector is going to look like that that Tata hat vector is going to give you a cost that is minimize or is going to give you a cost that or is going to give you predictions that those predictions are as close as possible to the target values that you had.",
+    "start_ms": 3144144,
+    "end_ms": 3169144,
+    "duration_ms": 25000,
+    "word_count": 87,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3170.232,
+    "text": "Okay. So let's take a look at this objective function one more time and this is the second slide of question.",
+    "start_ms": 3170232,
+    "end_ms": 3178096,
+    "duration_ms": 7864,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3178.096,
+    "text": "What I want you to think about is that based on all this expression expressions that I showed you the objective function, however also making predictions.",
+    "start_ms": 3178096,
+    "end_ms": 3186096,
+    "duration_ms": 8000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3186.096,
+    "text": "What are we exactly doing in the OLS problem? How do we interpret this objective function?",
+    "start_ms": 3186096,
+    "end_ms": 3192865,
+    "duration_ms": 6769,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3192.865,
+    "text": "Let's take a look at those options that we have.",
+    "start_ms": 3192865,
+    "end_ms": 3197096,
+    "duration_ms": 4231,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3197.208,
+    "text": "Minimizing miniscord error, minimizing the gussets, minimizing the lengths, so on and so forth.",
+    "start_ms": 3197208,
+    "end_ms": 3203208,
+    "duration_ms": 6000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3203.96,
+    "text": "Let me know. I'm going to stay on this slide so that you can still respond and just go through each one of these options.",
+    "start_ms": 3203960,
+    "end_ms": 3250248,
+    "duration_ms": 46288,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3250.248,
+    "text": "The first option says that minimize the mean scored error for the linear model y had equal to x times theta.",
+    "start_ms": 3250248,
+    "end_ms": 3257188,
+    "duration_ms": 6940,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3257.188,
+    "text": "That was the definition. that that ordinarily scores is the...",
+    "start_ms": 3257188,
+    "end_ms": 3260687,
+    "duration_ms": 3499,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3261.208,
+    "text": "is the model that is... Multiple linear regression, which would derive the equation to be y had equal to design matrix times theta.",
+    "start_ms": 3261208,
+    "end_ms": 3271184,
+    "duration_ms": 9976,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3271.184,
+    "text": "And then we know that the objective function is going to be minus squared area.",
+    "start_ms": 3271184,
+    "end_ms": 3274584,
+    "duration_ms": 3400,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3274.584,
+    "text": "So a is correct. about the so in beaver saying that minimizing the distance between the predicted values predict predict between the true and the predicted values meaning that if you have a vector of all of the predictions and you have a vector of all of the ground-trust values You want you might want to make sure that these two vectors are as close as close to each other as possible Which is exactly what we're trying to do irrespective of the model So in all of the models that you'll be training, you want to make sure that predictions are as as possible to the ground-trace values.",
+    "start_ms": 3274584,
+    "end_ms": 3307480,
+    "duration_ms": 32896,
+    "word_count": 109,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3307.48,
+    "text": "That is correct. Options C says that minimize the length of the residual vector.",
+    "start_ms": 3307480,
+    "end_ms": 3314284,
+    "duration_ms": 6804,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3314.808,
+    "text": "Right? This is kind of given based on my final objective function.",
+    "start_ms": 3314808,
+    "end_ms": 3319888,
+    "duration_ms": 5080,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3319.888,
+    "text": "I said that my final objective function was equal to one over n times.",
+    "start_ms": 3319888,
+    "end_ms": 3324928,
+    "duration_ms": 5040,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3325.272,
+    "text": "L2N or the length of the residual vector is square.",
+    "start_ms": 3325272,
+    "end_ms": 3329272,
+    "duration_ms": 4000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3329.272,
+    "text": "So you're effectively minimizing the length of the residual vector is square, which means that you're minimizing the length of the residual vector itself as well.",
+    "start_ms": 3329272,
+    "end_ms": 3340272,
+    "duration_ms": 11000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3340.272,
+    "text": "So option C is correct. So therefore this is going to be the correct answer is going to be all of the above.",
+    "start_ms": 3340272,
+    "end_ms": 3346272,
+    "duration_ms": 6000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3346.272,
+    "text": "And most of you are correct in that, which is very good.",
+    "start_ms": 3346272,
+    "end_ms": 3350272,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3350.616,
+    "text": "Okay, this is a description of what's happening so you can review the correct answer after the lecture.",
+    "start_ms": 3350616,
+    "end_ms": 3357896,
+    "duration_ms": 7280,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3357.896,
+    "text": "So as promised, we're going to take a two-minute break and then we're going to come back and actually do the fun calculation of how can we drive the tetahat optimum vector and how can we actually geometrically interpret it.",
+    "start_ms": 3357896,
+    "end_ms": 3372425,
+    "duration_ms": 14529,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3372.425,
+    "text": "So let's take a two-minute break. We'll be back shortly.",
+    "start_ms": 3372425,
+    "end_ms": 3378456,
+    "duration_ms": 6031,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3471.96,
+    "text": "Okay, so let's restart and talk about the next piece.",
+    "start_ms": 3471960,
+    "end_ms": 3478560,
+    "duration_ms": 6600,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3478.56,
+    "text": "So the next piece that I promise is going to be how to fit a model.",
+    "start_ms": 3478560,
+    "end_ms": 3482440,
+    "duration_ms": 3880,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3482.44,
+    "text": "How can we find that the optimum set of petavectors or petave values that are going to give us the smallest residual vector and the best predictions possible.",
+    "start_ms": 3482440,
+    "end_ms": 3493000,
+    "duration_ms": 10560,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3493.0,
+    "text": "Again, I'm not going to do vector calculus, but instead we're going to go with just intuition and geometric derivation of what's happening in this end-dimensional space that we're dealing with because we're in the end-dimensional space.",
+    "start_ms": 3493000,
+    "end_ms": 3507120,
+    "duration_ms": 14120,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3507.12,
+    "text": "What we have is that we have our Y vector as an end-dimensional vector.",
+    "start_ms": 3507120,
+    "end_ms": 3512385,
+    "duration_ms": 5265,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3512.385,
+    "text": "It has prediction for it has ground-fished values for all of the data points that we have or all of the observations and for each one of the observations we also have predicted values.",
+    "start_ms": 3512385,
+    "end_ms": 3523940,
+    "duration_ms": 11555,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3523.94,
+    "text": "So we have an end-dimensional vector and another end-dimensional vector that we're trying to make sure either as close to each other as possible.",
+    "start_ms": 3523940,
+    "end_ms": 3531240,
+    "duration_ms": 7300,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3531.24,
+    "text": "So we are in end-dimensional space, in a sense. And as you can imagine, as the size of the data set grows and as the number of features also grows, then the complexity of this model is going to grow and we're going to be in this higher dimensional space, which is hard to directly understand what's happening in it.",
+    "start_ms": 3531240,
+    "end_ms": 3550680,
+    "duration_ms": 19440,
+    "word_count": 60,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3550.936,
+    "text": "So the last kind of reminder from linear algebra is a span.",
+    "start_ms": 3550936,
+    "end_ms": 3555936,
+    "duration_ms": 5000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3555.936,
+    "text": "When I say I want to calculate a span of two, two vectors.",
+    "start_ms": 3555936,
+    "end_ms": 3563936,
+    "duration_ms": 8000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3563.936,
+    "text": "So you can assume that these are my two vectors.",
+    "start_ms": 3563936,
+    "end_ms": 3566936,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3566.936,
+    "text": "I'm going to put these two vectors and assume that these two vectors are going to start from the floor here.",
+    "start_ms": 3566936,
+    "end_ms": 3571936,
+    "duration_ms": 5000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3571.936,
+    "text": "Right. So what I will say that is that this is kind of my starting point.",
+    "start_ms": 3571936,
+    "end_ms": 3576808,
+    "duration_ms": 4872,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3576.808,
+    "text": "These are my two vectors. If I want to understand this pen that these two vectors are creating with each other, it's effectively going to be any position on this surface that I can reach with a weighted combination or with linear combination of these two vectors.",
+    "start_ms": 3576808,
+    "end_ms": 3594488,
+    "duration_ms": 17680,
+    "word_count": 47,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3594.488,
+    "text": "So you can imagine that because these two vectors are on the ground and with the way that their position and their position actually like this, I can effectively go and build any vector.",
+    "start_ms": 3594488,
+    "end_ms": 3605608,
+    "duration_ms": 11120,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3605.976,
+    "text": "on this specific surface right here, right? So you can imagine that with different combination of weights that I can apply to vector 1 and vector 2, I can reach to any of the points on this surface.",
+    "start_ms": 3605976,
+    "end_ms": 3620136,
+    "duration_ms": 14160,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3620.026,
+    "text": "a span of those two vectors. So this surface entirely is called a span of those two vectors that I have.",
+    "start_ms": 3620026,
+    "end_ms": 3626488,
+    "duration_ms": 6462,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3627.224,
+    "text": "But what we also call as we call a span of a matrix.",
+    "start_ms": 3627224,
+    "end_ms": 3631384,
+    "duration_ms": 4160,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3631.384,
+    "text": "A span of a matrix means that assume that each one of the columns are vectors.",
+    "start_ms": 3631384,
+    "end_ms": 3635864,
+    "duration_ms": 4480,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3636.312,
+    "text": "And let's decide about what is the subspace or what is the area that is achievable by a divided linear combination of all of the columns of that matrix.",
+    "start_ms": 3636312,
+    "end_ms": 3646482,
+    "duration_ms": 10170,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3646.482,
+    "text": "It's a kind of a more advanced version or a generalized format of what I was showing you here with two vectors in tree-dimensional space.",
+    "start_ms": 3646482,
+    "end_ms": 3655312,
+    "duration_ms": 8830,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3655.312,
+    "text": "What I want you to notice is that when I was showing you this example, Right.",
+    "start_ms": 3655312,
+    "end_ms": 3661094,
+    "duration_ms": 5782,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3661.094,
+    "text": "I was showing you this example and my sub space or my span was entirely this floor.",
+    "start_ms": 3661094,
+    "end_ms": 3667591,
+    "duration_ms": 6497,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3667.591,
+    "text": "I would not be able to reach any point above this floor exactly with these two vectors.",
+    "start_ms": 3667591,
+    "end_ms": 3673592,
+    "duration_ms": 6001,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3673.592,
+    "text": "So you can imagine that in three-dimensional space, the span of x is the sub space of r3.",
+    "start_ms": 3673592,
+    "end_ms": 3680472,
+    "duration_ms": 6880,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3681.112,
+    "text": "Because I was not able to, for example, find out any kind of, if you're assuming that they're flat, There's no way that I can calculate a weighted combination of these two vectors in order to achieve a position or a vector right here.",
+    "start_ms": 3681112,
+    "end_ms": 3694352,
+    "duration_ms": 13240,
+    "word_count": 44,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3694.352,
+    "text": "There's no way that they can give me this, this is the dimension because they don't have to see dimension in a sense.",
+    "start_ms": 3694352,
+    "end_ms": 3700351,
+    "duration_ms": 5999,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3700.351,
+    "text": "So you can imagine that what's happening is that this span of x that we're creating, if you assume that the matrix that we're dealing with is my design matrix.",
+    "start_ms": 3700351,
+    "end_ms": 3709351,
+    "duration_ms": 9000,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3709.496,
+    "text": "We're thinking about all the possible places in the span of x that we can achieve or in the span of x that we can go with a weighted combination of columns of that is specific matrix.",
+    "start_ms": 3709496,
+    "end_ms": 3721496,
+    "duration_ms": 12000,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3721.496,
+    "text": "And if each one of these columns are n dimensional, these are in r n and this is also in r n.",
+    "start_ms": 3721496,
+    "end_ms": 3727564,
+    "duration_ms": 6068,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3727.564,
+    "text": "Again, you can imagine that this span of x is going to be a subset of r n and not including the entire r n in the same way that I was not able to achieve.",
+    "start_ms": 3727564,
+    "end_ms": 3737496,
+    "duration_ms": 9932,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3737.496,
+    "text": "any vertical point or any vertical kind of vector here.",
+    "start_ms": 3737496,
+    "end_ms": 3741496,
+    "duration_ms": 4000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3741.496,
+    "text": "It is a subset of R3 and not the entire R3 that I have.",
+    "start_ms": 3741496,
+    "end_ms": 3749496,
+    "duration_ms": 8000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3749.784,
+    "text": "So it helpful in our case when we're talking about how the model is going to do production.",
+    "start_ms": 3749784,
+    "end_ms": 3756528,
+    "duration_ms": 6744,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3756.528,
+    "text": "It is helpful because if you think about how I was getting all the predictions, there was one way that you would think about the fact that I'm getting all the predictions by multiplying these rows by this column vector.",
+    "start_ms": 3756528,
+    "end_ms": 3767928,
+    "duration_ms": 11400,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3767.928,
+    "text": "There's also another way that you can think about me calculating each one of these or getting all of these predictions by waiting or by multiplying this VAT factor to each one of these column vectors, or each one of these features that I have.",
+    "start_ms": 3767928,
+    "end_ms": 3784948,
+    "duration_ms": 17020,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3784.948,
+    "text": "So I would say that in order for me to get all of the predictions for all of the observations, let's go ahead and graph feature one, the column for feature one, multiply all of those feature ones with the parameter teta zero.",
+    "start_ms": 3784948,
+    "end_ms": 3798188,
+    "duration_ms": 13240,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3798.188,
+    "text": "Graph feature two, multiply all of those values with the parameter two and then so on and so forth.",
+    "start_ms": 3798188,
+    "end_ms": 3804348,
+    "duration_ms": 6160,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3804.348,
+    "text": "I kind of oversimplified it here. There's no teta zero, there's no other column.",
+    "start_ms": 3804348,
+    "end_ms": 3808788,
+    "duration_ms": 4440,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3808.788,
+    "text": "This is just a simplification of this case, assuming if you only have two columns.",
+    "start_ms": 3808788,
+    "end_ms": 3813108,
+    "duration_ms": 4320,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3813.187,
+    "text": "And this way, if you're thinking about getting all the predictions using a way that combination of columns, in a sense, your y hat is going to be a vector that's going to be in the span of your entire matrix X.",
+    "start_ms": 3813187,
+    "end_ms": 3828216,
+    "duration_ms": 15029,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3828.216,
+    "text": "Again, it's in the span of matrix X because of the way that I can think about how the predictions are being calculated.",
+    "start_ms": 3828216,
+    "end_ms": 3836314,
+    "duration_ms": 8098,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3836.314,
+    "text": "The predictions are being calculated by these specific weights that I have that are applied to the column vectors.",
+    "start_ms": 3836314,
+    "end_ms": 3844221,
+    "duration_ms": 7907,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3844.221,
+    "text": "And that's the definition of a span of X. So exactly what's happening, when I'm doing the prediction, is that I'm living in this end-dimensional space.",
+    "start_ms": 3844221,
+    "end_ms": 3854222,
+    "duration_ms": 10001,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3854.222,
+    "text": "I have multiple different features. that this is feature one, for example, that is end-dimensional.",
+    "start_ms": 3854222,
+    "end_ms": 3860656,
+    "duration_ms": 6434,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3860.656,
+    "text": "So for each one of the data points that you have, you have a value for feature one.",
+    "start_ms": 3860656,
+    "end_ms": 3866376,
+    "duration_ms": 5720,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3866.376,
+    "text": "And this is, for example, your feature two, and then so on and so forth.",
+    "start_ms": 3866376,
+    "end_ms": 3869776,
+    "duration_ms": 3400,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3869.776,
+    "text": "You can think about this is kind of oversimplification of it in kind of 3D, but you can think about each one of the features is going to be a vector in end-dimensional space.",
+    "start_ms": 3869776,
+    "end_ms": 3879176,
+    "duration_ms": 9400,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3879.832,
+    "text": "All of the Y hats... Vectors that I can get are going to live in the system of X because I know based on the definition that I can the span of X includes all of the possible vectors or positions that I can achieve by a combination of all of the columns.",
+    "start_ms": 3879832,
+    "end_ms": 3898168,
+    "duration_ms": 18336,
+    "word_count": 53,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3898.168,
+    "text": "And I know that's exactly what a linear model is able to do.",
+    "start_ms": 3898168,
+    "end_ms": 3902488,
+    "duration_ms": 4320,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3902.488,
+    "text": "And it cannot achieve anything beyond the span of x that we're living in.",
+    "start_ms": 3902488,
+    "end_ms": 3908168,
+    "duration_ms": 5680,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3908.168,
+    "text": "So effectively, what that means is that if this is the two columns that I have in my data frame, all of the predictions that I can have with any linear model is going to live on this specific surface.",
+    "start_ms": 3908168,
+    "end_ms": 3922448,
+    "duration_ms": 14280,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3922.616,
+    "text": "up here right and I'm not able to just do any prediction above.",
+    "start_ms": 3922616,
+    "end_ms": 3927976,
+    "duration_ms": 5360,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3928.536,
+    "text": "But what's happening is that a lot of times this Y vector or the ground truth values.",
+    "start_ms": 3928536,
+    "end_ms": 3942536,
+    "duration_ms": 14000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3942.44,
+    "text": "live outside of the span of x. So just to show you with this kind of physical example that I have imagine that those are my two columns and imagine that for example.",
+    "start_ms": 3942440,
+    "end_ms": 3955240,
+    "duration_ms": 12800,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3955.864,
+    "text": "Say, for example, one of the lights here is going to be the target valley or the target vector that I want to be in.",
+    "start_ms": 3955864,
+    "end_ms": 3964037,
+    "duration_ms": 8173,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3964.037,
+    "text": "Right? So effectively, what I want to do is I want to find a weighted combination of all of these features that is as close as possible to this target vector.",
+    "start_ms": 3964037,
+    "end_ms": 3974364,
+    "duration_ms": 10327,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3974.364,
+    "text": "But I can basically make up for this vertical distance.",
+    "start_ms": 3974364,
+    "end_ms": 3977764,
+    "duration_ms": 3400,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3977.764,
+    "text": "What I can do is just walk on this surface, figure out where is the best place that is as close as possible to this light, which what I know or what from our intuition we know is that the best place is going to be right under it, so that we don't need to compensate or get penalized for the delta in x and y, but we only get penalized for the delta in z that we have.",
+    "start_ms": 3977764,
+    "end_ms": 3998764,
+    "duration_ms": 21000,
+    "word_count": 79,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3998.764,
+    "text": "Right? So that's exactly what's happening in this case, that if you think about this geometry, this geometry, why hat is going to be in the span of x?",
+    "start_ms": 3998764,
+    "end_ms": 4008132,
+    "duration_ms": 9368,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4008.132,
+    "text": "Why does not live necessarily live in this span of x?",
+    "start_ms": 4008132,
+    "end_ms": 4011429,
+    "duration_ms": 3297,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4011.429,
+    "text": "It can be any verb. And what we're trying to do is we're trying to make sure that our y hat is some verb that is right under y.",
+    "start_ms": 4011429,
+    "end_ms": 4019580,
+    "duration_ms": 8151,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4019.58,
+    "text": "And we're going to define what being right under i right under y actually means in practice.",
+    "start_ms": 4019580,
+    "end_ms": 4028089,
+    "duration_ms": 8509,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4028.089,
+    "text": "Being right under i basically under y actually means is that I am, if you're thinking about the Y as having a lamp or a light bulb, it should be right under it, but the example that I was showing you.",
+    "start_ms": 4028089,
+    "end_ms": 4043964,
+    "duration_ms": 15875,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4043.964,
+    "text": "And right under it means that what we want to do is we want to make sure that...",
+    "start_ms": 4043964,
+    "end_ms": 4047403,
+    "duration_ms": 3439,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4048.12,
+    "text": "Y hat is the orthogonal projection of Y unto the span of X.",
+    "start_ms": 4048120,
+    "end_ms": 4053880,
+    "duration_ms": 5760,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4053.88,
+    "text": "So we want that kind of degree to be kind of 90 degree.",
+    "start_ms": 4053880,
+    "end_ms": 4056720,
+    "duration_ms": 2840,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4056.72,
+    "text": "Meaning that we want to make sure that if you look at the distance between Y and also this Y hat that we have right here, this distance is minimized.",
+    "start_ms": 4056720,
+    "end_ms": 4066220,
+    "duration_ms": 9500,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4066.22,
+    "text": "And it is minimized at the place that this delta vector Y minus Y hat is minimized or is orthogonal to the entire span of X.",
+    "start_ms": 4066220,
+    "end_ms": 4075620,
+    "duration_ms": 9400,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4076.248,
+    "text": "So this is kind of that... Most of the take-aways that you want to take from the lecture today is going to be on this graph.",
+    "start_ms": 4076248,
+    "end_ms": 4084532,
+    "duration_ms": 8284,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4084.532,
+    "text": "Effectively, it means that the objective function that we have been trying to minimize is that we have been trying to minimize the lengths of this residual vector or y- minus y-hat.",
+    "start_ms": 4084532,
+    "end_ms": 4094698,
+    "duration_ms": 10166,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4094.698,
+    "text": "There is y, y is right here. There is y-hat, y-hat is right here, or I write it as x times theta.",
+    "start_ms": 4094698,
+    "end_ms": 4102032,
+    "duration_ms": 7334,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4102.032,
+    "text": "And in order to minimize this distance, I want to make sure that the length of this vector is minimized.",
+    "start_ms": 4102032,
+    "end_ms": 4108312,
+    "duration_ms": 6280,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4108.312,
+    "text": "And how can I make sure that the length of this vector is minimized?",
+    "start_ms": 4108312,
+    "end_ms": 4111312,
+    "duration_ms": 3000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4111.312,
+    "text": "This vector should be the orthogonal projection of y unto this subspace that I'm living in.",
+    "start_ms": 4111312,
+    "end_ms": 4117152,
+    "duration_ms": 5840,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4118.008,
+    "text": "So we're going to formally define what this orthogonal projection means.",
+    "start_ms": 4118008,
+    "end_ms": 4122008,
+    "duration_ms": 4000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4122.008,
+    "text": "And orthogonal projection, when you have two vectors in 2D actually means that they're perpendicular, meaning that the dot product between them is equal to 0.",
+    "start_ms": 4122008,
+    "end_ms": 4131008,
+    "duration_ms": 9000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4131.008,
+    "text": "Remember that I was telling you that when you calculate the dot product, this is as if you're calculating the norm of A, and times the norm of B or the lengths of B, times the cosine of the angle between them.",
+    "start_ms": 4131008,
+    "end_ms": 4146008,
+    "duration_ms": 15000,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4146.008,
+    "text": "when this angle is equal to 90 degrees cosine is going to be equal to zero, that's why the doc product between A and B is going to be equal to zero.",
+    "start_ms": 4146008,
+    "end_ms": 4154971,
+    "duration_ms": 8963,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4154.971,
+    "text": "That's what we mean by two vectors being perpendicular to each other.",
+    "start_ms": 4154971,
+    "end_ms": 4159608,
+    "duration_ms": 4637,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4159.224,
+    "text": "Or, tokenality in the case of a vector being or being orthogonal to entire span of a matrix, that means that it should be orthogonal to each one of the columns of the matrix.",
+    "start_ms": 4159224,
+    "end_ms": 4176224,
+    "duration_ms": 17000,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4176.224,
+    "text": "Again, if it is orthogonal to each one of the columns of x, it is also going to be orthogonal to any linear combination of those columns as well.",
+    "start_ms": 4176224,
+    "end_ms": 4186224,
+    "duration_ms": 10000,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4186.224,
+    "text": "So it's entirely going to be orthogonal to everything or every vector that leaves in that subspace.",
+    "start_ms": 4186224,
+    "end_ms": 4192224,
+    "duration_ms": 6000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4192.224,
+    "text": "So formally defining what's happening is that if I'm assuming that my matrix is m, I have all of these did be different columns.",
+    "start_ms": 4192224,
+    "end_ms": 4200224,
+    "duration_ms": 8000,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4200.224,
+    "text": "When I say that b is orthogonal to this matrix m, this means that the dot product between each one of the columns and b should be equal to zero, meaning that column transpose this time, we should be equal to zero.",
+    "start_ms": 4200224,
+    "end_ms": 4213224,
+    "duration_ms": 13000,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4213.224,
+    "text": "to 0 and I'll do exactly the same trick where I will combine all of these calculations into one vector and then I'll factor out v which effectively here means that in order to make sure that a vector v is orthogonal to a span of a matrix m, we just transpose matrix m multiplied with the vector v and that should be equal to 0.",
+    "start_ms": 4213224,
+    "end_ms": 4237184,
+    "duration_ms": 23960,
+    "word_count": 66,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4237.72,
+    "text": "And that's exactly what we want and I'm going to directly use it here because what I want is this is my vector v right here.",
+    "start_ms": 4237720,
+    "end_ms": 4245720,
+    "duration_ms": 8000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4245.88,
+    "text": "And the blue area is my span, and it's in fact the span of x.",
+    "start_ms": 4245880,
+    "end_ms": 4251380,
+    "duration_ms": 5500,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4251.38,
+    "text": "And I have different columns in x that I need to make sure that the this residual vector is going to be orthogonal to each one of those specific columns that we have.",
+    "start_ms": 4251380,
+    "end_ms": 4262880,
+    "duration_ms": 11500,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4262.88,
+    "text": "So I'm going to use exactly the same equation. This is going to be my estimating equation, right?",
+    "start_ms": 4262880,
+    "end_ms": 4268880,
+    "duration_ms": 6000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4268.88,
+    "text": "Because as soon as my vector, my residual vector meets this criteria, That means that it was orthogonal.",
+    "start_ms": 4268880,
+    "end_ms": 4275880,
+    "duration_ms": 7000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4275.88,
+    "text": "That means that was the minimum distance I could have had.",
+    "start_ms": 4275880,
+    "end_ms": 4278880,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4278.88,
+    "text": "And then that means that this tetra that gave me that Y-hat exactly is going to be my optimum tetra-hat.",
+    "start_ms": 4278880,
+    "end_ms": 4286880,
+    "duration_ms": 8000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4287.256,
+    "text": "Right? So that's my kind of estimating equation. You can say that one side is equal to zero.",
+    "start_ms": 4287256,
+    "end_ms": 4292816,
+    "duration_ms": 5560,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4292.816,
+    "text": "This is kind of equal to me taking the derivative setting of the equal to zero that we have been doing previously.",
+    "start_ms": 4292816,
+    "end_ms": 4298816,
+    "duration_ms": 6000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4299.288,
+    "text": "So let's go ahead and do that actually. So I'm going to go ahead and say that this vector of y minus y hat or y minus x times peta, um, hat is going to uh X transpose times this vector is going to be equal to 0.",
+    "start_ms": 4299288,
+    "end_ms": 4316576,
+    "duration_ms": 17288,
+    "word_count": 48,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4316.576,
+    "text": "Again, because my matrix right now is going to be my design matrix.",
+    "start_ms": 4316576,
+    "end_ms": 4321376,
+    "duration_ms": 4800,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4321.376,
+    "text": "So I'm going to say X transpose times Y minus X times theta hat is equal to 0.",
+    "start_ms": 4321376,
+    "end_ms": 4329376,
+    "duration_ms": 8000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4329.656,
+    "text": "And again, this is x transpose multiplied with the residual vector.",
+    "start_ms": 4329656,
+    "end_ms": 4333696,
+    "duration_ms": 4040,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4333.696,
+    "text": "If that is equal to zero, that means that the residual vector is orthogonal to the entire the span of the design matrix x.",
+    "start_ms": 4333696,
+    "end_ms": 4341736,
+    "duration_ms": 8040,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4342.264,
+    "text": "So I'm just going to go ahead and rearrange some of these terms.",
+    "start_ms": 4342264,
+    "end_ms": 4345264,
+    "duration_ms": 3000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4345.264,
+    "text": "So if I rearrange the terms, this is going to be equal to x transpose times y is equal to x transpose times x times theta hat.",
+    "start_ms": 4345264,
+    "end_ms": 4355264,
+    "duration_ms": 10000,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4356.44,
+    "text": "Okay. Actually, sorry, I just wanted to distribute it, but let me go once that back.",
+    "start_ms": 4356440,
+    "end_ms": 4363880,
+    "duration_ms": 7440,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4364.664,
+    "text": "x transpose times y minus x transpose times x times theta hat is equal to zero.",
+    "start_ms": 4364664,
+    "end_ms": 4371864,
+    "duration_ms": 7200,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4371.864,
+    "text": "And then I'll take one term to the other side, the negative term to the other side.",
+    "start_ms": 4371864,
+    "end_ms": 4377064,
+    "duration_ms": 5200,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4377.064,
+    "text": "This is going to give me x transpose times x times theta hat equal to x transpose times y.",
+    "start_ms": 4377064,
+    "end_ms": 4384264,
+    "duration_ms": 7200,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4384.568,
+    "text": "This is called normal equation because it's the equation that you can directly solve in order to get all of the tetahed values that be one.",
+    "start_ms": 4384568,
+    "end_ms": 4394568,
+    "duration_ms": 10000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4394.568,
+    "text": "And as soon as you have x and you have y, you can solve this set of equations that you have right here in order to find out what is the optimum tetahed values.",
+    "start_ms": 4394568,
+    "end_ms": 4406568,
+    "duration_ms": 12000,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4406.568,
+    "text": "will take you one one step further we would say that what if I multiply both sides by x transpose times x inverse?",
+    "start_ms": 4406568,
+    "end_ms": 4414568,
+    "duration_ms": 8000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4415.448,
+    "text": "If I multiply both sides by x transpose times x inverse, then on the left hand side, I am going to be left with only teta hat.",
+    "start_ms": 4415448,
+    "end_ms": 4423048,
+    "duration_ms": 7600,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4423.048,
+    "text": "So this is going to be teta hat equal to x transpose times x inverse times x transpose times y.",
+    "start_ms": 4423048,
+    "end_ms": 4431848,
+    "duration_ms": 8800,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4432.696,
+    "text": "And this is the final solution for how to arrive at the optimum set of Heta values in the Teta vector having had the design matrix X and then having had your target values Y vector.",
+    "start_ms": 4432696,
+    "end_ms": 4445696,
+    "duration_ms": 13000,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4445.696,
+    "text": "And this is a close form solution for it. And this close-from-solution exists if and only if x transpose times x is invertible.",
+    "start_ms": 4445696,
+    "end_ms": 4454632,
+    "duration_ms": 8936,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4454.632,
+    "text": "And we're going to talk about... What is the condition that X transpose times X is going to be invertible?",
+    "start_ms": 4454632,
+    "end_ms": 4460408,
+    "duration_ms": 5776,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4460.408,
+    "text": "If it's not invertible, then in that case we can't actually have this term and we can directly solve it.",
+    "start_ms": 4460408,
+    "end_ms": 4466408,
+    "duration_ms": 6000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4466.408,
+    "text": "It means that there is not going to be any unique solution, but there will be a solution.",
+    "start_ms": 4466408,
+    "end_ms": 4470408,
+    "duration_ms": 4000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4471.64,
+    "text": "So, this is kind of a clean version of this.",
+    "start_ms": 4471640,
+    "end_ms": 4475211,
+    "duration_ms": 3571,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4475.211,
+    "text": "This is the final kind of last piece of this linear regression or multiple linear regression that we wanted to see that deserves one final slide or one separate slide by itself.",
+    "start_ms": 4475211,
+    "end_ms": 4486640,
+    "duration_ms": 11429,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4486.744,
+    "text": "So, kind of a summary of everything to be seen so far and kind of evaluating the performance of these models.",
+    "start_ms": 4486744,
+    "end_ms": 4492744,
+    "duration_ms": 6000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4492.744,
+    "text": "There is a demo that we have that actually looks at this NDA data set.",
+    "start_ms": 4492744,
+    "end_ms": 4497744,
+    "duration_ms": 5000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4497.744,
+    "text": "Go through all of this entire cycle. It looks that, okay, we're creating the data frame.",
+    "start_ms": 4497744,
+    "end_ms": 4503077,
+    "duration_ms": 5333,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4503.077,
+    "text": "We're creating. We're calculating also this cost function and we're going to calculate also this theta hat vector using all of these input input features that we have.",
+    "start_ms": 4503077,
+    "end_ms": 4513744,
+    "duration_ms": 10667,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4513.744,
+    "text": "And then at the end, it will go ahead and do the evaluation.",
+    "start_ms": 4513744,
+    "end_ms": 4517304,
+    "duration_ms": 3560,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4517.304,
+    "text": "So in terms of the evaluation, previously, we had seen that we would do evaluation using the residual vector.",
+    "start_ms": 4517304,
+    "end_ms": 4523064,
+    "duration_ms": 5760,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4523.064,
+    "text": "So remember that the residual vector in simple linear regression should not have shown any kind of pattern.",
+    "start_ms": 4523064,
+    "end_ms": 4528344,
+    "duration_ms": 5280,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4528.344,
+    "text": "But if we go ahead and want to visualize the residual vector in our case, we won't have a specific feature to use in the x-axis, because we have multiple different features.",
+    "start_ms": 4528344,
+    "end_ms": 4540144,
+    "duration_ms": 11800,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4540.144,
+    "text": "Instead, the residual vector version that we're showing with multiple linear regression is always going to be showing the residual with respect to the Y hat values instead of with respect to each one of the individual features that we have.",
+    "start_ms": 4540144,
+    "end_ms": 4555064,
+    "duration_ms": 14920,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4555.064,
+    "text": "Still, we don't want to see any pattern. If we see any pattern, meaning that, okay, for example, in this case, it will perform better for Y hat, so there are smaller.",
+    "start_ms": 4555064,
+    "end_ms": 4565024,
+    "duration_ms": 9960,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4565.024,
+    "text": "So the values, the residuals are close to zero, but as the value of Y grows, then I'll love these, there's over predictions and under predictions that are happening.",
+    "start_ms": 4565024,
+    "end_ms": 4576144,
+    "duration_ms": 11120,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4576.144,
+    "text": "This is called Petra Sidescity, meaning that the performance of the model is not uniform across the Y axis or the Y-hat axis that we have.",
+    "start_ms": 4576144,
+    "end_ms": 4584584,
+    "duration_ms": 8440,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4584.584,
+    "text": "Again, we don't want to see a pattern in this case, regardless.",
+    "start_ms": 4584584,
+    "end_ms": 4588704,
+    "duration_ms": 4120,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4588.984,
+    "text": "We also calculate that root-minus-squared error in order to evaluate models last time with simple linear regression and constant model.",
+    "start_ms": 4588984,
+    "end_ms": 4596944,
+    "duration_ms": 7960,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4596.944,
+    "text": "We also looked at the correlation in order to measure that the models are linearly, or the feature is linearly related to the target value that we have.",
+    "start_ms": 4596944,
+    "end_ms": 4607944,
+    "duration_ms": 11000,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4607.944,
+    "text": "In the multiple linear regression, what we'll use is coefficient of determination, which is a fraction that we're calculating that talks about what is the variance of the fitted values divided by the variance of the ground-trose values.",
+    "start_ms": 4607944,
+    "end_ms": 4622568,
+    "duration_ms": 14624,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4622.568,
+    "text": "And S is what it does is it will tell you that what percent, what proportion of the variance in the underlying data are you capturing.",
+    "start_ms": 4622568,
+    "end_ms": 4631964,
+    "duration_ms": 9396,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4631.964,
+    "text": "So we want to make sure that we capture as much as possible of the underlying variance in the data so that we modeled everything and all the pattern that happened in the data.",
+    "start_ms": 4631964,
+    "end_ms": 4642104,
+    "duration_ms": 10140,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4642.616,
+    "text": "We can actually go ahead and if you take a look at the demo of notebook what you will see is that if I go ahead and just have a model that is a simple linear regression that just does the prediction based on the ASD feature the coefficient of determination is going to be 0.45 and as you keep adding features for example here I'm adding features of ASD and I'm using features of ASD and TRIP8 then the coefficient of determination is going to get To go higher in fact if you try and all of those three features together the coefficient of determination is going to be very close to one meaning that you explain the entire variance that you had in the entire data set that you have had.",
+    "start_ms": 4642616,
+    "end_ms": 4684408,
+    "duration_ms": 41792,
+    "word_count": 133,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4684.824,
+    "text": "So there are some properties of this OLS or this model that we derived today.",
+    "start_ms": 4684824,
+    "end_ms": 4693824,
+    "duration_ms": 9000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4693.824,
+    "text": "You're going to be simple. Some of them you're going to prove in the homework.",
+    "start_ms": 4693824,
+    "end_ms": 4697824,
+    "duration_ms": 4000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4697.824,
+    "text": "But effectively, all of them are going to be derived from the fact that the residual vector is orthogonal to the span of X.",
+    "start_ms": 4697824,
+    "end_ms": 4706824,
+    "duration_ms": 9000,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4706.824,
+    "text": "So you're going to go ahead and basically see that this is the same property that we had that x transpose times residual should be equal to zero.",
+    "start_ms": 4706824,
+    "end_ms": 4716224,
+    "duration_ms": 9400,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4716.224,
+    "text": "And from that point, you will also be able to prove that the prediction vector transpose times residual vector should also be equal to zero because the prediction vector is also in this span of x.",
+    "start_ms": 4716224,
+    "end_ms": 4727744,
+    "duration_ms": 11520,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4727.744,
+    "text": "You will also prove in the homework that the summation of the residuals is equal to zero Because the residual was orthogonal to each one of the columns, it is also orthogonal to this column of all the values of 1s.",
+    "start_ms": 4727744,
+    "end_ms": 4743044,
+    "duration_ms": 15300,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4743.044,
+    "text": "And if you actually write it, this is going to basically give you that the summation of the residual values is equal to 1.",
+    "start_ms": 4743044,
+    "end_ms": 4749944,
+    "duration_ms": 6900,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4749.944,
+    "text": "I'm going to leave you with this fact that because the residual, the summation of the residuals is equal to 0, when there is a bias term, that's why we didn't use the residuals directly as an objective function.",
+    "start_ms": 4749944,
+    "end_ms": 4763544,
+    "duration_ms": 13600,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4763.544,
+    "text": "And we always calculated absolute value and also scores of the residuals.",
+    "start_ms": 4763544,
+    "end_ms": 4768684,
+    "duration_ms": 5140,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4769.144,
+    "text": "So we're going to stop here. There are more properties and the summation of every kind of model that you'd seen in all of the linear models.",
+    "start_ms": 4769144,
+    "end_ms": 4777144,
+    "duration_ms": 8000,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4777.144,
+    "text": "The last piece is that with the ordinary least square, the equation is always going to be by had equal to x times teta vector that derived actually how we can calculate the teta hat.",
+    "start_ms": 4777144,
+    "end_ms": 4790144,
+    "duration_ms": 13000,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4790.144,
+    "text": "And then we also derive this fact that there is a unique solution if and only if x transpose times x is invertible.",
+    "start_ms": 4790144,
+    "end_ms": 4800144,
+    "duration_ms": 10000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4800.152,
+    "text": "Thank you so much for coming. We will continue this in the next lecture.",
+    "start_ms": 4800152,
+    "end_ms": 4803592,
+    "duration_ms": 3440,
+    "word_count": 14,
+    "avg_confidence": 90
+  }
+]

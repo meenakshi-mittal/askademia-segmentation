@@ -1,0 +1,4808 @@
+[
+  {
+    "timestamp": 3.768,
+    "text": "All right, welcome data 100. This is going to be a very fun lecture.",
+    "start_ms": 3768,
+    "end_ms": 10134,
+    "duration_ms": 6366,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 10.134,
+    "text": "So just before I start, it looks like that our Zoom has an issue that it stops itself before the started lecture.",
+    "start_ms": 10134,
+    "end_ms": 17919,
+    "duration_ms": 7785,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 17.919,
+    "text": "So we're trying to get that fixed. So thank you for all of those who are online and they rejoined the Zoom webinar again.",
+    "start_ms": 17919,
+    "end_ms": 25039,
+    "duration_ms": 7120,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 25.039,
+    "text": "So kind of telling you, we're at today and we're going in the next couple of lectures is that we're starting actually digging deeper into the modeling phase of data 100.",
+    "start_ms": 25039,
+    "end_ms": 39128,
+    "duration_ms": 14089,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 39.128,
+    "text": "So it's going to be really exciting. I'm going to try to do a lot of math derivation and also building different models with you and also evaluating different, the performance of different models with you throughout today's lecture and also in the next two lectures to come.",
+    "start_ms": 39128,
+    "end_ms": 56765,
+    "duration_ms": 17637,
+    "word_count": 48,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 56.765,
+    "text": "So this is where we are. We're going to start by reviewing what you've seen in in data 8, we're going to start by taking a look at what was the simple linear regression and what is modeling and what not.",
+    "start_ms": 56765,
+    "end_ms": 67968,
+    "duration_ms": 11203,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 67.968,
+    "text": "And we're going to go a little bit deeper into more advanced models up to the point that in the last lecture of the regression sequence, we're going to talk about multiple regression.",
+    "start_ms": 67968,
+    "end_ms": 78848,
+    "duration_ms": 10880,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 78.848,
+    "text": "So what happens when you have multiple different attributes that you want to model and you want to combine them into predicting one variable?",
+    "start_ms": 78848,
+    "end_ms": 86128,
+    "duration_ms": 7280,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 86.128,
+    "text": "So this is a roadmap for today. We're going to start by talking about what is a model.",
+    "start_ms": 86128,
+    "end_ms": 90408,
+    "duration_ms": 4280,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 90.408,
+    "text": "Most of you might know what is a model or like you've used the term that there is a machine learning model and whatnot before, but just to tell you what a model is from our perspective in data 100 is that we always think about a model as an idealized representation of a system.",
+    "start_ms": 90408,
+    "end_ms": 106408,
+    "duration_ms": 16000,
+    "word_count": 55,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 106.408,
+    "text": "So we say that it's an idealized representation of the system because it's not always accurate, we're not always considering all the details and all different features and all the noise that's involved in the system, but we're trying to actually have a model that kind of simulates or summarizes the trend that's happening in a system as accurately as possible.",
+    "start_ms": 106408,
+    "end_ms": 127745,
+    "duration_ms": 21337,
+    "word_count": 61,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 127.745,
+    "text": "So an example of that could be modeling the fall of an object, an Earth subject to constant gravity that we always think about that as the gravity as being 9.81 meter per second square, but we all know that depending on the elevation, depending on the air resistance, this number is not accurate.",
+    "start_ms": 127745,
+    "end_ms": 146568,
+    "duration_ms": 18823,
+    "word_count": 54,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 146.568,
+    "text": "So it's not going to be a constant model or a constant valley that we can use in order to model the gravity.",
+    "start_ms": 146568,
+    "end_ms": 152888,
+    "duration_ms": 6320,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 152.888,
+    "text": "So this is an example that we simplify assumptions, so that we have a model that's kind of roughly accurate.",
+    "start_ms": 152888,
+    "end_ms": 160248,
+    "duration_ms": 7360,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 160.248,
+    "text": "It's usable. It's simplifying all the dynamics of the, the dynamics in the underlying nature of the system that we have.",
+    "start_ms": 160248,
+    "end_ms": 169168,
+    "duration_ms": 8920,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 169.168,
+    "text": "And that's actually what we're going to do in data 100 as well.",
+    "start_ms": 169168,
+    "end_ms": 172308,
+    "duration_ms": 3140,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 172.308,
+    "text": "Because what you've seen in the previous lecture is that we want to model for population, but we don't have the population.",
+    "start_ms": 172308,
+    "end_ms": 178008,
+    "duration_ms": 5700,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 178.008,
+    "text": "We're trying to simplify assumptions, say that okay, we're sampling.",
+    "start_ms": 178008,
+    "end_ms": 181908,
+    "duration_ms": 3900,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 181.908,
+    "text": "Our dataset is a good sample and is a good representation of the population.",
+    "start_ms": 181908,
+    "end_ms": 185848,
+    "duration_ms": 3940,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 185.848,
+    "text": "And now we're going to do the modeling. And not all of our data points are going to follow the trend that we're going to to model.",
+    "start_ms": 185848,
+    "end_ms": 193148,
+    "duration_ms": 7300,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 193.148,
+    "text": "So those are kind of the noises that we're trying to also avoid or not directly model.",
+    "start_ms": 193148,
+    "end_ms": 199148,
+    "duration_ms": 6000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 199.576,
+    "text": "So there's a famous saying by George Box that says essentially all mothers are wrung but some are useful, which is exactly what you should expect from all the modeling work that we'll be doing in data 100 as well.",
+    "start_ms": 199576,
+    "end_ms": 215496,
+    "duration_ms": 15920,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 215.404,
+    "text": "we want to build models. And two of these reasons you might see them in data 100 this semester.",
+    "start_ms": 215404,
+    "end_ms": 222448,
+    "duration_ms": 7044,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 222.448,
+    "text": "Reason one is that there's a complex phenomenon that we want to actually model.",
+    "start_ms": 222448,
+    "end_ms": 228008,
+    "duration_ms": 5560,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 228.008,
+    "text": "So for example, we want to figure out our parents average heights related to chillers average heights.",
+    "start_ms": 228008,
+    "end_ms": 237128,
+    "duration_ms": 9120,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 237.128,
+    "text": "So there's like all of those complex relationships that we can study directly, but we can actually collect a bunch of data and then model based on or create a model based on those assumptions or those data points that we have.",
+    "start_ms": 237128,
+    "end_ms": 249755,
+    "duration_ms": 12627,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 249.755,
+    "text": "So in this case, what we would say is that the concept that we're modeling is very complex.",
+    "start_ms": 249755,
+    "end_ms": 255675,
+    "duration_ms": 5920,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 255.675,
+    "text": "What we want to have is a very simple model that is also interpretable, but it's also at the same time reasonably accurate.",
+    "start_ms": 255675,
+    "end_ms": 263236,
+    "duration_ms": 7561,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 263.236,
+    "text": "We don't want to try and random kind of estimations of the values that we want.",
+    "start_ms": 263236,
+    "end_ms": 268488,
+    "duration_ms": 5252,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 269.144,
+    "text": "The second reason is that We might want to have really accurate productions we have a good amount of data we want to make sure that we have very good accurate productions and in doing so what we will do is we'll throw in multiple different parameters not multiple but millions of parameters into a deep learning architecture for example in order to have a very accurate production.",
+    "start_ms": 269144,
+    "end_ms": 292224,
+    "duration_ms": 23080,
+    "word_count": 68,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 292.224,
+    "text": "So what's happening when we want to use these black box models, we call them black box models because there's millions of different parameters.",
+    "start_ms": 292224,
+    "end_ms": 301344,
+    "duration_ms": 9120,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 301.344,
+    "text": "It's not easily, we cannot easily identify what's the relationship between them or what is the interaction between different parameters that is bits out, the actual estimation that we have at the end.",
+    "start_ms": 301344,
+    "end_ms": 312464,
+    "duration_ms": 11120,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 312.464,
+    "text": "But what we know is that over the population or over the sample that we have, we would say that it's accurate enough that we can actually use it.",
+    "start_ms": 312464,
+    "end_ms": 319824,
+    "duration_ms": 7360,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 319.824,
+    "text": "And it's more accurate than most of the interpretable models or simple models that we've seen in the first case.",
+    "start_ms": 319824,
+    "end_ms": 326864,
+    "duration_ms": 7040,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 326.864,
+    "text": "So examples could be if you want to have a spam email detection.",
+    "start_ms": 326864,
+    "end_ms": 332784,
+    "duration_ms": 5920,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 332.784,
+    "text": "So this is kind of a project that you will do in the last project of data 100.",
+    "start_ms": 332784,
+    "end_ms": 336424,
+    "duration_ms": 3640,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 336.424,
+    "text": "We're going to give you emails with subject line, with the text in the body, and then you will be classifying emails into class of a spam versus not a spam.",
+    "start_ms": 336424,
+    "end_ms": 346544,
+    "duration_ms": 10120,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 346.544,
+    "text": "What you want is you really want to be accurate here.",
+    "start_ms": 346544,
+    "end_ms": 349064,
+    "duration_ms": 2520,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 349.064,
+    "text": "You don't want to have a spam email landing in your inbox or vice versa, missing an important email and moving that into your spam folder.",
+    "start_ms": 349064,
+    "end_ms": 360024,
+    "duration_ms": 10960,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 360.024,
+    "text": "So this is very important. In these cases, we would say that the reason that we want to do the model is to have a very accurate prediction, even if it comes at the cost of the model, not being interpretable.",
+    "start_ms": 360024,
+    "end_ms": 371864,
+    "duration_ms": 11840,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 371.864,
+    "text": "Reason tree is a reason that we will not go over in data 100, but that's a topic for more advanced courses, some stats courses or data 102 covers causal inference.",
+    "start_ms": 371864,
+    "end_ms": 384504,
+    "duration_ms": 12640,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 384.504,
+    "text": "So for example, if you want to figure out if a smoking causes cancers, not correlation between a smoking and a person having lung cancer, but figuring out the causation between causation relationship between a variable and another variable or a response output, in those cases, we do causal inference.",
+    "start_ms": 384504,
+    "end_ms": 407224,
+    "duration_ms": 22720,
+    "word_count": 50,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 407.224,
+    "text": "Again, not the topic for data 100, but just so that you know that everything that we're modeling in a stage one and two, it's mostly around finding a function that maps input to an output.",
+    "start_ms": 407224,
+    "end_ms": 419664,
+    "duration_ms": 12440,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 419.664,
+    "text": "But what we're looking at in the recent tree is to actually have a causal inference kind of argument and figuring out if a variable not only explains the output, but also causes the output.",
+    "start_ms": 419664,
+    "end_ms": 432864,
+    "duration_ms": 13200,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 432.864,
+    "text": "Again, others go pernata 100. Throughout the explanation of this reason one, two, three, I tried to say that interpretability is important and also accuracy is important.",
+    "start_ms": 432864,
+    "end_ms": 443344,
+    "duration_ms": 10480,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 443.344,
+    "text": "So what we'll try to do generally as data scientists is to strike the balance between interpretability and accuracy.",
+    "start_ms": 443344,
+    "end_ms": 450984,
+    "duration_ms": 7640,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 450.984,
+    "text": "So you really don't want to have a model, I mean, in some cases, we do have models that are not interpretable, but the best case scenario would be that If you have an intrapartibled model that is at the same time is accurate enough for you to use as well.",
+    "start_ms": 450984,
+    "end_ms": 466744,
+    "duration_ms": 15760,
+    "word_count": 51,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 467.256,
+    "text": "So, common types of models. There are mechanistic models or deterministic models.",
+    "start_ms": 467256,
+    "end_ms": 472756,
+    "duration_ms": 5500,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 472.756,
+    "text": "These are models that generally follow a non-probabilistic view, meaning that there is a study or there are measurements, mechanistic measurements that we would do, such as, for example, the way that people arrived at Kepler's, for the law of planetary motion or Newton's law.",
+    "start_ms": 472756,
+    "end_ms": 493096,
+    "duration_ms": 20340,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 493.096,
+    "text": "And based on those measurements, they built a relationship between multiple different variables and they built those models.",
+    "start_ms": 493096,
+    "end_ms": 499415,
+    "duration_ms": 6319,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 499.415,
+    "text": "We call these models mechanistic or deterministic models. We call them deterministic because there is no probability involved.",
+    "start_ms": 499415,
+    "end_ms": 505576,
+    "duration_ms": 6161,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 505.576,
+    "text": "When they measure, they measure it, the values is there, and then they measure multiple different variables and they basically look at the relationship between them.",
+    "start_ms": 505576,
+    "end_ms": 513416,
+    "duration_ms": 7840,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 513.72,
+    "text": "There are models that are probabilistic. You will see one example of a probabilistic model towards the end of data 100, and mostly we will see probabilistic models when we want to do classification or identification of a certain task.",
+    "start_ms": 513720,
+    "end_ms": 527920,
+    "duration_ms": 14200,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 527.92,
+    "text": "So an example of that, I brought it here from one of my papers that is the work of my PhD student looking into studying brain waves in order to figure out the anxiety levels of subjects.",
+    "start_ms": 527920,
+    "end_ms": 541120,
+    "duration_ms": 13200,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 541.12,
+    "text": "So brain waves by themselves are random processes that you're modeling.",
+    "start_ms": 541120,
+    "end_ms": 548120,
+    "duration_ms": 7000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 548.12,
+    "text": "There are probabilistic models that basically you will try to study and figure out how they travel in brain and how they interact with each other and how would they concentrate in a certain area so that it causes anxiety or it causes, for example, seizure.",
+    "start_ms": 548120,
+    "end_ms": 563880,
+    "duration_ms": 15760,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 563.88,
+    "text": "This is kind of the modeling that they would do in order to predict whether someone is going to have an onset of seizure in future or not just looking at those probabilistic models.",
+    "start_ms": 563880,
+    "end_ms": 572240,
+    "duration_ms": 8360,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 572.24,
+    "text": "And then you will basically have a probabilistic model that will say that with this specific likelihood, this subject that we had to recording up their brain waves over the last, like for example, seven days is going to have seizure in, for example, in the next 10 minutes.",
+    "start_ms": 572240,
+    "end_ms": 587600,
+    "duration_ms": 15360,
+    "word_count": 49,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 587.6,
+    "text": "And if that probability is high enough then basically in patient facilities, they'll try to monitor that patient more accurately or more closely.",
+    "start_ms": 587600,
+    "end_ms": 597520,
+    "duration_ms": 9920,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 597.784,
+    "text": "So this is the kind of different categories of models that we're looking at.",
+    "start_ms": 597784,
+    "end_ms": 602184,
+    "duration_ms": 4400,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 602.184,
+    "text": "Mechanistic or deterministic, there's no probability involved and probabilistic models that again you will see later on in data 100.",
+    "start_ms": 602184,
+    "end_ms": 610104,
+    "duration_ms": 7920,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 610.104,
+    "text": "What we're going to do in data 100 right now as a starting point, just to get warmed up as to take a look at simple linear regression and what you'd see in data 8.",
+    "start_ms": 610104,
+    "end_ms": 620280,
+    "duration_ms": 10176,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 620.28,
+    "text": "So we're going to try go over regression line and the definition for regression line and actually derive the equation for regression line that you'd seen.",
+    "start_ms": 620280,
+    "end_ms": 630104,
+    "duration_ms": 9824,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 630.104,
+    "text": "But this time we're going to actually use a little bit of calculus in this lecture to just get warm up because you will need to get comfortable with actually doing derivatives and calculating or optimizing an objective function and whatnot.",
+    "start_ms": 630104,
+    "end_ms": 644456,
+    "duration_ms": 14352,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 644.456,
+    "text": "I'm going to tell you what objective function is by the end of today's lecture.",
+    "start_ms": 644456,
+    "end_ms": 650184,
+    "duration_ms": 5728,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 650.184,
+    "text": "So let's dive in. You've seen this regression line from before, right?",
+    "start_ms": 650184,
+    "end_ms": 655224,
+    "duration_ms": 5040,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 655.224,
+    "text": "So you've seen that in data aid, this was a famous plot that you had that was predicting on different chapters of little women novel that using a number of periods, period punctuations in a chapter, it was trying to predict the number of characters that would appear in that specific chapter.",
+    "start_ms": 655224,
+    "end_ms": 673674,
+    "duration_ms": 18450,
+    "word_count": 52,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 673.674,
+    "text": "You would see that it tries to modulate using regression line and then we're going to take a look at the equations for that regression line and HUD data aid arrived at that regression line.",
+    "start_ms": 673674,
+    "end_ms": 683904,
+    "duration_ms": 10230,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 683.904,
+    "text": "You also see that in data aid, we defined a slope as correlation or R times the standard deviation of Y over the standard deviation of X.",
+    "start_ms": 683904,
+    "end_ms": 694047,
+    "duration_ms": 10143,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 694.047,
+    "text": "This is your Y dimension and this is your X dimension and correlation.",
+    "start_ms": 694047,
+    "end_ms": 698186,
+    "duration_ms": 4139,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 698.186,
+    "text": "I'm going to formula define it in a sec. An intercept, we talked about intercept or the point that when X is equal to zero, your Y value is non-zero probably, or that's called Y intercept or intercept was defined as average of Y minus slope times average of X.",
+    "start_ms": 698186,
+    "end_ms": 719664,
+    "duration_ms": 21478,
+    "word_count": 50,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 719.664,
+    "text": "And we're going to see why that's the case. So you don't need to actually memorize all of these equations anymore.",
+    "start_ms": 719664,
+    "end_ms": 725064,
+    "duration_ms": 5400,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 725.064,
+    "text": "You just need to know two things about a model in order to drive all the equations yourself.",
+    "start_ms": 725064,
+    "end_ms": 731104,
+    "duration_ms": 6040,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 731.104,
+    "text": "So you're going to be released from memorizing kind of task from this point in time.",
+    "start_ms": 731104,
+    "end_ms": 735704,
+    "duration_ms": 4600,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 735.704,
+    "text": "We also talked about regression estimation. So regression estimation is that, okay, you have a model or estimation on any model, per se, is that we have a model and we're gonna just plug in the value that we wanna do prediction on into the equation and the equation was intercept plus slope times the value and then that would give you the regression estimation.",
+    "start_ms": 735704,
+    "end_ms": 756863,
+    "duration_ms": 21159,
+    "word_count": 65,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 757.112,
+    "text": "There is a concept of residual that we're going to play a lot with and residual is the fine as observed value minus the estimated value.",
+    "start_ms": 757112,
+    "end_ms": 767112,
+    "duration_ms": 10000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 767.112,
+    "text": "Okay, so the residuals are actually shown here on the plot.",
+    "start_ms": 767112,
+    "end_ms": 770146,
+    "duration_ms": 3034,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 770.146,
+    "text": "This is a residual. This is a residual. This is a residual and so on and so forth.",
+    "start_ms": 770146,
+    "end_ms": 775112,
+    "duration_ms": 4966,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 775.112,
+    "text": "What we're trying to do in data 100 and true out the modeling is that we're looking at the residuals that we're accumulating true out the entire data set and we're trying to minimize the amount of residual and I'm going to define what amount of residual means formally using a function mathematical function later on in today's lecture, but just know that if a point is not on the line, that's an imperfect prediction and we're going to measure how imperfect it is and we're going to try to make sure that the model that we're using is going to be a real we're fitting to the data is passing through all the data points as accurately as possible.",
+    "start_ms": 775112,
+    "end_ms": 809352,
+    "duration_ms": 34240,
+    "word_count": 120,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 810.008,
+    "text": "One observation here is that some residuals are positive, some residuals are negative.",
+    "start_ms": 810008,
+    "end_ms": 815008,
+    "duration_ms": 5000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 815.008,
+    "text": "What you're seeing here is that, for example, for this specific data point, the estimation is exactly this, sorry, the actual value is this value right here on the y-axis.",
+    "start_ms": 815008,
+    "end_ms": 828008,
+    "duration_ms": 13000,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 828.008,
+    "text": "And the estimated value is the projection of that point onto the line, and then you would see what that value is, right?",
+    "start_ms": 828008,
+    "end_ms": 836008,
+    "duration_ms": 8000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 836.008,
+    "text": "So this is my ground truth why and this is why hat.",
+    "start_ms": 836008,
+    "end_ms": 841008,
+    "duration_ms": 5000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 841.008,
+    "text": "I put hat as a representation of this is the predicted value or the estimated value.",
+    "start_ms": 841008,
+    "end_ms": 845848,
+    "duration_ms": 4840,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 845.848,
+    "text": "And you can see that based on this equation, the residual is a positive value for the points that are above the line.",
+    "start_ms": 845848,
+    "end_ms": 853008,
+    "duration_ms": 7160,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 853.008,
+    "text": "And you can also rationalize in the same way that for any point that's below the line, the residual is a negative value.",
+    "start_ms": 853008,
+    "end_ms": 859688,
+    "duration_ms": 6680,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 859.688,
+    "text": "You will see later on that there is a relationship between all of these residuals that are positive under residuals that are negative.",
+    "start_ms": 859688,
+    "end_ms": 865768,
+    "duration_ms": 6080,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 865.768,
+    "text": "And that's why the line generally passes through in the middle of the data point.",
+    "start_ms": 865768,
+    "end_ms": 870128,
+    "duration_ms": 4360,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 870.128,
+    "text": "So you have some positive residuals and some negative residuals.",
+    "start_ms": 870128,
+    "end_ms": 873688,
+    "duration_ms": 3560,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 873.688,
+    "text": "And we're going to see the... Mathematics magic behind why that's the case.",
+    "start_ms": 873688,
+    "end_ms": 878000,
+    "duration_ms": 4312,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 878.456,
+    "text": "So let's revisit correlation. So these are all reminders. So if you need to refresh your please go back and take a look at data aid or just calmly look at the slides after the lecture and it will all make sense.",
+    "start_ms": 878456,
+    "end_ms": 891786,
+    "duration_ms": 13330,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 891.786,
+    "text": "What was correlation? So I want to break down the definition of correlation here for you.",
+    "start_ms": 891786,
+    "end_ms": 897352,
+    "duration_ms": 5566,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 897.352,
+    "text": "The definition from data aid textbook says that correlation is the average of the product of X and Y.",
+    "start_ms": 897352,
+    "end_ms": 906128,
+    "duration_ms": 8776,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 906.36,
+    "text": "When both are measured in a standard unit. Right? Three pieces of information.",
+    "start_ms": 906360,
+    "end_ms": 911028,
+    "duration_ms": 4668,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 911.028,
+    "text": "And let me tell you what they are. It's starting from measuring in a standard unit.",
+    "start_ms": 911028,
+    "end_ms": 915828,
+    "duration_ms": 4800,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 915.828,
+    "text": "When we say that a variable is an standard unit, that means that it's zero center to center deviation of one.",
+    "start_ms": 915828,
+    "end_ms": 923528,
+    "duration_ms": 7700,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 923.528,
+    "text": "Right? So the average of all the values should be zero.",
+    "start_ms": 923528,
+    "end_ms": 926912,
+    "duration_ms": 3384,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 926.912,
+    "text": "And then the standard deviation of all of the values should be equal to one.",
+    "start_ms": 926912,
+    "end_ms": 931528,
+    "duration_ms": 4616,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 931.528,
+    "text": "And the way that we actually standardize a data is to go through this process right here, that you take one column of values or one set of values.",
+    "start_ms": 931528,
+    "end_ms": 942528,
+    "duration_ms": 11000,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 942.528,
+    "text": "You calculate their average, you subtract the average from each individual sample.",
+    "start_ms": 942528,
+    "end_ms": 947528,
+    "duration_ms": 5000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 947.528,
+    "text": "So that's how you will make sure that it's zero centered, meaning that the mean is at zero.",
+    "start_ms": 947528,
+    "end_ms": 952528,
+    "duration_ms": 5000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 952.528,
+    "text": "And then in order to make sure that the standard deviation is equal to one, you divide all of these transformations by standard deviation of that entire column or that set of values.",
+    "start_ms": 952528,
+    "end_ms": 962528,
+    "duration_ms": 10000,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 962.528,
+    "text": "This ensures that the standard deviation is equal to one as well.",
+    "start_ms": 962528,
+    "end_ms": 965528,
+    "duration_ms": 3000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 965.528,
+    "text": "So that's what we mean by a standardization. So that's a standard unit.",
+    "start_ms": 965528,
+    "end_ms": 971808,
+    "duration_ms": 6280,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 971.808,
+    "text": "So when we say product of X and Y, both measured in a standard unit, this means that X measured in a standard unit is right here.",
+    "start_ms": 971808,
+    "end_ms": 981736,
+    "duration_ms": 9928,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 981.736,
+    "text": "Y measured in a standard unit is right here. So that's X and Y measured in a standard unit.",
+    "start_ms": 981736,
+    "end_ms": 987496,
+    "duration_ms": 5760,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 987.496,
+    "text": "And then there was an additional piece that says that the average of those products, and you're seeing that here I'm taking average by summing up all of these products and then dividing it by one over n, which is the average, right?",
+    "start_ms": 987496,
+    "end_ms": 1001776,
+    "duration_ms": 14280,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1002.168,
+    "text": "So what is i, what is n? And let's go back to our data set.",
+    "start_ms": 1002168,
+    "end_ms": 1007432,
+    "duration_ms": 5264,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1007.432,
+    "text": "So I'm assuming that in this data set, I have a data frame with two columns.",
+    "start_ms": 1007432,
+    "end_ms": 1011912,
+    "duration_ms": 4480,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1011.912,
+    "text": "I'm going to call one column column x, one column column y, and then the rows are row one, row two, and then all the way to row n.",
+    "start_ms": 1011912,
+    "end_ms": 1020312,
+    "duration_ms": 8400,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1020.312,
+    "text": "So assume that I have n data points. So this data set d has n data points with row one b x1 y1, row two b x2 y2, and then all the way to x and yn.",
+    "start_ms": 1020312,
+    "end_ms": 1035472,
+    "duration_ms": 15160,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1035.472,
+    "text": "So what I need to do is go through each one of those rows, zero center or standardize all of those values.",
+    "start_ms": 1035472,
+    "end_ms": 1042792,
+    "duration_ms": 7320,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1042.792,
+    "text": "Once all of those values are standardized, I will basically try to calculate the product of the two x standard unit, y standard unit in each given row, and then I have a value.",
+    "start_ms": 1042792,
+    "end_ms": 1055232,
+    "duration_ms": 12440,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1055.232,
+    "text": "And then all of those values need to be summed up together and then divided by, or multiplied by 1 over n to calculate the average of those products that were measured, that were x and y measured instead of unit.",
+    "start_ms": 1055232,
+    "end_ms": 1067912,
+    "duration_ms": 12680,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1067.912,
+    "text": "That's what it is. It's a complicated kind of equation, but once you remember what it was, it will make sense.",
+    "start_ms": 1067912,
+    "end_ms": 1074392,
+    "duration_ms": 6480,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1074.968,
+    "text": "This correlation is also called Pearson's coefficient or Pearson's correlation coefficient as well.",
+    "start_ms": 1074968,
+    "end_ms": 1084168,
+    "duration_ms": 9200,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1084.168,
+    "text": "So if you've heard multiple different terms for correlation, they all mean the correlation, and they all follow the same formula.",
+    "start_ms": 1084168,
+    "end_ms": 1090888,
+    "duration_ms": 6720,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1090.888,
+    "text": "If we don't want to standardize the data in a way that every column has a standard deviation of 1, But we want to make sure that there's zero centred, but they keep their standard deviation applying the similar formula is going to give us covariance.",
+    "start_ms": 1090888,
+    "end_ms": 1108408,
+    "duration_ms": 17520,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1108.408,
+    "text": "Covariance is basically meaning that remove the means, multiply them, and then pick the average.",
+    "start_ms": 1108408,
+    "end_ms": 1115448,
+    "duration_ms": 7040,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1115.448,
+    "text": "And this is the covariance. And covariance is equal to obviously based on the equation, is equal to correlation times the standard deviation of x times the standard deviation of y.",
+    "start_ms": 1115448,
+    "end_ms": 1125048,
+    "duration_ms": 9600,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1125.048,
+    "text": "These are repetitions from data aid just so that you know where that correlation was coming from when we were calculating this slope and kind of getting a sense of the fact that we needed to have correlation in order to figure out the relationship between X and X and Y.",
+    "start_ms": 1125048,
+    "end_ms": 1141048,
+    "duration_ms": 16000,
+    "word_count": 51,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1142.264,
+    "text": "What we also know that is that the correlation shows us the linear association.",
+    "start_ms": 1142264,
+    "end_ms": 1147944,
+    "duration_ms": 5680,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1147.944,
+    "text": "It does not show us non-linear association. It does not show us causation in any sense.",
+    "start_ms": 1147944,
+    "end_ms": 1152864,
+    "duration_ms": 4920,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1152.864,
+    "text": "It just shows us the linear association or the degree of linear association between two variables x and y.",
+    "start_ms": 1152864,
+    "end_ms": 1159824,
+    "duration_ms": 6960,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1159.824,
+    "text": "And when the correlation is high enough, then in that case, it will make sense to just run simple linear regression or any regression analysis.",
+    "start_ms": 1159824,
+    "end_ms": 1168464,
+    "duration_ms": 8640,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1168.464,
+    "text": "Otherwise, if you don't see a linear relationship between two variables, why would you go and model it using a regression line?",
+    "start_ms": 1168464,
+    "end_ms": 1175184,
+    "duration_ms": 6720,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1176.024,
+    "text": "regression value is always between negative one and one. You can prove it because we standardize all of these all of these data points You can prove that Applying the equation is going to give you always a value between negative one and one When our or the correlation is close to one that's that shows a perfectly Positive linear association when the correlation is equal to negative one that's equal to perfect negative association.",
+    "start_ms": 1176024,
+    "end_ms": 1202530,
+    "duration_ms": 26506,
+    "word_count": 75,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1202.53,
+    "text": "What is positive? What does negative mean? Positive means that by increasing x, y is also always increasing.",
+    "start_ms": 1202530,
+    "end_ms": 1209100,
+    "duration_ms": 6570,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1209.1,
+    "text": "So that's a positive slope, right? Negative correlation means that by negative is strong correlation means that by increasing x, your y is going to decrease.",
+    "start_ms": 1209100,
+    "end_ms": 1220714,
+    "duration_ms": 11614,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1220.714,
+    "text": "So that's a negative slope and that's why correlation that you have is going to control whether you're going to get a positive slope or a negative slope in your dataset or in your linear regression.",
+    "start_ms": 1220714,
+    "end_ms": 1233424,
+    "duration_ms": 12710,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1233.424,
+    "text": "When correlation is equal to zero, it shows that we have a weak linear association.",
+    "start_ms": 1233424,
+    "end_ms": 1238784,
+    "duration_ms": 5360,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1238.784,
+    "text": "It doesn't tell us that there is no association between them.",
+    "start_ms": 1238784,
+    "end_ms": 1242024,
+    "duration_ms": 3240,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1242.024,
+    "text": "It just says that the linear association is weak if you're concerned with linear association.",
+    "start_ms": 1242024,
+    "end_ms": 1248344,
+    "duration_ms": 6320,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1248.344,
+    "text": "And obviously I said that linear association does not mean causation.",
+    "start_ms": 1248344,
+    "end_ms": 1253024,
+    "duration_ms": 4680,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1253.024,
+    "text": "In any sense, it just means linear association for our purposes.",
+    "start_ms": 1253024,
+    "end_ms": 1257063,
+    "duration_ms": 4039,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1257.912,
+    "text": "When R is equal to zero, we would also say that the two variables are uncorrelated, meaning that there is no correlation between them.",
+    "start_ms": 1257912,
+    "end_ms": 1266403,
+    "duration_ms": 8491,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1266.403,
+    "text": "There is no reason that one increasing or decreasing one is going to have any influence or is going to show any influence on the other one.",
+    "start_ms": 1266403,
+    "end_ms": 1274872,
+    "duration_ms": 8469,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1274.872,
+    "text": "So there is no correlation between them. We would say that they're uncorrelated.",
+    "start_ms": 1274872,
+    "end_ms": 1282392,
+    "duration_ms": 7520,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1282.161,
+    "text": "correlation is a value between negative 1 and 1. So that's what I'm showing that the absolute value of r is always less than 1.",
+    "start_ms": 1282161,
+    "end_ms": 1290376,
+    "duration_ms": 8215,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1290.376,
+    "text": "And here are some examples. For example, in the first case, you're seeing that there is absolutely no clear sign that there is correlation or linear association between x and y.",
+    "start_ms": 1290376,
+    "end_ms": 1301376,
+    "duration_ms": 11000,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1301.376,
+    "text": "Right. So take the x axis always as x and then y axis as a second variable.",
+    "start_ms": 1301376,
+    "end_ms": 1306376,
+    "duration_ms": 5000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1306.376,
+    "text": "it looks like that is randomly distributed. So that's why you're seeing that the correlation is also a very small value.",
+    "start_ms": 1306376,
+    "end_ms": 1314056,
+    "duration_ms": 7680,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1314.056,
+    "text": "Here in this case, we're seeing a significant positive correlation or a linear association between x and y.",
+    "start_ms": 1314056,
+    "end_ms": 1321976,
+    "duration_ms": 7920,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1321.976,
+    "text": "That's why it's also shown by this value that's very close to 1.",
+    "start_ms": 1321976,
+    "end_ms": 1326656,
+    "duration_ms": 4680,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1326.656,
+    "text": "In the third case, what you're seeing is that as we're increasing x, the y decreases, right?",
+    "start_ms": 1326656,
+    "end_ms": 1333336,
+    "duration_ms": 6680,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1333.336,
+    "text": "Roughly y decreases. There's a little bit of noise obviously, but what we're expecting is that we're expecting to have some linear association, but the linear association is negative.",
+    "start_ms": 1333336,
+    "end_ms": 1347176,
+    "duration_ms": 13840,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1347.176,
+    "text": "And the valid digesting here is negative 0.7. And comparing negative points 7 with point 9.5 that we had in the second case, you were seeing that the linear association is this slightly weaker because we have some spread around some spread in the data or some noise in the data that is kind of keeping us from having a perfect linear association.",
+    "start_ms": 1347176,
+    "end_ms": 1370488,
+    "duration_ms": 23312,
+    "word_count": 63,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1370.488,
+    "text": "But despite that, that issue we still see some linear association.",
+    "start_ms": 1370488,
+    "end_ms": 1375488,
+    "duration_ms": 5000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1375.488,
+    "text": "In the last case, what would you guess the correlation be?",
+    "start_ms": 1375488,
+    "end_ms": 1380488,
+    "duration_ms": 5000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1383.16,
+    "text": "The correlation, so this is kind of where I'm going to try to re-emphasize that what we're seeing in this case is that there is some relationship between x and y, right?",
+    "start_ms": 1383160,
+    "end_ms": 1395160,
+    "duration_ms": 12000,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1395.16,
+    "text": "What we're seeing in fact is a quadratic relationship. But since it's not a linear relationship, if you go ahead and calculate correlation, it's going to give us a correlation of close to zero.",
+    "start_ms": 1395160,
+    "end_ms": 1406160,
+    "duration_ms": 11000,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1406.16,
+    "text": "Because again, there is no linear pattern between x and y.",
+    "start_ms": 1406160,
+    "end_ms": 1410360,
+    "duration_ms": 4200,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1410.36,
+    "text": "But there is non-linear pattern that can be captured using other methods or other kinds of modeling that we can do.",
+    "start_ms": 1410360,
+    "end_ms": 1417760,
+    "duration_ms": 7400,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1418.264,
+    "text": "So moving on and kind of talking about what does it mean when we calculate correlation?",
+    "start_ms": 1418264,
+    "end_ms": 1423824,
+    "duration_ms": 5560,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1423.824,
+    "text": "When we have correlation of R in a simple linear regression data, simple linear regression word, and when our data is zero centered, meaning that when our data is zero centered, our regression line is going to pass through the origin.",
+    "start_ms": 1423824,
+    "end_ms": 1438864,
+    "duration_ms": 15040,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1438.864,
+    "text": "And then we talk about the correlation. That means that by every one unit increase in X, the Y value is going to increase by our unit.",
+    "start_ms": 1438864,
+    "end_ms": 1447674,
+    "duration_ms": 8810,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1447.674,
+    "text": "And again, notice that if R is positive, that means that it's an increasing trend, when R is negative, that means that that's a decreasing trend, that's a negative slope, and that's how you can make sense of what's happening in the regression kind of line.",
+    "start_ms": 1447674,
+    "end_ms": 1461904,
+    "duration_ms": 14230,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1462.648,
+    "text": "But we don't want to live in the standard unit word.",
+    "start_ms": 1462648,
+    "end_ms": 1465976,
+    "duration_ms": 3328,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1465.976,
+    "text": "What we want to live in is in the original unit or the original kind of composition of the data set that we had.",
+    "start_ms": 1465976,
+    "end_ms": 1473240,
+    "duration_ms": 7264,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1473.24,
+    "text": "So what we're going to do is we're going to move back all of our data all of our data sets or data points into the stand into the original units that they were meaning that our data point or our.",
+    "start_ms": 1473240,
+    "end_ms": 1485648,
+    "duration_ms": 12408,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1485.648,
+    "text": "A regression line is going to pass through average of x and average of y instead of passing through the origin.",
+    "start_ms": 1485648,
+    "end_ms": 1492648,
+    "duration_ms": 7000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1492.648,
+    "text": "Right. Again, because we removed the, removed average of x from all of the x values and removed average of y from all the y values.",
+    "start_ms": 1492648,
+    "end_ms": 1501148,
+    "duration_ms": 8500,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1501.148,
+    "text": "When we added back, then it will basically push all of the data points by a factor of average of x and average of y.",
+    "start_ms": 1501148,
+    "end_ms": 1508148,
+    "duration_ms": 7000,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1508.148,
+    "text": "And that's why the origin is going to move to the point that corresponds to average of x and average of y.",
+    "start_ms": 1508148,
+    "end_ms": 1513648,
+    "duration_ms": 5500,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1514.296,
+    "text": "What you're seeing here is that x is the scale appropriately.",
+    "start_ms": 1514296,
+    "end_ms": 1517896,
+    "duration_ms": 3600,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1517.896,
+    "text": "Here we would say that for every standard deviation unit of x, y is going to be changed by r times the standard deviation of y.",
+    "start_ms": 1517896,
+    "end_ms": 1529096,
+    "duration_ms": 11200,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1529.336,
+    "text": "Right? That's how, again, you're scaling across the x, a scaling across the y because previously you divided by standard deviation of x and a standard deviation of y.",
+    "start_ms": 1529336,
+    "end_ms": 1538176,
+    "duration_ms": 8840,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1538.176,
+    "text": "If you multiply that back, this is what you're going to get.",
+    "start_ms": 1538176,
+    "end_ms": 1541276,
+    "duration_ms": 3100,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1541.276,
+    "text": "One is going to be multiplied by standard deviation of x, and R is going to be multiplied by standard deviation of y.",
+    "start_ms": 1541276,
+    "end_ms": 1548036,
+    "duration_ms": 6760,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1548.036,
+    "text": "That's why this scale is going to be different. So the equation that we will have, and this is the equation that you had seen in data 8 is that what we have is the equation for this line is y hat or the prediction for y minus y bar divided by a standard deviation of y.",
+    "start_ms": 1548036,
+    "end_ms": 1565800,
+    "duration_ms": 17764,
+    "word_count": 57,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1565.8,
+    "text": "This is kind of moving all of these, all of the points or all of the equations from the top equation down to the bottom equation, but moving it to non-standard unit.",
+    "start_ms": 1565800,
+    "end_ms": 1576552,
+    "duration_ms": 10752,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1576.552,
+    "text": "So when I had y hat before, I'm going to here say that this y hat was measured in a standard unit, but the non-standard unit is going to be this y hat.",
+    "start_ms": 1576552,
+    "end_ms": 1586952,
+    "duration_ms": 10400,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1586.952,
+    "text": "So y hat minus average of y divided by standard division of x, I'm moving r down and then I'm also saying that the way that I calculated x in the standard unit was that x minus x bar divided by standard division of x.",
+    "start_ms": 1586952,
+    "end_ms": 1602352,
+    "duration_ms": 15400,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1602.352,
+    "text": "That's the equation that we'll be working with. If I move this equation to this address slide and try to simplify and just make sure that why hat remains on one side and then everything else is going to be remained on the right hand side and then I'm basically trying to get the coefficient, get a hat which is your intercept and also be hat which was your slope then we can basically figure out what is the the interest of equation and what is the, what is this little equation in our case.",
+    "start_ms": 1602352,
+    "end_ms": 1637688,
+    "duration_ms": 35336,
+    "word_count": 95,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1637.688,
+    "text": "So let me start doing that. From this point and on, I might write equations on this slide, but when I publish this slide, the slides are going to have animations so you can actually walk through the animation and figure out all the steps.",
+    "start_ms": 1637688,
+    "end_ms": 1650568,
+    "duration_ms": 12880,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1650.568,
+    "text": "So what I'm going to do in order to simplify this equation is that I'm going to multiply both sides by standard deviation of y so that I can get the rate of the denominator in the left hand side.",
+    "start_ms": 1650568,
+    "end_ms": 1660408,
+    "duration_ms": 9840,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1660.408,
+    "text": "So what I'll have is y hat minus y bar is equal to r times the standard deviation of y multiplied by.",
+    "start_ms": 1660408,
+    "end_ms": 1669848,
+    "duration_ms": 9440,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1670.808,
+    "text": "x minus x bar divided by standard deviation of x.",
+    "start_ms": 1670808,
+    "end_ms": 1674808,
+    "duration_ms": 4000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1675.0,
+    "text": "Right. my goal is always to have this form, right?",
+    "start_ms": 1675000,
+    "end_ms": 1680920,
+    "duration_ms": 5920,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1680.92,
+    "text": "In order to get to that form, I just need to move also y bar to the other side of the equation.",
+    "start_ms": 1680920,
+    "end_ms": 1686760,
+    "duration_ms": 5840,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1686.76,
+    "text": "So what I'll have is that y hat is going to be equal to r times the standard deviation of y divided by a standard deviation of x multiplied by x minus x bar plus y bar.",
+    "start_ms": 1686760,
+    "end_ms": 1700640,
+    "duration_ms": 13880,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1701.656,
+    "text": "Right. So so far so good. The only thing that now I need to do is to isolate everything that is multiplied with x into one coefficient that I want to use as B hat, right?",
+    "start_ms": 1701656,
+    "end_ms": 1715443,
+    "duration_ms": 13787,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1715.443,
+    "text": "So I want to have one term that has all the things or all the coefficients that are multiplied with the variable and every constant term that's going to be added to this core term is going to be separate.",
+    "start_ms": 1715443,
+    "end_ms": 1727520,
+    "duration_ms": 12077,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1727.52,
+    "text": "So meaning that I want to actually split and take out x from this, parenthesis or this equation right here, which will tell me that why had this going to be equal to our times the standard deviation of y divided by standard deviation of x times x, right?",
+    "start_ms": 1727520,
+    "end_ms": 1743519,
+    "duration_ms": 15999,
+    "word_count": 49,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1743.928,
+    "text": "And then the other thing that I'll have is Y bar.",
+    "start_ms": 1743928,
+    "end_ms": 1746928,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1747.768,
+    "text": "Minus are times the standard deviation of y divided by standard deviation of x times x bar.",
+    "start_ms": 1747768,
+    "end_ms": 1754712,
+    "duration_ms": 6944,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1756.728,
+    "text": "Right? I just rearranged some of the turns. So if we go ahead and take a look at what we had, the coefficient that's multiplied by x is going to be my slope or is going to be my b hat, which that coefficient right here is exactly what we're seeing right here.",
+    "start_ms": 1756728,
+    "end_ms": 1777568,
+    "duration_ms": 20840,
+    "word_count": 53,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1777.568,
+    "text": "So this slope is going to be, I'm going to write it here, that this slope is going to be equal to R times the standard division of Y divided by standard division of X.",
+    "start_ms": 1777568,
+    "end_ms": 1788568,
+    "duration_ms": 11000,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1788.568,
+    "text": "This is what we had seen before. We just gave it to you in data 8 that this slope is equal to R times the standard division of Y divided by standard division of X.",
+    "start_ms": 1788568,
+    "end_ms": 1797568,
+    "duration_ms": 9000,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1797.568,
+    "text": "of x but this time we actually drive it for you.",
+    "start_ms": 1797568,
+    "end_ms": 1800728,
+    "duration_ms": 3160,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1800.728,
+    "text": "Brand the fact that What was correlation, what was the standard unit, and then how did we, what is the actual shape of the line that we have with every one standard unit, kind of increment in X, Y is going to be increased by our times the standard deviation of Y, and then technically that's how we arrived at this equation.",
+    "start_ms": 1800728,
+    "end_ms": 1823392,
+    "duration_ms": 22664,
+    "word_count": 62,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1823.392,
+    "text": "Then the only other thing that I need to talk about is the intercept.",
+    "start_ms": 1823392,
+    "end_ms": 1826752,
+    "duration_ms": 3360,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1826.752,
+    "text": "Everything else, everything else that's remaining here is going to be intercept.",
+    "start_ms": 1826752,
+    "end_ms": 1830992,
+    "duration_ms": 4240,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1830.992,
+    "text": "I'm going to write that out that this is y bar minus.",
+    "start_ms": 1830992,
+    "end_ms": 1834992,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1834.992,
+    "text": "What you're noticing here is that this term right here is exactly what I had for this slope.",
+    "start_ms": 1834992,
+    "end_ms": 1842592,
+    "duration_ms": 7600,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1842.592,
+    "text": "So I can directly say that that term is equal to slope.",
+    "start_ms": 1842592,
+    "end_ms": 1846911,
+    "duration_ms": 4319,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1846.911,
+    "text": "So I have y bar minus slope. Times. Explore. And that was the equation for the slope that we had from before.",
+    "start_ms": 1846911,
+    "end_ms": 1855792,
+    "duration_ms": 8881,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1855.792,
+    "text": "That the slope is always y bar minus r times y bar minus a slope times x bar.",
+    "start_ms": 1855792,
+    "end_ms": 1862792,
+    "duration_ms": 7000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1862.792,
+    "text": "And then obviously, what we have for the residual is that y residual or the error in prediction for data point i is equal to the exact value minus the predicted value y i hat.",
+    "start_ms": 1862792,
+    "end_ms": 1875792,
+    "duration_ms": 13000,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1875.792,
+    "text": "hat and I use hat because that's a predicted value and that's not the exact value that we calculate.",
+    "start_ms": 1875792,
+    "end_ms": 1881400,
+    "duration_ms": 5608,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1881.4,
+    "text": "And then why I had you can actually derive it using this equation which now we derive both this lobe and interest of it we can directly have the equation of the line and actually go ahead and calculate it.",
+    "start_ms": 1881400,
+    "end_ms": 1892032,
+    "duration_ms": 10632,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1892.696,
+    "text": "So the goal that I have for today's lecture is actually go ahead and derive all of these equations one more time using calculus and then we'll see how we can actually do that.",
+    "start_ms": 1892696,
+    "end_ms": 1903696,
+    "duration_ms": 11000,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1903.696,
+    "text": "And what's the formal way of us defining how good of a model, how good a model can be and how we can objectively evaluate it.",
+    "start_ms": 1903696,
+    "end_ms": 1912696,
+    "duration_ms": 9000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1912.696,
+    "text": "So let's go through the modeling process. So this is the process that we will go over every time that we want to build a model.",
+    "start_ms": 1912696,
+    "end_ms": 1920256,
+    "duration_ms": 7560,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1920.256,
+    "text": "Up to the end of the data 100 lecture, every time that I want to talk about creating a new model, I'm going to follow this same modeling process.",
+    "start_ms": 1920256,
+    "end_ms": 1928536,
+    "duration_ms": 8280,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1928.536,
+    "text": "And let me tell you what this modeling process involves.",
+    "start_ms": 1928536,
+    "end_ms": 1932296,
+    "duration_ms": 3760,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1932.296,
+    "text": "The first step of the modeling process is that every time that we start doing a modeling, there is going to be a data set.",
+    "start_ms": 1932296,
+    "end_ms": 1937656,
+    "duration_ms": 5360,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1937.656,
+    "text": "Your data set is going to have one or more attributes or inputs that we're predicting, and then it's always going to have a Y or a target variable that we're trying to match it to.",
+    "start_ms": 1937656,
+    "end_ms": 1949856,
+    "duration_ms": 12200,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1949.856,
+    "text": "So there. Each row of our data frame that we're providing you is going to be an observation, which one piece of that is going to have inputs, features or attributes that we're going to model in the simple linear regression board.",
+    "start_ms": 1949856,
+    "end_ms": 1962880,
+    "duration_ms": 13024,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1962.88,
+    "text": "We're assuming that there is only one input that we're trying to match to the target.",
+    "start_ms": 1962880,
+    "end_ms": 1967680,
+    "duration_ms": 4800,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1967.68,
+    "text": "And then the second instance is always going to be output outcome or target variable.",
+    "start_ms": 1967680,
+    "end_ms": 1973305,
+    "duration_ms": 5625,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1973.305,
+    "text": "So we're trying to use X eyes in order to predict Y eyes as accurately as possible.",
+    "start_ms": 1973305,
+    "end_ms": 1979680,
+    "duration_ms": 6375,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1979.68,
+    "text": "Again, in simple linear regression, we're only concerned with having one feature or one input, and then we always have one target value.",
+    "start_ms": 1979680,
+    "end_ms": 1988320,
+    "duration_ms": 8640,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1988.32,
+    "text": "But when we would move to multiple regression, that's the case that we will have multiple different features, and we're trying to combine them together in order to create, in order to predict the output or target variable.",
+    "start_ms": 1988320,
+    "end_ms": 2001440,
+    "duration_ms": 13120,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2001.44,
+    "text": "But always the target variable is going to be a single value for every row of observation that we might have.",
+    "start_ms": 2001440,
+    "end_ms": 2009040,
+    "duration_ms": 7600,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2009.04,
+    "text": "Every time that we're referring to the fact that we're doing the prediction, we're going to say that the predictions are going to be y hats.",
+    "start_ms": 2009040,
+    "end_ms": 2017480,
+    "duration_ms": 8440,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2017.48,
+    "text": "For every row, there is going to be a y-i hat that we're predicting.",
+    "start_ms": 2017480,
+    "end_ms": 2021880,
+    "duration_ms": 4400,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2021.88,
+    "text": "Again, here I have n rows. So the predictions that I have is going to be y-i, y-1 hat, y-2 hats, and then so on and so forth until y-n hat.",
+    "start_ms": 2021880,
+    "end_ms": 2031000,
+    "duration_ms": 9120,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2031.96,
+    "text": "In terms of the models that we will build today and also in the next couple of lectures, we're going to start by building a simple linear regression.",
+    "start_ms": 2031960,
+    "end_ms": 2041880,
+    "duration_ms": 9920,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2041.88,
+    "text": "So, a simple linear regression is going as having equation like this, that there's always an intercept term, tetasera, and then there's always the slope that we're always referring to that as teta1 times input, and then we will combine the two terms in order to get the production.",
+    "start_ms": 2041880,
+    "end_ms": 2059640,
+    "duration_ms": 17760,
+    "word_count": 49,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2059.64,
+    "text": "We will also see other types of models in terms of lecture and also next Tuesday that is going to be constant model and multiple linear regression that we'll talk about them later.",
+    "start_ms": 2059640,
+    "end_ms": 2070640,
+    "duration_ms": 11000,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2071.224,
+    "text": "I want to put out there that all the models that we'll be discussing, they're called parametric models.",
+    "start_ms": 2071224,
+    "end_ms": 2077104,
+    "duration_ms": 5880,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2077.104,
+    "text": "Because using the data, we will learn parameters of the model, all of those theta values are parameters that once we know those parameters and once we know what kind of model we use, then we can directly do the estimation of each one, or the calculation of each one of the estimated values as accurately as possible.",
+    "start_ms": 2077104,
+    "end_ms": 2096904,
+    "duration_ms": 19800,
+    "word_count": 58,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2096.904,
+    "text": "So these are the parameters that we use for the modeling purposes and that's why there are parametric models.",
+    "start_ms": 2096904,
+    "end_ms": 2103024,
+    "duration_ms": 6120,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2103.024,
+    "text": "When we say that we have all of these parametric models, the only parameters that we have are all of those slow-band interest step and those coefficient values.",
+    "start_ms": 2103024,
+    "end_ms": 2113424,
+    "duration_ms": 10400,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2113.424,
+    "text": "Everything else is going to be input or the features that we're using.",
+    "start_ms": 2113424,
+    "end_ms": 2117424,
+    "duration_ms": 4000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2117.424,
+    "text": "So in other words, the x and y values are not our parameters.",
+    "start_ms": 2117424,
+    "end_ms": 2122624,
+    "duration_ms": 5200,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2122.624,
+    "text": "So only the TETA values are our parameters. When I say that I use a parametric model that is parametrized by the TETA value?",
+    "start_ms": 2122624,
+    "end_ms": 2131464,
+    "duration_ms": 8840,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2131.96,
+    "text": "Then I will go ahead and drive what is the optimum set of TETA values that is going to be as accurately as possible model through my entire data set.",
+    "start_ms": 2131960,
+    "end_ms": 2142880,
+    "duration_ms": 10920,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2142.88,
+    "text": "We call them TETA hats. Hat on top of TETA means that there was a model that now this TETA parameter for that model is the optimum set of parameters.",
+    "start_ms": 2142880,
+    "end_ms": 2153960,
+    "duration_ms": 11080,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2153.96,
+    "text": "And I'm going to show you what that means if a model is not optimum, because technically when you define a model parameter, or when you're defining a parametric model, you're just defining a function or a mathematical function.",
+    "start_ms": 2153960,
+    "end_ms": 2167040,
+    "duration_ms": 13080,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2167.04,
+    "text": "You're not trying to find out what is the optimum mathematical function that models your entire dataset.",
+    "start_ms": 2167040,
+    "end_ms": 2173080,
+    "duration_ms": 6040,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2173.08,
+    "text": "So this is what it means. When we have a model, we're basically trying to have, could define the family of functions that can be used in order to model our relationship.",
+    "start_ms": 2173080,
+    "end_ms": 2184520,
+    "duration_ms": 11440,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2184.52,
+    "text": "We would say that, okay, if I have the model parameters to be theta, then my model equation is going to be y hat equal to teta 0 plus teta 1 times x.",
+    "start_ms": 2184520,
+    "end_ms": 2195479,
+    "duration_ms": 10959,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2195.479,
+    "text": "When I say that I have the best optimum teta value, I will go ahead and put a hat on top of it, which basically means that this time, if you go ahead and calculate y hat values using these optimum values, this is the best prediction that you can have an average on the entire data set that we have.",
+    "start_ms": 2195479,
+    "end_ms": 2214600,
+    "duration_ms": 19121,
+    "word_count": 61,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2214.6,
+    "text": "Again, this right here is going to be a family of the models that can be applied to our data set, but there is only one set of values that is tetA0 hadn't tetA1 had that are going to be optimal.",
+    "start_ms": 2214600,
+    "end_ms": 2228639,
+    "duration_ms": 14039,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2229.08,
+    "text": "Okay, and that's that that's where what we're going to be after.",
+    "start_ms": 2229080,
+    "end_ms": 2232720,
+    "duration_ms": 3640,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2232.72,
+    "text": "In data 100, one thing that you notice is that we're moving away from using A and B for linear regression and we're moving into the TETA 0 and TETA 1 ward.",
+    "start_ms": 2232720,
+    "end_ms": 2242160,
+    "duration_ms": 9440,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2242.16,
+    "text": "And that's very important. We're not using TETA 0 and TETA 1 because we think we're fancy, but this is because what I can do is that if I keep adding features or attribute to my model, then what I can have is that I can have a coefficient or the theta value associated with each one of those attributes, and I can combine all of them into a vector.",
+    "start_ms": 2242160,
+    "end_ms": 2262560,
+    "duration_ms": 20400,
+    "word_count": 70,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2262.56,
+    "text": "So for example, in this case, what I've done is that I'm saying that my model uses theta zero and theta one.",
+    "start_ms": 2262560,
+    "end_ms": 2268920,
+    "duration_ms": 6360,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2268.92,
+    "text": "Let's combine them into a vector of theta. And you pass me theta or you pass me theta hat.",
+    "start_ms": 2268920,
+    "end_ms": 2275360,
+    "duration_ms": 6440,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2275.36,
+    "text": "I know what model you're using. I know what parameters you're using, and I can go ahead and use those parameters, right?",
+    "start_ms": 2275360,
+    "end_ms": 2281840,
+    "duration_ms": 6480,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2281.84,
+    "text": "Instead of just go to a, b, c, d, and so on and so forth.",
+    "start_ms": 2281840,
+    "end_ms": 2285120,
+    "duration_ms": 3280,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2285.12,
+    "text": "this way just using the subscript of i, tetasero, tetah1, tetah2, and so on and so forth.",
+    "start_ms": 2285120,
+    "end_ms": 2293080,
+    "duration_ms": 7960,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2293.08,
+    "text": "What we can do is we can consolidate them into a tetavector and then we can index into the relationship between each feature has what weight more accurately or more easily.",
+    "start_ms": 2293080,
+    "end_ms": 2303080,
+    "duration_ms": 10000,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2303.08,
+    "text": "So that's kind of the notation that we'll be using.",
+    "start_ms": 2303080,
+    "end_ms": 2305800,
+    "duration_ms": 2720,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2306.8,
+    "text": "I said here we have a parametric model. We have seen non parametric models before.",
+    "start_ms": 2306800,
+    "end_ms": 2312520,
+    "duration_ms": 5720,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2312.52,
+    "text": "So some statistical models do not have parameters. For example, we have seen KDE's.",
+    "start_ms": 2312520,
+    "end_ms": 2318640,
+    "duration_ms": 6120,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2318.64,
+    "text": "KDE's were models, or kernel density estimate. But we did not set any parameters.",
+    "start_ms": 2318640,
+    "end_ms": 2323880,
+    "duration_ms": 5240,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2323.88,
+    "text": "We would just estimate alpha, and then we would just run a process, and we would have KDE's.",
+    "start_ms": 2323880,
+    "end_ms": 2329280,
+    "duration_ms": 5400,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2329.28,
+    "text": "Kairi's neighbors is also another model that you did not need to set parameters, or there was not no parameter to learn.",
+    "start_ms": 2329280,
+    "end_ms": 2338760,
+    "duration_ms": 9480,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2338.76,
+    "text": "So those are the cases that there are models that are non-parametric, there are models that are parametric, but we're dealing with is parametric models.",
+    "start_ms": 2338760,
+    "end_ms": 2346960,
+    "duration_ms": 8200,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2346.96,
+    "text": "And what we're going to do throughout this multiple lecture is to learn those parameters, how to optimally learn those parameters, how to derive those parameters so that we can uniquely have our own model to work with.",
+    "start_ms": 2346960,
+    "end_ms": 2359279,
+    "duration_ms": 12319,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2359.896,
+    "text": "So the terminology and we know the notation that we'll be using, let me walk you through the modeling process.",
+    "start_ms": 2359896,
+    "end_ms": 2367128,
+    "duration_ms": 7232,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2367.128,
+    "text": "Every time that we want to build a model, irrespective of what model you're building, you first need to choose the category of model that you want to use.",
+    "start_ms": 2367128,
+    "end_ms": 2377568,
+    "duration_ms": 10440,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2377.568,
+    "text": "So for example, for today's lecture, what we would say is that our model is going to be a simple linear regression.",
+    "start_ms": 2377568,
+    "end_ms": 2383248,
+    "duration_ms": 5680,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2383.248,
+    "text": "We might change our mind in the next few lectures, and we will keep using different types of models.",
+    "start_ms": 2383248,
+    "end_ms": 2389128,
+    "duration_ms": 5880,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2389.128,
+    "text": "But the first step is that you figure out what framework you want to use.",
+    "start_ms": 2389128,
+    "end_ms": 2393528,
+    "duration_ms": 4400,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2393.528,
+    "text": "The second step is to choose a loss function. What is a loss function?",
+    "start_ms": 2393528,
+    "end_ms": 2398088,
+    "duration_ms": 4560,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2398.088,
+    "text": "Loss function is a function that will tell you how good your bad your predictions are.",
+    "start_ms": 2398088,
+    "end_ms": 2402488,
+    "duration_ms": 4400,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2402.488,
+    "text": "And I'm going to objectively define what this loss function means and how to choose a loss function in the next few slides.",
+    "start_ms": 2402488,
+    "end_ms": 2409768,
+    "duration_ms": 7280,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2409.768,
+    "text": "Once we have the model and we have the loss function, we'll go through an optimization process.",
+    "start_ms": 2409768,
+    "end_ms": 2415208,
+    "duration_ms": 5440,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2415.208,
+    "text": "This is a fun part that we'll actually go ahead and try to optimize our loss function in a way that we find the best set of parameters for our model.",
+    "start_ms": 2415208,
+    "end_ms": 2424647,
+    "duration_ms": 9439,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2424.647,
+    "text": "So we go from having TETA up to having TETA hats.",
+    "start_ms": 2424647,
+    "end_ms": 2428568,
+    "duration_ms": 3921,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2428.568,
+    "text": "And once we have TETA hats, we have our model, we have optimized model, and we're ready to go.",
+    "start_ms": 2428568,
+    "end_ms": 2433048,
+    "duration_ms": 4480,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2433.72,
+    "text": "Once we have our TETA hat and we fit the model and we find the optimum parameters, we need to evaluate the model.",
+    "start_ms": 2433720,
+    "end_ms": 2441574,
+    "duration_ms": 7854,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2441.574,
+    "text": "So we're going to briefly talk about whether the evaluation criteria that we'll have after we have the model to make sure that our model is performing well on the data set that we have.",
+    "start_ms": 2441574,
+    "end_ms": 2450680,
+    "duration_ms": 9106,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2450.776,
+    "text": "So let's start with choosing a model, which should be simple in this case.",
+    "start_ms": 2450776,
+    "end_ms": 2456056,
+    "duration_ms": 5280,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2456.056,
+    "text": "We're choosing simple linear regression for the purpose of today's lecture, because today's lecture is just basically setting you up with all the new notation and the new terminology that we're using.",
+    "start_ms": 2456056,
+    "end_ms": 2466576,
+    "duration_ms": 10520,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2466.576,
+    "text": "We're going from AMB, we're going into the word of TETA, so we're using TETA 0 as my Y interest of and TETA 1 as this loop that we're using.",
+    "start_ms": 2466576,
+    "end_ms": 2477656,
+    "duration_ms": 11080,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2477.656,
+    "text": "So what I said was that this tetah vector that we have is the finding a family of functions.",
+    "start_ms": 2477656,
+    "end_ms": 2484056,
+    "duration_ms": 6400,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2484.056,
+    "text": "So what that means is that if you are saying that you have a tetah vector and you pass the values of tetasurant, tetah one of that tetah vector, you pass the input, you have the predictions.",
+    "start_ms": 2484056,
+    "end_ms": 2496295,
+    "duration_ms": 12239,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2496.295,
+    "text": "So think about that as a machine that throughout the modeling process will try to find the parameters for this machine that gives us the best estimations, right?",
+    "start_ms": 2496295,
+    "end_ms": 2506536,
+    "duration_ms": 10241,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2506.536,
+    "text": "So that's what it means. What we have is that the parameters are sitting in the middle and we're trying to find the optimums that are parameters in the middle to get the best estimations, the best estimations as much as possible.",
+    "start_ms": 2506536,
+    "end_ms": 2521896,
+    "duration_ms": 15360,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2521.896,
+    "text": "So one thing to notice here is that I'm using also hat on top of the estimations.",
+    "start_ms": 2521896,
+    "end_ms": 2530336,
+    "duration_ms": 8440,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2530.336,
+    "text": "And I was using hat one more time when I was putting it on top of tetas.",
+    "start_ms": 2530336,
+    "end_ms": 2534496,
+    "duration_ms": 4160,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2534.496,
+    "text": "This is kind of operate or overloading that I'm using.",
+    "start_ms": 2534496,
+    "end_ms": 2537455,
+    "duration_ms": 2959,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2537.455,
+    "text": "So when it happens on top of why that means that's an estimation.",
+    "start_ms": 2537455,
+    "end_ms": 2541976,
+    "duration_ms": 4521,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2541.976,
+    "text": "When hat is on top of, or that's the prediction.",
+    "start_ms": 2541976,
+    "end_ms": 2544896,
+    "duration_ms": 2920,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2544.896,
+    "text": "When hat is on top of the teta, that means that that's the optimum set of parameters for the model that I'm using.",
+    "start_ms": 2544896,
+    "end_ms": 2552176,
+    "duration_ms": 7280,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2553.976,
+    "text": "The first step is done. We have a linear, simple linear regression.",
+    "start_ms": 2553976,
+    "end_ms": 2557176,
+    "duration_ms": 3200,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2557.176,
+    "text": "We know that the pattern of the function is going to be that two parameters are going to be given, and then we can calculate the prediction of y, which is y hat, using teta 0 plus theta 1 times x.",
+    "start_ms": 2557176,
+    "end_ms": 2570536,
+    "duration_ms": 13360,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2570.536,
+    "text": "Now we need to get into what is the loss function?",
+    "start_ms": 2570536,
+    "end_ms": 2573704,
+    "duration_ms": 3168,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2573.704,
+    "text": "And how can we define how good we are matching to the target values based on different models that we have?",
+    "start_ms": 2573704,
+    "end_ms": 2580186,
+    "duration_ms": 6482,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2580.186,
+    "text": "So we are going to actually follow a certain process that defining a cost function and optimizing the cost function up to the point that we get to the optimum set of parameters that I'm referring to as theta 0 hat and theta 1 hat.",
+    "start_ms": 2580186,
+    "end_ms": 2594096,
+    "duration_ms": 13910,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2594.776,
+    "text": "So choosing a loss function, how can we quantify how good or bad a function is map to our data set?",
+    "start_ms": 2594776,
+    "end_ms": 2604376,
+    "duration_ms": 9600,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2604.376,
+    "text": "So for example, what you're seeing here is that I have tree lines.",
+    "start_ms": 2604376,
+    "end_ms": 2607496,
+    "duration_ms": 3120,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2608.296,
+    "text": "Again, remember that that machine in the middle was defining a family of lines.",
+    "start_ms": 2608296,
+    "end_ms": 2612536,
+    "duration_ms": 4240,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2612.536,
+    "text": "So here in this case, I'm just showing out tree random kind of sets of values for the the tetah vector.",
+    "start_ms": 2612536,
+    "end_ms": 2619776,
+    "duration_ms": 7240,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2619.776,
+    "text": "So here, tetah 0, tetah 1, tetah 0, tetah 1 for three separate lines.",
+    "start_ms": 2619776,
+    "end_ms": 2624376,
+    "duration_ms": 4600,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2624.376,
+    "text": "And then I draw all of those lines. So what we're wondering is that just looking at the shape of these lines and the distribution of the data, which one of these models are more accurate.",
+    "start_ms": 2624376,
+    "end_ms": 2636256,
+    "duration_ms": 11880,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2636.408,
+    "text": "And then think about how you're going to measure in your mind what accuracy means.",
+    "start_ms": 2636408,
+    "end_ms": 2641908,
+    "duration_ms": 5500,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2641.908,
+    "text": "This is your first slide of the day, which one of these lines matches the data set more accurately.",
+    "start_ms": 2641908,
+    "end_ms": 2647608,
+    "duration_ms": 5700,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2667.032,
+    "text": "OK, it's kind of clear that the blue line is matching our data said more accurately.",
+    "start_ms": 2667032,
+    "end_ms": 2673232,
+    "duration_ms": 6200,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2673.232,
+    "text": "And the process that probably went in your mind was that, OK, I'm looking at the miscalculations or misproductions.",
+    "start_ms": 2673232,
+    "end_ms": 2680032,
+    "duration_ms": 6800,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2680.032,
+    "text": "I'm looking at how far the points are from each one of those lines.",
+    "start_ms": 2680032,
+    "end_ms": 2683932,
+    "duration_ms": 3900,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2683.932,
+    "text": "And it looks like that when I'm looking at the distances from the line, the blue line has the minimum distance on average across all of the across all of the points in a data set versus, for example, if you're looking at the red line, if you want to calculate the distances of all of the points from the line, that's a very high error that we're accumulating throughout the entire data set.",
+    "start_ms": 2683932,
+    "end_ms": 2707632,
+    "duration_ms": 23700,
+    "word_count": 74,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2708.024,
+    "text": "So we're defining the loss function in the same way.",
+    "start_ms": 2708024,
+    "end_ms": 2711024,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2711.024,
+    "text": "We would say that we're going to take a look at the prediction predicted values.",
+    "start_ms": 2711024,
+    "end_ms": 2715024,
+    "duration_ms": 4000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2715.024,
+    "text": "We're going to take a look at the real values.",
+    "start_ms": 2715024,
+    "end_ms": 2718024,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2718.024,
+    "text": "And we're going to have a single up to single value that assigned to how bad the predictions are.",
+    "start_ms": 2718024,
+    "end_ms": 2726024,
+    "duration_ms": 8000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2726.024,
+    "text": "So what we would say is that if y hat is close to y, we would give you a little loss.",
+    "start_ms": 2726024,
+    "end_ms": 2732024,
+    "duration_ms": 6000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2732.024,
+    "text": "law. So we would say that you did not do that badly and then we would give a value in our, which is a small value.",
+    "start_ms": 2732024,
+    "end_ms": 2740704,
+    "duration_ms": 8680,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2741.592,
+    "text": "But if a Y hat is far from Y, in the cases that the predictions are delined was far from the actual individual values, we would give a high loss.",
+    "start_ms": 2741592,
+    "end_ms": 2751832,
+    "duration_ms": 10240,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2751.832,
+    "text": "That's the general idea. Her given data point, we would calculate loss, we would calculate the error, and we need to have a function that will actually penalize the model based on each one of those miscalculations or mis-systemations that it has.",
+    "start_ms": 2751832,
+    "end_ms": 2765752,
+    "duration_ms": 13920,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2766.552,
+    "text": "So the choice of the loss function is really important.",
+    "start_ms": 2766552,
+    "end_ms": 2769912,
+    "duration_ms": 3360,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2769.912,
+    "text": "In data 100, we're going to cover, I think, three or four different types of loss functions that will actually do exactly the same thing.",
+    "start_ms": 2769912,
+    "end_ms": 2776912,
+    "duration_ms": 7000,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2776.912,
+    "text": "It will tell us how bad our predictions were, and it will basically tell us that it will penalize us more if our prediction is far from the actual value, and it will penalize us less if our prediction is close to the actual target value.",
+    "start_ms": 2776912,
+    "end_ms": 2790912,
+    "duration_ms": 14000,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2790.912,
+    "text": "But the choice of the loss function really depends on multiple different metrics and different types of modeling that you're doing.",
+    "start_ms": 2790912,
+    "end_ms": 2797912,
+    "duration_ms": 7000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2797.912,
+    "text": "For example, if you're doing a classification task versus a regression task, the loss function is going to be very different.",
+    "start_ms": 2797912,
+    "end_ms": 2804312,
+    "duration_ms": 6400,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2804.312,
+    "text": "If you're doing a classification task, for example, if you're doing cancer identification in a sense, you really don't want to miss any potential cancer patients.",
+    "start_ms": 2804312,
+    "end_ms": 2814152,
+    "duration_ms": 9840,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2814.152,
+    "text": "So in those cases, you really want to have a different kinds of loss function that accounts for all of those cases as well.",
+    "start_ms": 2814152,
+    "end_ms": 2821112,
+    "duration_ms": 6960,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2821.112,
+    "text": "So we're going to take a look at all of those considerations when we go into evaluating the models a little bit more, or just putting it out there that when I talk about loss function today, I'm going to introduce two loss functions, but those are not the only loss functions that we use.",
+    "start_ms": 2821112,
+    "end_ms": 2835152,
+    "duration_ms": 14040,
+    "word_count": 55,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2835.152,
+    "text": "Depending on the use case, the loss function can be different.",
+    "start_ms": 2835152,
+    "end_ms": 2838271,
+    "duration_ms": 3119,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2838.904,
+    "text": "So, last function of the day, you might have seen these equations before.",
+    "start_ms": 2838904,
+    "end_ms": 2843904,
+    "duration_ms": 5000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2843.904,
+    "text": "One last function is called L2 loss or a squirt loss.",
+    "start_ms": 2843904,
+    "end_ms": 2847904,
+    "duration_ms": 4000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2847.904,
+    "text": "One loss is called absolute loss or L1 loss, order 1, order 2.",
+    "start_ms": 2847904,
+    "end_ms": 2852904,
+    "duration_ms": 5000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2852.904,
+    "text": "Right? Think about them like that. So the squirt loss basically says that go ahead and take a look at the actual value, subtract the predicted value, so meaning that calculate the residual, and go ahead and score the residual.",
+    "start_ms": 2852904,
+    "end_ms": 2869264,
+    "duration_ms": 16360,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2869.264,
+    "text": "So anytime that you saw an error, a score that error, which basically means that if your error is very a small value, I'm scoring it and I'm even making it smaller, right?",
+    "start_ms": 2869264,
+    "end_ms": 2881504,
+    "duration_ms": 12240,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2881.504,
+    "text": "So if you're taking a look at the residual being a value between zero and one and you score it, that's even going to get a smaller.",
+    "start_ms": 2881504,
+    "end_ms": 2889783,
+    "duration_ms": 8279,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2889.783,
+    "text": "So it's not going to be penalized as much. Compared to the case that, okay, If you have 100 units of residual, it will square it to penalize you even more.",
+    "start_ms": 2889783,
+    "end_ms": 2900024,
+    "duration_ms": 10241,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2900.024,
+    "text": "So the penalty right now is going to be 10,000 in that case.",
+    "start_ms": 2900024,
+    "end_ms": 2904824,
+    "duration_ms": 4800,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2904.824,
+    "text": "So that's kind of L2 loss or the second order loss that we have.",
+    "start_ms": 2904824,
+    "end_ms": 2909464,
+    "duration_ms": 4640,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2909.464,
+    "text": "The absolute loss just looks at the residual and calculus the absolute value.",
+    "start_ms": 2909464,
+    "end_ms": 2914344,
+    "duration_ms": 4880,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2914.344,
+    "text": "Again, meaning that if it's the smallest, it's just going to be that same absolute value of the residual.",
+    "start_ms": 2914344,
+    "end_ms": 2919344,
+    "duration_ms": 5000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2919.344,
+    "text": "If it's 100 unit of residual, it's just going to be same 100 units.",
+    "start_ms": 2919344,
+    "end_ms": 2924104,
+    "duration_ms": 4760,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2924.104,
+    "text": "It's not going to be penalized any further. But in both of the cases, they're penalizing.",
+    "start_ms": 2924104,
+    "end_ms": 2929344,
+    "duration_ms": 5240,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2929.344,
+    "text": "And in both of the cases, what you notice is that the loss is always a positive value because it's a cost.",
+    "start_ms": 2929344,
+    "end_ms": 2937584,
+    "duration_ms": 8240,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2937.584,
+    "text": "So we want to give a cost. We don't want to give a negative cost.",
+    "start_ms": 2937584,
+    "end_ms": 2941664,
+    "duration_ms": 4080,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2941.664,
+    "text": "So in the cost in both of the cases, in our case, is positive.",
+    "start_ms": 2941664,
+    "end_ms": 2946224,
+    "duration_ms": 4560,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2946.224,
+    "text": "So what does it mean in the... in the language of linear regression, that means that I'm going to go ahead and replace in every instance that I have y hat, I'm going to replace it with the equation for the simple linear regression.",
+    "start_ms": 2946224,
+    "end_ms": 2959026,
+    "duration_ms": 12802,
+    "word_count": 44,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2959.026,
+    "text": "So here I have y minus y hat, so here my loss for simple linear regression based on L2 or a squared loss is going to be y minus this right here is y hat and then the squared.",
+    "start_ms": 2959026,
+    "end_ms": 2972476,
+    "duration_ms": 13450,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2972.476,
+    "text": "Same thing for the L1 loss, we just plug in y hat and then we have the equation.",
+    "start_ms": 2972476,
+    "end_ms": 2978040,
+    "duration_ms": 5564,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2979.0,
+    "text": "Note to step what I have right here is the loss or the cost or a single data point.",
+    "start_ms": 2979000,
+    "end_ms": 2985120,
+    "duration_ms": 6120,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2985.12,
+    "text": "But what we want is we want to have a line that matches all of the data sets, all of the data points in the data set as closely as possible.",
+    "start_ms": 2985120,
+    "end_ms": 2994440,
+    "duration_ms": 9320,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2994.44,
+    "text": "So in that case, what we would do is we would go ahead and take average over all of the data points.",
+    "start_ms": 2994440,
+    "end_ms": 3000360,
+    "duration_ms": 5920,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3000.36,
+    "text": "So let's go through two more slider questions to make sure that we're all on the same page with respect to What is L1 loss, what is L2 loss and so on and so forth?",
+    "start_ms": 3000360,
+    "end_ms": 3010840,
+    "duration_ms": 10480,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3010.84,
+    "text": "So the question is if you want to penalize large residuals more than the small residuals or proportionally, which loss function is more ideal?",
+    "start_ms": 3010840,
+    "end_ms": 3022000,
+    "duration_ms": 11160,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3022.0,
+    "text": "Do you want to use absolute loss or do you want to use the squared loss?",
+    "start_ms": 3022000,
+    "end_ms": 3025400,
+    "duration_ms": 3400,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3034.936,
+    "text": "looks like a squirt loss is the winner because of the example that I gave right so if you really want to penalize large miscalculations or misperdictions you really want to use the squirt loss in those cases what we've been a drawback if we penalize large deviation so much There is one drawback in that case.",
+    "start_ms": 3034936,
+    "end_ms": 3056552,
+    "duration_ms": 21616,
+    "word_count": 57,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3060.76,
+    "text": "Just a quick hint would be an outlier. Anything about outliers might be an issue here.",
+    "start_ms": 3060760,
+    "end_ms": 3067760,
+    "duration_ms": 7000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3086.296,
+    "text": "Yeah. So the answer was that the outliers are generally far from the trend of the data.",
+    "start_ms": 3086296,
+    "end_ms": 3093096,
+    "duration_ms": 6800,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3093.096,
+    "text": "And the model, if model wants to try to avoid having that squared large loss that it might incur, it might tilt the line or the model from the actual trend that it needs to be to the trend that's kind of have meets halfway in between.",
+    "start_ms": 3093096,
+    "end_ms": 3107866,
+    "duration_ms": 14770,
+    "word_count": 47,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3107.866,
+    "text": "So that it gets some small loss on the actual trend that the data and also gets closer to the outlier data point that it has.",
+    "start_ms": 3107866,
+    "end_ms": 3117016,
+    "duration_ms": 9150,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3117.016,
+    "text": "What about this question? Why don't we use the actual residual values directly?",
+    "start_ms": 3117016,
+    "end_ms": 3122016,
+    "duration_ms": 5000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3122.016,
+    "text": "Why do we score them? Why do we calculate absolute value?",
+    "start_ms": 3122016,
+    "end_ms": 3126016,
+    "duration_ms": 4000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3126.016,
+    "text": "Why do we want all of them to be all of the cost values to be positive?",
+    "start_ms": 3126016,
+    "end_ms": 3131016,
+    "duration_ms": 5000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3134.36,
+    "text": "Why do we want to get rid of negatives? Sum will be zero.",
+    "start_ms": 3134360,
+    "end_ms": 3146824,
+    "duration_ms": 12464,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3146.824,
+    "text": "Residual sum to zero, that is correct. Um... Okay, they don't cancel out.",
+    "start_ms": 3146824,
+    "end_ms": 3156771,
+    "duration_ms": 9947,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3156.771,
+    "text": "So that seems to be the right trend. But the issue that we have when we try to just use the actual residual values is that some residual values are positive, some residual values are negative, right?",
+    "start_ms": 3156771,
+    "end_ms": 3169872,
+    "duration_ms": 13101,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3169.872,
+    "text": "This is what we saw before. And if we just actually get the residual values and sum them up, the issue is going to be there, going to cancel each other out.",
+    "start_ms": 3169872,
+    "end_ms": 3180032,
+    "duration_ms": 10160,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3180.032,
+    "text": "And again, we need to calculate the cost and aggregate in the entire data sets.",
+    "start_ms": 3180032,
+    "end_ms": 3185032,
+    "duration_ms": 5000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3185.032,
+    "text": "So that's why we really want to make sure that all of them are positive cost values.",
+    "start_ms": 3185032,
+    "end_ms": 3190032,
+    "duration_ms": 5000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3190.032,
+    "text": "And that's why we're using either absolute loss or a squared loss in all of these cases.",
+    "start_ms": 3190032,
+    "end_ms": 3195032,
+    "duration_ms": 5000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3196.12,
+    "text": "I said we need to make sure that we calculate the loss for all of the data points.",
+    "start_ms": 3196120,
+    "end_ms": 3200920,
+    "duration_ms": 4800,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3200.92,
+    "text": "In fact, the way that we do it is that we will go ahead and sum up all of these loss values for all of the data points.",
+    "start_ms": 3200920,
+    "end_ms": 3210785,
+    "duration_ms": 9865,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3210.785,
+    "text": "So you see why I, why I have. That means that the prediction for data point I and assuming that we have n different data points, we will sum up all of those loss values that we have and then we will divide it by n, which is going to be calculating the average.",
+    "start_ms": 3210785,
+    "end_ms": 3226600,
+    "duration_ms": 15815,
+    "word_count": 54,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3226.6,
+    "text": "Right? Summing up makes sense because I want to take a look at the entire data set.",
+    "start_ms": 3226600,
+    "end_ms": 3230639,
+    "duration_ms": 4039,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3230.639,
+    "text": "When I'm dividing it by n, this is the case that if I'm comparing the model performances on different data sets, I don't want the sides of the data sets to be influencing my decision about which model is performing better, right?",
+    "start_ms": 3230639,
+    "end_ms": 3244266,
+    "duration_ms": 13627,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3244.266,
+    "text": "Or which model is performing? We'll object the function that we'll be using in order to train a model and find the optimum set of parameters that we have.",
+    "start_ms": 3244266,
+    "end_ms": 3269808,
+    "duration_ms": 25542,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3270.712,
+    "text": "One note is that what you notice is that this function is a parametric function.",
+    "start_ms": 3270712,
+    "end_ms": 3277272,
+    "duration_ms": 6560,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3277.272,
+    "text": "It's parametrized by theta, meaning that if you give me different theta values here, I'm going to give you different y-hats.",
+    "start_ms": 3277272,
+    "end_ms": 3287672,
+    "duration_ms": 10400,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3287.672,
+    "text": "And by having different y-hats, you're going to have different losses for the data points.",
+    "start_ms": 3287672,
+    "end_ms": 3292472,
+    "duration_ms": 4800,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3292.472,
+    "text": "And then once you have different losses, you're going to have a different overall cost or the overall average loss.",
+    "start_ms": 3292472,
+    "end_ms": 3298552,
+    "duration_ms": 6080,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3298.776,
+    "text": "So, kind of notice that this function, depending on the teta is going to change, and our goal in this case is going to be to find the teta value or the set of teta zero and teta one values that minimizes this cost function that goes through all of the data points as closely as possible on average and have the minimum average residual values that we have.",
+    "start_ms": 3298776,
+    "end_ms": 3322476,
+    "duration_ms": 23700,
+    "word_count": 69,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3323.0,
+    "text": "Okay, does that make sense? So this cost function is a really important cost function.",
+    "start_ms": 3323000,
+    "end_ms": 3328360,
+    "duration_ms": 5360,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3328.36,
+    "text": "Again, it's parametrized by TETA, meaning that depending on the TETA value, the value of the cost on the data set is going to change.",
+    "start_ms": 3328360,
+    "end_ms": 3336360,
+    "duration_ms": 8000,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3336.36,
+    "text": "And why is it going to change? Because when you change the TETA value, you're effectively changing the model.",
+    "start_ms": 3336360,
+    "end_ms": 3341080,
+    "duration_ms": 4720,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3341.08,
+    "text": "When you're changing the model, your cost function is going to be different because your predictions are going to be different.",
+    "start_ms": 3341080,
+    "end_ms": 3345960,
+    "duration_ms": 4880,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3345.96,
+    "text": "So think about this function as a function that evaluates the entire family of the lines that can pass through your data set.",
+    "start_ms": 3345960,
+    "end_ms": 3354520,
+    "duration_ms": 8560,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3355.256,
+    "text": "So when we go ahead and plug in for that loss function and plug in L2 loss, you can see that effectively the empirical risk is going to be 1 over N times the summation of Yi minus Yi i2, and we call that mean a squared error.",
+    "start_ms": 3355256,
+    "end_ms": 3372800,
+    "duration_ms": 17544,
+    "word_count": 48,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3372.8,
+    "text": "And if you plug in L1 loss instead of this loss function into the empirical risk equation, this is going to give us 1 over N times the summation of absolute value of all of those residual values that we have.",
+    "start_ms": 3372800,
+    "end_ms": 3385096,
+    "duration_ms": 12296,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3385.256,
+    "text": "So, MSc versus MAE. In the next lecture, I'm going to come back and play with optimizing both of these functions.",
+    "start_ms": 3385256,
+    "end_ms": 3393016,
+    "duration_ms": 7760,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3393.016,
+    "text": "And I'm going to show you what's the difference between the final model that we'll get depending on which loss function that we use and which empirical response we get at the end.",
+    "start_ms": 3393016,
+    "end_ms": 3403216,
+    "duration_ms": 10200,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3404.024,
+    "text": "For today's purpose, what I'm going to do is I'm going to say that I'm going to use L2 loss, meaning that I'm going to go ahead and calculate the residual square of each one of those data points in the dataset.",
+    "start_ms": 3404024,
+    "end_ms": 3417344,
+    "duration_ms": 13320,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3417.344,
+    "text": "And my entire empirical risk function is going to be MSE or mean squared error.",
+    "start_ms": 3417344,
+    "end_ms": 3423068,
+    "duration_ms": 5724,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3423.068,
+    "text": "Again, this is the mean and this is the squared error of all of those predictions that we have.",
+    "start_ms": 3423068,
+    "end_ms": 3429278,
+    "duration_ms": 6210,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3429.278,
+    "text": "This is YI, this is YI hat that we have based on the simple linear regression.",
+    "start_ms": 3429278,
+    "end_ms": 3434372,
+    "duration_ms": 5094,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3434.372,
+    "text": "What you know from data 8 is that you know that they called this delinear regression that they were teaching you, they called it least the squares regression.",
+    "start_ms": 3434372,
+    "end_ms": 3444824,
+    "duration_ms": 10452,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3445.384,
+    "text": "We also used exactly the same terminology here. Effectively, simple linear regression pattern or function together with the optimization function that is mean squared error is called least the scores regression because we're trying to find a function that minimizes these scores of the errors that we have over the entire population.",
+    "start_ms": 3445384,
+    "end_ms": 3466424,
+    "duration_ms": 21040,
+    "word_count": 52,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3467.096,
+    "text": "So now down to the fun part. I said that if you have the two parts in the model, you have the model kind of Hadron or the template which in this case is simple linear regression and you know what kind of cost function you're using Then everything else is going to be easy fitting the model is going to be easy What I'll do is I'll basically tell you that what does it mean to fit the model when we say that we want to fit the model That means that I want to find a combination of theta 0 and theta 1 values that are giving me the minimum function or the minimum value for the right hand side of this msc function So in order to do so, what you know from your math courses is that I need to calculate the derivative of this function with respect to theta 0, set it to 0 with respect to theta 1, set it equal to 0, find those optimum points, and those optimum points, theta 0 and theta 1 are going to be exactly my theta 0 had on my theta 1 hat that I can use.",
+    "start_ms": 3467096,
+    "end_ms": 3530040,
+    "duration_ms": 62944,
+    "word_count": 200,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3530.04,
+    "text": "So the next few kind of or five or so minutes is going to be me driving all of these partial derivatives for you.",
+    "start_ms": 3530040,
+    "end_ms": 3538280,
+    "duration_ms": 8240,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3538.28,
+    "text": "It might sound scary, but this is kind of the first starting point for you to get comfortable with this entire pipeline.",
+    "start_ms": 3538280,
+    "end_ms": 3544600,
+    "duration_ms": 6320,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3544.6,
+    "text": "And actually appreciate that all of the math courses that you learned so far is actually going to come in use in machine learning.",
+    "start_ms": 3544600,
+    "end_ms": 3551560,
+    "duration_ms": 6960,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3551.56,
+    "text": "Because Machine learning is all about having various strong calculus and linear algebra background and this is this is the place that you will see where it will become handy.",
+    "start_ms": 3551560,
+    "end_ms": 3561664,
+    "duration_ms": 10104,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3562.008,
+    "text": "So to start by taking partial derivatives. So moving that equation right over here.",
+    "start_ms": 3562008,
+    "end_ms": 3567928,
+    "duration_ms": 5920,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3568.968,
+    "text": "So It says audio is out. I don't think it's up.",
+    "start_ms": 3568968,
+    "end_ms": 3576168,
+    "duration_ms": 7200,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3576.28,
+    "text": "It's on. Okay cool. So, I have the objective function and let me reiterate what the subjective function was.",
+    "start_ms": 3576280,
+    "end_ms": 3587744,
+    "duration_ms": 11464,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3587.744,
+    "text": "Remember that the subjective function is calculating the average. over the scores of the errors.",
+    "start_ms": 3587744,
+    "end_ms": 3595251,
+    "duration_ms": 7507,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3595.251,
+    "text": "Right? So this is the error inside the parentheses. What you're seeing is y i minus y i hat, which is the residual to the power of two that I'm calculating, which is mean a scored error that I want to calculate.",
+    "start_ms": 3595251,
+    "end_ms": 3610006,
+    "duration_ms": 14755,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3610.006,
+    "text": "So I'm going to take the derivative with respect to tetasera, which effectively what that means is that I'll do the normal derivative, but I'm just assuming that anything except for tetasera is going to be constant value, right?",
+    "start_ms": 3610006,
+    "end_ms": 3622360,
+    "duration_ms": 12354,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3622.36,
+    "text": "And there are a couple of steps that I need to do first.",
+    "start_ms": 3622360,
+    "end_ms": 3627040,
+    "duration_ms": 4680,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3627.04,
+    "text": "One is that I'm taking the derivative of a summation term, right?",
+    "start_ms": 3627040,
+    "end_ms": 3631288,
+    "duration_ms": 4248,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3631.288,
+    "text": "And we know that the derivative of sum is equal to sum of the derivatives.",
+    "start_ms": 3631288,
+    "end_ms": 3636105,
+    "duration_ms": 4817,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3636.105,
+    "text": "So I'm going to take out the coefficient and the summation out of the derivatives so that things are a little bit easier and cleaner.",
+    "start_ms": 3636105,
+    "end_ms": 3644211,
+    "duration_ms": 8106,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3644.211,
+    "text": "So moving this summation out is is going to give me 1 over n times the summation of pi from 1 up to n of the derivative of what I had, which is yi minus theta zero.",
+    "start_ms": 3644211,
+    "end_ms": 3656840,
+    "duration_ms": 12629,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3657.208,
+    "text": "minus the one x i. To the power of two, with respect to TETA zero.",
+    "start_ms": 3657208,
+    "end_ms": 3662840,
+    "duration_ms": 5632,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3663.608,
+    "text": "Right. So first step is easy. I just basically took out the summation and said that the derivative of the summation is equal to some of the derivatives.",
+    "start_ms": 3663608,
+    "end_ms": 3677992,
+    "duration_ms": 14384,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3677.992,
+    "text": "I'm taking some of those derivatives. to take a derivative with respect to teta 0, teta 0 inside is raised to the power of 2.",
+    "start_ms": 3677992,
+    "end_ms": 3688008,
+    "duration_ms": 10016,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3688.008,
+    "text": "So you know that in this case, I need to apply chain rule first, meaning that I basically try to take the derivative of the outer function and then take the derivative of the inner function, which in this case is going to be meary writing, the coefficient right here, 1 over n times the summation of i from 1 up to n up.",
+    "start_ms": 3688008,
+    "end_ms": 3719368,
+    "duration_ms": 31360,
+    "word_count": 64,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3719.136,
+    "text": "function times the derivative of function. Right? If you think about this as function to the power of two.",
+    "start_ms": 3719136,
+    "end_ms": 3725848,
+    "duration_ms": 6712,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3726.168,
+    "text": "So what I'll do is I'll say that two times the function which is equal to yi minus is that the zero minus that the one times x i.",
+    "start_ms": 3726168,
+    "end_ms": 3736008,
+    "duration_ms": 9840,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3735.992,
+    "text": "And then what is the derivative of this function with respect to ?",
+    "start_ms": 3735992,
+    "end_ms": 3739736,
+    "duration_ms": 3744,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3739.736,
+    "text": "0 ? So again assuming that everything except for tetasero is a constant term.",
+    "start_ms": 3739736,
+    "end_ms": 3745536,
+    "duration_ms": 5800,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3745.536,
+    "text": "So the only term that I have to take the derivative is that negative tetasero and derivative of that with respect to tetasero is going to be negative one.",
+    "start_ms": 3745536,
+    "end_ms": 3753536,
+    "duration_ms": 8000,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3755.288,
+    "text": "Right? is easy. I'm just going to clean everything up and just simplifying constants here.",
+    "start_ms": 3755288,
+    "end_ms": 3762280,
+    "duration_ms": 6992,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3762.28,
+    "text": "This is going to give me negative 2 over n just taking all the constants out, summation of i from 1 up to n of yi minus theta 0 minus theta 1 x i.",
+    "start_ms": 3762280,
+    "end_ms": 3774424,
+    "duration_ms": 12144,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3774.936,
+    "text": "So we're done with TETA. zero or taking the partial derivative with respect to teta zero.",
+    "start_ms": 3774936,
+    "end_ms": 3780616,
+    "duration_ms": 5680,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3780.616,
+    "text": "Let's go ahead and do exactly the same thing for teta one.",
+    "start_ms": 3780616,
+    "end_ms": 3785216,
+    "duration_ms": 4600,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3785.216,
+    "text": "And then because I need to take derivative with respect to both of them, set both of them equal to zero and then solve it.",
+    "start_ms": 3785216,
+    "end_ms": 3791616,
+    "duration_ms": 6400,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3791.616,
+    "text": "So we need to have both of the derivatives ready to go.",
+    "start_ms": 3791616,
+    "end_ms": 3794616,
+    "duration_ms": 3000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3794.616,
+    "text": "So I'll do exactly the same thing that the derivative of sum is equal to some of the derivatives.",
+    "start_ms": 3794616,
+    "end_ms": 3799416,
+    "duration_ms": 4800,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3799.416,
+    "text": "I'm taking out the coefficient 1 over n and the summation out of the derivative.",
+    "start_ms": 3799416,
+    "end_ms": 3804016,
+    "duration_ms": 4600,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3804.016,
+    "text": "So it's going to give me 1 over n times the summation of i from 1 up to n of.",
+    "start_ms": 3804016,
+    "end_ms": 3809016,
+    "duration_ms": 5000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3809.656,
+    "text": "Um... of the derivative of. Yes. Why I minus. That is 0 minus Teta 1 Xi is square with respect to Teta 1.",
+    "start_ms": 3809656,
+    "end_ms": 3826864,
+    "duration_ms": 17208,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3826.744,
+    "text": "Right. Same story here, right? So the story is that I'm taking the partial derivative with respect to tet 1.",
+    "start_ms": 3826744,
+    "end_ms": 3834744,
+    "duration_ms": 8000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3834.744,
+    "text": "And tet 1 is the only variable that I'm concerned with everything else I'm assuming that is constant.",
+    "start_ms": 3834744,
+    "end_ms": 3840744,
+    "duration_ms": 6000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3840.744,
+    "text": "But tet 1 is raised to the power of 2, right?",
+    "start_ms": 3840744,
+    "end_ms": 3844818,
+    "duration_ms": 4074,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3844.818,
+    "text": "And it's within a function. So if I want to take the derivative of this function.",
+    "start_ms": 3844818,
+    "end_ms": 3850744,
+    "duration_ms": 5926,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3851.384,
+    "text": "to the power of two with respect to, um, theta one, this is going to be equal to two times function times the derivative of function with respect to theta one.",
+    "start_ms": 3851384,
+    "end_ms": 3862284,
+    "duration_ms": 10900,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3862.284,
+    "text": "And that's exactly what I'll do. Uh, and I'm assuming that this is this function f that I'm calling.",
+    "start_ms": 3862284,
+    "end_ms": 3867524,
+    "duration_ms": 5240,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3867.524,
+    "text": "Um, so I'm going to apply the chain rule exactly.",
+    "start_ms": 3867524,
+    "end_ms": 3870364,
+    "duration_ms": 2840,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3870.364,
+    "text": "So one over n times the summation of i from one up to n of the function y i minus theta zero minus theta one x i.",
+    "start_ms": 3870364,
+    "end_ms": 3880844,
+    "duration_ms": 10480,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3880.844,
+    "text": "Now the derivative. So what is the derivative of that green term with respect to theta one?",
+    "start_ms": 3880844,
+    "end_ms": 3886844,
+    "duration_ms": 6000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3888.312,
+    "text": "Yes. Negative x i is the derivative, right? So negative x i is my derivative right here.",
+    "start_ms": 3888312,
+    "end_ms": 3897352,
+    "duration_ms": 9040,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3897.352,
+    "text": "So I'm just going to go ahead simplify constants one more time.",
+    "start_ms": 3897352,
+    "end_ms": 3900272,
+    "duration_ms": 2920,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3900.272,
+    "text": "So here is going to give me, sorry, I missed it too.",
+    "start_ms": 3900272,
+    "end_ms": 3903312,
+    "duration_ms": 3040,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3903.312,
+    "text": "So it's two times f times whatever. So this is going to be negative 2 over n of the summation of i from 1 up to n of yi minus minus theta zero minus theta one x i times x i.",
+    "start_ms": 3903312,
+    "end_ms": 3921456,
+    "duration_ms": 18144,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3921.944,
+    "text": "Right. Look at both sides. Look at that function f thing that's in common between them.",
+    "start_ms": 3921944,
+    "end_ms": 3928264,
+    "duration_ms": 6320,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3928.264,
+    "text": "So one is effectively telling me that if I go ahead and set this to be equal to zero, one, the left hand side is effectively telling me that the summation of all of the residuals should be equal to zero.",
+    "start_ms": 3928264,
+    "end_ms": 3941904,
+    "duration_ms": 13640,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3942.296,
+    "text": "Because that's residual. And that's why they were canceling each other out.",
+    "start_ms": 3942296,
+    "end_ms": 3946720,
+    "duration_ms": 4424,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3946.72,
+    "text": "That's why they couldn't be a cost function. Right? This is telling me that at the point that theta zero is optimum, the summation of residuals should be equal to zero.",
+    "start_ms": 3946720,
+    "end_ms": 3955960,
+    "duration_ms": 9240,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3956.92,
+    "text": "And then the right hand side is basically telling me that The summation of residuals times x i's should be equal to zero.",
+    "start_ms": 3956920,
+    "end_ms": 3966528,
+    "duration_ms": 9608,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3967.48,
+    "text": "Right, we're going to get to that. And what I need to do right now is that I have two equations and I have two unknowns.",
+    "start_ms": 3967480,
+    "end_ms": 3974980,
+    "duration_ms": 7500,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3974.98,
+    "text": "And whether the unknowns that I have, so I have two equations, there is one unknown, teta zero and there is one unknown, teta one.",
+    "start_ms": 3974980,
+    "end_ms": 3982960,
+    "duration_ms": 7980,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3982.96,
+    "text": "I said both of them equal to zero and then I solve it for the optimum teta zero and optimum teta one and that will give me teta zero hat and teta one hat, which are the optimum values that we want.",
+    "start_ms": 3982960,
+    "end_ms": 3993920,
+    "duration_ms": 10960,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3993.92,
+    "text": "Again, you'll get this slide with animation and fancy, animation, so you will get a clean version of all of these.",
+    "start_ms": 3993920,
+    "end_ms": 4001580,
+    "duration_ms": 7660,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4001.58,
+    "text": "So this is where we left off. So remember, that was the equation from the left hand side.",
+    "start_ms": 4001580,
+    "end_ms": 4007020,
+    "duration_ms": 5440,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4007.02,
+    "text": "The second row is the equation from the right hand side.",
+    "start_ms": 4007020,
+    "end_ms": 4010340,
+    "duration_ms": 3320,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4010.34,
+    "text": "So the summation of residuals is equal to 0. Summation of residuals times xi equal to 0.",
+    "start_ms": 4010340,
+    "end_ms": 4015780,
+    "duration_ms": 5440,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4015.78,
+    "text": "What I need to do is I need to just go ahead and use these equations that I'm calling them estimating equations because I'm using them in order to estimate optimum theta i values in order to, I'll solve them in order to find out those optimum values exactly.",
+    "start_ms": 4015780,
+    "end_ms": 4033060,
+    "duration_ms": 17280,
+    "word_count": 49,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4033.72,
+    "text": "So let's go ahead and do that. So these are the two equations.",
+    "start_ms": 4033720,
+    "end_ms": 4038720,
+    "duration_ms": 5000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4038.72,
+    "text": "One over n times the summation of yi minus yi, i hat is equal to zero.",
+    "start_ms": 4038720,
+    "end_ms": 4043720,
+    "duration_ms": 5000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4043.72,
+    "text": "And then the second equation is on the right hand side.",
+    "start_ms": 4043720,
+    "end_ms": 4047720,
+    "duration_ms": 4000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4047.72,
+    "text": "What I'll do is I'll derive the first step. So deriving the first step means that what does it mean for this equation to be equal to zero?",
+    "start_ms": 4047720,
+    "end_ms": 4055720,
+    "duration_ms": 8000,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4055.72,
+    "text": "Is there any way that we can simplify it further?",
+    "start_ms": 4055720,
+    "end_ms": 4058720,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4058.72,
+    "text": "So what I'll do is I'll go ahead and try to...",
+    "start_ms": 4058720,
+    "end_ms": 4062720,
+    "duration_ms": 4000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4062.936,
+    "text": "The compose all of these tree terms that are inside the parentheses and inside the summation into separate terms.",
+    "start_ms": 4062936,
+    "end_ms": 4069816,
+    "duration_ms": 6880,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4069.816,
+    "text": "Meaning that what I'll do is I'll say that this equation is equal to 1 over n times the summation of i from 1 up to n of yi.",
+    "start_ms": 4069816,
+    "end_ms": 4079416,
+    "duration_ms": 9600,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4079.64,
+    "text": "That's the first term. And then I'll stay minus 1 over n times the summation of i from 1 up to n of teta 0 hat.",
+    "start_ms": 4079640,
+    "end_ms": 4089640,
+    "duration_ms": 10000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4090.04,
+    "text": "Right? And then minus... 1 over n times this dimension of i from 1 up to n of theta 1 hat x i equal to 0.",
+    "start_ms": 4090040,
+    "end_ms": 4101376,
+    "duration_ms": 11336,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4103.128,
+    "text": "Can someone tell me why my tetas right now turned into tetahats?",
+    "start_ms": 4103128,
+    "end_ms": 4108408,
+    "duration_ms": 5280,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4115.16,
+    "text": "Because it's optimized to zero. Remember in the previous slide when I was on the previous slide here.",
+    "start_ms": 4115160,
+    "end_ms": 4122160,
+    "duration_ms": 7000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4123.832,
+    "text": "Actually, yeah, right here when I was driving all of these values, the tetah 0 and tetah 1, they were just normal tetah 0 and tetah 1 of the function.",
+    "start_ms": 4123832,
+    "end_ms": 4133152,
+    "duration_ms": 9320,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4133.152,
+    "text": "I actually derived it and calculated the partial derivative with respect to tetah 0, with respect to tetah 1.",
+    "start_ms": 4133152,
+    "end_ms": 4140392,
+    "duration_ms": 7240,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4140.392,
+    "text": "At the point that you actually set it equal to 0, which is what we have right here, I set this equal to 0, then tetah 0 will become tetah 0 hat, because that's the optimum theta 0.",
+    "start_ms": 4140392,
+    "end_ms": 4154612,
+    "duration_ms": 14220,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4154.612,
+    "text": "And theta 1 will become theta 1 hat, because I'm also setting this one equal to 0.",
+    "start_ms": 4154612,
+    "end_ms": 4161692,
+    "duration_ms": 7080,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4161.692,
+    "text": "So that's at the point that you're calculating the optimum and you're finding the exact optimum values by setting the partial derivatives equal to 0, that's when theta 0 and theta 1 will turn into theta 0 hat and theta 1 hat.",
+    "start_ms": 4161692,
+    "end_ms": 4175772,
+    "duration_ms": 14080,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4175.772,
+    "text": "Let me go back to this place that we were.",
+    "start_ms": 4175772,
+    "end_ms": 4178252,
+    "duration_ms": 2480,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4178.252,
+    "text": "So that's why I have theta 0 hat and theta one hat right here as I'm solving.",
+    "start_ms": 4178252,
+    "end_ms": 4184012,
+    "duration_ms": 5760,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4184.012,
+    "text": "And then at the end, we'll get to what is the actual value for theta zero hat and what is the actual value for theta one hat.",
+    "start_ms": 4184012,
+    "end_ms": 4190932,
+    "duration_ms": 6920,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4190.932,
+    "text": "So let me continue. What is the value? What is the simplified version of one over n times summation of yi values?",
+    "start_ms": 4190932,
+    "end_ms": 4200012,
+    "duration_ms": 9080,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4200.6,
+    "text": "That's why barn, that's average of why values. Right? The other thing, what is the simplified version of this?",
+    "start_ms": 4200600,
+    "end_ms": 4208800,
+    "duration_ms": 8200,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4208.8,
+    "text": "Teta 0 hat is a constant value. I'm summing it up n times, that this is going to be n times Teta 0 hat, and then I'm multiplying 1 over n.",
+    "start_ms": 4208800,
+    "end_ms": 4219240,
+    "duration_ms": 10440,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4219.512,
+    "text": "So this is equal to just teta zero hat. So the second term is teta zero hat.",
+    "start_ms": 4219512,
+    "end_ms": 4225512,
+    "duration_ms": 6000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4226.264,
+    "text": "And then what is the last term? So the last term, there's no easy way to simplify the except for saying that I'm going to pull out theta one hat outside of the summation because it's a constant value.",
+    "start_ms": 4226264,
+    "end_ms": 4239529,
+    "duration_ms": 13265,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4239.529,
+    "text": "So then I'll have theta one hat times the summation of i from one up to n of x i's, which this one right here is also going to be x bar because that's the Sorry, there's one over n.",
+    "start_ms": 4239529,
+    "end_ms": 4253064,
+    "duration_ms": 13535,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4253.064,
+    "text": "One over n times the summation of x i's is going to be x bar.",
+    "start_ms": 4253064,
+    "end_ms": 4256664,
+    "duration_ms": 3600,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4256.664,
+    "text": "Again, setting it equal to zero, kind of cleaning up what I wrote here.",
+    "start_ms": 4256664,
+    "end_ms": 4260744,
+    "duration_ms": 4080,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4260.744,
+    "text": "y bar minus teta zero, hat minus. PEPTA 1 Times X bar is going to be equal to zero.",
+    "start_ms": 4260744,
+    "end_ms": 4272648,
+    "duration_ms": 11904,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4275.928,
+    "text": "Right? What does this tell you? This one is telling you that remember when I was calculating the y interest I'm always saying that teta zero hat is equal to y bar minus a slope times x bar.",
+    "start_ms": 4275928,
+    "end_ms": 4290312,
+    "duration_ms": 14384,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4290.312,
+    "text": "This is exactly that. This is deriving exactly the same equation for the teta zero hat that we had from before.",
+    "start_ms": 4290312,
+    "end_ms": 4297192,
+    "duration_ms": 6880,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4296.914,
+    "text": "just drive the true. The crazy sequence of defining the simple linear regression to going through the finding the cost function we chose mean a squared error as our cost function.",
+    "start_ms": 4296914,
+    "end_ms": 4308248,
+    "duration_ms": 11334,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4308.248,
+    "text": "We calculated partial derivatives, we set partial derivatives to equal to zero in order to find out what is the optimum tetaheus zero valiant that's a one value.",
+    "start_ms": 4308248,
+    "end_ms": 4317248,
+    "duration_ms": 9000,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4317.248,
+    "text": "And then it just happens that if I simplify the first function or the first derivation, it's going to tell me that your theta 0 hat is going to be equal to y bar minus the slope times x bar, which is what we know from a slight tree of today's lecture.",
+    "start_ms": 4317248,
+    "end_ms": 4331648,
+    "duration_ms": 14400,
+    "word_count": 52,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4331.648,
+    "text": "But now we systematically drive that and now we have a formal way of defining the objective function.",
+    "start_ms": 4331648,
+    "end_ms": 4337568,
+    "duration_ms": 5920,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4337.568,
+    "text": "The only thing that we need to now do is to figure out what is this theta 1 hat.",
+    "start_ms": 4337568,
+    "end_ms": 4342808,
+    "duration_ms": 5240,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4342.808,
+    "text": "But we still have two equations. We just looked at one of the equations.",
+    "start_ms": 4342808,
+    "end_ms": 4347048,
+    "duration_ms": 4240,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4347.048,
+    "text": "If we combine the two equations together, which I'm not going to try to derive it manually, but I'm going to walk you through the steps, is...",
+    "start_ms": 4347048,
+    "end_ms": 4356248,
+    "duration_ms": 9200,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4356.6,
+    "text": "It's going to help us to find out Teta 1 hat.",
+    "start_ms": 4356600,
+    "end_ms": 4359740,
+    "duration_ms": 3140,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4359.74,
+    "text": "The trick that we're going to use here is that we're going to take equation 2.",
+    "start_ms": 4359740,
+    "end_ms": 4363540,
+    "duration_ms": 3800,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4363.54,
+    "text": "We're going to subtract equation 1 times x bar from it.",
+    "start_ms": 4363540,
+    "end_ms": 4367940,
+    "duration_ms": 4400,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4367.94,
+    "text": "This is just an algebraic trick that you don't need to know and you should not be expected to know in the exams.",
+    "start_ms": 4367940,
+    "end_ms": 4374280,
+    "duration_ms": 6340,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4374.28,
+    "text": "But this is what I'm using in order to derive how we can find the Teta 1 hat.",
+    "start_ms": 4374280,
+    "end_ms": 4379840,
+    "duration_ms": 5560,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4379.84,
+    "text": "So if I go ahead and do the calculations, So what you're seeing is that this is equation 2 right here that we're seeing.",
+    "start_ms": 4379840,
+    "end_ms": 4387560,
+    "duration_ms": 7720,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4387.56,
+    "text": "This term right here is the equation 1 multiplied with x bar or the average of x.",
+    "start_ms": 4387560,
+    "end_ms": 4394040,
+    "duration_ms": 6480,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4394.04,
+    "text": "You can kind of guess why I multiplied it with x bar.",
+    "start_ms": 4394040,
+    "end_ms": 4397240,
+    "duration_ms": 3200,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4397.24,
+    "text": "This is because the equation 2 has that x i term dangling there and it just need to have something of the nature of x for to accompany it.",
+    "start_ms": 4397240,
+    "end_ms": 4408839,
+    "duration_ms": 11599,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4408.839,
+    "text": "And that's exactly what I'm using it. So what I can do right now is going to be I'm factoring out all of the y i's minus y i hats because that's the term that's in common between them.",
+    "start_ms": 4408839,
+    "end_ms": 4419080,
+    "duration_ms": 10241,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4419.08,
+    "text": "So then this is how this is going to turn out to be y i minus y i hat and then x i minus x x bar and then multiplied some up average it's equal to zero.",
+    "start_ms": 4419080,
+    "end_ms": 4432079,
+    "duration_ms": 12999,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4432.888,
+    "text": "I'm going to take one more step. I'm going to substitute y, y, i hat here with the equation for y, i hat.",
+    "start_ms": 4432888,
+    "end_ms": 4442388,
+    "duration_ms": 9500,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4442.388,
+    "text": "So the optimum y i hat is going to be theta zero plus theta one times x i.",
+    "start_ms": 4442388,
+    "end_ms": 4448028,
+    "duration_ms": 5640,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4448.028,
+    "text": "So I'm going to use that. What I'm going to use again is going to be I'm going to replace theta zero with the equation that we just derived.",
+    "start_ms": 4448028,
+    "end_ms": 4457268,
+    "duration_ms": 9240,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4457.268,
+    "text": "Right? The equation for theta zero was that it's y bar minus slope, which is set to 1 hat times x bar.",
+    "start_ms": 4457268,
+    "end_ms": 4465588,
+    "duration_ms": 8320,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4466.136,
+    "text": "So now what you're seeing is that I have one equation.",
+    "start_ms": 4466136,
+    "end_ms": 4470036,
+    "duration_ms": 3900,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4470.036,
+    "text": "All of the variables are known except for a teta one hat.",
+    "start_ms": 4470036,
+    "end_ms": 4475136,
+    "duration_ms": 5100,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4475.136,
+    "text": "And what I can do is I can just keep simplifying it in order to find out what is teta one hat from this equation.",
+    "start_ms": 4475136,
+    "end_ms": 4481736,
+    "duration_ms": 6600,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4481.736,
+    "text": "So if I keep simplifying, which I'm not going to go through the steps, it's going to give us this equation right here.",
+    "start_ms": 4481736,
+    "end_ms": 4489336,
+    "duration_ms": 7600,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4489.624,
+    "text": "So what is this equation? This equation right here is telling me that, uh, okay, so you have yi minus y bar, you have xi minus x bar, and the right hand side you have, teta 1 hat multiplied with the, with the variance of x.",
+    "start_ms": 4489624,
+    "end_ms": 4504664,
+    "duration_ms": 15040,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4505.544,
+    "text": "Um, so kind of a reminder from what we know from correlation, you know that the correlation was equal to this equation right here, which sounds similar to what we have in the left hand side.",
+    "start_ms": 4505544,
+    "end_ms": 4516024,
+    "duration_ms": 10480,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4516.024,
+    "text": "So what we can do is we can say that the left-hand side right now is going to be equal to r times a standard deviation of x times a standard deviation of y because the only thing that this this equation is missing compared to this equation is these denominators right here.",
+    "start_ms": 4516024,
+    "end_ms": 4532744,
+    "duration_ms": 16720,
+    "word_count": 53,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4532.744,
+    "text": "So the left-hand side of this equation is r times a standard deviation of x times a standard deviation of y.",
+    "start_ms": 4532744,
+    "end_ms": 4537904,
+    "duration_ms": 5160,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4537.904,
+    "text": "The left-hand side is my theta one hat times the variance or a standard deviation in the square of x.",
+    "start_ms": 4537904,
+    "end_ms": 4545304,
+    "duration_ms": 7400,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4545.304,
+    "text": "And then what's happening here is that I only have one unknown.",
+    "start_ms": 4545304,
+    "end_ms": 4548503,
+    "duration_ms": 3199,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4548.503,
+    "text": "I can directly solve it. Now that the one hat is going to be equal to our times the standard division of x over a standard division of y.",
+    "start_ms": 4548503,
+    "end_ms": 4556184,
+    "duration_ms": 7681,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4556.184,
+    "text": "This kind of sounds like magic, but now we formally define how actual machine learning people do modeling.",
+    "start_ms": 4556184,
+    "end_ms": 4563904,
+    "duration_ms": 7720,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4563.904,
+    "text": "They don't guess. They basically have a mathematical objective function that they define.",
+    "start_ms": 4563904,
+    "end_ms": 4569383,
+    "duration_ms": 5479,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4569.383,
+    "text": "They define the family of functions or the model pattern, which is what we did, but define what is the equation for simple linear regression.",
+    "start_ms": 4569383,
+    "end_ms": 4577144,
+    "duration_ms": 7761,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4577.144,
+    "text": "But we said that, okay, depending on the tetasero and tetabone value, it's going to be a different function or a different line that we're mapping.",
+    "start_ms": 4577144,
+    "end_ms": 4584744,
+    "duration_ms": 7600,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4584.744,
+    "text": "How do we find out how good that function is with defined the cost function?",
+    "start_ms": 4584744,
+    "end_ms": 4589304,
+    "duration_ms": 4560,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4589.304,
+    "text": "We actually use minus squared error, we actually venture calculating partial derivatives in order to find out, Find out the optimum values for teta 0 and teta 1, which got us the teta 0 hat and teta 1 hat that we have.",
+    "start_ms": 4589304,
+    "end_ms": 4603888,
+    "duration_ms": 14584,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4605.016,
+    "text": "So this is where we are. What we got at the end was that was the two kind of final notes that I told you when I was doing the derivation.",
+    "start_ms": 4605016,
+    "end_ms": 4614016,
+    "duration_ms": 9000,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4614.016,
+    "text": "I said that the average of residuals is equal to zero or the summation of residuals is equal to zero.",
+    "start_ms": 4614016,
+    "end_ms": 4620016,
+    "duration_ms": 6000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4620.016,
+    "text": "And I also said that the residual multiplied with the x i is equal to zero.",
+    "start_ms": 4620016,
+    "end_ms": 4626016,
+    "duration_ms": 6000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4626.016,
+    "text": "I think on Tuesday of next week, we're going to talk about the fact that this means that the residuals are orthogonal to the predicted variables.",
+    "start_ms": 4626016,
+    "end_ms": 4634432,
+    "duration_ms": 8416,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4634.432,
+    "text": "And we're going to see what that means. This is two vectors are orthogonal to each other and that's how the shape of the line is always is the terministically calculated once you have all of the data points that you have.",
+    "start_ms": 4634432,
+    "end_ms": 4647936,
+    "duration_ms": 13504,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4648.76,
+    "text": "We have two more minutes, but I just want to throw it out because you need for you need this for discussions that are happening today and that's about evaluating the model.",
+    "start_ms": 4648760,
+    "end_ms": 4657760,
+    "duration_ms": 9000,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4657.76,
+    "text": "Your TAs are going to talk about evaluating the model a little bit in discussions today, but effectively that's the last step of the data of the modeling that we're going to go through.",
+    "start_ms": 4657760,
+    "end_ms": 4668760,
+    "duration_ms": 11000,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4668.76,
+    "text": "There are three things that we're doing generally even we're going to evaluate how well the model is performing.",
+    "start_ms": 4668760,
+    "end_ms": 4674760,
+    "duration_ms": 6000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4674.76,
+    "text": "performing. The first thing is that a lot of time we would go ahead and visualize the data and we will compute the statistics.",
+    "start_ms": 4674760,
+    "end_ms": 4681393,
+    "duration_ms": 6633,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4681.393,
+    "text": "Again, we will calculate the correlation coefficient if the correlation coefficient is acceptable then we do the linear regression analysis.",
+    "start_ms": 4681393,
+    "end_ms": 4689680,
+    "duration_ms": 8287,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4689.68,
+    "text": "The other way that we evaluate the performance of the model is that we will calculate mean a squared error and we will calculate the square root of that.",
+    "start_ms": 4689680,
+    "end_ms": 4697350,
+    "duration_ms": 7670,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4697.35,
+    "text": "That's called root minus the square root error. And the reason that we calculate the square root of it is because we want to turn the error into the original unit of the data.",
+    "start_ms": 4697350,
+    "end_ms": 4710480,
+    "duration_ms": 13130,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4710.48,
+    "text": "Because the error is in the second order. It's when we're calculating a square root of the errors, we were squaring the error.",
+    "start_ms": 4710480,
+    "end_ms": 4719200,
+    "duration_ms": 8720,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4719.2,
+    "text": "So the unit was in the squared units. So by taking a square root, we're going back to the original unit of the data.",
+    "start_ms": 4719200,
+    "end_ms": 4725040,
+    "duration_ms": 5840,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4725.04,
+    "text": "So that value is going to be meaningful if you're doing any estimation.",
+    "start_ms": 4725040,
+    "end_ms": 4729440,
+    "duration_ms": 4400,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4729.44,
+    "text": "The last thing that we will do, and this is what you will see in discussions, is we will visualize your residuals.",
+    "start_ms": 4729440,
+    "end_ms": 4737320,
+    "duration_ms": 7880,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4737.32,
+    "text": "So when we go ahead and visualize residuals, what we want to see is that if these are the four different data sets that I'm dealing with and I'm passing the regression line through them, you can kind of see that the regression line matches one or two of them perfectly, but it's not a suitable choice for the rest of them.",
+    "start_ms": 4737320,
+    "end_ms": 4755480,
+    "duration_ms": 18160,
+    "word_count": 62,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4755.48,
+    "text": "If you go ahead and visualize the residual, meaning that on the y-axis, you plot the residuals and the x-axis, you plot x, we don't want this residual plot to have any kind of pattern.",
+    "start_ms": 4755480,
+    "end_ms": 4768640,
+    "duration_ms": 13160,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4768.64,
+    "text": "Which is what you're seeing in this first case that residual plot does not show any pattern, but you're seeing that residual plot absolutely shows the pattern, meaning that linear regression was not a good choice.",
+    "start_ms": 4768640,
+    "end_ms": 4780720,
+    "duration_ms": 12080,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4780.72,
+    "text": "Or residual plot, in this case also shows the pattern.",
+    "start_ms": 4780720,
+    "end_ms": 4783640,
+    "duration_ms": 2920,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4783.64,
+    "text": "also in this case shows the pattern, right? So what we want at the end is that once you build the residual plot, you really want to make sure that the errors are kind of randomly distributed and equally distributed across X and also across the residual kind of dimension.",
+    "start_ms": 4783640,
+    "end_ms": 4800119,
+    "duration_ms": 16479,
+    "word_count": 50,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4800.119,
+    "text": "Your T's are going to more talk about this a little bit more in the discussion.",
+    "start_ms": 4800119,
+    "end_ms": 4804600,
+    "duration_ms": 4481,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4804.6,
+    "text": "Thank you for coming. We're going to talk about constant model and more loss functions on Thursday.",
+    "start_ms": 4804600,
+    "end_ms": 4809520,
+    "duration_ms": 4920,
+    "word_count": 17,
+    "avg_confidence": 90
+  }
+]

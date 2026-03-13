@@ -1,0 +1,5159 @@
+[
+  {
+    "timestamp": 0.0,
+    "text": "Thank you. Alright. Good morning, everyone. Welcome back. Today we have a very exciting lecture.",
+    "start_ms": 0,
+    "end_ms": 10188,
+    "duration_ms": 10188,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 10.188,
+    "text": "So today we're starting SQL and also kind of a heads up on how you're going to expect the flow of the lecture going, or generally the structure of the course going in the second half of the course is that every week we're going to change topics.",
+    "start_ms": 10188,
+    "end_ms": 24024,
+    "duration_ms": 13836,
+    "word_count": 48,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 24.024,
+    "text": "So we're going to go into different tools and we're going to go into different machine learning algorithms and so on and so forth up until the last week of the of the last week of the semester.",
+    "start_ms": 24024,
+    "end_ms": 34128,
+    "duration_ms": 10104,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 34.128,
+    "text": "So things are going to be a little bit more fun compared to the first half of data 100.",
+    "start_ms": 34128,
+    "end_ms": 41288,
+    "duration_ms": 7160,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 41.288,
+    "text": "So what we did previously was, if you remember, as part of Project A2, you have completed the Meet-Somester Survey.",
+    "start_ms": 41288,
+    "end_ms": 50208,
+    "duration_ms": 8920,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 50.208,
+    "text": "We actually went through all the responses and all the written feedback and all of the numerical feedback that you have given us.",
+    "start_ms": 50208,
+    "end_ms": 56528,
+    "duration_ms": 6320,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 56.528,
+    "text": "And I have tree slides as or forest slides as a summary of the things that I want to share with you.",
+    "start_ms": 56528,
+    "end_ms": 63968,
+    "duration_ms": 7440,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 63.968,
+    "text": "So there is one thing is that when we ask this is kind of close to after midterm and also by the time that you submitted A2, was that which topic you're most comfortable with, which topics do you think are confusing?",
+    "start_ms": 63968,
+    "end_ms": 79888,
+    "duration_ms": 15920,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 79.888,
+    "text": "So most of the people by now are comfortable with pandas.",
+    "start_ms": 79888,
+    "end_ms": 82368,
+    "duration_ms": 2480,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 82.368,
+    "text": "That's expected. So as time goes by, I'll look those past topics.",
+    "start_ms": 82368,
+    "end_ms": 86088,
+    "duration_ms": 3720,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 86.088,
+    "text": "You will be more comfortable with them because you will be using them in later kind of homeworks on projects.",
+    "start_ms": 86088,
+    "end_ms": 91448,
+    "duration_ms": 5360,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 91.448,
+    "text": "So that is expected. At the time of the survey, people were struggling with great endocent.",
+    "start_ms": 91448,
+    "end_ms": 97448,
+    "duration_ms": 6000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 97.448,
+    "text": "That is also expected. I also like that the mid semester survey in the past two semesters, exactly the same distribution, great endocent was the most challenging part right after the midterm.",
+    "start_ms": 97448,
+    "end_ms": 109048,
+    "duration_ms": 11600,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 109.048,
+    "text": "But it will get better. Again, it will make sense and topics will sink in as we go through more advanced topics.",
+    "start_ms": 109048,
+    "end_ms": 115448,
+    "duration_ms": 6400,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 115.448,
+    "text": "every kind of lecture on every week. There are some feedbacks that relate to some action items for us.",
+    "start_ms": 115448,
+    "end_ms": 123848,
+    "duration_ms": 8400,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 123.848,
+    "text": "So this kind of semester, we have less action items, because it looks like the decor is going smoothly compared to the previous semesters that we had.",
+    "start_ms": 123848,
+    "end_ms": 132648,
+    "duration_ms": 8800,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 132.648,
+    "text": "There was some comments about discussion, many lecture being really still a bit late, so we'll try to work on releasing those kind of sooner, so you can use that when you're going to office hours, when you're going to discussions.",
+    "start_ms": 132648,
+    "end_ms": 147848,
+    "duration_ms": 15200,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 147.848,
+    "text": "There was a request on distributing office hours a little bit more.",
+    "start_ms": 147848,
+    "end_ms": 151688,
+    "duration_ms": 3840,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 151.688,
+    "text": "In the week, right now this semester, what I'm seeing in terms of the number of tickets that we see online and also the number of students are coming to office hours in Warren Hall is that our office hours are not being utilized by you all.",
+    "start_ms": 151688,
+    "end_ms": 167288,
+    "duration_ms": 15600,
+    "word_count": 47,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 167.288,
+    "text": "So utilize office hours, but we're also going to try to distribute a little bit more during the weeks so that we have...",
+    "start_ms": 167288,
+    "end_ms": 174568,
+    "duration_ms": 7280,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 175.128,
+    "text": "We have more coverage of all the times that you're hopefully needing some help from one of the TAs.",
+    "start_ms": 175128,
+    "end_ms": 181828,
+    "duration_ms": 6700,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 181.828,
+    "text": "There was an interesting set of comments about this slide.",
+    "start_ms": 181828,
+    "end_ms": 184628,
+    "duration_ms": 2800,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 184.628,
+    "text": "It can be more challenging. We're going to give you the try.",
+    "start_ms": 184628,
+    "end_ms": 187528,
+    "duration_ms": 2900,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 187.528,
+    "text": "So this slide is going to be a little bit more challenging.",
+    "start_ms": 187528,
+    "end_ms": 189528,
+    "duration_ms": 2000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 189.528,
+    "text": "We're going to give you more time to complete this slide in the lecture.",
+    "start_ms": 189528,
+    "end_ms": 193028,
+    "duration_ms": 3500,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 193.028,
+    "text": "So meaning that we will stay more on each one of the slide questions.",
+    "start_ms": 193028,
+    "end_ms": 197128,
+    "duration_ms": 4100,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 197.128,
+    "text": "There was a comment and also a few people came to my office.",
+    "start_ms": 197128,
+    "end_ms": 200928,
+    "duration_ms": 3800,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 200.928,
+    "text": "I heard they were concerned about written homework submission, meaning that they didn't select pages and they got zero and whatnot.",
+    "start_ms": 200928,
+    "end_ms": 207963,
+    "duration_ms": 7035,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 207.963,
+    "text": "So there was a post last night as a result of our discussion or staff meeting and we decided that we're going to accommodate one homework for every student that didn't select pages for only the recent homeworks.",
+    "start_ms": 207963,
+    "end_ms": 222073,
+    "duration_ms": 14110,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 222.073,
+    "text": "That is, I believe homework one and then that is five a and five b.",
+    "start_ms": 222073,
+    "end_ms": 227396,
+    "duration_ms": 5323,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 227.396,
+    "text": "So if that's you, that is posted on And there's a Google Farm that you fill out.",
+    "start_ms": 227396,
+    "end_ms": 232568,
+    "duration_ms": 5172,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 232.568,
+    "text": "You let us know. We'll go ahead and grade it.",
+    "start_ms": 232568,
+    "end_ms": 234928,
+    "duration_ms": 2360,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 234.928,
+    "text": "So these are immediate action items that you're looking at.",
+    "start_ms": 234928,
+    "end_ms": 237728,
+    "duration_ms": 2800,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 238.072,
+    "text": "We ask you what are you most looking forward to in the second half of the semester.",
+    "start_ms": 238072,
+    "end_ms": 243592,
+    "duration_ms": 5520,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 243.592,
+    "text": "Not surprisingly, people are interested in seeing more ML topics, so we will see more ML topics actually every week.",
+    "start_ms": 243592,
+    "end_ms": 250872,
+    "duration_ms": 7280,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 250.872,
+    "text": "In fact, we're going to see one of my most favorite ML algorithms.",
+    "start_ms": 250872,
+    "end_ms": 255632,
+    "duration_ms": 4760,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 255.632,
+    "text": "That's logistic regression, which is kind of the core and kind of the backbone of understanding neural networks.",
+    "start_ms": 255632,
+    "end_ms": 261452,
+    "duration_ms": 5820,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 261.452,
+    "text": "So, we're going to teach you logistic regression pretty soon.",
+    "start_ms": 261452,
+    "end_ms": 264592,
+    "duration_ms": 3140,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 264.592,
+    "text": "I believe next week is the Legislature Congressional week. And then we're gonna also go into some more ML algorithms such as clustering and whatnot.",
+    "start_ms": 264592,
+    "end_ms": 273512,
+    "duration_ms": 8920,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 273.512,
+    "text": "People also said that they're excited about large language models.",
+    "start_ms": 273512,
+    "end_ms": 276951,
+    "duration_ms": 3439,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 276.951,
+    "text": "There is one lecture or like half of a lecture talking about large language models and what part of large language model training and fine tuning and whatnot would you understand with your knowledge and data 100.",
+    "start_ms": 276951,
+    "end_ms": 289872,
+    "duration_ms": 12921,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 289.872,
+    "text": "So we're gonna cover that in the last lecture up the semester and some students were excited about SQL.",
+    "start_ms": 289872,
+    "end_ms": 297032,
+    "duration_ms": 7160,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 297.032,
+    "text": "Yes, this week we're going to cover SQL, so we're going to see how that goes.",
+    "start_ms": 297032,
+    "end_ms": 301312,
+    "duration_ms": 4280,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 301.312,
+    "text": "And we're going to do a homework and a lab on SQL as well.",
+    "start_ms": 301312,
+    "end_ms": 305792,
+    "duration_ms": 4480,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 305.792,
+    "text": "So we appreciate all the honest feedback. Both on Ed and Elsan meet semester survey.",
+    "start_ms": 305792,
+    "end_ms": 311032,
+    "duration_ms": 5240,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 311.032,
+    "text": "Please feel free to reach out to us through Instructors email account.",
+    "start_ms": 311032,
+    "end_ms": 314912,
+    "duration_ms": 3880,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 314.912,
+    "text": "So there's data 100 data instructors at Berkeley.edu or come to our office hours.",
+    "start_ms": 314912,
+    "end_ms": 320192,
+    "duration_ms": 5280,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 320.192,
+    "text": "So if you have concerns, if you don't want to necessarily post things online or email, we're also happy to talk to you in office hours.",
+    "start_ms": 320192,
+    "end_ms": 330552,
+    "duration_ms": 10360,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 330.552,
+    "text": "Our student support team is also available to schedule one-on-one meetings with a student.",
+    "start_ms": 330552,
+    "end_ms": 336392,
+    "duration_ms": 5840,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 336.392,
+    "text": "If you want to discuss something with the TA's and you don't necessarily want to talk to instructors.",
+    "start_ms": 336392,
+    "end_ms": 342712,
+    "duration_ms": 6320,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 342.712,
+    "text": "I would remind you of different resources. Top of the list is office hours.",
+    "start_ms": 342712,
+    "end_ms": 347632,
+    "duration_ms": 4920,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 347.632,
+    "text": "Go to office hours. Office hours, even if you don't have questions for the TA's, go to Office hours and build your network, because those are going to be people that you're gonna see in later courses.",
+    "start_ms": 347632,
+    "end_ms": 356832,
+    "duration_ms": 9200,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 356.832,
+    "text": "You're gonna work with them in the screen, grad the school and whatnot.",
+    "start_ms": 356832,
+    "end_ms": 360072,
+    "duration_ms": 3240,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 360.072,
+    "text": "So build your network, go to Office hours, ask questions, learn from the experience of the TA's that we have.",
+    "start_ms": 360072,
+    "end_ms": 365272,
+    "duration_ms": 5200,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 365.272,
+    "text": "You really hand pick the TA's. So you can think about like we have best of the best students that we can hire for the course staff.",
+    "start_ms": 365272,
+    "end_ms": 373232,
+    "duration_ms": 7960,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 373.232,
+    "text": "So really try to network with them and learn from them.",
+    "start_ms": 373232,
+    "end_ms": 376632,
+    "duration_ms": 3400,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 376.632,
+    "text": "either in the context of the course or outside of the course.",
+    "start_ms": 376632,
+    "end_ms": 379472,
+    "duration_ms": 2840,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 380.712,
+    "text": "Go to discussion sections, we have course notes, we have debugging notes and then we also have discussion of many lectures.",
+    "start_ms": 380712,
+    "end_ms": 388672,
+    "duration_ms": 7960,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 388.672,
+    "text": "They're very helpful. We're not gonna have many lectures in the beginning of each one of the discussions so that you have more time working through the worksheet that you have, but make sure that you watch mini lecture before going to the discussion section.",
+    "start_ms": 388672,
+    "end_ms": 401312,
+    "duration_ms": 12640,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 401.312,
+    "text": "If you're comfortable with the lecture and you watch lectures before you go to the discussion, That's also fine.",
+    "start_ms": 401312,
+    "end_ms": 406712,
+    "duration_ms": 5400,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 406.712,
+    "text": "So it is kind of a condensed summary of the lectures that are covered in that specific discussion.",
+    "start_ms": 406712,
+    "end_ms": 412352,
+    "duration_ms": 5640,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 412.536,
+    "text": "Um. Utilize Ed. If you have questions, don't email. Utilize Ed.",
+    "start_ms": 412536,
+    "end_ms": 417744,
+    "duration_ms": 5208,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 417.744,
+    "text": "Make a person Ed. You know that there is Edison that you can give consent to so that you can respond automatically to your not automatically.",
+    "start_ms": 417744,
+    "end_ms": 426814,
+    "duration_ms": 9070,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 426.814,
+    "text": "It can generate the response to your question based on the historical data and based on the context of the course that it has.",
+    "start_ms": 426814,
+    "end_ms": 434750,
+    "duration_ms": 7936,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 434.75,
+    "text": "And then a TA is going to review it, make sure that it's correct, make sure that it's accurate, make sure that it covers everything and then they'll release it to you.",
+    "start_ms": 434750,
+    "end_ms": 442653,
+    "duration_ms": 7903,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 442.653,
+    "text": "It will help us move through all the questions a little bit faster, so consider that.",
+    "start_ms": 442653,
+    "end_ms": 447320,
+    "duration_ms": 4667,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 447.864,
+    "text": "as well. We know that life happens if there is any issue that you want to bring up with us.",
+    "start_ms": 447864,
+    "end_ms": 454336,
+    "duration_ms": 6472,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 454.336,
+    "text": "Again, you can fill out the Google form. The Google form is additional accommodations form so you can request extension.",
+    "start_ms": 454336,
+    "end_ms": 462336,
+    "duration_ms": 8000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 462.336,
+    "text": "You can talk about any like illnesses that you experience that for whatever reason you might want to have any kind of support in the course.",
+    "start_ms": 462336,
+    "end_ms": 470336,
+    "duration_ms": 8000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 470.336,
+    "text": "Or even you just want to talk to someone and strategize how you can study for the final example.",
+    "start_ms": 470336,
+    "end_ms": 476336,
+    "duration_ms": 6000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 476.336,
+    "text": "That's another thing. Did I forget one last thing? So there was one thing from the previous slide that a lot of people said that have a fair final exam.",
+    "start_ms": 476336,
+    "end_ms": 485056,
+    "duration_ms": 8720,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 485.056,
+    "text": "Yes, we're working on it. We actually right after the midterm, we started writing the final exam and we're testing it rigorously.",
+    "start_ms": 485056,
+    "end_ms": 492656,
+    "duration_ms": 7600,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 492.656,
+    "text": "So hopefully the final exam is going to be really good and should be super clear and good to go when you're taking it.",
+    "start_ms": 492656,
+    "end_ms": 501536,
+    "duration_ms": 8880,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 501.912,
+    "text": "All right. So with that out of the way, if there are any questions about logistics or anything that I shared, feel free to ask on Slido.",
+    "start_ms": 501912,
+    "end_ms": 509552,
+    "duration_ms": 7640,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 509.552,
+    "text": "I'm going to start the topic of SQL. SQL is really interesting.",
+    "start_ms": 509552,
+    "end_ms": 512969,
+    "duration_ms": 3417,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 512.969,
+    "text": "So the first half of today's lecture, I'm going to actually talk about why we need to go through SQL and why we need to have databases and learn about databases.",
+    "start_ms": 512969,
+    "end_ms": 524017,
+    "duration_ms": 11048,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 524.017,
+    "text": "And kind of it is moving us away from pandas and Python programming that we have been doing before.",
+    "start_ms": 524017,
+    "end_ms": 530523,
+    "duration_ms": 6506,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 530.523,
+    "text": "So remember that I was here the first four lectures of Native 100 teaching Japan does this is going to be again me here teaching you a second programming language.",
+    "start_ms": 530523,
+    "end_ms": 539192,
+    "duration_ms": 8669,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 539.192,
+    "text": "But before I do that I will try to tell you why it's very important and why it's really useful in your life and in your job or grad school as well.",
+    "start_ms": 539192,
+    "end_ms": 556872,
+    "duration_ms": 17680,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 556.718,
+    "text": "previously, what you'd seen was that we would hand you a data in a CSV format or in JSON format or whatever, and then you would be able to read it and parse it into a data frame, and you would use that data frame in order to do any kind of processing that you had.",
+    "start_ms": 556718,
+    "end_ms": 571892,
+    "duration_ms": 15174,
+    "word_count": 56,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 571.892,
+    "text": "Usually the data sets that we shared were kind of smaller in size compared to, for example, gigabytes and terabytes of data that you might need to deal with in real life scenarios.",
+    "start_ms": 571892,
+    "end_ms": 582532,
+    "duration_ms": 10640,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 582.532,
+    "text": "So therefore, what we have had so far is not going to be scalable and we need to have different new mechanisms in order to process large amounts of data.",
+    "start_ms": 582532,
+    "end_ms": 593092,
+    "duration_ms": 10560,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 592.952,
+    "text": "What you also saw every time it gave you a data, we did not update the data, right?",
+    "start_ms": 592952,
+    "end_ms": 598192,
+    "duration_ms": 5240,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 598.192,
+    "text": "So the data was the static. So that is very important for you to decide what kind of technology you want to use in order to load the data and read the data.",
+    "start_ms": 598192,
+    "end_ms": 609192,
+    "duration_ms": 11000,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 609.192,
+    "text": "So we had the static data that was the small, but then in real life scenario, we have the data that is changing.",
+    "start_ms": 609192,
+    "end_ms": 615032,
+    "duration_ms": 5840,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 615.032,
+    "text": "So we have the snapshots with different frequency of the data and then the data set is going to be large.",
+    "start_ms": 615032,
+    "end_ms": 620512,
+    "duration_ms": 5480,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 620.512,
+    "text": "of those cases, we really want to move towards a technology that is really efficient in storing the data, and it can efficiently manage the data, and it can efficiently do processing on our data.",
+    "start_ms": 620512,
+    "end_ms": 633167,
+    "duration_ms": 12655,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 633.167,
+    "text": "Pandas and DataFrame was efficient in processing the data for a certain kind of sort of task, but then we're going to see a more efficient language today.",
+    "start_ms": 633167,
+    "end_ms": 643471,
+    "duration_ms": 10304,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 644.408,
+    "text": "So in real world scenario, what I talked about was that we generally have large amount of data, and we have different technologies and different kinds of management systems or data management systems that sits on top of those data sets or tables in order to manage the data for us, and in order to fulfill the request that we have for the database.",
+    "start_ms": 644408,
+    "end_ms": 668568,
+    "duration_ms": 24160,
+    "word_count": 64,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 668.568,
+    "text": "So in the left side of this stream, we have operational database systems.",
+    "start_ms": 668568,
+    "end_ms": 672648,
+    "duration_ms": 4080,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 672.648,
+    "text": "operational database systems are databases that store day-to-day business of different industry.",
+    "start_ms": 672648,
+    "end_ms": 679768,
+    "duration_ms": 7120,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 679.768,
+    "text": "Like for example, if you are thinking about the login user name and password to your favorite social social media platform, and that's social media platform, that is stored in the operational database system that they have.",
+    "start_ms": 679768,
+    "end_ms": 693843,
+    "duration_ms": 14075,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 693.843,
+    "text": "Usually what we're thinking about is that the data is going to be The latest data, it will be updated frequently, imagine that you might want to change your password and immediately the change should be reflected in the database.",
+    "start_ms": 693843,
+    "end_ms": 707208,
+    "duration_ms": 13365,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 707.848,
+    "text": "But the dataset is also small and organized. So it is the operation of the entire business.",
+    "start_ms": 707848,
+    "end_ms": 713717,
+    "duration_ms": 5869,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 713.717,
+    "text": "So it should be super clean and organized and it should also be small, meaning that anything that the the user it interacts with at the various kind of the high level thing is going to be stored there.",
+    "start_ms": 713717,
+    "end_ms": 727848,
+    "duration_ms": 14131,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 728.408,
+    "text": "The programming language that we're going to use for all of these kinds of database management systems is going to be SQL.",
+    "start_ms": 728408,
+    "end_ms": 734118,
+    "duration_ms": 5710,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 734.118,
+    "text": "That's why we're going to learn SQL in today's lecture.",
+    "start_ms": 734118,
+    "end_ms": 736968,
+    "duration_ms": 2850,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 737.607,
+    "text": "There are also other different ways of storing the data and managing the data.",
+    "start_ms": 737607,
+    "end_ms": 743083,
+    "duration_ms": 5476,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 743.083,
+    "text": "So in the right hand side of the stream we have data warehouses, we also have data lakes, and then we also have have somewhere in between that uses Lake and Warehouse together.",
+    "start_ms": 743083,
+    "end_ms": 755288,
+    "duration_ms": 12205,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 755.288,
+    "text": "And there is the technology that's called Lakehouse. You don't need to know the details of each one of them.",
+    "start_ms": 755288,
+    "end_ms": 760328,
+    "duration_ms": 5040,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 760.328,
+    "text": "But the only thing that you need to know is that every time that you're referring to any of these technologies, effectively, what's happening is that we have some data that is a snapshot in time.",
+    "start_ms": 760328,
+    "end_ms": 770768,
+    "duration_ms": 10440,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 770.768,
+    "text": "But the frequency is going to be probably less frequent updates than what we have in the operational database systems.",
+    "start_ms": 770768,
+    "end_ms": 778288,
+    "duration_ms": 7520,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 778.288,
+    "text": "Sometimes the data is organized and clean in tables, so you can directly use it.",
+    "start_ms": 778288,
+    "end_ms": 783408,
+    "duration_ms": 5120,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 783.408,
+    "text": "Sometimes it is going to be, the data is going to be very large and it's going to be messy, meaning that you would need to write SQL queries and then write code in order to clean the data, put them in Lake Houses, and then you will deal with the clean data, which can still be large, but it just needs to be clean in a tablet or format, in a proper format for us to be able to process.",
+    "start_ms": 783408,
+    "end_ms": 807568,
+    "duration_ms": 24160,
+    "word_count": 81,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 807.568,
+    "text": "So that's what's happening in general in real-world scenarios, which as you can imagine.",
+    "start_ms": 807568,
+    "end_ms": 813328,
+    "duration_ms": 5760,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 813.592,
+    "text": "There are different flavors and these different flavors would require different technologies for us to handle that.",
+    "start_ms": 813592,
+    "end_ms": 820092,
+    "duration_ms": 6500,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 820.888,
+    "text": "So what is a database and database is made up of two separate pieces.",
+    "start_ms": 820888,
+    "end_ms": 826648,
+    "duration_ms": 5760,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 826.648,
+    "text": "The database itself is an organized collection of data. So I want to specify how I want to organize my data.",
+    "start_ms": 826648,
+    "end_ms": 832688,
+    "duration_ms": 6040,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 832.688,
+    "text": "I would define whether my data is going to be in a tabular format or what not, and then I would restore my data in something that's called database.",
+    "start_ms": 832688,
+    "end_ms": 841088,
+    "duration_ms": 8400,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 841.088,
+    "text": "Database by itself is not a software, but there is a software that sits on top of the database that will manage the database and will be an interface for us to communicate to that database.",
+    "start_ms": 841088,
+    "end_ms": 853168,
+    "duration_ms": 12080,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 853.168,
+    "text": "So these softwares are called database management systems or we call them BBMS softwares.",
+    "start_ms": 853168,
+    "end_ms": 859168,
+    "duration_ms": 6000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 859.168,
+    "text": "And what they do is exactly what we're expecting. them to do in terms of being an interface are gonna help us store the data so if you have a data and you're gonna pass the data and you're asking a dbms software to store it it will do that for you it will also try to manage the data managing means that it ensures that the data that you're going to store or update or what not conforms to the format that the that the underlying database actually requires.",
+    "start_ms": 859168,
+    "end_ms": 889436,
+    "duration_ms": 30268,
+    "word_count": 90,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 889.436,
+    "text": "And it can also facilitate access, meaning that I can actually use the BMS system in order to make sure that you only have access to the rows width, for example, or the entries with the data 100 annotation kind of thing.",
+    "start_ms": 889436,
+    "end_ms": 904016,
+    "duration_ms": 14580,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 904.016,
+    "text": "And that's the way that permission is going to be controlled using database management systems, but then the entire enterprise or one industry is going to store the entire data set or in all of the databases, but they just need to manage access using the DBMS software that sits on top of that.",
+    "start_ms": 904016,
+    "end_ms": 924816,
+    "duration_ms": 20800,
+    "word_count": 54,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 925.688,
+    "text": "There are really famous, largest scale DBMS systems. The names you might have heard some of these names, Google BigQuery, Amazon Redshift.",
+    "start_ms": 925688,
+    "end_ms": 936688,
+    "duration_ms": 11000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 936.688,
+    "text": "There is data bricks, there's snowflake, and all of these new, also technologies that we're working on.",
+    "start_ms": 936688,
+    "end_ms": 941688,
+    "duration_ms": 5000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 941.688,
+    "text": "You might have heard about Oracle. Oracle is a database management system that usually institutions use in order to process the data.",
+    "start_ms": 941688,
+    "end_ms": 949688,
+    "duration_ms": 8000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 949.688,
+    "text": "But just know that it's a software that sits on top of your data and you're interacting with that software and that interface in order to get proper access to the data.",
+    "start_ms": 949688,
+    "end_ms": 959688,
+    "duration_ms": 10000,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 959.688,
+    "text": "What they do is actually under the hood, they all share the same programming language.",
+    "start_ms": 959688,
+    "end_ms": 965688,
+    "duration_ms": 6000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 965.688,
+    "text": "They all speak in the SQL language, but they might use different flavors of SQL.",
+    "start_ms": 965688,
+    "end_ms": 970563,
+    "duration_ms": 4875,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 970.563,
+    "text": "So that's why we're going to use SQL that independent of the technology that they're going to that that one enterprise is going to use.",
+    "start_ms": 970563,
+    "end_ms": 978688,
+    "duration_ms": 8125,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 978.688,
+    "text": "use under the hood if you want to speak to these DBMS softwares you need to speak within the SQL language.",
+    "start_ms": 978688,
+    "end_ms": 985168,
+    "duration_ms": 6480,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 985.848,
+    "text": "So, I have one slide for you for you to think about where this technology actually comes from.",
+    "start_ms": 985848,
+    "end_ms": 991928,
+    "duration_ms": 6080,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 991.928,
+    "text": "The question is, usually when we are showing database and for example, a software outline, we would use this icon.",
+    "start_ms": 991928,
+    "end_ms": 999933,
+    "duration_ms": 8005,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 999.933,
+    "text": "What do you think is this a picture of? Stacks magnet this storage These are all about right.",
+    "start_ms": 999933,
+    "end_ms": 1036856,
+    "duration_ms": 36923,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1037.08,
+    "text": "So the technology of the database or the technology that we're going to talk about today is kind of an ancient technology and then it starts from the time that.",
+    "start_ms": 1037080,
+    "end_ms": 1046580,
+    "duration_ms": 9500,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1046.58,
+    "text": "People use hard disk and different disk drives in order to store the data and then the size or the capacity of all of these hard drives.",
+    "start_ms": 1046580,
+    "end_ms": 1055380,
+    "duration_ms": 8800,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1055.38,
+    "text": "We're pretty much a small and then the way that the data was restored was in different flat disks And those disks are kind of magnets and there's always kind of the head that's going to Read the data from all of those rotating disks that are going to Rotate so I'm gonna move and show you this one So I don't know if you've seen it you might be too young to have seen these kind of technology But again, what's happening is that we have all of these disk drives And then there's also a driver that actually is going to read one line of data all is coded in zero and once.",
+    "start_ms": 1055380,
+    "end_ms": 1091180,
+    "duration_ms": 35800,
+    "word_count": 115,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1091.18,
+    "text": "And then as the disc rotates is going to read all of those information.",
+    "start_ms": 1091180,
+    "end_ms": 1096180,
+    "duration_ms": 5000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1096.18,
+    "text": "So the entire kind of when we're thinking about the stack of the data or the stack of all of these describes.",
+    "start_ms": 1096180,
+    "end_ms": 1102179,
+    "duration_ms": 5999,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1102.179,
+    "text": "This is coming from the first IBM commercial described. So it has the capacity of five megabytes, and it was a big deal back then.",
+    "start_ms": 1102179,
+    "end_ms": 1112979,
+    "duration_ms": 10800,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1112.979,
+    "text": "So you can think about all of these describes, which are kind of glass layers that has metal framing with the head that's actually going to read the data off of this entire commercial described system that we have.",
+    "start_ms": 1112979,
+    "end_ms": 1128460,
+    "duration_ms": 15481,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1128.46,
+    "text": "The idea was that they wanted to make sure that every time that the transaction is going to happen, the transaction is going to happen instantly, and instantly has a different definition now compared to back then.",
+    "start_ms": 1128460,
+    "end_ms": 1141340,
+    "duration_ms": 12880,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1141.34,
+    "text": "And then they just wanted to move away from just...",
+    "start_ms": 1141340,
+    "end_ms": 1144660,
+    "duration_ms": 3320,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1144.952,
+    "text": "Processing all of the transactions in batches because they would collect all of the transactions in batch and then they would run one batch of all transactions they wanted to not do that and every time that there is a transaction they go ahead and process that an updated database or write the data into the database and so on and so forth.",
+    "start_ms": 1144952,
+    "end_ms": 1162952,
+    "duration_ms": 18000,
+    "word_count": 63,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1162.952,
+    "text": "So this is exactly kind of where this icon is coming from in some of the different.",
+    "start_ms": 1162952,
+    "end_ms": 1168952,
+    "duration_ms": 6000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1169.368,
+    "text": "a kind of illustrations you might see a picture of elephant and someone guess why database is shown with an elephant Elephant has the best memory.",
+    "start_ms": 1169368,
+    "end_ms": 1182664,
+    "duration_ms": 13296,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1182.68,
+    "text": "So because we're storing all of the data in a database and that's the source of the data that we're using.",
+    "start_ms": 1182680,
+    "end_ms": 1189603,
+    "duration_ms": 6923,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1189.603,
+    "text": "So sometimes it is also shown with an elephant icon.",
+    "start_ms": 1189603,
+    "end_ms": 1192680,
+    "duration_ms": 3077,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1193.24,
+    "text": "So let me talk a little bit about some of the advantages of using database over some CSV files that we have been using before.",
+    "start_ms": 1193240,
+    "end_ms": 1201240,
+    "duration_ms": 8000,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1201.24,
+    "text": "What we are doing with the DBMS software systems is that we have reliable storage.",
+    "start_ms": 1201240,
+    "end_ms": 1208240,
+    "duration_ms": 7000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1208.24,
+    "text": "If there is any failure in the system, if your data wipe start for whatever reason, there is a backup in the database management system that can backup your system.",
+    "start_ms": 1208240,
+    "end_ms": 1217240,
+    "duration_ms": 9000,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1217.24,
+    "text": "We don't have that with your laptops or we don't have that with the old disk drives.",
+    "start_ms": 1217240,
+    "end_ms": 1222740,
+    "duration_ms": 5500,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1222.74,
+    "text": "If there is some crash, if something is happening, there's no software that can retrieve your data in a reliable way.",
+    "start_ms": 1222740,
+    "end_ms": 1229040,
+    "duration_ms": 6300,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1229.4,
+    "text": "There are other considerations that we can do the compute in the using the dbms that sit somewhere in the cloud or on some kind of server as opposed to our own computers.",
+    "start_ms": 1229400,
+    "end_ms": 1241400,
+    "duration_ms": 12000,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1241.4,
+    "text": "So if the data is so large that you can train a model locally or it can process the data locally, what you would do is you would write the query, it will be run externally and the result of that is going to be returned to you, which is really important.",
+    "start_ms": 1241400,
+    "end_ms": 1255159,
+    "duration_ms": 13759,
+    "word_count": 52,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1255.704,
+    "text": "Speaking of handling more data, what's happening with the database systems is that they are designed to improve performance, meaning that they are going, if you say that, oh, I want this database, return this table to me, it will return it to you in order that is more efficient.",
+    "start_ms": 1255704,
+    "end_ms": 1273664,
+    "duration_ms": 17960,
+    "word_count": 50,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1273.664,
+    "text": "If you want to ask it to sort the data, if you want to ask it to randomize the data, if any kind of processing that you want to do, the DBMS decides based on the structure of your data, how you can do that more efficiently.",
+    "start_ms": 1273664,
+    "end_ms": 1285864,
+    "duration_ms": 12200,
+    "word_count": 47,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1285.864,
+    "text": "There's no uniform or a certain way that the DBS is going to manage a certain task that you have, but it is more like the best design of the DBS systems are going to actually be designed in a way that it improves performance.",
+    "start_ms": 1285864,
+    "end_ms": 1302264,
+    "duration_ms": 16400,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1302.264,
+    "text": "We also have a really good course in CS. It's called CS86, that's databases course, which not only teaches you databases, but it also teaches you the design of databases.",
+    "start_ms": 1302264,
+    "end_ms": 1312904,
+    "duration_ms": 10640,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1312.904,
+    "text": "so that you have all of their reliability, fault tolerance, and all of the performance considerations that you have.",
+    "start_ms": 1312904,
+    "end_ms": 1320504,
+    "duration_ms": 7600,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1321.048,
+    "text": "We also have data 101 that is called data, the title of the course is data engineering offered from the data science department.",
+    "start_ms": 1321048,
+    "end_ms": 1330520,
+    "duration_ms": 9472,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1330.52,
+    "text": "It's more applied so it will show you different kind of DBMS systems and how to use them and how to handle big data.",
+    "start_ms": 1330520,
+    "end_ms": 1337228,
+    "duration_ms": 6708,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1337.228,
+    "text": "So that's also a very useful course for you to consider.",
+    "start_ms": 1337228,
+    "end_ms": 1340701,
+    "duration_ms": 3473,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1340.701,
+    "text": "This is usually offered in the fall. The CS186 is usually offered in the spring semester.",
+    "start_ms": 1340701,
+    "end_ms": 1347128,
+    "duration_ms": 6427,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1346.872,
+    "text": "So what do I mean by data management and we said that dbms stands for database management system.",
+    "start_ms": 1346872,
+    "end_ms": 1354552,
+    "duration_ms": 7680,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1354.552,
+    "text": "What do we refer to in terms of management and why is it important?",
+    "start_ms": 1354552,
+    "end_ms": 1358072,
+    "duration_ms": 3520,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1358.072,
+    "text": "We want to make sure that the data is logically organized and it is organized in a way that with the constraints that we're also is specifying for our...",
+    "start_ms": 1358072,
+    "end_ms": 1366205,
+    "duration_ms": 8133,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1366.205,
+    "text": "for our... or for our data set. We could not actually enforce kind of constraints in data frame because someone could come in and enter random value or enter, for example, a null value without us being able to have any kind of control over that.",
+    "start_ms": 1366205,
+    "end_ms": 1382416,
+    "duration_ms": 16211,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1382.416,
+    "text": "So this will help us to logically organize the data and also manage the access so we can give access permission access to different people accessing different types of tables that we have in our database.",
+    "start_ms": 1382416,
+    "end_ms": 1395416,
+    "duration_ms": 13000,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1395.416,
+    "text": "It can enforce guarantee on the data. Again, when you're enforcing some kind of a requirement that, oh, you can add non-negative for some, for a person's weight, or you can, you cannot add no values.",
+    "start_ms": 1395416,
+    "end_ms": 1408776,
+    "duration_ms": 13360,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1408.776,
+    "text": "It will, when you have that data, it ensures that some minimum requirement in your data is met.",
+    "start_ms": 1408776,
+    "end_ms": 1414816,
+    "duration_ms": 6040,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1414.816,
+    "text": "So, EDA is going to be easier for those databases.",
+    "start_ms": 1414816,
+    "end_ms": 1418295,
+    "duration_ms": 3479,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1418.295,
+    "text": "It prevents data anomaly and then it is also going to let us do So it's safe concurrent operation.",
+    "start_ms": 1418295,
+    "end_ms": 1425576,
+    "duration_ms": 7281,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1425.576,
+    "text": "So this is very important. Remember that I was saying that the data set that we usually give you is a static and like we don't change the data set, like we give you MPG data set, you would just directly use it as a, as we won't go and change the data.",
+    "start_ms": 1425576,
+    "end_ms": 1439656,
+    "duration_ms": 14080,
+    "word_count": 53,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1439.656,
+    "text": "But in the databases, in general enterprise, the data is constantly changing.",
+    "start_ms": 1439656,
+    "end_ms": 1444776,
+    "duration_ms": 5120,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1444.776,
+    "text": "So for example, if you go to a bank and then you withdraw money and you want to deposit money in the same account, If it cannot or vice versa, if the system fails all of a sudden, you might lose the money that you actually didn't withdraw.",
+    "start_ms": 1444776,
+    "end_ms": 1461376,
+    "duration_ms": 16600,
+    "word_count": 48,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1461.376,
+    "text": "So you don't have it in cash. It was supposed to be transferred from one account to another account.",
+    "start_ms": 1461376,
+    "end_ms": 1465376,
+    "duration_ms": 4000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1465.376,
+    "text": "So the data is withdrawn, but then or the money is withdrawn, but it's not deposited into the next account.",
+    "start_ms": 1465376,
+    "end_ms": 1470376,
+    "duration_ms": 5000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1470.376,
+    "text": "So you might lose that money. So what's happening in database systems is that they say that all of the operations are being done as transaction.",
+    "start_ms": 1470376,
+    "end_ms": 1479376,
+    "duration_ms": 9000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1479.376,
+    "text": "So you define a transaction, the entire transaction is either going to be completed or not completed.",
+    "start_ms": 1479376,
+    "end_ms": 1484895,
+    "duration_ms": 5519,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1484.895,
+    "text": "It cannot be interrupted in the middle. So that's why it is very safe to do concurrent operations.",
+    "start_ms": 1484895,
+    "end_ms": 1491712,
+    "duration_ms": 6817,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1491.712,
+    "text": "Again, also for security for login systems and all of those things, this kind of concurrent operations is really important for us.",
+    "start_ms": 1491712,
+    "end_ms": 1500952,
+    "duration_ms": 9240,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1501.24,
+    "text": "So go into the demo quickly in the next kind of few slides, but I also want to give you an intuition of what's going to happen when we go to the demo.",
+    "start_ms": 1501240,
+    "end_ms": 1513136,
+    "duration_ms": 11896,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1513.136,
+    "text": "So generally when you're working with a database, you're working on your on computer.",
+    "start_ms": 1513136,
+    "end_ms": 1517136,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1517.136,
+    "text": "You're not going to move and like work on that actual server or something.",
+    "start_ms": 1517136,
+    "end_ms": 1522136,
+    "duration_ms": 5000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1522.136,
+    "text": "So you're working on your computer. Usually you're working on it using a different programming language than SQL.",
+    "start_ms": 1522136,
+    "end_ms": 1529136,
+    "duration_ms": 7000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1529.136,
+    "text": "So today we're going to see Python because usually SQL is going to be a language that we access within another programming language because usually the software is managed by something else like Python and then within that we're going to run SQL queries.",
+    "start_ms": 1529136,
+    "end_ms": 1544136,
+    "duration_ms": 15000,
+    "word_count": 44,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1544.136,
+    "text": "And then what we're going to do is that we have stored our data into some tables.",
+    "start_ms": 1544136,
+    "end_ms": 1551136,
+    "duration_ms": 7000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1551.136,
+    "text": "So if you take a look at here, we have some tables here, some table here, and some table here.",
+    "start_ms": 1551136,
+    "end_ms": 1557736,
+    "duration_ms": 6600,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1557.736,
+    "text": "These are the data that is organized for different purposes.",
+    "start_ms": 1557736,
+    "end_ms": 1561536,
+    "duration_ms": 3800,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1561.536,
+    "text": "Again, in core database courses, you're going to learn how to organize the data into different tables, into different data sources, So that there is separation of responsibilities between the tables.",
+    "start_ms": 1561536,
+    "end_ms": 1572936,
+    "duration_ms": 11400,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1572.936,
+    "text": "There is limited amount of redundancy between the tables that is organized properly.",
+    "start_ms": 1572936,
+    "end_ms": 1577896,
+    "duration_ms": 4960,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1577.896,
+    "text": "So for example, here I have three different kind of databases or three different kinds of tables that I've restored.",
+    "start_ms": 1577896,
+    "end_ms": 1584103,
+    "duration_ms": 6207,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1584.103,
+    "text": "One is product, one is sale, and then sales one is customer information, for example.",
+    "start_ms": 1584103,
+    "end_ms": 1589644,
+    "duration_ms": 5541,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1589.644,
+    "text": "So you can see that there is separation of responsibilities between them.",
+    "start_ms": 1589644,
+    "end_ms": 1593896,
+    "duration_ms": 4252,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1593.896,
+    "text": "But what manages the entire database is this DBMS server.",
+    "start_ms": 1593896,
+    "end_ms": 1598296,
+    "duration_ms": 4400,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1598.296,
+    "text": "So you're always talking to a server or some kind of a management system, or you're connecting to them in order to get the data.",
+    "start_ms": 1598296,
+    "end_ms": 1606216,
+    "duration_ms": 7920,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1606.216,
+    "text": "What we would do on our computer is we would write query.",
+    "start_ms": 1606216,
+    "end_ms": 1609736,
+    "duration_ms": 3520,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1609.736,
+    "text": "When I say SQL query, that means that I need to speak to the language that the DBMS system or server understands.",
+    "start_ms": 1609736,
+    "end_ms": 1617516,
+    "duration_ms": 7780,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1617.516,
+    "text": "I would send the query, It will process it on the server and then it will return the data to me in terms of a format, in terms of a table.",
+    "start_ms": 1617516,
+    "end_ms": 1626856,
+    "duration_ms": 9340,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1626.856,
+    "text": "So SQL is a table language. Everything that you're going to get is a table.",
+    "start_ms": 1626856,
+    "end_ms": 1633176,
+    "duration_ms": 6320,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1633.176,
+    "text": "Even if that's single, rather than if that's a single column, we're not going to have different versions of data types.",
+    "start_ms": 1633176,
+    "end_ms": 1640616,
+    "duration_ms": 7440,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1640.616,
+    "text": "Like in pandas, we had data frame, we had series, we have index, and all of those things.",
+    "start_ms": 1640616,
+    "end_ms": 1645416,
+    "duration_ms": 4800,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1645.416,
+    "text": "Here, everything is going to be table. You do a transaction, you get a table.",
+    "start_ms": 1645416,
+    "end_ms": 1649496,
+    "duration_ms": 4080,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1649.496,
+    "text": "you store a table and so on and so forth.",
+    "start_ms": 1649496,
+    "end_ms": 1657389,
+    "duration_ms": 7893,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1657.389,
+    "text": "That's how our relationship with a centralized database that multiple different systems are connecting to that.",
+    "start_ms": 1657389,
+    "end_ms": 1664993,
+    "duration_ms": 7604,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1664.993,
+    "text": "So imagine that an enterprise is going to have their website, the website is going to actually need to talk to the DBMS server.",
+    "start_ms": 1664993,
+    "end_ms": 1673541,
+    "duration_ms": 8548,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1673.541,
+    "text": "It needs to, for example, get some information about like, if the user is browsing some products, it needs to make it query, get the products displayed at, or it needs to make sure that it can recognize the user credentials so that it lets the user log in and whatnot.",
+    "start_ms": 1673541,
+    "end_ms": 1689088,
+    "duration_ms": 15547,
+    "word_count": 51,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1689.088,
+    "text": "So there is that kind of connection there that you cannot interrupt, because that would interrupt user experience.",
+    "start_ms": 1689088,
+    "end_ms": 1696968,
+    "duration_ms": 7880,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1696.968,
+    "text": "In reality, there is a lot of different work going on in terms of how to make redundancy and how to make resource allocations that at once different resources are going to talk to the DBMS server, they're not going to help each other's processes.",
+    "start_ms": 1696968,
+    "end_ms": 1714288,
+    "duration_ms": 17320,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1714.288,
+    "text": "And then we prioritize based on the priority of different tasks that we have.",
+    "start_ms": 1714288,
+    "end_ms": 1718608,
+    "duration_ms": 4320,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1718.608,
+    "text": "So probably in this case, Web server gets the highest priority.",
+    "start_ms": 1718608,
+    "end_ms": 1722328,
+    "duration_ms": 3720,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1722.328,
+    "text": "It talks to a separate portion of DBMS server, and then the rest of the DBMS server is going to serve the rest of the services that we have here for the data engineer, for data scientists, and so on and so forth.",
+    "start_ms": 1722328,
+    "end_ms": 1735768,
+    "duration_ms": 13440,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1737.304,
+    "text": "So let's go into just seeing what SQL is and then we'll start writing queries.",
+    "start_ms": 1737304,
+    "end_ms": 1744344,
+    "duration_ms": 7040,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1744.344,
+    "text": "So what is SQL? I say SQL or SQL. It stands for structured query language.",
+    "start_ms": 1744344,
+    "end_ms": 1751104,
+    "duration_ms": 6760,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1751.104,
+    "text": "So I'm going to highlight that it is a structured because you're going to see that it follows a very specific structure of writing different queries.",
+    "start_ms": 1751104,
+    "end_ms": 1760984,
+    "duration_ms": 9880,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1760.984,
+    "text": "And then that's also how it's going to enforce a certain structure in the databases that is restoring the data.",
+    "start_ms": 1760984,
+    "end_ms": 1768984,
+    "duration_ms": 8000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1768.984,
+    "text": "It is a query language because we just write the query, we actually send the query and then we get an query of requests and then someone else is going to fulfill their request.",
+    "start_ms": 1768984,
+    "end_ms": 1778984,
+    "duration_ms": 10000,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1778.984,
+    "text": "And then it's going to return back to us the data that we want and language is just this is that this is separate programming language.",
+    "start_ms": 1778984,
+    "end_ms": 1787984,
+    "duration_ms": 9000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1787.984,
+    "text": "own programming language as I said, it is distinct from other programming languages, but we usually call it within another programming language.",
+    "start_ms": 1787984,
+    "end_ms": 1795632,
+    "duration_ms": 7648,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1795.632,
+    "text": "Remember in the previous picture that I showed you, usually work in notebook, coding in pandas or Python, and then you're going to mix it with different SQL kind of commands in order to get the data that you want in the right format.",
+    "start_ms": 1795632,
+    "end_ms": 1813061,
+    "duration_ms": 17429,
+    "word_count": 44,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1813.061,
+    "text": "It's this This is a special purpose programming language. It is specifically designed to manage different databases.",
+    "start_ms": 1813061,
+    "end_ms": 1820464,
+    "duration_ms": 7403,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1820.464,
+    "text": "You cannot use it for web design or different things.",
+    "start_ms": 1820464,
+    "end_ms": 1822864,
+    "duration_ms": 2400,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1822.864,
+    "text": "It has a special purpose. As opposed to, for example, Python, Java, C++, that it can be used for different purposes.",
+    "start_ms": 1822864,
+    "end_ms": 1829744,
+    "duration_ms": 6880,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1829.744,
+    "text": "This is not going to be like that. It is a dominant language for working with the data.",
+    "start_ms": 1829744,
+    "end_ms": 1834908,
+    "duration_ms": 5164,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1835.256,
+    "text": "Period. And that's why you should know it. That's why we're going to cover it in data 100.",
+    "start_ms": 1835256,
+    "end_ms": 1840794,
+    "duration_ms": 5538,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1840.794,
+    "text": "That's why there's separate courses that are going to talk about databases in real world scenario when you go to industry.",
+    "start_ms": 1840794,
+    "end_ms": 1847256,
+    "duration_ms": 6462,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1847.256,
+    "text": "No one is going to can you data and CSV files.",
+    "start_ms": 1847256,
+    "end_ms": 1850776,
+    "duration_ms": 3520,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1850.776,
+    "text": "First of all, their data is going to be large.",
+    "start_ms": 1850776,
+    "end_ms": 1853976,
+    "duration_ms": 3200,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1853.976,
+    "text": "Second of all, you cannot expect data engineers to actually do the entire processing with for you.",
+    "start_ms": 1853976,
+    "end_ms": 1859416,
+    "duration_ms": 5440,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1859.416,
+    "text": "And then you do the luxury of like doing cute modeling.",
+    "start_ms": 1859416,
+    "end_ms": 1862936,
+    "duration_ms": 3520,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1862.936,
+    "text": "Right. Right. So that's why you have to be expert in the entire kind of pipeline of having a massive messy data process it have it ready and then do your cute modeling if you want to and then report the result back.",
+    "start_ms": 1862936,
+    "end_ms": 1877584,
+    "duration_ms": 14648,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1878.584,
+    "text": "It is a language of tables. Everything is going to be in tables as I talked about it before.",
+    "start_ms": 1878584,
+    "end_ms": 1883384,
+    "duration_ms": 4800,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1884.104,
+    "text": "It is kind of ancient, so it is introduced in 1970s.",
+    "start_ms": 1884104,
+    "end_ms": 1889076,
+    "duration_ms": 4972,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1889.076,
+    "text": "Back then, it was referred to as a structured English query of language or SQL like this.",
+    "start_ms": 1889076,
+    "end_ms": 1896045,
+    "duration_ms": 6969,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1896.045,
+    "text": "That's probably why we're also going to read SQL as SQL when we're talking about the this is specific topic of today.",
+    "start_ms": 1896045,
+    "end_ms": 1907144,
+    "duration_ms": 11099,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1907.144,
+    "text": "Most systems don't follow the same standard. There is just a common ground of like, what are different commands that we have in SQL language, but most different database management systems have different, slight different flavors of it.",
+    "start_ms": 1907144,
+    "end_ms": 1921624,
+    "duration_ms": 14480,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1921.624,
+    "text": "So expect that you will learn the core knowledge, but then you have to learn different specific details and nitty gritty details of each one of the DBMS systems that you're gonna work with.",
+    "start_ms": 1921624,
+    "end_ms": 1932584,
+    "duration_ms": 10960,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1932.584,
+    "text": "That's why it is okay if you change enterprise, or if you are new to an enterprise to just give yourself time to learn about DBMS, as long as you just know that underlying general logic of working with SQL.",
+    "start_ms": 1932584,
+    "end_ms": 1949024,
+    "duration_ms": 16440,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1949.024,
+    "text": "What we're going to use is we're going to program in SQL using Jupyter Notebook.",
+    "start_ms": 1949024,
+    "end_ms": 1952864,
+    "duration_ms": 3840,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1952.864,
+    "text": "We're going to have different versions of. how we can connect to our database and then we're going to actually use doc DB this semester in order to actually make your connection and then it's a library that kind of simulates that server connection that we don't want to actually build a separate server.",
+    "start_ms": 1952864,
+    "end_ms": 1973480,
+    "duration_ms": 20616,
+    "word_count": 54,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1973.48,
+    "text": "So it is kind of a simulation of this real-life scenario that you might see in industry, but we're going to use it on notebook on your actual Jupyter Notebooks, Jupyter Notebook platform.",
+    "start_ms": 1973480,
+    "end_ms": 1986600,
+    "duration_ms": 13120,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1987.0,
+    "text": "There are different kinds of In notebook or like on your computer ways that you can actually simulate how your code can speak to a database.",
+    "start_ms": 1987000,
+    "end_ms": 1998388,
+    "duration_ms": 11388,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1998.388,
+    "text": "So there is kind of a DBMS system that's called SQLite.",
+    "start_ms": 1998388,
+    "end_ms": 2003488,
+    "duration_ms": 5100,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2003.488,
+    "text": "SQLite is a simplified version of SQL. It is actually a programming library.",
+    "start_ms": 2003488,
+    "end_ms": 2011488,
+    "duration_ms": 8000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2011.488,
+    "text": "So we can directly go into the notebook, import that programming library as SQLite.",
+    "start_ms": 2011488,
+    "end_ms": 2017488,
+    "duration_ms": 6000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2017.488,
+    "text": "And then we are going to be able to do quick and quick stuff, essentially.",
+    "start_ms": 2017488,
+    "end_ms": 2024248,
+    "duration_ms": 6760,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2024.248,
+    "text": "This SQL Lite is commonly used for small apps and mobile devices.",
+    "start_ms": 2024248,
+    "end_ms": 2028528,
+    "duration_ms": 4280,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2028.528,
+    "text": "So it is an actual thing that people use. And that is totally fine if you want to do that.",
+    "start_ms": 2028528,
+    "end_ms": 2034808,
+    "duration_ms": 6280,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2034.808,
+    "text": "But just know that for us, it's going to be a simulation of how an actual system or server connection is going to work.",
+    "start_ms": 2034808,
+    "end_ms": 2040728,
+    "duration_ms": 5920,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2040.728,
+    "text": "Again, it is known for its simplicity and then the speed of the processing the data and because it's also a simplified version of SQL, it's easy to learn it.",
+    "start_ms": 2040728,
+    "end_ms": 2050688,
+    "duration_ms": 9960,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2050.688,
+    "text": "So we're not gonna teach SQL life. in data 100 although what we're going to teach which is docty be is very close it is kind of you would see do you think about it as sequel like with some more addition of functionalities.",
+    "start_ms": 2050688,
+    "end_ms": 2066064,
+    "duration_ms": 15376,
+    "word_count": 44,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2066.552,
+    "text": "Those additional functionalities one is referred to that it's not going to have a simplified version of SQL you have access to the entire functionalities of SQL which is really good so we don't want to limit your access.",
+    "start_ms": 2066552,
+    "end_ms": 2079052,
+    "duration_ms": 12500,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2079.052,
+    "text": "And the other thing is that it's really integrated with pandas and python.",
+    "start_ms": 2079052,
+    "end_ms": 2084552,
+    "duration_ms": 5500,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2085.368,
+    "text": "neatly and it is it is kind of implemented a little bit better so we're going to take a look it can actually connect to database files so in the demo we have a database file it can connect to CBS CSV files and then it can also read Data frames and directly use data frames and then turn them into tables and use them use tables yes.",
+    "start_ms": 2085368,
+    "end_ms": 2109560,
+    "duration_ms": 24192,
+    "word_count": 68,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2112.6,
+    "text": "Yes, dot it's so the question is is the database file is has a specific format.",
+    "start_ms": 2112600,
+    "end_ms": 2118400,
+    "duration_ms": 5800,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2118.872,
+    "text": "Yes, you will see that we have .db file and the .db files are a database files that we directly connect to them, read from them and so on and so forth.",
+    "start_ms": 2118872,
+    "end_ms": 2127872,
+    "duration_ms": 9000,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2131.16,
+    "text": "So let's move on to the demo and then see A few things.",
+    "start_ms": 2131160,
+    "end_ms": 2137600,
+    "duration_ms": 6440,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2144.088,
+    "text": "Now that we have the logistics of why you should learn SQL out of the way, now we're up to the interesting part.",
+    "start_ms": 2144088,
+    "end_ms": 2151088,
+    "duration_ms": 7000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2151.088,
+    "text": "So the interesting part is that there is some notion in Jupyter, which is called Jupyter magic, that every time that you have percent and you have some command, you're effectively telling Jupyter that I have this command and I want you to run this command as if this is a command line interface.",
+    "start_ms": 2151088,
+    "end_ms": 2170088,
+    "duration_ms": 19000,
+    "word_count": 54,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2170.088,
+    "text": "And what we're doing here is that we're saying that load the command or run the command load underscore X, E X t stands for loading an extension and the extension that we're loading is SQL.",
+    "start_ms": 2170088,
+    "end_ms": 2183048,
+    "duration_ms": 12960,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2183.048,
+    "text": "This will give us access to all of the SQL functionalities.",
+    "start_ms": 2183048,
+    "end_ms": 2185928,
+    "duration_ms": 2880,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2185.928,
+    "text": "So that's what we're going to do first every time that you want to use SQL in the notebook.",
+    "start_ms": 2185928,
+    "end_ms": 2191528,
+    "duration_ms": 5600,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2192.248,
+    "text": "And then what we're going to do next is actually connecting to the database files that we have.",
+    "start_ms": 2192248,
+    "end_ms": 2197688,
+    "duration_ms": 5440,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2197.688,
+    "text": "If I show you the actual database files, my Kind of setup is going to be slightly different than the setup that you have, but you can see that I have two dot db file.",
+    "start_ms": 2197688,
+    "end_ms": 2209000,
+    "duration_ms": 11312,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2209.0,
+    "text": "These are my databases. They can hold multiple different tables of data, and we're going to see what the table actually is.",
+    "start_ms": 2209000,
+    "end_ms": 2215960,
+    "duration_ms": 6960,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2215.96,
+    "text": "So one of them is called basic underscore example. The one of them is example underscore duck.",
+    "start_ms": 2215960,
+    "end_ms": 2220680,
+    "duration_ms": 4720,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2221.08,
+    "text": "So what I have done here is that I'm showing you that we can actually load them.",
+    "start_ms": 2221080,
+    "end_ms": 2227000,
+    "duration_ms": 5920,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2227.0,
+    "text": "So we can actually load them using SQL Lite or we can load them using DocDB.",
+    "start_ms": 2227000,
+    "end_ms": 2233520,
+    "duration_ms": 6520,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2233.52,
+    "text": "So this is telling you that what kind of DBMS you want to use.",
+    "start_ms": 2233520,
+    "end_ms": 2236840,
+    "duration_ms": 3320,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2236.84,
+    "text": "So you want to use SQL Lite or do you want to use DBMS?",
+    "start_ms": 2236840,
+    "end_ms": 2239840,
+    "duration_ms": 3000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2239.84,
+    "text": "Or sorry, or DocDB. So here in this case, I loaded the basic example.db using SQL Lite just so that you see it.",
+    "start_ms": 2239840,
+    "end_ms": 2249440,
+    "duration_ms": 9600,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2249.44,
+    "text": "And then here I'm also loading example underscore doc using the DBS kind of notion or kind of system.",
+    "start_ms": 2249440,
+    "end_ms": 2258520,
+    "duration_ms": 9080,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2260.44,
+    "text": "What is this one? Perstand SQL. So every time that we want to make one line of code SQL line, we should specify that beginning of the line by percent SQL.",
+    "start_ms": 2260440,
+    "end_ms": 2273656,
+    "duration_ms": 13216,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2273.656,
+    "text": "And then that entire line is going to turn into, or is going to become held as if it's a SQL command.",
+    "start_ms": 2273656,
+    "end_ms": 2280696,
+    "duration_ms": 7040,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2280.696,
+    "text": "And the SQL extension is going to actually run that for you.",
+    "start_ms": 2280696,
+    "end_ms": 2284296,
+    "duration_ms": 3600,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2284.296,
+    "text": "So that's why this one starts with percent SQL. This one also starts with percent SQL and so on.",
+    "start_ms": 2284296,
+    "end_ms": 2290376,
+    "duration_ms": 6080,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2290.376,
+    "text": "So here I'm running this. Did it run? Let me delete the extension one more time.",
+    "start_ms": 2290376,
+    "end_ms": 2296072,
+    "duration_ms": 5696,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2297.656,
+    "text": "and I loaded this one and then let's actually go ahead and try writing the first query just to make sure...",
+    "start_ms": 2297656,
+    "end_ms": 2307120,
+    "duration_ms": 9464,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2309.144,
+    "text": "Let me... I just want to make sure that you get SQL highlighting.",
+    "start_ms": 2309144,
+    "end_ms": 2315488,
+    "duration_ms": 6344,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2315.488,
+    "text": "Okay, wonderful. So here I loaded the SQL extension. It is telling me that the SQL extension is loaded and it's ready to go.",
+    "start_ms": 2315488,
+    "end_ms": 2324888,
+    "duration_ms": 9400,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2324.888,
+    "text": "I'm going to load this SQL light. Oops. and the dark DB Um...",
+    "start_ms": 2324888,
+    "end_ms": 2334144,
+    "duration_ms": 9256,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2334.68,
+    "text": "Let me re-look this quickly. Because one thing that's nice about Alright.",
+    "start_ms": 2334680,
+    "end_ms": 2343052,
+    "duration_ms": 8372,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2343.8,
+    "text": "SQL integration with Notebook is that it will give you syntax highlighting for the cells that are SQL cells as opposed to the normal Python cells.",
+    "start_ms": 2343800,
+    "end_ms": 2352120,
+    "duration_ms": 8320,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2355.032,
+    "text": "Somehow... This is... Okay, wonderful. So the databases are loaded, but the general case of how to you can connect to a database file is that we can use SQL alchemy, which is a library that is actually going to create some engine connection.",
+    "start_ms": 2355032,
+    "end_ms": 2375896,
+    "duration_ms": 20864,
+    "word_count": 44,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2375.896,
+    "text": "So engine is going to be a connection that we have to a database.",
+    "start_ms": 2375896,
+    "end_ms": 2378896,
+    "duration_ms": 3000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2378.896,
+    "text": "And the way that you would actually call it in general industry is going to be that you would specify the technology.",
+    "start_ms": 2378896,
+    "end_ms": 2384896,
+    "duration_ms": 6000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2384.896,
+    "text": "Remember that I said different DBMS systems could be data breaks could be a snowflake and so on and so forth.",
+    "start_ms": 2384896,
+    "end_ms": 2391896,
+    "duration_ms": 7000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2391.896,
+    "text": "You would say what kind of DBMS do you want to use?",
+    "start_ms": 2391896,
+    "end_ms": 2394896,
+    "duration_ms": 3000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2394.896,
+    "text": "You can pass your credentials and then you would say which database directly you want to actually connect to.",
+    "start_ms": 2394896,
+    "end_ms": 2400896,
+    "duration_ms": 6000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2400.896,
+    "text": "So we're not going to be concerned with this, but just know that the syntax that we used here, that we specify that we want to be, we specify the path to our data is actually the standard.",
+    "start_ms": 2400896,
+    "end_ms": 2419936,
+    "duration_ms": 19040,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2419.724,
+    "text": "our database. So now I can go ahead and do a query on my database.",
+    "start_ms": 2419724,
+    "end_ms": 2423296,
+    "duration_ms": 3572,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2423.296,
+    "text": "I know that in the database that I created here, so in DocDB database here, what I have is a table that's called drag on.",
+    "start_ms": 2423296,
+    "end_ms": 2432296,
+    "duration_ms": 9000,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2432.296,
+    "text": "So I'm going to just run one query without telling you what this query exactly does.",
+    "start_ms": 2432296,
+    "end_ms": 2438296,
+    "duration_ms": 6000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2438.296,
+    "text": "And I am going to explain what's happening. So I'm going to say that select the star, meaning that select everything from the table dragon, because I know that I have a table called dragon.",
+    "start_ms": 2438296,
+    "end_ms": 2452176,
+    "duration_ms": 13880,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2452.176,
+    "text": "And then you're seeing that it says that, oh, I know that you made a connection to DocDB, or you made a connection to a database that you name DocDB at the top, and then you're running a command to get access to all of the rows that you have in the dragon table.",
+    "start_ms": 2452176,
+    "end_ms": 2466896,
+    "duration_ms": 14720,
+    "word_count": 54,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2466.896,
+    "text": "And then the output is going to be created for us.",
+    "start_ms": 2466896,
+    "end_ms": 2469656,
+    "duration_ms": 2760,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2469.656,
+    "text": "One thing that I want to note here is that remember that I was saying that every line that wants to be a sequel line should start with person's sequel But here I use percent percent sequel, so I have one extra percent.",
+    "start_ms": 2469656,
+    "end_ms": 2482996,
+    "duration_ms": 13340,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2482.996,
+    "text": "What's happening is that if you use double percent, the entire cell is going to be a SQL cell.",
+    "start_ms": 2482996,
+    "end_ms": 2488496,
+    "duration_ms": 5500,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2488.496,
+    "text": "If you use percent sequel, only one line is going to become SQL line.",
+    "start_ms": 2488496,
+    "end_ms": 2493496,
+    "duration_ms": 5000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2493.496,
+    "text": "So that's kind of helpful. Most of the time, we would use percent percent sequel in order to be able to just have the entire cell to be our SQL cell.",
+    "start_ms": 2493496,
+    "end_ms": 2503496,
+    "duration_ms": 10000,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2503.96,
+    "text": "So I talked about what this one does and I'm going to go in the next kind of part of the lecture going into the different kinds of syntax for the SQL language.",
+    "start_ms": 2503960,
+    "end_ms": 2513960,
+    "duration_ms": 10000,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2513.96,
+    "text": "We're going to talk about what select is select is actually meaning that go to the dragon table select a star a star refers to everything and select everything and return them to me.",
+    "start_ms": 2513960,
+    "end_ms": 2526960,
+    "duration_ms": 13000,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2526.96,
+    "text": "to me and this is how it's going to be returned to us.",
+    "start_ms": 2526960,
+    "end_ms": 2530160,
+    "duration_ms": 3200,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2530.16,
+    "text": "There are different ways that we can actually, this is also an example that because I have percent percent SQL, I can break this line into multiple lines.",
+    "start_ms": 2530160,
+    "end_ms": 2538960,
+    "duration_ms": 8800,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2538.96,
+    "text": "And that's exactly what we would do. Every line is going to have one specific SQL command so that we can read it more easily.",
+    "start_ms": 2538960,
+    "end_ms": 2546320,
+    "duration_ms": 7360,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2546.32,
+    "text": "So here I would say select the star. You would read one line, you would say that, oh, they want everything.",
+    "start_ms": 2546320,
+    "end_ms": 2551880,
+    "duration_ms": 5560,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2551.88,
+    "text": "And then you would read this other line that says from Dragon.",
+    "start_ms": 2551880,
+    "end_ms": 2555280,
+    "duration_ms": 3400,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2555.28,
+    "text": "And that means that from the database drag on you want that.",
+    "start_ms": 2555280,
+    "end_ms": 2558160,
+    "duration_ms": 2880,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2558.16,
+    "text": "So it's easier to read that if you break it into multiple lines.",
+    "start_ms": 2558160,
+    "end_ms": 2562600,
+    "duration_ms": 4440,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2562.6,
+    "text": "The other approach that we can use in order to load the data set or connect to the data set is that directly creating the engine using SQL Alchemy.",
+    "start_ms": 2562600,
+    "end_ms": 2572680,
+    "duration_ms": 10080,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2572.68,
+    "text": "So here I would say that I import a SQL Alchemy and I would say that create an engine for me.",
+    "start_ms": 2572680,
+    "end_ms": 2578600,
+    "duration_ms": 5920,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2578.6,
+    "text": "And this engine is going to be the engine that connects me to the database.",
+    "start_ms": 2578600,
+    "end_ms": 2582600,
+    "duration_ms": 4000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2582.6,
+    "text": "And where is my database? I would give the path to my database.",
+    "start_ms": 2582600,
+    "end_ms": 2585600,
+    "duration_ms": 3000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2585.6,
+    "text": "I would specify that I want to read this database using DocDB technology.",
+    "start_ms": 2585600,
+    "end_ms": 2591320,
+    "duration_ms": 5720,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2591.928,
+    "text": "So I'm going to run this and then what I can do is there is this function in pandas.",
+    "start_ms": 2591928,
+    "end_ms": 2597374,
+    "duration_ms": 5446,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2597.374,
+    "text": "That's the nice thing about Dock2B that it connects really well with pandas.",
+    "start_ms": 2597374,
+    "end_ms": 2601031,
+    "duration_ms": 3657,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2601.031,
+    "text": "You can just load the data, get the data, and then actually run some of the SQL sub functions in pandas in order to read the data that you want.",
+    "start_ms": 2601031,
+    "end_ms": 2611928,
+    "duration_ms": 10897,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2611.928,
+    "text": "So I would say I want to write a query.",
+    "start_ms": 2611928,
+    "end_ms": 2614919,
+    "duration_ms": 2991,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2614.919,
+    "text": "So here I would write my query using triple quotation mark because I'm I'm going to break it into multiple different lines.",
+    "start_ms": 2614919,
+    "end_ms": 2621568,
+    "duration_ms": 6649,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2621.568,
+    "text": "So I would write exactly the same. Query that I had, I would say select everything from...",
+    "start_ms": 2621568,
+    "end_ms": 2630808,
+    "duration_ms": 9240,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2631.064,
+    "text": "Brightly. And I would end the line with a semicolon and then ending the string with tree quotation mark.",
+    "start_ms": 2631064,
+    "end_ms": 2638546,
+    "duration_ms": 7482,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2638.546,
+    "text": "Again, tree quotation mark is strings are strings that you can break it into multiple lines.",
+    "start_ms": 2638546,
+    "end_ms": 2643746,
+    "duration_ms": 5200,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2643.746,
+    "text": "And that's why I use that. So I have the query and here I would say that read the SQL.",
+    "start_ms": 2643746,
+    "end_ms": 2650296,
+    "duration_ms": 6550,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2650.296,
+    "text": "Remember that you had read underscore, CST or read underscore Excel.",
+    "start_ms": 2650296,
+    "end_ms": 2655296,
+    "duration_ms": 5000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2655.296,
+    "text": "This is the same thing, but now you have SQL.",
+    "start_ms": 2655296,
+    "end_ms": 2658016,
+    "duration_ms": 2720,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2658.016,
+    "text": "You have an engine. So you would pass the query a string, you would pass the engine that you created.",
+    "start_ms": 2658016,
+    "end_ms": 2663776,
+    "duration_ms": 5760,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2663.776,
+    "text": "This is the engine that I created and then the result is going to be a data frame.",
+    "start_ms": 2663776,
+    "end_ms": 2668896,
+    "duration_ms": 5120,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2668.756,
+    "text": "this is pretty clean. The other way that I could do it actually is that I could say that, go ahead at the top right here.",
+    "start_ms": 2668756,
+    "end_ms": 2684392,
+    "duration_ms": 15636,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2684.357,
+    "text": "ahead and say that I want to... have percent sequel, writing in a single line, I would say select.",
+    "start_ms": 2684357,
+    "end_ms": 2696728,
+    "duration_ms": 12371,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2697.848,
+    "text": "Everything. From... Prachan. And then I would actually actually let me do a percent percent, so I can make it into multiple lines.",
+    "start_ms": 2697848,
+    "end_ms": 2708760,
+    "duration_ms": 10912,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2708.76,
+    "text": "And I would say that go ahead and read or write all of this data into a data frame DF or is going to store that in data frame DF.",
+    "start_ms": 2708760,
+    "end_ms": 2718040,
+    "duration_ms": 9280,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2718.968,
+    "text": "Um... Let me... Double check something here. It should actually work.",
+    "start_ms": 2718968,
+    "end_ms": 2742120,
+    "duration_ms": 23152,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2745.752,
+    "text": "So one of the issues with DOC DB sometimes is that The errors are harder for you to parse and figure out what those errors are.",
+    "start_ms": 2745752,
+    "end_ms": 2754616,
+    "duration_ms": 8864,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2754.616,
+    "text": "So here is telling me that it's not expecting me to just write into the data frame with that a specific syntax, which I think this is the specific syntax.",
+    "start_ms": 2754616,
+    "end_ms": 2767416,
+    "duration_ms": 12800,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2767.8,
+    "text": "So, oh, actually, sorry, I started the way around. Yes, now we have the F and if I go ahead and hear it create.",
+    "start_ms": 2767800,
+    "end_ms": 2776264,
+    "duration_ms": 8464,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2776.664,
+    "text": "and that you're... Um. So I'll show you what that data frame or that variable was.",
+    "start_ms": 2776664,
+    "end_ms": 2783528,
+    "duration_ms": 6864,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2783.528,
+    "text": "This is the output. So effectively you can run. Aquarian and you can store the result of it query in a variable and then be able to use that.",
+    "start_ms": 2783528,
+    "end_ms": 2792728,
+    "duration_ms": 9200,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2792.728,
+    "text": "Let me take a look at what the type of this data frame or DF is.",
+    "start_ms": 2792728,
+    "end_ms": 2797728,
+    "duration_ms": 5000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2798.36,
+    "text": "You would see that it says that the type is a result set.",
+    "start_ms": 2798360,
+    "end_ms": 2802082,
+    "duration_ms": 3722,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2802.082,
+    "text": "The type is not data frame. So I can turn any kind of table into data frame, but just directly saying that go ahead and convert DFT to data frame by calling dft.",
+    "start_ms": 2802082,
+    "end_ms": 2816720,
+    "duration_ms": 14638,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2817.88,
+    "text": "DataFrame and this is going to turn this into a data frame.",
+    "start_ms": 2817880,
+    "end_ms": 2820827,
+    "duration_ms": 2947,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2820.827,
+    "text": "So it's really easy. Everything is going to at the end transfer easily to a data frame.",
+    "start_ms": 2820827,
+    "end_ms": 2825002,
+    "duration_ms": 4175,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2825.002,
+    "text": "You can directly use it and then after this point you can just go and do your own modeling or whatever test that you want to have afterwards.",
+    "start_ms": 2825002,
+    "end_ms": 2831880,
+    "duration_ms": 6878,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2831.88,
+    "text": "There's also a special DocDB version that is really easy to use.",
+    "start_ms": 2831880,
+    "end_ms": 2837840,
+    "duration_ms": 5960,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2837.84,
+    "text": "Remember that we had MPG data set that we've worked with before.",
+    "start_ms": 2837840,
+    "end_ms": 2842620,
+    "duration_ms": 4780,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2842.62,
+    "text": "What we can actually do is I can directly say that, go ahead and select from MPG.",
+    "start_ms": 2842620,
+    "end_ms": 2849380,
+    "duration_ms": 6760,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2849.38,
+    "text": "This was a data frame, but here I'm just directly saying that.",
+    "start_ms": 2849380,
+    "end_ms": 2853060,
+    "duration_ms": 3680,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2853.208,
+    "text": "You don't need to be a table for me to run to be able to run a query on you i can directly get a data frame treat that as a table and just run query on it.",
+    "start_ms": 2853208,
+    "end_ms": 2861528,
+    "duration_ms": 8320,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2861.728,
+    "text": "And then here when i say select everything from mpg and mpg was a data frame here we were verified it before this output is actually still got to work so there is this good connection between dock to be and pandas that makes things easier.",
+    "start_ms": 2861728,
+    "end_ms": 2878728,
+    "duration_ms": 17000,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2879.192,
+    "text": "So what have we seen so far? We have seen that in order to use SQL, we need to load SQL extension, we need to make a connection to a database and we can get engine or we can directly say that we have loaded this database and the earliest or the name that we're going to use for this database is for example doc or whatever that you want to name it afterwards.",
+    "start_ms": 2879192,
+    "end_ms": 2902192,
+    "duration_ms": 23000,
+    "word_count": 74,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2902.192,
+    "text": "If you are in industry, you're using a different kind of database management system file.",
+    "start_ms": 2902192,
+    "end_ms": 2910192,
+    "duration_ms": 8000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2910.192,
+    "text": "You would just need to specify what kind of database management system you're going to use, your credentials, and then you would say that you're going to connect to the great database.",
+    "start_ms": 2910192,
+    "end_ms": 2919192,
+    "duration_ms": 9000,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2919.192,
+    "text": "And then you would be able to directly connect to that a specific database to be able to use it.",
+    "start_ms": 2919192,
+    "end_ms": 2924192,
+    "duration_ms": 5000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2924.696,
+    "text": "What we have done was we wrote our first SQL query.",
+    "start_ms": 2924696,
+    "end_ms": 2928446,
+    "duration_ms": 3750,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2928.446,
+    "text": "We said that the simple SQL query that I wrote using percent percent SQL in one specific cell that turns the entire cell to a SQL cell was that I said we're selecting everything from the drag on table ending it with semicolon and that return the entire table to me.",
+    "start_ms": 2928446,
+    "end_ms": 2948096,
+    "duration_ms": 19650,
+    "word_count": 51,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2949.208,
+    "text": "So now let's talk a little bit about tables and schemas and talk about why databases are really good in terms of managing the structure of database logically and how it controls different pieces of information that we have in different tables.",
+    "start_ms": 2949208,
+    "end_ms": 2965968,
+    "duration_ms": 16760,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2965.968,
+    "text": "So in SQL terminology, a table or any table or format is called a relation.",
+    "start_ms": 2965968,
+    "end_ms": 2973368,
+    "duration_ms": 7400,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2973.368,
+    "text": "It might be because every table is going to have a primary key.",
+    "start_ms": 2973368,
+    "end_ms": 2977208,
+    "duration_ms": 3840,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2977.208,
+    "text": "And in essence, every row that you have is describing some relationship between the value that you have in the primary key row with every other kind of columns that you have.",
+    "start_ms": 2977208,
+    "end_ms": 2989048,
+    "duration_ms": 11840,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2989.048,
+    "text": "So that's why it's called a relation. Similar to data frames, what we have is we have columns, attributes, or different fields.",
+    "start_ms": 2989048,
+    "end_ms": 2996448,
+    "duration_ms": 7400,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2996.448,
+    "text": "We also have rows or rackers or two poles in the programming language, the terminology that we're using, kind of the same format, different features are going to be in different columns, and different rows are going to store different kinds of observations that we have.",
+    "start_ms": 2996448,
+    "end_ms": 3011888,
+    "duration_ms": 15440,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3012.848,
+    "text": "What's nice about databases is that for every column we can control different things.",
+    "start_ms": 3012848,
+    "end_ms": 3018608,
+    "duration_ms": 5760,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3018.608,
+    "text": "First of all, every time that we create a table, we should specify...",
+    "start_ms": 3018608,
+    "end_ms": 3022768,
+    "duration_ms": 4160,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3022.904,
+    "text": "a column name. So we're specifying that okay in the dragon data in the dragon table I have name I have year and I have cute those are the names of my columns you can have a column without the name we could actually create some we could actually use automatic indexing in data frame but here we can't actually use that but we also have is that we are specifying the type of the values that that we're restoring an each one of those columns.",
+    "start_ms": 3022904,
+    "end_ms": 3050984,
+    "duration_ms": 28080,
+    "word_count": 86,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3050.984,
+    "text": "So notice that here I'm saying that I have a specific type.",
+    "start_ms": 3050984,
+    "end_ms": 3055423,
+    "duration_ms": 4439,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3055.423,
+    "text": "And for all of those three columns here, I'm saying that the name is of type text and years of type integer, Qt is of type integer.",
+    "start_ms": 3055423,
+    "end_ms": 3063304,
+    "duration_ms": 7881,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3063.304,
+    "text": "And then I would go ahead and control what data people are going to put into those different columns using the type information that I have.",
+    "start_ms": 3063304,
+    "end_ms": 3070904,
+    "duration_ms": 7600,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3071.608,
+    "text": "There's the additional information that is constraint. So you can use these constraints to avoid anomalies.",
+    "start_ms": 3071608,
+    "end_ms": 3077768,
+    "duration_ms": 6160,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3077.768,
+    "text": "So what people putting in, kind of non-values or like nonsense values, for different columns that you have.",
+    "start_ms": 3077768,
+    "end_ms": 3086048,
+    "duration_ms": 8280,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3086.048,
+    "text": "So here, for example, I would say that my constraint is that my name column is primary key.",
+    "start_ms": 3086048,
+    "end_ms": 3091408,
+    "duration_ms": 5360,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3091.408,
+    "text": "He case stands for primary key. Every table needs to have a primary key.",
+    "start_ms": 3091408,
+    "end_ms": 3095368,
+    "duration_ms": 3960,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3095.368,
+    "text": "That's the way that it's going to be indexed. The other constraint that I have shown here is that year is limited to be greater than year 2000.",
+    "start_ms": 3095368,
+    "end_ms": 3106088,
+    "duration_ms": 10720,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3106.088,
+    "text": "So assume that you know that your data set is going to be after year 2000.",
+    "start_ms": 3106088,
+    "end_ms": 3110088,
+    "duration_ms": 4000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3110.088,
+    "text": "So you're going to limit that as well. So this is how constraints are going to be enforced.",
+    "start_ms": 3110088,
+    "end_ms": 3115288,
+    "duration_ms": 5200,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3115.288,
+    "text": "Compare it with data frame. There is no way for us to enforce anything at the time of the creation of a data frame or a series object.",
+    "start_ms": 3115288,
+    "end_ms": 3122848,
+    "duration_ms": 7560,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3122.848,
+    "text": "So it is a big deal and it is a great functionality that we have.",
+    "start_ms": 3122848,
+    "end_ms": 3126368,
+    "duration_ms": 3520,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3126.936,
+    "text": "So how do we enforce all of these things, the name, the type and also the different constraints that we have?",
+    "start_ms": 3126936,
+    "end_ms": 3134162,
+    "duration_ms": 7226,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3134.162,
+    "text": "That's true something that's called the schema. Every table is that you're creating is going to have the schema.",
+    "start_ms": 3134162,
+    "end_ms": 3141558,
+    "duration_ms": 7396,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3141.558,
+    "text": "If schema is going to specify what columns you have, what are their names, what are their constraints, and what are their types?",
+    "start_ms": 3141558,
+    "end_ms": 3148484,
+    "duration_ms": 6926,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3148.484,
+    "text": "Right? So for example, here I'm telling you that I'm creating a table.",
+    "start_ms": 3148484,
+    "end_ms": 3152794,
+    "duration_ms": 4310,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3152.794,
+    "text": "This is a table is schema for Dragon, that when I create the table dragon, I'm going to say that I'm going to have all of these three different columns, notice that each one of them are in different row, comma separated between the rows, every information, every row is kind of information of one column.",
+    "start_ms": 3152794,
+    "end_ms": 3172082,
+    "duration_ms": 19288,
+    "word_count": 56,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3172.082,
+    "text": "So the name of the column, I know that here, so this is name, year, and cute.",
+    "start_ms": 3172082,
+    "end_ms": 3177491,
+    "duration_ms": 5409,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3177.491,
+    "text": "And the next thing that we're going to also So specify is that the type, so notice that the type is text for the name integer and also integer that we have for both of the other columns.",
+    "start_ms": 3177491,
+    "end_ms": 3189516,
+    "duration_ms": 12025,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3189.516,
+    "text": "And then the Hans Stren is the last thing that we're going to pass.",
+    "start_ms": 3189516,
+    "end_ms": 3193052,
+    "duration_ms": 3536,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3193.052,
+    "text": "Primary key, and then we're checking whether the year is greater than year 2000.",
+    "start_ms": 3193052,
+    "end_ms": 3197752,
+    "duration_ms": 4700,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3197.752,
+    "text": "So that's the schema that enforces some logical structure in our database or in each one of the relations or tables that we have.",
+    "start_ms": 3197752,
+    "end_ms": 3207672,
+    "duration_ms": 9920,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3208.088,
+    "text": "So if I go ahead and take a look at this schema for The entire database that I have my dock-to-be database that I connected to you would see that it tells me that my database has three different tables.",
+    "start_ms": 3208088,
+    "end_ms": 3221864,
+    "duration_ms": 13776,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3221.864,
+    "text": "It has this it has drag on it has seen.",
+    "start_ms": 3221864,
+    "end_ms": 3224864,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3224.864,
+    "text": "I showed you drag on out of the blue so you didn't know that the drag on existed.",
+    "start_ms": 3224864,
+    "end_ms": 3229435,
+    "duration_ms": 4571,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3229.435,
+    "text": "But if you want to know in your database what tables you have you would actually go ahead and look at the database is schema in the database is schema you would figure out how many tables you have you would figure out some information.",
+    "start_ms": 3229435,
+    "end_ms": 3240864,
+    "duration_ms": 11429,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3240.864,
+    "text": "some information about the table, specifically the name of the table, and you're going to get access to the SQL query that created those tables.",
+    "start_ms": 3240864,
+    "end_ms": 3250688,
+    "duration_ms": 9824,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3250.688,
+    "text": "So notice here that with the dragon here I'm specifying I have the query that actually created that.",
+    "start_ms": 3250688,
+    "end_ms": 3260864,
+    "duration_ms": 10176,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3260.64,
+    "text": "it's pretty kind of clean stuff. Everyone who creates the database then will document or all of these information is going to be stored.",
+    "start_ms": 3260640,
+    "end_ms": 3269300,
+    "duration_ms": 8660,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3269.3,
+    "text": "Everyone who's using it has information about everything. They will make sure that the database is kind of following the same structure that is expected.",
+    "start_ms": 3269300,
+    "end_ms": 3278200,
+    "duration_ms": 8900,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3278.2,
+    "text": "So let me go through and show you a few things.",
+    "start_ms": 3278200,
+    "end_ms": 3280900,
+    "duration_ms": 2700,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3280.9,
+    "text": "So here if I go ahead and say, select everything from information schema.",
+    "start_ms": 3280900,
+    "end_ms": 3286300,
+    "duration_ms": 5400,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3286.3,
+    "text": "So this is information is schema is the information schema of the database that I have.",
+    "start_ms": 3286300,
+    "end_ms": 3291540,
+    "duration_ms": 5240,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3291.8,
+    "text": "And then I'm saying that give me the schema for all of the tables.",
+    "start_ms": 3291800,
+    "end_ms": 3295180,
+    "duration_ms": 3380,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3295.56,
+    "text": "So here is going to tell me that there are all of these different tables that I have assignment, this drag on grade, so on and so forth.",
+    "start_ms": 3295560,
+    "end_ms": 3304640,
+    "duration_ms": 9080,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3304.9,
+    "text": "Right. There are some other attributes of these tables that we have that you probably don't need to be concerned with these data engineers are going to be the ones that are making sure that all of these information is accurate.",
+    "start_ms": 3304900,
+    "end_ms": 3317719,
+    "duration_ms": 12819,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3318.639,
+    "text": "If I go ahead and get information about the columns, this is going to tell me that in the, for example, a dragon table, there is a column called name and the type is war car.",
+    "start_ms": 3318639,
+    "end_ms": 3331040,
+    "duration_ms": 12401,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3331.08,
+    "text": "This is similar to text. And then there is also other information.",
+    "start_ms": 3331080,
+    "end_ms": 3335880,
+    "duration_ms": 4800,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3335.88,
+    "text": "there is a year, this is positioned as the second column in the schema, and then the type is integer, and there's also the column queued on the drag on with the type being integer.",
+    "start_ms": 3335880,
+    "end_ms": 3346760,
+    "duration_ms": 10880,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3346.76,
+    "text": "So it's pretty helpful with stuff. Once you have a .db file, then you can actually take a look at the schema and then make sense of what's stored in it.",
+    "start_ms": 3346760,
+    "end_ms": 3354600,
+    "duration_ms": 7840,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3355.32,
+    "text": "Here's also another way. I can say that in pandas, go ahead and read my SQL, and then I'm going to run this SQL which says that, go ahead and get my SQL like the schema from this exact database file that I have.",
+    "start_ms": 3355320,
+    "end_ms": 3372520,
+    "duration_ms": 17200,
+    "word_count": 44,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3372.52,
+    "text": "So example under score.doc.db. When I run it, did I run it?",
+    "start_ms": 3372520,
+    "end_ms": 3377640,
+    "duration_ms": 5120,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3377.64,
+    "text": "It is telling me all this schemas or the SQL queries that actually created each one of those tables.",
+    "start_ms": 3377640,
+    "end_ms": 3383880,
+    "duration_ms": 6240,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3383.88,
+    "text": "For the dragon, it says that you're creating a table dragon with the column name name.",
+    "start_ms": 3383880,
+    "end_ms": 3389640,
+    "duration_ms": 5760,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3390.104,
+    "text": "And then the type is work hard, it's a primary key, there is a year that is integer, there is cute, that is of type integer, but we are also going to double check this constraint every time that anyone wants to add an entry into the database.",
+    "start_ms": 3390104,
+    "end_ms": 3403604,
+    "duration_ms": 13500,
+    "word_count": 48,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3404.312,
+    "text": "Okay, so we can also have different things. Remember that we created an engine and we connected to the engine.",
+    "start_ms": 3404312,
+    "end_ms": 3412472,
+    "duration_ms": 8160,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3412.472,
+    "text": "We can go ahead and inspect the engine and then we can tell the engine that tell me the table names and then this is going to tell me all the table names that I have.",
+    "start_ms": 3412472,
+    "end_ms": 3421512,
+    "duration_ms": 9040,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3421.512,
+    "text": "I can say that give me all the columns and then it will tell me all the columns and different types of those columns.",
+    "start_ms": 3421512,
+    "end_ms": 3428072,
+    "duration_ms": 6560,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3428.072,
+    "text": "So pretty kind of need the stuff that you can actually use.",
+    "start_ms": 3428072,
+    "end_ms": 3433072,
+    "duration_ms": 5000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3433.752,
+    "text": "In order to understand about the databases. Here's a quick example of.",
+    "start_ms": 3433752,
+    "end_ms": 3438632,
+    "duration_ms": 4880,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3439.416,
+    "text": "Some other thing that is showing you how we are actually creating different tables in a database and how we're creating a schema.",
+    "start_ms": 3439416,
+    "end_ms": 3448404,
+    "duration_ms": 8988,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3448.404,
+    "text": "So at the top, notice that I have percent percent SQL, the entire cell is SQL, then I would say that drop these tables if they exist.",
+    "start_ms": 3448404,
+    "end_ms": 3457500,
+    "duration_ms": 9096,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3457.5,
+    "text": "So we always make sure that we don't overwrite into the same tables if we want to create tables from a spread.",
+    "start_ms": 3457500,
+    "end_ms": 3464856,
+    "duration_ms": 7356,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3464.856,
+    "text": "We're dropping those tables, grade assignment and student. And then we're saying that go ahead and create a table of a student.",
+    "start_ms": 3464856,
+    "end_ms": 3472296,
+    "duration_ms": 7440,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3472.296,
+    "text": "Right? And then we're creating a table of a student.",
+    "start_ms": 3472296,
+    "end_ms": 3475256,
+    "duration_ms": 2960,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3475.256,
+    "text": "What you want to, what I want you to notice is that I'm saying that there is a student ID column that is my primary key and the type is integer.",
+    "start_ms": 3475256,
+    "end_ms": 3485336,
+    "duration_ms": 10080,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3485.336,
+    "text": "And there is name, it's work, our type and there is email and email is also text or work, card that we created.",
+    "start_ms": 3485336,
+    "end_ms": 3493138,
+    "duration_ms": 7802,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3493.138,
+    "text": "There is also assignment. So notice that in the assignment part is the same situation.",
+    "start_ms": 3493138,
+    "end_ms": 3499503,
+    "duration_ms": 6365,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3499.503,
+    "text": "I have ID for assignments and then that is the primary key.",
+    "start_ms": 3499503,
+    "end_ms": 3504105,
+    "duration_ms": 4602,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3504.105,
+    "text": "Then I have the table for grade. What I want you to notice is that here my constraints are that I'm going to check whether the grade is real, meaning that I want to check that the score that are assigning is between 0 and 100.",
+    "start_ms": 3504105,
+    "end_ms": 3519603,
+    "duration_ms": 15498,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3519.603,
+    "text": "So that's the condition that we always want to have in place.",
+    "start_ms": 3519603,
+    "end_ms": 3522736,
+    "duration_ms": 3133,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3523.296,
+    "text": "There is the other thing that I want you to notice that is the concept of foreign key.",
+    "start_ms": 3523296,
+    "end_ms": 3534496,
+    "duration_ms": 11200,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3534.475,
+    "text": "doing that. So I'm doing that. Okay, a student concept should be in a student table.",
+    "start_ms": 3534475,
+    "end_ms": 3539504,
+    "duration_ms": 5029,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3539.504,
+    "text": "assignment concept should be an assignment concept and then grade should be a separate table that I need to deal with that But there should be some connection between them so that the data is reliable and the data is coherent Meaning that in the in the grade table I can't have A great for a student that doesn't exist in the student table, right?",
+    "start_ms": 3539504,
+    "end_ms": 3559904,
+    "duration_ms": 20400,
+    "word_count": 65,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3559.904,
+    "text": "Or I can't have great for an assignment that doesn't exist So that's why we use the notion of foreign key that notice that the foreign key is one column that we're storing in the great table that holds references to those different data different tables that we had.",
+    "start_ms": 3559904,
+    "end_ms": 3578641,
+    "duration_ms": 18737,
+    "word_count": 49,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3578.641,
+    "text": "Every time that you want to add a value it will double check that the student exists, the Simon ID exists, if so it will also go ahead and get this score and but not and double check the requirements and then we'll add that.",
+    "start_ms": 3578641,
+    "end_ms": 3596856,
+    "duration_ms": 18215,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3596.77,
+    "text": "column or a selection of columns that is uniquely identifying each one of the rows.",
+    "start_ms": 3596770,
+    "end_ms": 3602520,
+    "duration_ms": 5750,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3602.52,
+    "text": "Now we're also getting the concept of foreign key, which is the unique references that a table holds that is going to refer back to other tables so that the entire structure is as coherent as possible.",
+    "start_ms": 3602520,
+    "end_ms": 3614760,
+    "duration_ms": 12240,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3615.48,
+    "text": "The other thing that we're doing here is that we're saying that go ahead and add these values.",
+    "start_ms": 3615480,
+    "end_ms": 3620520,
+    "duration_ms": 5040,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3620.52,
+    "text": "There is a student with the ID123. The name is Joey G and then there is Nurgis.",
+    "start_ms": 3620520,
+    "end_ms": 3628520,
+    "duration_ms": 8000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3628.52,
+    "text": "So we're adding those students. We're adding also assignment grades and so on and so forth.",
+    "start_ms": 3628520,
+    "end_ms": 3633800,
+    "duration_ms": 5280,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3633.8,
+    "text": "So you take a look. We're adding grade information. The grade information makes sure that...",
+    "start_ms": 3633800,
+    "end_ms": 3639160,
+    "duration_ms": 5360,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3639.832,
+    "text": "The student is valid, 1 to 3 was Joey, 4, 5, 6 was Nargis, so student is valid, the homework ID 1 and 2 is also valid, so that's why it now is going to go ahead and add each one of those scores into the database, and then if you take a look at what is the store, 2 foreign keys, and then 1 column for the score value.",
+    "start_ms": 3639832,
+    "end_ms": 3663492,
+    "duration_ms": 23660,
+    "word_count": 70,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3663.492,
+    "text": "So this is why esquema is important because they can let us inspect the structure of the database that someone else is created or this structure of a database that we want to create and how we want to actually enforce that.",
+    "start_ms": 3663492,
+    "end_ms": 3676992,
+    "duration_ms": 13500,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3677.72,
+    "text": "We talked about different types. We've seen int, we can have float, we can have bar car or text.",
+    "start_ms": 3677720,
+    "end_ms": 3684404,
+    "duration_ms": 6684,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3684.404,
+    "text": "That's just normal as string. We can have blob. Anything that's not any of those other types, we can put it in blob.",
+    "start_ms": 3684404,
+    "end_ms": 3691550,
+    "duration_ms": 7146,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3691.55,
+    "text": "That's my favorite. You can put videos, audios, or any kind of data type that is not supported otherwise.",
+    "start_ms": 3691550,
+    "end_ms": 3697762,
+    "duration_ms": 6212,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3697.762,
+    "text": "You can put it as blob type. Data time is also another thing.",
+    "start_ms": 3697762,
+    "end_ms": 3703064,
+    "duration_ms": 5302,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3703.064,
+    "text": "But again, there are subtle differences in terms of how different kind of DBMS systems are referring to different types.",
+    "start_ms": 3703064,
+    "end_ms": 3711480,
+    "duration_ms": 8416,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3711.48,
+    "text": "So therefore double check all of those documentation if you're switching the DBMS type.",
+    "start_ms": 3711480,
+    "end_ms": 3717480,
+    "duration_ms": 6000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3717.816,
+    "text": "So we talked about constraints. We said that we have seen check.",
+    "start_ms": 3717816,
+    "end_ms": 3721807,
+    "duration_ms": 3991,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3721.807,
+    "text": "So check is going to check whether a Boolean expression is valid or not.",
+    "start_ms": 3721807,
+    "end_ms": 3725847,
+    "duration_ms": 4040,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3725.847,
+    "text": "If it is valid, meaning that for example in this case, if the year is greater than year 2000, it is going to go ahead and let us insert the data into the database.",
+    "start_ms": 3725847,
+    "end_ms": 3734936,
+    "duration_ms": 9089,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3734.936,
+    "text": "We can also add primary key information and we should add primary key information so that it does designate one column to be primary key.",
+    "start_ms": 3734936,
+    "end_ms": 3743696,
+    "duration_ms": 8760,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3743.696,
+    "text": "That is a constraint that we're adding. There is also the notion that we can make sure that the entry is not null, so everything should have value.",
+    "start_ms": 3743696,
+    "end_ms": 3752104,
+    "duration_ms": 8408,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3752.104,
+    "text": "So here we would say that we are going to enforce that this volume hex type is not going to be null.",
+    "start_ms": 3752104,
+    "end_ms": 3759704,
+    "duration_ms": 7600,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3759.704,
+    "text": "There should be a type, there should be a value for it.",
+    "start_ms": 3759704,
+    "end_ms": 3762504,
+    "duration_ms": 2800,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3762.504,
+    "text": "And there are some cases that we might want to have default value.",
+    "start_ms": 3762504,
+    "end_ms": 3766499,
+    "duration_ms": 3995,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3766.499,
+    "text": "If someone doesn't enter a value, we don't want to return an error and then say that oh, you can't have null.",
+    "start_ms": 3766499,
+    "end_ms": 3772664,
+    "duration_ms": 6165,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3772.664,
+    "text": "Instead, we could say that at the default value, and in this case, we would say that, okay, the default value because the type was date time, just use date time of the time now, so that we can kind of figure out that it has a type.",
+    "start_ms": 3772664,
+    "end_ms": 3787744,
+    "duration_ms": 15080,
+    "word_count": 48,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3787.744,
+    "text": "And generally, all of these constraints are going to be helpful for us to make sense of the data.",
+    "start_ms": 3787744,
+    "end_ms": 3793504,
+    "duration_ms": 5760,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3793.504,
+    "text": "If, for example, the default value is, for example, negative 999, and you have your data frame, and then you, or database, or table, or whatever, And you see that a bunch of bros are negative 999.",
+    "start_ms": 3793504,
+    "end_ms": 3805104,
+    "duration_ms": 11600,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3805.104,
+    "text": "That's how you can make sense of what's happening. And why you have those values and how you can actually fix it.",
+    "start_ms": 3805104,
+    "end_ms": 3810624,
+    "duration_ms": 5520,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3810.624,
+    "text": "Because those are missing values, not actual values that you have in your data frame.",
+    "start_ms": 3810624,
+    "end_ms": 3816584,
+    "duration_ms": 5960,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3817.528,
+    "text": "We talked about primary key. We said that primary key is one column or a collection of columns that would uniquely identify each one of the rows.",
+    "start_ms": 3817528,
+    "end_ms": 3827510,
+    "duration_ms": 9982,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3827.51,
+    "text": "We have seen this in, depends as lecture that we have.",
+    "start_ms": 3827510,
+    "end_ms": 3831549,
+    "duration_ms": 4039,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3831.549,
+    "text": "We also have the same concept here and it's going to be more important here because we uniquely want to identify records here really rigorously.",
+    "start_ms": 3831549,
+    "end_ms": 3840808,
+    "duration_ms": 9259,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3840.808,
+    "text": "And then we also want to hold a foreign key to the primary keys of the other tables that we have We've seen the example with the grade table that we had that holds two foreign keys to two different tables and refers to the actual primary keys of those tables that we have before.",
+    "start_ms": 3840808,
+    "end_ms": 3860548,
+    "duration_ms": 19740,
+    "word_count": 55,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3861.336,
+    "text": "So we are very close to actually seeing more demos but I would give you two minutes of break and then the next thing that we're going to talk about is actually writing some interesting queries.",
+    "start_ms": 3861336,
+    "end_ms": 3874636,
+    "duration_ms": 13300,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3874.736,
+    "text": "Next lecture we're going to go into more advanced queries but first take a two minute break and then we're going to come back and see some actual fun queries.",
+    "start_ms": 3874736,
+    "end_ms": 3882336,
+    "duration_ms": 7600,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3944.024,
+    "text": "How are we doing so far? Good. Sideways. Not so good, not understanding anything that's going on here.",
+    "start_ms": 3944024,
+    "end_ms": 3953330,
+    "duration_ms": 9306,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3953.33,
+    "text": "What is this new language? Good? Okay. The next homework is actually going to be really fun.",
+    "start_ms": 3953330,
+    "end_ms": 3965488,
+    "duration_ms": 12158,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3965.488,
+    "text": "And just generally playing with sequel is I find it to be a little bit more fun than Pandas.",
+    "start_ms": 3965488,
+    "end_ms": 3972488,
+    "duration_ms": 7000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3972.488,
+    "text": "And actually we're going to see how... All the functionalities that we're going to see is exactly kind of mirror of the functionalities that you've had in pandas.",
+    "start_ms": 3972488,
+    "end_ms": 3982096,
+    "duration_ms": 9608,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3986.52,
+    "text": "Since I'm talking anyways, let's go ahead and continue. So we are going to see some basic queries.",
+    "start_ms": 3986520,
+    "end_ms": 3993520,
+    "duration_ms": 7000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3993.52,
+    "text": "So we have seen a few of the terminologies. We had seen that, oh, we can have select.",
+    "start_ms": 3993520,
+    "end_ms": 4000520,
+    "duration_ms": 7000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4000.52,
+    "text": "And select is going to tell me which columns are going to be selected.",
+    "start_ms": 4000520,
+    "end_ms": 4004520,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4004.52,
+    "text": "And then I can also say from deciding about which table I'm going to read from.",
+    "start_ms": 4004520,
+    "end_ms": 4009520,
+    "duration_ms": 5000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4009.52,
+    "text": "And then the sequel, the statement is going to end with a semicolon.",
+    "start_ms": 4009520,
+    "end_ms": 4014520,
+    "duration_ms": 5000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4014.52,
+    "text": "It's not a hard requirement for the platform that we're using right now, but some of the different systems are going to be very picky on actually ending the statements with a semi-colon.",
+    "start_ms": 4014520,
+    "end_ms": 4028039,
+    "duration_ms": 13519,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4028.039,
+    "text": "So in the next bit, I'm going to talk a little bit about some of the other clauses.",
+    "start_ms": 4028039,
+    "end_ms": 4033800,
+    "duration_ms": 5761,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4033.8,
+    "text": "There is verclose that is similar to the verclose that you have seen in data 8.",
+    "start_ms": 4033800,
+    "end_ms": 4038840,
+    "duration_ms": 5040,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4038.84,
+    "text": "Remember that you had verclose in order to do some kind of conditional filtering.",
+    "start_ms": 4038840,
+    "end_ms": 4043920,
+    "duration_ms": 5080,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4043.92,
+    "text": "So here is also the same thing. What if we want to sort the data frame or database or a table so we can do order by?",
+    "start_ms": 4043920,
+    "end_ms": 4051800,
+    "duration_ms": 7880,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4051.8,
+    "text": "What if we want to limit and only see for example five rows instead of 10 rows or instead of the entire data frame so we can actually use limit and we can also use offset in order to just move the starting point of the rows that we're going to retrieve ill of it.",
+    "start_ms": 4051800,
+    "end_ms": 4069920,
+    "duration_ms": 18120,
+    "word_count": 55,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4069.92,
+    "text": "So this is what we had seen already. Select a star, a star meant that, select meant that whatever is going to follow is going to be the list of columns that I want.",
+    "start_ms": 4069920,
+    "end_ms": 4079760,
+    "duration_ms": 9840,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4079.76,
+    "text": "And we're going to see how we can actually do that.",
+    "start_ms": 4079760,
+    "end_ms": 4082040,
+    "duration_ms": 2280,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4082.04,
+    "text": "When I use the star, a star was referring to give me everything, all the column, everything that exists in this data frame.",
+    "start_ms": 4082040,
+    "end_ms": 4089720,
+    "duration_ms": 7680,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4089.72,
+    "text": "And then I specify that from the table dragon, and then it gives me, again, everything under the hood and the dragon data frame that we had.",
+    "start_ms": 4089720,
+    "end_ms": 4098920,
+    "duration_ms": 9200,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4098.92,
+    "text": "We could actually go ahead and be selective in terms of the columns that we want to get.",
+    "start_ms": 4098920,
+    "end_ms": 4104000,
+    "duration_ms": 5080,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4104.0,
+    "text": "So I'm gonna switch to the demo here. So we're gonna run the squery, select the star from drag on.",
+    "start_ms": 4104000,
+    "end_ms": 4110740,
+    "duration_ms": 6740,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4110.74,
+    "text": "So that's exactly what you're expecting. It selects everything and it gives you everything.",
+    "start_ms": 4110740,
+    "end_ms": 4116360,
+    "duration_ms": 5620,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4116.36,
+    "text": "So here I would say that I want you to go ahead and select, so look at the columns.",
+    "start_ms": 4116360,
+    "end_ms": 4122080,
+    "duration_ms": 5720,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4122.08,
+    "text": "So what do you want to select? So my note says that select cute and year in the same order.",
+    "start_ms": 4122080,
+    "end_ms": 4128400,
+    "duration_ms": 6320,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4128.4,
+    "text": "So I could say select cute and here. from Dragon?",
+    "start_ms": 4128400,
+    "end_ms": 4135040,
+    "duration_ms": 6640,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4135.512,
+    "text": "ending with semicolon so you see that it says that it's running the query inductly b and then it is giving me does Call Lums in the same order that I said.",
+    "start_ms": 4135512,
+    "end_ms": 4145070,
+    "duration_ms": 9558,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4145.07,
+    "text": "If I go ahead and just double check the content of my data frame, start not data frame.",
+    "start_ms": 4145070,
+    "end_ms": 4149979,
+    "duration_ms": 4909,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4149.979,
+    "text": "My original table, the original order is the same. Nothing has changed.",
+    "start_ms": 4149979,
+    "end_ms": 4153252,
+    "duration_ms": 3273,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4153.252,
+    "text": "This is a temporary kind of result that we got and we're printing in the output.",
+    "start_ms": 4153252,
+    "end_ms": 4157616,
+    "duration_ms": 4364,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4157.616,
+    "text": "What if I go ahead and say that, oh, what if you do Q times 2?",
+    "start_ms": 4157616,
+    "end_ms": 4162616,
+    "duration_ms": 5000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4163.256,
+    "text": "Right? Select Q times 2, get the Qt, multiply by 2.",
+    "start_ms": 4163256,
+    "end_ms": 4169288,
+    "duration_ms": 6032,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4169.288,
+    "text": "I can do operations actually in the select. And then also give me the year, and then just print everything.",
+    "start_ms": 4169288,
+    "end_ms": 4176248,
+    "duration_ms": 6960,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4176.248,
+    "text": "One thing that I don't like here is the Qt times 2 as the column name, right?",
+    "start_ms": 4176248,
+    "end_ms": 4181128,
+    "duration_ms": 4880,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4181.128,
+    "text": "So Qtimes 2 is not super interesting. One thing that we can use is we can use aliasing.",
+    "start_ms": 4181128,
+    "end_ms": 4187128,
+    "duration_ms": 6000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4187.608,
+    "text": "And L using means that whatever name this this column has or this operation that you have done.",
+    "start_ms": 4187608,
+    "end_ms": 4193208,
+    "duration_ms": 5600,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4193.208,
+    "text": "Go ahead and give me this column with this name that I want.",
+    "start_ms": 4193208,
+    "end_ms": 4197608,
+    "duration_ms": 4400,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4197.608,
+    "text": "It is kind of rename function that we had in pandas that we would rename columns.",
+    "start_ms": 4197608,
+    "end_ms": 4202208,
+    "duration_ms": 4600,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4202.208,
+    "text": "So here in L using I would say that give me cute but name it as cuteness.",
+    "start_ms": 4202208,
+    "end_ms": 4209208,
+    "duration_ms": 7000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4209.208,
+    "text": "So let me actually go by q times 2 so that it matches the same thing that we had.",
+    "start_ms": 4209208,
+    "end_ms": 4213608,
+    "duration_ms": 4400,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4213.608,
+    "text": "comma, so this is the first column that I have.",
+    "start_ms": 4213608,
+    "end_ms": 4216808,
+    "duration_ms": 3200,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4216.808,
+    "text": "The second column is going to be year as, and then I'm passing the year that I want, or the title that I want.",
+    "start_ms": 4216808,
+    "end_ms": 4223968,
+    "duration_ms": 7160,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4223.968,
+    "text": "Notice that the title of the column that I'm giving is in double quotation mark.",
+    "start_ms": 4223968,
+    "end_ms": 4229288,
+    "duration_ms": 5320,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4229.288,
+    "text": "That's because I have a space. I can't actually have birth year to be just be this without a string because then it can't actually parse it it just needs to have one name without a space um so if you want to actually have column names with a space which we don't recommend usually you just put it in double quotation marks uh and then the column name is going to actually be cuteness times two which is like the cute thing times two and then burstier is going to be the name of the column that I have Okay, so far so good.",
+    "start_ms": 4229288,
+    "end_ms": 4265370,
+    "duration_ms": 36082,
+    "word_count": 105,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4265.37,
+    "text": "Things are super easy. So in SQL, you can actually read the thing and make sense of it as opposed to any other language that you've been learning that you actually needed to learn.",
+    "start_ms": 4265370,
+    "end_ms": 4274960,
+    "duration_ms": 9590,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4274.96,
+    "text": "Go through a bunch of different documentation to make sense of what's happening.",
+    "start_ms": 4274960,
+    "end_ms": 4278473,
+    "duration_ms": 3513,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4278.473,
+    "text": "If I give you any SQL and you don't know any SQL, you can actually read it as English and make sense of it.",
+    "start_ms": 4278473,
+    "end_ms": 4284960,
+    "duration_ms": 6487,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4284.824,
+    "text": "We could actually also say use this thing remember that we had unique function in pandas that we give us the unique list of values that we had in a column.",
+    "start_ms": 4284824,
+    "end_ms": 4294824,
+    "duration_ms": 10000,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4294.824,
+    "text": "So here we can say that give me this thing of year.",
+    "start_ms": 4294824,
+    "end_ms": 4298824,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4299.928,
+    "text": "from the table track driving. So this is as if I would say that run this thing on the year column and only give me that and because I only selected the year.",
+    "start_ms": 4299928,
+    "end_ms": 4309928,
+    "duration_ms": 10000,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4309.928,
+    "text": "This is going to only give me that call up.",
+    "start_ms": 4309928,
+    "end_ms": 4312594,
+    "duration_ms": 2666,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4312.594,
+    "text": "It's not going to give me anything about the cuteness or cute or whatever.",
+    "start_ms": 4312594,
+    "end_ms": 4316328,
+    "duration_ms": 3734,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4316.328,
+    "text": "So this is only a single column distinct values. So I'm going to run that take a look.",
+    "start_ms": 4316328,
+    "end_ms": 4321128,
+    "duration_ms": 4800,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4321.128,
+    "text": "It is actually a set up distinct values. If I scroll up, you would see that I had.",
+    "start_ms": 4321128,
+    "end_ms": 4325928,
+    "duration_ms": 4800,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4325.928,
+    "text": "had 220 tens and 220 11s, but unique is, or this thing does not give me all of those.",
+    "start_ms": 4325928,
+    "end_ms": 4333368,
+    "duration_ms": 7440,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4333.368,
+    "text": "If I wanted to get this thing here and I wanted to get other things, what would you, what would happen?",
+    "start_ms": 4333368,
+    "end_ms": 4339560,
+    "duration_ms": 6192,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4339.56,
+    "text": "If I say this thing here and then cute. What is happening here?",
+    "start_ms": 4339560,
+    "end_ms": 4345224,
+    "duration_ms": 5664,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4349.144,
+    "text": "I'm getting everything. Why is that? Because I'm getting the distinct over combination of things.",
+    "start_ms": 4349144,
+    "end_ms": 4356088,
+    "duration_ms": 6944,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4356.76,
+    "text": "Right? So on the combination of year and cute, I don't have any repeated value, so that's why it just doesn't make sense.",
+    "start_ms": 4356760,
+    "end_ms": 4363640,
+    "duration_ms": 6880,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4363.64,
+    "text": "So this thing here is going to give me all of that.",
+    "start_ms": 4363640,
+    "end_ms": 4366440,
+    "duration_ms": 2800,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4367.288,
+    "text": "Remember that in the first thing that I taught you in Pandas was conditional filtering.",
+    "start_ms": 4367288,
+    "end_ms": 4373008,
+    "duration_ms": 5720,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4373.008,
+    "text": "First thing that was creating the data frame and then I taught you how you can write conditionals in order to make a selection or do a filtering.",
+    "start_ms": 4373008,
+    "end_ms": 4382688,
+    "duration_ms": 9680,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4382.688,
+    "text": "So in SQL language it is much easier to do it.",
+    "start_ms": 4382688,
+    "end_ms": 4386568,
+    "duration_ms": 3880,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4386.568,
+    "text": "It's very similar to again the data-ed language that you've seen of you use the ver clause.",
+    "start_ms": 4386568,
+    "end_ms": 4392688,
+    "duration_ms": 6120,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4392.688,
+    "text": "When I say Vercloth, Brumcloth, or like for example, select clause, that means that I want to have each one of those different kind of operations to be on separate lines so that actually the entire SQL setup is going to be easier for me to read.",
+    "start_ms": 4392688,
+    "end_ms": 4410937,
+    "duration_ms": 18249,
+    "word_count": 47,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4410.937,
+    "text": "So here I would say that, so what does the comment say?",
+    "start_ms": 4410937,
+    "end_ms": 4414527,
+    "duration_ms": 3590,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4414.527,
+    "text": "Select name and year of Altraglis Hortute. So let's define that as cute being greater than zero as the drivers that are cute.",
+    "start_ms": 4414527,
+    "end_ms": 4422840,
+    "duration_ms": 8313,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4422.84,
+    "text": "But what I want is I don't want all the columns I just want name and year.",
+    "start_ms": 4422840,
+    "end_ms": 4428240,
+    "duration_ms": 5400,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4428.536,
+    "text": "Right? So, when I want only name and year, I would say select.",
+    "start_ms": 4428536,
+    "end_ms": 4433816,
+    "duration_ms": 5280,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4434.168,
+    "text": "Name and year in the same order, so I'm done with the select clause.",
+    "start_ms": 4434168,
+    "end_ms": 4438468,
+    "duration_ms": 4300,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4438.808,
+    "text": "Now I'm going to move on to the year clock the from clause which is going to tell me which data frit or database this is going to come from.",
+    "start_ms": 4438808,
+    "end_ms": 4447108,
+    "duration_ms": 8300,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4447.108,
+    "text": "So we're working with the drag on data frame. And then the next thing is enforcing the condition.",
+    "start_ms": 4447108,
+    "end_ms": 4452919,
+    "duration_ms": 5811,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4452.919,
+    "text": "So I'm enforcing the condition that where Q is greater than zero.",
+    "start_ms": 4452919,
+    "end_ms": 4457704,
+    "duration_ms": 4785,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4458.936,
+    "text": "Just give me all of these things. It's super easy.",
+    "start_ms": 4458936,
+    "end_ms": 4461544,
+    "duration_ms": 2608,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4461.544,
+    "text": "You read it. It just does exactly the same thing that you said.",
+    "start_ms": 4461544,
+    "end_ms": 4464936,
+    "duration_ms": 3392,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4464.936,
+    "text": "There are also other kind of things that I can do.",
+    "start_ms": 4464936,
+    "end_ms": 4469284,
+    "duration_ms": 4348,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4469.284,
+    "text": "What if I want to say that I'm going to just let any drag on who's not cute but is born after 2013 also to be considered into a cuteness category.",
+    "start_ms": 4469284,
+    "end_ms": 4481540,
+    "duration_ms": 12256,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4481.54,
+    "text": "Right. So in that case, what I can do is I can actually write an OR clause.",
+    "start_ms": 4481540,
+    "end_ms": 4486496,
+    "duration_ms": 4956,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4486.496,
+    "text": "I would say that those work cute. Or... who are born after 2013 are going to be included in the final thing.",
+    "start_ms": 4486496,
+    "end_ms": 4494776,
+    "duration_ms": 8280,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4494.776,
+    "text": "Again, following the same template, I would say, select, name and year.",
+    "start_ms": 4494776,
+    "end_ms": 4500456,
+    "duration_ms": 5680,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4501.528,
+    "text": "From my dragon table. and then i would say very What should I put here?",
+    "start_ms": 4501528,
+    "end_ms": 4509352,
+    "duration_ms": 7824,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4509.08,
+    "text": "Cute, greater than zero. So that's the Q-dness metric. And then we could directly say, or so here we can actually use all of the Boolean operations that we've had double check the documentation to figure out how I can do and and is also just type in and it will do that.",
+    "start_ms": 4509080,
+    "end_ms": 4526892,
+    "duration_ms": 17812,
+    "word_count": 53,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4526.892,
+    "text": "Or the other requirement born after 2013 meaning that year is greater than 2013 so we can do all of those operations.",
+    "start_ms": 4526892,
+    "end_ms": 4536892,
+    "duration_ms": 10000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4536.892,
+    "text": "Here you would see that this one, although it was not cute, but because the year is after is 2019, it is now in fluidity.",
+    "start_ms": 4536892,
+    "end_ms": 4545072,
+    "duration_ms": 8180,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4546.744,
+    "text": "Good. The other thing that I want to show you, what if I want to say that the value or the name or whatever is in a list.",
+    "start_ms": 4546744,
+    "end_ms": 4557168,
+    "duration_ms": 10424,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4557.168,
+    "text": "Remember, we also had that. If, for example, we wanted to select baby names from a specific list, we could provide that a specific list and then just do some dot is in function.",
+    "start_ms": 4557168,
+    "end_ms": 4569168,
+    "duration_ms": 12000,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4569.168,
+    "text": "It's exactly kind of the same thing here that we could actually say that select.",
+    "start_ms": 4569168,
+    "end_ms": 4575168,
+    "duration_ms": 6000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4576.696,
+    "text": "Um. Name and Year From... Dragon and I would say, Vir.",
+    "start_ms": 4576696,
+    "end_ms": 4586168,
+    "duration_ms": 9472,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4587.192,
+    "text": "Name in. and then i would put those names I wanted to have puff and then I wanted to have pick up.",
+    "start_ms": 4587192,
+    "end_ms": 4595980,
+    "duration_ms": 8788,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4598.84,
+    "text": "Right? I get exactly the same thing. Question. The question is, is the order important or not?",
+    "start_ms": 4598840,
+    "end_ms": 4609808,
+    "duration_ms": 10968,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4609.808,
+    "text": "To some extent, the order is not important after select them from, but we still go by the same order.",
+    "start_ms": 4609808,
+    "end_ms": 4617808,
+    "duration_ms": 8000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4617.808,
+    "text": "So there is going to be a specific cheat sheet that we're going to give you that we follow exactly the same kind of order of operations.",
+    "start_ms": 4617808,
+    "end_ms": 4624808,
+    "duration_ms": 7000,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4624.808,
+    "text": "One reason that I'm going to get to that in the next lecture is that SQL is a declarative language.",
+    "start_ms": 4624808,
+    "end_ms": 4630128,
+    "duration_ms": 5320,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4630.128,
+    "text": "You just declare what you want. You don't worry about the order of operation.",
+    "start_ms": 4630128,
+    "end_ms": 4634808,
+    "duration_ms": 4680,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4634.808,
+    "text": "Because for example, when we were doing Group 5, we would need to just double check that we first group by, we then do this, we then do that.",
+    "start_ms": 4634808,
+    "end_ms": 4642168,
+    "duration_ms": 7360,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4642.168,
+    "text": "We needed to worry about Python, just understanding and following the process.",
+    "start_ms": 4642168,
+    "end_ms": 4648168,
+    "duration_ms": 6000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4648.168,
+    "text": "With SQL, you just declare what you want. You're just directly saying that I want.",
+    "start_ms": 4648168,
+    "end_ms": 4652327,
+    "duration_ms": 4159,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4652.632,
+    "text": "Qtimes 2. And then you write exactly everything and then it will just parse everything and then as a declarative language it will go ahead and figure out the order that it needs to do stuff in order to get you the result that you want.",
+    "start_ms": 4652632,
+    "end_ms": 4666352,
+    "duration_ms": 13720,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4667.032,
+    "text": "We can also do check, we can check against null.",
+    "start_ms": 4667032,
+    "end_ms": 4669924,
+    "duration_ms": 2892,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4669.924,
+    "text": "So here I would say that I'm selecting name and Qt from the drag on table and I just want to make sure that the Qt is not null.",
+    "start_ms": 4669924,
+    "end_ms": 4677432,
+    "duration_ms": 7508,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4677.432,
+    "text": "So notice here is that now the null entry that I had is no longer there.",
+    "start_ms": 4677432,
+    "end_ms": 4683072,
+    "duration_ms": 5640,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4683.072,
+    "text": "But one thing that's important is that we don't compare against null.",
+    "start_ms": 4683072,
+    "end_ms": 4686672,
+    "duration_ms": 3600,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4686.672,
+    "text": "We don't say equal, equal null or equal null, right?",
+    "start_ms": 4686672,
+    "end_ms": 4690232,
+    "duration_ms": 3560,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4690.232,
+    "text": "The comparison between the null is not a load. The only thing that you can compare or you can do is you would say is null or is not null.",
+    "start_ms": 4690232,
+    "end_ms": 4698232,
+    "duration_ms": 8000,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4698.232,
+    "text": "And then it will just exactly double check it with the order that we have.",
+    "start_ms": 4698232,
+    "end_ms": 4702712,
+    "duration_ms": 4480,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4703.256,
+    "text": "So these are the things that we talked about, aliasing, we had seen it, we talked about using separate lines for different clauses that we have, so that the code is more readable, we talked about distinct in order to get unique different entrances that we had.",
+    "start_ms": 4703256,
+    "end_ms": 4719416,
+    "duration_ms": 16160,
+    "word_count": 47,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4719.416,
+    "text": "We talked about the vera clause where we can write different conditions and then filter the table that we have.",
+    "start_ms": 4719416,
+    "end_ms": 4726544,
+    "duration_ms": 7128,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4726.544,
+    "text": "We have seen that we can now combine different conditions together using and or and different things.",
+    "start_ms": 4726544,
+    "end_ms": 4732502,
+    "duration_ms": 5958,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4732.502,
+    "text": "We have also seen that we can use in in order to figure out whether the entry that we have is in a list or in is in a set of values so that we can use it.",
+    "start_ms": 4732502,
+    "end_ms": 4743896,
+    "duration_ms": 11394,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4744.184,
+    "text": "Um. This is one thing that I forgot to tell you.",
+    "start_ms": 4744184,
+    "end_ms": 4747956,
+    "duration_ms": 3772,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4747.956,
+    "text": "If you want to, again, if I go back here, notice that when I was referring to pick up a string, or for example, puff and a string, I use single code.",
+    "start_ms": 4747956,
+    "end_ms": 4759256,
+    "duration_ms": 11300,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4759.256,
+    "text": "When you have just a string literals that you want to compare against, you use single code.",
+    "start_ms": 4759256,
+    "end_ms": 4763896,
+    "duration_ms": 4640,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4763.896,
+    "text": "The only time that we use double code is for column names, where when I actually went ahead and created this column, but...",
+    "start_ms": 4763896,
+    "end_ms": 4773496,
+    "duration_ms": 9600,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4773.344,
+    "text": "has a space in, I use double quotation mark. Every variable we use single quotation mark for string literals except for column name where we use double quotation mark.",
+    "start_ms": 4773344,
+    "end_ms": 4783982,
+    "duration_ms": 10638,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4783.982,
+    "text": "These are the things that we talked about. We talked about is null is not null in order to compare whether values are null or not.",
+    "start_ms": 4783982,
+    "end_ms": 4792613,
+    "duration_ms": 8631,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4792.613,
+    "text": "We talked about we can directly check equal equal null and the only way to compare it is using these operations.",
+    "start_ms": 4792613,
+    "end_ms": 4800280,
+    "duration_ms": 7667,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4800.28,
+    "text": "I'm going to start, restart the lecture from order by and then we'll see more of different kind of SQL clauses and then we'll get to more advanced SQL stuff in the next lecture.",
+    "start_ms": 4800280,
+    "end_ms": 4813480,
+    "duration_ms": 13200,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4813.88,
+    "text": "Thank you for coming. I will see you back on Thursday.",
+    "start_ms": 4813880,
+    "end_ms": 4817080,
+    "duration_ms": 3200,
+    "word_count": 11,
+    "avg_confidence": 90
+  }
+]

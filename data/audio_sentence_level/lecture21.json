@@ -1,0 +1,5069 @@
+[
+  {
+    "timestamp": 0.0,
+    "text": "Do the clock. Alright, great. We're all ready to go!",
+    "start_ms": 0,
+    "end_ms": 7820,
+    "duration_ms": 7820,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 8.248,
+    "text": "Let me set this. Okay, wonderful. This is our next SQL lecture.",
+    "start_ms": 8248,
+    "end_ms": 13805,
+    "duration_ms": 5557,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 13.805,
+    "text": "So things are going to be more interesting today in a sense that what I'll do is I'll go into more advanced SQL stuff.",
+    "start_ms": 13805,
+    "end_ms": 22352,
+    "duration_ms": 8547,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 22.352,
+    "text": "So kind of think about this as the previous lecture as the first two lectures of Pandas that I was translating it into SQL and then today is actually the second two lectures of Pandas.",
+    "start_ms": 22352,
+    "end_ms": 34306,
+    "duration_ms": 11954,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 34.306,
+    "text": "So I'm going to talk about how we can actually do group by, how we can do ordering of the data in a table or relation, and how can we actually do filtering.",
+    "start_ms": 34306,
+    "end_ms": 46168,
+    "duration_ms": 11862,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 46.168,
+    "text": "I remember filter function that you had in DataFrame. So we're going to see that at the equivalent of that in SQL as well.",
+    "start_ms": 46168,
+    "end_ms": 53208,
+    "duration_ms": 7040,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 53.208,
+    "text": "And then there's going to be a lot of demo.",
+    "start_ms": 53208,
+    "end_ms": 55288,
+    "duration_ms": 2080,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 55.288,
+    "text": "So you're going to see a lot of SQL code.",
+    "start_ms": 55288,
+    "end_ms": 57528,
+    "duration_ms": 2240,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 57.528,
+    "text": "You don't need to understand everything, but the important pieces that you just be able to follow what I'm explaining to you.",
+    "start_ms": 57528,
+    "end_ms": 64168,
+    "duration_ms": 6640,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 64.168,
+    "text": "Again, SQL is really interesting that you can actually read it as you're reading in English text.",
+    "start_ms": 64168,
+    "end_ms": 69688,
+    "duration_ms": 5520,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 69.688,
+    "text": "So every complicated even SQL query that I'll show you, you can read it again and it will make sense to you.",
+    "start_ms": 69688,
+    "end_ms": 76728,
+    "duration_ms": 7040,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 77.176,
+    "text": "So I'm going to finish with the basic queries that we had from last time.",
+    "start_ms": 77176,
+    "end_ms": 82296,
+    "duration_ms": 5120,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 82.296,
+    "text": "And I'm going to actually jump into the demo to just quickly remind you of what we started seeing last time.",
+    "start_ms": 82296,
+    "end_ms": 88696,
+    "duration_ms": 6400,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 88.696,
+    "text": "So I'm still in the lecture 20 demo. All of the kind of thick hood is actually ported to also lecture 21.",
+    "start_ms": 88696,
+    "end_ms": 98936,
+    "duration_ms": 10240,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 98.936,
+    "text": "So just feel free to open the notebook for lecture 21 and take a look at that.",
+    "start_ms": 98936,
+    "end_ms": 102696,
+    "duration_ms": 3760,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 102.696,
+    "text": "So what we've seen in the previous lecture, if I can find it, is that we had seen a bunch of different syntax.",
+    "start_ms": 102696,
+    "end_ms": 113695,
+    "duration_ms": 10999,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 113.695,
+    "text": "So we had seen that we can use select keyword, and then we pass a number of columns that we want to select, or we can say star, meaning that give me all the columns that you have and all the rows that you have.",
+    "start_ms": 113695,
+    "end_ms": 125055,
+    "duration_ms": 11360,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 125.055,
+    "text": "And then I'm saying from the table dragon. You have seen before that how I can actually connect to the database and actually make sure that the docDB database is actually there to run my query, but let's take a look at how it looks like.",
+    "start_ms": 125055,
+    "end_ms": 140056,
+    "duration_ms": 15001,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 140.056,
+    "text": "So it says that it's running the query, it ran the query on the docDB database.",
+    "start_ms": 140056,
+    "end_ms": 144216,
+    "duration_ms": 4160,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 144.216,
+    "text": "So that's the alias that I picked for, the docDB connection that I made to the docDB file or the database file that I had.",
+    "start_ms": 144216,
+    "end_ms": 152376,
+    "duration_ms": 8160,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 152.376,
+    "text": "And this is the drag on data frame, sorry, not data frame anymore.",
+    "start_ms": 152376,
+    "end_ms": 156216,
+    "duration_ms": 3840,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 156.216,
+    "text": "This is a relation. So what I have is a bunch of different attributes, a bunch of different columns exactly in the same table or format that you're expecting from a table and also similar to what you had in data frame.",
+    "start_ms": 156216,
+    "end_ms": 170176,
+    "duration_ms": 13960,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 170.176,
+    "text": "Remember that I could also say that, oh, I don't want everything in your table.",
+    "start_ms": 170176,
+    "end_ms": 174856,
+    "duration_ms": 4680,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 174.856,
+    "text": "I can just get name and year and just give me name in year and I'll give you the name and year.",
+    "start_ms": 174856,
+    "end_ms": 180536,
+    "duration_ms": 5680,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 180.536,
+    "text": "What you're going to see today is that the order of the rows that you're going to get is not going to be deterministic.",
+    "start_ms": 180536,
+    "end_ms": 188136,
+    "duration_ms": 7600,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 188.136,
+    "text": "That's an important thing to note from databases. In fact, when I was playing with the demo, I kind of confused myself at one point that, oh, why is the order?",
+    "start_ms": 188136,
+    "end_ms": 197575,
+    "duration_ms": 9439,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 197.72,
+    "text": "different and why is it not the order that I'm seeing in the screen shots that you have in the lecture.",
+    "start_ms": 197720,
+    "end_ms": 203411,
+    "duration_ms": 5691,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 203.411,
+    "text": "And this is exactly because the order is actually going to be not random, but it's just going to be non-deterministic.",
+    "start_ms": 203411,
+    "end_ms": 210245,
+    "duration_ms": 6834,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 210.245,
+    "text": "The order that the rows are going to be returned to you is actually going to be the order that the database can optimize.",
+    "start_ms": 210245,
+    "end_ms": 217557,
+    "duration_ms": 7312,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 217.557,
+    "text": "So however, it can get you the data that's the fastest way, it will give you the data.",
+    "start_ms": 217557,
+    "end_ms": 222791,
+    "duration_ms": 5234,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 222.791,
+    "text": "Unless you specify that you want a certain ordering. If you specify that you want a certain ordering, like you want to order by year or whatever, it will make sure that it gives you the data in the same order that you specified.",
+    "start_ms": 222791,
+    "end_ms": 236280,
+    "duration_ms": 13489,
+    "word_count": 44,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 236.28,
+    "text": "So if I want to go ahead and say that, okay, I want name and year, but now I don't want you to decide about the ordering of the rows, but I want the order to to be, for example, ordered by year.",
+    "start_ms": 236280,
+    "end_ms": 249679,
+    "duration_ms": 13399,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 249.679,
+    "text": "So let's sort the data frame or this relation by year.",
+    "start_ms": 249679,
+    "end_ms": 253480,
+    "duration_ms": 3801,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 253.912,
+    "text": "So the syntax that we'll see is Actually, I'll go ahead and say...",
+    "start_ms": 253912,
+    "end_ms": 260060,
+    "duration_ms": 6148,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 260.6,
+    "text": "Star star percent secle so that it knows that we're in sequel and then I would say that Oh, always.",
+    "start_ms": 260600,
+    "end_ms": 270792,
+    "duration_ms": 10192,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 271.096,
+    "text": "Never mind. So here I would say that select. Name and Year again, but the same order that I wanted, I would say from the table of dragon.",
+    "start_ms": 271096,
+    "end_ms": 287040,
+    "duration_ms": 15944,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 288.472,
+    "text": "And I would say that order the return kind of type by and here I would say order by year.",
+    "start_ms": 288472,
+    "end_ms": 298472,
+    "duration_ms": 10000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 298.472,
+    "text": "And let's take a look. Now my date and my data is actually sorted by year and you can see that the order is an ascending order.",
+    "start_ms": 298472,
+    "end_ms": 305472,
+    "duration_ms": 7000,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 305.472,
+    "text": "If I want the order to be descending, I would hear a specified that the order should be descending and then the order is going to be descending.",
+    "start_ms": 305472,
+    "end_ms": 314472,
+    "duration_ms": 9000,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 314.472,
+    "text": "If you want to make sure that the order is ascending, ASC is the keyboard to make sure that it is ordered in ascending order.",
+    "start_ms": 314472,
+    "end_ms": 321712,
+    "duration_ms": 7240,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 321.712,
+    "text": "Let's assume that if there is a tie in the elements, for example, here we have 220, 11, and 20, 10s, I want to break tie by the alphabetical ordering of the name.",
+    "start_ms": 321712,
+    "end_ms": 334832,
+    "duration_ms": 13120,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 334.832,
+    "text": "So in that case, I could say that, oh, go ahead and order by year ascendingly and then break tie by name.",
+    "start_ms": 334832,
+    "end_ms": 341472,
+    "duration_ms": 6640,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 341.472,
+    "text": "So in kind of the same way that we could order, or thereby the data frame columns that we have, we could order by a certain column and then break tie by a second column.",
+    "start_ms": 341472,
+    "end_ms": 351592,
+    "duration_ms": 10120,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 351.592,
+    "text": "Here is also exactly the same thing. So let's take a look at what's gonna happen.",
+    "start_ms": 351592,
+    "end_ms": 355992,
+    "duration_ms": 4400,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 355.992,
+    "text": "So here it's actually going to do the sending on the year and ascending on the name.",
+    "start_ms": 355992,
+    "end_ms": 362912,
+    "duration_ms": 6920,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 362.912,
+    "text": "So you can see that on Dragon is before, before the other Dragon that starts with S.",
+    "start_ms": 362912,
+    "end_ms": 370511,
+    "duration_ms": 7599,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 370.512,
+    "text": "so because these before us in alphabetical order. So that's exactly what's happening when we want to order by.",
+    "start_ms": 370512,
+    "end_ms": 378812,
+    "duration_ms": 8300,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 379.352,
+    "text": "So I'm going to jump back to the slide. This is exactly what we talked about.",
+    "start_ms": 379352,
+    "end_ms": 384898,
+    "duration_ms": 5546,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 384.898,
+    "text": "We can order different things. So here I would say that the order is descending.",
+    "start_ms": 384898,
+    "end_ms": 389518,
+    "duration_ms": 4620,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 389.518,
+    "text": "If you want to have the order in ascending order, you specify ASC.",
+    "start_ms": 389518,
+    "end_ms": 393272,
+    "duration_ms": 3754,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 393.272,
+    "text": "And then you can actually make sure that you use descending and ascending keyboard in order to just specify which column should be ascending, which column should be descending and so on and so forth.",
+    "start_ms": 393272,
+    "end_ms": 404600,
+    "duration_ms": 11328,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 404.6,
+    "text": "So here I could actually go ahead and say, The year is the this ending, but I also want to make sure that the name is also in the sending order question.",
+    "start_ms": 404600,
+    "end_ms": 415096,
+    "duration_ms": 10496,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 422.328,
+    "text": "We'll see more complicated examples like that. The question was, I can be ordered by something that's not the column itself, but it's something else.",
+    "start_ms": 422328,
+    "end_ms": 429728,
+    "duration_ms": 7400,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 429.728,
+    "text": "I will take a look at that. So let's go ahead and take a look at the next thing in the sequence that we have for you.",
+    "start_ms": 429728,
+    "end_ms": 438556,
+    "duration_ms": 8828,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 438.556,
+    "text": "And this is actually a slider question for you. I want you to, again, because I said that this is really easy to read.",
+    "start_ms": 438556,
+    "end_ms": 446216,
+    "duration_ms": 7660,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 446.616,
+    "text": "I want you to now make sense of what limit we do and what offset keyboard we do.",
+    "start_ms": 446616,
+    "end_ms": 453816,
+    "duration_ms": 7200,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 453.816,
+    "text": "There are two options, it's just a matching question, go ahead and let me know which which is the case.",
+    "start_ms": 453816,
+    "end_ms": 460436,
+    "duration_ms": 6620,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 489.848,
+    "text": "I just confirm there's no question and slidda. It has a new interface today.",
+    "start_ms": 489848,
+    "end_ms": 495208,
+    "duration_ms": 5360,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 495.384,
+    "text": "So, yeah, you'll get used to the newest light of the interface.",
+    "start_ms": 495384,
+    "end_ms": 498984,
+    "duration_ms": 3600,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 498.984,
+    "text": "But if there are any questions you're in the lecture, make sure that you send it to a slider.",
+    "start_ms": 498984,
+    "end_ms": 503384,
+    "duration_ms": 4400,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 503.384,
+    "text": "So let's take a look at what you got. You all mentioned that one belongs to is the query that generates a to is the query that generates b.",
+    "start_ms": 503384,
+    "end_ms": 518144,
+    "duration_ms": 14760,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 518.144,
+    "text": "So limit as you kind of guess is that are also from the options that we have is that it's going to give you.",
+    "start_ms": 518144,
+    "end_ms": 524644,
+    "duration_ms": 6500,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 524.644,
+    "text": "It's going to limit how many rows are going to be returned to you so let me say limit two is going to give you two.",
+    "start_ms": 524644,
+    "end_ms": 531144,
+    "duration_ms": 6500,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 531.144,
+    "text": "So looking at the data frame that we had initially, if that's the data frame that we have, then effectively limit two if you're assuming that it's going to be deterministic and it's going to give you the first two rows, it is actually going to return this row and this row as a result of just saying that select everything from drag on but limit two.",
+    "start_ms": 531144,
+    "end_ms": 554424,
+    "duration_ms": 23280,
+    "word_count": 67,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 554.424,
+    "text": "What offset does is that offset says that, okay, give me some more of the rows, but then offset it by a factor or by a number that I don't want the first one, for example, and I want the second one and the third one.",
+    "start_ms": 554424,
+    "end_ms": 569304,
+    "duration_ms": 14880,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 569.304,
+    "text": "So that's what offset does. So when we specify that there is the limit of two, it will get the first two.",
+    "start_ms": 569304,
+    "end_ms": 576624,
+    "duration_ms": 7320,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 576.624,
+    "text": "When we specify that limit two but offset by one, that means that get tree, discard the first one and then give me the second one and the third one which in this case is going to give us these two rows, okay?",
+    "start_ms": 576624,
+    "end_ms": 589695,
+    "duration_ms": 13071,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 589.695,
+    "text": "So easy, easy. Every time that you see a new keyboard just read it, just make sense of what the output is going to be or even run it and then it makes sense that what it does onto you.",
+    "start_ms": 589695,
+    "end_ms": 603224,
+    "duration_ms": 13529,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 603.864,
+    "text": "So this is kind of the overview of everything that we've seen before.",
+    "start_ms": 603864,
+    "end_ms": 607959,
+    "duration_ms": 4095,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 607.959,
+    "text": "We have select, we have from select says about columns that you want.",
+    "start_ms": 607959,
+    "end_ms": 613784,
+    "duration_ms": 5825,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 613.784,
+    "text": "So just make sure that you are following this is this is specific structure.",
+    "start_ms": 613784,
+    "end_ms": 618875,
+    "duration_ms": 5091,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 618.875,
+    "text": "Select says that what is the column list? If you want everything you would say star if you want the columns you specify the columns that you want.",
+    "start_ms": 618875,
+    "end_ms": 628504,
+    "duration_ms": 9629,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 628.504,
+    "text": "Sometimes it would also do operations on the columns. Remember that I was doing I think, uh, cuteness times two.",
+    "start_ms": 628504,
+    "end_ms": 634884,
+    "duration_ms": 6380,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 634.884,
+    "text": "So we could do that too. I would say that I want cuteness, but I want it to be multiplied by two, um, as well.",
+    "start_ms": 634884,
+    "end_ms": 641044,
+    "duration_ms": 6160,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 641.044,
+    "text": "Uh, we need to always specify the table that we're going to extract our data from.",
+    "start_ms": 641044,
+    "end_ms": 646124,
+    "duration_ms": 5080,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 646.124,
+    "text": "Uh, we also used their clause with a predicate in order to do filtering.",
+    "start_ms": 646124,
+    "end_ms": 652484,
+    "duration_ms": 6360,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 652.484,
+    "text": "Remember that I was saying that where cuteness is greater than zero in order to extract all of the cuter dragons.",
+    "start_ms": 652484,
+    "end_ms": 658924,
+    "duration_ms": 6440,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 658.924,
+    "text": "Um, so that's the kind of filtering that we can do.",
+    "start_ms": 658924,
+    "end_ms": 661524,
+    "duration_ms": 2600,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 661.524,
+    "text": "Now we have also seen limit and offset. Limit is going to tell you how many rows you want, and then offset is going to tell you how many of the initial rows it should ignore and then give you everything else.",
+    "start_ms": 661524,
+    "end_ms": 673543,
+    "duration_ms": 12019,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 673.543,
+    "text": "Know that what we also talked about before is kind of the standard for writing SQL queries that each one of these keywords are going to be in a separate line so that the code is a little bit more readable.",
+    "start_ms": 673543,
+    "end_ms": 686984,
+    "duration_ms": 13441,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 686.984,
+    "text": "Also, all of the keywords are going to be in all caps.",
+    "start_ms": 686984,
+    "end_ms": 690903,
+    "duration_ms": 3919,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 690.904,
+    "text": "The version of SQL that we're using is not going to be very sensitive to that.",
+    "start_ms": 690904,
+    "end_ms": 694984,
+    "duration_ms": 4080,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 694.984,
+    "text": "So you can just type the lower case, but it's good to get used to that practice generally.",
+    "start_ms": 694984,
+    "end_ms": 700904,
+    "duration_ms": 5920,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 700.904,
+    "text": "It always ends with a semicolon. Again, the version of SQL that we're using is not going to give you errors, so you can actually not include semicolon.",
+    "start_ms": 700904,
+    "end_ms": 709864,
+    "duration_ms": 8960,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 709.864,
+    "text": "In fact, I tried different versions of this in the previous lecture, but I didn't put semicolon or I used, for example, title case for keywords and it was not thrown in error.",
+    "start_ms": 709864,
+    "end_ms": 720544,
+    "duration_ms": 10680,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 720.544,
+    "text": "but know that this is the best practice is just to go with this structure.",
+    "start_ms": 720544,
+    "end_ms": 724944,
+    "duration_ms": 4400,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 725.528,
+    "text": "So let's jump back to the demo one more time.",
+    "start_ms": 725528,
+    "end_ms": 730528,
+    "duration_ms": 5000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 730.528,
+    "text": "There's the next concept of sampling. So we've done sampling in data frame.",
+    "start_ms": 730528,
+    "end_ms": 735128,
+    "duration_ms": 4600,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 735.128,
+    "text": "We know that we need sampling. You have done a lot of sampling and bootstrap analysis in previous homework.",
+    "start_ms": 735128,
+    "end_ms": 741088,
+    "duration_ms": 5960,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 741.088,
+    "text": "So we need to do that and learn how we can do that in data frames as in.",
+    "start_ms": 741088,
+    "end_ms": 745728,
+    "duration_ms": 4640,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 746.136,
+    "text": "relations as well. There are two ways that we can do it.",
+    "start_ms": 746136,
+    "end_ms": 750261,
+    "duration_ms": 4125,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 750.261,
+    "text": "So there is one way that you would say that go ahead, grab the entire table, shuffle all the rows.",
+    "start_ms": 750261,
+    "end_ms": 757136,
+    "duration_ms": 6875,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 757.752,
+    "text": "and just give me for example the top 10 or the top 20 or whatever right.",
+    "start_ms": 757752,
+    "end_ms": 762552,
+    "duration_ms": 4800,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 762.552,
+    "text": "There is the issue with that approach that if you have a very large data set it's going to be very resource intensive that you really shuffle the whole thing like gigabytes and terabytes of data.",
+    "start_ms": 762552,
+    "end_ms": 773446,
+    "duration_ms": 10894,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 773.446,
+    "text": "So that's not really ideal. The way to do that is actually this code that you're seeing here that we would say that order by random or the by random is going to actually randomize the entire table.",
+    "start_ms": 773446,
+    "end_ms": 785712,
+    "duration_ms": 12266,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 785.688,
+    "text": "and then it has a final table and then you're saying that limit to just give me two so it's a lot of work for two rows that you want to sample instead what we would do is we would use something that's called reservoir sampling so reservoir sampling says that I'm just going to just be able to go ahead and grab the number of rows that you want from your entire set or your entire data set randomly.",
+    "start_ms": 785688,
+    "end_ms": 811464,
+    "duration_ms": 25776,
+    "word_count": 80,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 811.464,
+    "text": "You don't need to randomize it and babysit me. So in this sense, here sample reservoir is a function that is going to actually do that sampling without shuffling the entire data, the entire database.",
+    "start_ms": 811464,
+    "end_ms": 824464,
+    "duration_ms": 13000,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 824.464,
+    "text": "What we are also specifying here is that I want two rows.",
+    "start_ms": 824464,
+    "end_ms": 828464,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 828.464,
+    "text": "So sample two rows however you want to do it and then give that to me.",
+    "start_ms": 828464,
+    "end_ms": 832464,
+    "duration_ms": 4000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 833.272,
+    "text": "One other important kind of thing that I included here, which is also going to be generally helpful when you're going to write a notebook that you can pass it to someone else is that we set a seat.",
+    "start_ms": 833272,
+    "end_ms": 845272,
+    "duration_ms": 12000,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 845.656,
+    "text": "You might have seen seed setting before in some of the notebooks.",
+    "start_ms": 845656,
+    "end_ms": 849656,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 850.616,
+    "text": "You're going to learn more about it in the capabilities courses but essentially what's happening is that every time that we're randomizing something on a computer we're not like 100% randomizing things it's the pseudo-random and the pseudo random means that we're just basically going to use a seed value and this seed value is going to generate a random set of following values that be one so.",
+    "start_ms": 850616,
+    "end_ms": 877816,
+    "duration_ms": 27200,
+    "word_count": 68,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 878.136,
+    "text": "That set once you set the seed then the entire sequence that you're sampling from that seed is going to be constant and predictable and deterministic.",
+    "start_ms": 878136,
+    "end_ms": 887636,
+    "duration_ms": 9500,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 887.636,
+    "text": "So the only thing that is going to randomize the process is that if you use a different seed number then the sequence is going to be different.",
+    "start_ms": 887636,
+    "end_ms": 894636,
+    "duration_ms": 7000,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 894.636,
+    "text": "So a lot of time we want to actually use this property in order to one randomize the data that we're collecting or the data that we're sampling.",
+    "start_ms": 894636,
+    "end_ms": 904336,
+    "duration_ms": 9700,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 904.336,
+    "text": "But we want to be able to extract the same random every time that we run the notebook.",
+    "start_ms": 904336,
+    "end_ms": 909216,
+    "duration_ms": 4880,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 909.216,
+    "text": "I don't want to randomly select two separate rows every time.",
+    "start_ms": 909216,
+    "end_ms": 914736,
+    "duration_ms": 5520,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 914.736,
+    "text": "Specifically because when I run this code, I want to be able to deterministically tell you what is the set of two random rows that I'll be able to get so that I can put it on the slides.",
+    "start_ms": 914736,
+    "end_ms": 926736,
+    "duration_ms": 12000,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 926.736,
+    "text": "Reproducibility is really important, but then also there is a notion that we always want to randomize the stuff for us.",
+    "start_ms": 926736,
+    "end_ms": 934176,
+    "duration_ms": 7440,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 934.176,
+    "text": "you here. This is just going to give me two.",
+    "start_ms": 934176,
+    "end_ms": 938552,
+    "duration_ms": 4376,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 939.576,
+    "text": "me erase all of these this is gonna give me um two rows that we know and then this other thing is also going to give us two rows but it's going to be more efficient.",
+    "start_ms": 939576,
+    "end_ms": 951432,
+    "duration_ms": 11856,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 951.432,
+    "text": "So that's the difference between them. Now you also know how we can do sampling a little bit more efficiently and the concept of seed.",
+    "start_ms": 951432,
+    "end_ms": 959632,
+    "duration_ms": 8200,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 960.728,
+    "text": "So this is also on this slide, so you can take a look at those examples.",
+    "start_ms": 960728,
+    "end_ms": 965888,
+    "duration_ms": 5160,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 965.888,
+    "text": "So the next thing, you're all expert in grouping. You have been tested and grouped by multiple times in the midterm, and you've done multiple homeworks that involve doing some kind of group-by.",
+    "start_ms": 965888,
+    "end_ms": 976568,
+    "duration_ms": 10680,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 976.568,
+    "text": "Hopefully the group-by example in the midterm was not too difficult.",
+    "start_ms": 976568,
+    "end_ms": 980448,
+    "duration_ms": 3880,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 980.448,
+    "text": "But here we're going to actually revisit the concept of grouping.",
+    "start_ms": 980448,
+    "end_ms": 985128,
+    "duration_ms": 4680,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 985.128,
+    "text": "And the idea of grouping was that I have different categories of stuff.",
+    "start_ms": 985128,
+    "end_ms": 989368,
+    "duration_ms": 4240,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 989.368,
+    "text": "What if I want to study my categories independently? So for example here, if I have a data set of different dishes, a stored in dish database or dish relation, if I go ahead and say select the star from dish, it will give me everything, right?",
+    "start_ms": 989368,
+    "end_ms": 1005768,
+    "duration_ms": 16400,
+    "word_count": 47,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1005.768,
+    "text": "But notice that there are different types of dishes. We have untrace, we have appetizer, and we have dessert.",
+    "start_ms": 1005768,
+    "end_ms": 1014168,
+    "duration_ms": 8400,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1014.168,
+    "text": "What if I want to study them separately? So let's take a look at how we can do grouping and group by in SQL.",
+    "start_ms": 1014168,
+    "end_ms": 1022088,
+    "duration_ms": 7920,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1022.616,
+    "text": "So this is what you have already seen. This is the relation that we're going to be working with.",
+    "start_ms": 1022616,
+    "end_ms": 1028616,
+    "duration_ms": 6000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1028.616,
+    "text": "One thing that I want to show you is that, okay, if I go ahead and select the type from this relation, what's that going to look like?",
+    "start_ms": 1028616,
+    "end_ms": 1036491,
+    "duration_ms": 7875,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1036.491,
+    "text": "So I'm going to say that this is select type.",
+    "start_ms": 1036491,
+    "end_ms": 1039616,
+    "duration_ms": 3125,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1040.856,
+    "text": "of from So go ahead and copy this over so that things are easier and you can follow the structure, I would say that select type.",
+    "start_ms": 1040856,
+    "end_ms": 1075532,
+    "duration_ms": 34676,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1075.768,
+    "text": "from the dish table, but then go ahead and group by the column that I want.",
+    "start_ms": 1075768,
+    "end_ms": 1081965,
+    "duration_ms": 6197,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1081.965,
+    "text": "Group by type. Right? Praying is neat to stuff. And now I have the grouped categories.",
+    "start_ms": 1081965,
+    "end_ms": 1091784,
+    "duration_ms": 9819,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1091.784,
+    "text": "Right? So this is kind of a way that you can get the unique, we had distinct keyword that would give you the distinct set of values that you have, but this is also another way that I'm getting the distinct set of values in the color.",
+    "start_ms": 1091784,
+    "end_ms": 1105684,
+    "duration_ms": 13900,
+    "word_count": 47,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1105.684,
+    "text": "But remember that in GroupBuy, we were not concerned with just using GroupBuy in order to get distinct values, but we wanted to actually get some information from those groups, labeled by each group category.",
+    "start_ms": 1105684,
+    "end_ms": 1118344,
+    "duration_ms": 12660,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1118.344,
+    "text": "My group categories here are entree, dessert, and appetizer. But I want to, for example, say that if I go ahead and I take a look, I want to actually calculate average of the cost of all of those dishes in each one of the category, so that I can compare that on average, how much more expensive an entree dish is compared to an appetizer.",
+    "start_ms": 1118344,
+    "end_ms": 1142464,
+    "duration_ms": 24120,
+    "word_count": 66,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1142.464,
+    "text": "So I would go ahead here. i would say that So let's use exactly the same thing.",
+    "start_ms": 1142464,
+    "end_ms": 1149608,
+    "duration_ms": 7144,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1149.608,
+    "text": "And I would say that, oh, in addition to type, you know what I want?",
+    "start_ms": 1149608,
+    "end_ms": 1153308,
+    "duration_ms": 3700,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1153.308,
+    "text": "I want to get the average of the cost. Right, this is kind of group by act.",
+    "start_ms": 1153308,
+    "end_ms": 1160129,
+    "duration_ms": 6821,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1160.129,
+    "text": "So this is just doing act thing on top of the group by.",
+    "start_ms": 1160129,
+    "end_ms": 1163992,
+    "duration_ms": 3863,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1164.712,
+    "text": "So, but I'm specifying what columns, what column I want exactly.",
+    "start_ms": 1164712,
+    "end_ms": 1168476,
+    "duration_ms": 3764,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1168.476,
+    "text": "So now I have average of the costs, Entrez 10, Desert 5, and Apatizer.",
+    "start_ms": 1168476,
+    "end_ms": 1174871,
+    "duration_ms": 6395,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1176.312,
+    "text": "Okay. Very interesting. I could also actually go ahead and say I want a bunch of different stats about each one of the categories not only that you tell me different categories of type that I have but give me the sum of the cost the minimum of the cost and also maximum of name for some reason I'm interested in max.",
+    "start_ms": 1176312,
+    "end_ms": 1197816,
+    "duration_ms": 21504,
+    "word_count": 62,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1197.816,
+    "text": "And if we go ahead and run this, you would be able to see that each one of those columns are going to be added.",
+    "start_ms": 1197816,
+    "end_ms": 1202816,
+    "duration_ms": 5000,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1204.28,
+    "text": "Right? So let's go back exactly what's happening is that we...",
+    "start_ms": 1204280,
+    "end_ms": 1211176,
+    "duration_ms": 6896,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1211.448,
+    "text": "Grab a column that we want to group rose by.",
+    "start_ms": 1211448,
+    "end_ms": 1215248,
+    "duration_ms": 3800,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1215.248,
+    "text": "What's happening is that it groups rose by all of those categories, and then it will have one representative category, pair each group.",
+    "start_ms": 1215248,
+    "end_ms": 1224748,
+    "duration_ms": 9500,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1224.748,
+    "text": "And then what we can do on top of that is we can use some aggregation functions that I use one of them and you saw I used AVG as an average.",
+    "start_ms": 1224748,
+    "end_ms": 1234148,
+    "duration_ms": 9400,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1234.148,
+    "text": "You also saw that we took the max of the name.",
+    "start_ms": 1234148,
+    "end_ms": 1237348,
+    "duration_ms": 3200,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1237.348,
+    "text": "We took for example some of the cost. you can get first, you can get last, you can get minimum.",
+    "start_ms": 1237348,
+    "end_ms": 1243788,
+    "duration_ms": 6440,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1243.788,
+    "text": "So all of the aggregation functions that you've seen before is also available here so you can keep adding columns and just get more and more information.",
+    "start_ms": 1243788,
+    "end_ms": 1252028,
+    "duration_ms": 8240,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1252.028,
+    "text": "One thing to note here is that when I did some of the cost, this is also naming that as some of the cost, which is not going to be very exciting, but you remember that last time what we had was that, we said we can use aliasing so you don't need to actually use the name that you're not happy with, but you can say that I'm going to just select type and select average of cost.",
+    "start_ms": 1252028,
+    "end_ms": 1277814,
+    "duration_ms": 25786,
+    "word_count": 79,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1277.814,
+    "text": "And I'm going to call this average of cost as average cost.",
+    "start_ms": 1277814,
+    "end_ms": 1284232,
+    "duration_ms": 6418,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1284.632,
+    "text": "and i'm gonna run it and now it's average cost How are we doing?",
+    "start_ms": 1284632,
+    "end_ms": 1290840,
+    "duration_ms": 6208,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1290.84,
+    "text": "Good. Not good. Um, so, Ellie, if thing is going to be used a lot with all of those aggregation functions, because then the column names are going to be really, uh, not clean and we might not really be interested in those.",
+    "start_ms": 1290840,
+    "end_ms": 1308448,
+    "duration_ms": 17608,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1308.448,
+    "text": "Uh, there is the other, uh, oh, uh, this is also interesting that I wanted to tell you.",
+    "start_ms": 1308448,
+    "end_ms": 1313128,
+    "duration_ms": 4680,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1313.128,
+    "text": "I think I briefly mentioned last time about the order of operation that's happening in the SQL query and why we go by a certain order and why we're not specifying, uh, how a certain tasks should be done.",
+    "start_ms": 1313128,
+    "end_ms": 1327034,
+    "duration_ms": 13906,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1327.034,
+    "text": "For example, when we were doing group by in pandas or in Python, what we had to do was specifically walk Python through the process that go ahead and group by and once you did that, there's an ag and there is this kind of function and then this is how you can summarize it.",
+    "start_ms": 1327034,
+    "end_ms": 1344508,
+    "duration_ms": 17474,
+    "word_count": 55,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1344.508,
+    "text": "But notice here, the thing that we're doing is that we're just specifically saying what we're interested in.",
+    "start_ms": 1344508,
+    "end_ms": 1349518,
+    "duration_ms": 5010,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1349.518,
+    "text": "We're saying that give me type, give me some of of the cost.",
+    "start_ms": 1349518,
+    "end_ms": 1352854,
+    "duration_ms": 3336,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1352.854,
+    "text": "We're not saying how to go and calculate some of the cost until very later in the query, where we're saying that once you group by type then you can go ahead and some of the cost, right?",
+    "start_ms": 1352854,
+    "end_ms": 1365434,
+    "duration_ms": 12580,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1365.434,
+    "text": "So one nice thing about SQL is that it's a declarative programming language, language, where you just specify what you want.",
+    "start_ms": 1365434,
+    "end_ms": 1374107,
+    "duration_ms": 8673,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1374.107,
+    "text": "You don't walk the programming language true how to get there, which is very kind of easy and interesting to use.",
+    "start_ms": 1374107,
+    "end_ms": 1384328,
+    "duration_ms": 10221,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1384.328,
+    "text": "You might be tempted to actually walk SQL through doing this stuff and then you might kind of forget the order of different operations or different synth or keyboards that you have to use.",
+    "start_ms": 1384328,
+    "end_ms": 1394648,
+    "duration_ms": 10320,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1394.648,
+    "text": "It will take time to get used to how SQL can actually run queries and it's actually very clover in, figuring out what you're intending.",
+    "start_ms": 1394648,
+    "end_ms": 1402354,
+    "duration_ms": 7706,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1402.354,
+    "text": "So you might find yourself. kind of mixing between like your Python kind of way of thinking versus the sequel way of thinking and stuff.",
+    "start_ms": 1402354,
+    "end_ms": 1412080,
+    "duration_ms": 9726,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1412.504,
+    "text": "So again, we just go by a fixed order of operation.",
+    "start_ms": 1412504,
+    "end_ms": 1415624,
+    "duration_ms": 3120,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1415.624,
+    "text": "A fixed order of operation that you have seen so far is that we do select, we do from, we say which table is from, we do if we're going to do any filtering or not, we do group by, and then we do order by.",
+    "start_ms": 1415624,
+    "end_ms": 1427944,
+    "duration_ms": 12320,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1428.632,
+    "text": "Okay, this is the order and in the reference sheet for the final exam, you will get the order of the things or the keywords that you should use so you should be able to follow exactly the same thing.",
+    "start_ms": 1428632,
+    "end_ms": 1439752,
+    "duration_ms": 11120,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1440.472,
+    "text": "This is also the example that we've seen that we can have multiple different types of aggregation functions to be called on top of this kind of a group buying under type that we've been doing.",
+    "start_ms": 1440472,
+    "end_ms": 1452952,
+    "duration_ms": 12480,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1454.04,
+    "text": "So, kind of the last thing that I mentioned in Group-by when we were talking about data frames was that the concept of size and count.",
+    "start_ms": 1454040,
+    "end_ms": 1464040,
+    "duration_ms": 10000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1464.04,
+    "text": "remember that size in data frame was actually Telling you the capacity of or the number of elements in your data frame or in your Data frame group by object and then the count was actually going to count how many non null values you have Here is also exactly the same thing But the syntax is going to be a little bit more clear here I would say that go ahead and count the number of cute Elements or items that you have in each one of the categories, right?",
+    "start_ms": 1464040,
+    "end_ms": 1497256,
+    "duration_ms": 33216,
+    "word_count": 91,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1497.256,
+    "text": "but that means is that it will go ahead and it will It will take a look at so we're grouping by by year here, right?",
+    "start_ms": 1497256,
+    "end_ms": 1507706,
+    "duration_ms": 10450,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1507.706,
+    "text": "So grouping by by year these are the 2010 elements these are 2011 and this is 2019, right?",
+    "start_ms": 1507706,
+    "end_ms": 1514456,
+    "duration_ms": 6750,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1514.456,
+    "text": "So I'm saying that go ahead and Give me the year so it gives me 2010, 2011, 2019, which is all of these values that I have here and then count of youth is going to count how many non-null values I have in each one of them.",
+    "start_ms": 1514456,
+    "end_ms": 1530880,
+    "duration_ms": 16424,
+    "word_count": 48,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1530.88,
+    "text": "So you see that I have two twenty elevens but count is giving me one because one of them is null.",
+    "start_ms": 1530880,
+    "end_ms": 1537380,
+    "duration_ms": 6500,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1537.72,
+    "text": "So count as just how many non-null values you have.",
+    "start_ms": 1537720,
+    "end_ms": 1540520,
+    "duration_ms": 2800,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1540.52,
+    "text": "If you just want to get the size and know how many rows you have in each one of the categories, you do count the star.",
+    "start_ms": 1540520,
+    "end_ms": 1546360,
+    "duration_ms": 5840,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1546.712,
+    "text": "You would say give me how many rows you have count the stars just going to be equivalent of group by size.",
+    "start_ms": 1546712,
+    "end_ms": 1553032,
+    "duration_ms": 6320,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1553.032,
+    "text": "Which was counting everything and the capacity of the group by the frame object.",
+    "start_ms": 1553032,
+    "end_ms": 1557832,
+    "duration_ms": 4800,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1558.84,
+    "text": "Good. So. Pretty useful stuff and it's just your learning translation from DataFrame now to SQL.",
+    "start_ms": 1558840,
+    "end_ms": 1568248,
+    "duration_ms": 9408,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1569.688,
+    "text": "This is exactly kind of where we're at. Now we also learned in addition to everything that we learned before, this is a new takeaway from the past few slides.",
+    "start_ms": 1569688,
+    "end_ms": 1579328,
+    "duration_ms": 9640,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1579.328,
+    "text": "That not only that you can select columns, now you can also do expressions on the columns.",
+    "start_ms": 1579328,
+    "end_ms": 1585288,
+    "duration_ms": 5960,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1585.288,
+    "text": "Expression meaning that I can just directly say Q times 2, or I can directly say that, oh, now I want to have some aggregation function.",
+    "start_ms": 1585288,
+    "end_ms": 1593368,
+    "duration_ms": 8080,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1593.368,
+    "text": "This is AG, or this is like AVG on the cost to give me the average of the cost in each one of the categories.",
+    "start_ms": 1593368,
+    "end_ms": 1604808,
+    "duration_ms": 11440,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1606.008,
+    "text": "So now into the business of filtering groups. So filter function when we had it in um, data frame was really interesting and was very unique.",
+    "start_ms": 1606008,
+    "end_ms": 1617170,
+    "duration_ms": 11162,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1617.17,
+    "text": "So filter function was telling you that, okay, you group by a certain thing.",
+    "start_ms": 1617170,
+    "end_ms": 1621680,
+    "duration_ms": 4510,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1621.68,
+    "text": "And I'm going to decide which one of those groups is going to shop in the output.",
+    "start_ms": 1621680,
+    "end_ms": 1626723,
+    "duration_ms": 5043,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1626.723,
+    "text": "So the entire data from group by object was either going to shop in the the output was going to be discarded.",
+    "start_ms": 1626723,
+    "end_ms": 1633208,
+    "duration_ms": 6485,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1633.56,
+    "text": "And the condition that we have been using was a certain Boolean condition that we would pass the entire data from group by object and we would check a condition and then we would decide whether the output is true or false.",
+    "start_ms": 1633560,
+    "end_ms": 1646560,
+    "duration_ms": 13000,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1646.56,
+    "text": "If the output was true, the entire data from group by object all the rows in that category would be moved to the output otherwise none of them would be moved to the output.",
+    "start_ms": 1646560,
+    "end_ms": 1655560,
+    "duration_ms": 9000,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1655.56,
+    "text": "So that... Syntax that we have here for filtering it or the keyboard is called having.",
+    "start_ms": 1655560,
+    "end_ms": 1663464,
+    "duration_ms": 7904,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1663.464,
+    "text": "So with having we would say that I'm going to select columns from the table and I'm grouping by a certain column that I have.",
+    "start_ms": 1663464,
+    "end_ms": 1672944,
+    "duration_ms": 9480,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1673.496,
+    "text": "and give me all of the do this processing and give me all of the groups that have a certain condition.",
+    "start_ms": 1673496,
+    "end_ms": 1681736,
+    "duration_ms": 8240,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1681.736,
+    "text": "So it makes a little bit more sense compared to the filter syntax.",
+    "start_ms": 1681736,
+    "end_ms": 1685456,
+    "duration_ms": 3720,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1685.456,
+    "text": "So here we would say that having all of this condition applied to each one of the groups, either that group is going to show up or that group is not going to show up in the output.",
+    "start_ms": 1685456,
+    "end_ms": 1695256,
+    "duration_ms": 9800,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1695.864,
+    "text": "So let me switch. 2, uh... Yes, here we are.",
+    "start_ms": 1695864,
+    "end_ms": 1702407,
+    "duration_ms": 6543,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1702.407,
+    "text": "So here I have this entire, I'm working with the dish data frame.",
+    "start_ms": 1702407,
+    "end_ms": 1707240,
+    "duration_ms": 4833,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1708.44,
+    "text": "Not data frame again. This is relation. So with a bunch of different columns and here I would say that go ahead and grab the type.",
+    "start_ms": 1708440,
+    "end_ms": 1716840,
+    "duration_ms": 8400,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1717.336,
+    "text": "Right? And go ahead and count the number of rows that I have in each one of the categories.",
+    "start_ms": 1717336,
+    "end_ms": 1723496,
+    "duration_ms": 6160,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1723.496,
+    "text": "And where do those categories come from? The categories are coming from the type.",
+    "start_ms": 1723496,
+    "end_ms": 1726936,
+    "duration_ms": 3440,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1726.936,
+    "text": "Still we're grouping by by the type. And here I'm saying that I want to make sure that I only consider categories that have the max of the cost be less than 8.",
+    "start_ms": 1726936,
+    "end_ms": 1741496,
+    "duration_ms": 14560,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1741.456,
+    "text": "if I go ahead and just take a look at what's happening here and color coded again.",
+    "start_ms": 1741456,
+    "end_ms": 1747236,
+    "duration_ms": 5780,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1747.236,
+    "text": "So I have all of these entrees. I have all of these appetizers and I have this dessert right.",
+    "start_ms": 1747236,
+    "end_ms": 1753696,
+    "duration_ms": 6460,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1753.696,
+    "text": "So that's my group by that's the result. What we are interested in is actually we're getting the type and we're getting the count.",
+    "start_ms": 1753696,
+    "end_ms": 1761216,
+    "duration_ms": 7520,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1761.216,
+    "text": "So the type is going to show up. So the type is going to be an untray appetizer or dessert, but it's going to show up only if I am meeting this condition for a group.",
+    "start_ms": 1761216,
+    "end_ms": 1773096,
+    "duration_ms": 11880,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1773.096,
+    "text": "Maximum of the cost is less than eight. What is the maximum of the cost here?",
+    "start_ms": 1773096,
+    "end_ms": 1777256,
+    "duration_ms": 4160,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1778.232,
+    "text": "max of the cost for this collection is going to be 10.",
+    "start_ms": 1778232,
+    "end_ms": 1783472,
+    "duration_ms": 5240,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1783.472,
+    "text": "For this collection is equal to 4, for this collection is equal to 5.",
+    "start_ms": 1783472,
+    "end_ms": 1787632,
+    "duration_ms": 4160,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1787.632,
+    "text": "Right? Because the first category does not meet the having condition is going to be eliminated.",
+    "start_ms": 1787632,
+    "end_ms": 1794512,
+    "duration_ms": 6880,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1794.512,
+    "text": "So the only thing that I'll have at the end is going to be the other two categories.",
+    "start_ms": 1794512,
+    "end_ms": 1800432,
+    "duration_ms": 5920,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1800.432,
+    "text": "But what about the two other categories am I going to return?",
+    "start_ms": 1800432,
+    "end_ms": 1803792,
+    "duration_ms": 3360,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1803.792,
+    "text": "I'm going to be only interested in type, so type is going to be the first thing.",
+    "start_ms": 1803792,
+    "end_ms": 1808991,
+    "duration_ms": 5199,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1808.991,
+    "text": "So it is appetizer is the type and then dessert is the other type or the second row.",
+    "start_ms": 1808991,
+    "end_ms": 1818432,
+    "duration_ms": 9441,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1818.432,
+    "text": "And then the second column is going to be count to star.",
+    "start_ms": 1818432,
+    "end_ms": 1822102,
+    "duration_ms": 3670,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1822.102,
+    "text": "What was count to star? It was checking the size right checking all the values including the null values So here it is going to be tree and here is going to be equal to one So let's bubble check myself.",
+    "start_ms": 1822102,
+    "end_ms": 1837848,
+    "duration_ms": 15746,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1838.872,
+    "text": "One entry right notice that it actually gave me the search first and appetizer second.",
+    "start_ms": 1838872,
+    "end_ms": 1845872,
+    "duration_ms": 7000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1845.872,
+    "text": "This is because the way that it taught that it can give me the result faster was that the first calculate the appetizer thing and then the second calculate.",
+    "start_ms": 1845872,
+    "end_ms": 1853872,
+    "duration_ms": 8000,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1853.872,
+    "text": "So the first calculate the certain the second calculate the appetizer so that's why you can't really expect any kind of ordering unless you specify that order by that thing that you want it to be order by.",
+    "start_ms": 1853872,
+    "end_ms": 1866872,
+    "duration_ms": 13000,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1867.224,
+    "text": "Um... So, comparison with Ver, because Ver also does filtering.",
+    "start_ms": 1867224,
+    "end_ms": 1873028,
+    "duration_ms": 5804,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1873.496,
+    "text": "So where was doing filtering on the rows? Having is doing filtering on the categories.",
+    "start_ms": 1873496,
+    "end_ms": 1879076,
+    "duration_ms": 5580,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1879.076,
+    "text": "So when I'm doing filtering on the rows using ver, here I would basically cross out all of the rows with the cost being less than 8.",
+    "start_ms": 1879076,
+    "end_ms": 1887916,
+    "duration_ms": 8840,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1888.344,
+    "text": "Right, and when I cross it out, then I do group by by type.",
+    "start_ms": 1888344,
+    "end_ms": 1891844,
+    "duration_ms": 3500,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1891.844,
+    "text": "So what that means is that if I go back to this example right here.",
+    "start_ms": 1891844,
+    "end_ms": 1896344,
+    "duration_ms": 4500,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1901.208,
+    "text": "I'm gonna cross out. Every cost that is... I want to keep all of the ones that are less than eight, meaning that I'll cross this one out and that's it, right?",
+    "start_ms": 1901208,
+    "end_ms": 1915208,
+    "duration_ms": 14000,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1915.208,
+    "text": "And then I'll do group by, so I have one group here, I have one group here, one group here, and then I have one group here.",
+    "start_ms": 1915208,
+    "end_ms": 1922128,
+    "duration_ms": 6920,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1922.128,
+    "text": "And then what is what is asking is that go ahead group by by type and give me the type and they count the star.",
+    "start_ms": 1922128,
+    "end_ms": 1929328,
+    "duration_ms": 7200,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1929.328,
+    "text": "So the result is going to be two to one.",
+    "start_ms": 1929328,
+    "end_ms": 1932048,
+    "duration_ms": 2720,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1932.048,
+    "text": "So I have two rows remaining and then two rows remaining and then one remaining.",
+    "start_ms": 1932048,
+    "end_ms": 1936368,
+    "duration_ms": 4320,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1936.368,
+    "text": "So just making sure that you understand the difference between Um, their clause where it does row filtering and having clause that actually filters the group by categories that we have.",
+    "start_ms": 1936368,
+    "end_ms": 1949616,
+    "duration_ms": 13248,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1950.008,
+    "text": "So I'm just gonna double check myself. uh... two, one, three.",
+    "start_ms": 1950008,
+    "end_ms": 1956609,
+    "duration_ms": 6601,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1956.609,
+    "text": "What's happening there? I Yes, sorry, 2-3-1. This is 3.",
+    "start_ms": 1956609,
+    "end_ms": 1964528,
+    "duration_ms": 7919,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1965.016,
+    "text": "This is trade, this is two, this is one. Again, the ordering is just not reliable.",
+    "start_ms": 1965016,
+    "end_ms": 1969896,
+    "duration_ms": 4880,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1969.896,
+    "text": "Two, one, three. The order that it wants to return the values to me.",
+    "start_ms": 1969896,
+    "end_ms": 1973896,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1974.52,
+    "text": "So take a look at this. Uh. Sick or come at?",
+    "start_ms": 1974520,
+    "end_ms": 1980768,
+    "duration_ms": 6248,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1981.816,
+    "text": "They can look at it for 30 seconds. We're gonna go back and do a slide on it.",
+    "start_ms": 1981816,
+    "end_ms": 1988316,
+    "duration_ms": 6500,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1991.288,
+    "text": "We're doing Max on Name. There is a table. The note in that table should...",
+    "start_ms": 1991288,
+    "end_ms": 1998624,
+    "duration_ms": 7336,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1998.744,
+    "text": "Say GF, or gluten-free, for grouping by-by type, and then we're having a condition that maximum of the cost should be less than seven.",
+    "start_ms": 1998744,
+    "end_ms": 2007744,
+    "duration_ms": 9000,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2008.152,
+    "text": "So let me go back. This is what we have already seen.",
+    "start_ms": 2008152,
+    "end_ms": 2013152,
+    "duration_ms": 5000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2013.464,
+    "text": "And this is your slide, which one of these outputs is the output of running this exact SQL command?",
+    "start_ms": 2013464,
+    "end_ms": 2021464,
+    "duration_ms": 8000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2049.4,
+    "text": "A new interface doesn't tell me if you're typing or not, so I'll just need to go.",
+    "start_ms": 2049400,
+    "end_ms": 2053800,
+    "duration_ms": 4400,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2053.8,
+    "text": "I might got fully. Let's take a look. Most of you are saying D.",
+    "start_ms": 2053800,
+    "end_ms": 2077448,
+    "duration_ms": 23648,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2077.448,
+    "text": "It looks like that D is highlighted as correct. Some of you are saying C.",
+    "start_ms": 2077448,
+    "end_ms": 2081848,
+    "duration_ms": 4400,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2081.848,
+    "text": "You don't need to change that, but let me see what the issues with C.",
+    "start_ms": 2081848,
+    "end_ms": 2087848,
+    "duration_ms": 6000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2087.848,
+    "text": "So the difference between C and D is that C and D both have the same columns, type and max name, and then just the ordering of getting the maximum of the name that seems like was the problematic issue.",
+    "start_ms": 2087848,
+    "end_ms": 2105120,
+    "duration_ms": 17272,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2105.12,
+    "text": "When you do maximum of the name on appetizer, let me go back here.",
+    "start_ms": 2105120,
+    "end_ms": 2110440,
+    "duration_ms": 5320,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2110.44,
+    "text": "When you're looking at the appetizer category and you're doing the maximum.",
+    "start_ms": 2110440,
+    "end_ms": 2115800,
+    "duration_ms": 5360,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2116.504,
+    "text": "On the name... What's happening? Oh, it has to be gluten-free.",
+    "start_ms": 2116504,
+    "end_ms": 2122451,
+    "duration_ms": 5947,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2122.451,
+    "text": "So when we're filtering by gluten-free, all of these rows are going to be out.",
+    "start_ms": 2122451,
+    "end_ms": 2128100,
+    "duration_ms": 5649,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2128.1,
+    "text": "So we're only looking at these ones. When we group by the type, then this is going to be one group.",
+    "start_ms": 2128100,
+    "end_ms": 2135019,
+    "duration_ms": 6919,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2135.019,
+    "text": "This is going to be another group, right? And then we, when you do maximum on the name, maximum on the name here is going to be just taco and maximum between fries and Edamama is going to be fries and this is the correct response that you open.",
+    "start_ms": 2135019,
+    "end_ms": 2156520,
+    "duration_ms": 21501,
+    "word_count": 49,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2156.498,
+    "text": "on. That's what's happening. We added having with the predicate.",
+    "start_ms": 2156498,
+    "end_ms": 2160648,
+    "duration_ms": 4150,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2160.648,
+    "text": "This is also a Boolean expression that we're adding. Remember that we can also have predicate for there.",
+    "start_ms": 2160648,
+    "end_ms": 2165351,
+    "duration_ms": 4703,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2165.351,
+    "text": "Or similar to there, it just is going to give you true or false.",
+    "start_ms": 2165351,
+    "end_ms": 2169595,
+    "duration_ms": 4244,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2169.595,
+    "text": "But this time you're actually filtering groups versus here, you're filtering rows.",
+    "start_ms": 2169595,
+    "end_ms": 2174690,
+    "duration_ms": 5095,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2174.69,
+    "text": "And that's what the screen line is actually telling you and we got practice with it.",
+    "start_ms": 2174690,
+    "end_ms": 2181127,
+    "duration_ms": 6437,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2182.04,
+    "text": "So now let's take a look at how we can actually do EDA in SQL.",
+    "start_ms": 2182040,
+    "end_ms": 2185640,
+    "duration_ms": 3600,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2185.64,
+    "text": "So it's just going to be 10 minutes on the entire EDA lecture that we had on data frame because you're already familiar with the things that we want to do.",
+    "start_ms": 2185640,
+    "end_ms": 2194840,
+    "duration_ms": 9200,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2194.84,
+    "text": "What are the things that we want to do? We want to work with the big data sets.",
+    "start_ms": 2194840,
+    "end_ms": 2198840,
+    "duration_ms": 4000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2198.84,
+    "text": "So the data set that we're going to be working with is IMDB data set.",
+    "start_ms": 2198840,
+    "end_ms": 2202840,
+    "duration_ms": 4000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2202.84,
+    "text": "So if we go ahead and take a look here.",
+    "start_ms": 2202840,
+    "end_ms": 2206040,
+    "duration_ms": 3200,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2206.488,
+    "text": "You are seeing that I'm just going to randomize this entire big data for a big table and i'm gonna get the ten rows kind of similar to get 10 in data frame and I'm going to say select everything from this title table that exists in the IMDB database so that database can have multiple different tables as you know.",
+    "start_ms": 2206488,
+    "end_ms": 2230360,
+    "duration_ms": 23872,
+    "word_count": 61,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2230.36,
+    "text": "And this is kind of the structure that we're going to get.",
+    "start_ms": 2230360,
+    "end_ms": 2233360,
+    "duration_ms": 3000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2233.36,
+    "text": "So you would see that there is something that's called Tcons that sounds like that that is.",
+    "start_ms": 2233360,
+    "end_ms": 2239360,
+    "duration_ms": 6000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2240.568,
+    "text": "A primary key in my table, there is the title type, so if it's movie or TV movie or whatnot, the title, the primary title, original title, adult rated or not, the star, year and whatnot.",
+    "start_ms": 2240568,
+    "end_ms": 2258022,
+    "duration_ms": 17454,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2258.022,
+    "text": "So all of the information that you want. So interesting things that we want to do generally when we have data is to make sure that we can handle actual data properly with it, right?",
+    "start_ms": 2258022,
+    "end_ms": 2271438,
+    "duration_ms": 13416,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2271.438,
+    "text": "The entire regular expression lecture that was challenging to remember all the functionalities that we had.",
+    "start_ms": 2271438,
+    "end_ms": 2277272,
+    "duration_ms": 5834,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2277.272,
+    "text": "We're not going to go into the nitty-gritty details of how we can do it, but I'm going to tell you three different ways that we can can do text processing on it.",
+    "start_ms": 2277272,
+    "end_ms": 2286496,
+    "duration_ms": 9224,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2286.496,
+    "text": "So there is an operation that is called, that is, use percentage so percentage is going to tell you that okay whatever or this is kind of Think about it as kind of a raw string that I have a star wars in the middle and I'm saying that there can be one or more Characters before star wars or after a star wars and the way that I can actually check it is that I check it true the Verklaus because the Verklaus was where we can actually build a Boolean condition.",
+    "start_ms": 2286496,
+    "end_ms": 2315817,
+    "duration_ms": 29321,
+    "word_count": 93,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2315.817,
+    "text": "So here I'm building a Boolean in condition and I'm saying that I want to make sure that my primary title is like Like is the keyboard that we're using in order to make sure that we capture everything that matches the same pattern and the pattern that I'm giving is a combination of percentages and also some actual alphabetical letters or any kind of character that you want but percentage is actually going to tell you that it replaces any character and any number of times.",
+    "start_ms": 2315817,
+    "end_ms": 2347512,
+    "duration_ms": 31695,
+    "word_count": 87,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2347.512,
+    "text": "So that's what it does. If you want to say, for example, I just want to make sure that I capture only one character.",
+    "start_ms": 2347512,
+    "end_ms": 2355152,
+    "duration_ms": 7640,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2355.152,
+    "text": "We basically use underscore for just looking for one character.",
+    "start_ms": 2355152,
+    "end_ms": 2360392,
+    "duration_ms": 5240,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2360.392,
+    "text": "So if I'm interested in different the Star Wars, I would say Star Wars is space and then underscore that I want to see like how many Star Wars exist.",
+    "start_ms": 2360392,
+    "end_ms": 2368632,
+    "duration_ms": 8240,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2368.632,
+    "text": "The Star Wars is space one, Star Wars is space two or so on and so forth.",
+    "start_ms": 2368632,
+    "end_ms": 2373632,
+    "duration_ms": 5000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2373.632,
+    "text": "There is also a regular expression version. that we use a different keyboard for here we use like right here we use similar to when we want to pass uh a regular expression pattern and then we just pass the regular expression pattern that we want so here i'm saying that uh just anything before star wars anything after star wars as long as the star wars is in the title i want to extract it and we also put this in the very class So we can easy regular expression kind of work that we can do with the tables that we have.",
+    "start_ms": 2373632,
+    "end_ms": 2411960,
+    "duration_ms": 38328,
+    "word_count": 104,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2411.96,
+    "text": "So here I'm going to test it on here. We just want to see how many movie titles actually have the Star Wars in their name.",
+    "start_ms": 2411960,
+    "end_ms": 2420360,
+    "duration_ms": 8400,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2420.28,
+    "text": "and you will be surprised. So this is how many like 144 different rows that have starvers in them.",
+    "start_ms": 2420280,
+    "end_ms": 2430960,
+    "duration_ms": 10680,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2430.96,
+    "text": "Sometimes it's in the in the beginning. Sometimes it might be in the in the middle.",
+    "start_ms": 2430960,
+    "end_ms": 2437400,
+    "duration_ms": 6440,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2437.4,
+    "text": "So that's what the percent before and percent after is actually going to do as long as the starvers is in the title.",
+    "start_ms": 2437400,
+    "end_ms": 2443360,
+    "duration_ms": 5960,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2443.36,
+    "text": "It's going to capture that. We could have also said that I'm going to run a very clause.",
+    "start_ms": 2443360,
+    "end_ms": 2448760,
+    "duration_ms": 5400,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2448.76,
+    "text": "And I would say primary title should be similar to my regular expression pattern.",
+    "start_ms": 2448760,
+    "end_ms": 2454520,
+    "duration_ms": 5760,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2454.52,
+    "text": "So here when you say similar to you should pass a right or a reg x pattern here the reg x pattern for the thing that we have been doing before is actually going to say Dot the star everything before the star bars and then everything after the star bars And then it will give us exactly the same thing one hundred and forty four different rows The other thing that we could do, this is the thing that I mentioned, under a score.",
+    "start_ms": 2454520,
+    "end_ms": 2483016,
+    "duration_ms": 28496,
+    "word_count": 85,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2483.016,
+    "text": "If you put under a score, it should actually replace only one character.",
+    "start_ms": 2483016,
+    "end_ms": 2487216,
+    "duration_ms": 4200,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2487.216,
+    "text": "So we want to say how many primary titles aren't like?",
+    "start_ms": 2487216,
+    "end_ms": 2491816,
+    "duration_ms": 4600,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2492.152,
+    "text": "This pattern exactly, but only the replacement of one character after the space after part.",
+    "start_ms": 2492152,
+    "end_ms": 2498552,
+    "duration_ms": 6400,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2499.48,
+    "text": "If I run it, it will tell me part one, part two of the movie are the only things that exist in the database.",
+    "start_ms": 2499480,
+    "end_ms": 2505980,
+    "duration_ms": 6500,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2507.032,
+    "text": "Very easy right and then it's also optimized it can run any regular expression that you want and it will give you the thing that you want to So the other thing that I want to tell you is remember the type conversion that we've been doing sometimes they would give you the data all of hex type or a string type and you might need to turn it into integers or floating points to be able to work with it.",
+    "start_ms": 2507032,
+    "end_ms": 2532608,
+    "duration_ms": 25576,
+    "word_count": 81,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2532.608,
+    "text": "If we want to do that conversion so that we can actually do mathematical operation on it or any kind of conversion of whatever But every reason that you want to do, be used cast.",
+    "start_ms": 2532608,
+    "end_ms": 2542408,
+    "duration_ms": 9800,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2543.096,
+    "text": "Cast keyboard is actually going to take Take a column and then you also need to specify what type you are going to convert it to.",
+    "start_ms": 2543096,
+    "end_ms": 2552688,
+    "duration_ms": 9592,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2552.688,
+    "text": "Here I would say I'm casting the runtime in minutes, which originally if we take a look at the table is schema, it's going to be of the text type, so it's the string value.",
+    "start_ms": 2552688,
+    "end_ms": 2563388,
+    "duration_ms": 10700,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2563.388,
+    "text": "I would say that this runtime should be of type.",
+    "start_ms": 2563388,
+    "end_ms": 2566388,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2566.552,
+    "text": "Intature so what I'll do is it will take it will give me the new column and it's interesting that the output is actually going to rename the column so that you know that for fact it was converted.",
+    "start_ms": 2566552,
+    "end_ms": 2579052,
+    "duration_ms": 12500,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2579.448,
+    "text": "If you want to use aliasing to change this and you would say run time underscore float or run time underscore integer you can do that as well.",
+    "start_ms": 2579448,
+    "end_ms": 2587608,
+    "duration_ms": 8160,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2587.608,
+    "text": "So that you don't see this cast whatever whatever as a long name for your column.",
+    "start_ms": 2587608,
+    "end_ms": 2593288,
+    "duration_ms": 5680,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2594.136,
+    "text": "So this is another EDA item that we want to have.",
+    "start_ms": 2594136,
+    "end_ms": 2597736,
+    "duration_ms": 3600,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2597.736,
+    "text": "What if we want to run conditions? So this is a little bit complicated, but sometimes it's necessary for you to know, like imagine that you want to actually run if condition, right?",
+    "start_ms": 2597736,
+    "end_ms": 2610816,
+    "duration_ms": 13080,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2610.816,
+    "text": "So we can do that in Python. What if we can also do it in SQL?",
+    "start_ms": 2610816,
+    "end_ms": 2616016,
+    "duration_ms": 5200,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2616.016,
+    "text": "So what I can do is I would say that case, um, kind of clauses going to give us that.",
+    "start_ms": 2616016,
+    "end_ms": 2621980,
+    "duration_ms": 5964,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2621.98,
+    "text": "I would say case. When there is this condition that I'm specifying, then go ahead and assign the same value, assign a certain value.",
+    "start_ms": 2621980,
+    "end_ms": 2632472,
+    "duration_ms": 10492,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2632.472,
+    "text": "What case does is that it takes one column and then it will try to do different operations on the values in that column, depending on each one of the conditions that you're specifying.",
+    "start_ms": 2632472,
+    "end_ms": 2643992,
+    "duration_ms": 11520,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2643.992,
+    "text": "So here I'm saying that if you have condition one, do turn the value into this value that I'm specifying.",
+    "start_ms": 2643992,
+    "end_ms": 2652992,
+    "duration_ms": 9000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2652.992,
+    "text": "If it doesn't fall into the first category, but it falls into the second category or second condition, then we would do exactly the same thing, and this is the other value that we have.",
+    "start_ms": 2652992,
+    "end_ms": 2665112,
+    "duration_ms": 12120,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2665.112,
+    "text": "We do everything this way. So as if you can put multiple if conditions up until the end where you would say, else, then assign a value and then you would end a clause by n.",
+    "start_ms": 2665112,
+    "end_ms": 2677832,
+    "duration_ms": 12720,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2678.872,
+    "text": "So let's take a look at an example. So what it does Is here I'm setting a seat so that every kind of output that you're seeing is going to follow the same structure.",
+    "start_ms": 2678872,
+    "end_ms": 2692364,
+    "duration_ms": 13492,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2692.364,
+    "text": "I'm saying that's a like. Title types, I like this start year.",
+    "start_ms": 2692364,
+    "end_ms": 2698160,
+    "duration_ms": 5796,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2698.16,
+    "text": "And then depending on this start year, I just don't want to play with the year anymore.",
+    "start_ms": 2698160,
+    "end_ms": 2702120,
+    "duration_ms": 3960,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2702.12,
+    "text": "I just want to replace it with whether the movie is old, whether the movie is mid-age, or whether the movie is new based on a condition that I have.",
+    "start_ms": 2702120,
+    "end_ms": 2709800,
+    "duration_ms": 7680,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2709.8,
+    "text": "So here I would say, if the start year is before 1950, then assign it to be old.",
+    "start_ms": 2709800,
+    "end_ms": 2716560,
+    "duration_ms": 6760,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2716.56,
+    "text": "So just replace is a value that I have. And then I would say, then the start year is less than 2,000.",
+    "start_ms": 2716560,
+    "end_ms": 2724360,
+    "duration_ms": 7800,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2724.36,
+    "text": "But it's after year 1950, because we 1950, because we didn't fall into the first category.",
+    "start_ms": 2724360,
+    "end_ms": 2730600,
+    "duration_ms": 6240,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2730.6,
+    "text": "Colleague Mid-H, otherwise in the else I would say Colleague New, I would say End, and then I'm saying that use this column and name it as Movie-H.",
+    "start_ms": 2730600,
+    "end_ms": 2742919,
+    "duration_ms": 12319,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2743.96,
+    "text": "That's my column. So that's movie age column. So what columns am I selecting?",
+    "start_ms": 2743960,
+    "end_ms": 2748973,
+    "duration_ms": 5013,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2748.973,
+    "text": "I'm going to have one column here, high-doll type. I'm going to have one column here, start here, and then I'm going to have one column that I built myself, movie age.",
+    "start_ms": 2748973,
+    "end_ms": 2760320,
+    "duration_ms": 11347,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2761.08,
+    "text": "And everything is going to be done from the title table.",
+    "start_ms": 2761080,
+    "end_ms": 2765440,
+    "duration_ms": 4360,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2765.44,
+    "text": "I'm going to order by random, but I have a seat so it's going to be predictable.",
+    "start_ms": 2765440,
+    "end_ms": 2769920,
+    "duration_ms": 4480,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2769.92,
+    "text": "What the output is going to be. And then I'm going to get only the top 10 rows.",
+    "start_ms": 2769920,
+    "end_ms": 2774880,
+    "duration_ms": 4960,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2775.288,
+    "text": "So take a look. This is what we'll get. the new column that we created, it has all of the new values that we have, so everything is really good to go.",
+    "start_ms": 2775288,
+    "end_ms": 2785468,
+    "duration_ms": 10180,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2788.536,
+    "text": "Alright. So, that might have been a little bit boring, but like it's just an interesting thing for you to know about and to be able to use it in practice.",
+    "start_ms": 2788536,
+    "end_ms": 2798464,
+    "duration_ms": 9928,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2798.464,
+    "text": "Yes, this is your Deserve 2 minutes of break. We're going to be back right at noon.",
+    "start_ms": 2798464,
+    "end_ms": 2803464,
+    "duration_ms": 5000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2832.888,
+    "text": "I'm sorry. We're back. It's noon. Let's get going. Um, so what else we have?",
+    "start_ms": 2832888,
+    "end_ms": 2929416,
+    "duration_ms": 96528,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2930.872,
+    "text": "So the very last item in pandas, remember it was tables and joining tables.",
+    "start_ms": 2930872,
+    "end_ms": 2936072,
+    "duration_ms": 5200,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2936.072,
+    "text": "So we're actually doing proper joining of tables. Today, and we're going to see different kinds of syntaxes in order to do join.",
+    "start_ms": 2936072,
+    "end_ms": 2944472,
+    "duration_ms": 8400,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2944.472,
+    "text": "So the first thing is that why do we need to do a join?",
+    "start_ms": 2944472,
+    "end_ms": 2947882,
+    "duration_ms": 3410,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2947.882,
+    "text": "Remember that I said a database can have multiple different tables and there is separation of responsibilities between different tables.",
+    "start_ms": 2947882,
+    "end_ms": 2954783,
+    "duration_ms": 6901,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2954.783,
+    "text": "And because of the way that the the tables and database are structured, we might need to actually connect them in order to have some information all in one place.",
+    "start_ms": 2954783,
+    "end_ms": 2969832,
+    "duration_ms": 15049,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2969.832,
+    "text": "The way that generally tables and databases are structured is that there's always going to be one fact table.",
+    "start_ms": 2969832,
+    "end_ms": 2976192,
+    "duration_ms": 6360,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2976.192,
+    "text": "Fact table is going to be a summary of the entire data in the database.",
+    "start_ms": 2976192,
+    "end_ms": 2981032,
+    "duration_ms": 4840,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2981.032,
+    "text": "So for example, here in my fact table, I have a list of all the products.",
+    "start_ms": 2981032,
+    "end_ms": 2986952,
+    "duration_ms": 5920,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2986.952,
+    "text": "I call my fact table, the product table, it has some information about drinks, some information about topping, some information about the stores who would sell that a specific product, right?",
+    "start_ms": 2986952,
+    "end_ms": 2997472,
+    "duration_ms": 10520,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2997.472,
+    "text": "But then the details of the products, the details of the stores or the details of the drinks don't need to sit in that central table.",
+    "start_ms": 2997472,
+    "end_ms": 3005312,
+    "duration_ms": 7840,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3005.312,
+    "text": "So those details are going to live in dimension tables.",
+    "start_ms": 3005312,
+    "end_ms": 3008592,
+    "duration_ms": 3280,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3008.592,
+    "text": "Those are different dimensions, the specifying what exactly each one of those attributes in the fact table that I had are corresponding to.",
+    "start_ms": 3008592,
+    "end_ms": 3016192,
+    "duration_ms": 7600,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3016.192,
+    "text": "Again, notice here that the drink actually now has a bunch of different information.",
+    "start_ms": 3016192,
+    "end_ms": 3023312,
+    "duration_ms": 7120,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3023.312,
+    "text": "It has a name, it has ice level, it has sweetness and whatnot.",
+    "start_ms": 3023312,
+    "end_ms": 3027631,
+    "duration_ms": 4319,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3027.631,
+    "text": "One thing that you notice is that this fact table holds the kind of a, holds the foreign key or kind of an ID or key into each one of those dimension tables.",
+    "start_ms": 3027631,
+    "end_ms": 3041071,
+    "duration_ms": 13440,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3041.071,
+    "text": "So notice that the fact table has drink ID, Topping ID, which is here and the store ID.",
+    "start_ms": 3041071,
+    "end_ms": 3047952,
+    "duration_ms": 6881,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3047.952,
+    "text": "And then each one of those tables is just going to have those IDs and then more details about those IDs.",
+    "start_ms": 3047952,
+    "end_ms": 3053952,
+    "duration_ms": 6000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3053.952,
+    "text": "So this is called the Star schema. And this is kind of the way that we try to make sure that the duplication of the data is as minimal as possible.",
+    "start_ms": 3053952,
+    "end_ms": 3063552,
+    "duration_ms": 9600,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3063.552,
+    "text": "And anyone who wants to know what kind of information that we have, they can just take a look at the fact table and just make sense of, OK, what kind of data can I get from this entire database?",
+    "start_ms": 3063552,
+    "end_ms": 3072512,
+    "duration_ms": 8960,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3072.512,
+    "text": "If I want to know more about the stores, then there is a store information.",
+    "start_ms": 3072512,
+    "end_ms": 3077352,
+    "duration_ms": 4840,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3077.352,
+    "text": "There should be a table that talks about the stores, and then they would go ahead and take a look at that.",
+    "start_ms": 3077352,
+    "end_ms": 3082431,
+    "duration_ms": 5079,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3082.456,
+    "text": "So let's assume that I have this product table and I want to actually connect or add the details of the drinks into this table.",
+    "start_ms": 3082456,
+    "end_ms": 3094456,
+    "duration_ms": 12000,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3094.456,
+    "text": "So I need to make sure that there is a way that I can combine these two sets or these two tables together so that now I have a table that has all the ideas plus the details of the drinks for whatever reason you might want to do that.",
+    "start_ms": 3094456,
+    "end_ms": 3107456,
+    "duration_ms": 13000,
+    "word_count": 50,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3107.456,
+    "text": "And this is kind of the way that, or the reason that we need to learn about joining of tables, which is going to be really important.",
+    "start_ms": 3107456,
+    "end_ms": 3115256,
+    "duration_ms": 7800,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3115.256,
+    "text": "So the data sets that we're going to work with in order to teach you different kinds of joins is kind of cats database that we created.",
+    "start_ms": 3115256,
+    "end_ms": 3125536,
+    "duration_ms": 10280,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3125.536,
+    "text": "It has two different tables in it and we're going to try to do different types of joins on two data sets or two tables that we have.",
+    "start_ms": 3125536,
+    "end_ms": 3135096,
+    "duration_ms": 9560,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3135.096,
+    "text": "And these are different cat breeds, and that's my cat dounder.",
+    "start_ms": 3135096,
+    "end_ms": 3140896,
+    "duration_ms": 5800,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3140.896,
+    "text": "So what we have is table S, table T. So table S has a bunch of names and IDs for different cats that exist.",
+    "start_ms": 3140896,
+    "end_ms": 3149456,
+    "duration_ms": 8560,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3149.456,
+    "text": "And then table T has IDs, but in addition to that, it also has different breeds for different cats.",
+    "start_ms": 3149456,
+    "end_ms": 3156416,
+    "duration_ms": 6960,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3156.416,
+    "text": "So this is kind of a separation of responsibilities. One table and breeds one table on the names of them.",
+    "start_ms": 3156416,
+    "end_ms": 3162776,
+    "duration_ms": 6360,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3162.776,
+    "text": "So now assume that I want to combine them. I want to know that, okay, what's the breed of the boot's cap?",
+    "start_ms": 3162776,
+    "end_ms": 3171176,
+    "duration_ms": 8400,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3171.176,
+    "text": "And we would say that, oh, if we combine them, we would notice that that green row corresponds to that other green row because they share the same ID.",
+    "start_ms": 3171176,
+    "end_ms": 3179095,
+    "duration_ms": 7919,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3179.095,
+    "text": "And I'm going to use IDs in order to find references between the tables.",
+    "start_ms": 3179095,
+    "end_ms": 3183336,
+    "duration_ms": 4241,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3183.336,
+    "text": "And I would say that, oh, the type is the Persian cat.",
+    "start_ms": 3183336,
+    "end_ms": 3185575,
+    "duration_ms": 2239,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3186.296,
+    "text": "Okay, so let's see how this can actually be done.",
+    "start_ms": 3186296,
+    "end_ms": 3189896,
+    "duration_ms": 3600,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3190.264,
+    "text": "You have seen some of these examples before. This is just a review and just telling you the syntax and we have actually nice visuals to show you how it can be done.",
+    "start_ms": 3190264,
+    "end_ms": 3199464,
+    "duration_ms": 9200,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3199.464,
+    "text": "In your join is the time that I have a bunch of, I have two tables and I have ideas of references or primary keys in two different tables.",
+    "start_ms": 3199464,
+    "end_ms": 3209464,
+    "duration_ms": 10000,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3209.464,
+    "text": "And I will use those primary keys in order to find corresponding rows.",
+    "start_ms": 3209464,
+    "end_ms": 3214664,
+    "duration_ms": 5200,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3214.664,
+    "text": "I will only return the rows that have corresponding element in the table S and also corresponding rows in table T.",
+    "start_ms": 3214664,
+    "end_ms": 3224264,
+    "duration_ms": 9600,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3224.264,
+    "text": "I'll combine them and I will return the value. Meaning that what's happening in this case is that we don't know, for example, the breed for apricot, apricot with the idea of zero does not have a reference in the breed table.",
+    "start_ms": 3224264,
+    "end_ms": 3238564,
+    "duration_ms": 14300,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3238.564,
+    "text": "And also there is some reference for another cat with the breed of Persian, with the idea of five, which we don't know their name.",
+    "start_ms": 3238564,
+    "end_ms": 3246323,
+    "duration_ms": 7759,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3246.323,
+    "text": "Right? So there is kind of this information, but the inner join is going to look at the common information between the two tables.",
+    "start_ms": 3246323,
+    "end_ms": 3254164,
+    "duration_ms": 7841,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3254.164,
+    "text": "Here, the values with ID 1, 2, and 4 have corresponding references.",
+    "start_ms": 3254164,
+    "end_ms": 3260364,
+    "duration_ms": 6200,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3260.364,
+    "text": "And then we would say that let's go ahead and combine them.",
+    "start_ms": 3260364,
+    "end_ms": 3263523,
+    "duration_ms": 3159,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3263.523,
+    "text": "When we combine them, we basically borrow all of those columns that each one of those tables have.",
+    "start_ms": 3263523,
+    "end_ms": 3271144,
+    "duration_ms": 7621,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3271.144,
+    "text": "So s.id is coming from this table, name is coming from this table, and t.id is coming from here, and then breed is going to come from here.",
+    "start_ms": 3271144,
+    "end_ms": 3281043,
+    "duration_ms": 9899,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3281.043,
+    "text": "If you don't want all the columns, you could really specify that do inner join, but only give me, for example, name and breed.",
+    "start_ms": 3281043,
+    "end_ms": 3288178,
+    "duration_ms": 7135,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3288.178,
+    "text": "Don't give me the id, because I'm not going to use it anymore.",
+    "start_ms": 3288178,
+    "end_ms": 3292010,
+    "duration_ms": 3832,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3292.01,
+    "text": "You could actually also say say that I won ID because you always want to hold a primary key in your table.",
+    "start_ms": 3292010,
+    "end_ms": 3298204,
+    "duration_ms": 6194,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3298.744,
+    "text": "This is similar to pandas.merge. So you've seen merge. It essentially does inner join.",
+    "start_ms": 3298744,
+    "end_ms": 3306824,
+    "duration_ms": 8080,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3306.824,
+    "text": "So the thin packs for it, the way that it works is that we would say, select the star, give me all the columns.",
+    "start_ms": 3306824,
+    "end_ms": 3313464,
+    "duration_ms": 6640,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3313.464,
+    "text": "You could also specify the columns that you want. And here I'm saying that from what table?",
+    "start_ms": 3313464,
+    "end_ms": 3318904,
+    "duration_ms": 5440,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3319.16,
+    "text": "So now you're constructing the table that you have. So I'm going to construct the table.",
+    "start_ms": 3319160,
+    "end_ms": 3323360,
+    "duration_ms": 4200,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3323.36,
+    "text": "I would say that there is table one and there is table two.",
+    "start_ms": 3323360,
+    "end_ms": 3327360,
+    "duration_ms": 4000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3327.36,
+    "text": "And the operation that you're going to do on these two tables is that you're going to do inner join.",
+    "start_ms": 3327360,
+    "end_ms": 3332160,
+    "duration_ms": 4800,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3332.16,
+    "text": "That's the keyword that we'll use. Table one, table two, inner join between them.",
+    "start_ms": 3332160,
+    "end_ms": 3336760,
+    "duration_ms": 4600,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3337.208,
+    "text": "And in addition to that, how do you do inner join?",
+    "start_ms": 3337208,
+    "end_ms": 3340585,
+    "duration_ms": 3377,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3340.585,
+    "text": "How do you find corresponding rows with each other? The way that you correspond, you find corresponding rows is that we would say on, this is going to find corresponding rows.",
+    "start_ms": 3340585,
+    "end_ms": 3351028,
+    "duration_ms": 10443,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3351.288,
+    "text": "And then here I would say that, oh, this is table one dot key or it should be equal to table two dot key.",
+    "start_ms": 3351288,
+    "end_ms": 3357948,
+    "duration_ms": 6660,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3357.948,
+    "text": "which in this case the key was ID here and also ID here.",
+    "start_ms": 3357948,
+    "end_ms": 3362428,
+    "duration_ms": 4480,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3362.428,
+    "text": "So we basically said that select the star from S inner join with T.",
+    "start_ms": 3362428,
+    "end_ms": 3368748,
+    "duration_ms": 6320,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3368.748,
+    "text": "So these are the two tables and then we're doing inner join and then we're saying that on the condition that S dot ID is equal to T dot ID.",
+    "start_ms": 3368748,
+    "end_ms": 3376508,
+    "duration_ms": 7760,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3377.048,
+    "text": "So that's why primaries are important because it will help us do make reference to different table and be able to.",
+    "start_ms": 3377048,
+    "end_ms": 3383048,
+    "duration_ms": 6000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3383.512,
+    "text": "Bring back the data relevant data we have sitting somewhere else into the joint table.",
+    "start_ms": 3383512,
+    "end_ms": 3389912,
+    "duration_ms": 6400,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3390.392,
+    "text": "So this is Inner Join. We specify the type of join.",
+    "start_ms": 3390392,
+    "end_ms": 3394009,
+    "duration_ms": 3617,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3394.009,
+    "text": "We specify the tables that we're doing join and I'd be also to specify how you can find matching entries for us.",
+    "start_ms": 3394009,
+    "end_ms": 3400312,
+    "duration_ms": 6303,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3400.984,
+    "text": "There's a concept of cross-joint. What if I want to join these two tables, but I don't want to throw out any of the rows?",
+    "start_ms": 3400984,
+    "end_ms": 3407384,
+    "duration_ms": 6400,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3407.384,
+    "text": "So I know that there is apricot cath or a cat named apricot.",
+    "start_ms": 3407384,
+    "end_ms": 3412024,
+    "duration_ms": 4640,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3412.024,
+    "text": "I don't want to throw it out because I just don't know the breed.",
+    "start_ms": 3412024,
+    "end_ms": 3414584,
+    "duration_ms": 2560,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3414.584,
+    "text": "I just want to make sure that I keep everything.",
+    "start_ms": 3414584,
+    "end_ms": 3417784,
+    "duration_ms": 3200,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3417.784,
+    "text": "So the way that generally the cross-joint also works is that we connect every row in the table T with in table S with every row in table T.",
+    "start_ms": 3417784,
+    "end_ms": 3430024,
+    "duration_ms": 12240,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3430.024,
+    "text": "So everything, every possible combination is going to be extracted.",
+    "start_ms": 3430024,
+    "end_ms": 3435024,
+    "duration_ms": 5000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3435.024,
+    "text": "In this specific case, it really doesn't make sense. That like you don't necessarily want to connect apricot with a bunch of different breeds that you have.",
+    "start_ms": 3435024,
+    "end_ms": 3443024,
+    "duration_ms": 8000,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3443.024,
+    "text": "But in some cases, it might make sense, especially when you're trying to create simulation data.",
+    "start_ms": 3443024,
+    "end_ms": 3448024,
+    "duration_ms": 5000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3448.696,
+    "text": "So here I would connect the first row with all of the rows that I have.",
+    "start_ms": 3448696,
+    "end_ms": 3453496,
+    "duration_ms": 4800,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3453.496,
+    "text": "I would connect the second row with all of the rows that I have.",
+    "start_ms": 3453496,
+    "end_ms": 3456176,
+    "duration_ms": 2680,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3456.176,
+    "text": "I would connect the third row and the fourth row and all of these things.",
+    "start_ms": 3456176,
+    "end_ms": 3459496,
+    "duration_ms": 3320,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3459.496,
+    "text": "And the output is going to be this long list.",
+    "start_ms": 3459496,
+    "end_ms": 3461816,
+    "duration_ms": 2320,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3461.816,
+    "text": "It's across combination of these two tables that I'm going to combine them together.",
+    "start_ms": 3461816,
+    "end_ms": 3467256,
+    "duration_ms": 5440,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3467.608,
+    "text": "So, what's happening is that if I use the cross join and I put a condition or a very condition and I would say that create the cross join but filter this cross join on the condition that s that i d is equal to t dot i d.",
+    "start_ms": 3467608,
+    "end_ms": 3483768,
+    "duration_ms": 16160,
+    "word_count": 49,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3484.376,
+    "text": "What's going to happen? s dot id should be equal to t dot id.",
+    "start_ms": 3484376,
+    "end_ms": 3488544,
+    "duration_ms": 4168,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3488.544,
+    "text": "Is this row going to meet that condition? No, right?",
+    "start_ms": 3488544,
+    "end_ms": 3492807,
+    "duration_ms": 4263,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3492.807,
+    "text": "Because 0 is not equal to 1. 0 is not equal to 2.",
+    "start_ms": 3492807,
+    "end_ms": 3496235,
+    "duration_ms": 3428,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3496.235,
+    "text": "0 is not equal to 4. 0 is not equal to 5.",
+    "start_ms": 3496235,
+    "end_ms": 3499400,
+    "duration_ms": 3165,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3499.4,
+    "text": "So all of these rows are going to be crossed out.",
+    "start_ms": 3499400,
+    "end_ms": 3502200,
+    "duration_ms": 2800,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3502.488,
+    "text": "Right? And then what's going to remain is what? is going to be all the rows that had corresponding values which effectively means that the output is going to be our inner join.",
+    "start_ms": 3502488,
+    "end_ms": 3513924,
+    "duration_ms": 11436,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3513.924,
+    "text": "So. kind of two ways of arriving at the same thing but if you want to do inner join just do in your joint don't go around this kind of cycle but just showing you that there is correspondences between them that you can actually filter from cross joint and get the inner join between the tables.",
+    "start_ms": 3513924,
+    "end_ms": 3532232,
+    "duration_ms": 18308,
+    "word_count": 57,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3532.696,
+    "text": "There is left outer joint or left joint. Left outer joint says that I want to make sure that all the entries in my left table or the first table that you're specifying in the join are going to be preserved.",
+    "start_ms": 3532696,
+    "end_ms": 3545011,
+    "duration_ms": 12315,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3545.011,
+    "text": "If a road does not have a corresponding value in the right table, which is the case for for example, for poor apricot here.",
+    "start_ms": 3545011,
+    "end_ms": 3552936,
+    "duration_ms": 7925,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3553.592,
+    "text": "We would say just just keep the bro put those values equal to null and I would just carry on with just having apricot in my data in my data set but the apricot is not going to have a breed.",
+    "start_ms": 3553592,
+    "end_ms": 3565306,
+    "duration_ms": 11714,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3565.306,
+    "text": "I'm going to find that later right that's the kind of the idea behind it.",
+    "start_ms": 3565306,
+    "end_ms": 3569592,
+    "duration_ms": 4286,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3569.592,
+    "text": "So what's happening is that apricot doesn't have a corresponding value, it will still remain, but with null value corresponding to the t.id and the breed information.",
+    "start_ms": 3569592,
+    "end_ms": 3581592,
+    "duration_ms": 12000,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3581.592,
+    "text": "For the cases that we do have matching information, we would match and we would use those values, and then we combine everything that output is going to have all of those columns that we have.",
+    "start_ms": 3581592,
+    "end_ms": 3590592,
+    "duration_ms": 9000,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3591.32,
+    "text": "So one thing that I want you to note is that you don't necessarily need to hold on to s.id and t.id.",
+    "start_ms": 3591320,
+    "end_ms": 3597920,
+    "duration_ms": 6600,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3597.92,
+    "text": "Because they are redundant, right? You could just directly say that you're going to keep s.id.",
+    "start_ms": 3597920,
+    "end_ms": 3603320,
+    "duration_ms": 5400,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3603.736,
+    "text": "Knowing that t.id is also going to be the same, right?",
+    "start_ms": 3603736,
+    "end_ms": 3607496,
+    "duration_ms": 3760,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3607.496,
+    "text": "Because you did inner join, for example, in the cases that you're doing inner join.",
+    "start_ms": 3607496,
+    "end_ms": 3612136,
+    "duration_ms": 4640,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3612.136,
+    "text": "And also rename s.id as id, so that now you have one primary key that's named id.",
+    "start_ms": 3612136,
+    "end_ms": 3619976,
+    "duration_ms": 7840,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3620.952,
+    "text": "Same kind of issue with the right joint. So right joint would say that I want to keep all of these rows in my right table, but I'm going to just find that if there is any additional information from the left table that can be combined.",
+    "start_ms": 3620952,
+    "end_ms": 3634952,
+    "duration_ms": 14000,
+    "word_count": 47,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3634.952,
+    "text": "If there is no additional information from the left table that can come to this combination, I'll just fill it with null values, which is going to give us this.",
+    "start_ms": 3634952,
+    "end_ms": 3643732,
+    "duration_ms": 8780,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3643.732,
+    "text": "All of these are going to be filled with null values.",
+    "start_ms": 3643732,
+    "end_ms": 3646952,
+    "duration_ms": 3220,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3646.952,
+    "text": "But if the value is the exists, you would just go ahead and combine that.",
+    "start_ms": 3646952,
+    "end_ms": 3650952,
+    "duration_ms": 4000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3651.0,
+    "text": "Right, this is the case that you're interested in. All different breeds, but you also want to add the name information, but if you don't have the name, you don't care about it so much, but you just want to know that later on in your sample, how many, for example, Persian cast do you have?",
+    "start_ms": 3651000,
+    "end_ms": 3667000,
+    "duration_ms": 16000,
+    "word_count": 56,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3667.0,
+    "text": "Right. So that's the case that we would do, we would do right joint.",
+    "start_ms": 3667000,
+    "end_ms": 3671500,
+    "duration_ms": 4500,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3671.5,
+    "text": "Notice that T is my right table, and that's why it's called right joint.",
+    "start_ms": 3671500,
+    "end_ms": 3676000,
+    "duration_ms": 4500,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3676.0,
+    "text": "If T was my left table... This operation would need it to be left join and the order of the columns would have been different.",
+    "start_ms": 3676000,
+    "end_ms": 3684952,
+    "duration_ms": 8952,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3684.952,
+    "text": "First, the columns of the left table is going to come, the second the columns of the right table is going to come, unless you specify a different order.",
+    "start_ms": 3684952,
+    "end_ms": 3693952,
+    "duration_ms": 9000,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3693.952,
+    "text": "So here because I said everything that's the order that is going to give me is this starts from left to the right, otherwise you just specify the order that you want to work with.",
+    "start_ms": 3693952,
+    "end_ms": 3702652,
+    "duration_ms": 8700,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3703.8,
+    "text": "Cool outer joint cross showing standard crazy cross showing was just combining everything to everything which might not make sense but what if we want to reserve all the rows that exist in T and exist in S and we just want to combine them and we don't want to drop any values.",
+    "start_ms": 3703800,
+    "end_ms": 3722400,
+    "duration_ms": 18600,
+    "word_count": 53,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3722.6,
+    "text": "So here I would say that okay, I want to keep all the rows.",
+    "start_ms": 3722600,
+    "end_ms": 3726552,
+    "duration_ms": 3952,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3726.552,
+    "text": "If the left table doesn't have a corresponding or the row in the left table doesn't have a corresponding value.",
+    "start_ms": 3726552,
+    "end_ms": 3732200,
+    "duration_ms": 5648,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3732.2,
+    "text": "just fill it with null values. If there is corresponding value, connect them, and then also do the same thing for the right table.",
+    "start_ms": 3732200,
+    "end_ms": 3741132,
+    "duration_ms": 8932,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3741.132,
+    "text": "If it doesn't have a corresponding left value, put null and then combine null with the values that you have in the right table.",
+    "start_ms": 3741132,
+    "end_ms": 3748800,
+    "duration_ms": 7668,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3748.8,
+    "text": "This is a full outer joint. So it's going to be one of the most useful kind of operations after inner join.",
+    "start_ms": 3748800,
+    "end_ms": 3756920,
+    "duration_ms": 8120,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3756.92,
+    "text": "Inner join is the most used one and then the full author join or full join is the next most used kind of operation that we would do.",
+    "start_ms": 3756920,
+    "end_ms": 3767480,
+    "duration_ms": 10560,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3768.408,
+    "text": "A lot of times for just making sure that the syntax of doing the joint on different tables is concise.",
+    "start_ms": 3768408,
+    "end_ms": 3777708,
+    "duration_ms": 9300,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3777.708,
+    "text": "We don't reuse the name of the tables over and over again.",
+    "start_ms": 3777708,
+    "end_ms": 3781508,
+    "duration_ms": 3800,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3781.508,
+    "text": "We would say that I want to join tables. I want to, for example, here I would say that I want only these two columns, which is good, good practice.",
+    "start_ms": 3781508,
+    "end_ms": 3790408,
+    "duration_ms": 8900,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3790.408,
+    "text": "Don't throw everything in the final table that you have.",
+    "start_ms": 3790408,
+    "end_ms": 3794108,
+    "duration_ms": 3700,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3794.108,
+    "text": "But here I would say a one table title and I want table rating.",
+    "start_ms": 3794108,
+    "end_ms": 3798428,
+    "duration_ms": 4320,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3798.428,
+    "text": "This is from the IMDB database that I have. What I'm doing is I'm doing inner join.",
+    "start_ms": 3798428,
+    "end_ms": 3804427,
+    "duration_ms": 5999,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3804.728,
+    "text": "But I don't want to keep typing, rating, and title over and over again if I want to select to do different operations on different columns of these tables.",
+    "start_ms": 3804728,
+    "end_ms": 3814194,
+    "duration_ms": 9466,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3814.194,
+    "text": "Instead, I would say that from this point and on, I'm going to refer to the table title as T and I'm going to refer to table rating as R.",
+    "start_ms": 3814194,
+    "end_ms": 3823864,
+    "duration_ms": 9670,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3823.864,
+    "text": "This is aliasing, but aliasing in joins are going to be really useful in making the query a little bit more concise.",
+    "start_ms": 3823864,
+    "end_ms": 3832048,
+    "duration_ms": 8184,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3832.048,
+    "text": "Then I can go ahead and say that okay now do the checking of the rows that t dot or the table t dot tcons is equal to r dot tcons and then those are the cases that the primary keys are the same so there is the corresponding value.",
+    "start_ms": 3832048,
+    "end_ms": 3847172,
+    "duration_ms": 15124,
+    "word_count": 50,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3847.172,
+    "text": "Here you go do the the inner joint, that's the output.",
+    "start_ms": 3847172,
+    "end_ms": 3849808,
+    "duration_ms": 2636,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3850.712,
+    "text": "Otherwise, it would not be a big deal, but you would just need to write, I do.",
+    "start_ms": 3850712,
+    "end_ms": 3857472,
+    "duration_ms": 6760,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3858.008,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3858008,
+    "end_ms": 3858110,
+    "duration_ms": 102,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3858.11,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3858110,
+    "end_ms": 3858212,
+    "duration_ms": 102,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3858.212,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3858212,
+    "end_ms": 3858314,
+    "duration_ms": 102,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3858.314,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3858314,
+    "end_ms": 3858416,
+    "duration_ms": 102,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3858.416,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3858416,
+    "end_ms": 3858519,
+    "duration_ms": 103,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3858.519,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3858519,
+    "end_ms": 3858621,
+    "duration_ms": 102,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3858.621,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3858621,
+    "end_ms": 3858723,
+    "duration_ms": 102,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3858.723,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3858723,
+    "end_ms": 3858825,
+    "duration_ms": 102,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3858.825,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3858825,
+    "end_ms": 3858928,
+    "duration_ms": 103,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3858.928,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3858928,
+    "end_ms": 3859030,
+    "duration_ms": 102,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3859.03,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3859030,
+    "end_ms": 3859132,
+    "duration_ms": 102,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3859.132,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3859132,
+    "end_ms": 3859234,
+    "duration_ms": 102,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3859.234,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3859234,
+    "end_ms": 3859337,
+    "duration_ms": 103,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3859.337,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3859337,
+    "end_ms": 3859439,
+    "duration_ms": 102,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3859.439,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3859439,
+    "end_ms": 3859541,
+    "duration_ms": 102,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3859.541,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3859541,
+    "end_ms": 3859643,
+    "duration_ms": 102,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3859.643,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3859643,
+    "end_ms": 3859746,
+    "duration_ms": 103,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3859.746,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3859746,
+    "end_ms": 3859848,
+    "duration_ms": 102,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3859.848,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3859848,
+    "end_ms": 3859950,
+    "duration_ms": 102,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3859.95,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3859950,
+    "end_ms": 3860052,
+    "duration_ms": 102,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3860.052,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3860052,
+    "end_ms": 3860155,
+    "duration_ms": 103,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3860.155,
+    "text": ". . . . . . . . . .",
+    "start_ms": 3860155,
+    "end_ms": 3860257,
+    "duration_ms": 102,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3860.257,
+    "text": ". . . and then uh, rating that he comes and it can be.",
+    "start_ms": 3860257,
+    "end_ms": 3864808,
+    "duration_ms": 4551,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3865.976,
+    "text": "Kind of difficult to keep typing this stuff, because it adds up.",
+    "start_ms": 3865976,
+    "end_ms": 3868776,
+    "duration_ms": 2800,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3869.752,
+    "text": "I could also go next level and I could say that I don't want to keep saying rating as R or title as T.",
+    "start_ms": 3869752,
+    "end_ms": 3878326,
+    "duration_ms": 8574,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3878.326,
+    "text": "You know that I want to do L using. So I'm just going to do the same thing just directly without saying ads.",
+    "start_ms": 3878326,
+    "end_ms": 3885618,
+    "duration_ms": 7292,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3885.618,
+    "text": "So here I'm saying that from title T. from rating R and I can skip as for aliasing so I will automatically figure out that I wanted to do to all your things, I want to just rename the table references.",
+    "start_ms": 3885618,
+    "end_ms": 3899768,
+    "duration_ms": 14150,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3901.432,
+    "text": "These are useful, not critical, but they are useful for you to know.",
+    "start_ms": 3901432,
+    "end_ms": 3905752,
+    "duration_ms": 4320,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3906.264,
+    "text": "There is this next thing that's very interesting. It's called common table expression.",
+    "start_ms": 3906264,
+    "end_ms": 3911304,
+    "duration_ms": 5040,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3912.024,
+    "text": "This is the most complicated thing that you will ever see.",
+    "start_ms": 3912024,
+    "end_ms": 3915544,
+    "duration_ms": 3520,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3915.544,
+    "text": "So take a look at what's happening. I would suggest that actually take 30 seconds to read that entire cut.",
+    "start_ms": 3915544,
+    "end_ms": 3922464,
+    "duration_ms": 6920,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3922.464,
+    "text": "It sounds complicated, but I promise you that if you read it, it will make sense.",
+    "start_ms": 3922464,
+    "end_ms": 3932984,
+    "duration_ms": 10520,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3966.008,
+    "text": "Can someone explain to me what we're doing here? Only in this pink area.",
+    "start_ms": 3966008,
+    "end_ms": 3972284,
+    "duration_ms": 6276,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3972.792,
+    "text": "I'll take a volunteer. Yes. Sit up one more time.",
+    "start_ms": 3972792,
+    "end_ms": 3982912,
+    "duration_ms": 10120,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3992.248,
+    "text": "It is creating a table, right? So it tells me that...",
+    "start_ms": 3992248,
+    "end_ms": 3998008,
+    "duration_ms": 5760,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3999.032,
+    "text": "Create the table that's called Good Action Movies. As Using...",
+    "start_ms": 3999032,
+    "end_ms": 4005832,
+    "duration_ms": 6800,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4006.136,
+    "text": "This kind of query so common table expression is a way that we can come by multiple queries as opposed to writing one thing is storing it and writing another thing is storing it and then like keep loading stuff.",
+    "start_ms": 4006136,
+    "end_ms": 4017136,
+    "duration_ms": 11000,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4017.136,
+    "text": "You are specifically saying that give me all the good action movies and then if you just read the query it makes sense i'm saying that.",
+    "start_ms": 4017136,
+    "end_ms": 4026136,
+    "duration_ms": 9000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4026.136,
+    "text": "what are you going to do? Give me all the information that you have.",
+    "start_ms": 4026136,
+    "end_ms": 4032136,
+    "duration_ms": 6000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4033.432,
+    "text": "from a This is all from From... The connection of the title table and also the rating table when we're doing inner join on the ideas between them so i'm connecting actually all the ratings and all the titles that we have from them and then i'm saying that go ahead and filter it for the cases that the genre feature so there was a column genre is like.",
+    "start_ms": 4033432,
+    "end_ms": 4065632,
+    "duration_ms": 32200,
+    "word_count": 69,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4066.36,
+    "text": "percent action percent. Remember that this was the way that we were say that any action like thing I want to extract it.",
+    "start_ms": 4066360,
+    "end_ms": 4073387,
+    "duration_ms": 7027,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4073.387,
+    "text": "So this is the case that you will be able to extract only action movies you will be extract be able to extract drama slash action or action slash drama.",
+    "start_ms": 4073387,
+    "end_ms": 4082554,
+    "duration_ms": 9167,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4082.554,
+    "text": "That's why we have percent before and percent after. So all action like movies are going to be extracted.",
+    "start_ms": 4082554,
+    "end_ms": 4088360,
+    "duration_ms": 5806,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4088.36,
+    "text": "And then here we're saying that average rating be greater than seven.",
+    "start_ms": 4088360,
+    "end_ms": 4093360,
+    "duration_ms": 5000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4093.36,
+    "text": "So there was a column average rating. We want to make sure that the rating is greater than seven.",
+    "start_ms": 4093360,
+    "end_ms": 4098360,
+    "duration_ms": 5000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4098.104,
+    "text": "And we want to make sure that the number of votes is above 5,000.",
+    "start_ms": 4098104,
+    "end_ms": 4103444,
+    "duration_ms": 5340,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4103.444,
+    "text": "So this is how you would also kind of take a look at the Yelp rating.",
+    "start_ms": 4103444,
+    "end_ms": 4107284,
+    "duration_ms": 3840,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4107.284,
+    "text": "So you just don't go by the number. You also take a look at the number of votes that gave that average, right?",
+    "start_ms": 4107284,
+    "end_ms": 4113384,
+    "duration_ms": 6100,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4113.384,
+    "text": "So that's what we're doing. We want to make sure that there are at least 5,000 votes and then the average rating is above 7 that we get.",
+    "start_ms": 4113384,
+    "end_ms": 4122024,
+    "duration_ms": 8640,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4122.024,
+    "text": "So this is called good action movies right we do exactly the same thing for prolific action prolific actors so we do exactly similar thing we would say that i want to take a look at i want to join the name table and the principal table principal table is a table that He likes all the principal actors and actresses in different movies that we have.",
+    "start_ms": 4122024,
+    "end_ms": 4150792,
+    "duration_ms": 28768,
+    "word_count": 67,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4150.792,
+    "text": "So we just want to make sure that... If there is an actor or actress in the movie, they have a principal role.",
+    "start_ms": 4150792,
+    "end_ms": 4160664,
+    "duration_ms": 9872,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4160.664,
+    "text": "And then we would say that the category of the role should be actor and then we're grouping by their name.",
+    "start_ms": 4160664,
+    "end_ms": 4167064,
+    "duration_ms": 6400,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4167.064,
+    "text": "So we're extracting just the names of different actors that have primary role in any of those movies and we call them prolific actors.",
+    "start_ms": 4167064,
+    "end_ms": 4178464,
+    "duration_ms": 11400,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4178.464,
+    "text": "And then what we would do afterwards is to actually run the actual query that we want.",
+    "start_ms": 4178464,
+    "end_ms": 4183064,
+    "duration_ms": 4600,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4183.064,
+    "text": "So now we have prolific actors, we also have good action movies.",
+    "start_ms": 4183064,
+    "end_ms": 4188824,
+    "duration_ms": 5760,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4188.824,
+    "text": "So what I can do is I can say that give me all the information about all of these movies and also the information about the actor that played the primary role in them.",
+    "start_ms": 4188824,
+    "end_ms": 4199384,
+    "duration_ms": 10560,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4199.384,
+    "text": "So I would take the primary title, I would take the primary name of the...",
+    "start_ms": 4199384,
+    "end_ms": 4204424,
+    "duration_ms": 5040,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4204.728,
+    "text": "Um. of the of the person the number of roles that they played so this is like the experience of the actor that's coming from from the from the names and principal tables that we have a number also going to round average rating and I'm going to round the average rating of all of these movies and I'm going to call that a rating.",
+    "start_ms": 4204728,
+    "end_ms": 4230848,
+    "duration_ms": 26120,
+    "word_count": 65,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4230.848,
+    "text": "So notice that I'm getting all of that information from the two tables that I had and the two tables that I created.",
+    "start_ms": 4230848,
+    "end_ms": 4238848,
+    "duration_ms": 8000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4238.848,
+    "text": "The two tables were good action movies and then it was also prolific actors.",
+    "start_ms": 4238848,
+    "end_ms": 4244848,
+    "duration_ms": 6000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4244.664,
+    "text": "And then notice that I'm also ordering by something and then I'm also getting the top 10 and limiting it by top 10.",
+    "start_ms": 4244664,
+    "end_ms": 4251664,
+    "duration_ms": 7000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4252.6,
+    "text": "So let's take a look at actually running it. So we still have 10 minutes to go so I can show you this IMDB demo, which is very interesting.",
+    "start_ms": 4252600,
+    "end_ms": 4263320,
+    "duration_ms": 10720,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4263.32,
+    "text": "So this was our IMDB table. Notice that when I run this command on SQLite master, in order to get the type of or all of the tables that I have.",
+    "start_ms": 4263320,
+    "end_ms": 4276680,
+    "duration_ms": 13360,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4276.68,
+    "text": "So this is going to give me all the table is schemas.",
+    "start_ms": 4276680,
+    "end_ms": 4279560,
+    "duration_ms": 2880,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4279.56,
+    "text": "I have name, table, I have principle table, I have rating and I have title.",
+    "start_ms": 4279560,
+    "end_ms": 4284360,
+    "duration_ms": 4800,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4284.824,
+    "text": "And then what's going to happen here is that I can actually run queries.",
+    "start_ms": 4284824,
+    "end_ms": 4288896,
+    "duration_ms": 4072,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4288.896,
+    "text": "I can say that, oh, double check that what kind of primary titles I have or if the primary title is in this list or not.",
+    "start_ms": 4288896,
+    "end_ms": 4296460,
+    "duration_ms": 7564,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4296.46,
+    "text": "And then I'm limiting it by the top 50 kind of movies that we get.",
+    "start_ms": 4296460,
+    "end_ms": 4300824,
+    "duration_ms": 4364,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4300.824,
+    "text": "Now we're slightly building our pipeline. So I'm building the pipeline and I'm saying that go ahead and get the Tcons call I'm call it ID, get the primary title, get the title type.",
+    "start_ms": 4300824,
+    "end_ms": 4316944,
+    "duration_ms": 16120,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4316.944,
+    "text": "So I want to say if it's movie or TV movie, get the runtime in minutes and get the start year of the movie.",
+    "start_ms": 4316944,
+    "end_ms": 4324144,
+    "duration_ms": 7200,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4324.144,
+    "text": "And these are all coming from the title table. And then I would say that now I want you to filter further.",
+    "start_ms": 4324144,
+    "end_ms": 4330584,
+    "duration_ms": 6440,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4330.584,
+    "text": "I don't want everything under this entire data base. But what I want is that tell me all the movies that have a reasonable value, that the runtime or the duration is above zero or less than 300.",
+    "start_ms": 4330584,
+    "end_ms": 4346563,
+    "duration_ms": 15979,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4346.563,
+    "text": "Also, I want to make sure that there is a value in this start year.",
+    "start_ms": 4346563,
+    "end_ms": 4350184,
+    "duration_ms": 3621,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4350.184,
+    "text": "Because if you take a look, a start year sometimes can be in all value.",
+    "start_ms": 4350184,
+    "end_ms": 4354944,
+    "duration_ms": 4760,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4354.944,
+    "text": "We just want to make sure that our data set is clean.",
+    "start_ms": 4354944,
+    "end_ms": 4356984,
+    "duration_ms": 2040,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4356.984,
+    "text": "So this is a way that we can use filtering in order to get all the rows that are relevant.",
+    "start_ms": 4356984,
+    "end_ms": 4361716,
+    "duration_ms": 4732,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4361.716,
+    "text": "So running it again, so you see that now I have a nice data set that I want to work with.",
+    "start_ms": 4361716,
+    "end_ms": 4368104,
+    "duration_ms": 6388,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4368.664,
+    "text": "So this is also what we took a look. What I want is I want the top-rated action movies.",
+    "start_ms": 4368664,
+    "end_ms": 4375304,
+    "duration_ms": 6640,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4375.304,
+    "text": "So you start with some query and then you will keep adding functionalities to your query so that it does some additional thing that you want.",
+    "start_ms": 4375304,
+    "end_ms": 4386144,
+    "duration_ms": 10840,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4386.144,
+    "text": "Everything is the same as before except for here I'm also saying that in the ver clause I would say that give me all the genres that are like actions.",
+    "start_ms": 4386144,
+    "end_ms": 4396264,
+    "duration_ms": 10120,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4396.264,
+    "text": "So I want to get all the action-like movies. And I want to also make sure that the number of votes is above a thousand.",
+    "start_ms": 4396264,
+    "end_ms": 4403864,
+    "duration_ms": 7600,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4403.864,
+    "text": "And then the type of the title is movie, and so on and so forth.",
+    "start_ms": 4403864,
+    "end_ms": 4409864,
+    "duration_ms": 6000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4409.864,
+    "text": "So we're going to take a look. Now you're seeing that I have all different genres that have some action in their name.",
+    "start_ms": 4409864,
+    "end_ms": 4416664,
+    "duration_ms": 6800,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4417.304,
+    "text": "So... The the common table expression that you saw let me run it so that you can see what the output is going to look like it took a while for it to run but notice that I have primary title I have the primary name of the actor who played the primary role in the movie I have the number of roles that this actor actually played generally in my data set so the number of movies that they played in and then the average rating of this movie so I sorted.",
+    "start_ms": 4417304,
+    "end_ms": 4446892,
+    "duration_ms": 29588,
+    "word_count": 93,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4446.892,
+    "text": "Actually, I ordered by rating and then I ordered also by the number of rows that the actor played.",
+    "start_ms": 4446892,
+    "end_ms": 4452812,
+    "duration_ms": 5920,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4452.812,
+    "text": "So these are like the highest values that I get.",
+    "start_ms": 4452812,
+    "end_ms": 4457052,
+    "duration_ms": 4240,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4457.848,
+    "text": "The other thing that I can do is I can actually do really fancy stuff, meaning that I can...",
+    "start_ms": 4457848,
+    "end_ms": 4464408,
+    "duration_ms": 6560,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4465.112,
+    "text": "Um. I can go ahead and store this value in the data frame.",
+    "start_ms": 4465112,
+    "end_ms": 4470072,
+    "duration_ms": 4960,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4470.072,
+    "text": "So this is also the same set of values that I have.",
+    "start_ms": 4470072,
+    "end_ms": 4473432,
+    "duration_ms": 3360,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4473.432,
+    "text": "Now I have added also the duration in time. I also added the start year so I can do a little bit more EDA on this data frame.",
+    "start_ms": 4473432,
+    "end_ms": 4483112,
+    "duration_ms": 9680,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4483.512,
+    "text": "So what I'm going to do next is that because now that result of the query was in a data frame, I could actually go ahead and plot it.",
+    "start_ms": 4483512,
+    "end_ms": 4492952,
+    "duration_ms": 9440,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4492.952,
+    "text": "That's why DockDB is really interesting because DockDB really connects well with with tendus.",
+    "start_ms": 4492952,
+    "end_ms": 4498492,
+    "duration_ms": 5540,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4498.492,
+    "text": "So what I did before here was that I said run the squery is store the result in a data frame that's called action underscore movie underscore df.",
+    "start_ms": 4498492,
+    "end_ms": 4510285,
+    "duration_ms": 11793,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4510.285,
+    "text": "That is a data frame. Once I have the data frame it's literally going back to the pandas lectures you can do visualization you can do modeling and everything that you want.",
+    "start_ms": 4510285,
+    "end_ms": 4521256,
+    "duration_ms": 10971,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4521.256,
+    "text": "So this is where I actually visualized the year with respect to the rating.",
+    "start_ms": 4521256,
+    "end_ms": 4526636,
+    "duration_ms": 5380,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4526.636,
+    "text": "I want to take a look at okay over all of those action movies over all of those years.",
+    "start_ms": 4526636,
+    "end_ms": 4531536,
+    "duration_ms": 4900,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4531.536,
+    "text": "How did the rating change over time? Right, so you can notice the trend.",
+    "start_ms": 4531536,
+    "end_ms": 4536276,
+    "duration_ms": 4740,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4536.276,
+    "text": "And what we can actually do... is I can actually go ahead and say that I want to do further processing and I want you to also show me that for every year what is the median rating and what is the first quartile and the third quartile of it because it was a lot of overplodding right here.",
+    "start_ms": 4536276,
+    "end_ms": 4556480,
+    "duration_ms": 20204,
+    "word_count": 59,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4556.568,
+    "text": "So in that case, if I go ahead and visualize it, you will see the trend.",
+    "start_ms": 4556568,
+    "end_ms": 4561368,
+    "duration_ms": 4800,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4562.104,
+    "text": "It's like fancy stuff you can get a really big data set.",
+    "start_ms": 4562104,
+    "end_ms": 4565804,
+    "duration_ms": 3700,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4565.804,
+    "text": "You can do, we can run SQL queries. You can get a summary.",
+    "start_ms": 4565804,
+    "end_ms": 4570304,
+    "duration_ms": 4500,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4570.304,
+    "text": "Your summary is going to be small enough that you can actually port it into a data frame and then you can actually visualize the stuff.",
+    "start_ms": 4570304,
+    "end_ms": 4577004,
+    "duration_ms": 6700,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4577.004,
+    "text": "So everything all together. What if I go ahead and say that, can I understand whether the runtime of action movies influence the rating of the movie?",
+    "start_ms": 4577004,
+    "end_ms": 4588328,
+    "duration_ms": 11324,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4588.328,
+    "text": "So what I'm going to do is I'm going to actually plot on the X-axis the duration of the movie with respect to the rating to see if I can see any trend.",
+    "start_ms": 4588328,
+    "end_ms": 4597128,
+    "duration_ms": 8800,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4597.128,
+    "text": "It sounds like that I'm going into the direction of actually doing some regression analysis.",
+    "start_ms": 4597128,
+    "end_ms": 4601768,
+    "duration_ms": 4640,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4602.568,
+    "text": "So let's take a look. Again, in the data frame, I have all of these features, So this was the data frame that's result of my common expression table that I actually created.",
+    "start_ms": 4602568,
+    "end_ms": 4616248,
+    "duration_ms": 13680,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4616.248,
+    "text": "But now I'm actually plotting time with respect to the rating.",
+    "start_ms": 4616248,
+    "end_ms": 4619768,
+    "duration_ms": 3520,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4619.768,
+    "text": "So we're taking a look at, okay, what is that relationship?",
+    "start_ms": 4619768,
+    "end_ms": 4622968,
+    "duration_ms": 3200,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4622.968,
+    "text": "It sounds like that this needs a little bit of...",
+    "start_ms": 4622968,
+    "end_ms": 4626167,
+    "duration_ms": 3199,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4626.424,
+    "text": "More feature engineering so it needs to have some transformation because it's not actually showing a linear trend but if I was curious and I wanted to actually create a heat map I could actually look at the heat map of all of these values of how many How many movies did we have that had that were like 100 minutes and then the rating average rating was 5.9 so you can actually find out those values with this heat map.",
+    "start_ms": 4626424,
+    "end_ms": 4656032,
+    "duration_ms": 29608,
+    "word_count": 81,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4656.344,
+    "text": "The next thing that I would do is quickly showing you the trend kind of similar thing, that if I'm looking at the time and I'm looking at the median rating, what's that trend?",
+    "start_ms": 4656344,
+    "end_ms": 4668424,
+    "duration_ms": 12080,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4668.424,
+    "text": "So as the time increases, is there any influence on the median rating or not?",
+    "start_ms": 4668424,
+    "end_ms": 4673384,
+    "duration_ms": 4960,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4673.72,
+    "text": "And the last thing is that I am doing, I am filling fancy and I will fit a linear regression to the plot that we had before so that we can kind of see if there is any trend or not.",
+    "start_ms": 4673720,
+    "end_ms": 4685120,
+    "duration_ms": 11400,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4685.12,
+    "text": "So I walk you through the entire process. I gave you a big data and I told you that there is a new technology that you should use and be comfortable to use SQL in order to actually run big queries on the datasets.",
+    "start_ms": 4685120,
+    "end_ms": 4699920,
+    "duration_ms": 14800,
+    "word_count": 44,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4699.92,
+    "text": "Once you run all of those big queries, you can do also some of the operations as part of those queries.",
+    "start_ms": 4699920,
+    "end_ms": 4705200,
+    "duration_ms": 5280,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4705.2,
+    "text": "We spend a lecture and half actually seeing that. Then we saw that it actually connects really well with pandas.",
+    "start_ms": 4705200,
+    "end_ms": 4711040,
+    "duration_ms": 5840,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4711.04,
+    "text": "We ported everything into data frame. Then we went ahead and actually did a bunch of different visualization and modeling.",
+    "start_ms": 4711040,
+    "end_ms": 4716880,
+    "duration_ms": 5840,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4716.88,
+    "text": "That's kind of a wrap up. The next thing that after this, you would need to do is just evaluating your model, but you're all familiar with it.",
+    "start_ms": 4716880,
+    "end_ms": 4725599,
+    "duration_ms": 8719,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4725.304,
+    "text": "Okay, that was it today. We are going to come back next week with a new topic.",
+    "start_ms": 4725304,
+    "end_ms": 4730604,
+    "duration_ms": 5300,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4730.604,
+    "text": "As I promised every week, there is going to be a new module.",
+    "start_ms": 4730604,
+    "end_ms": 4733804,
+    "duration_ms": 3200,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4733.804,
+    "text": "So this was a wrap up for SQL. You're going to do one lab and one homework on it.",
+    "start_ms": 4733804,
+    "end_ms": 4737504,
+    "duration_ms": 3700,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4737.504,
+    "text": "You're going to have fun. And we're going to see what we have for you next week.",
+    "start_ms": 4737504,
+    "end_ms": 4740804,
+    "duration_ms": 3300,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4740.804,
+    "text": "Thank you for coming. good sometimes your kids come early I don't know you have midterm",
+    "start_ms": 4740804,
+    "end_ms": 4763056,
+    "duration_ms": 22252,
+    "word_count": 16,
+    "avg_confidence": 90
+  }
+]

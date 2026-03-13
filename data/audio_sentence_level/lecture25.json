@@ -1,0 +1,6275 @@
+[
+  {
+    "timestamp": 0.0,
+    "text": "yourself to death. Jockily redundant. They just say the same thing over and over again.",
+    "start_ms": 0,
+    "end_ms": 5724,
+    "duration_ms": 5724,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 5.724,
+    "text": "I asked Chatsy P2 would be a good song for lecture and said this song.",
+    "start_ms": 5724,
+    "end_ms": 9762,
+    "duration_ms": 4038,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 9.762,
+    "text": "Like really? PLEPTION IS NOT. Simplifying to the essential elements.",
+    "start_ms": 9762,
+    "end_ms": 14064,
+    "duration_ms": 4302,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 14.064,
+    "text": "So, yeah, we'll go at that. All right. As I said, welcome to Part 2 of PCA.",
+    "start_ms": 14064,
+    "end_ms": 20696,
+    "duration_ms": 6632,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 23.032,
+    "text": "Join the Slido today. We'll be less mad. The we will warm up the beginning but then lots of visualizations will look at politics and fashion and 3D plots so it'll be fun.",
+    "start_ms": 23032,
+    "end_ms": 34472,
+    "duration_ms": 11440,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 35.896,
+    "text": "But first the math. Principal Component Analysis Part 2. I did start recording, right?",
+    "start_ms": 35896,
+    "end_ms": 43944,
+    "duration_ms": 8048,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 45.848,
+    "text": "Double-check. I once forgot to record lectures we embarrassing. that we are recording.",
+    "start_ms": 45848,
+    "end_ms": 53294,
+    "duration_ms": 7446,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 53.294,
+    "text": "Okay, okay, good. Alright, getting old. I'd... Okay, yeah, so what were we doing?",
+    "start_ms": 53294,
+    "end_ms": 61886,
+    "duration_ms": 8592,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 61.886,
+    "text": "We were taking high-dimensional data and making it lower-dimensional. For the purposes of visualization or other modeling tasks, conceptually we had something that's more than three, but here's a good picture and three dimensions of some data.",
+    "start_ms": 61886,
+    "end_ms": 75592,
+    "duration_ms": 13706,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 75.592,
+    "text": "Sort of like a... A higher dimensional data set and we're trying to find this lower dimensional subspace on which that data lives.",
+    "start_ms": 75592,
+    "end_ms": 81760,
+    "duration_ms": 6168,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 82.68,
+    "text": "And then put that data in that subspace we can plot it like this.",
+    "start_ms": 82680,
+    "end_ms": 85180,
+    "duration_ms": 2500,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 85.56,
+    "text": "So, we often like two lunches. We'll discuss many ways to get to low-adventual space, but no, that's our goal here.",
+    "start_ms": 85560,
+    "end_ms": 92504,
+    "duration_ms": 6944,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 92.504,
+    "text": "Low dimensions. All right, and then we set this story up of matrix factorization.",
+    "start_ms": 92504,
+    "end_ms": 98657,
+    "duration_ms": 6153,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 98.657,
+    "text": "Here's our high dimensional data. These big, not bigger than M good big.",
+    "start_ms": 98657,
+    "end_ms": 102856,
+    "duration_ms": 4199,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 103.896,
+    "text": "So it's some giant table. You could actually be bigger than n, but for our purposes today we're going to look at the still smaller than n.",
+    "start_ms": 103896,
+    "end_ms": 111256,
+    "duration_ms": 7360,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 111.256,
+    "text": "And we wanted to break this data down into two matrices.",
+    "start_ms": 111256,
+    "end_ms": 114776,
+    "duration_ms": 3520,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 114.776,
+    "text": "We multiply together about the same as original data. You can kind of think of this as a lawsuit compression.",
+    "start_ms": 114776,
+    "end_ms": 120904,
+    "duration_ms": 6128,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 121.656,
+    "text": "To make CAKE was one or two we have a lot less numbers here.",
+    "start_ms": 121656,
+    "end_ms": 124656,
+    "duration_ms": 3000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 125.24,
+    "text": "And here... did an original later. So, we're trying to squeeze all the information here into these two.",
+    "start_ms": 125240,
+    "end_ms": 131472,
+    "duration_ms": 6232,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 131.96,
+    "text": "Scheme matrices. So Principal Coupon Analysis has a special flavor for these.",
+    "start_ms": 131960,
+    "end_ms": 139824,
+    "duration_ms": 7864,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 140.376,
+    "text": "This is going to be some orthonormal basis. These are the rows here are magnitude one, length one vectors.",
+    "start_ms": 140376,
+    "end_ms": 147376,
+    "duration_ms": 7000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 149.272,
+    "text": "and there are a thagonal, we want these things to be our thagonal vectors.",
+    "start_ms": 149272,
+    "end_ms": 152872,
+    "duration_ms": 3600,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 152.872,
+    "text": "And we're going to call these, we call these the Ah, this is blue.",
+    "start_ms": 152872,
+    "end_ms": 157384,
+    "duration_ms": 4512,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 157.144,
+    "text": "Deep in Sip-pow components And then this thing here that we're making, when we're done, we have one for each of our original data points.",
+    "start_ms": 157144,
+    "end_ms": 172281,
+    "duration_ms": 15137,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 172.281,
+    "text": "These are called, I call them latent factors. latent factors.",
+    "start_ms": 172281,
+    "end_ms": 176800,
+    "duration_ms": 4519,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 176.8,
+    "text": "Sometimes they're called scores, score factors, whatever you want. These are the things we plot.",
+    "start_ms": 176800,
+    "end_ms": 187048,
+    "duration_ms": 10248,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 187.048,
+    "text": "So we're going to plot these. this. So we talked about trying to find the directions of maximum variance are today.",
+    "start_ms": 187048,
+    "end_ms": 196060,
+    "duration_ms": 9012,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 196.06,
+    "text": "Now we're going to compress it. Whereas it did, most changing, let's keep those directions and throw everything else out.",
+    "start_ms": 196060,
+    "end_ms": 200840,
+    "duration_ms": 4780,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 201.176,
+    "text": "That was one view of it. Another view, the view I prefer.",
+    "start_ms": 201176,
+    "end_ms": 204872,
+    "duration_ms": 3696,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 205.24,
+    "text": "This is Lost Manimization. Our goal is to find a ZNW that when we multiply Z W back together We're pretty close to original X.",
+    "start_ms": 205240,
+    "end_ms": 216168,
+    "duration_ms": 10928,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 217.592,
+    "text": "and the square sense. This is a squared loss memorization.",
+    "start_ms": 217592,
+    "end_ms": 223816,
+    "duration_ms": 6224,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 223.672,
+    "text": "A common theme in this class. The early equivalent, square loss minimization of our reconstruction air versus finding directions of maximum variance.",
+    "start_ms": 223672,
+    "end_ms": 232024,
+    "duration_ms": 8352,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 233.784,
+    "text": "I had the notation here to have forgot. Okay, so again, we're trying to find our principal components.",
+    "start_ms": 233784,
+    "end_ms": 238784,
+    "duration_ms": 5000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 238.784,
+    "text": "In the last lecture, we show that z, and we have the next line.",
+    "start_ms": 238784,
+    "end_ms": 243784,
+    "duration_ms": 5000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 243.784,
+    "text": "Yep, we show that z's are obtained by taking x and projecting it onto our w's.",
+    "start_ms": 243784,
+    "end_ms": 248784,
+    "duration_ms": 5000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 249.368,
+    "text": "So what we really need is W. We know W is easy, just figure out Z by multiplying X by W.",
+    "start_ms": 249368,
+    "end_ms": 254368,
+    "duration_ms": 5000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 256.952,
+    "text": "When we simplify the loss under that assumption, we get this.",
+    "start_ms": 256952,
+    "end_ms": 259952,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 259.952,
+    "text": "It's a pretty cool equation. Right, here. Is our covariance?",
+    "start_ms": 259952,
+    "end_ms": 266472,
+    "duration_ms": 6520,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 266.808,
+    "text": "Cogarians of X. So, giant matrix of covariance terms. This is again just algebraic transformations of the loss.",
+    "start_ms": 266808,
+    "end_ms": 275344,
+    "duration_ms": 8536,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 277.176,
+    "text": "Here. And I'm not going to do that again. That was last lecture a little bit slow.",
+    "start_ms": 277176,
+    "end_ms": 282232,
+    "duration_ms": 5056,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 283.256,
+    "text": "Go for it. Not incredibly critical, but the cool thing here is you have the covariance.",
+    "start_ms": 283256,
+    "end_ms": 288808,
+    "duration_ms": 5552,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 289.176,
+    "text": "We're going to find this W. here that would minimize this loss we also added this Lagrange multiplier which unfortunately is out of the scope of this class but again good for you to know you're trying to minimize something take the derivative set equals zero.",
+    "start_ms": 289176,
+    "end_ms": 303706,
+    "duration_ms": 14530,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 303.706,
+    "text": "Try to minimize something where you want a constraint to be met.",
+    "start_ms": 303706,
+    "end_ms": 307496,
+    "duration_ms": 3790,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 308.696,
+    "text": "You had a Lagrange multiplayer. The constraint here... Is it W times W transpose equals one?",
+    "start_ms": 308696,
+    "end_ms": 318256,
+    "duration_ms": 9560,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 318.584,
+    "text": "Was that mean? It's a unit vector. We went our first principal component, our first vector, to be a unit-land vector.",
+    "start_ms": 318584,
+    "end_ms": 326224,
+    "duration_ms": 7640,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 327.864,
+    "text": "So rather than equals we say minus one. If this is true, if we meet our constraint, this whole term here...",
+    "start_ms": 327864,
+    "end_ms": 334328,
+    "duration_ms": 6464,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 334.968,
+    "text": "is zero. And we can't do funny business with Lambda to make this thing infinitely small or infinitely negative.",
+    "start_ms": 334968,
+    "end_ms": 342016,
+    "duration_ms": 7048,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 342.616,
+    "text": "Right. If we violate this constraint, you know how to minimize this loss?",
+    "start_ms": 342616,
+    "end_ms": 346216,
+    "duration_ms": 3600,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 347.0,
+    "text": "Just choose LANDER, in the direction that makes us go to negative infinity.",
+    "start_ms": 347000,
+    "end_ms": 350000,
+    "duration_ms": 3000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 351.448,
+    "text": "Right, so this is a nice way to make it so that if we get a meaningful answer to the lost minimizer here, this has to be true.",
+    "start_ms": 351448,
+    "end_ms": 357948,
+    "duration_ms": 6500,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 358.68,
+    "text": "Which means this has to be true. That's the Grange Multipliers.",
+    "start_ms": 358680,
+    "end_ms": 363168,
+    "duration_ms": 4488,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 363.168,
+    "text": "You can take an optimization class and we'll spend a lot of time on this topic.",
+    "start_ms": 363168,
+    "end_ms": 367168,
+    "duration_ms": 4000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 367.168,
+    "text": "We're going to use this idea here so we can solve this problem using calculus.",
+    "start_ms": 367168,
+    "end_ms": 372168,
+    "duration_ms": 5000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 373.464,
+    "text": "So we're going to take the derivative of the respect to W.",
+    "start_ms": 373464,
+    "end_ms": 375464,
+    "duration_ms": 2000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 377.368,
+    "text": "W times a constant times W is really W square times a constant.",
+    "start_ms": 377368,
+    "end_ms": 381368,
+    "duration_ms": 4000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 382.008,
+    "text": "Kind of looks like two times W. Comes a constant.",
+    "start_ms": 382008,
+    "end_ms": 387048,
+    "duration_ms": 5040,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 386.716,
+    "text": "doing, unfortunately, Vector Calculus here, so a little more settled in that.",
+    "start_ms": 386716,
+    "end_ms": 391000,
+    "duration_ms": 4284,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 391.32,
+    "text": "But if you squint at it, this sort of feels like w squared times sigma.",
+    "start_ms": 391320,
+    "end_ms": 394520,
+    "duration_ms": 3200,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 394.52,
+    "text": "And you know, if you take your respect to w, you get two times sigma times w.",
+    "start_ms": 394520,
+    "end_ms": 398320,
+    "duration_ms": 3800,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 399.032,
+    "text": "And this sort of looks like... Lambda times w squared.",
+    "start_ms": 399032,
+    "end_ms": 402117,
+    "duration_ms": 3085,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 402.117,
+    "text": "This is going to be a constant term, so you can know it.",
+    "start_ms": 402117,
+    "end_ms": 405176,
+    "duration_ms": 3059,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 405.176,
+    "text": "And again, you get two times lambda times w. Those are derivatives in vector world.",
+    "start_ms": 405176,
+    "end_ms": 412456,
+    "duration_ms": 7280,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 412.824,
+    "text": "Technically it's a little more subtle than that, but you don't need to know that for this class.",
+    "start_ms": 412824,
+    "end_ms": 416824,
+    "duration_ms": 4000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 419.448,
+    "text": "Your admin requires that you sign in Zoom every 30 days.",
+    "start_ms": 419448,
+    "end_ms": 422448,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 423.096,
+    "text": "Are you serious? Okay, what's I did? Very cool. Is this Zoom still recording?",
+    "start_ms": 423096,
+    "end_ms": 430200,
+    "duration_ms": 7104,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 430.904,
+    "text": "In this... Uh, Berkeley Security. I should do that online course.",
+    "start_ms": 430904,
+    "end_ms": 437592,
+    "duration_ms": 6688,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 437.592,
+    "text": "Okay, great. So we have this. Was taking the derivative of this loss right which is this thing up here so we just took derivatives.",
+    "start_ms": 437592,
+    "end_ms": 445792,
+    "duration_ms": 8200,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 446.488,
+    "text": "And then step two is... Set it equal to zero.",
+    "start_ms": 446488,
+    "end_ms": 451560,
+    "duration_ms": 5072,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 452.824,
+    "text": "Set this equals zero, I just copy. Now we got it equal to zero.",
+    "start_ms": 452824,
+    "end_ms": 456936,
+    "duration_ms": 4112,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 457.176,
+    "text": "And we solve. Good bye. Who we get this? I'm going to do any song and just kind of move things on other sides of zero.",
+    "start_ms": 457176,
+    "end_ms": 466880,
+    "duration_ms": 9704,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 466.88,
+    "text": "Great. the things outside, opposite sides of equations. And this is where you all like give me a bigger pause.",
+    "start_ms": 466880,
+    "end_ms": 472036,
+    "duration_ms": 5156,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 472.036,
+    "text": "Pause. This is the most exciting equation. Yes. Thank you.",
+    "start_ms": 472036,
+    "end_ms": 475376,
+    "duration_ms": 3340,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 475.376,
+    "text": "Why is this so exciting? Slide it like this. This is just...",
+    "start_ms": 475376,
+    "end_ms": 480072,
+    "duration_ms": 4696,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 480.76,
+    "text": "This is a big deal. because I derived it. There's no poll.",
+    "start_ms": 480760,
+    "end_ms": 506560,
+    "duration_ms": 25800,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 506.84,
+    "text": "Really? What are you wrong it's as active. This is Lino.",
+    "start_ms": 506840,
+    "end_ms": 512544,
+    "duration_ms": 5704,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 514.36,
+    "text": "Someone help. You guys can shout out why is that exciting?",
+    "start_ms": 514360,
+    "end_ms": 520328,
+    "duration_ms": 5968,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 520.328,
+    "text": "Wait, no, I actually don't know it because you should do the poll that we more fun.",
+    "start_ms": 520328,
+    "end_ms": 522828,
+    "duration_ms": 2500,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 523.704,
+    "text": "and we need to pull anyways for a green purposes.",
+    "start_ms": 523704,
+    "end_ms": 525704,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 526.04,
+    "text": "I mean I'm gonna exit maybe come back in. In the same.",
+    "start_ms": 526040,
+    "end_ms": 531968,
+    "duration_ms": 5928,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 532.056,
+    "text": "Just go. and deactivate and start again, slide show. Center view.",
+    "start_ms": 532056,
+    "end_ms": 540712,
+    "duration_ms": 8656,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 542.456,
+    "text": "I get to the cool pictures. Can you do it now?",
+    "start_ms": 542456,
+    "end_ms": 545256,
+    "duration_ms": 2800,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 562.168,
+    "text": "What's going on? Can we go to another side or maybe this?",
+    "start_ms": 562168,
+    "end_ms": 571496,
+    "duration_ms": 9328,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 577.304,
+    "text": "Shall I refresh? Oh, it's working. Go go go what is this?",
+    "start_ms": 577304,
+    "end_ms": 584008,
+    "duration_ms": 6704,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 585.112,
+    "text": "PCA, come on, that's cheating. Ah! The Grunge, yeah. Alright, so some of you have taken linear algebra.",
+    "start_ms": 585112,
+    "end_ms": 599016,
+    "duration_ms": 13904,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 601.144,
+    "text": "I can value, I think there's something else. It's good.",
+    "start_ms": 601144,
+    "end_ms": 608012,
+    "duration_ms": 6868,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 608.824,
+    "text": "I can value stuff. Where's the vector crowd? Alright, so you're getting it.",
+    "start_ms": 608824,
+    "end_ms": 618744,
+    "duration_ms": 9920,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 618.744,
+    "text": "Uh, yes, so this is really exciting because what do we have here?",
+    "start_ms": 618744,
+    "end_ms": 622044,
+    "duration_ms": 3300,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 622.044,
+    "text": "We have a matrix, sigma. times of vector equals a constant times of vector.",
+    "start_ms": 622044,
+    "end_ms": 628504,
+    "duration_ms": 6460,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 629.88,
+    "text": "It's Nigga Decker. Sigma So our principal components are eigenvectors of sigma.",
+    "start_ms": 629880,
+    "end_ms": 636636,
+    "duration_ms": 6756,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 639.608,
+    "text": "So exciting. Is there eigenvectors that make slamda? And I can value.",
+    "start_ms": 639608,
+    "end_ms": 650312,
+    "duration_ms": 10704,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 650.52,
+    "text": "Very cool. So we have... Figured it out. Whatever you figured out.",
+    "start_ms": 650520,
+    "end_ms": 655512,
+    "duration_ms": 4992,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 655.512,
+    "text": "We have figured out. Did you want to minimize that loss?",
+    "start_ms": 655512,
+    "end_ms": 659176,
+    "duration_ms": 3664,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 659.544,
+    "text": "We need to find the eigenvectors of sigma, the covariance matrix.",
+    "start_ms": 659544,
+    "end_ms": 662544,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 663.832,
+    "text": "The directions, the eigen directions are the covariance matrix, which is hard to interpret, but like that.",
+    "start_ms": 663832,
+    "end_ms": 669832,
+    "duration_ms": 6000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 669.976,
+    "text": "Directions that it kind of stretches out on. Those are our principal components.",
+    "start_ms": 669976,
+    "end_ms": 677136,
+    "duration_ms": 7160,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 679.512,
+    "text": "There is minimized when we choose the eigenvalue. The largest eigenvalue, the eigenvector course plane large second value.",
+    "start_ms": 679512,
+    "end_ms": 686089,
+    "duration_ms": 6577,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 686.089,
+    "text": "Why is that? We'll back this equation over here, so now we know.",
+    "start_ms": 686089,
+    "end_ms": 690792,
+    "duration_ms": 4703,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 691.64,
+    "text": "It is an eigenvector. So if omega is an eigenvector, then...",
+    "start_ms": 691640,
+    "end_ms": 698264,
+    "duration_ms": 6624,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 698.968,
+    "text": "Sigma Omega equals, what does this mean? What's this here?",
+    "start_ms": 698968,
+    "end_ms": 704776,
+    "duration_ms": 5808,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 704.712,
+    "text": "now what? What do we know? This is now really just Lambda.",
+    "start_ms": 704712,
+    "end_ms": 707592,
+    "duration_ms": 2880,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 707.992,
+    "text": "Omega T. Right? And if that's just Lennon Megathe, then this says, you know, Lambda times Omega.",
+    "start_ms": 707992,
+    "end_ms": 715552,
+    "duration_ms": 7560,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 717.112,
+    "text": "That's not a mega. Sorry, that's w. We're not using Greek today.",
+    "start_ms": 717112,
+    "end_ms": 720657,
+    "duration_ms": 3545,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 720.657,
+    "text": "W times w transpose. That's what this whole thing is.",
+    "start_ms": 720657,
+    "end_ms": 723612,
+    "duration_ms": 2955,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 724.472,
+    "text": "And we know that we have so many transcos is This guy is one.",
+    "start_ms": 724472,
+    "end_ms": 729248,
+    "duration_ms": 4776,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 730.616,
+    "text": "Hope we forgot a negative sign here. So you want to minimize this, we need to find the smallest the largest.",
+    "start_ms": 730616,
+    "end_ms": 736808,
+    "duration_ms": 6192,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 737.304,
+    "text": "Lambda, so we can take the negative of it and get the smallest loss.",
+    "start_ms": 737304,
+    "end_ms": 741304,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 741.976,
+    "text": "So the eigenvector with the largest eigenvalue Minimizes this. That's our first principal component.",
+    "start_ms": 741976,
+    "end_ms": 752232,
+    "duration_ms": 10256,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 753.944,
+    "text": "Super cool. I've hidden slides we derive the rest of principal components, but it's the same setup.",
+    "start_ms": 753944,
+    "end_ms": 759144,
+    "duration_ms": 5200,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 759.144,
+    "text": "So once we subtract off this first principal component, we consider the next in the same process.",
+    "start_ms": 759144,
+    "end_ms": 763544,
+    "duration_ms": 4400,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 763.544,
+    "text": "You can look at the proof, it's out of scope for this class obviously.",
+    "start_ms": 763544,
+    "end_ms": 766744,
+    "duration_ms": 3200,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 768.568,
+    "text": "This is great so we figured out how to compute the first eigenvector.",
+    "start_ms": 768568,
+    "end_ms": 772568,
+    "duration_ms": 4000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 773.368,
+    "text": "And in fact the rest of them as well, they're all gonna be...",
+    "start_ms": 773368,
+    "end_ms": 775868,
+    "duration_ms": 2500,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 776.152,
+    "text": "The Prism components are all the eigenvectors of my covariance matrix.",
+    "start_ms": 776152,
+    "end_ms": 780152,
+    "duration_ms": 4000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 781.592,
+    "text": "And how do we get eigenvectors? I don't know, use linear algebra.",
+    "start_ms": 781592,
+    "end_ms": 785438,
+    "duration_ms": 3846,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 785.438,
+    "text": "We're a second-organism algorithm to solve for these to make it so that we can compute these and construct our principal components.",
+    "start_ms": 785438,
+    "end_ms": 798536,
+    "duration_ms": 13098,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 798.338,
+    "text": "should at this point assume that we're now trying to find eigenvectors.",
+    "start_ms": 798338,
+    "end_ms": 802297,
+    "duration_ms": 3959,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 802.297,
+    "text": "Yes. The eigenvectors of this covariance matrix. Good question. Because how do we get this covariance matrix?",
+    "start_ms": 802297,
+    "end_ms": 813736,
+    "duration_ms": 11439,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 815.32,
+    "text": "How do we get this covariance matrix? So we've centered our data.",
+    "start_ms": 815320,
+    "end_ms": 820520,
+    "duration_ms": 5200,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 820.6,
+    "text": "So normally the covariance matrix is constructed by what? x?",
+    "start_ms": 820600,
+    "end_ms": 823960,
+    "duration_ms": 3360,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 824.472,
+    "text": "Minus Mew. Times. X minus mu transpose. Alright, yeah. The new is zero.",
+    "start_ms": 824472,
+    "end_ms": 836288,
+    "duration_ms": 11816,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 836.664,
+    "text": "Because we've centered it so it's really just x. X Transpose I messed that up.",
+    "start_ms": 836664,
+    "end_ms": 845024,
+    "duration_ms": 8360,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 845.464,
+    "text": "That's just good here. Transpose goes here. Can I rest?",
+    "start_ms": 845464,
+    "end_ms": 853344,
+    "duration_ms": 7880,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 857.272,
+    "text": "Yep, so our covariance matrix... So this... Cheekos this. So in a second we're going to need to compute the eigenvectors of x transpose x.",
+    "start_ms": 857272,
+    "end_ms": 867672,
+    "duration_ms": 10400,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 869.144,
+    "text": "And now I'll tell you how to do that. super cool.",
+    "start_ms": 869144,
+    "end_ms": 873224,
+    "duration_ms": 4080,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 873.167,
+    "text": "so the principal components are the eigenvectors. The largest eigenvalues of the covariance matrix, they maximize the directions of variance.",
+    "start_ms": 873167,
+    "end_ms": 880728,
+    "duration_ms": 7561,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 881.976,
+    "text": "These latent factors, the Z's, we're alternating a compute. obtained by sintering our data and projecting it onto those principal components.",
+    "start_ms": 881976,
+    "end_ms": 889128,
+    "duration_ms": 7152,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 889.912,
+    "text": "So we have our, once we forget about these things are.",
+    "start_ms": 889912,
+    "end_ms": 891912,
+    "duration_ms": 2000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 892.632,
+    "text": "Project, do you try on of this? I want a little Z.",
+    "start_ms": 892632,
+    "end_ms": 895680,
+    "duration_ms": 3048,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 896.824,
+    "text": "We can plot this. Turn on the platform. So, you know, typical make k equals 2.",
+    "start_ms": 896824,
+    "end_ms": 903096,
+    "duration_ms": 6272,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 903.096,
+    "text": "We'll have 2 numbers reach of our data points. We have n data points, 2 numbers each.",
+    "start_ms": 903096,
+    "end_ms": 907176,
+    "duration_ms": 4080,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 907.832,
+    "text": "That's how much they project onto these two principal component directions.",
+    "start_ms": 907832,
+    "end_ms": 911832,
+    "duration_ms": 4000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 912.152,
+    "text": "The two largest, the eigenvectors corresponding to largest eigenvalues. We are assuming our data center to subtract the mean is important we will do this.",
+    "start_ms": 912152,
+    "end_ms": 924536,
+    "duration_ms": 12384,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 928.152,
+    "text": "I said this for you. Okay, so how do we compute the eigenvectors of the covariance matrix?",
+    "start_ms": 928152,
+    "end_ms": 932152,
+    "duration_ms": 4000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 932.568,
+    "text": "And this is where we're going to use the algorithm of singular value decomposition, who has seen singular value decomposition before.",
+    "start_ms": 932568,
+    "end_ms": 938068,
+    "duration_ms": 5500,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 939.64,
+    "text": "Well, why so many? Okay, that's good. I'm afraid to zoom in.",
+    "start_ms": 939640,
+    "end_ms": 944456,
+    "duration_ms": 4816,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 944.504,
+    "text": "helpful but not confusing Alright, so I'm not going to teach you SVD.",
+    "start_ms": 944504,
+    "end_ms": 948872,
+    "duration_ms": 4368,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 949.176,
+    "text": "But I'm going to tell you what SVD does. This is SVD, single-valid composition.",
+    "start_ms": 949176,
+    "end_ms": 954176,
+    "duration_ms": 5000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 954.584,
+    "text": "It is a really powerful concept in linear algebra, it lets us find the eigenvectors of a matrix.",
+    "start_ms": 954584,
+    "end_ms": 959084,
+    "duration_ms": 4500,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 959.8,
+    "text": "I think they have the matrix times self-transpose, but yeah, we're going to find the eigenstructure of our matrix.",
+    "start_ms": 959800,
+    "end_ms": 964800,
+    "duration_ms": 5000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 967.832,
+    "text": "Alright, so here's what it is. It is a way to break down my matrix.",
+    "start_ms": 967832,
+    "end_ms": 971019,
+    "duration_ms": 3187,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 971.019,
+    "text": "Another factorization out of them. I have my big n by d matrix, hydro rectangles.",
+    "start_ms": 971019,
+    "end_ms": 976732,
+    "duration_ms": 5713,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 977.56,
+    "text": "Al-Baiji I'm going to break it down into these three parts.",
+    "start_ms": 977560,
+    "end_ms": 981672,
+    "duration_ms": 4112,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 982.264,
+    "text": "What's up, my rich? were probably most excited about are these two.",
+    "start_ms": 982264,
+    "end_ms": 986240,
+    "duration_ms": 3976,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 986.24,
+    "text": "We'll talk about that in a moment. Let's go through these.",
+    "start_ms": 986240,
+    "end_ms": 990824,
+    "duration_ms": 4584,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 990.696,
+    "text": "we're going to take a matrix x, call a Python function that's going to give us three matrices back.",
+    "start_ms": 990696,
+    "end_ms": 995256,
+    "duration_ms": 4560,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 998.136,
+    "text": "It has a property. I multiply these three matrices? I get back X.",
+    "start_ms": 998136,
+    "end_ms": 1002503,
+    "duration_ms": 4367,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1002.503,
+    "text": "So it's a full reconstruction of my original matrix. You'll notice this extra argument.",
+    "start_ms": 1002503,
+    "end_ms": 1008397,
+    "duration_ms": 5894,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1008.397,
+    "text": "There's more than there's actually three ways to frame SVD.",
+    "start_ms": 1008397,
+    "end_ms": 1011384,
+    "duration_ms": 2987,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1011.384,
+    "text": "We're going to choose the non-full matrix for the compact representation.",
+    "start_ms": 1011384,
+    "end_ms": 1014857,
+    "duration_ms": 3473,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1014.857,
+    "text": "So not full matrices. It looks like this. So this was my rectangle matrix, which we'll run in a second.",
+    "start_ms": 1014857,
+    "end_ms": 1021256,
+    "duration_ms": 6399,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1021.256,
+    "text": "I'm going to break it down into a matrix U, S, and V, that have these shapes.",
+    "start_ms": 1021256,
+    "end_ms": 1025456,
+    "duration_ms": 4200,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1025.456,
+    "text": "So this is N. This is D. This is going to be m by t.",
+    "start_ms": 1025456,
+    "end_ms": 1031112,
+    "duration_ms": 5656,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1031.544,
+    "text": "So we d by d. Now this is going to be D by D.",
+    "start_ms": 1031544,
+    "end_ms": 1035944,
+    "duration_ms": 4400,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1038.808,
+    "text": "And this one is critically going to be a diagonal matrix.",
+    "start_ms": 1038808,
+    "end_ms": 1041252,
+    "duration_ms": 2444,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1041.252,
+    "text": "We should talk more about it on. You might already see in this one, I can find something about the eigenvalues about the rank of my matrix just by looking at.",
+    "start_ms": 1041252,
+    "end_ms": 1050024,
+    "duration_ms": 8772,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1050.424,
+    "text": "This S matrix. Where's my pillow? Let me do the demo real quick.",
+    "start_ms": 1050424,
+    "end_ms": 1062344,
+    "duration_ms": 11920,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1062.968,
+    "text": "Let's see demo of the Out of Work. I'm sure that I'm the first one to come back.",
+    "start_ms": 1062968,
+    "end_ms": 1065768,
+    "duration_ms": 2800,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1066.04,
+    "text": "She's my rectangle mate, matrices. Okay, so for this demo, I'm gonna try to use this last time too.",
+    "start_ms": 1066040,
+    "end_ms": 1073560,
+    "duration_ms": 7520,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1073.56,
+    "text": "I have this table of rectangles. I have the width height area and perimeter.",
+    "start_ms": 1073560,
+    "end_ms": 1077560,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1078.456,
+    "text": "of a hundred different angles. in PCA, the first thing we do is center our data.",
+    "start_ms": 1078456,
+    "end_ms": 1086288,
+    "duration_ms": 7832,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1086.488,
+    "text": "So you take the data and make it center. So, you get this centered matrix.",
+    "start_ms": 1086488,
+    "end_ms": 1091848,
+    "duration_ms": 5360,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1092.472,
+    "text": "I'll talk about this moment. We'll also want to standardize our data often, which is taking the very, the deviation of each dimension and dividing that deviation or each each invention by that certification.",
+    "start_ms": 1092472,
+    "end_ms": 1102832,
+    "duration_ms": 10360,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1102.712,
+    "text": "All that do to the... Variants of each of my columns.",
+    "start_ms": 1102712,
+    "end_ms": 1106632,
+    "duration_ms": 3920,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1112.024,
+    "text": "By dividing by this deviation, it's going to make the variance one.",
+    "start_ms": 1112024,
+    "end_ms": 1115324,
+    "duration_ms": 3300,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1116.888,
+    "text": "Why is that? If I divide by a random, if I multiply a random variable by cos i square it.",
+    "start_ms": 1116888,
+    "end_ms": 1122008,
+    "duration_ms": 5120,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1122.328,
+    "text": "I'm sorry. So fine, the variance is originally sigma. I multiply by sigma squared.",
+    "start_ms": 1122328,
+    "end_ms": 1128686,
+    "duration_ms": 6358,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1128.686,
+    "text": "If I multiply by whatever sigma squared, I'm going to get a variance of 1.",
+    "start_ms": 1128686,
+    "end_ms": 1133136,
+    "duration_ms": 4450,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1134.072,
+    "text": "Stay guys my day to welcome back to why that's important.",
+    "start_ms": 1134072,
+    "end_ms": 1136072,
+    "duration_ms": 2000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1136.664,
+    "text": "Let's run SVD. So this is what it looks like to run SVD.",
+    "start_ms": 1136664,
+    "end_ms": 1140221,
+    "duration_ms": 3557,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1140.221,
+    "text": "It's pretty easy. I say SVD. To my matrix, matrix X, I have cleaned up standardized centered, so on.",
+    "start_ms": 1140221,
+    "end_ms": 1146664,
+    "duration_ms": 6443,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1147.544,
+    "text": "So, from HC's to false because I don't want a- I set full matrices to true which is the default that's going to build more than I need to compute.",
+    "start_ms": 1147544,
+    "end_ms": 1155544,
+    "duration_ms": 8000,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1155.544,
+    "text": "So it's just being more efficient easier to work with.",
+    "start_ms": 1155544,
+    "end_ms": 1157544,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1158.36,
+    "text": "So that's for me just to pass. And it's going to need me these two matrices.",
+    "start_ms": 1158360,
+    "end_ms": 1164403,
+    "duration_ms": 6043,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1164.403,
+    "text": "So we broke X down, where this was an N 100 by 4 into you 100 by 4 s before by what does that mean?",
+    "start_ms": 1164403,
+    "end_ms": 1172124,
+    "duration_ms": 7721,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1173.08,
+    "text": "What is s? That's his diagonal matrix, so it's just the array of diagonal values.",
+    "start_ms": 1173080,
+    "end_ms": 1179016,
+    "duration_ms": 5936,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1179.704,
+    "text": "is what i had on my slide numbers these are real pretty good zero not zero not zero what's this number call that zero.",
+    "start_ms": 1179704,
+    "end_ms": 1193960,
+    "duration_ms": 14256,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1194.52,
+    "text": "That's our almost zero number. This is what happens when you do real math on computers, this thing that should be about zero go, aren't quite there.",
+    "start_ms": 1194520,
+    "end_ms": 1202142,
+    "duration_ms": 7622,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1202.142,
+    "text": "It's almost zero. So this is what we call close to zero.",
+    "start_ms": 1202142,
+    "end_ms": 1205659,
+    "duration_ms": 3517,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1205.659,
+    "text": "So this is a rank three matrix, which we'll come back to.",
+    "start_ms": 1205659,
+    "end_ms": 1208649,
+    "duration_ms": 2990,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1208.649,
+    "text": "That's true in a second. Right, so those some of the basics that up, let's go back to the slides.",
+    "start_ms": 1208649,
+    "end_ms": 1213196,
+    "duration_ms": 4547,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1213.196,
+    "text": "So I was taking X, I broke it down to three component matrices.",
+    "start_ms": 1213196,
+    "end_ms": 1216056,
+    "duration_ms": 2860,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1216.856,
+    "text": "Then if I blend my head back together, I will get back an X up to this numeric precision issue.",
+    "start_ms": 1216856,
+    "end_ms": 1221656,
+    "duration_ms": 4800,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1223.672,
+    "text": "Alright, and this is a way to solve this whole iterative algorithm.",
+    "start_ms": 1223672,
+    "end_ms": 1226450,
+    "duration_ms": 2778,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1226.45,
+    "text": "In fact, the way SVD works is somewhat related to how we describe this iterative process of refining the angle of each of my vectors until I have this directions of maximum variance.",
+    "start_ms": 1226450,
+    "end_ms": 1238392,
+    "duration_ms": 11942,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1238.15,
+    "text": "it. So let's assume we've constructed a singular value composition of x.",
+    "start_ms": 1238150,
+    "end_ms": 1243720,
+    "duration_ms": 5570,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1243.72,
+    "text": "Right, so we have you, S and V. Where is Sigma?",
+    "start_ms": 1243720,
+    "end_ms": 1248992,
+    "duration_ms": 5272,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1249.848,
+    "text": "I said this earlier, because you center our data, sigma's x transpose x.",
+    "start_ms": 1249848,
+    "end_ms": 1254188,
+    "duration_ms": 4340,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1255.256,
+    "text": "So I'm just plugging this in here so X is this.",
+    "start_ms": 1255256,
+    "end_ms": 1257756,
+    "duration_ms": 2500,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1258.296,
+    "text": "So I just write that down. That's x. Transpose. Times X.",
+    "start_ms": 1258296,
+    "end_ms": 1264040,
+    "duration_ms": 5744,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1264.824,
+    "text": "And now I do the transpose transpose thing, right? Try to slide this transpose back in here.",
+    "start_ms": 1264824,
+    "end_ms": 1269384,
+    "duration_ms": 4560,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1269.384,
+    "text": "Have to rotate stuff around. So I kind of permute these things.",
+    "start_ms": 1269384,
+    "end_ms": 1272984,
+    "duration_ms": 3600,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1273.464,
+    "text": "I'm just holding around and transpoise each of the elements and I get this.",
+    "start_ms": 1273464,
+    "end_ms": 1277464,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1278.392,
+    "text": "as sliding those transfers into these parentheses. to reverse the order and then take the transpose of each the elements.",
+    "start_ms": 1278392,
+    "end_ms": 1287288,
+    "duration_ms": 8896,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1289.528,
+    "text": "That's the Transpiders of the Princess. What do we have here?",
+    "start_ms": 1289528,
+    "end_ms": 1292408,
+    "duration_ms": 2880,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1298.168,
+    "text": "We need some identities. We've assumed and I was appropriate the singular value decomposition that u transpose u is the identity matrix.",
+    "start_ms": 1298168,
+    "end_ms": 1306077,
+    "duration_ms": 7909,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1306.077,
+    "text": "These are orthonormal. It's like this way. We have V s squared V transpose.",
+    "start_ms": 1306077,
+    "end_ms": 1314944,
+    "duration_ms": 8867,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1317.656,
+    "text": "If I write multiply this thing by v. What do I get?",
+    "start_ms": 1317656,
+    "end_ms": 1322688,
+    "duration_ms": 5032,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1324.472,
+    "text": "Tomorrow, we'll bye bye beyond the scene. Let's buy this thing by RV over here.",
+    "start_ms": 1324472,
+    "end_ms": 1328552,
+    "duration_ms": 4080,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1330.168,
+    "text": "What do we get? V transpose V, another assumption of my singular reality composition.",
+    "start_ms": 1330168,
+    "end_ms": 1335480,
+    "duration_ms": 5312,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1336.024,
+    "text": "is any matrix. So you got Sigma V. equals V times S squared.",
+    "start_ms": 1336024,
+    "end_ms": 1344688,
+    "duration_ms": 8664,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1344.688,
+    "text": "These are diagonal terms. The diagonal matrix is a constant, sort of like a lambda.",
+    "start_ms": 1344688,
+    "end_ms": 1349688,
+    "duration_ms": 5000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1349.688,
+    "text": "Right? So this is another way of describing an eigenvector system, so have a bunch of eigenvectors.",
+    "start_ms": 1349688,
+    "end_ms": 1355704,
+    "duration_ms": 6016,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1356.024,
+    "text": "The corresponding vector and their corresponding eigenvalues. So what does this mean?",
+    "start_ms": 1356024,
+    "end_ms": 1362536,
+    "duration_ms": 6512,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1362.68,
+    "text": "Somehow... I run SVD on this guy. Oops, no, I'm not controlling.",
+    "start_ms": 1362680,
+    "end_ms": 1369008,
+    "duration_ms": 6328,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1369.008,
+    "text": "My RMS video is here. And the V I get!",
+    "start_ms": 1369008,
+    "end_ms": 1373800,
+    "duration_ms": 4792,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1373.592,
+    "text": "Is an eigenvector of sigma? And we want the eigenvector signal because they are...",
+    "start_ms": 1373592,
+    "end_ms": 1380464,
+    "duration_ms": 6872,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1381.08,
+    "text": "The principal components. Questions? s transpose times s. This is a diagonal matrix.",
+    "start_ms": 1381080,
+    "end_ms": 1394456,
+    "duration_ms": 13376,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1395.224,
+    "text": "So it's a good question. So this is diagonal matrix.",
+    "start_ms": 1395224,
+    "end_ms": 1397574,
+    "duration_ms": 2350,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1397.574,
+    "text": "How do we get a squared? Well, if you take a diagonal matrix, transpose it's the same thing again.",
+    "start_ms": 1397574,
+    "end_ms": 1402184,
+    "duration_ms": 4610,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1402.184,
+    "text": "And you multiply it to diagonal matrices. It's just the square of the diagonals.",
+    "start_ms": 1402184,
+    "end_ms": 1405224,
+    "duration_ms": 3040,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1410.008,
+    "text": "So, again. We got eigenvectors here. So we're pretty happy because we wanted the eigenvectors of sigma.",
+    "start_ms": 1410008,
+    "end_ms": 1416528,
+    "duration_ms": 6520,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1416.472,
+    "text": "And if we run this video next, we've magically got the eigenvectors of sigma.",
+    "start_ms": 1416472,
+    "end_ms": 1420472,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1420.376,
+    "text": "They're right here. Transposed. We're done. Hi, Ron SVD on X.",
+    "start_ms": 1420376,
+    "end_ms": 1430016,
+    "duration_ms": 9640,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1430.016,
+    "text": "I don't even have to write sigma down on the compute sigma.",
+    "start_ms": 1430016,
+    "end_ms": 1432416,
+    "duration_ms": 2400,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1432.416,
+    "text": "I would have done a lot of work. Take X, run SVD.",
+    "start_ms": 1432416,
+    "end_ms": 1436488,
+    "duration_ms": 4072,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1436.504,
+    "text": "I got my connectors. Derby. This is PCA. That's my slide.",
+    "start_ms": 1436504,
+    "end_ms": 1447616,
+    "duration_ms": 11112,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1455.448,
+    "text": "and picture for this and then s here S2, it's singular values.",
+    "start_ms": 1455448,
+    "end_ms": 1460872,
+    "duration_ms": 5424,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1461.912,
+    "text": "Square are the eigenvalues of lambda of sigma. That's going to be important a second because we're going to help us understand the variants and how we've captured it.",
+    "start_ms": 1461912,
+    "end_ms": 1470104,
+    "duration_ms": 8192,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1471.544,
+    "text": "So what we're going to do, take X. Make sure you've centered it and perhaps standardize it and I'll talk about that in a second.",
+    "start_ms": 1471544,
+    "end_ms": 1478504,
+    "duration_ms": 6960,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1478.504,
+    "text": "Call S V D, you get three matrices, you can throw this one away, you don't really need it.",
+    "start_ms": 1478504,
+    "end_ms": 1482664,
+    "duration_ms": 4160,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1482.664,
+    "text": "We'll look at V. Take our ex again and we multiply it by...",
+    "start_ms": 1482664,
+    "end_ms": 1486440,
+    "duration_ms": 3776,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1487.096,
+    "text": "All the rows of V. There's V transcos, we have to untranspose it.",
+    "start_ms": 1487096,
+    "end_ms": 1491267,
+    "duration_ms": 4171,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1491.267,
+    "text": "There's just V. And the first K columns. Because they're sorting.",
+    "start_ms": 1491267,
+    "end_ms": 1495462,
+    "duration_ms": 4195,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1495.462,
+    "text": "I should have said that. Let me go back actually something that is important, I didn't tell you.",
+    "start_ms": 1495462,
+    "end_ms": 1500776,
+    "duration_ms": 5314,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1503.128,
+    "text": "Okay, the singular values of this are the diagonal matrix and they're sorted largest to smallest.",
+    "start_ms": 1503128,
+    "end_ms": 1509368,
+    "duration_ms": 6240,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1510.36,
+    "text": "The largest singular value is the first principal component. All right, corresponds to the eigenvector, which is the first principal component.",
+    "start_ms": 1510360,
+    "end_ms": 1517680,
+    "duration_ms": 7320,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1518.68,
+    "text": "So if I take the first K... Good Black Print Picture Now.",
+    "start_ms": 1518680,
+    "end_ms": 1524296,
+    "duration_ms": 5616,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1526.52,
+    "text": "I take the first cane columns, and this goes off to D here.",
+    "start_ms": 1526520,
+    "end_ms": 1531160,
+    "duration_ms": 4640,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1532.984,
+    "text": "But I take the first K of them. Again, probably two.",
+    "start_ms": 1532984,
+    "end_ms": 1537224,
+    "duration_ms": 4240,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1537.08,
+    "text": "Those are the first two largest or eigenvectors corresponding to the first two largest singular values or I can die as a sigma.",
+    "start_ms": 1537080,
+    "end_ms": 1547656,
+    "duration_ms": 10576,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1548.056,
+    "text": "And so they're in a order. This is the best one.",
+    "start_ms": 1548056,
+    "end_ms": 1550256,
+    "duration_ms": 2200,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1550.256,
+    "text": "This is the next best one and so on. They pull these columns off this matrix.",
+    "start_ms": 1550256,
+    "end_ms": 1554216,
+    "duration_ms": 3960,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1556.344,
+    "text": "Super cool. Well, PyX by this, I get Z. Plut it.",
+    "start_ms": 1556344,
+    "end_ms": 1562728,
+    "duration_ms": 6384,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1562.45,
+    "text": "I want to plan. my dinner. and two dimensions. At least the best approximation I did I can get in two dimensions, assuming linear model.",
+    "start_ms": 1562450,
+    "end_ms": 1570456,
+    "duration_ms": 8006,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1572.44,
+    "text": "All right, questions. Actually, I'll bring this to put a second.",
+    "start_ms": 1572440,
+    "end_ms": 1579252,
+    "duration_ms": 6812,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1579.252,
+    "text": "Questions up to this point. Great. So, uh, right here.",
+    "start_ms": 1579252,
+    "end_ms": 1595272,
+    "duration_ms": 16020,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1596.12,
+    "text": "And clear. There you go. Use it more space. So, signalize the covariance matrix.",
+    "start_ms": 1596120,
+    "end_ms": 1600920,
+    "duration_ms": 4800,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1601.4,
+    "text": "Right. By definition, we're taking uh Computing covariance matrix is x.",
+    "start_ms": 1601400,
+    "end_ms": 1608829,
+    "duration_ms": 7429,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1608.829,
+    "text": "Sorry. Vity! x minus mu Transpose times x minus mu.",
+    "start_ms": 1608829,
+    "end_ms": 1620248,
+    "duration_ms": 11419,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1620.344,
+    "text": "There's a one-ever end, but we're going to ignore that from over here.",
+    "start_ms": 1620344,
+    "end_ms": 1622344,
+    "duration_ms": 2000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1622.344,
+    "text": "You can scale these things. Oh, sorry. This is back from us, the probability portion of this class.",
+    "start_ms": 1622344,
+    "end_ms": 1631332,
+    "duration_ms": 8988,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1631.332,
+    "text": "So this is mean. Yeah, I think in that lecture, oh, I've spread it out mean.",
+    "start_ms": 1631332,
+    "end_ms": 1637997,
+    "duration_ms": 6665,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1637.997,
+    "text": "I think we even wrote expectation. of X in that lecture.",
+    "start_ms": 1637997,
+    "end_ms": 1641784,
+    "duration_ms": 3787,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1644.12,
+    "text": "But we've said... Our data we've centered our data so mean is now zero.",
+    "start_ms": 1644120,
+    "end_ms": 1647964,
+    "duration_ms": 3844,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1648.728,
+    "text": "So, sup, cous-way, sup, cous-way. It's now left with 1-0-n-x transpose x.",
+    "start_ms": 1648728,
+    "end_ms": 1654728,
+    "duration_ms": 6000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1655.992,
+    "text": "I've been going this one around factor. The Sigma is our covariance matrix, which is awesome.",
+    "start_ms": 1655992,
+    "end_ms": 1664824,
+    "duration_ms": 8832,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1665.304,
+    "text": "We could compute it so we could computer a group of matrix we go to Python say what your eigenvectors function from the eigenvectors of sigma.",
+    "start_ms": 1665304,
+    "end_ms": 1671804,
+    "duration_ms": 6500,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1672.184,
+    "text": "That's a lot of work because we just found out.",
+    "start_ms": 1672184,
+    "end_ms": 1674184,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1675.192,
+    "text": "If we have v, we have the eigenvectors of the covariance matrix.",
+    "start_ms": 1675192,
+    "end_ms": 1678894,
+    "duration_ms": 3702,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1678.894,
+    "text": "We're done. We didn't even need to write it, we just needed X.",
+    "start_ms": 1678894,
+    "end_ms": 1683752,
+    "duration_ms": 4858,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1687.448,
+    "text": "That's it's like. Here is the second way to compute z, so we said you can take x and multiply by v and you're done.",
+    "start_ms": 1687448,
+    "end_ms": 1694816,
+    "duration_ms": 7368,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1695.352,
+    "text": "Ah. You can also show since x is usv right we just said that up here.",
+    "start_ms": 1695352,
+    "end_ms": 1703208,
+    "duration_ms": 7856,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1703.208,
+    "text": "Oh sorry. We just said... up here that x equals usv so i just plug x here this is you know very great that this is true I put U S V in and multiply by V.",
+    "start_ms": 1703208,
+    "end_ms": 1715360,
+    "duration_ms": 12152,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1715.672,
+    "text": "V-Transfer V you at any matrix. So we're just left with U.S.",
+    "start_ms": 1715672,
+    "end_ms": 1721480,
+    "duration_ms": 5808,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1722.52,
+    "text": "So, another way to get Z, if you wanted to do different math, you can just take the U and S.",
+    "start_ms": 1722520,
+    "end_ms": 1727520,
+    "duration_ms": 5000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1729.272,
+    "text": "That would all sort. ways to get to your Z that you want to plot.",
+    "start_ms": 1729272,
+    "end_ms": 1733212,
+    "duration_ms": 3940,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1734.872,
+    "text": "In keeping this lecture, I use this one. Because... That's we've been talking about the whole time, do you just project?",
+    "start_ms": 1734872,
+    "end_ms": 1741520,
+    "duration_ms": 6648,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1741.752,
+    "text": "Axon to this eigenvectors and I have my My latent factors my scores.",
+    "start_ms": 1741752,
+    "end_ms": 1747432,
+    "duration_ms": 5680,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1748.856,
+    "text": "But if you wanted you could also use 10z as well.",
+    "start_ms": 1748856,
+    "end_ms": 1751356,
+    "duration_ms": 2500,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1752.216,
+    "text": "And again, you would just take the first K values of s.",
+    "start_ms": 1752216,
+    "end_ms": 1754816,
+    "duration_ms": 2600,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1755.576,
+    "text": "Make the rest zero. Just pull that two columns. Three columns.",
+    "start_ms": 1755576,
+    "end_ms": 1759682,
+    "duration_ms": 4106,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1759.682,
+    "text": "Whatever K you choose. Alright, we're almost done in the math part, which is great.",
+    "start_ms": 1759682,
+    "end_ms": 1764200,
+    "duration_ms": 4518,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1765.336,
+    "text": "Are there any more questions? Let's go ahead and play the demo.",
+    "start_ms": 1765336,
+    "end_ms": 1770418,
+    "duration_ms": 5082,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1770.418,
+    "text": "If you have questions you can ask as I go through the demo.",
+    "start_ms": 1770418,
+    "end_ms": 1772368,
+    "duration_ms": 1950,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1773.016,
+    "text": "Um. Actually, I'll show you here before I go into it and code.",
+    "start_ms": 1773016,
+    "end_ms": 1777264,
+    "duration_ms": 4248,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1777.264,
+    "text": "So I've constructed my single-valuity composition. I have x and I have v.",
+    "start_ms": 1777264,
+    "end_ms": 1781584,
+    "duration_ms": 4320,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1781.592,
+    "text": "If I look at v, the first two columns of v are my first two principal components.",
+    "start_ms": 1781592,
+    "end_ms": 1785192,
+    "duration_ms": 3600,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1785.192,
+    "text": "If I want my third, I just take the third column.",
+    "start_ms": 1785192,
+    "end_ms": 1787192,
+    "duration_ms": 2000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1787.352,
+    "text": "I'm plotting my data. This is a 4-dimensional data set.",
+    "start_ms": 1787352,
+    "end_ms": 1789574,
+    "duration_ms": 2222,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1789.574,
+    "text": "I want to plot it in 2 dimensions. First two comms v, project each one of these things onto this.",
+    "start_ms": 1789574,
+    "end_ms": 1795416,
+    "duration_ms": 5842,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1795.416,
+    "text": "That is multiplied by this matrix. We'll apply this matrix here, here.",
+    "start_ms": 1795416,
+    "end_ms": 1800008,
+    "duration_ms": 4592,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1800.504,
+    "text": "times this matrix here. And I get this matrix here.",
+    "start_ms": 1800504,
+    "end_ms": 1804392,
+    "duration_ms": 3888,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1806.872,
+    "text": "I can make this is my, I'm gonna plot. This is x and i plot this is y.",
+    "start_ms": 1806872,
+    "end_ms": 1813592,
+    "duration_ms": 6720,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1816.728,
+    "text": "A picture. Let's do that. So we can take this data, comply to two dimensions.",
+    "start_ms": 1816728,
+    "end_ms": 1822312,
+    "duration_ms": 5584,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1823.096,
+    "text": "For my shoulder. Alright, so just to go back through this, there's this function mp is close.",
+    "start_ms": 1823096,
+    "end_ms": 1837960,
+    "duration_ms": 14864,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1837.96,
+    "text": "So if you want to know if something is almost zero, you can say it's close to zero, and this measures up to the precision of your floating point numbers.",
+    "start_ms": 1837960,
+    "end_ms": 1842840,
+    "duration_ms": 4880,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1844.12,
+    "text": "Round it up remember the diagonals because it's a 4-dimensional data set but we discussed this in last lecture.",
+    "start_ms": 1844120,
+    "end_ms": 1849120,
+    "duration_ms": 5000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1849.336,
+    "text": "I have linked the perimeter. Area and height. is a function of length and height of a rectangle, so it's technically a rank 3 data set, you know, to have 4 dimensions.",
+    "start_ms": 1849336,
+    "end_ms": 1861480,
+    "duration_ms": 12144,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1861.48,
+    "text": "And if I look at the singular values, it tells me one of the dimensions has rank has a zero singular value, which means it is rank 3.",
+    "start_ms": 1861480,
+    "end_ms": 1868616,
+    "duration_ms": 7136,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1869.048,
+    "text": "You might have asked in previous lectures how could I figure out the rank of a matrix?",
+    "start_ms": 1869048,
+    "end_ms": 1872626,
+    "duration_ms": 3578,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1872.626,
+    "text": "Here's how. Take the singular value decomposition and look at those singular values.",
+    "start_ms": 1872626,
+    "end_ms": 1877080,
+    "duration_ms": 4454,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1877.08,
+    "text": "Right? There we go to zero or very close to zero.",
+    "start_ms": 1877080,
+    "end_ms": 1879880,
+    "duration_ms": 2800,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1879.88,
+    "text": "Then you have a matrix that is not for rake.",
+    "start_ms": 1879880,
+    "end_ms": 1883000,
+    "duration_ms": 3120,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1886.712,
+    "text": "So this is my singular values and the last one is zero.",
+    "start_ms": 1886712,
+    "end_ms": 1891112,
+    "duration_ms": 4400,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1891.112,
+    "text": "This is a rank 3 matrix even has four columns.",
+    "start_ms": 1891112,
+    "end_ms": 1893712,
+    "duration_ms": 2600,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1897.432,
+    "text": "We can look at total variance. We'll come back to that.",
+    "start_ms": 1897432,
+    "end_ms": 1900432,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1901.4,
+    "text": "Alright, so let's reconstruct it. So there's two ways to construct Z.",
+    "start_ms": 1901400,
+    "end_ms": 1905400,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1905.056,
+    "text": "said in lecture week we use x times v. Trans, we just x times via have v transpos as well as vdgami so we're gonna transpose that transpos I like tears.",
+    "start_ms": 1905056,
+    "end_ms": 1915100,
+    "duration_ms": 10044,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1915.1,
+    "text": "I'm gonna get back just two dimensions of my V.",
+    "start_ms": 1915100,
+    "end_ms": 1919652,
+    "duration_ms": 4552,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1919.652,
+    "text": "So take my two mentions V, multiply by X. And that is what I'm plotting, that's my Z.",
+    "start_ms": 1919652,
+    "end_ms": 1924648,
+    "duration_ms": 4996,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1924.792,
+    "text": "So here's my scatter plot. of this data. Recon to dimensions.",
+    "start_ms": 1924792,
+    "end_ms": 1932936,
+    "duration_ms": 8144,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1935.704,
+    "text": "Nice to get this step here. Oh, I didn't standardize it.",
+    "start_ms": 1935704,
+    "end_ms": 1939791,
+    "duration_ms": 4087,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1939.791,
+    "text": "Let's start over here. I want to standardize data. This is making, uh, we'll come back to what I do in a second, but...",
+    "start_ms": 1939791,
+    "end_ms": 1945528,
+    "duration_ms": 5737,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1946.136,
+    "text": "Stereo, what is it? You can do the same thing.",
+    "start_ms": 1946136,
+    "end_ms": 1948296,
+    "duration_ms": 2160,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1949.176,
+    "text": "It probably would be better. V, take out. my dear.",
+    "start_ms": 1949176,
+    "end_ms": 1954304,
+    "duration_ms": 5128,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1954.584,
+    "text": "So I took my my date of samples of rectangles in four dimensions taking that down to two dimensions that I comply.",
+    "start_ms": 1954584,
+    "end_ms": 1960584,
+    "duration_ms": 6000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1964.472,
+    "text": "Back to lecture. We'll talk about standardization. Come back here.",
+    "start_ms": 1964472,
+    "end_ms": 1967272,
+    "duration_ms": 2800,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1967.768,
+    "text": "Alright, so two ways to do it. So can we recover our data?",
+    "start_ms": 1967768,
+    "end_ms": 1971680,
+    "duration_ms": 3912,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1971.68,
+    "text": "So we are approximating our data. So you've centered it so we're gonna then take...",
+    "start_ms": 1971680,
+    "end_ms": 1976744,
+    "duration_ms": 5064,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1977.72,
+    "text": "The Z we've constructed already, if we multiply by VT again...",
+    "start_ms": 1977720,
+    "end_ms": 1981720,
+    "duration_ms": 4000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1982.328,
+    "text": "That's sort of like when we're Z's our approximation here.",
+    "start_ms": 1982328,
+    "end_ms": 1985328,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1985.848,
+    "text": "Let's get back. X. So I fully, if I use the full rank, so if I use the full all the principal components, And I did this, I take my Z, construct using all the principal components.",
+    "start_ms": 1985848,
+    "end_ms": 1998712,
+    "duration_ms": 12864,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1998.616,
+    "text": "I would get back, the original X. So if I use all of my non-zero or my principal planets...",
+    "start_ms": 1998616,
+    "end_ms": 2005008,
+    "duration_ms": 6392,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2005.304,
+    "text": "I can perfectly reconstruct my data. But in practice we never want to do that.",
+    "start_ms": 2005304,
+    "end_ms": 2011493,
+    "duration_ms": 6189,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2011.493,
+    "text": "We're going to use a small set so we can throw away some information but get a better picture.",
+    "start_ms": 2011493,
+    "end_ms": 2016072,
+    "duration_ms": 4579,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2017.112,
+    "text": "So we're all gonna choose K often always less than the rank.",
+    "start_ms": 2017112,
+    "end_ms": 2020472,
+    "duration_ms": 3360,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2020.952,
+    "text": "It could recover extra approximately. All right, so important steps to doing this again PCI you always center the data.",
+    "start_ms": 2020952,
+    "end_ms": 2030168,
+    "duration_ms": 9216,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2030.808,
+    "text": "Is a good picture of this. Let me show you what it looks like.",
+    "start_ms": 2030808,
+    "end_ms": 2033048,
+    "duration_ms": 2240,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2033.048,
+    "text": "So here's like cloud of data. It's in two dimensions, so I'm just going to show you what it looks like in two.",
+    "start_ms": 2033048,
+    "end_ms": 2037700,
+    "duration_ms": 4652,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2037.7,
+    "text": "I'm going to recover it with in a two-dimensional space so it's going to be a exact recovery.",
+    "start_ms": 2037700,
+    "end_ms": 2043352,
+    "duration_ms": 5652,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2043.352,
+    "text": "Step one, take my day and I center it. So nobody had a show like that.",
+    "start_ms": 2043352,
+    "end_ms": 2048136,
+    "duration_ms": 4784,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2048.098,
+    "text": "so my cloud of data points, two dimensional data, I've centered that data.",
+    "start_ms": 2048098,
+    "end_ms": 2051144,
+    "duration_ms": 3046,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2052.568,
+    "text": "If I I'm essentially computing the direction of maximum variance for a sports component.",
+    "start_ms": 2052568,
+    "end_ms": 2058592,
+    "duration_ms": 6024,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2059.096,
+    "text": "And then the direction second direction, a maximum variant, second principal component.",
+    "start_ms": 2059096,
+    "end_ms": 2063096,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2064.216,
+    "text": "Starting from the origin. \u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580\u5580 Okay, Larry, so... Direction 1 That's what I...",
+    "start_ms": 2064216,
+    "end_ms": 2072032,
+    "duration_ms": 7816,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2072.44,
+    "text": "What's linked to this vector? It should be linked to one.",
+    "start_ms": 2072440,
+    "end_ms": 2076440,
+    "duration_ms": 4000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2076.236,
+    "text": "length one and then the next prince components can look like that.",
+    "start_ms": 2076236,
+    "end_ms": 2080008,
+    "duration_ms": 3772,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2080.008,
+    "text": "Lane 2. Those are two directions, first direction, maximum variance, second direction, you know, remaining variance.",
+    "start_ms": 2080008,
+    "end_ms": 2086272,
+    "duration_ms": 6264,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2087.992,
+    "text": "When I project my data on those two dimensions, I get a plot that looks like this.",
+    "start_ms": 2087992,
+    "end_ms": 2090992,
+    "duration_ms": 3000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2093.592,
+    "text": "So, I just rotated my data. Now, it was two dimensions originally, I ran PCA, and I kept both principal components.",
+    "start_ms": 2093592,
+    "end_ms": 2103080,
+    "duration_ms": 9488,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2103.08,
+    "text": "Is this an exact reconstruction? Yes. Preserved on my data.",
+    "start_ms": 2103080,
+    "end_ms": 2107984,
+    "duration_ms": 4904,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2107.984,
+    "text": "I just cleaned it up. I had correlated dimensions here, you know, this dimension, we'll call this dimension A and B, they're related.",
+    "start_ms": 2107984,
+    "end_ms": 2116181,
+    "duration_ms": 8197,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2116.181,
+    "text": "Now principle one and principle two seem decorrelated unrelated. Variation one The wind dimension doesn't explain variation the other.",
+    "start_ms": 2116181,
+    "end_ms": 2122920,
+    "duration_ms": 6739,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2125.496,
+    "text": "Let's rotate it by data. If I had just chosen to keep the Prints book point of one, what would this have looked like?",
+    "start_ms": 2125496,
+    "end_ms": 2130744,
+    "duration_ms": 5248,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2132.024,
+    "text": "A bunch of dots on this axis. I would have lost information.",
+    "start_ms": 2132024,
+    "end_ms": 2134824,
+    "duration_ms": 2800,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2135.736,
+    "text": "But maybe, and you're looking at this like, you know what?",
+    "start_ms": 2135736,
+    "end_ms": 2138024,
+    "duration_ms": 2288,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2138.024,
+    "text": "PC 2 doesn't have a lot of information anyways. Most information is on where I am on this axis.",
+    "start_ms": 2138024,
+    "end_ms": 2142736,
+    "duration_ms": 4712,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2143.8,
+    "text": "That's why we get away with a lower dementia representation.",
+    "start_ms": 2143800,
+    "end_ms": 2146300,
+    "duration_ms": 2500,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2148.344,
+    "text": "Question about this picture. Yeah, question. Yes, so why would I want to do that?",
+    "start_ms": 2148344,
+    "end_ms": 2162059,
+    "duration_ms": 13715,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2162.059,
+    "text": "Why take the direction that's most spread out and put on the x-axis?",
+    "start_ms": 2162059,
+    "end_ms": 2164767,
+    "duration_ms": 2708,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2164.767,
+    "text": "Good question. I'm ultimately trying to find I have typically many dimensions and I have just two dimensions to plot.",
+    "start_ms": 2164767,
+    "end_ms": 2171880,
+    "duration_ms": 7113,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2172.312,
+    "text": "and the first two dimensions are equally spread out. It doesn't matter that it's on X or Y.",
+    "start_ms": 2172312,
+    "end_ms": 2178172,
+    "duration_ms": 5860,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2178.172,
+    "text": "I'm just trying to make them decorrelated. I'm trying to capture the big dimensions of areas and throw the ones that aren't big.",
+    "start_ms": 2178172,
+    "end_ms": 2186168,
+    "duration_ms": 7996,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2188.728,
+    "text": "Questions? Great questions about a normalized my day to what happened let's look at that now because that's important.",
+    "start_ms": 2188728,
+    "end_ms": 2199892,
+    "duration_ms": 11164,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2200.6,
+    "text": "You still make finest because... Actually, let me talk about normalizing and we'll come back to what I do this.",
+    "start_ms": 2200600,
+    "end_ms": 2205784,
+    "duration_ms": 5184,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2206.424,
+    "text": "Um. So I want these things to be access line of decorrelated them.",
+    "start_ms": 2206424,
+    "end_ms": 2210396,
+    "duration_ms": 3972,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2211.096,
+    "text": "I think we're going to cover all this. Okay. Let's talk about standardization and centering.",
+    "start_ms": 2211096,
+    "end_ms": 2214896,
+    "duration_ms": 3800,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2215.896,
+    "text": "You always center the data so it's very important you ship your data to the origin.",
+    "start_ms": 2215896,
+    "end_ms": 2219896,
+    "duration_ms": 4000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2220.152,
+    "text": "Partly because remember we were assuming x transpose x is the covariance matrix the whole analysis kind of assumes everything centered so do that.",
+    "start_ms": 2220152,
+    "end_ms": 2226792,
+    "duration_ms": 6640,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2226.792,
+    "text": "How do you do that you take x? Subscribe to Octamine.",
+    "start_ms": 2226792,
+    "end_ms": 2229920,
+    "duration_ms": 3128,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2230.776,
+    "text": "Good news is if you use any scikit-learn package or any PCA tool ever it will do this for you.",
+    "start_ms": 2230776,
+    "end_ms": 2235276,
+    "duration_ms": 4500,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2235.704,
+    "text": "Because you have to do this, it's just part of the arrow.",
+    "start_ms": 2235704,
+    "end_ms": 2237704,
+    "duration_ms": 2000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2238.392,
+    "text": "Step 1. Must do it. Check. Step 2, this one's a choice.",
+    "start_ms": 2238392,
+    "end_ms": 2243280,
+    "duration_ms": 4888,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2243.992,
+    "text": "Standardizer data. So again, I did this the subtraction first.",
+    "start_ms": 2243992,
+    "end_ms": 2247992,
+    "duration_ms": 4000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2249.144,
+    "text": "Do that first, then divide by this term deviation. Why am I doing this?",
+    "start_ms": 2249144,
+    "end_ms": 2254522,
+    "duration_ms": 5378,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2254.522,
+    "text": "This one is more subtle, so in my original data it could be that one dimension is in like...",
+    "start_ms": 2254522,
+    "end_ms": 2259272,
+    "duration_ms": 4750,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2260.024,
+    "text": "some crazy units it's big so i measured income in in sense and then i have another dimension which is like you know uh dinner expenditures and thousands of dollars right well the thing in sense is just going to be enormous so obviously that's the dimension of high experience in expanding this data just because i chose weird units for it magnitudes, it is good to divide by the standard deviation first.",
+    "start_ms": 2260024,
+    "end_ms": 2290996,
+    "duration_ms": 30972,
+    "word_count": 73,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2290.996,
+    "text": "This is called standardizing your data. was asked what would happen here.",
+    "start_ms": 2290996,
+    "end_ms": 2296584,
+    "duration_ms": 5588,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2297.464,
+    "text": "So here it looks like there's one big dimension. and you know the other dimension of small but actually look at it on these axes this dimension wasn't too big this was a little bigger.",
+    "start_ms": 2297464,
+    "end_ms": 2315248,
+    "duration_ms": 17784,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2316.184,
+    "text": "Right. Cloud of points looks like that. I still have that weird rotated correlated structure, so I want to pull that out.",
+    "start_ms": 2316184,
+    "end_ms": 2322264,
+    "duration_ms": 6080,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2322.264,
+    "text": "PCA will help me find that. But it'll make sure that I don't have some crazy access that's got lots of variance like this one here.",
+    "start_ms": 2322264,
+    "end_ms": 2328221,
+    "duration_ms": 5957,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2328.221,
+    "text": "And then some access has little variance here. Now, I may want to keep that.",
+    "start_ms": 2328221,
+    "end_ms": 2334061,
+    "duration_ms": 5840,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2334.061,
+    "text": "Like, if everything is in the same units and it really just is more variability in this dimension, I might want to keep it.",
+    "start_ms": 2334061,
+    "end_ms": 2339889,
+    "duration_ms": 5828,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2339.889,
+    "text": "So you don't always standardize. Alright, it might be rational to leave your data unstandard us.",
+    "start_ms": 2339889,
+    "end_ms": 2343976,
+    "duration_ms": 4087,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2345.176,
+    "text": "So software packages don't do this by default. You'll need to do it if you want to do analysis.",
+    "start_ms": 2345176,
+    "end_ms": 2349976,
+    "duration_ms": 4800,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2352.12,
+    "text": "Other questions? Let's keep making pictures. and we're at the fun part.",
+    "start_ms": 2352120,
+    "end_ms": 2361832,
+    "duration_ms": 9712,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2362.008,
+    "text": "Hello. Alright, so I made this picture. I had photoreventual data, I projected down in 2D.",
+    "start_ms": 2362008,
+    "end_ms": 2368963,
+    "duration_ms": 6955,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2368.963,
+    "text": "It's kind of cool. I'll do this using... thing that we you know it's depressing this class because we i tell you teach all this math and you don't need to do any of it just use this piece of code.",
+    "start_ms": 2368963,
+    "end_ms": 2379056,
+    "duration_ms": 10093,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2379.256,
+    "text": "So i'm gonna make a pca model of two principal components.",
+    "start_ms": 2379256,
+    "end_ms": 2382536,
+    "duration_ms": 3280,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2384.888,
+    "text": "I'm going to fit transform my data. Put it in a data frame.",
+    "start_ms": 2384888,
+    "end_ms": 2388936,
+    "duration_ms": 4048,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2388.936,
+    "text": "You can see it. That code that I wrote, I did this using the PCA package.",
+    "start_ms": 2388936,
+    "end_ms": 2397176,
+    "duration_ms": 8240,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2397.784,
+    "text": "And I did this using my SVD. I have my sign flip, but that's not a big deal for visualization.",
+    "start_ms": 2397784,
+    "end_ms": 2404450,
+    "duration_ms": 6666,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2404.45,
+    "text": "I just flipped something. They might have done additional. Clean up before running their their diagram.",
+    "start_ms": 2404450,
+    "end_ms": 2410980,
+    "duration_ms": 6530,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2410.98,
+    "text": "But say it same actual values, right? But signs are flipped.",
+    "start_ms": 2410980,
+    "end_ms": 2415200,
+    "duration_ms": 4220,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2415.992,
+    "text": "Yeah, directions aren't critical. We can have them positive or negative.",
+    "start_ms": 2415992,
+    "end_ms": 2418992,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2422.328,
+    "text": "Okay, let's plot this. This is my RIGIL data. It's close, right?",
+    "start_ms": 2422328,
+    "end_ms": 2428864,
+    "duration_ms": 6536,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2428.864,
+    "text": "No, this is the transform PCA. Let's skip to the commands.",
+    "start_ms": 2428864,
+    "end_ms": 2437689,
+    "duration_ms": 8825,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2437.689,
+    "text": "Well, I guess we can look at it. So what I run PCI, one of the important things that happens is my covariance matrix on my transform data should be zero off diagonal.",
+    "start_ms": 2437689,
+    "end_ms": 2446832,
+    "duration_ms": 9143,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2446.832,
+    "text": "So I've made the covariance of each of the dimensions, my projected dimensions.",
+    "start_ms": 2446832,
+    "end_ms": 2451832,
+    "duration_ms": 5000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2452.44,
+    "text": "The covariance across the mention should be zero. So this is zero, zero, but the variability will just be along the tag.",
+    "start_ms": 2452440,
+    "end_ms": 2458940,
+    "duration_ms": 6500,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2460.472,
+    "text": "That's taking that foot-borne flipping it so it's aligned with each of the axes.",
+    "start_ms": 2460472,
+    "end_ms": 2464472,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2467.8,
+    "text": "Let's plot it. This is what you see. This is what I want to get to.",
+    "start_ms": 2467800,
+    "end_ms": 2470800,
+    "duration_ms": 3000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2471.192,
+    "text": "Alright, so... These blue dots here in this picture correspond to the width height and area.",
+    "start_ms": 2471192,
+    "end_ms": 2480208,
+    "duration_ms": 9016,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2479.96,
+    "text": "of my original day. of my rectangles. And it's curved because when we're with height, they relate to area as the product.",
+    "start_ms": 2479960,
+    "end_ms": 2488784,
+    "duration_ms": 8824,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2488.784,
+    "text": "So we expect this to be a curved thing. Not perfectly platter.",
+    "start_ms": 2488784,
+    "end_ms": 2492744,
+    "duration_ms": 3960,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2492.792,
+    "text": "What I ask for the first two principal components, I get the red dots.",
+    "start_ms": 2492792,
+    "end_ms": 2497432,
+    "duration_ms": 4640,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2498.68,
+    "text": "Right, and they're close to the blue dots. The shit's off.",
+    "start_ms": 2498680,
+    "end_ms": 2501888,
+    "duration_ms": 3208,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2502.648,
+    "text": "Right, because I found the plane. The two-dimensional surface. On which that three-dimensional data lives release the closest approximation I could.",
+    "start_ms": 2502648,
+    "end_ms": 2512008,
+    "duration_ms": 9360,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2514.296,
+    "text": "So that's what PCA did if I try to reconstruct my data I lose information.",
+    "start_ms": 2514296,
+    "end_ms": 2517896,
+    "duration_ms": 3600,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2519.0,
+    "text": "Excuse me. Yeah, so you take... This top point here.",
+    "start_ms": 2519000,
+    "end_ms": 2527464,
+    "duration_ms": 8464,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2531.896,
+    "text": "Alright, there's a gap. I moved off of where it is, so I've approximated that point.",
+    "start_ms": 2531896,
+    "end_ms": 2535496,
+    "duration_ms": 3600,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2538.392,
+    "text": "But this is the best approximation I could construct, given a plan representation.",
+    "start_ms": 2538392,
+    "end_ms": 2543392,
+    "duration_ms": 5000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2545.432,
+    "text": "So that's 11 to 2 dimensional subspace. This is the best two-dimensional subspace to preserve that data.",
+    "start_ms": 2545432,
+    "end_ms": 2552088,
+    "duration_ms": 6656,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2556.984,
+    "text": "All right, Christians at this point. We do one thing.",
+    "start_ms": 2556984,
+    "end_ms": 2561948,
+    "duration_ms": 4964,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2561.948,
+    "text": "I want to say how do I reconstruct this? So just once more, this is the whole procedure.",
+    "start_ms": 2561948,
+    "end_ms": 2565192,
+    "duration_ms": 3244,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2565.192,
+    "text": "So you can highlight it up. So I have my X.",
+    "start_ms": 2565192,
+    "end_ms": 2568981,
+    "duration_ms": 3789,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2568.981,
+    "text": "I've been over license standardized it. Can't see that. I broke it down to us and v.",
+    "start_ms": 2568981,
+    "end_ms": 2574850,
+    "duration_ms": 5869,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2574.85,
+    "text": "I made z. This time I did u times s.",
+    "start_ms": 2574850,
+    "end_ms": 2578184,
+    "duration_ms": 3334,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2578.872,
+    "text": "Good on X times V that would work too. If I want to reconstruct my data...",
+    "start_ms": 2578872,
+    "end_ms": 2588008,
+    "duration_ms": 9136,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2590.232,
+    "text": "I'll check my Z. We'll put it back by BT.",
+    "start_ms": 2590232,
+    "end_ms": 2594504,
+    "duration_ms": 4272,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2596.984,
+    "text": "That is reconstruction, but there's a caveat, and I want to talk about that here briefly.",
+    "start_ms": 2596984,
+    "end_ms": 2600984,
+    "duration_ms": 4000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2600.984,
+    "text": "Remember, I standardized and sent their center and standardized my data.",
+    "start_ms": 2600984,
+    "end_ms": 2604984,
+    "duration_ms": 4000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2605.016,
+    "text": "So I'm not quite done. This is reconstructing. The data points before or after I had standardized them.",
+    "start_ms": 2605016,
+    "end_ms": 2611914,
+    "duration_ms": 6898,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2611.914,
+    "text": "Right. I need to understand it. So the un-standard eyes of my multiply first by the standard deviation of my original data.",
+    "start_ms": 2611914,
+    "end_ms": 2619512,
+    "duration_ms": 7598,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2619.864,
+    "text": "and then add back the mean That's shifting that cloud back to where it was before.",
+    "start_ms": 2619864,
+    "end_ms": 2625508,
+    "duration_ms": 5644,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2625.508,
+    "text": "So when I do this reconstruction, I'm putting it back in this slanted space, but then I had shifted that space, so I need to unshift it.",
+    "start_ms": 2625508,
+    "end_ms": 2632008,
+    "duration_ms": 6500,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2632.344,
+    "text": "Back to where it was before. So reconstruction actually takes two steps here.",
+    "start_ms": 2632344,
+    "end_ms": 2636264,
+    "duration_ms": 3920,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2638.968,
+    "text": "important to know. Alright, let's keep killing. Alright, so now we talk about the barriens.",
+    "start_ms": 2638968,
+    "end_ms": 2650568,
+    "duration_ms": 11600,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2651.192,
+    "text": "With this discussion at the last lecture, we're trying to find the thing that maximizes our total variance.",
+    "start_ms": 2651192,
+    "end_ms": 2655405,
+    "duration_ms": 4213,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2655.405,
+    "text": "Our reconstruction has as much of the variance the original day as possible.",
+    "start_ms": 2655405,
+    "end_ms": 2659315,
+    "duration_ms": 3910,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2659.315,
+    "text": "We constructed the variance of each dimensions by taking the variance of dimensions and summing them up.",
+    "start_ms": 2659315,
+    "end_ms": 2664125,
+    "duration_ms": 4810,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2664.125,
+    "text": "Those service. The cool thing about these singular values, the diagonal entries in my SVE composition, that S matrix.",
+    "start_ms": 2664125,
+    "end_ms": 2672600,
+    "duration_ms": 8475,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2673.272,
+    "text": "They are also component scores and things. Okay, here, component scores.",
+    "start_ms": 2673272,
+    "end_ms": 2679016,
+    "duration_ms": 5744,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2682.264,
+    "text": "They capture how much the variance is each of those principal component dimensions.",
+    "start_ms": 2682264,
+    "end_ms": 2686904,
+    "duration_ms": 4640,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2687.576,
+    "text": "Right. So this was the variance explained by the first component, variance, second principle component.",
+    "start_ms": 2687576,
+    "end_ms": 2692722,
+    "duration_ms": 5146,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2692.722,
+    "text": "Sorry, not quite right. You divide each of these by n, because remember before I had this whenever n in my covariance matrix I said, look, nor that for the derivation.",
+    "start_ms": 2692722,
+    "end_ms": 2702492,
+    "duration_ms": 9770,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2702.492,
+    "text": "It's a little scaled. But I want the actual variance to divide each of these numbers by n to get the actual variance.",
+    "start_ms": 2702492,
+    "end_ms": 2708704,
+    "duration_ms": 6212,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2708.704,
+    "text": "Right? So this divided by Decide this square. The singer about I, okay.",
+    "start_ms": 2708704,
+    "end_ms": 2715400,
+    "duration_ms": 6696,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2715.864,
+    "text": "Close-y. Sorry, sorry, sorry. Okay, so we said the singular values squared.",
+    "start_ms": 2715864,
+    "end_ms": 2720252,
+    "duration_ms": 4388,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2720.664,
+    "text": "Where the eigenvalue is my covariance matrix, right? I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I- I So I need to square these, these are standard variations, so I square them.",
+    "start_ms": 2720664,
+    "end_ms": 2730744,
+    "duration_ms": 10080,
+    "word_count": 134,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2730.744,
+    "text": "and divide by M. That gives me my... for the first-punse component.",
+    "start_ms": 2730744,
+    "end_ms": 2735674,
+    "duration_ms": 4930,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2735.674,
+    "text": "That's this number here. This is my variance, this number here is squared divided by n, is n, is the variance for my second principal point.",
+    "start_ms": 2735674,
+    "end_ms": 2744368,
+    "duration_ms": 8694,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2745.176,
+    "text": "And this number here, s squared, to that I am variance to my third principal component.",
+    "start_ms": 2745176,
+    "end_ms": 2750176,
+    "duration_ms": 5000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2751.288,
+    "text": "If I sum these up... This equals this. So I'm if I keep my prints, it's all three of them.",
+    "start_ms": 2751288,
+    "end_ms": 2761144,
+    "duration_ms": 9856,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2761.144,
+    "text": "I preserve all the variants my regional data. It's good because I'm reconstructing my original data perfectly.",
+    "start_ms": 2761144,
+    "end_ms": 2766392,
+    "duration_ms": 5248,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2767.032,
+    "text": "Right, but I now have variants allocated differently. I have a lot of variance in this first dimension, 389, where it's before I had 338.",
+    "start_ms": 2767032,
+    "end_ms": 2775576,
+    "duration_ms": 8544,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2776.152,
+    "text": "So I found this new magic dimension which has maximum variance.",
+    "start_ms": 2776152,
+    "end_ms": 2778682,
+    "duration_ms": 2530,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2778.682,
+    "text": "Remember that was a goal. And the next one has a little bit of variance left, and the remaining one even a little less variance.",
+    "start_ms": 2778682,
+    "end_ms": 2785208,
+    "duration_ms": 6526,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2787.192,
+    "text": "So it's making me an intuition of what you need to keep.",
+    "start_ms": 2787192,
+    "end_ms": 2789672,
+    "duration_ms": 2480,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2789.672,
+    "text": "You're doing principle component analysis. This is a lot of variants, most of the variants.",
+    "start_ms": 2789672,
+    "end_ms": 2794856,
+    "duration_ms": 5184,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2794.904,
+    "text": "These are not that important, maybe I could throw it away.",
+    "start_ms": 2794904,
+    "end_ms": 2796904,
+    "duration_ms": 2000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2797.368,
+    "text": "Maybe most of my day is explained by this first principal component.",
+    "start_ms": 2797368,
+    "end_ms": 2800168,
+    "duration_ms": 2800,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2801.08,
+    "text": "Alright, so the equation, which is on the previous slide, so I take my i-th singular value, square it, divided by n, that is my variance for that principal component.",
+    "start_ms": 2801080,
+    "end_ms": 2809880,
+    "duration_ms": 8800,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2810.968,
+    "text": "You know that because we can use that the plot.",
+    "start_ms": 2810968,
+    "end_ms": 2813968,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2814.552,
+    "text": "The important speech dimension. This plot's here. Alright, so if I want to figure out.",
+    "start_ms": 2814552,
+    "end_ms": 2823272,
+    "duration_ms": 8720,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2826.296,
+    "text": "The variance ratio... for the fraction of variance for each of the dimensions.",
+    "start_ms": 2826296,
+    "end_ms": 2831356,
+    "duration_ms": 5060,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2831.736,
+    "text": "So how much of the total variance explained by each of dimensions of my?",
+    "start_ms": 2831736,
+    "end_ms": 2835576,
+    "duration_ms": 3840,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2836.632,
+    "text": "Principal component, so I have three principal components, how much variance for each of the dimensions.",
+    "start_ms": 2836632,
+    "end_ms": 2841126,
+    "duration_ms": 4494,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2841.126,
+    "text": "What fraction of the total variance is capture of each of those?",
+    "start_ms": 2841126,
+    "end_ms": 2844232,
+    "duration_ms": 3106,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2844.824,
+    "text": "Which equation would I use? Good is up. unclear I'm happy to try to explain again.",
+    "start_ms": 2844824,
+    "end_ms": 2853944,
+    "duration_ms": 9120,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2853.944,
+    "text": "We'll do that anyways. So I'm trying to compute the variance ratios.",
+    "start_ms": 2853944,
+    "end_ms": 2857944,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2858.232,
+    "text": "Intuition here is I'd like to plot. How much each of these principle components?",
+    "start_ms": 2858232,
+    "end_ms": 2863176,
+    "duration_ms": 4944,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2863.512,
+    "text": "Explains of the overall variance of my data. So I can pick 2234 how many dimensions really capture most of everything.",
+    "start_ms": 2863512,
+    "end_ms": 2870840,
+    "duration_ms": 7328,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2872.888,
+    "text": "How are you compute? Deep proportion, the ratio. of the Toilbearance.",
+    "start_ms": 2872888,
+    "end_ms": 2884136,
+    "duration_ms": 11248,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2883.576,
+    "text": "Preach those mentions. Give you a hint. Remember we sent the previous slide, singular value s squared divided by n is a variance for that one component.",
+    "start_ms": 2883576,
+    "end_ms": 2896516,
+    "duration_ms": 12940,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2897.816,
+    "text": "So I want the variance. That's the total variance I went for that component.",
+    "start_ms": 2897816,
+    "end_ms": 2902436,
+    "duration_ms": 4620,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2902.436,
+    "text": "I went that divided by the variance for all the components.",
+    "start_ms": 2902436,
+    "end_ms": 2905736,
+    "duration_ms": 3300,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2916.952,
+    "text": "So close. See you people you're thinking. Good, you guys must see you're getting it.",
+    "start_ms": 2916952,
+    "end_ms": 2927016,
+    "duration_ms": 10064,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2931.352,
+    "text": "A little bit of algebra going on here. or s squared divided by n variance for this principle component.",
+    "start_ms": 2931352,
+    "end_ms": 2937880,
+    "duration_ms": 6528,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2938.328,
+    "text": "That one divided by the Total variance. Which is the sun?",
+    "start_ms": 2938328,
+    "end_ms": 2944168,
+    "duration_ms": 5840,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2944.856,
+    "text": "of those appearances. Chasinant on the bottom and ant on the top.",
+    "start_ms": 2944856,
+    "end_ms": 2949960,
+    "duration_ms": 5104,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2951.576,
+    "text": "They're gonna cancel out. Hey look. Alright, so I said the total variance.",
+    "start_ms": 2951576,
+    "end_ms": 2962216,
+    "duration_ms": 10640,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2962.936,
+    "text": "Are you here? Some of the variances reached the components.",
+    "start_ms": 2962936,
+    "end_ms": 2967056,
+    "duration_ms": 4120,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2968.024,
+    "text": "That's the denominator. And then the variance for that one component is the numerator.",
+    "start_ms": 2968024,
+    "end_ms": 2972104,
+    "duration_ms": 4080,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2972.92,
+    "text": "He's ends cancel out. They're left with s squared over the sum of s squared.",
+    "start_ms": 2972920,
+    "end_ms": 2977020,
+    "duration_ms": 4100,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2978.2,
+    "text": "For a NumPy. Why do you need this because it's gonna make a really useful plot?",
+    "start_ms": 2978200,
+    "end_ms": 2983752,
+    "duration_ms": 5552,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2984.28,
+    "text": "for how we figure out the importance of each of our dimensions.",
+    "start_ms": 2984280,
+    "end_ms": 2986780,
+    "duration_ms": 2500,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2990.168,
+    "text": "It's called a screen plot. So, it's plough here. Scree, I didn't notice until I started teaching this class actually.",
+    "start_ms": 2990168,
+    "end_ms": 2996912,
+    "duration_ms": 6744,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2996.912,
+    "text": "The term scree isn't a math term, it's a mountain term.",
+    "start_ms": 2996912,
+    "end_ms": 3000912,
+    "duration_ms": 4000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3000.952,
+    "text": "This is the Scree of a map. As we call, Scri.",
+    "start_ms": 3000952,
+    "end_ms": 3004688,
+    "duration_ms": 3736,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3005.368,
+    "text": "From geology. Screen plot looks like this is the variance ratio, odd against the directions.",
+    "start_ms": 3005368,
+    "end_ms": 3010680,
+    "duration_ms": 5312,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3016.088,
+    "text": "So, very interesting plot against the Iath Principle of Punnett.",
+    "start_ms": 3016088,
+    "end_ms": 3019728,
+    "duration_ms": 3640,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3021.816,
+    "text": "Alright, when we're these are sorted, the first one is the The largest eigenvalue, largest singular value.",
+    "start_ms": 3021816,
+    "end_ms": 3029720,
+    "duration_ms": 7904,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3031.416,
+    "text": "It goes down quickly. looking at this point, you're like, hmm.",
+    "start_ms": 3031416,
+    "end_ms": 3034920,
+    "duration_ms": 3504,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3034.88,
+    "text": "many dimensions do I need for this data set? By certainly one, one, there's a lot, let explain the one dimension.",
+    "start_ms": 3034880,
+    "end_ms": 3041212,
+    "duration_ms": 6332,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3041.212,
+    "text": "Never go below one. A little bit on two and then at three there's not much happening here.",
+    "start_ms": 3041212,
+    "end_ms": 3046696,
+    "duration_ms": 5484,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3047.832,
+    "text": "Most interesting stuff in my data is in the first few dimensions.",
+    "start_ms": 3047832,
+    "end_ms": 3050632,
+    "duration_ms": 2800,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3051.16,
+    "text": "Yeah, the crazy part about real data sets, they often have this flavor.",
+    "start_ms": 3051160,
+    "end_ms": 3054440,
+    "duration_ms": 3280,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3054.968,
+    "text": "They're very quickly decay. A lot of correlation in your data.",
+    "start_ms": 3054968,
+    "end_ms": 3059272,
+    "duration_ms": 4304,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3060.216,
+    "text": "Which is great because we can visualize these things more effectively.",
+    "start_ms": 3060216,
+    "end_ms": 3062616,
+    "duration_ms": 2400,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3063.448,
+    "text": "All right, questions about screen plots. Yeah, how could I interpret these principles?",
+    "start_ms": 3063448,
+    "end_ms": 3078143,
+    "duration_ms": 14695,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3078.143,
+    "text": "We'll talk about that. The by-plot in a moment. Alright, we're going to a break in a second.",
+    "start_ms": 3078143,
+    "end_ms": 3084808,
+    "duration_ms": 6665,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3084.808,
+    "text": "I'll point you to a YouTube video. It's a lot of fun.",
+    "start_ms": 3084808,
+    "end_ms": 3087517,
+    "duration_ms": 2709,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3087.517,
+    "text": "This guy is an amazing lecture. Someday I will be...",
+    "start_ms": 3087517,
+    "end_ms": 3089776,
+    "duration_ms": 2259,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3090.584,
+    "text": "Half is good, you know. Here's a really cool video explaining everything I've explained today.",
+    "start_ms": 3090584,
+    "end_ms": 3096280,
+    "duration_ms": 5696,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3096.28,
+    "text": "Probably less time as you can check it out. One caveat is he has the wrong definition of principle components.",
+    "start_ms": 3096280,
+    "end_ms": 3103080,
+    "duration_ms": 6800,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3103.64,
+    "text": "which is unfortunate so he will define prince components as our z which is really called the scores um with latent factors so if you watch the video everything will mostly line up except for that last bit um when he talks about what he calls principal components out.",
+    "start_ms": 3103640,
+    "end_ms": 3121064,
+    "duration_ms": 17424,
+    "word_count": 49,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3123.448,
+    "text": "Alright, let's do this. Let's take a... Two minute break, so come back at 12.04 and then we'll play with politics.",
+    "start_ms": 3123448,
+    "end_ms": 3131912,
+    "duration_ms": 8464,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3316.376,
+    "text": "Hello everyone, welcome back. It occurs to me that I hit three slides and I think you will need for your upcoming homework so I do want to explain them.",
+    "start_ms": 3316376,
+    "end_ms": 3323376,
+    "duration_ms": 7000,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3323.376,
+    "text": "The matrices, you, S and V. So I told you get these from SVD.",
+    "start_ms": 3323376,
+    "end_ms": 3327876,
+    "duration_ms": 4500,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3327.876,
+    "text": "I'm just some important just mathematical properties that you want to know about these.",
+    "start_ms": 3327876,
+    "end_ms": 3332376,
+    "duration_ms": 4500,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3332.376,
+    "text": "First in their shapes, so I'm going to just put this in.",
+    "start_ms": 3332376,
+    "end_ms": 3336376,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3336.568,
+    "text": "and text on the slide so we said x We said what x?",
+    "start_ms": 3336568,
+    "end_ms": 3350888,
+    "duration_ms": 14320,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3351.544,
+    "text": "equals us e transpose right those are decomposition so we'll talk about you first You as the first matrix right here.",
+    "start_ms": 3351544,
+    "end_ms": 3360552,
+    "duration_ms": 9008,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3361.24,
+    "text": "This is an N by D matrix. It is the left singular vectors, which is not important for this class, but just so you know.",
+    "start_ms": 3361240,
+    "end_ms": 3369704,
+    "duration_ms": 8464,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3370.872,
+    "text": "It has these two important properties that you times you transpose is the identity matrix and you transpose you as the identity matrix in n and d.",
+    "start_ms": 3370872,
+    "end_ms": 3378872,
+    "duration_ms": 8000,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3380.184,
+    "text": "So these are ortho-normal vectors. and think about what you is doing to your data, it's sort of the rotation of the data.",
+    "start_ms": 3380184,
+    "end_ms": 3389796,
+    "duration_ms": 9612,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3389.796,
+    "text": "It's giving a rotation matrix. This is true in general.",
+    "start_ms": 3389796,
+    "end_ms": 3392412,
+    "duration_ms": 2616,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3392.412,
+    "text": "We have these orthonormal matrices. I multiply by orthonormal matrix and just rotating my data.",
+    "start_ms": 3392412,
+    "end_ms": 3396912,
+    "duration_ms": 4500,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3397.176,
+    "text": "Not scaling it because every dimension is late one. It can be shown that it is the eigenvectors of X transpose X.",
+    "start_ms": 3397176,
+    "end_ms": 3405704,
+    "duration_ms": 8528,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3405.944,
+    "text": "And again we do this with this algebra business where I take x.",
+    "start_ms": 3405944,
+    "end_ms": 3409224,
+    "duration_ms": 3280,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3409.848,
+    "text": "and x Does X, X transposite? And I take this transpos and push it in, which means I flip all these around.",
+    "start_ms": 3409848,
+    "end_ms": 3418120,
+    "duration_ms": 8272,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3418.296,
+    "text": "and I transpose them, I get VSTU. Transpose S and U.",
+    "start_ms": 3418296,
+    "end_ms": 3423688,
+    "duration_ms": 5392,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3423.688,
+    "text": "B is now untransposed. And I have v times v transpose, which is the identity, because it's a popular v.",
+    "start_ms": 3423688,
+    "end_ms": 3430904,
+    "duration_ms": 7216,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3431.448,
+    "text": "and I'm left with this. And if I right multiply this thing here by another U.",
+    "start_ms": 3431448,
+    "end_ms": 3438792,
+    "duration_ms": 7344,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3439.064,
+    "text": "Another U over here. I got this and this, right?",
+    "start_ms": 3439064,
+    "end_ms": 3443664,
+    "duration_ms": 4600,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3444.248,
+    "text": "And remember, U transpose U is an identity matrix. So I'm left with X transpose, X transpose times U, is U times S squared.",
+    "start_ms": 3444248,
+    "end_ms": 3453048,
+    "duration_ms": 8800,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3456.728,
+    "text": "So an eigenvector. or the eigenvectors of x x transpose.",
+    "start_ms": 3456728,
+    "end_ms": 3463304,
+    "duration_ms": 6576,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3465.432,
+    "text": "night up I think I hit the other side. Oh, I didn't.",
+    "start_ms": 3465432,
+    "end_ms": 3469096,
+    "duration_ms": 3664,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3469.096,
+    "text": "Okay, good. So S. Is this diagonal matrix? And these are these singular values.",
+    "start_ms": 3469096,
+    "end_ms": 3474380,
+    "duration_ms": 5284,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3474.38,
+    "text": "The largest one is the first one. So these numbers decrease as we go down.",
+    "start_ms": 3474380,
+    "end_ms": 3478880,
+    "duration_ms": 4500,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3479.448,
+    "text": "And if I have a ranked efficient matrix and how much is yours.",
+    "start_ms": 3479448,
+    "end_ms": 3483748,
+    "duration_ms": 4300,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3484.664,
+    "text": "So it was D, but you know, I was rank R.",
+    "start_ms": 3484664,
+    "end_ms": 3487464,
+    "duration_ms": 2800,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3487.464,
+    "text": "So I have R non-singular values of my rank was R.",
+    "start_ms": 3487464,
+    "end_ms": 3490264,
+    "duration_ms": 2800,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3491.608,
+    "text": "Are there any other matrix. Most Matrix is zero. All this is zero.",
+    "start_ms": 3491608,
+    "end_ms": 3497666,
+    "duration_ms": 6058,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3497.666,
+    "text": "This is diagonal matrix. My quest all this is zero, tag matrix.",
+    "start_ms": 3497666,
+    "end_ms": 3501640,
+    "duration_ms": 3974,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3504.056,
+    "text": "I remember we transposed agonatrice, same thing. And you can do this matrix as scaling your data because it's the only thing that has magnitude on each of the dimensions so it's stretching your data out.",
+    "start_ms": 3504056,
+    "end_ms": 3516144,
+    "duration_ms": 12088,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3521.912,
+    "text": "And this corner up here are the... Things that we would actually use this as the...",
+    "start_ms": 3521912,
+    "end_ms": 3527016,
+    "duration_ms": 5104,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3528.376,
+    "text": "A singular values are non-zero. Tell you his secret, it's not relevant for this class so much, but you can take.",
+    "start_ms": 3528376,
+    "end_ms": 3537448,
+    "duration_ms": 9072,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3537.448,
+    "text": "If I want to invert my matrix, we're having we had to invert x, it's not poor ink.",
+    "start_ms": 3537448,
+    "end_ms": 3541528,
+    "duration_ms": 4080,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3541.528,
+    "text": "One way to do that is I can take x, decompose it, and flip all these.",
+    "start_ms": 3541528,
+    "end_ms": 3546088,
+    "duration_ms": 4560,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3546.088,
+    "text": "Make that one over this, one over this. Whatever this, and I don't touch these, I leave them be.",
+    "start_ms": 3546088,
+    "end_ms": 3550408,
+    "duration_ms": 4320,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3551.96,
+    "text": "If I put those matrices back together, I've constructed the inverse.",
+    "start_ms": 3551960,
+    "end_ms": 3555960,
+    "duration_ms": 4000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3558.2,
+    "text": "So one way to do an inverse of the matrix, it's not full rank is...",
+    "start_ms": 3558200,
+    "end_ms": 3561720,
+    "duration_ms": 3520,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3562.104,
+    "text": "It's called the Morphen or Suda Inverse is to construct the SVD.",
+    "start_ms": 3562104,
+    "end_ms": 3564904,
+    "duration_ms": 2800,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3564.904,
+    "text": "Again, out of scope for this class, but this S is pretty powerful.",
+    "start_ms": 3564904,
+    "end_ms": 3568104,
+    "duration_ms": 3200,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3568.312,
+    "text": "It lets me do things like invert matrices. Just by inverting the elements in the S.",
+    "start_ms": 3568312,
+    "end_ms": 3573160,
+    "duration_ms": 4848,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3574.968,
+    "text": "Okay, and then V, which is the one you should know about.",
+    "start_ms": 3574968,
+    "end_ms": 3577818,
+    "duration_ms": 2850,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3577.818,
+    "text": "This is the exciting. These are our principal components. comms v art or thermal The rows of e are transpose are also with the normal.",
+    "start_ms": 3577818,
+    "end_ms": 3587704,
+    "duration_ms": 9886,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3589.688,
+    "text": "The columns of V are the right singular vectors. And...",
+    "start_ms": 3589688,
+    "end_ms": 3595712,
+    "duration_ms": 6024,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3596.952,
+    "text": "Principal components. components. So why we came here today, so we wanted these columns to be.",
+    "start_ms": 3596952,
+    "end_ms": 3606984,
+    "duration_ms": 10032,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3607.704,
+    "text": "You can think of this again as a rotation, because it is this unitary matrix.",
+    "start_ms": 3607704,
+    "end_ms": 3611704,
+    "duration_ms": 4000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3615.352,
+    "text": "And we did this dervish already. Right, so I can show that uh X transpose X, remember this is sigma.",
+    "start_ms": 3615352,
+    "end_ms": 3623248,
+    "duration_ms": 7896,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3623.864,
+    "text": "times v equals v times s squared. Shazzy eigenvectors of X.",
+    "start_ms": 3623864,
+    "end_ms": 3629288,
+    "duration_ms": 5424,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3630.232,
+    "text": "Transpose X. Sigma. Alright, we were done with all the math.",
+    "start_ms": 3630232,
+    "end_ms": 3636712,
+    "duration_ms": 6480,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3637.112,
+    "text": "I need to recover that and make sure you have it.",
+    "start_ms": 3637112,
+    "end_ms": 3639112,
+    "duration_ms": 2000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3639.384,
+    "text": "We went through all this, we did the plots, I went to this and we're going to tell them I'm going to go.",
+    "start_ms": 3639384,
+    "end_ms": 3643284,
+    "duration_ms": 3900,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3644.504,
+    "text": "Let's go back to the demo. This is probably the most fun demo of this.",
+    "start_ms": 3644504,
+    "end_ms": 3650384,
+    "duration_ms": 5880,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3650.744,
+    "text": "that i'm covering in this class uh... so i enjoy it Here we go.",
+    "start_ms": 3650744,
+    "end_ms": 3658248,
+    "duration_ms": 7504,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3658.073,
+    "text": "we're going to look at congressional votes to get the data here.",
+    "start_ms": 3658073,
+    "end_ms": 3661544,
+    "duration_ms": 3471,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3661.848,
+    "text": "This is the raw data. I have each row is a roll call, which is like one of these votes that the house is voting on.",
+    "start_ms": 3661848,
+    "end_ms": 3668848,
+    "duration_ms": 7000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3668.848,
+    "text": "The house member number, remember ID and what they voted.",
+    "start_ms": 3668848,
+    "end_ms": 3671705,
+    "duration_ms": 2857,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3671.705,
+    "text": "Sometimes it invotes, sometimes it vote yes, sometimes it vote no.",
+    "start_ms": 3671705,
+    "end_ms": 3674848,
+    "duration_ms": 3143,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3675.608,
+    "text": "How do I make sense of data like this? This is really hard to visualize.",
+    "start_ms": 3675608,
+    "end_ms": 3678608,
+    "duration_ms": 3000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3680.056,
+    "text": "We're going to focus on the Yester's and the Nose.",
+    "start_ms": 3680056,
+    "end_ms": 3682856,
+    "duration_ms": 2800,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3683.096,
+    "text": "In a pivoted table and you can go through this this is a cool use of pivot tables.",
+    "start_ms": 3683096,
+    "end_ms": 3687753,
+    "duration_ms": 4657,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3687.753,
+    "text": "I've rearranged it so the roll call these are the bills they're voting on.",
+    "start_ms": 3687753,
+    "end_ms": 3691376,
+    "duration_ms": 3623,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3691.8,
+    "text": "And there's 41 of them. And there's 441 members of the house and this is their member number.",
+    "start_ms": 3691800,
+    "end_ms": 3697448,
+    "duration_ms": 5648,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3697.448,
+    "text": "And this is whether or not they voted yes or no.",
+    "start_ms": 3697448,
+    "end_ms": 3699448,
+    "duration_ms": 2000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3700.344,
+    "text": "This is a 44, sorry 41 dimensional data set. How do you visualize this?",
+    "start_ms": 3700344,
+    "end_ms": 3706472,
+    "duration_ms": 6128,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3707.992,
+    "text": "How do we make sense of how people vote? So, OPCA is brilliant.",
+    "start_ms": 3707992,
+    "end_ms": 3713031,
+    "duration_ms": 5039,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3713.031,
+    "text": "I've got this high-dimensional thing. It would be great if I could just...",
+    "start_ms": 3713031,
+    "end_ms": 3715784,
+    "duration_ms": 2753,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3716.696,
+    "text": "Put each of these house members in a plot. Just see where they live.",
+    "start_ms": 3716696,
+    "end_ms": 3720047,
+    "duration_ms": 3351,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3720.047,
+    "text": "Who are their neighbors? Peace be. So, we're gonna center my data.",
+    "start_ms": 3720047,
+    "end_ms": 3727368,
+    "duration_ms": 7321,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3728.344,
+    "text": "Let's get this slide over a second. So I've centered my data.",
+    "start_ms": 3728344,
+    "end_ms": 3732344,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3732.194,
+    "text": "standardize it and I don't technically need to center it from we use the scikit-learn tools but we'll center it.",
+    "start_ms": 3732194,
+    "end_ms": 3738448,
+    "duration_ms": 6254,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3739.256,
+    "text": "So it's 441 rows, 41 dimensions. Why is that video so we'll compute it the way we discussed.",
+    "start_ms": 3739256,
+    "end_ms": 3746264,
+    "duration_ms": 7008,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3746.68,
+    "text": "Sing as we do. get my U, S, and V transpose matrices, and where S is diagonal.",
+    "start_ms": 3746680,
+    "end_ms": 3752656,
+    "duration_ms": 5976,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3753.048,
+    "text": "Be transposes my singular Vectors, the eigenvectors of sigma, my principal components.",
+    "start_ms": 3753048,
+    "end_ms": 3761048,
+    "duration_ms": 8000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3763.0,
+    "text": "Can plot it. that out. I've reduced every dot every dot is a person.",
+    "start_ms": 3763000,
+    "end_ms": 3768688,
+    "duration_ms": 5688,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3769.08,
+    "text": "in the House representatives. into a plot. Can you cool?",
+    "start_ms": 3769080,
+    "end_ms": 3776680,
+    "duration_ms": 7600,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3776.632,
+    "text": "Season Dots. Right. This is step one in PCA. So I reduced my data load dimensions, but it's still hard to know what's going on here.",
+    "start_ms": 3776632,
+    "end_ms": 3784376,
+    "duration_ms": 7744,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3784.376,
+    "text": "Right? What we can't interesting to see is what is their political?",
+    "start_ms": 3784376,
+    "end_ms": 3788624,
+    "duration_ms": 4248,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3789.304,
+    "text": "She before you that listen to the source so this is my platinum dimensions.",
+    "start_ms": 3789304,
+    "end_ms": 3792504,
+    "duration_ms": 3200,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3794.264,
+    "text": "Let's look at the screen plot, so I'm taking S.",
+    "start_ms": 3794264,
+    "end_ms": 3797264,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3797.688,
+    "text": "squared divided by sum of s squared. That's a proportion of variance explained by each of my principal components.",
+    "start_ms": 3797688,
+    "end_ms": 3803688,
+    "duration_ms": 6000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3804.12,
+    "text": "A plot of here. So, first, principal component. There's one dimension that describes most of how people vote.",
+    "start_ms": 3804120,
+    "end_ms": 3810120,
+    "duration_ms": 6000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3811.064,
+    "text": "I bet you don't guess what it is. There's a second dimension that sort of disguised some people though.",
+    "start_ms": 3811064,
+    "end_ms": 3815304,
+    "duration_ms": 4240,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3815.832,
+    "text": "I don't know what this is yet. Let's figure out in a second.",
+    "start_ms": 3815832,
+    "end_ms": 3817832,
+    "duration_ms": 2000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3818.52,
+    "text": "Beyond that, it just disappears. So like, 5% and 95% No, sorry, 80%.",
+    "start_ms": 3818520,
+    "end_ms": 3824520,
+    "duration_ms": 6000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3824.467,
+    "text": "5% of how people vote can be described on just two dimensions.",
+    "start_ms": 3824467,
+    "end_ms": 3828640,
+    "duration_ms": 4173,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3828.64,
+    "text": "So 85% of the data is two dimensions. Another 2% of third dimension, we can see this in three dimensions too.",
+    "start_ms": 3828640,
+    "end_ms": 3835320,
+    "duration_ms": 6680,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3836.312,
+    "text": "Here's that same data using three principal components. Alright, so you can see where people live.",
+    "start_ms": 3836312,
+    "end_ms": 3842468,
+    "duration_ms": 6156,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3842.468,
+    "text": "What is Z1, Z2, and Z3? I don't know, but Z1 is the most important dimension.",
+    "start_ms": 3842468,
+    "end_ms": 3847580,
+    "duration_ms": 5112,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3848.408,
+    "text": "Right. C2 has some information Z3 has even less. That's my data.",
+    "start_ms": 3848408,
+    "end_ms": 3854112,
+    "duration_ms": 5704,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3855.224,
+    "text": "Let's make this fun. going to pull in their political affiliation what party they register with.",
+    "start_ms": 3855224,
+    "end_ms": 3859888,
+    "duration_ms": 4664,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3860.92,
+    "text": "Their gender, their state, their chamber party birthday, all sorts of information.",
+    "start_ms": 3860920,
+    "end_ms": 3864920,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3865.592,
+    "text": "Computer their age as well. and join us back with our votes.",
+    "start_ms": 3865592,
+    "end_ms": 3871016,
+    "duration_ms": 5424,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3872.152,
+    "text": "Now I can plot them again. Now what do we see?",
+    "start_ms": 3872152,
+    "end_ms": 3876288,
+    "duration_ms": 4136,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3879.544,
+    "text": "Blue Dots, or Democrats. Circle is male. Diamonds are female.",
+    "start_ms": 3879544,
+    "end_ms": 3885672,
+    "duration_ms": 6128,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3885.752,
+    "text": "Green is the independent, the independent. Red conservative. Now I've made the size correspond to the age I think, right?",
+    "start_ms": 3885752,
+    "end_ms": 3893848,
+    "duration_ms": 8096,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3895.096,
+    "text": "What do you hear? I made size, corresponding to age.",
+    "start_ms": 3895096,
+    "end_ms": 3898029,
+    "duration_ms": 2933,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3898.029,
+    "text": "So little dots are young. Big dots are old. I also attach her name so we can start to explore how people live in this space.",
+    "start_ms": 3898029,
+    "end_ms": 3905384,
+    "duration_ms": 7355,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3909.432,
+    "text": "Turns out it's kind of a problem. We zoom in.",
+    "start_ms": 3909432,
+    "end_ms": 3911832,
+    "duration_ms": 2400,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3912.12,
+    "text": "that a bunch of people vote exactly the same way what happens there dots of people exactly the same way.",
+    "start_ms": 3912120,
+    "end_ms": 3917120,
+    "duration_ms": 5000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3918.936,
+    "text": "to get stacked because of the same vector, right? Project on the principal pose, you're going to be the same thing.",
+    "start_ms": 3918936,
+    "end_ms": 3924936,
+    "duration_ms": 6000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3925.528,
+    "text": "How do we deal with that? Time for the Jitter.",
+    "start_ms": 3925528,
+    "end_ms": 3928800,
+    "duration_ms": 3272,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3929.272,
+    "text": "Love it a-j-er. Now I can see all the points spread out.",
+    "start_ms": 3929272,
+    "end_ms": 3935016,
+    "duration_ms": 5744,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3935.992,
+    "text": "Consuming. Shapy go do it. What do you think is going on here?",
+    "start_ms": 3935992,
+    "end_ms": 3941704,
+    "duration_ms": 5712,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3941.704,
+    "text": "Zoom back out with my controls. So this first axis.",
+    "start_ms": 3941704,
+    "end_ms": 3947560,
+    "duration_ms": 5856,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3947.704,
+    "text": "First Principal Component, Second Principal Component. Can't see that so I'll just click here so I've got my first principal opponents on this dimension here Second performance on this convention here.",
+    "start_ms": 3947704,
+    "end_ms": 3958824,
+    "duration_ms": 11120,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3959.928,
+    "text": "What's this first dimension describing? You know anything about US politics we have a very one dimensional world.",
+    "start_ms": 3959928,
+    "end_ms": 3968296,
+    "duration_ms": 8368,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3971.0,
+    "text": "Like Liberal conservative. And we can see that with PCA, which is kind of crazy.",
+    "start_ms": 3971000,
+    "end_ms": 3978352,
+    "duration_ms": 7352,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3979.32,
+    "text": "So we're taking just whether or not someone said yes or no on bills.",
+    "start_ms": 3979320,
+    "end_ms": 3982120,
+    "duration_ms": 2800,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3982.424,
+    "text": "Don't anything about the bills. Reliable can be conservative, but there's structure.",
+    "start_ms": 3982424,
+    "end_ms": 3987388,
+    "duration_ms": 4964,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3988.44,
+    "text": "And that dominant dimension of structure seems to be political affiliation.",
+    "start_ms": 3988440,
+    "end_ms": 3991840,
+    "duration_ms": 3400,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3992.536,
+    "text": "Then what is going on with these people? There's some other second dimension that they live on.",
+    "start_ms": 3992536,
+    "end_ms": 3998392,
+    "duration_ms": 5856,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3998.392,
+    "text": "I don't know what that is. I kinda wanna understand it, right?",
+    "start_ms": 3998392,
+    "end_ms": 4002376,
+    "duration_ms": 3984,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4002.456,
+    "text": "This is where PCI is pretty cool, so now I can come down here and I go where are these?",
+    "start_ms": 4002456,
+    "end_ms": 4006456,
+    "duration_ms": 4000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4007.0,
+    "text": "Characters. Independence. Elijah Cummings, James, Clive Bern. I can't see who that is.",
+    "start_ms": 4007000,
+    "end_ms": 4017789,
+    "duration_ms": 10789,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4017.789,
+    "text": "The NC Pelosi. What is she doing down there but she was extreme liberal should she be over here.",
+    "start_ms": 4017789,
+    "end_ms": 4022936,
+    "duration_ms": 5147,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4024.024,
+    "text": "Stooding differently to some other dimension which she seems to care about.",
+    "start_ms": 4024024,
+    "end_ms": 4027024,
+    "duration_ms": 3000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4029.784,
+    "text": "This is a tool in EDA. I don't actually have the answers these things.",
+    "start_ms": 4029784,
+    "end_ms": 4032237,
+    "duration_ms": 2453,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4032.237,
+    "text": "I would then want to dig in. All right, so Nancy Pelosi is a special division.",
+    "start_ms": 4032237,
+    "end_ms": 4035404,
+    "duration_ms": 3167,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4035.404,
+    "text": "In fact, all of these people are special. They differed on this other axis.",
+    "start_ms": 4035404,
+    "end_ms": 4038424,
+    "duration_ms": 3020,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4038.904,
+    "text": "Where's this other principle component? can look at that person component think about it in terms of each of the the bills.",
+    "start_ms": 4038904,
+    "end_ms": 4044664,
+    "duration_ms": 5760,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4044.664,
+    "text": "So, see you in a second. Just like this in Hard Dimensions.",
+    "start_ms": 4044664,
+    "end_ms": 4050536,
+    "duration_ms": 5872,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4052.344,
+    "text": "There's a more structure here. This third dimension, the Z-axis, I don't see as much information.",
+    "start_ms": 4052344,
+    "end_ms": 4058152,
+    "duration_ms": 5808,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4059.544,
+    "text": "But I might want to know, like on this axis, there's people way up here and down here.",
+    "start_ms": 4059544,
+    "end_ms": 4063244,
+    "duration_ms": 3700,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4063.244,
+    "text": "What is it that seems to separate them on this third dimension?",
+    "start_ms": 4063244,
+    "end_ms": 4066044,
+    "duration_ms": 2800,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4066.044,
+    "text": "What collection or cluster of bills is contributing to that?",
+    "start_ms": 4066044,
+    "end_ms": 4069344,
+    "duration_ms": 3300,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4072.312,
+    "text": "It's a really cool way to visualize my data. So again, maybe a high point is you're going to take high-dimensional data.",
+    "start_ms": 4072312,
+    "end_ms": 4077880,
+    "duration_ms": 5568,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4078.616,
+    "text": "like voting that's hard to visualize will apply PCA and you'll be able to put it in two or three dimensions you can play with it.",
+    "start_ms": 4078616,
+    "end_ms": 4084776,
+    "duration_ms": 6160,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4085.176,
+    "text": "But that's sort of the beginning. Again, you're going to often attach other information attributes and try to see if there's structure and how those attributes lay out in that lower dimensional space.",
+    "start_ms": 4085176,
+    "end_ms": 4093176,
+    "duration_ms": 8000,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4094.872,
+    "text": "Now let you reveal something about your data. Do you mind when I explore further?",
+    "start_ms": 4094872,
+    "end_ms": 4099368,
+    "duration_ms": 4496,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4099.608,
+    "text": "Clusters of who's nearby each other, who's not? A little bit further at this because I had a lot of fun.",
+    "start_ms": 4099608,
+    "end_ms": 4107496,
+    "duration_ms": 7888,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4107.496,
+    "text": "You can look at votes, not everyone votes. Some people just like, send up for Congress and then check out, whether old and couldn't participate, maybe sick.",
+    "start_ms": 4107496,
+    "end_ms": 4114056,
+    "duration_ms": 6560,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4114.616,
+    "text": "So you can look at the faction of voting individuals.",
+    "start_ms": 4114616,
+    "end_ms": 4117096,
+    "duration_ms": 2480,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4117.096,
+    "text": "I think I prioritize people voted more often. That you're here.",
+    "start_ms": 4117096,
+    "end_ms": 4122120,
+    "duration_ms": 5024,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4123.736,
+    "text": "Yes, size and revotes so we can see like people down here just didn't vote that often.",
+    "start_ms": 4123736,
+    "end_ms": 4127136,
+    "duration_ms": 3400,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4127.672,
+    "text": "So they're kind of weird probably because they only voted on that one bill that matter to them and everything else was no.",
+    "start_ms": 4127672,
+    "end_ms": 4132072,
+    "duration_ms": 4400,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4132.696,
+    "text": "I made a mistake maybe early on because I considered everything as one yes and then if you didn't vote or you said no I said no.",
+    "start_ms": 4132696,
+    "end_ms": 4139996,
+    "duration_ms": 7300,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4140.568,
+    "text": "Right, so abstention was treated probably incorrectly. So it would seem that perhaps this axis here really is to do more of abstention.",
+    "start_ms": 4140568,
+    "end_ms": 4147568,
+    "duration_ms": 7000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4148.536,
+    "text": "An independence, perhaps they abstain from more bills than they needed to.",
+    "start_ms": 4148536,
+    "end_ms": 4151816,
+    "duration_ms": 3280,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4153.336,
+    "text": "This person has voted 41 times. He voted fairly often.",
+    "start_ms": 4153336,
+    "end_ms": 4156936,
+    "duration_ms": 3600,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4157.336,
+    "text": "on are no pattern aligns with these people down here.",
+    "start_ms": 4157336,
+    "end_ms": 4161520,
+    "duration_ms": 4184,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4167.32,
+    "text": "We'll talk about the principal components themselves. So we can plot wild plot of each of these principal components.",
+    "start_ms": 4167320,
+    "end_ms": 4176462,
+    "duration_ms": 9142,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4176.462,
+    "text": "This is the first principal component. to that principle component?",
+    "start_ms": 4176462,
+    "end_ms": 4182072,
+    "duration_ms": 5610,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4182.072,
+    "text": "So magnitude of these bills. I'll interpret that. Here I've broken down votes by party lines.",
+    "start_ms": 4182072,
+    "end_ms": 4192232,
+    "duration_ms": 10160,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4192.232,
+    "text": "But average over yeses and noes for each of the parties.",
+    "start_ms": 4192232,
+    "end_ms": 4195232,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4195.232,
+    "text": "I get these pictures. So Democrats tend to often vote very yes for Bill 517.",
+    "start_ms": 4195232,
+    "end_ms": 4201232,
+    "duration_ms": 6000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4201.944,
+    "text": "519 you know republicans vote very no for that right so you can see for each these bills which way they went no?",
+    "start_ms": 4201944,
+    "end_ms": 4212840,
+    "duration_ms": 10896,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4213.784,
+    "text": "What do you think these principal components line up with the first principal component?",
+    "start_ms": 4213784,
+    "end_ms": 4216784,
+    "duration_ms": 3000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4218.2,
+    "text": "We just sort of inverse each other so we can expect proportions.",
+    "start_ms": 4218200,
+    "end_ms": 4221200,
+    "duration_ms": 3000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4222.776,
+    "text": "If you look at this first principle component... It's essentially how much you align with Republican voting pattern.",
+    "start_ms": 4222776,
+    "end_ms": 4228680,
+    "duration_ms": 5904,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4231.192,
+    "text": "Are that probably dominated because independence? Just didn't really go to know for a lot of things.",
+    "start_ms": 4231192,
+    "end_ms": 4235944,
+    "duration_ms": 4752,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4236.664,
+    "text": "Hey. So, independent publicans sort of together dominated this behavior voting now.",
+    "start_ms": 4236664,
+    "end_ms": 4242264,
+    "duration_ms": 5600,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4242.776,
+    "text": "We also treat the abstention as a no, so there's another reason even a Democrat that wasn't present would vote no.",
+    "start_ms": 4242776,
+    "end_ms": 4247176,
+    "duration_ms": 4400,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4248.344,
+    "text": "To our dominant principle component, very much aligns with the average voting pattern of a Republican.",
+    "start_ms": 4248344,
+    "end_ms": 4255344,
+    "duration_ms": 7000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4257.496,
+    "text": "So really it was how Republican are you? You have a high value in your first Facebook, Facebook, but it you're very conservative.",
+    "start_ms": 4257496,
+    "end_ms": 4264536,
+    "duration_ms": 7040,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4264.952,
+    "text": "Hello, Daya? liberal in how you vote. But again, the algorithm knew nothing about this, so just had the data.",
+    "start_ms": 4264952,
+    "end_ms": 4272112,
+    "duration_ms": 7160,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4272.76,
+    "text": "and the voting patterns. I'm able to figure out this structure in the voting data.",
+    "start_ms": 4272760,
+    "end_ms": 4279352,
+    "duration_ms": 6592,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4281.176,
+    "text": "There's a bi-plot which I don't often do but we can plot one.",
+    "start_ms": 4281176,
+    "end_ms": 4284176,
+    "duration_ms": 3000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4284.536,
+    "text": "We take each of our principal components. and make a table actually the picture that's going back to slides for a second.",
+    "start_ms": 4284536,
+    "end_ms": 4291256,
+    "duration_ms": 6720,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4294.808,
+    "text": "We did this already. Oh, by fly. Okay. So if I take my v matrix, these are my principal components.",
+    "start_ms": 4294808,
+    "end_ms": 4300904,
+    "duration_ms": 6096,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4300.904,
+    "text": "So this is principal component 1, principal component 2, and so on.",
+    "start_ms": 4300904,
+    "end_ms": 4304344,
+    "duration_ms": 3440,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4304.344,
+    "text": "And I look at each row of this. It corresponds to one of the bills.",
+    "start_ms": 4304344,
+    "end_ms": 4308424,
+    "duration_ms": 4080,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4309.752,
+    "text": "And it's how much that bill positively voting positively or negatively contributes that component.",
+    "start_ms": 4309752,
+    "end_ms": 4315752,
+    "duration_ms": 6000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4317.976,
+    "text": "Which means I can plot... a vector for each one of these entries so this is a vector for bill one a vector for bill two and so on.",
+    "start_ms": 4317976,
+    "end_ms": 4329296,
+    "duration_ms": 11320,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4329.528,
+    "text": "Because it's two numbers, right? So I have the number one, number one, principle point of value one, principle point of value two.",
+    "start_ms": 4329528,
+    "end_ms": 4334808,
+    "duration_ms": 5280,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4335.208,
+    "text": "I'll do one here. So principle point one, principle point two, the corresponding value.",
+    "start_ms": 4335208,
+    "end_ms": 4339608,
+    "duration_ms": 4400,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4340.28,
+    "text": "Those I can plot like this in my plot. And they show me for each bill which direction it's pointing.",
+    "start_ms": 4340280,
+    "end_ms": 4346352,
+    "duration_ms": 6072,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4347.288,
+    "text": "Is that Bill Moore lining with the main, the first prince, point, Axis, the second or the combination of the two?",
+    "start_ms": 4347288,
+    "end_ms": 4353528,
+    "duration_ms": 6240,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4354.68,
+    "text": "Let's go back to our code. So this is the first principal opponent, second principal opponent, Vectors.",
+    "start_ms": 4354680,
+    "end_ms": 4361640,
+    "duration_ms": 6960,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4361.64,
+    "text": "And this is the corresponding bill. And so this is a vector right here in my principal component plot.",
+    "start_ms": 4361640,
+    "end_ms": 4367640,
+    "duration_ms": 6000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4367.64,
+    "text": "At points, you know, this bill was entirely conservative. It would be large or very negative times of a trigger.",
+    "start_ms": 4367640,
+    "end_ms": 4374902,
+    "duration_ms": 7262,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4374.902,
+    "text": "It would be large in this dimension and small in this one.",
+    "start_ms": 4374902,
+    "end_ms": 4377902,
+    "duration_ms": 3000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4377.902,
+    "text": "Perhaps. Twin S. We'd expect these bills are conservative bills.",
+    "start_ms": 4377902,
+    "end_ms": 4385064,
+    "duration_ms": 7162,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4385.56,
+    "text": "These are, you know, neutral bills and these are very liberal bills.",
+    "start_ms": 4385560,
+    "end_ms": 4389160,
+    "duration_ms": 3600,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4389.688,
+    "text": "Can see that from this plot. Another way to visualize the data, understand what the principal components are telling us.",
+    "start_ms": 4389688,
+    "end_ms": 4395976,
+    "duration_ms": 6288,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4399.128,
+    "text": "All right, any questions from what we've done up to this point?",
+    "start_ms": 4399128,
+    "end_ms": 4401628,
+    "duration_ms": 2500,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4401.912,
+    "text": "Here goes one more demo with fashion. Questions? Questions online?",
+    "start_ms": 4401912,
+    "end_ms": 4410496,
+    "duration_ms": 8584,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4411.448,
+    "text": "Nothing big, okay. Let's do fashion. Super fun. So, another source of high-dimensional data you encounter is pictures.",
+    "start_ms": 4411448,
+    "end_ms": 4419616,
+    "duration_ms": 8168,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4420.184,
+    "text": "Right, each pixel is a feature. Right, that is three if we have color pictures.",
+    "start_ms": 4420184,
+    "end_ms": 4425312,
+    "duration_ms": 5128,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4425.312,
+    "text": "Fortunately today we have black and white pictures. Let's look at them.",
+    "start_ms": 4425312,
+    "end_ms": 4429504,
+    "duration_ms": 4192,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4430.136,
+    "text": "This is a famous dataset for machine learning people. We have an image in a label and a corresponds to that picture of a dress, a coat, a t-shirt, a pullover.",
+    "start_ms": 4430136,
+    "end_ms": 4440120,
+    "duration_ms": 9984,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4441.752,
+    "text": "Here's the things we got. These are our pictures. They have labels, this label data, we can go off into classification.",
+    "start_ms": 4441752,
+    "end_ms": 4448344,
+    "duration_ms": 6592,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4448.408,
+    "text": "We're not going to do that. We want to understand what is the structure.",
+    "start_ms": 4448408,
+    "end_ms": 4451519,
+    "duration_ms": 3111,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4451.519,
+    "text": "Does it pull over? Is it more like a shirt or a plow?",
+    "start_ms": 4451519,
+    "end_ms": 4454408,
+    "duration_ms": 2889,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4454.936,
+    "text": "T-shirt. You probably know what that is, but maybe I didn't.",
+    "start_ms": 4454936,
+    "end_ms": 4459475,
+    "duration_ms": 4539,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4459.475,
+    "text": "Maybe I don't understand Tasha. I understand how this space looks.",
+    "start_ms": 4459475,
+    "end_ms": 4463544,
+    "duration_ms": 4069,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4464.216,
+    "text": "Where are these points lit? and look at each class.",
+    "start_ms": 4464216,
+    "end_ms": 4473278,
+    "duration_ms": 9062,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4473.278,
+    "text": "I post this code so you can play with the code and try different samples of it.",
+    "start_ms": 4473278,
+    "end_ms": 4477818,
+    "duration_ms": 4540,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4477.818,
+    "text": "Alright, let's do PCA. So we have... 5,000 by 28 by 28.",
+    "start_ms": 4477818,
+    "end_ms": 4484712,
+    "duration_ms": 6894,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4485.304,
+    "text": "My images, so 5,000 images, they're 28 pixels by 28 pixels.",
+    "start_ms": 4485304,
+    "end_ms": 4488904,
+    "duration_ms": 3600,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4489.24,
+    "text": "Black and white so just how bright is that pixel.",
+    "start_ms": 4489240,
+    "end_ms": 4491740,
+    "duration_ms": 2500,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4492.216,
+    "text": "Re-shape that into 5,784. D is big, 784. Strike off the mean.",
+    "start_ms": 4492216,
+    "end_ms": 4501032,
+    "duration_ms": 8816,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4501.03,
+    "text": "standardizing again because these pixels are in the rough pixel magnifus space.",
+    "start_ms": 4501030,
+    "end_ms": 4504188,
+    "duration_ms": 3158,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4504.188,
+    "text": "I don't need to standardize. What units are about the same?",
+    "start_ms": 4504188,
+    "end_ms": 4507880,
+    "duration_ms": 3692,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4509.432,
+    "text": "I'm gonna run PCI and take the first 50 principal components.",
+    "start_ms": 4509432,
+    "end_ms": 4512392,
+    "duration_ms": 2960,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4512.392,
+    "text": "I'll probably just use one or two, maybe three, but I had 15 in case I wanted to look more.",
+    "start_ms": 4512392,
+    "end_ms": 4516072,
+    "duration_ms": 3680,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4519.576,
+    "text": "I get the explain variance ratios that's built into the PCA object save some time here We'll spy by 100.",
+    "start_ms": 4519576,
+    "end_ms": 4526696,
+    "duration_ms": 7120,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4526.636,
+    "text": "percentage. We can see here there's a little more structure.",
+    "start_ms": 4526636,
+    "end_ms": 4530828,
+    "duration_ms": 4192,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4530.828,
+    "text": "Here's some data in first, second, third, fourth, fifth, sixth, seventh, all we have to 10.",
+    "start_ms": 4530828,
+    "end_ms": 4535474,
+    "duration_ms": 4646,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4535.474,
+    "text": "Interesting. It goes to about 10. Why would it go to about 10?",
+    "start_ms": 4535474,
+    "end_ms": 4539816,
+    "duration_ms": 4342,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4542.104,
+    "text": "Important detail, there are 10 classes, 10 types of clothing here.",
+    "start_ms": 4542104,
+    "end_ms": 4545104,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4545.432,
+    "text": "So in some sense, this data really lives in something close to a 10-dimensional space, but I'd argue t-shirts and pullovers are pretty similar.",
+    "start_ms": 4545432,
+    "end_ms": 4551432,
+    "duration_ms": 6000,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4551.432,
+    "text": "Ankle boots and heels are probably pretty similar, so it kind of decays quickly.",
+    "start_ms": 4551432,
+    "end_ms": 4554872,
+    "duration_ms": 3440,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4555.544,
+    "text": "Maybe this like shirts, pants, shoes, and beyond that, less.",
+    "start_ms": 4555544,
+    "end_ms": 4559544,
+    "duration_ms": 4000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4559.992,
+    "text": "We'll be neat to see what this looks like. So, pull the first three principal components out.",
+    "start_ms": 4559992,
+    "end_ms": 4565852,
+    "duration_ms": 5860,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4567.32,
+    "text": "Visualize the first two. Hello mess! I can cover the data.",
+    "start_ms": 4567320,
+    "end_ms": 4573224,
+    "duration_ms": 5904,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4573.016,
+    "text": "Now we can see the different types of clothing, so trousers or adjacent to coats, interesting dresses.",
+    "start_ms": 4573016,
+    "end_ms": 4579096,
+    "duration_ms": 6080,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4579.576,
+    "text": "Dresses over here. Coats, T-shirts, and then what's over here?",
+    "start_ms": 4579576,
+    "end_ms": 4584328,
+    "duration_ms": 4752,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4584.328,
+    "text": "We've got sneakers, ankle boots, sandals, pullover, that's weird. Shoes and stuff, proper in this dimension.",
+    "start_ms": 4584328,
+    "end_ms": 4590016,
+    "duration_ms": 5688,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4591.0,
+    "text": "So now to see some structure in this data. Good hard dimensions.",
+    "start_ms": 4591000,
+    "end_ms": 4595720,
+    "duration_ms": 4720,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4595.736,
+    "text": "See the more structure. So I need three, maybe four or five dimensions to explain this data.",
+    "start_ms": 4595736,
+    "end_ms": 4605736,
+    "duration_ms": 10000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4605.62,
+    "text": "to like, what are brighter images or darker images and see if it breaks down differently.",
+    "start_ms": 4605620,
+    "end_ms": 4609384,
+    "duration_ms": 3764,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4609.384,
+    "text": "But there is pretty clear structure, like ankle boots seem to live up here, sneakers, and shoes on this side of the axis, the side of the plot.",
+    "start_ms": 4609384,
+    "end_ms": 4619064,
+    "duration_ms": 9680,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4618.941,
+    "text": "I can start to see hey these jeans seem to cluster in how they are expressed in different parts of my plot.",
+    "start_ms": 4618941,
+    "end_ms": 4624344,
+    "duration_ms": 5403,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4624.344,
+    "text": "Now I might want to study these groups of jeans together.",
+    "start_ms": 4624344,
+    "end_ms": 4627717,
+    "duration_ms": 3373,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4627.717,
+    "text": "Right. All right, so this is how we use PCA for for data visualization.",
+    "start_ms": 4627717,
+    "end_ms": 4633274,
+    "duration_ms": 5557,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4633.274,
+    "text": "It is how we take high-dimensional data like images, votes and try to make sense of them in lower dimensions for visualization.",
+    "start_ms": 4633274,
+    "end_ms": 4640899,
+    "duration_ms": 7625,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4640.899,
+    "text": "And again, for some modeling techniques you might do this too, you might apply PCA to simplify your data.",
+    "start_ms": 4640899,
+    "end_ms": 4646210,
+    "duration_ms": 5311,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4646.21,
+    "text": "For linear models, it would not make sense to do that.",
+    "start_ms": 4646210,
+    "end_ms": 4649144,
+    "duration_ms": 2934,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4651.096,
+    "text": "I don't have enough time to explain why, but maybe you can think about it.",
+    "start_ms": 4651096,
+    "end_ms": 4654536,
+    "duration_ms": 3440,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4654.536,
+    "text": "So remember PCA is going to just project my data onto a matrix W and just some onto my principal components.",
+    "start_ms": 4654536,
+    "end_ms": 4661656,
+    "duration_ms": 7120,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4661.656,
+    "text": "And all my linear models are also projecting my data onto matrix.",
+    "start_ms": 4661656,
+    "end_ms": 4664536,
+    "duration_ms": 2880,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4664.536,
+    "text": "So Doing an additional matrix multiply may not do much.",
+    "start_ms": 4664536,
+    "end_ms": 4667683,
+    "duration_ms": 3147,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4667.683,
+    "text": "You can think about why that is. Leave that for an exercise.",
+    "start_ms": 4667683,
+    "end_ms": 4671768,
+    "duration_ms": 4085,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4672.312,
+    "text": "Alright. That is it for PCA. Starting next week, we have just one lecture and then we have Thanksgiving break.",
+    "start_ms": 4672312,
+    "end_ms": 4679144,
+    "duration_ms": 6832,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4679.144,
+    "text": "Next week's lecture is on clustering, which is another really fun algorithm for how we break our data into different groups.",
+    "start_ms": 4679144,
+    "end_ms": 4684944,
+    "duration_ms": 5800,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4684.944,
+    "text": "And then you get a break and we come back and you should all come to lecture.",
+    "start_ms": 4684944,
+    "end_ms": 4689544,
+    "duration_ms": 4600,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4689.544,
+    "text": "We're going to do neural nets for the first time and then we'll do large language models and I will explain how a chat to BT works in all of its detail.",
+    "start_ms": 4689544,
+    "end_ms": 4697544,
+    "duration_ms": 8000,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4697.544,
+    "text": "And so after that lecture, it will no longer be magic.",
+    "start_ms": 4697544,
+    "end_ms": 4700044,
+    "duration_ms": 2500,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4700.044,
+    "text": "So the last two lectures should be a lot of fun.",
+    "start_ms": 4700044,
+    "end_ms": 4702044,
+    "duration_ms": 2000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4702.68,
+    "text": "Have a great Thanksgiving. I look forward to seeing a few of you on Tuesday and then hopefully the rest of you.",
+    "start_ms": 4702680,
+    "end_ms": 4708180,
+    "duration_ms": 5500,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4708.18,
+    "text": "The week after. Bye.",
+    "start_ms": 4708180,
+    "end_ms": 4710680,
+    "duration_ms": 2500,
+    "word_count": 4,
+    "avg_confidence": 90
+  }
+]

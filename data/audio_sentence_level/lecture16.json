@@ -1,0 +1,4709 @@
+[
+  {
+    "timestamp": 8.12,
+    "text": "Good morning, NATO 100, another lecture. This is going to be a very fun lecture and kind of useful and is going to be a little bit practical.",
+    "start_ms": 8120,
+    "end_ms": 17597,
+    "duration_ms": 9477,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 17.597,
+    "text": "So you're going to use all of these topics that we're going to teach today a lot in future projects on homeworks that you're going to work on.",
+    "start_ms": 17597,
+    "end_ms": 24520,
+    "duration_ms": 6923,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 25.16,
+    "text": "So I'll go ahead and before I start the lecture, I'll just talk a little bit about some midterm logistics that's happening tomorrow.",
+    "start_ms": 25160,
+    "end_ms": 32200,
+    "duration_ms": 7040,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 32.2,
+    "text": "You all know that midterm is going to be tomorrow, You're sitting assignment has been emailed to you, so you should know the room or the seat number that is assigned to you.",
+    "start_ms": 32200,
+    "end_ms": 46040,
+    "duration_ms": 13840,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 46.04,
+    "text": "So make sure that you arrive at right at 7pm so that you have enough time to find your seat and also put away your stuff and then be able to receive the exam paper on time.",
+    "start_ms": 46040,
+    "end_ms": 58280,
+    "duration_ms": 12240,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 58.28,
+    "text": "Bring all the writing utensils that you want, bring your CalID and make sure that you We don't bring your calculator or any cheat sheet or whatnot, because we're going to be providing a reference sheet to you.",
+    "start_ms": 58280,
+    "end_ms": 70040,
+    "duration_ms": 11760,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 70.04,
+    "text": "We also posted a reference sheet for the midterm. So if you want to study the things that you need to remember, you will see in the reference sheet on the exam or in the midterm tomorrow.",
+    "start_ms": 70040,
+    "end_ms": 80080,
+    "duration_ms": 10040,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 80.08,
+    "text": "Take a look at the reference sheet that was posted.",
+    "start_ms": 80080,
+    "end_ms": 83120,
+    "duration_ms": 3040,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 83.12,
+    "text": "I think both on Ed and is also on the website.",
+    "start_ms": 83120,
+    "end_ms": 85720,
+    "duration_ms": 2600,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 85.72,
+    "text": "So that is available to you. Some other logistics about the exam is that you are allowed to use restroom.",
+    "start_ms": 85720,
+    "end_ms": 92840,
+    "duration_ms": 7120,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 92.84,
+    "text": "If you want to, the logistics is that you would come to the Proctor, you would give your exam, your CalID, and also your phone.",
+    "start_ms": 92840,
+    "end_ms": 102360,
+    "duration_ms": 9520,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 102.36,
+    "text": "If you have your phone on you, and then you will be able to sign out.",
+    "start_ms": 102360,
+    "end_ms": 106480,
+    "duration_ms": 4120,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 106.48,
+    "text": "So you can go and then come back, grab your exam paper again, and go to your seat.",
+    "start_ms": 106480,
+    "end_ms": 110720,
+    "duration_ms": 4240,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 110.72,
+    "text": "We are asking you that if you have any questions during the exam, raise your hand.",
+    "start_ms": 110720,
+    "end_ms": 116159,
+    "duration_ms": 5439,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 116.159,
+    "text": "One of the Proctors or one of the professors is going to come to you.",
+    "start_ms": 116159,
+    "end_ms": 119600,
+    "duration_ms": 3441,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 119.6,
+    "text": "We will actually be in most of the rooms, I mean me and Professor Gonzales, and you should be able to ask us questions.",
+    "start_ms": 119600,
+    "end_ms": 128520,
+    "duration_ms": 8920,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 128.52,
+    "text": "Any question that you ask, the proctor is going to ask instructors and then we'll decide whether we want to make a class wide or broad clarification or not.",
+    "start_ms": 128520,
+    "end_ms": 140120,
+    "duration_ms": 11600,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 140.12,
+    "text": "If you're not making clarification, that means that the response to your question is on the exam or is the response to the question that you're writing.",
+    "start_ms": 140120,
+    "end_ms": 149560,
+    "duration_ms": 9440,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 149.56,
+    "text": "If we, in fact, find any issues based on your question, we will make a classified clarification that's going to be on the screen so you should be able to see all the clarifications that we're making classified on the screen as well.",
+    "start_ms": 149560,
+    "end_ms": 165000,
+    "duration_ms": 15440,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 165.592,
+    "text": "We are asking you to not leave the exam room in the last 10 minutes, so you're free to leave beforehand, but in the last 10 minutes we want everyone to be able to concentrate on the exam and not be distracted by a lot of people leaving.",
+    "start_ms": 165592,
+    "end_ms": 179592,
+    "duration_ms": 14000,
+    "word_count": 48,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 179.592,
+    "text": "We are also not letting people to start the exam one hour after the initial start time.",
+    "start_ms": 179592,
+    "end_ms": 185912,
+    "duration_ms": 6320,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 185.912,
+    "text": "Because there might be cases that the students might finish early and then leave and then students taking the exam after the first person left the room is not going to be possible.",
+    "start_ms": 185912,
+    "end_ms": 195351,
+    "duration_ms": 9439,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 195.351,
+    "text": "So that's why we have the hard cutoff of if you arrive late more than an hour into the exam, you're not able to take the exam.",
+    "start_ms": 195351,
+    "end_ms": 201992,
+    "duration_ms": 6641,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 201.992,
+    "text": "If you have any questions, please feel free to reach out to us through the meat term accommodation form there is a specific me term kind of question, Google form that you can fill out and let us know if you have any questions or concerns about the exam.",
+    "start_ms": 201992,
+    "end_ms": 216992,
+    "duration_ms": 15000,
+    "word_count": 49,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 216.992,
+    "text": "Otherwise, it's going to be a really smooth sailing. Everything is set up ready to go.",
+    "start_ms": 216992,
+    "end_ms": 221312,
+    "duration_ms": 4320,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 221.312,
+    "text": "You're all going to be doing good and don't stress too much about it.",
+    "start_ms": 221312,
+    "end_ms": 225952,
+    "duration_ms": 4640,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 225.952,
+    "text": "It's just one of those exams. And as long as you have done some of the homeworks, then you should be able to ace the me term.",
+    "start_ms": 225952,
+    "end_ms": 234312,
+    "duration_ms": 8360,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 234.312,
+    "text": "I am also holding an additional office hour today, 1 to 2 p.m.",
+    "start_ms": 234312,
+    "end_ms": 238587,
+    "duration_ms": 4275,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 238.587,
+    "text": "It's in my office, so the 775, next third to Professor Gonzales' office.",
+    "start_ms": 238587,
+    "end_ms": 244552,
+    "duration_ms": 5965,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 244.552,
+    "text": "And he's also holding an office hour, I think, 1 to 3 today as well.",
+    "start_ms": 244552,
+    "end_ms": 248552,
+    "duration_ms": 4000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 248.552,
+    "text": "So we're going to be concurrently holding office hours in case there are questions that we can respond to before the midterm tomorrow.",
+    "start_ms": 248552,
+    "end_ms": 255552,
+    "duration_ms": 7000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 255.552,
+    "text": "Okay. That out of a way. Today's topic is going to be on cross validation and regularization.",
+    "start_ms": 255552,
+    "end_ms": 261752,
+    "duration_ms": 6200,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 261.752,
+    "text": "So where we were last time was that we left you with two main questions.",
+    "start_ms": 261752,
+    "end_ms": 268071,
+    "duration_ms": 6319,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 268.071,
+    "text": "We basically told you that there is a concept of scene data set or data points and then unseen data points that we train on the scene data points, we call that a training set and then we test the model efficiency or accuracy or mean square error or root mean square error on the unseen data set and then we would report the model accuracy based on that unseen data set.",
+    "start_ms": 268071,
+    "end_ms": 291032,
+    "duration_ms": 22961,
+    "word_count": 72,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 291.032,
+    "text": "And the concept of what is seen, what is unseen, and how we can come up with a way to kind of have a sense of what the general data that we have not trained on is going to look like.",
+    "start_ms": 291032,
+    "end_ms": 303112,
+    "duration_ms": 12080,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 303.112,
+    "text": "It's going to be something that we're going to talk about today.",
+    "start_ms": 303112,
+    "end_ms": 305592,
+    "duration_ms": 2480,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 305.912,
+    "text": "We're also going to talk a little bit about model complexity.",
+    "start_ms": 305912,
+    "end_ms": 308512,
+    "duration_ms": 2600,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 308.512,
+    "text": "That's the thing that we started seeing in the previous lecture, not previous lecture, on lecture 14, which we did talk about this plot.",
+    "start_ms": 308512,
+    "end_ms": 317312,
+    "duration_ms": 8800,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 317.312,
+    "text": "This was the plot towards the end of the last lecture.",
+    "start_ms": 317312,
+    "end_ms": 319912,
+    "duration_ms": 2600,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 319.912,
+    "text": "We said that as the model complexity increases, the training error is going to decrease because the model's capacity in order to model for the pattern in the data is going to substantially increase.",
+    "start_ms": 319912,
+    "end_ms": 335112,
+    "duration_ms": 15200,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 335.112,
+    "text": "So the training error is going to decrease always as the model complex to the increases.",
+    "start_ms": 335112,
+    "end_ms": 340112,
+    "duration_ms": 5000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 340.112,
+    "text": "But the other thing that is going to happen at the same time is that the variance is going to keep increasing.",
+    "start_ms": 340112,
+    "end_ms": 347112,
+    "duration_ms": 7000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 347.112,
+    "text": "The variance is going to keep increasing because there is going to be a lot of different moving parts that with the small changes in one of those moving parts then substantially the model prediction is going to change.",
+    "start_ms": 347112,
+    "end_ms": 358112,
+    "duration_ms": 11000,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 358.112,
+    "text": "as the model prediction is going to change, then that is going to mean that the variance in prediction is going to be very high.",
+    "start_ms": 358112,
+    "end_ms": 365632,
+    "duration_ms": 7520,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 365.632,
+    "text": "So that's the concept of underfitting versus overfitting. So when the mother complexity is a small meaning that the model is simple, we have not captured the model, the pattern in our data says that we're underfitting the actual underlying trend in the data, but as the model is getting complicated and as the variance is going to increase, we would say that we overfitted to the training data.",
+    "start_ms": 365632,
+    "end_ms": 390311,
+    "duration_ms": 24679,
+    "word_count": 69,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 390.311,
+    "text": "We may have fitted to the noise in the training data, not the actual trend in the data.",
+    "start_ms": 390311,
+    "end_ms": 395872,
+    "duration_ms": 5561,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 395.872,
+    "text": "So our model is not going to be generalizable. Generalizable, it means that if you give me an unseen dataset, because I did not fit to the noise in my training data, I'm able to generalize and I'm able to make equally good production on the unseen dataset.",
+    "start_ms": 395872,
+    "end_ms": 413792,
+    "duration_ms": 17920,
+    "word_count": 48,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 413.792,
+    "text": "So that's kind of the way that we're seeing underfitting versus overfitting.",
+    "start_ms": 413792,
+    "end_ms": 419832,
+    "duration_ms": 6040,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 419.832,
+    "text": "And our optimum point is going to be that we want to be at this suite of spot, meaning that we don't want to be underfitting, we don't want to be overfitting.",
+    "start_ms": 419832,
+    "end_ms": 427432,
+    "duration_ms": 7600,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 427.432,
+    "text": "We want to have a reasonable training error. So this is the reasonable training error that we're at.",
+    "start_ms": 427432,
+    "end_ms": 432712,
+    "duration_ms": 5280,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 432.712,
+    "text": "And then we also want to have some variance, but not high variance.",
+    "start_ms": 432712,
+    "end_ms": 436592,
+    "duration_ms": 3880,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 436.592,
+    "text": "So that's the topic that we're going to talk about today, but in the second half of today's lecture.",
+    "start_ms": 436592,
+    "end_ms": 441672,
+    "duration_ms": 5080,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 441.976,
+    "text": "But initially I want to talk a little bit about cross validation in the first half.",
+    "start_ms": 441976,
+    "end_ms": 447256,
+    "duration_ms": 5280,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 447.256,
+    "text": "Cross validation is a concept that you need in order to make sure that how do you do model evaluation in the first place.",
+    "start_ms": 447256,
+    "end_ms": 455616,
+    "duration_ms": 8360,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 455.616,
+    "text": "If you have a training data that is provided to you, how can you make sure that you can kind of simulate for unseen data set and then use those data sets or data points in order to evaluate the efficiency of the model.",
+    "start_ms": 455616,
+    "end_ms": 468856,
+    "duration_ms": 13240,
+    "word_count": 44,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 468.856,
+    "text": "And then again, in the second half, I'm going to talk about how to control for model complexity and modern considerations for model complexity, which is the topic that is referred to as regularization.",
+    "start_ms": 468856,
+    "end_ms": 479855,
+    "duration_ms": 10999,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 479.855,
+    "text": "So let's go into the first thing that we need to know with cross with the cross validation concept.",
+    "start_ms": 479855,
+    "end_ms": 486956,
+    "duration_ms": 7101,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 486.956,
+    "text": "And that's that some terminology that we need to get familiar with and also know the process of the actual training that's going to be in every data science lifecycle that you're going to train any model.",
+    "start_ms": 486956,
+    "end_ms": 498756,
+    "duration_ms": 11800,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 498.756,
+    "text": "and report model performance on. So this is what we had seen in a previous lecture.",
+    "start_ms": 498756,
+    "end_ms": 504816,
+    "duration_ms": 6060,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 504.816,
+    "text": "So we had seen that, okay, if we have a vehicle dataset and we want to go ahead and model for ModperGallon having some information about the cars, for example, here we had horsepower as the feature.",
+    "start_ms": 504816,
+    "end_ms": 520776,
+    "duration_ms": 15960,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 520.776,
+    "text": "And if we go ahead and say that, oh, I have five data points here, these are the five data points that I have.",
+    "start_ms": 520776,
+    "end_ms": 526856,
+    "duration_ms": 6080,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 526.856,
+    "text": "And if I go ahead and train a complex model, And a complex model in this case could be that, okay, with five data points, even a degree four or triple enumil is going to be a complex model, because you only have five data points.",
+    "start_ms": 526856,
+    "end_ms": 541256,
+    "duration_ms": 14400,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 541.256,
+    "text": "So technically a degree, triple enumil, or a degree four, whole enumil can perfectly match the entire five data points that you have and pass through them perfectly.",
+    "start_ms": 541256,
+    "end_ms": 551416,
+    "duration_ms": 10160,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 551.416,
+    "text": "Which is what you're seeing and the left happening that the model is so complex that it tried to actually fit perfectly to the data And it can actually do that because it's complex.",
+    "start_ms": 551416,
+    "end_ms": 561815,
+    "duration_ms": 10399,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 561.815,
+    "text": "And then what's happening on the other hand is that, if we go ahead and send the entire data set that we have in order to do testing and see how the model is performing, you can see that that model is just nonsense.",
+    "start_ms": 561815,
+    "end_ms": 574696,
+    "duration_ms": 12881,
+    "word_count": 44,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 574.696,
+    "text": "That's not the pattern in our data set. So that's an example that we're saying that the model has overfitted to the training data, but is not generalizable on the unseen data set.",
+    "start_ms": 574696,
+    "end_ms": 585936,
+    "duration_ms": 11240,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 585.936,
+    "text": "And the unseen data set, in this case, is anything that we have not trained on, which is the rest of the data points that we had.",
+    "start_ms": 585936,
+    "end_ms": 593616,
+    "duration_ms": 7680,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 593.616,
+    "text": "So in order to find out how we can model for the test data, what we can do is we can separate out a portion of our data set.",
+    "start_ms": 593616,
+    "end_ms": 601856,
+    "duration_ms": 8240,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 601.856,
+    "text": "And we would say that that's my test data. That's the data that I'm going to simulate as an unseen dataset.",
+    "start_ms": 601856,
+    "end_ms": 609096,
+    "duration_ms": 7240,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 609.096,
+    "text": "And I'm going to use it as an external dataset.",
+    "start_ms": 609096,
+    "end_ms": 612896,
+    "duration_ms": 3800,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 612.896,
+    "text": "And I will do the training on the remainder of the data points that I have.",
+    "start_ms": 612896,
+    "end_ms": 617536,
+    "duration_ms": 4640,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 618.04,
+    "text": "So our training pipeline is going to be that we're going to separate out a test set.",
+    "start_ms": 618040,
+    "end_ms": 622840,
+    "duration_ms": 4800,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 622.84,
+    "text": "We would say that we do not consider this test set during any part of our training.",
+    "start_ms": 622840,
+    "end_ms": 627640,
+    "duration_ms": 4800,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 627.64,
+    "text": "So any decision that we're making during the training, feature engineering, optimization, during none of those stages, we're going to consider this test set.",
+    "start_ms": 627640,
+    "end_ms": 637080,
+    "duration_ms": 9440,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 637.08,
+    "text": "But we do it on the rest of the data points that we have.",
+    "start_ms": 637080,
+    "end_ms": 640360,
+    "duration_ms": 3280,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 640.36,
+    "text": "And then what we'll do is afterwards, after we're done with the entire training, what we'll do is we'll test it on the test set only once.",
+    "start_ms": 640360,
+    "end_ms": 649960,
+    "duration_ms": 9600,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 649.96,
+    "text": "The reason that it's only once is that we're under the assumption or obligation that based on the performance of the model on the test set, we cannot make any changes in the training because otherwise, the model or the modeling process have used some information about the test set in its process and we don't want that.",
+    "start_ms": 649960,
+    "end_ms": 668840,
+    "duration_ms": 18880,
+    "word_count": 58,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 669.32,
+    "text": "In order to make sure that it's an entirely held out set, it just needs to make sure that we only test or use the test set only once.",
+    "start_ms": 669320,
+    "end_ms": 678280,
+    "duration_ms": 8960,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 678.28,
+    "text": "And then we will basically report it, report the accuracy, MSE or RMSC or whatever that evaluation metric is, and this test set and then we'll be done with our training.",
+    "start_ms": 678280,
+    "end_ms": 688680,
+    "duration_ms": 10400,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 688.68,
+    "text": "So the pipeline is going to look something like this.",
+    "start_ms": 688680,
+    "end_ms": 691080,
+    "duration_ms": 2400,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 691.08,
+    "text": "You have an entire data set that is provided to you as a data set that you're going to be doing modeling on because there is no way for you to gather additional data points with the same kind of structure that are given that is giving to you in the in the data set.",
+    "start_ms": 691080,
+    "end_ms": 706840,
+    "duration_ms": 15760,
+    "word_count": 55,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 707.079,
+    "text": "Then we will go ahead and say that I'm going to separate out its set.",
+    "start_ms": 707079,
+    "end_ms": 710690,
+    "duration_ms": 3611,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 710.69,
+    "text": "I'm going to call that a test set and I'm going to use the remainder as a training set.",
+    "start_ms": 710690,
+    "end_ms": 715264,
+    "duration_ms": 4574,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 715.264,
+    "text": "I'll train in the training set and then I'll test it on the test set and then I'll report that accuracy.",
+    "start_ms": 715264,
+    "end_ms": 720320,
+    "duration_ms": 5056,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 720.32,
+    "text": "There's an actual function trained test to split an SK learned that will do that automatically for us.",
+    "start_ms": 720320,
+    "end_ms": 726200,
+    "duration_ms": 5880,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 726.2,
+    "text": "That we don't need to be worried about how we do this split.",
+    "start_ms": 726200,
+    "end_ms": 729200,
+    "duration_ms": 3000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 729.592,
+    "text": "What we just need to do is we need to provide the design matrix we need to provide the why protection vector or the target variables and or the target values and then we will define what percentage of our data points need to be in the in the validation in the test set and it will go ahead and split it for us as well.",
+    "start_ms": 729592,
+    "end_ms": 749912,
+    "duration_ms": 20320,
+    "word_count": 66,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 749.992,
+    "text": "It will try to shuffle the data points initially and then it will randomly separate out that x percentage of data points that be one.",
+    "start_ms": 749992,
+    "end_ms": 758152,
+    "duration_ms": 8160,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 758.152,
+    "text": "and I'm going to quickly show you how it looks like.",
+    "start_ms": 758152,
+    "end_ms": 763152,
+    "duration_ms": 5000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 763.224,
+    "text": "some imported statements here. This is the data set initially, the vague ill data set from C born.",
+    "start_ms": 763224,
+    "end_ms": 770504,
+    "duration_ms": 7280,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 770.504,
+    "text": "It has a bunch of different features, but we're going to only be concerned with horse power and different polynomial powers of horse power and also mile per gallon is going to be our target.",
+    "start_ms": 770504,
+    "end_ms": 780824,
+    "duration_ms": 10320,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 780.824,
+    "text": "So in order to do that, I'm going to create my design matrix.",
+    "start_ms": 780824,
+    "end_ms": 783824,
+    "duration_ms": 3000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 783.824,
+    "text": "I'm going to call this x, right, is only going to have horse power initially as one column.",
+    "start_ms": 783824,
+    "end_ms": 790264,
+    "duration_ms": 6440,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 790.264,
+    "text": "And then I'll keep adding additional columns of horsepower to the power of two, to the power of three, to the power of four, and I will calculate all of those polynomial factors, right?",
+    "start_ms": 790264,
+    "end_ms": 800504,
+    "duration_ms": 10240,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 800.504,
+    "text": "So right now, then my design matrix is going to have horsepower, horsepower to the power of two, three, four.",
+    "start_ms": 800504,
+    "end_ms": 806344,
+    "duration_ms": 5840,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 806.344,
+    "text": "So I have four different features that I'm going to use.",
+    "start_ms": 806344,
+    "end_ms": 808904,
+    "duration_ms": 2560,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 808.904,
+    "text": "And obviously, I'm going to use my per gallon column as the only target variable that I'm going to do prediction on.",
+    "start_ms": 808904,
+    "end_ms": 816424,
+    "duration_ms": 7520,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 816.424,
+    "text": "I'm storing it in the Vi vector, We're kind of using the same notation that you had seen in all of the modeling lectures so far.",
+    "start_ms": 816424,
+    "end_ms": 822344,
+    "duration_ms": 5920,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 823.096,
+    "text": "So I said that there is a function train test a split in SK learned that can do that a split for us.",
+    "start_ms": 823096,
+    "end_ms": 828496,
+    "duration_ms": 5400,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 828.896,
+    "text": "So let me actually use it to see how it's going to look like.",
+    "start_ms": 828896,
+    "end_ms": 833396,
+    "duration_ms": 4500,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 833.596,
+    "text": "So we would say train test the split. I'm going to pass my x.",
+    "start_ms": 833596,
+    "end_ms": 837651,
+    "duration_ms": 4055,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 837.651,
+    "text": "I'm going to pass y. So you pass both of them because you just want to make sure that as it this size, whatever row is going to be in the test set or not, it moves both the features in that row and also the target variable in that row.",
+    "start_ms": 837651,
+    "end_ms": 851396,
+    "duration_ms": 13745,
+    "word_count": 51,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 851.396,
+    "text": "right so that there is always one to one matching between what goes in the test set and what the stays in the in the in the training set.",
+    "start_ms": 851396,
+    "end_ms": 861396,
+    "duration_ms": 10000,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 861.396,
+    "text": "There are some other parameters that here we can set.",
+    "start_ms": 861396,
+    "end_ms": 864428,
+    "duration_ms": 3032,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 864.428,
+    "text": "Here I can say that, okay, my test size is going to be 20%.",
+    "start_ms": 864428,
+    "end_ms": 870301,
+    "duration_ms": 5873,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 870.301,
+    "text": "So that's the percent edge of this additional kind of portion that I'm going to extract from my training data or from this data frame of x and y that I have.",
+    "start_ms": 870301,
+    "end_ms": 882264,
+    "duration_ms": 11963,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 883.064,
+    "text": "The other thing that we can do is we could say that, okay, I know that you're going to randomly is split my training data into two pieces.",
+    "start_ms": 883064,
+    "end_ms": 890943,
+    "duration_ms": 7879,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 890.943,
+    "text": "But I want you to do it in a way that it's replicable.",
+    "start_ms": 890943,
+    "end_ms": 894104,
+    "duration_ms": 3161,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 894.104,
+    "text": "So the next time that I come and run this notebook, I get exactly the same training data and the same test data.",
+    "start_ms": 894104,
+    "end_ms": 900624,
+    "duration_ms": 6520,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 900.624,
+    "text": "I want to get the same as splits. So in order to control for that, a lot of times, we would say that we're going to say that my random state is going to be a fixed kind of integer, that that integer is going to be a fixed integer.",
+    "start_ms": 900624,
+    "end_ms": 917464,
+    "duration_ms": 16840,
+    "word_count": 50,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 917.463,
+    "text": "start with the random seed of 100. And this is kind of outside of the scope for data 100 how we generate random numbers but just know that this random function is going to basically take a seed take an integer and just based on that integer create a bunch of different indices or different values and those values are going to be used for us to decide which row is going to be in or out in or out.",
+    "start_ms": 917463,
+    "end_ms": 942176,
+    "duration_ms": 24713,
+    "word_count": 80,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 942.176,
+    "text": "So those are random kind of values that we're going to create.",
+    "start_ms": 942176,
+    "end_ms": 945216,
+    "duration_ms": 3040,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 945.72,
+    "text": "So here I use just 100 as random so that we can replicate this process.",
+    "start_ms": 945720,
+    "end_ms": 951480,
+    "duration_ms": 5760,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 951.48,
+    "text": "So let's see the output. So the output here is telling me that the first thing that is generated has 313 rows and four columns.",
+    "start_ms": 951480,
+    "end_ms": 962680,
+    "duration_ms": 11200,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 962.68,
+    "text": "It kind of gives me a sense that it's a portion of my training data or my design matrix because it has four columns looking at all of those four features that I have.",
+    "start_ms": 962680,
+    "end_ms": 973480,
+    "duration_ms": 10800,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 973.48,
+    "text": "And you can see that it has multiple different rows.",
+    "start_ms": 973480,
+    "end_ms": 975780,
+    "duration_ms": 2300,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 975.78,
+    "text": "And the row, for example, with label 72s remaining, with 89, with 92, these are our remaining.",
+    "start_ms": 975780,
+    "end_ms": 983500,
+    "duration_ms": 7720,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 983.5,
+    "text": "And you can kind of see that there is also another data frame that's created here again, but now this time with 79 rows.",
+    "start_ms": 983500,
+    "end_ms": 991820,
+    "duration_ms": 8320,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 991.82,
+    "text": "And you can kind of also see that we also have the same kind of split on the Y values.",
+    "start_ms": 991820,
+    "end_ms": 998660,
+    "duration_ms": 6840,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 998.66,
+    "text": "So the Y value was my pergallance. So that's the same series object.",
+    "start_ms": 998660,
+    "end_ms": 1002940,
+    "duration_ms": 4280,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1002.94,
+    "text": "So it's basically telling me that, oh, for the same bros, remember, it was 728992, these are the corresponding by values.",
+    "start_ms": 1002940,
+    "end_ms": 1011380,
+    "duration_ms": 8440,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1011.38,
+    "text": "So the number of them is again, 313. And there's also another one that is 79.",
+    "start_ms": 1011380,
+    "end_ms": 1017340,
+    "duration_ms": 5960,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1017.34,
+    "text": "So it looks like that it's trying to split. So the ratio between them is 8220.",
+    "start_ms": 1017340,
+    "end_ms": 1022300,
+    "duration_ms": 4960,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1022.3,
+    "text": "So that's kind of splitting my data set into two pieces.",
+    "start_ms": 1022300,
+    "end_ms": 1027180,
+    "duration_ms": 4880,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1027.18,
+    "text": "But what I want to do is I want to be able to store these into variables that then I can use those variables to do the model training.",
+    "start_ms": 1027180,
+    "end_ms": 1033859,
+    "duration_ms": 6679,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1033.859,
+    "text": "So I will basically go ahead and call this that, okay, the first thing that you returned to me, it sounds like that it was the training data frame.",
+    "start_ms": 1033859,
+    "end_ms": 1041619,
+    "duration_ms": 7760,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1041.619,
+    "text": "So I'm gonna call that X underscore train. The second thing, that was also a form of a data frame.",
+    "start_ms": 1041619,
+    "end_ms": 1047619,
+    "duration_ms": 6000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1047.619,
+    "text": "It sounds like that that was the 20% that I wanted to split out.",
+    "start_ms": 1047619,
+    "end_ms": 1052419,
+    "duration_ms": 4800,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1052.419,
+    "text": "So I'm gonna call that X underscore test and then also Y train and also Y-HES.",
+    "start_ms": 1052419,
+    "end_ms": 1060020,
+    "duration_ms": 7601,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1060.02,
+    "text": "And I'm gonna store that and we can basically take a look at the sizes.",
+    "start_ms": 1060020,
+    "end_ms": 1065020,
+    "duration_ms": 5000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1065.02,
+    "text": "Originally the size of the dataset was 392 data points, 80% went to training, 20% went to test, so now I have my trained test displayed automatically for me.",
+    "start_ms": 1065020,
+    "end_ms": 1076460,
+    "duration_ms": 11440,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1076.46,
+    "text": "This is what you can use in practice as well.",
+    "start_ms": 1076460,
+    "end_ms": 1079140,
+    "duration_ms": 2680,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1079.14,
+    "text": "Every time that you have a dataset, you will for now, or at the initial point, you would separate out your test set and then you will go through the modeling process on the training set.",
+    "start_ms": 1079140,
+    "end_ms": 1090220,
+    "duration_ms": 11080,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1090.84,
+    "text": "So I'll go ahead and train a linear regression model.",
+    "start_ms": 1090840,
+    "end_ms": 1094040,
+    "duration_ms": 3200,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1094.04,
+    "text": "So I will say that I have a model that is a form linear regression.",
+    "start_ms": 1094040,
+    "end_ms": 1100040,
+    "duration_ms": 6000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1100.408,
+    "text": "and then i'll say that model that . Fit and notice that here I'm going to only use X-Train and Y-Train.",
+    "start_ms": 1100408,
+    "end_ms": 1108120,
+    "duration_ms": 7712,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1108.76,
+    "text": "So I don't need to split anymore. Now I have X-Train.",
+    "start_ms": 1108760,
+    "end_ms": 1112426,
+    "duration_ms": 3666,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1112.426,
+    "text": "Now I have Y-Train so I can directly use that.",
+    "start_ms": 1112426,
+    "end_ms": 1115760,
+    "duration_ms": 3334,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1116.6,
+    "text": "Oops. the Sorry, I'm dead linear regression. Okay. So I have the linear regression object.",
+    "start_ms": 1116600,
+    "end_ms": 1134944,
+    "duration_ms": 18344,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1134.944,
+    "text": "Then I'll go ahead and calculate the mean scored error between the training data, training labels, and also the training predictions that I have for all of those increase.",
+    "start_ms": 1134944,
+    "end_ms": 1145252,
+    "duration_ms": 10308,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1145.252,
+    "text": "So that's the training error and then I'll do the same thing on the test data.",
+    "start_ms": 1145252,
+    "end_ms": 1149544,
+    "duration_ms": 4292,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1149.544,
+    "text": "So Y test and also the prediction on those test data points that I had.",
+    "start_ms": 1149544,
+    "end_ms": 1155144,
+    "duration_ms": 5600,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1155.144,
+    "text": "So I'll get the X-Train Y-Train and you can see that my training error is going to be 18 units and my test error is now going to be 21.",
+    "start_ms": 1155144,
+    "end_ms": 1163464,
+    "duration_ms": 8320,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1164.056,
+    "text": "So what do I do if I'm not happy with 21?",
+    "start_ms": 1164056,
+    "end_ms": 1166500,
+    "duration_ms": 2444,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1166.5,
+    "text": "What do you think I can do? Can I go back and change anything in my model and then come back and see if I get a better results.",
+    "start_ms": 1166500,
+    "end_ms": 1175346,
+    "duration_ms": 8846,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1175.346,
+    "text": "So for example, I think horsepower to the power of five is that going to be acceptable?",
+    "start_ms": 1175346,
+    "end_ms": 1179880,
+    "duration_ms": 4534,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1181.72,
+    "text": "It's not going to be acceptable there is no decision or refinement and modeling i can do after i do the testing on the test data if you're not happy with the test data You can do anything about it so that's the issue with the test data it always needs to be a hold out that you cannot make any decision or cannot refine anything in your modeling process after seeing the performance on the test data.",
+    "start_ms": 1181720,
+    "end_ms": 1206220,
+    "duration_ms": 24500,
+    "word_count": 78,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1206.712,
+    "text": "So, what we will do with this issue is that, again, if we're not happy, we're stuck.",
+    "start_ms": 1206712,
+    "end_ms": 1213992,
+    "duration_ms": 7280,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1213.992,
+    "text": "But the other thing that we can do is we can say that what if I create an internal test set?",
+    "start_ms": 1213992,
+    "end_ms": 1220312,
+    "duration_ms": 6320,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1220.312,
+    "text": "So I can make decisions, I can take a look at the performance of the model and the internal test set.",
+    "start_ms": 1220312,
+    "end_ms": 1226312,
+    "duration_ms": 6000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1226.312,
+    "text": "And if I was not happy, I'll go ahead and do something with my modeling process, I change features, I do more feature engineering, come back tested and the internal test set.",
+    "start_ms": 1226312,
+    "end_ms": 1235592,
+    "duration_ms": 9280,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1235.592,
+    "text": "And I'll do this cycle as many times as I want to, up until the point that I'm happy with the performance and my internal test data.",
+    "start_ms": 1235592,
+    "end_ms": 1244072,
+    "duration_ms": 8480,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1244.472,
+    "text": "Once I'm happy with the performance on the internal test data, then I'll export the model, then I'll only test it on the actual test data only once.",
+    "start_ms": 1244472,
+    "end_ms": 1253552,
+    "duration_ms": 9080,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1253.552,
+    "text": "So we call this internal test data a validation set.",
+    "start_ms": 1253552,
+    "end_ms": 1257472,
+    "duration_ms": 3920,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1257.472,
+    "text": "So we use it for validating our modeling process, and we can actually do inference on it or test on it multiple times, because it is part of our training data.",
+    "start_ms": 1257472,
+    "end_ms": 1267432,
+    "duration_ms": 9960,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1267.432,
+    "text": "And then we will go ahead and test it on the test data only once.",
+    "start_ms": 1267432,
+    "end_ms": 1270992,
+    "duration_ms": 3560,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1270.992,
+    "text": "So our modeling pipeline right now is going to be that, Okay, have the entire test, the entire full data set that's given to me?",
+    "start_ms": 1270992,
+    "end_ms": 1278632,
+    "duration_ms": 7640,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1279.128,
+    "text": "I'm gonna first go ahead and make your split between training and test and now my training data can further be split into the actual training data which is you can call it as training mini and you can also have a separate split of validations that or internal test set.",
+    "start_ms": 1279128,
+    "end_ms": 1297128,
+    "duration_ms": 18000,
+    "word_count": 51,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1297.592,
+    "text": "Okay, so let's go ahead and see how it looks like if I want to do that.",
+    "start_ms": 1297592,
+    "end_ms": 1302232,
+    "duration_ms": 4640,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1302.232,
+    "text": "You use exactly the same function one more time, right?",
+    "start_ms": 1302232,
+    "end_ms": 1305432,
+    "duration_ms": 3200,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1305.432,
+    "text": "But this time you're splitting. If we take a look, we're splitting the training data and we're getting extra many and we're getting validation data.",
+    "start_ms": 1305432,
+    "end_ms": 1315112,
+    "duration_ms": 9680,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1315.112,
+    "text": "So let me go ahead and do that. I'm going to split another 20% off of the training data.",
+    "start_ms": 1315112,
+    "end_ms": 1320472,
+    "duration_ms": 5360,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1320.472,
+    "text": "So I would go ahead and say train test. is split on the training data and also on the Y train and I'll go ahead and say that let's do the test size to be equal to Again 20% and I'm gonna store the two design new new matrices of X X train mini and then X validation and also Y train mini and Y validation.",
+    "start_ms": 1320472,
+    "end_ms": 1351720,
+    "duration_ms": 31248,
+    "word_count": 66,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1351.72,
+    "text": "I'm gonna create those variables and the story results in those so I'm gonna say X.",
+    "start_ms": 1351720,
+    "end_ms": 1357360,
+    "duration_ms": 5640,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1357.528,
+    "text": "Brain. I would say X. x validation y train mini and also y validation And these are going to be the result of the things that I'll get.",
+    "start_ms": 1357528,
+    "end_ms": 1372220,
+    "duration_ms": 14692,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1372.22,
+    "text": "And now let's take a look at what we have one more time.",
+    "start_ms": 1372220,
+    "end_ms": 1375220,
+    "duration_ms": 3000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1375.72,
+    "text": "So take a look. My initial or my original training set had 313 different data points.",
+    "start_ms": 1375720,
+    "end_ms": 1383820,
+    "duration_ms": 8100,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1383.82,
+    "text": "The original data set has like 390. So I already split it 79 for the test.",
+    "start_ms": 1383820,
+    "end_ms": 1389220,
+    "duration_ms": 5400,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1389.32,
+    "text": "Of the ones that are remaining, which is 313, now I split it 20 AD one more time.",
+    "start_ms": 1389320,
+    "end_ms": 1395620,
+    "duration_ms": 6300,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1395.62,
+    "text": "So now I have 63 points for validation and only 254 the actual training that I can do.",
+    "start_ms": 1395620,
+    "end_ms": 1404120,
+    "duration_ms": 8500,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1404.12,
+    "text": "So what I can do now is I can go ahead and say that, okay, let me try multiple things in my modeling process.",
+    "start_ms": 1404120,
+    "end_ms": 1410180,
+    "duration_ms": 6060,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1410.18,
+    "text": "Let me go ahead and train models with degree two polynomial, degree three polynomial, degree four polynomial to see which one is going to show a better performance on the validation set.",
+    "start_ms": 1410180,
+    "end_ms": 1422420,
+    "duration_ms": 12240,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1422.42,
+    "text": "And once I'm happy, once I decide which order is going to be good, and performs better on the validation set, then that's going to be your model, then you're going to ship that model to the test data so that you can see the performance of it on the test data.",
+    "start_ms": 1422420,
+    "end_ms": 1435580,
+    "duration_ms": 13160,
+    "word_count": 52,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1435.58,
+    "text": "And hopefully this time, it will do better than... What we had seen before which was 21 unit of I think it was MSU armacy on the test date and we'll take a look at that as well.",
+    "start_ms": 1435580,
+    "end_ms": 1447552,
+    "duration_ms": 11972,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1447.864,
+    "text": "So let's take a look at the output. The output is the plot of all of the validation points.",
+    "start_ms": 1447864,
+    "end_ms": 1453304,
+    "duration_ms": 5440,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1453.304,
+    "text": "We also plotted the msc of the validation data and then you can kind of see the fit of each one of these degree polynomial, degree two polynomial, triple and a male and four polynomial.",
+    "start_ms": 1453304,
+    "end_ms": 1464704,
+    "duration_ms": 11400,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1464.704,
+    "text": "And then you can see that the best performance that we're getting on the tray on the validation data is actually degree two polynomial.",
+    "start_ms": 1464704,
+    "end_ms": 1471624,
+    "duration_ms": 6920,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1471.624,
+    "text": "We did not need to go to to degree three and four.",
+    "start_ms": 1471624,
+    "end_ms": 1475624,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1475.624,
+    "text": "Meaning that although the performance might get better on the training data, always as you increase the model complexity, the performance on the training data is gonna get better.",
+    "start_ms": 1475624,
+    "end_ms": 1484224,
+    "duration_ms": 8600,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1484.224,
+    "text": "But as you're seeing here is that as I'm increasing the complexity of the model, the performance on the validation data is dropping because the MSC is increasing, right?",
+    "start_ms": 1484224,
+    "end_ms": 1493664,
+    "duration_ms": 9440,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1493.664,
+    "text": "So this is the point that the validation set is very helpful for us to figure out the complexity of the model or what model features are going to be useful for the modeling purposes.",
+    "start_ms": 1493664,
+    "end_ms": 1504103,
+    "duration_ms": 10439,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1504.103,
+    "text": "So we take degree two polynomial, then we actually test this model on the test data, and we should be able to get the result.",
+    "start_ms": 1504103,
+    "end_ms": 1512344,
+    "duration_ms": 8241,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1512.344,
+    "text": "So I'm going to go one step further, and I would go ahead and say that what if I go ahead and check the model performance on all of the degree polynomials between 0 and 18?",
+    "start_ms": 1512344,
+    "end_ms": 1524544,
+    "duration_ms": 12200,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1524.888,
+    "text": "To kind of see that if it's increasing, if the model complexity increases, what happens with the validation set?",
+    "start_ms": 1524888,
+    "end_ms": 1533288,
+    "duration_ms": 8400,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1533.288,
+    "text": "And is the validation error going to be influenced differently for different kind of complexity of the models?",
+    "start_ms": 1533288,
+    "end_ms": 1541488,
+    "duration_ms": 8200,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1541.816,
+    "text": "So let's take a look and this is the plot that we'll get.",
+    "start_ms": 1541816,
+    "end_ms": 1545456,
+    "duration_ms": 3640,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1545.456,
+    "text": "On the x-axis, you're seeing that the model complexities or degrees of the polynomial is starting from zero, which is going to be constant model, has a high validation MSE.",
+    "start_ms": 1545456,
+    "end_ms": 1555616,
+    "duration_ms": 10160,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1555.616,
+    "text": "And as we add features, obviously, you're able to model for the pattern in the data a little bit better.",
+    "start_ms": 1555616,
+    "end_ms": 1561736,
+    "duration_ms": 6120,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1561.736,
+    "text": "So we'd agree one polynomial, the MSE drops with degree two polynomial.",
+    "start_ms": 1561736,
+    "end_ms": 1566256,
+    "duration_ms": 4520,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1566.256,
+    "text": "It drops further. You're seeing that there's a slight increase between from two to three and four.",
+    "start_ms": 1566256,
+    "end_ms": 1572376,
+    "duration_ms": 6120,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1572.376,
+    "text": "That's what we also thought that it was slightly more.",
+    "start_ms": 1572376,
+    "end_ms": 1574736,
+    "duration_ms": 2360,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1574.736,
+    "text": "It was 16 points something. So it's getting a little bit more and then it hits a plateau up until the grip polynomial 11.",
+    "start_ms": 1574736,
+    "end_ms": 1584216,
+    "duration_ms": 9480,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1584.256,
+    "text": "And that's the point that it says that, okay, beyond this point, if you keep increasing the complexity, you're going to fit to the noise and the training data.",
+    "start_ms": 1584256,
+    "end_ms": 1592055,
+    "duration_ms": 7799,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1592.136,
+    "text": "And that's not generalizable pattern to the validation data. So the validation error is going to increase.",
+    "start_ms": 1592136,
+    "end_ms": 1598096,
+    "duration_ms": 5960,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1598.096,
+    "text": "So that's kind of the general thing that you're expecting to see with the complexity of the model.",
+    "start_ms": 1598096,
+    "end_ms": 1603336,
+    "duration_ms": 5240,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1603.336,
+    "text": "And again, we're trying to find the best point on this plot that the validation error is a small.",
+    "start_ms": 1603336,
+    "end_ms": 1609896,
+    "duration_ms": 6560,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1609.896,
+    "text": "And then we can use that complexity as the complexity of our model.",
+    "start_ms": 1609896,
+    "end_ms": 1613856,
+    "duration_ms": 3960,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1613.856,
+    "text": "And then we can use that in order to build a model and then test it on the actual test data that we have.",
+    "start_ms": 1613856,
+    "end_ms": 1622256,
+    "duration_ms": 8400,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1622.552,
+    "text": "So let's go back and take a look at this, which is exactly kind of showing what we saw from the previous lecture that again, as complexity increases, the training error always decreases.",
+    "start_ms": 1622552,
+    "end_ms": 1634992,
+    "duration_ms": 12440,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1634.992,
+    "text": "But what we're seeing this time is that the validation error is going to always decrease, and then there is a point that it will start increasing.",
+    "start_ms": 1634992,
+    "end_ms": 1643872,
+    "duration_ms": 8880,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1643.872,
+    "text": "That's the point that we actually hit that suite of spot that after this point, what we're seeing is that we're overfitting to the training error.",
+    "start_ms": 1643872,
+    "end_ms": 1652792,
+    "duration_ms": 8920,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1652.792,
+    "text": "So the training error, we're seeing that it's decreasing, but now my validation error keeps increasing.",
+    "start_ms": 1652792,
+    "end_ms": 1658112,
+    "duration_ms": 5320,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1658.112,
+    "text": "And we really want to make sure that we are at the suite of spot that the model performance is good enough on the training data, but also good enough on the validation data.",
+    "start_ms": 1658112,
+    "end_ms": 1666872,
+    "duration_ms": 8760,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1666.872,
+    "text": "But also the model performance is generalizable to the two data points that are not our training data.",
+    "start_ms": 1666872,
+    "end_ms": 1674152,
+    "duration_ms": 7280,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1674.152,
+    "text": "So we just want to make sure that we're not on this other side of this validation line that has higher error under validation and then lower error for the training.",
+    "start_ms": 1674152,
+    "end_ms": 1688152,
+    "duration_ms": 14000,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1688.029,
+    "text": "to take a look at all of these different moving pieces and actually look into how to quantify them in the next two lectures, but kind of a summary of what's happening here is that always with model model complexity increasing the training error decreases.",
+    "start_ms": 1688029,
+    "end_ms": 1704904,
+    "duration_ms": 16875,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1704.904,
+    "text": "we talked about variance increasing, we talked about error under validation, first decreasing, and then it will increase in our goal is to control the model complexity so that we find the exact suite spot that we want.",
+    "start_ms": 1704904,
+    "end_ms": 1717904,
+    "duration_ms": 13000,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1718.808,
+    "text": "And then second half of today's lecture, I'm going to talk about how to find that sweetest spot systematically, but just know that this is why we need to control complexity.",
+    "start_ms": 1718808,
+    "end_ms": 1730568,
+    "duration_ms": 11760,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1730.568,
+    "text": "So before I jump into the second part, there is a topic that I want to talk about that's about how to systematically connect the training process, the internal testing or the validation that you have as well as testing on the test set.",
+    "start_ms": 1730568,
+    "end_ms": 1745648,
+    "duration_ms": 15080,
+    "word_count": 44,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1745.648,
+    "text": "And this process, this systematic process is called k-full cross validation.",
+    "start_ms": 1745648,
+    "end_ms": 1750768,
+    "duration_ms": 5120,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1750.768,
+    "text": "The idea behind k-full cross validation is that you're only having one internal test set.",
+    "start_ms": 1750768,
+    "end_ms": 1756928,
+    "duration_ms": 6160,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1756.928,
+    "text": "You're only giving yourself one time chance to see some example of unseen data set.",
+    "start_ms": 1756928,
+    "end_ms": 1763848,
+    "duration_ms": 6920,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1763.848,
+    "text": "But actually, what you can do is that you can, you grab a chunk of your data, you treat that as internal test set.",
+    "start_ms": 1763848,
+    "end_ms": 1770488,
+    "duration_ms": 6640,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1770.488,
+    "text": "But there are multiple different chunks of 20%, for example, data that you can extract from your training data.",
+    "start_ms": 1770488,
+    "end_ms": 1777528,
+    "duration_ms": 7040,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1777.528,
+    "text": "So why limit yourself to only one chunk? Specifically, the issue is going to be that if you're going to randomly select 20 samples and limit yourself to that exact 20% sample that you extracted, just an example, there is kind of a chance that you get lucky or you get unlucky in that only one shot that you have.",
+    "start_ms": 1777528,
+    "end_ms": 1798928,
+    "duration_ms": 21400,
+    "word_count": 60,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1798.928,
+    "text": "So for example, here, but I have is that randomly selecting 20%, again randomly selecting 20%, again randomly selecting 20%, do the training, tested on that specific kind of random set of validation data that we extracted, but you can see that the validation error is very different from one iteration to another iteration.",
+    "start_ms": 1798928,
+    "end_ms": 1819728,
+    "duration_ms": 20800,
+    "word_count": 54,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1819.728,
+    "text": "So we don't want to leave everything to luck, but we want to make sure that we're systematically letting each data point in our training set to at least once sit in the internal test set.",
+    "start_ms": 1819728,
+    "end_ms": 1832808,
+    "duration_ms": 13080,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1832.808,
+    "text": "And that's why what we can do is systematically always keeping multiple different kinds of validation of spools in our training pipeline.",
+    "start_ms": 1832808,
+    "end_ms": 1842567,
+    "duration_ms": 9759,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1843.0,
+    "text": "So these chunks that we're looking at, these are called folds, right?",
+    "start_ms": 1843000,
+    "end_ms": 1847800,
+    "duration_ms": 4800,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1847.8,
+    "text": "So for example, what I've showed you previously was that, okay, take your training data, keep a percentage of that for training mini and keep a percentage for validation.",
+    "start_ms": 1847800,
+    "end_ms": 1858280,
+    "duration_ms": 10480,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1858.28,
+    "text": "But I always showed that as only keeping the last 20% or last x% of data to be your validation set.",
+    "start_ms": 1858280,
+    "end_ms": 1865080,
+    "duration_ms": 6800,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1865.08,
+    "text": "But in fact, what you can do is you can go ahead and grab the first chunk, the second chunk, the third chunk and the fourth chunk if your folds are going to be 20 percent size.",
+    "start_ms": 1865080,
+    "end_ms": 1875320,
+    "duration_ms": 10240,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1875.32,
+    "text": "This will let each one of the data points in your entire data set to be able to sit in the validation set at least once.",
+    "start_ms": 1875320,
+    "end_ms": 1883751,
+    "duration_ms": 8431,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1883.751,
+    "text": "And then nothing is going to be left to chance because there's always those different kinds of validations that you have, right?",
+    "start_ms": 1883751,
+    "end_ms": 1892243,
+    "duration_ms": 8492,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1892.243,
+    "text": "And you're systematically checking the data set or the training pipeline that you have under multiple different combinations of training data points and also validation data points.",
+    "start_ms": 1892243,
+    "end_ms": 1901960,
+    "duration_ms": 9717,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1901.96,
+    "text": "So that's called K-fold cross validation. But K-fold cross validation, we say that we're going to divide our entire data set into multiple folds.",
+    "start_ms": 1901960,
+    "end_ms": 1912567,
+    "duration_ms": 10607,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1912.567,
+    "text": "And K stands for how many folds you have here.",
+    "start_ms": 1912567,
+    "end_ms": 1915989,
+    "duration_ms": 3422,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1915.989,
+    "text": "So for example, if I'm going to say that my validation chunk is going to be 20% of my data, I will have five chunks of 20%.",
+    "start_ms": 1915989,
+    "end_ms": 1925968,
+    "duration_ms": 9979,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1925.968,
+    "text": "Right? And then what I can do is I can say that what I'll do is I will perform this algorithm, this systematic algorithm that's called cross validation that every time one chunk is going to be validation, the residue chunks are going to be training and then I will move on to the other chunks one at a time and then I'll perform the model link in this case is going to be five times because I have five chunks each one of them should be my validation set at least or exactly once.",
+    "start_ms": 1925968,
+    "end_ms": 1956296,
+    "duration_ms": 30328,
+    "word_count": 95,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1956.408,
+    "text": "So this K-Full Cross Validation, if I want to systematically explain what's happening is that you divide your data, you randomly shuffle your data point, right?",
+    "start_ms": 1956408,
+    "end_ms": 1966408,
+    "duration_ms": 10000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1966.776,
+    "text": "Again, what you will do is after you randomize your data set, you will split it into K-folds, depending on what percentage of your data points are going to be in validations at every time.",
+    "start_ms": 1966776,
+    "end_ms": 1978736,
+    "duration_ms": 11960,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1978.736,
+    "text": "So for example, if your validation fold is going to be 10%, you will have 10 folds.",
+    "start_ms": 1978736,
+    "end_ms": 1984376,
+    "duration_ms": 5640,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1984.376,
+    "text": "Effectively, you're doing 10 fold cross validation. In my example, my fold percentage was 20%, so I'm having five fold cross validation.",
+    "start_ms": 1984376,
+    "end_ms": 1993536,
+    "duration_ms": 9160,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1993.536,
+    "text": "So I'm dividing it into K number of faults. I will train the model on every fold, other than the validation fold.",
+    "start_ms": 1993536,
+    "end_ms": 2004376,
+    "duration_ms": 10840,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2004.376,
+    "text": "I'll keep the validation fold out. What I'll do is I will compute the model error on the validation fold and I will record it.",
+    "start_ms": 2004376,
+    "end_ms": 2013536,
+    "duration_ms": 9160,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2013.536,
+    "text": "Then what happens is that I'll repeat this thing for all of the K-folds that I have.",
+    "start_ms": 2013536,
+    "end_ms": 2018016,
+    "duration_ms": 4480,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2018.016,
+    "text": "So I'll get basically multiple different models. and different models are going to be tested on different validation sets and they're going to lead to different errors.",
+    "start_ms": 2018016,
+    "end_ms": 2028196,
+    "duration_ms": 10180,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2028.472,
+    "text": "And we're going to talk about why that's important and why that's actually helpful in our process.",
+    "start_ms": 2028472,
+    "end_ms": 2035592,
+    "duration_ms": 7120,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2035.592,
+    "text": "We use the term cross validation error as the average of the error of all of these models.",
+    "start_ms": 2035592,
+    "end_ms": 2041592,
+    "duration_ms": 6000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2041.88,
+    "text": "Right? This is the way that we can make sure that our model is not biased, is not going to report only one validation error based on only one validation set.",
+    "start_ms": 2041880,
+    "end_ms": 2050380,
+    "duration_ms": 8500,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2050.38,
+    "text": "But now we are reporting the average of all of the validation errors from all of the validation folds that we have had.",
+    "start_ms": 2050380,
+    "end_ms": 2056880,
+    "duration_ms": 6500,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2057.336,
+    "text": "So again, what you can see is that this time for example I'm using the last fold as my validation fold I'll go ahead and train the model on the rest of the data and then I'll compute the MSc or whatever metric that you want to evaluate on the validation.",
+    "start_ms": 2057336,
+    "end_ms": 2074336,
+    "duration_ms": 17000,
+    "word_count": 51,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2074.776,
+    "text": "Set and then I will record that validation error. I'll go through the rest of the defaults.",
+    "start_ms": 2074776,
+    "end_ms": 2080109,
+    "duration_ms": 5333,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2080.109,
+    "text": "I'll do exactly the same thing. Train on the training part and then evaluate on the validation set that I have and then we are recording all of these validation errors and then cross validation error at the end is going to be the average of all of these validation errors that we had across all of those five models that we have had.",
+    "start_ms": 2080109,
+    "end_ms": 2099776,
+    "duration_ms": 19667,
+    "word_count": 64,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2099.992,
+    "text": "So why is it helpful? Why am I doing this?",
+    "start_ms": 2099992,
+    "end_ms": 2103296,
+    "duration_ms": 3304,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2103.296,
+    "text": "It's important because now what's happening is that my data set is now split it into training and tests so now I have an official actual test set.",
+    "start_ms": 2103296,
+    "end_ms": 2112391,
+    "duration_ms": 9095,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2112.856,
+    "text": "Every time that you want to publish a paper you have some work done you have some novel model and novel data set but you could say is that you were able to model for this specific data set and you're sure that your accuracy of your model and the test data test data that was held out from the entire training process is number X and that's your contribution to the field and exactly what's happening is that if other papers or other researchers are going to do come and do exactly the same kind of research.",
+    "start_ms": 2112856,
+    "end_ms": 2142816,
+    "duration_ms": 29960,
+    "word_count": 98,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2142.856,
+    "text": "or try to improve upon what you've built, they need to beat that metric.",
+    "start_ms": 2142856,
+    "end_ms": 2147316,
+    "duration_ms": 4460,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2147.316,
+    "text": "So a lot of time, we are having benchmarks that this test set is going to be something that everyone is going to basically try their model on and then they're going to report that number.",
+    "start_ms": 2147316,
+    "end_ms": 2158356,
+    "duration_ms": 11040,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2158.356,
+    "text": "And that number is the only thing that's important. But in the training part, now we're splitting our entire training data set into multiple different rounds of class cross validation.",
+    "start_ms": 2158356,
+    "end_ms": 2169704,
+    "duration_ms": 11348,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2169.704,
+    "text": "In this example, what you're seeing is four, it means that my validation...",
+    "start_ms": 2169704,
+    "end_ms": 2173944,
+    "duration_ms": 4240,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2174.488,
+    "text": "Fold was 25% of my training data and then I have four full cross validation.",
+    "start_ms": 2174488,
+    "end_ms": 2180202,
+    "duration_ms": 5714,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2180.202,
+    "text": "I'll have four models every time that I want to tell you my cross validation error.",
+    "start_ms": 2180202,
+    "end_ms": 2186297,
+    "duration_ms": 6095,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2186.297,
+    "text": "That's an average of the validation errors across four different models.",
+    "start_ms": 2186297,
+    "end_ms": 2190488,
+    "duration_ms": 4191,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2190.488,
+    "text": "And notice that I have four different models. Why? Because my training data here is this set.",
+    "start_ms": 2190488,
+    "end_ms": 2197228,
+    "duration_ms": 6740,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2197.228,
+    "text": "And then my training data in the second round is going to be this other set.",
+    "start_ms": 2197228,
+    "end_ms": 2202388,
+    "duration_ms": 5160,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2202.388,
+    "text": "So obviously you will lead to having different model parameters.",
+    "start_ms": 2202388,
+    "end_ms": 2205628,
+    "duration_ms": 3240,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2205.628,
+    "text": "So the optimizer is going to come up with different parameters.",
+    "start_ms": 2205628,
+    "end_ms": 2209428,
+    "duration_ms": 3800,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2209.428,
+    "text": "So four different models, four different validation sets. Obviously you will get four different validation errors.",
+    "start_ms": 2209428,
+    "end_ms": 2216668,
+    "duration_ms": 7240,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2216.668,
+    "text": "So cross validation error is going to be the average of all of that.",
+    "start_ms": 2216668,
+    "end_ms": 2219668,
+    "duration_ms": 3000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2219.736,
+    "text": "There was a question somewhere here. This I resolve. Yes.",
+    "start_ms": 2219736,
+    "end_ms": 2224716,
+    "duration_ms": 4980,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2230.04,
+    "text": "A set up one more time. There was a question about, is there a possibility that our test data is going to be biased in any way?",
+    "start_ms": 2230040,
+    "end_ms": 2243640,
+    "duration_ms": 13600,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2243.64,
+    "text": "That sometimes we might get lucky, sometimes we might not get lucky.",
+    "start_ms": 2243640,
+    "end_ms": 2246640,
+    "duration_ms": 3000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2246.64,
+    "text": "That is true. It might happen. But what we do is that we also don't do kind of fold classification between training and test.",
+    "start_ms": 2246640,
+    "end_ms": 2255640,
+    "duration_ms": 9000,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2255.64,
+    "text": "In practice a lot of time, the test data is provided to you separately.",
+    "start_ms": 2255640,
+    "end_ms": 2260640,
+    "duration_ms": 5000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2260.64,
+    "text": "So for example, what you will see in Project A2, you're right now working on Project A1.",
+    "start_ms": 2260640,
+    "end_ms": 2265640,
+    "duration_ms": 5000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2265.64,
+    "text": "In Project A2, we will give you the training, the test data, but we will not give you the labels, right?",
+    "start_ms": 2265640,
+    "end_ms": 2272920,
+    "duration_ms": 7280,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2272.92,
+    "text": "And then what we'll have all of the researchers like you to do is that we'll have you to do your modeling and then submit your predictions on all of the test data points to us and then we will basically give you the performance of your model on the test data.",
+    "start_ms": 2272920,
+    "end_ms": 2288600,
+    "duration_ms": 15680,
+    "word_count": 52,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2288.6,
+    "text": "And the person that created the test data really makes sure that the test data captures all of the complexities that we want to model for.",
+    "start_ms": 2288600,
+    "end_ms": 2296920,
+    "duration_ms": 8320,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2296.92,
+    "text": "So that's why it's like always going to be that benchmark thing that you can make sure that if you get a number and someone gets a better number, their value is going to be, or their model is going to be a better model in terms of being generalizable to all unseen data set.",
+    "start_ms": 2296920,
+    "end_ms": 2315040,
+    "duration_ms": 18120,
+    "word_count": 55,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2315.04,
+    "text": "So it's most of the time curated, that's the summary.",
+    "start_ms": 2315040,
+    "end_ms": 2318920,
+    "duration_ms": 3880,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2318.92,
+    "text": "It's curated and carefully curated, but in kind of a practice setting that you're working on different projects, just assume that you do train tests as well as separately, and just be willing to assume that it's just going to be representative of the training day, that although it's not ideal.",
+    "start_ms": 2318920,
+    "end_ms": 2335480,
+    "duration_ms": 16560,
+    "word_count": 51,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2335.48,
+    "text": "Very good question, thank you. Yes. Very good question. I wasn't sure which slide I should talk about that.",
+    "start_ms": 2335480,
+    "end_ms": 2347868,
+    "duration_ms": 12388,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2347.868,
+    "text": "Because that's a very kind of important point. The question is that...",
+    "start_ms": 2347868,
+    "end_ms": 2352448,
+    "duration_ms": 4580,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2353.144,
+    "text": "I have four models here, which one of those models are going to be my model at the end.",
+    "start_ms": 2353144,
+    "end_ms": 2357224,
+    "duration_ms": 4080,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2357.224,
+    "text": "So effectively what you use cross validation for is going to be for parameter selection.",
+    "start_ms": 2357224,
+    "end_ms": 2363304,
+    "duration_ms": 6080,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2363.304,
+    "text": "So for example, if you want to figure out what learning rate is going to be good, because those hyperparameters are the things that you really need to decide yourself, or if you need to decide about the model complexity.",
+    "start_ms": 2363304,
+    "end_ms": 2374344,
+    "duration_ms": 11040,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2374.344,
+    "text": "So all of those things are going to be the things that we're going to decide on based on the cross validation.",
+    "start_ms": 2374344,
+    "end_ms": 2380744,
+    "duration_ms": 6400,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2380.744,
+    "text": "So for example, I will say that... I have degree one polynomial two polynomial three and four right which one of them are going to be better.",
+    "start_ms": 2380744,
+    "end_ms": 2388696,
+    "duration_ms": 7952,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2388.696,
+    "text": "I will run. K full cross validation with degree one polynomial with degree two polynomial and so on and so forth and then I'll take a look at cross validation error.",
+    "start_ms": 2388696,
+    "end_ms": 2398096,
+    "duration_ms": 9400,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2398.216,
+    "text": "The degree polynomial that has the minimum cross validation error is going to be the degree that I'll use right.",
+    "start_ms": 2398216,
+    "end_ms": 2404336,
+    "duration_ms": 6120,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2404.6,
+    "text": "And then what I'll do afterwards is that I'll say that I will train on the entire thing.",
+    "start_ms": 2404600,
+    "end_ms": 2410312,
+    "duration_ms": 5712,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2411.096,
+    "text": "Now the split training validation anymore because now I tested already I'm sure that an average is going to be the best polynomial.",
+    "start_ms": 2411096,
+    "end_ms": 2417773,
+    "duration_ms": 6677,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2417.773,
+    "text": "There's nothing else for me to improve on. You'll train on the entire thing which means that the entire training set that you have here, not the mini training sets.",
+    "start_ms": 2417773,
+    "end_ms": 2427596,
+    "duration_ms": 9823,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2427.596,
+    "text": "And then that's going to be your model. There's always going to be one model at the end.",
+    "start_ms": 2427596,
+    "end_ms": 2431453,
+    "duration_ms": 3857,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2431.453,
+    "text": "Very good question. All right, so let's move on. I basically gave you the just stuff the next few slides that we use cross-balladation in order to do hyperparameter tuning.",
+    "start_ms": 2431453,
+    "end_ms": 2444752,
+    "duration_ms": 13299,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2444.752,
+    "text": "We kept saying hyperparameters, but this is a formal definition of hyperparameter.",
+    "start_ms": 2444752,
+    "end_ms": 2449552,
+    "duration_ms": 4800,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2449.552,
+    "text": "Hyperparameter is any number that we want you to decide yourself.",
+    "start_ms": 2449552,
+    "end_ms": 2453792,
+    "duration_ms": 4240,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2453.792,
+    "text": "A lot of time we said that there is no direct way for you to find what is the best learning What is the best, for example, alpha bandwidths for, for example?",
+    "start_ms": 2453792,
+    "end_ms": 2463872,
+    "duration_ms": 10080,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2464.632,
+    "text": "or the kernel of what's and things like that previously and be always called it hyper parameter because we cannot directly solve it.",
+    "start_ms": 2464632,
+    "end_ms": 2471912,
+    "duration_ms": 7280,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2471.912,
+    "text": "A degree polynomial is also another one of that but what we will do is we will actually try to do cross validation on some of the options that we have for example for different learning race for different degree polynomials and then you just take a look at the cross validation error and then pick the model complexity or pick the hyper parameter with the minimum Um.",
+    "start_ms": 2471912,
+    "end_ms": 2494132,
+    "duration_ms": 22220,
+    "word_count": 68,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2494.616,
+    "text": "with the minimum cross validation error so for example in this case what we will do is we will list out all of the possible guesses that you have for the grip polynomial or for for example learning rate and then we will run cross validation for every option we record the cross validation error and then we will pick the model or the combination that gives us the minimum cross validation error So for example, if I'm assuming that learning rate is my hyperparameter and I have some candidate options that I want to test, I would say that I'm going to test with learning rate of 0.1, 1 and 10.",
+    "start_ms": 2494616,
+    "end_ms": 2536016,
+    "duration_ms": 41400,
+    "word_count": 112,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2536.016,
+    "text": "So I will run cross validation with the learning rate of 0.1, right?",
+    "start_ms": 2536016,
+    "end_ms": 2540336,
+    "duration_ms": 4320,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2540.792,
+    "text": "Again, train validation is bullet, assume that this is three-fold cross validation, right?",
+    "start_ms": 2540792,
+    "end_ms": 2547769,
+    "duration_ms": 6977,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2547.769,
+    "text": "So I have three different faults, and I will record the cross validation error.",
+    "start_ms": 2547769,
+    "end_ms": 2552792,
+    "duration_ms": 5023,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2552.792,
+    "text": "You will do exactly the same thing with the different learning rate and with the different learning rate.",
+    "start_ms": 2552792,
+    "end_ms": 2557792,
+    "duration_ms": 5000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2557.792,
+    "text": "And up until the point that you tested for all of the different learning rates that you have or all of the different values of the hyperparameter that you have, what you will do, I'll move this up slightly, is that you will look at those cross validation errors, and the one with the minimum value is going to be the winner.",
+    "start_ms": 2557792,
+    "end_ms": 2574952,
+    "duration_ms": 17160,
+    "word_count": 62,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2574.952,
+    "text": "That's what we will use. What you'll do afterwards is that next time you will come, combine all of these data points together, meaning that you have one training data, now you will do one round of...",
+    "start_ms": 2574952,
+    "end_ms": 2586712,
+    "duration_ms": 11760,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2587.096,
+    "text": "training on the entire set with the learning rate of point 1 and then you will report that.",
+    "start_ms": 2587096,
+    "end_ms": 2592536,
+    "duration_ms": 5440,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2593.4,
+    "text": "and then you will test it on the test set.",
+    "start_ms": 2593400,
+    "end_ms": 2595400,
+    "duration_ms": 2000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2595.4,
+    "text": "Test set is always waiting for you out there to just be used exactly once.",
+    "start_ms": 2595400,
+    "end_ms": 2599400,
+    "duration_ms": 4000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2600.824,
+    "text": "So, now this is the slide of question for you, the first one.",
+    "start_ms": 2600824,
+    "end_ms": 2606312,
+    "duration_ms": 5488,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2606.312,
+    "text": "It is asking you to... Think about polynomial order as your hyperparameter and it says that there are five possible options for the polynomial order and it says that if you want to run four full class validation.",
+    "start_ms": 2606312,
+    "end_ms": 2623624,
+    "duration_ms": 17312,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2623.624,
+    "text": "How many times do you need to compute mean squared error?",
+    "start_ms": 2623624,
+    "end_ms": 2627624,
+    "duration_ms": 4000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2668.184,
+    "text": "I think that's all of you for today. We need to calculate 20 MSIs.",
+    "start_ms": 2668184,
+    "end_ms": 2676008,
+    "duration_ms": 7824,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2676.008,
+    "text": "So 20 MSIs because you're always competing MSIs under validations.",
+    "start_ms": 2676008,
+    "end_ms": 2681208,
+    "duration_ms": 5200,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2681.208,
+    "text": "So in each one of them, when you have four full cross validation, that means that for every run of cross validation, for every option of those five possible options that you have, you need to calculate four MSIs and validations.",
+    "start_ms": 2681208,
+    "end_ms": 2697408,
+    "duration_ms": 16200,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2697.408,
+    "text": "That one, validations that two, validations that three and four.",
+    "start_ms": 2697408,
+    "end_ms": 2700808,
+    "duration_ms": 3400,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2700.808,
+    "text": "So four times per option, and then you have five options, so that is going to be 20.",
+    "start_ms": 2700808,
+    "end_ms": 2707968,
+    "duration_ms": 7160,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2707.968,
+    "text": "So these questions sometimes can be tricky. Sometimes they might ask you that per cross validation, how many MSIs you need to calculate.",
+    "start_ms": 2707968,
+    "end_ms": 2717367,
+    "duration_ms": 9399,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2717.367,
+    "text": "Or for just selecting the entire, the best possible option for, for example, learning rate or degree polynomial, how many MSIs you need to calculate.",
+    "start_ms": 2717367,
+    "end_ms": 2729048,
+    "duration_ms": 11681,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2729.048,
+    "text": "You just need to make sure that you are understanding whether it's asking about one run of clause validation or all runs of clause validation to make the final selection.",
+    "start_ms": 2729048,
+    "end_ms": 2738128,
+    "duration_ms": 9080,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2738.128,
+    "text": "So in this specific case, it's asking you for all runs, so it's four times five, 20 cases.",
+    "start_ms": 2738128,
+    "end_ms": 2744368,
+    "duration_ms": 6240,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2747.0,
+    "text": "Ah, shit. I'm sorry. It's a bit of a model.",
+    "start_ms": 2747000,
+    "end_ms": 2756800,
+    "duration_ms": 9800,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2759.96,
+    "text": "We'll be back at 1158. Thank you. me term so we can go and talk a little bit about regularization.",
+    "start_ms": 2759960,
+    "end_ms": 2928708,
+    "duration_ms": 168748,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2928.708,
+    "text": "It's a very important kind of topic and it also a lot of math heavy.",
+    "start_ms": 2928708,
+    "end_ms": 2932870,
+    "duration_ms": 4162,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2932.87,
+    "text": "Some of the things that we use is going to be beyond the scope for data 100 mostly.",
+    "start_ms": 2932870,
+    "end_ms": 2938190,
+    "duration_ms": 5320,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2938.19,
+    "text": "It's going to be the topic of optimization courses such as X 127, but I'm going to kind of in At the high level tell you about what's happening and how we're trying to control for the complexity of the model.",
+    "start_ms": 2938190,
+    "end_ms": 2952912,
+    "duration_ms": 14722,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2952.912,
+    "text": "Again remember that controlling the complexity means that we want to find this suite of spot.",
+    "start_ms": 2952912,
+    "end_ms": 2957912,
+    "duration_ms": 5000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2957.912,
+    "text": "The way that we find this suite of spot is that somehow we need to constrain the model.",
+    "start_ms": 2957912,
+    "end_ms": 2962912,
+    "duration_ms": 5000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2962.912,
+    "text": "So constrain the model means that I want to really make sure that I don't let my model cross this boundary.",
+    "start_ms": 2962912,
+    "end_ms": 2969912,
+    "duration_ms": 7000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2969.912,
+    "text": "And what condition do I need to put in there that my model doesn't cross that boundary and doesn't get more complex?",
+    "start_ms": 2969912,
+    "end_ms": 2977912,
+    "duration_ms": 8000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2977.912,
+    "text": "So how to make sure that the complexity is constrained?",
+    "start_ms": 2977912,
+    "end_ms": 2980912,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2980.912,
+    "text": "So what you're noticing here is that as the model complexity increases, also the variance is going to increase.",
+    "start_ms": 2980912,
+    "end_ms": 2987912,
+    "duration_ms": 7000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2987.912,
+    "text": "Right? And when we are saying that the variance is increasing, one factor that contributes to increasing variance is the size of the parameters.",
+    "start_ms": 2987912,
+    "end_ms": 2997912,
+    "duration_ms": 10000,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2997.912,
+    "text": "parameters because if, for example, I have a theta value that's large and it's multiplied by a feature value.",
+    "start_ms": 2997912,
+    "end_ms": 3005472,
+    "duration_ms": 7560,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3005.472,
+    "text": "By your small changes in the feature value, there is going to be a lot of changes in the impact of this term entirely, which again, if you're thinking about linear regression, having multiple different terms, it's going to substantially change the prediction.",
+    "start_ms": 3005472,
+    "end_ms": 3020951,
+    "duration_ms": 15479,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3020.951,
+    "text": "The substantially changing in prediction means that it will make the model variance high.",
+    "start_ms": 3020951,
+    "end_ms": 3025392,
+    "duration_ms": 4441,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3025.392,
+    "text": "the small changes in the feature leads to large changes in the production, leading to high variance.",
+    "start_ms": 3025392,
+    "end_ms": 3033152,
+    "duration_ms": 7760,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3033.152,
+    "text": "So one way to control model complexity or the fact that we need to do control the model complexity is just to make sure that the size of the parameters are small.",
+    "start_ms": 3033152,
+    "end_ms": 3044432,
+    "duration_ms": 11280,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3044.952,
+    "text": "So this is kind of a linear regression that we had had before.",
+    "start_ms": 3044952,
+    "end_ms": 3048652,
+    "duration_ms": 3700,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3048.652,
+    "text": "That's kind of the general gist. In order to control the model complexity, I need to make sure that the contribution of each one of the, these features that I have in this linear regression model is going to be as small as possible.",
+    "start_ms": 3048652,
+    "end_ms": 3061652,
+    "duration_ms": 13000,
+    "word_count": 44,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3061.652,
+    "text": "Or I just need to make sure that these parameters don't grow so large that then when I multiply it with the, with the feature with the small change in the feature, it will drastically change the prediction that we have.",
+    "start_ms": 3061652,
+    "end_ms": 3074452,
+    "duration_ms": 12800,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3074.904,
+    "text": "So one way to actually implement this idea of making sure that the parameters are small is to make sure that we define a budget and we say that the model has this total budget that it can distribute across the front features.",
+    "start_ms": 3074904,
+    "end_ms": 3092086,
+    "duration_ms": 17182,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3092.086,
+    "text": "And this will ensure that all of the features are going to compete against each other and make sure that on average or in the total kind of sense the sum of all of those parameters is going to not exceed the budget that we have.",
+    "start_ms": 3092086,
+    "end_ms": 3106344,
+    "duration_ms": 14258,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3106.344,
+    "text": "If we do that, then effectively that means that some of these theta i's are going to be as as small as possible, meaning that some of them are going to be driven into zero, which entirely is going to eliminate that feature.",
+    "start_ms": 3106344,
+    "end_ms": 3119384,
+    "duration_ms": 13040,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3119.384,
+    "text": "So if a parameter is equal to zero, that means that if you even have that feature, it's not going to, and you have it in your data frame, is going to be multiplied with the parameter 0, which means that it's going to be eliminated.",
+    "start_ms": 3119384,
+    "end_ms": 3132104,
+    "duration_ms": 12720,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3132.104,
+    "text": "When you have that feature eliminated, that means that the number of features are smaller, so the model complexity is going to get smaller as well.",
+    "start_ms": 3132104,
+    "end_ms": 3140104,
+    "duration_ms": 8000,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3140.104,
+    "text": "That's the trick. There are multiple different things or tricks that we're thinking about in order to make sure that the model complexity stays in a constrained area, and so that it doesn't cross that boundary that I talked about.",
+    "start_ms": 3140104,
+    "end_ms": 3156664,
+    "duration_ms": 16560,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3156.664,
+    "text": "This idea is called regularization. We're putting a regulation on what's happening with the parameters and how it can actually make sure that the complexity is constrained in a certain way.",
+    "start_ms": 3156664,
+    "end_ms": 3167944,
+    "duration_ms": 11280,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3168.92,
+    "text": "The way that we're implementing this regularization or we're enforcing that regulation is that I'm going to use this concept of the budget.",
+    "start_ms": 3168920,
+    "end_ms": 3179420,
+    "duration_ms": 10500,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3179.42,
+    "text": "So I'm going to call that budget a value Q.",
+    "start_ms": 3179420,
+    "end_ms": 3182625,
+    "duration_ms": 3205,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3182.625,
+    "text": "And then I would say that I want to make sure that some of the absolute values of all of the parameters is always less than that budget Q.",
+    "start_ms": 3182625,
+    "end_ms": 3191920,
+    "duration_ms": 9295,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3192.536,
+    "text": "So this is kind of generally trying to make sure that the parameters are going to compete for this budget so they can grow independently or they can be large.",
+    "start_ms": 3192536,
+    "end_ms": 3203336,
+    "duration_ms": 10800,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3203.336,
+    "text": "So the maximum value that each one of the is going to be q, so they can grow, so this is kind of going to constrain the complexity as well.",
+    "start_ms": 3203336,
+    "end_ms": 3216160,
+    "duration_ms": 12824,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3216.16,
+    "text": "And another hand, if one of the parameters is going to be large, it will drive the rest of them equal to zero.",
+    "start_ms": 3216160,
+    "end_ms": 3222924,
+    "duration_ms": 6764,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3222.924,
+    "text": "So again, the complexity is going to be constrained, a limited number of parameters are going to, or features are going to be contributing to the model prediction.",
+    "start_ms": 3222924,
+    "end_ms": 3231160,
+    "duration_ms": 8236,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3231.16,
+    "text": "So the implementation of this regulation is going to be actually this equation.",
+    "start_ms": 3231160,
+    "end_ms": 3237560,
+    "duration_ms": 6400,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3237.56,
+    "text": "That I will go ahead and calculate the summation of the absolute values of all of these parameters, teta i for i from 1 up to p.",
+    "start_ms": 3237560,
+    "end_ms": 3247679,
+    "duration_ms": 10119,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3247.679,
+    "text": "I have p different features. And notice here that I'm not starting from 0.",
+    "start_ms": 3247679,
+    "end_ms": 3253400,
+    "duration_ms": 5721,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3253.4,
+    "text": "I'm starting from 0. 1. And the reason that I'm not starting from 0 is that I just want to make sure that if there is some bias in my data set or if I need to 0 center my data set.",
+    "start_ms": 3253400,
+    "end_ms": 3264576,
+    "duration_ms": 11176,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3265.336,
+    "text": "I don't need to penalize model for that so irrespective of whatever.",
+    "start_ms": 3265336,
+    "end_ms": 3269836,
+    "duration_ms": 4500,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3271.096,
+    "text": "Whatever the biosterm or tetasero value that we have we just believe it there we're not going to penalize model we're not going to count it towards the model complexity another reason for not including tetasero is if you take a look at my rationale in the entire equation right there was that I want to make sure that these parameters are small because they're going to be multiplied by the features.",
+    "start_ms": 3271096,
+    "end_ms": 3295236,
+    "duration_ms": 24140,
+    "word_count": 72,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3295.336,
+    "text": "So that changes in the features are going to actually lead to large changes in the prediction.",
+    "start_ms": 3295336,
+    "end_ms": 3301236,
+    "duration_ms": 5900,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3301.236,
+    "text": "But here there is no term that's going to be multiplied with theta zero.",
+    "start_ms": 3301236,
+    "end_ms": 3305036,
+    "duration_ms": 3800,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3305.036,
+    "text": "So it's not going to influence the variance of the model.",
+    "start_ms": 3305036,
+    "end_ms": 3308736,
+    "duration_ms": 3700,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3308.736,
+    "text": "That's why we can just leave it intact. We can just not include it in the budget calculation at all.",
+    "start_ms": 3308736,
+    "end_ms": 3313736,
+    "duration_ms": 5000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3313.736,
+    "text": "So that we're not arbitrarily constraining in something that doesn't need to be constrained.",
+    "start_ms": 3313736,
+    "end_ms": 3318736,
+    "duration_ms": 5000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3319.256,
+    "text": "So starting from 1 up to P, absolute values, calculating absolute values of theta i's should be less than or equal to our budget.",
+    "start_ms": 3319256,
+    "end_ms": 3327976,
+    "duration_ms": 8720,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3328.376,
+    "text": "But now what you're seeing is that what's happening is that with this kind of calculation, each one of those TETAIs are going to be constrained.",
+    "start_ms": 3328376,
+    "end_ms": 3336639,
+    "duration_ms": 8263,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3336.639,
+    "text": "They have some relationship with each other in order to make sure that they remain less than the allocated budget.",
+    "start_ms": 3336639,
+    "end_ms": 3343411,
+    "duration_ms": 6772,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3343.411,
+    "text": "And the last line here basically mentions explicitly that TETA zero is not going to be part of the regularization kind of calculation that we have.",
+    "start_ms": 3343411,
+    "end_ms": 3353896,
+    "duration_ms": 10485,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3354.776,
+    "text": "So let's see how I can enforce that regulation. So remember this lost landscape we had in this example, for simplicity, I'm assuming that I have two parameters, TETO 1 and TETO 2.",
+    "start_ms": 3354776,
+    "end_ms": 3366656,
+    "duration_ms": 11880,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3366.656,
+    "text": "And then this lost landscape is actually kind of a heat map, it's a contour map that you're seeing that as we go to the darker blue areas, the lost value is going to decrease.",
+    "start_ms": 3366656,
+    "end_ms": 3377816,
+    "duration_ms": 11160,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3377.816,
+    "text": "So meaning that if you want to run great in the sun, you will start from somewhere randomly, And then you want to make your way down to this optimum point at the center of this dark blue area.",
+    "start_ms": 3377816,
+    "end_ms": 3388816,
+    "duration_ms": 11000,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3388.816,
+    "text": "So that's the tetahat kind of combination, which is the tetahat, tetahat, one hadn't tetatuhat, that is going to be optimum, which will lead to the minimum loss that you will have across the entire trainings that you have.",
+    "start_ms": 3388816,
+    "end_ms": 3402816,
+    "duration_ms": 14000,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3403.288,
+    "text": "So what's happening is that if I want to actually enforce the budget calculation that I had in mind, so this is the budget kind of constraint, I want to say that theta one, the absolute value of theta one plus absolute value of theta two, should be less than or equal to q, right?",
+    "start_ms": 3403288,
+    "end_ms": 3421892,
+    "duration_ms": 18604,
+    "word_count": 55,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3421.892,
+    "text": "And that equation actually translates to this diamond. And kind of the four sides of this diamond, this is actually going to be q, this is going to be q, this is going to be negative q and this is also going to be negative q.",
+    "start_ms": 3421892,
+    "end_ms": 3435848,
+    "duration_ms": 13956,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3435.848,
+    "text": "Right? So you're seeing that all of the points, all of the options that I'll have for tetra1 and tetra2 are going to stay within that diamond thing.",
+    "start_ms": 3435848,
+    "end_ms": 3445218,
+    "duration_ms": 9370,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3445.218,
+    "text": "So depending on my budget, the diamond is going to grow or shrink and then I can only accept the tetra1 and tetra2 values that are within my diamond.",
+    "start_ms": 3445218,
+    "end_ms": 3454146,
+    "duration_ms": 8928,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3454.146,
+    "text": "But at the same time, we have this other objective that we need to satisfy.",
+    "start_ms": 3454146,
+    "end_ms": 3458811,
+    "duration_ms": 4665,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3458.811,
+    "text": "We need to make sure that we picked a to one and a to two values that have a small loss or have the darkest blue color possible and this kind of contour map that we have, which essentially is going to be this exact point right on the edge or on the corner of this diamond that we're looking at.",
+    "start_ms": 3458811,
+    "end_ms": 3479288,
+    "duration_ms": 20477,
+    "word_count": 61,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3479.288,
+    "text": "So what you're seeing is that every time that I want to regularize the model, The optimum point of the teta had to regularize with the regulation that I have the absolute value of teta i's, the sum of absolute value of teta i's, be less than.",
+    "start_ms": 3479288,
+    "end_ms": 3494168,
+    "duration_ms": 14880,
+    "word_count": 47,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3494.616,
+    "text": "The budget Q is going to be different than the tetahedric, the tetahedric without any regularization.",
+    "start_ms": 3494616,
+    "end_ms": 3502976,
+    "duration_ms": 8360,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3502.976,
+    "text": "So this is kind of the thing that we're seeing.",
+    "start_ms": 3502976,
+    "end_ms": 3505616,
+    "duration_ms": 2640,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3505.616,
+    "text": "We are going to kind of sacrifice from the accuracy of the model on the training data.",
+    "start_ms": 3505616,
+    "end_ms": 3512096,
+    "duration_ms": 6480,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3512.096,
+    "text": "This is accuracy on the training data because we want to make sure that the model is constrained, because we want to make sure that this model is actually going to perform and the validation data as well.",
+    "start_ms": 3512096,
+    "end_ms": 3524636,
+    "duration_ms": 12540,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3525.272,
+    "text": "So this is kind of noting that if we take a look at Sorry to go back.",
+    "start_ms": 3525272,
+    "end_ms": 3531701,
+    "duration_ms": 6429,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3531.701,
+    "text": "If you take a look at this point here, you can assume that, okay, if you had the training data and you could just basically go ahead and crazily make your model complex, the optimum point of your model could be somewhere here, right?",
+    "start_ms": 3531701,
+    "end_ms": 3546280,
+    "duration_ms": 14579,
+    "word_count": 44,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3546.28,
+    "text": "That's basically kind of the complexity that will give you your TETA hat, not regularize.",
+    "start_ms": 3546280,
+    "end_ms": 3553480,
+    "duration_ms": 7200,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3553.816,
+    "text": "Right? And what you're seeing is that that point is not going to be really an optimum point.",
+    "start_ms": 3553816,
+    "end_ms": 3559216,
+    "duration_ms": 5400,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3559.216,
+    "text": "That's the point that you are overfitted to the training data.",
+    "start_ms": 3559216,
+    "end_ms": 3562076,
+    "duration_ms": 2860,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3562.076,
+    "text": "What I need to do is I need to make sure that I stopped the training early, meaning that my model is not complex.",
+    "start_ms": 3562076,
+    "end_ms": 3568316,
+    "duration_ms": 6240,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3568.316,
+    "text": "And I stop actually at this specific point. This is the specific point that I'll do the performance on the training data is not going to be as good, because this is where we're comparing compared to this other one.",
+    "start_ms": 3568316,
+    "end_ms": 3580796,
+    "duration_ms": 12480,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3580.796,
+    "text": "But we are thinking that if it constraints the model complexity, the performance is going to be good on the validation data.",
+    "start_ms": 3580796,
+    "end_ms": 3586636,
+    "duration_ms": 5840,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3586.636,
+    "text": "And we care about validation data because that's an indication of how model is going to be also performing on the test data as well.",
+    "start_ms": 3586636,
+    "end_ms": 3594476,
+    "duration_ms": 7840,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3594.476,
+    "text": "So that's kind of the distinction that you can see that you're sacrificing them from the model performance.",
+    "start_ms": 3594476,
+    "end_ms": 3599996,
+    "duration_ms": 5520,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3599.996,
+    "text": "But I'll start at the same time you're not sacrificing so much because you're sacrificing from the model performance and the training data.",
+    "start_ms": 3599996,
+    "end_ms": 3606676,
+    "duration_ms": 6680,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3607.256,
+    "text": "With the benefit that then now your performance on the validation data is going to be good.",
+    "start_ms": 3607256,
+    "end_ms": 3612256,
+    "duration_ms": 5000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3612.632,
+    "text": "So let me go back. This is where... be landed actually and if you kind of compared this slide with this slide you're seeing that if I make my budget smaller so this is a larger queue this is a smaller queue then my optimum point with the regularization is going to be farther and farther away from the actual optimum point this is the point that if you make the budget is smaller and smaller and smaller you might move to the area of underfitting.",
+    "start_ms": 3612632,
+    "end_ms": 3643487,
+    "duration_ms": 30855,
+    "word_count": 86,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3643.487,
+    "text": "So the other side of that line that I don't want to be in.",
+    "start_ms": 3643487,
+    "end_ms": 3647096,
+    "duration_ms": 3609,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3647.096,
+    "text": "I just want to make sure that it is simplified enough.",
+    "start_ms": 3647096,
+    "end_ms": 3650518,
+    "duration_ms": 3422,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3650.518,
+    "text": "The budget is small enough that is constraining something but at the same time large enough that it doesn't underfit and it exactly fits to the actual trend in the data.",
+    "start_ms": 3650518,
+    "end_ms": 3669896,
+    "duration_ms": 19378,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3669.62,
+    "text": "also take a look at the next concept. Um, so this slide says that.",
+    "start_ms": 3669620,
+    "end_ms": 3674136,
+    "duration_ms": 4516,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3674.424,
+    "text": "How does the size of the Q-correl late or relate to model complexity based on what you saw?",
+    "start_ms": 3674424,
+    "end_ms": 3680824,
+    "duration_ms": 6400,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3684.92,
+    "text": "So comparing whether large q is going to lead to more complex model versus a small q lead to complex model.",
+    "start_ms": 3684920,
+    "end_ms": 3692280,
+    "duration_ms": 7360,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3705.592,
+    "text": "I think I gave the answer already that the small Q leads to a simple model.",
+    "start_ms": 3705592,
+    "end_ms": 3711192,
+    "duration_ms": 5600,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3711.64,
+    "text": "meaning that you're constraining it more and more so it's getting simplified and simplified and simplified up to the point that if it's too small then it's going to underfit if the q is going to be large then it can get larger larger larger and more complex because you're effectively not putting if you make q so large effectively you're not putting any constraint on the model because there's just so much budget that you can distribute to all of the parameters that they can grow large and then the model can be complex So this size of the queue is very important.",
+    "start_ms": 3711640,
+    "end_ms": 3743796,
+    "duration_ms": 32156,
+    "word_count": 104,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3743.796,
+    "text": "We talked about the effect of using this queue or the budget in terms of making sure that we are controlling the model complexity.",
+    "start_ms": 3743796,
+    "end_ms": 3753576,
+    "duration_ms": 9780,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3753.576,
+    "text": "Again, if the queue is very large, at some point it can include the TETA hat not regularize option within itself.",
+    "start_ms": 3753576,
+    "end_ms": 3763216,
+    "duration_ms": 9640,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3763.216,
+    "text": "So there is also kind of the thing that you want to make sure that The budget queue actually is meaningful and you can use it meaningfully.",
+    "start_ms": 3763216,
+    "end_ms": 3771616,
+    "duration_ms": 8400,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3772.504,
+    "text": "So now let's take a look at this question. What happens in the extreme case if the Q is very small?",
+    "start_ms": 3772504,
+    "end_ms": 3779704,
+    "duration_ms": 7200,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3779.704,
+    "text": "When the Q was very large it could actually give me my optimum teta hat without regularization.",
+    "start_ms": 3779704,
+    "end_ms": 3786104,
+    "duration_ms": 6400,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3786.104,
+    "text": "If the Q is very, very small, what do you think the model will return?",
+    "start_ms": 3786104,
+    "end_ms": 3790504,
+    "duration_ms": 4400,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3795.64,
+    "text": "I'll wait until this number gets to 100 and we'll move on.",
+    "start_ms": 3795640,
+    "end_ms": 3799640,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3801.08,
+    "text": "Go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go, go Yay, okay.",
+    "start_ms": 3801080,
+    "end_ms": 3803796,
+    "duration_ms": 2716,
+    "word_count": 114,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3803.796,
+    "text": "It can give me a constant model because we did not regularize on the tetasera.",
+    "start_ms": 3803796,
+    "end_ms": 3809056,
+    "duration_ms": 5260,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3809.056,
+    "text": "So if we're constraining it so much that it drives all of the parameters to be equal to zero, then I'll be left with the tetasera or the bias term.",
+    "start_ms": 3809056,
+    "end_ms": 3819077,
+    "duration_ms": 10021,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3819.077,
+    "text": "So it can be a constant model. It can also be a model that always returns zero if my model doesn't have any y-intercept or any tetasera.",
+    "start_ms": 3819077,
+    "end_ms": 3828736,
+    "duration_ms": 9659,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3828.736,
+    "text": "So again, if If there is no intercept term, you're always going to get the value of 0.",
+    "start_ms": 3828736,
+    "end_ms": 3834016,
+    "duration_ms": 5280,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3834.016,
+    "text": "If you have an intercept, you will always going to get to 0 as the output.",
+    "start_ms": 3834016,
+    "end_ms": 3838776,
+    "duration_ms": 4760,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3838.776,
+    "text": "And that's kind of the oversimplification of the model that you reduce the complexity so much that now you're literally underfitting.",
+    "start_ms": 3838776,
+    "end_ms": 3847576,
+    "duration_ms": 8800,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3847.576,
+    "text": "You did not capture any pattern in your data that you wanted.",
+    "start_ms": 3847576,
+    "end_ms": 3850896,
+    "duration_ms": 3320,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3851.416,
+    "text": "So this is kind of the balance that we're trying to strike.",
+    "start_ms": 3851416,
+    "end_ms": 3855016,
+    "duration_ms": 3600,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3855.016,
+    "text": "We want to make sure that we are deciding on a budget.",
+    "start_ms": 3855016,
+    "end_ms": 3858416,
+    "duration_ms": 3400,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3858.416,
+    "text": "And now you can think about this budget as a hyperparameter that we need to set ahead of time so that we can make sure that we're not underfitting, we're not overfitting, where we can actually find the optimum point in the middle of this graph.",
+    "start_ms": 3858416,
+    "end_ms": 3872816,
+    "duration_ms": 14400,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3873.08,
+    "text": "So this brings me to the actual optimization problem. This budget function that I was writing, it was L1.",
+    "start_ms": 3873080,
+    "end_ms": 3881240,
+    "duration_ms": 8160,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3881.88,
+    "text": "L one norm of the tetavector. So effectively this is called L one regularization.",
+    "start_ms": 3881880,
+    "end_ms": 3888000,
+    "duration_ms": 6120,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3888.0,
+    "text": "What we have is that we had our own previous msc calculation for as our objective function, but this time we're saying that we want to make sure that we have low msc such that we also meet this other condition.",
+    "start_ms": 3888000,
+    "end_ms": 3902600,
+    "duration_ms": 14600,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3902.6,
+    "text": "So now we're adding this additional term or additional constraint or regulation to our objective function.",
+    "start_ms": 3902600,
+    "end_ms": 3908920,
+    "duration_ms": 6320,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3908.92,
+    "text": "that we need to make sure that our objective right now is having least mean score error or minimum mean score error that we can have across all the training data points under the condition that we should also meet the condition of this budget constraint that we have.",
+    "start_ms": 3908920,
+    "end_ms": 3924660,
+    "duration_ms": 15740,
+    "word_count": 49,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3925.048,
+    "text": "This is the part that is kind of beyond this scope for data 100.",
+    "start_ms": 3925048,
+    "end_ms": 3929248,
+    "duration_ms": 4200,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3929.248,
+    "text": "We can actually turn this optimization problem that has two pieces, one piece as a function and one piece as a condition, using Lagrangian duality into one specific term or one combined term.",
+    "start_ms": 3929248,
+    "end_ms": 3942648,
+    "duration_ms": 13400,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3942.648,
+    "text": "So this combined term actually has two pieces. It has one piece that relates to just the minuscord error that we had from before.",
+    "start_ms": 3942648,
+    "end_ms": 3950368,
+    "duration_ms": 7720,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3950.368,
+    "text": "And then this condition is going to be combined within this objective function using this lambda parameter.",
+    "start_ms": 3950368,
+    "end_ms": 3957167,
+    "duration_ms": 6799,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3957.167,
+    "text": "It will basically tell you that if you have this queue as your budget, I'm going to incorporate it by an importance factor here that I would say that the importance factor of the regularization term or the regularizer term or the second term is going to be that it's going to be multiplied by lambda.",
+    "start_ms": 3957167,
+    "end_ms": 3975927,
+    "duration_ms": 18760,
+    "word_count": 56,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3975.927,
+    "text": "And that's why the entire objective function is going to be the combination of these two pieces together.",
+    "start_ms": 3975927,
+    "end_ms": 3981328,
+    "duration_ms": 5401,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3981.784,
+    "text": "So now our objective function has two parts. One part is trying to make sure that you have a good fit on the training data.",
+    "start_ms": 3981784,
+    "end_ms": 3988284,
+    "duration_ms": 6500,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3988.284,
+    "text": "And the other part really tries to make sure that your model is not complex.",
+    "start_ms": 3988284,
+    "end_ms": 3993084,
+    "duration_ms": 4800,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3993.084,
+    "text": "And again, as you can see, this hyper parameter lambda that we have right here is going to control how much do you want to value the complexity or controlling the complexity over how much do you want to value a good production.",
+    "start_ms": 3993084,
+    "end_ms": 4006484,
+    "duration_ms": 13400,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4006.484,
+    "text": "What happens is that this lambda is actually going to be kind of one over your budget, meaning that if the queue was large, remember that when the queue was large, the diamond was growing, so this is effectively meaning that you don't want to constrain it so much, meaning that this lambda is going to be a small value.",
+    "start_ms": 4006484,
+    "end_ms": 4028484,
+    "duration_ms": 22000,
+    "word_count": 60,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4028.484,
+    "text": "To the extent that this lambda can even be zero, just removing the impact of this regularizer term entirely.",
+    "start_ms": 4028484,
+    "end_ms": 4036484,
+    "duration_ms": 8000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4036.484,
+    "text": "So that's why budget and this Lambda parameters are having kind of an inverse relationship.",
+    "start_ms": 4036484,
+    "end_ms": 4042484,
+    "duration_ms": 6000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4042.484,
+    "text": "But if you increase the Lambda value, so if you want to keep adding value to this second term, making sure that your optimization process, your gradient descent is going to pay more attention and really make sure that the parameters are constrained, you want to increase the Lambda value.",
+    "start_ms": 4042484,
+    "end_ms": 4059484,
+    "duration_ms": 17000,
+    "word_count": 50,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4059.484,
+    "text": "And then what it needs to do is this entire objective function, these two terms are going to actually play a compromise with each other.",
+    "start_ms": 4059484,
+    "end_ms": 4066084,
+    "duration_ms": 6600,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4066.084,
+    "text": "It will say that I'm going to be penalized so much if I pick a large theta value.",
+    "start_ms": 4066084,
+    "end_ms": 4072524,
+    "duration_ms": 6440,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4072.524,
+    "text": "So it will come at the cost of the model prediction, going to be not so great, but still the two together are going to be optimized overall.",
+    "start_ms": 4072524,
+    "end_ms": 4083124,
+    "duration_ms": 10600,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4083.48,
+    "text": "So that's how we're going to do this kind of calculation because the second term that we added is kind of L1 norm of of the tetah vector.",
+    "start_ms": 4083480,
+    "end_ms": 4095924,
+    "duration_ms": 12444,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4095.924,
+    "text": "This kind of regularization is called L1 regularization. And it also refers to as loss of regression or loss of regularization, which extends for...",
+    "start_ms": 4095924,
+    "end_ms": 4106480,
+    "duration_ms": 10556,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4106.968,
+    "text": "Least, Absolute Sharing Kit and Selection Operator, which I'm going to tell you.",
+    "start_ms": 4106968,
+    "end_ms": 4112648,
+    "duration_ms": 5680,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4113.144,
+    "text": "What it is and why we call it that. So let me quickly go to the demo and show you um How we can actually implement at an iSkaleRN because it has all of those functions ready for us.",
+    "start_ms": 4113144,
+    "end_ms": 4128872,
+    "duration_ms": 15728,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4129.464,
+    "text": "So I'm gonna scroll down to that piece. So run So there is a function in the linear model kind of framework that remember that previously we would call linear regression, LM.linear regression.",
+    "start_ms": 4129464,
+    "end_ms": 4149646,
+    "duration_ms": 20182,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4149.646,
+    "text": "Here we would call LM.lossa. And LM.lossa is going to actually automatically apply loss regression, meaning that it will use the objective function that has one term minimizing msc in another term, minimizing the sum of the absolute values of the tetaparameters that you have.",
+    "start_ms": 4149646,
+    "end_ms": 4168184,
+    "duration_ms": 18538,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4168.728,
+    "text": "So here I will go ahead and say that my um Uh, model.",
+    "start_ms": 4168728,
+    "end_ms": 4175136,
+    "duration_ms": 6408,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4175.992,
+    "text": "Actually. My loss of model is going to be equal to Lm.",
+    "start_ms": 4175992,
+    "end_ms": 4180772,
+    "duration_ms": 4780,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4181.048,
+    "text": "dot loss. I will also pass the parameter that in SK Learn is referred to as alpha, but it's actually our lambda, but we're not using alpha notation because alpha we want to reserve it for learning grade, but this is in fact the lambda value.",
+    "start_ms": 4181048,
+    "end_ms": 4197544,
+    "duration_ms": 16496,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4197.544,
+    "text": "That here I would say that, but if I pick the lambda value to be point one, and we'll take a look at the effect of that.",
+    "start_ms": 4197544,
+    "end_ms": 4204544,
+    "duration_ms": 7000,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4204.544,
+    "text": "And what I'll do is I will say that, okay, this loss a model.",
+    "start_ms": 4204544,
+    "end_ms": 4209544,
+    "duration_ms": 5000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4210.648,
+    "text": "I will go ahead and fit it on. The X-Train and also fitted on the Y-Train.",
+    "start_ms": 4210648,
+    "end_ms": 4218872,
+    "duration_ms": 8224,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4219.192,
+    "text": "And what I'll do afterwards is that I'll go ahead and say, love some adult dot.",
+    "start_ms": 4219192,
+    "end_ms": 4224912,
+    "duration_ms": 5720,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4225.368,
+    "text": "Co-efficient to just take a look at the coefficients that we have here.",
+    "start_ms": 4225368,
+    "end_ms": 4229368,
+    "duration_ms": 4000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4229.72,
+    "text": "Um. So take a look. I had eight different features, different powers of horsepower and you're seeing that what I have is a bunch of different parameters for tetra for each one of those features that I have and some of these parameters are pretty small.",
+    "start_ms": 4229720,
+    "end_ms": 4252244,
+    "duration_ms": 22524,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4252.544,
+    "text": "And this is kind of what we refer to as shrinkage.",
+    "start_ms": 4252544,
+    "end_ms": 4255184,
+    "duration_ms": 2640,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4255.184,
+    "text": "It will try to make sure that all of those parameters are small enough that the total when they share a budget, the total sum of those absolute values is less than the budget that we allocated to that.",
+    "start_ms": 4255184,
+    "end_ms": 4266644,
+    "duration_ms": 11460,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4266.644,
+    "text": "That's why it will try to shrink all of those parameters.",
+    "start_ms": 4266644,
+    "end_ms": 4269724,
+    "duration_ms": 3080,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4269.724,
+    "text": "When these parameters are shrinking, effectively the impact of these features are going to be eliminated, meaning that if I have a small parameter here, If it multiplies with the feature, then the feature is not going to have that much of an impact.",
+    "start_ms": 4269724,
+    "end_ms": 4284604,
+    "duration_ms": 14880,
+    "word_count": 44,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4285.208,
+    "text": "What we'll do is we will also try different value for lambda.",
+    "start_ms": 4285208,
+    "end_ms": 4288972,
+    "duration_ms": 3764,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4288.972,
+    "text": "So here we're saying that what if lambda is the larger value like 10 as opposed to point 1.",
+    "start_ms": 4288972,
+    "end_ms": 4294933,
+    "duration_ms": 5961,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4294.933,
+    "text": "Remember that when lambda is a large value, that means that I'm going to penalize for the second term more.",
+    "start_ms": 4294933,
+    "end_ms": 4301208,
+    "duration_ms": 6275,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4301.208,
+    "text": "Meaning that your budget is now getting smaller because it had inverse relationship with the budget.",
+    "start_ms": 4301208,
+    "end_ms": 4306208,
+    "duration_ms": 5000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4306.208,
+    "text": "So if I do exactly the same thing you're seeing that the budgets are getting smaller.",
+    "start_ms": 4306208,
+    "end_ms": 4311208,
+    "duration_ms": 5000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4311.208,
+    "text": "So here it was, for example, it was this small value and now it's actually zero.",
+    "start_ms": 4311208,
+    "end_ms": 4316208,
+    "duration_ms": 5000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4316.76,
+    "text": "So this is what we refer to as Selection operator because effectively when it says that one parameter is equal to zero, it's selected that that parameter should not exist or should not or if that feature should not be used in our modeling.",
+    "start_ms": 4316760,
+    "end_ms": 4332184,
+    "duration_ms": 15424,
+    "word_count": 44,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4332.184,
+    "text": "So we'll perform feature selection for us in a sense, which is really good because we don't need to go ahead and pick and choose between different parameters or different features that we have in our modeling process.",
+    "start_ms": 4332184,
+    "end_ms": 4342664,
+    "duration_ms": 10480,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4343.064,
+    "text": "So these are the things that we had seen, but there is one issue with this kind of framework that we looked at.",
+    "start_ms": 4343064,
+    "end_ms": 4350064,
+    "duration_ms": 7000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4350.064,
+    "text": "That in my data set, the issue was that the magnitude of the horsepower was different than the magnitude of the horsepower to the power of eight.",
+    "start_ms": 4350064,
+    "end_ms": 4358564,
+    "duration_ms": 8500,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4358.564,
+    "text": "You can see that there is this large value here for horsepower to the power of eight.",
+    "start_ms": 4358564,
+    "end_ms": 4363564,
+    "duration_ms": 5000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4363.564,
+    "text": "And then these values are more reasonable when I'm going to compare the actual parameters for each one of these two features.",
+    "start_ms": 4363564,
+    "end_ms": 4371564,
+    "duration_ms": 8000,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4371.564,
+    "text": "then that comparison is not going to be meaningful. Specifically, if you take a look at how the calculation is going to look like, you're seeing that, for example, for the TETA1 value.",
+    "start_ms": 4371564,
+    "end_ms": 4382884,
+    "duration_ms": 11320,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4382.884,
+    "text": "If I replace the TETA1 value with 0.5, it is going to be multiplied with the smaller value in the scale, which is 150 compared to the case that I have this TETA8, that is this very small parameter, but then yet it's multiplied with a very large feature.",
+    "start_ms": 4382884,
+    "end_ms": 4400724,
+    "duration_ms": 17840,
+    "word_count": 49,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4400.724,
+    "text": "So it's really kind of hard to look at those parameters or the values for those parameters and compare them systematically.",
+    "start_ms": 4400724,
+    "end_ms": 4408004,
+    "duration_ms": 7280,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4408.004,
+    "text": "Effectively, what the model is trying to do here is two things.",
+    "start_ms": 4408004,
+    "end_ms": 4412004,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4412.004,
+    "text": "It is trying to manage the budget that you allocated.",
+    "start_ms": 4412004,
+    "end_ms": 4415004,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4415.004,
+    "text": "At the same time, what it's trying to do is it tries to make sure that it balances this kind of imbalance or a scale differences that you have in the features.",
+    "start_ms": 4415004,
+    "end_ms": 4424404,
+    "duration_ms": 9400,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4424.404,
+    "text": "And we don't want that. Because what we can do is we can bring out of the features to the same scale so that the model actually does its own thing that it needs to do.",
+    "start_ms": 4424404,
+    "end_ms": 4433884,
+    "duration_ms": 9480,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4433.884,
+    "text": "Just distribute the budget now on the same scale features that we have.",
+    "start_ms": 4433884,
+    "end_ms": 4437884,
+    "duration_ms": 4000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4438.524,
+    "text": "And we know we can do that with the standardization, we subtract the mean, we divide it by standard deviation, so now all of the features are going to be within the same scale.",
+    "start_ms": 4438524,
+    "end_ms": 4449004,
+    "duration_ms": 10480,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4449.304,
+    "text": "So if I go ahead and do that here, you will be able to see that, okay, I'm going to central, I'm going to standardize all of the features and now they're all going to become parable.",
+    "start_ms": 4449304,
+    "end_ms": 4459680,
+    "duration_ms": 10376,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4459.68,
+    "text": "I'm not seeing all of those really large values, but then this time if I go ahead and run lost the regression, wet the regularizer parameter 0.1, and I take a look at the coefficients, now I was able to properly do its own thing.",
+    "start_ms": 4459680,
+    "end_ms": 4474908,
+    "duration_ms": 15228,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4474.908,
+    "text": "It derived a bunch of those features, a lot of those parameters to be small.",
+    "start_ms": 4474908,
+    "end_ms": 4480904,
+    "duration_ms": 5996,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4480.904,
+    "text": "It distributed the actual budget that I gave to the model.",
+    "start_ms": 4480904,
+    "end_ms": 4485264,
+    "duration_ms": 4360,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4485.264,
+    "text": "And then it actually did the selection, meaning that it said that these features are not going to be really important anymore, and it will perform feature selection for us.",
+    "start_ms": 4485264,
+    "end_ms": 4495904,
+    "duration_ms": 10640,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4496.408,
+    "text": "So it's very neat what it does a lot of times we do.",
+    "start_ms": 4496408,
+    "end_ms": 4500308,
+    "duration_ms": 3900,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4500.408,
+    "text": "Lost the regression not that we're concerned with the model complexity but because we want to just do features election and we don't want to go and manually compare different kinds of.",
+    "start_ms": 4500408,
+    "end_ms": 4511108,
+    "duration_ms": 10700,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4511.208,
+    "text": "Features or come up with all combinations of features that we want to have in order to figure out which one is going to work better.",
+    "start_ms": 4511208,
+    "end_ms": 4518008,
+    "duration_ms": 6800,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4518.616,
+    "text": "So, the next thing that I want to briefly talk about is L to regularization.",
+    "start_ms": 4518616,
+    "end_ms": 4523896,
+    "duration_ms": 5280,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4523.896,
+    "text": "Every time that I talked about L1... I talked about also L2, L1 loss, L2 loss.",
+    "start_ms": 4523896,
+    "end_ms": 4529432,
+    "duration_ms": 5536,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4529.432,
+    "text": "Here we also have the same thing that I can use L2 norm of the of the tetra vector and then use the same budget but budget notion in order to control the complexity of the model.",
+    "start_ms": 4529432,
+    "end_ms": 4541832,
+    "duration_ms": 12400,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4541.832,
+    "text": "Again, the last landscape, but this time we're going to enforce the L2 to kind of equate an L2 norm of the parameter vector with the budget queue in terms of how to constrain the model.",
+    "start_ms": 4541832,
+    "end_ms": 4556792,
+    "duration_ms": 14960,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4556.792,
+    "text": "Now this time my parameters are going to need to live within the circle here, right?",
+    "start_ms": 4556792,
+    "end_ms": 4562272,
+    "duration_ms": 5480,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4562.272,
+    "text": "As opposed to the diamond thing that we have before.",
+    "start_ms": 4562272,
+    "end_ms": 4565072,
+    "duration_ms": 2800,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4565.072,
+    "text": "In fact, you can pick any kind of LP norm or any norm of the tetavectory in order to do the model to constrain the model or regularize the model.",
+    "start_ms": 4565072,
+    "end_ms": 4578072,
+    "duration_ms": 13000,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4578.072,
+    "text": "Here is L2Norm. The process is going to look like exactly the same thing that I have the MSC such that it meets the budget constrain that I have.",
+    "start_ms": 4578072,
+    "end_ms": 4588592,
+    "duration_ms": 10520,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4588.592,
+    "text": "Using Lagrangian duality again, I can combine them using this hyperparameter lambda that I have, or this lambda hyperparameter was effectively the regularizer parameter that I referred to as.",
+    "start_ms": 4588592,
+    "end_ms": 4600872,
+    "duration_ms": 12280,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4600.872,
+    "text": "And again, you can basically see that this new objective function has two terms that are going to compete with each other.",
+    "start_ms": 4600872,
+    "end_ms": 4606672,
+    "duration_ms": 5800,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4606.672,
+    "text": "How good it will fit to the data versus how model complexity is going to be constrained.",
+    "start_ms": 4606672,
+    "end_ms": 4612672,
+    "duration_ms": 6000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4612.672,
+    "text": "And this is called ridge regression. There's actual nice implementation of Ridge regression as well.",
+    "start_ms": 4612672,
+    "end_ms": 4618872,
+    "duration_ms": 6200,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4618.872,
+    "text": "So we could also go ahead and here just directly call LM.rich and calling LM.rich is going to give you all of those parameters.",
+    "start_ms": 4618872,
+    "end_ms": 4626872,
+    "duration_ms": 8000,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4626.872,
+    "text": "But you can see here is that it didn't do the feature selection that I wanted to do.",
+    "start_ms": 4626872,
+    "end_ms": 4631912,
+    "duration_ms": 5040,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4631.912,
+    "text": "That's with loss regression, with Ridge regression, it doesn't do that.",
+    "start_ms": 4631912,
+    "end_ms": 4636163,
+    "duration_ms": 4251,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4636.163,
+    "text": "It just controls the model complexity in a different way.",
+    "start_ms": 4636163,
+    "end_ms": 4639992,
+    "duration_ms": 3829,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4640.216,
+    "text": "And what you also want to know is this nice notion.",
+    "start_ms": 4640216,
+    "end_ms": 4644716,
+    "duration_ms": 4500,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4644.716,
+    "text": "Remember that I was talking about the solution to the OLS.",
+    "start_ms": 4644716,
+    "end_ms": 4649216,
+    "duration_ms": 4500,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4649.216,
+    "text": "If we said X transpose times X times X was invertible, we did have a unique solution otherwise we did not have a unique solution.",
+    "start_ms": 4649216,
+    "end_ms": 4658216,
+    "duration_ms": 9000,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4658.216,
+    "text": "With the rich regression, there is always going to be a unique solution and the solution is given by this equation.",
+    "start_ms": 4658216,
+    "end_ms": 4663660,
+    "duration_ms": 5444,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4663.66,
+    "text": "I'm not going to prove it. But the takeaway here is that If you want to have a unique solution meaning that you want to make sure that when you're running an optimizer optimizer can actually find the only single.",
+    "start_ms": 4663660,
+    "end_ms": 4677780,
+    "duration_ms": 14120,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4678.28,
+    "text": "Like global minimum that you have in your function. You can actually run rich regression and you can directly solve for using this equation in order and in order to find the tetaparameter that are optimum.",
+    "start_ms": 4678280,
+    "end_ms": 4692152,
+    "duration_ms": 13872,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4692.152,
+    "text": "So a lot of times again people are not necessarily concerned with the model complexity but they're concerned with finding a unique solution and be able to solve the OLS problem directly.",
+    "start_ms": 4692152,
+    "end_ms": 4706051,
+    "duration_ms": 13899,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4706.051,
+    "text": "In those cases, what they would do is they would actually regularize and directly solve it using this regularization parameter that is add.",
+    "start_ms": 4706051,
+    "end_ms": 4714951,
+    "duration_ms": 8900,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4715.192,
+    "text": "So this is the summary of where we are. We looked at OLS.",
+    "start_ms": 4715192,
+    "end_ms": 4719297,
+    "duration_ms": 4105,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4719.297,
+    "text": "Today we looked at training test validation splits. We talked about cross validation.",
+    "start_ms": 4719297,
+    "end_ms": 4724192,
+    "duration_ms": 4895,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4724.192,
+    "text": "We used cross validation in order to Select hyper parameters so you can actually do this in order in all of your modeling processes.",
+    "start_ms": 4724192,
+    "end_ms": 4733928,
+    "duration_ms": 9736,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4733.928,
+    "text": "And then we also complemented this all less model that we'd seen before and we saw how we can make it more constrained.",
+    "start_ms": 4733928,
+    "end_ms": 4741828,
+    "duration_ms": 7900,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4741.828,
+    "text": "Meaning that we want to make sure that the model complexity is limited so that it's not overfitting to the training data.",
+    "start_ms": 4741828,
+    "end_ms": 4748928,
+    "duration_ms": 7100,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4748.928,
+    "text": "But it has a reasonable performance on the validation data or any unseen data that we have.",
+    "start_ms": 4748928,
+    "end_ms": 4754428,
+    "duration_ms": 5500,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4754.428,
+    "text": "In that sense, we introduced rich regression, which uses L2 regularizer.",
+    "start_ms": 4754428,
+    "end_ms": 4760268,
+    "duration_ms": 5840,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4760.268,
+    "text": "We also talked about loss regression, which uses L1 regularizer.",
+    "start_ms": 4760268,
+    "end_ms": 4764268,
+    "duration_ms": 4000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4764.268,
+    "text": "There is no closed form solution for loss regression, but there is a closed form solution for rich regression.",
+    "start_ms": 4764268,
+    "end_ms": 4771108,
+    "duration_ms": 6840,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4771.108,
+    "text": "That's the reason a lot of times people want to use L2 or rich regression as their model.",
+    "start_ms": 4771108,
+    "end_ms": 4777308,
+    "duration_ms": 6200,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4777.308,
+    "text": "We also talked about L less previously that there is a unique solution if and only if x is full column you all for today.",
+    "start_ms": 4777308,
+    "end_ms": 4787092,
+    "duration_ms": 9784,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4787.092,
+    "text": "Good luck with the midterm tomorrow. We'll see you tomorrow.",
+    "start_ms": 4787092,
+    "end_ms": 4790104,
+    "duration_ms": 3012,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4790.104,
+    "text": "If there are any questions, we'll be free to ask on Ed and also come to office hours if you have anything to discuss in person.",
+    "start_ms": 4790104,
+    "end_ms": 4796184,
+    "duration_ms": 6080,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4796.472,
+    "text": "Thank you.",
+    "start_ms": 4796472,
+    "end_ms": 4797472,
+    "duration_ms": 1000,
+    "word_count": 2,
+    "avg_confidence": 90
+  }
+]

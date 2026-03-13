@@ -1,0 +1,4925 @@
+[
+  {
+    "timestamp": 7.384,
+    "text": "Good morning, data 100. Welcome to another data 100 lecture.",
+    "start_ms": 7384,
+    "end_ms": 12134,
+    "duration_ms": 4750,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 12.134,
+    "text": "This is our first content lecture. Pretty exciting. So I'm going to talk to you about what we're going to see today.",
+    "start_ms": 12134,
+    "end_ms": 19544,
+    "duration_ms": 7410,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 19.544,
+    "text": "Please grab a seat. We cannot have anyone standing. We just want to make sure that we have the room capacity to comply with the fire cut.",
+    "start_ms": 19544,
+    "end_ms": 28115,
+    "duration_ms": 8571,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 28.115,
+    "text": "All right, cool. So the plan for today is, as I told you last time is that we're going to talk about pandas.",
+    "start_ms": 28115,
+    "end_ms": 35784,
+    "duration_ms": 7669,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 35.784,
+    "text": "But this pandas pandas is a programming library, Python programming library, that we're going to use a lot in data science and in data 100 and kind of every time that as a data scientist you try to code in Python you'll be using pandas.",
+    "start_ms": 35784,
+    "end_ms": 52344,
+    "duration_ms": 16560,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 53.064,
+    "text": "So let me fix the audio. All right, cool. So what we're going to do actually today and in the next couple of lectures is to immerse you in everything pandas.",
+    "start_ms": 53064,
+    "end_ms": 65623,
+    "duration_ms": 12559,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 65.623,
+    "text": "So we're going to start by talking about the data structures that we have in pandas, how to load the data, what are different data structures that you can load and play with the data.",
+    "start_ms": 65623,
+    "end_ms": 75396,
+    "duration_ms": 9773,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 75.396,
+    "text": "And then we're going to also start talking about how we can do data extraction.",
+    "start_ms": 75396,
+    "end_ms": 79841,
+    "duration_ms": 4445,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 79.841,
+    "text": "If you want to filter your data set so that you look at a bunch of features and only a limited number of rows, how do we do that?",
+    "start_ms": 79841,
+    "end_ms": 87256,
+    "duration_ms": 7415,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 87.256,
+    "text": "That's also something that we're going to talk about today and that's using lock, eye lock and selection operator that you're seeing in the agenda.",
+    "start_ms": 87256,
+    "end_ms": 98344,
+    "duration_ms": 11088,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 98.202,
+    "text": "that today what we are going to go over is to introduce you with Pandas programming leveries so you can expect that there's a whole lot of code coming your way.",
+    "start_ms": 98202,
+    "end_ms": 107992,
+    "duration_ms": 9790,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 107.992,
+    "text": "So you can be overwhelming. We're going to keep talking about new syntax and new syntax and I'll keep throwing these new syntax at you.",
+    "start_ms": 107992,
+    "end_ms": 115630,
+    "duration_ms": 7638,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 115.63,
+    "text": "So time is it might be overwhelming and that's totally fine.",
+    "start_ms": 115630,
+    "end_ms": 118992,
+    "duration_ms": 3362,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 118.992,
+    "text": "What you are expecting from the lecture in today's lecture and in the next couple of lectures is that we're going to show you the roadmap.",
+    "start_ms": 118992,
+    "end_ms": 126552,
+    "duration_ms": 7560,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 126.552,
+    "text": "And you're going to get actually used to the syntax and learn more about the syntax in lab and in homeworks.",
+    "start_ms": 126552,
+    "end_ms": 132432,
+    "duration_ms": 5880,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 132.432,
+    "text": "What we're going to talk about today, and also again in the next couple of lectures, is how to use the API documentation in order to figure out what functionality is out there so that you can use those online resources as you're working on your lab and your homework.",
+    "start_ms": 132432,
+    "end_ms": 148952,
+    "duration_ms": 16520,
+    "word_count": 50,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 148.952,
+    "text": "So the actual deep learning that's going to happen in pandas is going to happen in lab and homework.",
+    "start_ms": 148952,
+    "end_ms": 155712,
+    "duration_ms": 6760,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 155.712,
+    "text": "So don't expect to memorize everything. We don't expect you to memorize all the syntax of recovering today.",
+    "start_ms": 155712,
+    "end_ms": 161672,
+    "duration_ms": 5960,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 161.672,
+    "text": "So only just listen to the logic, because pandas, the way that it's implemented and all the syntaxes that you just need to make sense of the logic, and then everything else will become, you'll become used to it as you keep using it.",
+    "start_ms": 161672,
+    "end_ms": 175912,
+    "duration_ms": 14240,
+    "word_count": 44,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 176.376,
+    "text": "And I think that's about It in terms of um What you're gonna see today oh the last thing that I wanted to say again the reason that you don't need to memorize this stuff is that as you're working on the labs and homework so you have the pandas a p i documentation so you can go ahead and read all of those documentation see a bunch of examples you'll be able to replicate it for me turn on final example nice thing about data 100 is that we give you a very comprehensive reference sheet so all of the functions that you'll be using in the midterm that the brief description of that is going to be on that reference view.",
+    "start_ms": 176376,
+    "end_ms": 215064,
+    "duration_ms": 38688,
+    "word_count": 123,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 215.064,
+    "text": "So you should be able to comfortably read it and then apply it on different questions that we have on the exam.",
+    "start_ms": 215064,
+    "end_ms": 222824,
+    "duration_ms": 7760,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 222.824,
+    "text": "So just to give you a little bit of more information about what to expect.",
+    "start_ms": 222824,
+    "end_ms": 229024,
+    "duration_ms": 6200,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 229.024,
+    "text": "So let's dive right into things. So we talked about today and also in the previous lecture, we talked about data.",
+    "start_ms": 229024,
+    "end_ms": 236784,
+    "duration_ms": 7760,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 236.784,
+    "text": "We say that, okay, we're dealing with the data, were extracting the data, we're processing the data, but we didn't talk about what this data is.",
+    "start_ms": 236784,
+    "end_ms": 244104,
+    "duration_ms": 7320,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 244.104,
+    "text": "So talking about the data and where data comes in this data science lifecycle that we saw in the previous lecture, we've been over a great demo with a lot of different pandas and text.",
+    "start_ms": 244104,
+    "end_ms": 253944,
+    "duration_ms": 9840,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 253.944,
+    "text": "And you saw that we need pandas in order to be able to process loads of data and be able to do fun things, whether it be able to visualize the data, to filter the data and extract information from the data that we have.",
+    "start_ms": 253944,
+    "end_ms": 267064,
+    "duration_ms": 13120,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 267.064,
+    "text": "We saw that there are two entry points into this data science lifecycle.",
+    "start_ms": 267064,
+    "end_ms": 270984,
+    "duration_ms": 3920,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 270.984,
+    "text": "There's one thing that we ask a question. And then we go about finding the data or that the lifecycle starts with providing the data to you.",
+    "start_ms": 270984,
+    "end_ms": 280184,
+    "duration_ms": 9200,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 280.584,
+    "text": "What we're going to expect, I spent a lot of time in the first three weeks is the exploratory data analysis that we're, for short, we're calling it EDA.",
+    "start_ms": 280584,
+    "end_ms": 292544,
+    "duration_ms": 11960,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 292.544,
+    "text": "So in EDA, we're going to show you how you can load the data, how to process the data, how to visualize the data, how to process textual information, and also in addition to that, how to be able to visualize all the information that you have in the data set that you have.",
+    "start_ms": 292544,
+    "end_ms": 306864,
+    "duration_ms": 14320,
+    "word_count": 54,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 306.864,
+    "text": "So this is the entire kind of, we're gonna spend the first three weeks of data 100 so that you know where we stand.",
+    "start_ms": 306864,
+    "end_ms": 315624,
+    "duration_ms": 8760,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 316.088,
+    "text": "But I basically talked about data a lot. I say that we're giving you the data, we're handing you the data, we are processing the data, but I don't talk about what this data is, other than this abstract idea of me throwing a box of data at you.",
+    "start_ms": 316088,
+    "end_ms": 330448,
+    "duration_ms": 14360,
+    "word_count": 49,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 330.448,
+    "text": "So today, we're going to talk about what this data actually is, how is it stored, how can we load and process data in different formats, and what is the standard way for us to think about data?",
+    "start_ms": 330448,
+    "end_ms": 342048,
+    "duration_ms": 11600,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 342.048,
+    "text": "So we're going to think about the data as a tabular data.",
+    "start_ms": 342048,
+    "end_ms": 346408,
+    "duration_ms": 4360,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 347.288,
+    "text": "in in data 100 and in generally when we are talking about data science workflow.",
+    "start_ms": 347288,
+    "end_ms": 353808,
+    "duration_ms": 6520,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 353.808,
+    "text": "So what is a tabular data tabular data means that it a data that lives in a table.",
+    "start_ms": 353808,
+    "end_ms": 360888,
+    "duration_ms": 7080,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 360.888,
+    "text": "So what you're seeing in this example is that I have a table which is like a panel or a spreadsheet like of the data.",
+    "start_ms": 360888,
+    "end_ms": 367888,
+    "duration_ms": 7000,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 367.888,
+    "text": "And this data is the data set that will work with in today's lecture and in the next couple of lectures to come.",
+    "start_ms": 367888,
+    "end_ms": 373888,
+    "duration_ms": 6000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 373.888,
+    "text": "So this is elections data set. So assume that someone handed me the data that was collected about all the individuals who ran for the presidents of the United States, their names, their party affiliation, the popular vote that they got, the result and the percentage of vote that they got in that specific election as well as the year.",
+    "start_ms": 373888,
+    "end_ms": 396048,
+    "duration_ms": 22160,
+    "word_count": 60,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 396.048,
+    "text": "So you can see that it starts from 1824 and then goes all the way to the 2020 election.",
+    "start_ms": 396048,
+    "end_ms": 402888,
+    "duration_ms": 6840,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 403.256,
+    "text": "So this is the data set that we're working with.",
+    "start_ms": 403256,
+    "end_ms": 405656,
+    "duration_ms": 2400,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 405.656,
+    "text": "But as data scientists, we have a contract that when we're thinking about a tabular data in 2D format, we're always referring to rows as a single observation or a single sample or a single individual in this data set that we had dealt with.",
+    "start_ms": 405656,
+    "end_ms": 426536,
+    "duration_ms": 20880,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 426.536,
+    "text": "So for example, in this case, this single row corresponds to John Adams, who ran for presidents in 1824 or the time that the 1824 year that they ran for presidents, if there's someone who ran multiple times or over multiple different years.",
+    "start_ms": 426536,
+    "end_ms": 445495,
+    "duration_ms": 18959,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 445.495,
+    "text": "So we think about Rose as each one of those individual observations or a sample, we're going to keep talking about the resolution of the or the granularity of our data set in features lectures, but for today you just assume that whatever the granularity or the resolution of your data is, you're going to refer to one single data point as one of the rows in your data.",
+    "start_ms": 445495,
+    "end_ms": 472376,
+    "duration_ms": 26881,
+    "word_count": 69,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 472.376,
+    "text": "And obviously the columns are going to be attributes or different features of those of those data points that you're holding.",
+    "start_ms": 472376,
+    "end_ms": 480496,
+    "duration_ms": 8120,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 480.496,
+    "text": "So for example here, this is the feature related to party.",
+    "start_ms": 480496,
+    "end_ms": 483576,
+    "duration_ms": 3080,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 483.576,
+    "text": "So all of those individuals do have party affiliation or if there is data missing you will see that that feature is no That's something that you will see in homeworks and labs and we're gonna take a look at that later on and let's see how we can handle Missing values, but for this is specific case all of the data The entire data set is filled in with all of the possible values And then what you're seeing is that party is a feature or is an attribute?",
+    "start_ms": 483576,
+    "end_ms": 510455,
+    "duration_ms": 26879,
+    "word_count": 90,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 510.456,
+    "text": "So we're going to talk about feature, attribute, or characteristic of those individuals.",
+    "start_ms": 510456,
+    "end_ms": 515456,
+    "duration_ms": 5000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 515.456,
+    "text": "So what are different features that we have in this data set?",
+    "start_ms": 515456,
+    "end_ms": 518456,
+    "duration_ms": 3000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 518.456,
+    "text": "We have a feature for a year, we have a feature for the candidate name, we have a feature for party affiliation and so on and so forth.",
+    "start_ms": 518456,
+    "end_ms": 523456,
+    "duration_ms": 5000,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 523.456,
+    "text": "So you can see that we have a data set with x number of individuals.",
+    "start_ms": 523456,
+    "end_ms": 528456,
+    "duration_ms": 5000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 528.456,
+    "text": "So how many individuals or how many samples we have?",
+    "start_ms": 528456,
+    "end_ms": 531455,
+    "duration_ms": 2999,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 532.056,
+    "text": "We have 182 right because we have those labels also listed here labels starting from zero one and then it goes all the way to 181 that shows me that if this sequence of numbers is sequential then I have 182 different individuals or samples in my data set and then how many features I have I basically have feature 1, 2, 3, 4, 5, and 6.",
+    "start_ms": 532056,
+    "end_ms": 558488,
+    "duration_ms": 26432,
+    "word_count": 67,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 558.488,
+    "text": "So I have six features in my dataset. So this is how we can think about a dataset in 2D format, and then we have rows and we have columns, and that's how we are going to always refer to samples and features in our dataset.",
+    "start_ms": 558488,
+    "end_ms": 572448,
+    "duration_ms": 13960,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 572.448,
+    "text": "So in data aid, those who are coming from data aid, you have seen that this concept of a table was represented using the tables class.",
+    "start_ms": 572448,
+    "end_ms": 583568,
+    "duration_ms": 11120,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 583.568,
+    "text": "So you were loading the data into tables. In data 100, we're going to refer to a 2D data structure like this as a data frame.",
+    "start_ms": 583568,
+    "end_ms": 593648,
+    "duration_ms": 10080,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 593.648,
+    "text": "And we're going to talk about what data frame is.",
+    "start_ms": 593648,
+    "end_ms": 595608,
+    "duration_ms": 1960,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 595.608,
+    "text": "And that's your introduction to the first data structure that you're seeing that is supported by the pandas library that we have.",
+    "start_ms": 595608,
+    "end_ms": 603968,
+    "duration_ms": 8360,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 604.12,
+    "text": "I kept talking about pandas pandas what is pandas pandas stands for panel data and the term came from finance where they had panels of data or transaction data that they had to load and process and then they wrote the preliminary kind of library that then got adopted by the CS community and got extended over.",
+    "start_ms": 604120,
+    "end_ms": 623620,
+    "duration_ms": 19500,
+    "word_count": 57,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 623.62,
+    "text": "So this panda stands for panel data. It doesn't have anything to do with panda bear, but because in data 100, we love cute animals.",
+    "start_ms": 623620,
+    "end_ms": 632460,
+    "duration_ms": 8840,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 632.46,
+    "text": "Then we design all of the logos in data 100 around having a panda kind of flying somewhere in some of our logos.",
+    "start_ms": 632460,
+    "end_ms": 638940,
+    "duration_ms": 6480,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 638.94,
+    "text": "And you'll keep seeing that in handouts and in different places.",
+    "start_ms": 638940,
+    "end_ms": 642420,
+    "duration_ms": 3480,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 642.42,
+    "text": "And you're also seeing that on the website as well.",
+    "start_ms": 642420,
+    "end_ms": 646060,
+    "duration_ms": 3640,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 646.232,
+    "text": "So let's get into what pandas can do. So I say pandas is a programming library.",
+    "start_ms": 646232,
+    "end_ms": 653072,
+    "duration_ms": 6840,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 653.072,
+    "text": "So it's a programming library that gives you a lot of functionality.",
+    "start_ms": 653072,
+    "end_ms": 657232,
+    "duration_ms": 4160,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 657.232,
+    "text": "And starting functionality that we want is basically to be able to arrange data in a tab alert format.",
+    "start_ms": 657232,
+    "end_ms": 664192,
+    "duration_ms": 6960,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 664.192,
+    "text": "There are different data structures that are supported by pandas, how we can load the data, how we can take a look at the data.",
+    "start_ms": 664192,
+    "end_ms": 670032,
+    "duration_ms": 5840,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 670.032,
+    "text": "It will tell us how we can extract useful information from the data.",
+    "start_ms": 670032,
+    "end_ms": 674632,
+    "duration_ms": 4600,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 674.632,
+    "text": "So, for example, if you have this election dataset, and if you want to extract, for example, what is the maximum popular percentage of votes that a candidate got?",
+    "start_ms": 674632,
+    "end_ms": 683751,
+    "duration_ms": 9119,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 683.751,
+    "text": "You can basically use Pandas functionality in order to search through your data frame and be able to extract that information.",
+    "start_ms": 683751,
+    "end_ms": 693032,
+    "duration_ms": 9281,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 693.032,
+    "text": "You can gain insights, you can visualize it, you can filter it, you can do all fancy stuff in order to process your data and gain more information.",
+    "start_ms": 693032,
+    "end_ms": 701111,
+    "duration_ms": 8079,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 701.111,
+    "text": "You can do feature engineering. So for example, say that you have the popular percentage, right?",
+    "start_ms": 701111,
+    "end_ms": 706952,
+    "duration_ms": 5841,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 706.952,
+    "text": "If you want to change that feature into a different feature that is more useful for the modeling tasks that you will do down the road, remember that we're in the third data science lifecycle, the fourth data science lifecycle stage is going to be modeling.",
+    "start_ms": 706952,
+    "end_ms": 721431,
+    "duration_ms": 14479,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 721.431,
+    "text": "So we'll keep doing everything possible to do the modeling to make the modeling phase as easy as possible.",
+    "start_ms": 721431,
+    "end_ms": 730032,
+    "duration_ms": 8601,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 730.032,
+    "text": "So we might want to do feature engineering. Feature engineering is that, okay, I have these all of these percentages, but what if I want to turn those percentages into ratio, ratio over like the, the highest percentage of votes that it can't get at God in that specific election right that's an example of transforming the data uh...",
+    "start_ms": 730032,
+    "end_ms": 752938,
+    "duration_ms": 22906,
+    "word_count": 59,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 752.938,
+    "text": "in terms of doing transformation there are a lot of times that we can use numpy so we're using numpy so that we're not implementing all of those uh...",
+    "start_ms": 752938,
+    "end_ms": 762432,
+    "duration_ms": 9494,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 762.432,
+    "text": "mathematical calculations ourselves and another Kind of benefit of pandas is that it will perform all of those operations in a vectorized way.",
+    "start_ms": 762432,
+    "end_ms": 772240,
+    "duration_ms": 9808,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 772.24,
+    "text": "So remember that we had columns as features so it will turn one specific column into one long vector or one very large vector.",
+    "start_ms": 772240,
+    "end_ms": 782760,
+    "duration_ms": 10520,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 782.76,
+    "text": "And then all of the calculation that we're doing is going to be vector calculation, vector multiplication, vector addition and different different kind of operations that we run on vectors.",
+    "start_ms": 782760,
+    "end_ms": 793960,
+    "duration_ms": 11200,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 793.96,
+    "text": "so that the processing can be paralyzed and then the calculation or training of models can be easier.",
+    "start_ms": 793960,
+    "end_ms": 800279,
+    "duration_ms": 6319,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 800.279,
+    "text": "That's the power of... that transforming data into a table or format so that using that table or format your data can be represented as vectors then the computation can be much easier kind of making a rational about like why we do certain things and why we're not loading data in any other way.",
+    "start_ms": 800279,
+    "end_ms": 819528,
+    "duration_ms": 19249,
+    "word_count": 55,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 820.648,
+    "text": "In data 100 so you can think about this lecture and the next two lectures as kind of for those those who know data science library.",
+    "start_ms": 820648,
+    "end_ms": 830108,
+    "duration_ms": 9460,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 830.108,
+    "text": "So pandas is kind of industry standard and academia standard for doing data science kind of operations.",
+    "start_ms": 830108,
+    "end_ms": 837888,
+    "duration_ms": 7780,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 837.888,
+    "text": "So for those who know data science library, you can think about pandas as a super set of that and it has a lot more functionalities.",
+    "start_ms": 837888,
+    "end_ms": 846688,
+    "duration_ms": 8800,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 846.688,
+    "text": "So what's happening is that you can think about a lot of functionalities that you'll learn in data science library as being translated over to pandas.",
+    "start_ms": 846688,
+    "end_ms": 855648,
+    "duration_ms": 8960,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 855.648,
+    "text": "So you're thinking about learning a foreign language, so you know how to build sentences, but you're translating that.",
+    "start_ms": 855648,
+    "end_ms": 860648,
+    "duration_ms": 5000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 860.648,
+    "text": "And then what you're basically also doing in addition to that is learning a lot more functionality that we have with pandas that we didn't have in data science library.",
+    "start_ms": 860648,
+    "end_ms": 869648,
+    "duration_ms": 9000,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 869.648,
+    "text": "So that's how you should expect us operating. And that's how you should expect us operating.",
+    "start_ms": 869648,
+    "end_ms": 875448,
+    "duration_ms": 5800,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 876.184,
+    "text": "So the code that you will see, um, generally in data 100.",
+    "start_ms": 876184,
+    "end_ms": 879684,
+    "duration_ms": 3500,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 879.684,
+    "text": "And this is the first time that we're officially expecting you to know all the code that we're showing you, um, is that all the code we're generally, um, sharing them on the website.",
+    "start_ms": 879684,
+    "end_ms": 891084,
+    "duration_ms": 11400,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 891.084,
+    "text": "So you can go on the website and you can go and then see that, okay, this is lecture two pandas and then be actually released all the information.",
+    "start_ms": 891084,
+    "end_ms": 899184,
+    "duration_ms": 8100,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 899.184,
+    "text": "Um, so you can click on the code, get the code, it will spin data 100, um, data help for you and then you should be able to get the data as well as all the notebooks that we posted for you.",
+    "start_ms": 899184,
+    "end_ms": 909724,
+    "duration_ms": 10540,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 909.724,
+    "text": "There's also the HTML version if you're looking on your phone and you just want to take a look at the code you can open the HTML version that is not runable.",
+    "start_ms": 909724,
+    "end_ms": 919064,
+    "duration_ms": 9340,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 919.064,
+    "text": "It's just the HTML file that you should be able to take a look.",
+    "start_ms": 919064,
+    "end_ms": 923264,
+    "duration_ms": 4200,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 923.264,
+    "text": "And this is kind of an unofficial translation of data science library to pendants.",
+    "start_ms": 923264,
+    "end_ms": 929124,
+    "duration_ms": 5860,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 929.124,
+    "text": "So it basically walks you through everything that you had and then it will have the corresponding version in pandas.",
+    "start_ms": 929124,
+    "end_ms": 934669,
+    "duration_ms": 5545,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 934.669,
+    "text": "So if you want to take a look at that, we're also supposed to dec sample code and HTML file format for it, but we're not going to go over these last two or this data data aid equivalent kind of notebook for you.",
+    "start_ms": 934669,
+    "end_ms": 949444,
+    "duration_ms": 14775,
+    "word_count": 44,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 949.444,
+    "text": "So what you're expecting is if you open your notebook, you're going to see a data folder.",
+    "start_ms": 949444,
+    "end_ms": 955342,
+    "duration_ms": 5898,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 955.342,
+    "text": "This is where we have all the data and then you should be able to see data aid translation and you should be able to see lecture 2.iphone notebook.",
+    "start_ms": 955342,
+    "end_ms": 962657,
+    "duration_ms": 7315,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 962.657,
+    "text": "This is my local change so you won't be able to have access to this demo because I have this likely different version of that.",
+    "start_ms": 962657,
+    "end_ms": 970279,
+    "duration_ms": 7622,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 970.279,
+    "text": "So this is the file directory that you will see.",
+    "start_ms": 970279,
+    "end_ms": 972971,
+    "duration_ms": 2692,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 972.971,
+    "text": "You can click on the lecture 2 and then be able to get the code and run it and whatnot.",
+    "start_ms": 972971,
+    "end_ms": 977844,
+    "duration_ms": 4873,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 978.648,
+    "text": "So. Now let's dive into starting to know what are those data structures?",
+    "start_ms": 978648,
+    "end_ms": 984608,
+    "duration_ms": 5960,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 984.608,
+    "text": "How can we create them? How can we use them?",
+    "start_ms": 984608,
+    "end_ms": 987608,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 987.608,
+    "text": "I'm going to start with data frame because we said that tables are data frames in pandas language.",
+    "start_ms": 987608,
+    "end_ms": 993608,
+    "duration_ms": 6000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 993.608,
+    "text": "And this table is this this to the structure. It has a bunch of columns.",
+    "start_ms": 993608,
+    "end_ms": 997893,
+    "duration_ms": 4285,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 997.893,
+    "text": "It has a bunch of rows. One thing that I want you to note is that each one of those rows they have a label that is kind of noted by a bold color or both letters.",
+    "start_ms": 997893,
+    "end_ms": 1010288,
+    "duration_ms": 12395,
+    "word_count": 37,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1010.288,
+    "text": "And then we also have labels for the columns, or these are the names for the columns, that are also labels that are also showing what attribute or what's the name of that attribute in each one of those respective columns.",
+    "start_ms": 1010288,
+    "end_ms": 1022528,
+    "duration_ms": 12240,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1022.528,
+    "text": "The way that I want you to think about this 2D structure is that it is a collection of columns.",
+    "start_ms": 1022528,
+    "end_ms": 1028728,
+    "duration_ms": 6200,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1028.728,
+    "text": "So we have a bunch of columns that we aggregate it together in order to build a data structure called data frame.",
+    "start_ms": 1028728,
+    "end_ms": 1037048,
+    "duration_ms": 8320,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1037.048,
+    "text": "and each one of those columns is a series object.",
+    "start_ms": 1037048,
+    "end_ms": 1040527,
+    "duration_ms": 3479,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1040.792,
+    "text": "series is another data structure in pandas. So series is a one D structure.",
+    "start_ms": 1040792,
+    "end_ms": 1046272,
+    "duration_ms": 5480,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1046.272,
+    "text": "It's a sequence of values. So you can think about, for example, if I look at the candidate, candidate by itself, that single column is a series object.",
+    "start_ms": 1046272,
+    "end_ms": 1055312,
+    "duration_ms": 9040,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1055.312,
+    "text": "It has a name and the name is actually this candidate.",
+    "start_ms": 1055312,
+    "end_ms": 1059312,
+    "duration_ms": 4000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1059.312,
+    "text": "So you're seeing that if I go ahead and print the value in that specific column, it will say that the name of this series object is candidate.",
+    "start_ms": 1059312,
+    "end_ms": 1066712,
+    "duration_ms": 7400,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1066.712,
+    "text": "It will tell me that the lengths of this candidate, the candidate series object is 182.",
+    "start_ms": 1066712,
+    "end_ms": 1073592,
+    "duration_ms": 6880,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1073.592,
+    "text": "We established that because we have 182 different elements in that specific column.",
+    "start_ms": 1073592,
+    "end_ms": 1079032,
+    "duration_ms": 5440,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1079.032,
+    "text": "And then it also says that the data type is object because it's string able to mathematically convert that and recognizes that as as objects for us.",
+    "start_ms": 1079032,
+    "end_ms": 1089832,
+    "duration_ms": 10800,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1090.432,
+    "text": "What you're seeing is that the format of a serious object is a slightly different than the data frame.",
+    "start_ms": 1090432,
+    "end_ms": 1096765,
+    "duration_ms": 6333,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1096.765,
+    "text": "Data frame is this nicely looking to the table like a structure versus every time that you're printing a serious object.",
+    "start_ms": 1096765,
+    "end_ms": 1103765,
+    "duration_ms": 7000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1103.765,
+    "text": "The serious object has a bunch of values. It has all of those labels also tagging on kind of the left-hand side as a kind of a secondary column, but it's not a column.",
+    "start_ms": 1103765,
+    "end_ms": 1115672,
+    "duration_ms": 11907,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1115.672,
+    "text": "It's just labels for each one of those values that we have.",
+    "start_ms": 1115672,
+    "end_ms": 1119352,
+    "duration_ms": 3680,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1119.352,
+    "text": "And then at the bottom it says that the name of the series was whatever, the lengths was whatever, and the objects, the type of the data that this series object holds is, for example, integer or object and whatnot.",
+    "start_ms": 1119352,
+    "end_ms": 1131792,
+    "duration_ms": 12440,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1132.312,
+    "text": "So these are the two structures that we are going to see.",
+    "start_ms": 1132312,
+    "end_ms": 1136152,
+    "duration_ms": 3840,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1136.152,
+    "text": "And there is a third one that we're going to take a look at that afterwards.",
+    "start_ms": 1136152,
+    "end_ms": 1139832,
+    "duration_ms": 3680,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1139.832,
+    "text": "But before I jump into data frame, because we know series is the building block of a data frame, I want to go ahead and start things by just one of these structures that's the simplest of all.",
+    "start_ms": 1139832,
+    "end_ms": 1151032,
+    "duration_ms": 11200,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1151.912,
+    "text": "So a series object, as I said, is a one-dimensional array like object.",
+    "start_ms": 1151912,
+    "end_ms": 1159432,
+    "duration_ms": 7520,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1159.432,
+    "text": "Why do I say it's one-dimensional? Because I have one column of values, one set of values.",
+    "start_ms": 1159432,
+    "end_ms": 1167072,
+    "duration_ms": 7640,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1167.072,
+    "text": "This second set of values that you're seeing on the left, that is here 0, 1, 2.",
+    "start_ms": 1167072,
+    "end_ms": 1172752,
+    "duration_ms": 5680,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1172.752,
+    "text": "These are just labels that are annotating that, OK, at label 0 or at location 0, I have value welcome.",
+    "start_ms": 1172752,
+    "end_ms": 1180912,
+    "duration_ms": 8160,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1180.912,
+    "text": "At location 1 or at label 1, I have value 2.",
+    "start_ms": 1180912,
+    "end_ms": 1184192,
+    "duration_ms": 3280,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1184.192,
+    "text": "And at location 2, I have value data 100. But the structure we're considering series as a one-vious structure because there is one column of values that we're only concerned with.",
+    "start_ms": 1184192,
+    "end_ms": 1195592,
+    "duration_ms": 11400,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1196.44,
+    "text": "How do I create a series object? First of all, what I need to do is I need to import pandas.",
+    "start_ms": 1196440,
+    "end_ms": 1202280,
+    "duration_ms": 5840,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1202.28,
+    "text": "We import pandas as PD and views. PD is the earliest for pandas.",
+    "start_ms": 1202280,
+    "end_ms": 1207863,
+    "duration_ms": 5583,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1207.863,
+    "text": "And we basically say that PD create a serious object and what we will do is that we will provide a list of these values.",
+    "start_ms": 1207863,
+    "end_ms": 1217440,
+    "duration_ms": 9577,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1218.488,
+    "text": "that needs to be stored in that column what you're seeing is that the list of values now has three different string values welcome to data 100 right and then you're seeing that in my value column right here I also have welcome to data 100 in the same order that I provided I didn't provide labels, but because each one of these values need to have a label or need to have need to be located by some key value.",
+    "start_ms": 1218488,
+    "end_ms": 1245088,
+    "duration_ms": 26600,
+    "word_count": 81,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1245.088,
+    "text": "It automatically created all of these values 0, 1, 2 automatically labeling the first one as 0, the second one as 1, and the third one as 2.",
+    "start_ms": 1245088,
+    "end_ms": 1255608,
+    "duration_ms": 10520,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1256.44,
+    "text": "So a series object has two parts as you can imagine.",
+    "start_ms": 1256440,
+    "end_ms": 1260600,
+    "duration_ms": 4160,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1260.6,
+    "text": "There is one part that is, that's all of these labels that we're referring to that as the index, uh, value index that, uh, values.",
+    "start_ms": 1260600,
+    "end_ms": 1270240,
+    "duration_ms": 9640,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1270.24,
+    "text": "And then there is the actual values that are restored.",
+    "start_ms": 1270240,
+    "end_ms": 1273360,
+    "duration_ms": 3120,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1273.36,
+    "text": "Um, so therefore we can go ahead and get the values, um, that are restored in the series object.",
+    "start_ms": 1273360,
+    "end_ms": 1279000,
+    "duration_ms": 5640,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1279.0,
+    "text": "We could say that, um, if I create that this S object or S is a series object, I can say S that values, And it will tell me that okay, the values that you stored are in an array with all of these values, and it will give me, will volunteer the information about the data type.",
+    "start_ms": 1279000,
+    "end_ms": 1295800,
+    "duration_ms": 16800,
+    "word_count": 58,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1295.8,
+    "text": "And again, because there's string that recognizes object. The second piece of information that we have is all of these.",
+    "start_ms": 1295800,
+    "end_ms": 1303608,
+    "duration_ms": 7808,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1304.152,
+    "text": "Let me remove this. All of these labels that are stored in an index object.",
+    "start_ms": 1304152,
+    "end_ms": 1311152,
+    "duration_ms": 7000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1311.152,
+    "text": "So this is the third data structure that we have.",
+    "start_ms": 1311152,
+    "end_ms": 1314152,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1314.152,
+    "text": "We talked about data frame that is a collection of serious objects.",
+    "start_ms": 1314152,
+    "end_ms": 1319152,
+    "duration_ms": 5000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1319.152,
+    "text": "Each one of the serious objects is representing one column.",
+    "start_ms": 1319152,
+    "end_ms": 1322152,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1322.152,
+    "text": "And one serious object has its own values. And then it has the index tack to those values.",
+    "start_ms": 1322152,
+    "end_ms": 1329152,
+    "duration_ms": 7000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1329.152,
+    "text": "So index is the third data structure that we're seeing.",
+    "start_ms": 1329152,
+    "end_ms": 1332152,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1332.152,
+    "text": "I'm ridden with all the data structures. But from this point on, we're just going to talk about how can we create index object, how can we set index object, how can we store values in series, how can we store values in data frame, and we'll take it from there.",
+    "start_ms": 1332152,
+    "end_ms": 1346472,
+    "duration_ms": 14320,
+    "word_count": 51,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1346.472,
+    "text": "So if I go ahead and here, for example, I say that, OK, s dot index, it will tell me that, oh, you didn't provide your index, but I went ahead and create a range object or a range index object.",
+    "start_ms": 1346472,
+    "end_ms": 1358671,
+    "duration_ms": 12199,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1358.671,
+    "text": "I started the range index at zero. I went ahead and created and tacked each one of these rows with these numerical values up to 3 and not including 3 that's how the range object works.",
+    "start_ms": 1358671,
+    "end_ms": 1372232,
+    "duration_ms": 13561,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1372.232,
+    "text": "And then it will tell me that this step. value is equal to one because it will just is that it is included by one every time.",
+    "start_ms": 1372232,
+    "end_ms": 1381752,
+    "duration_ms": 9520,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1381.784,
+    "text": "Question. Okay, there's a good question that whether the advantage of a serious object versus a data frame.",
+    "start_ms": 1381784,
+    "end_ms": 1392088,
+    "duration_ms": 10304,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1392.088,
+    "text": "So there's a lot of time that when you're doing the modeling, the input to each one of those training or those optimizers has to be a data frame.",
+    "start_ms": 1392088,
+    "end_ms": 1403608,
+    "duration_ms": 11520,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1403.608,
+    "text": "And there are different ways that we will say that quickly we can transform a 1D series into a data frame and vice versa.",
+    "start_ms": 1403608,
+    "end_ms": 1410265,
+    "duration_ms": 6657,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1410.265,
+    "text": "But there is no clear other advantage other than like if you're also printing.",
+    "start_ms": 1410265,
+    "end_ms": 1415179,
+    "duration_ms": 4914,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1415.179,
+    "text": "Serious object is not going to be printed nicely so you're seeing that this is not table like versus if you want it to be table like you might want to turn it into a data frame and use it there.",
+    "start_ms": 1415179,
+    "end_ms": 1425608,
+    "duration_ms": 10429,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1426.264,
+    "text": "Okay, I'm also monitoring questions on the slider. On my second laptop, so if you want to scan the QR code or go to slido.com, type in that code and then I should be able to see your questions on my second computer.",
+    "start_ms": 1426264,
+    "end_ms": 1439464,
+    "duration_ms": 13200,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1439.864,
+    "text": "All right, good. That's out of the way. We know what the series object is.",
+    "start_ms": 1439864,
+    "end_ms": 1445024,
+    "duration_ms": 5160,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1445.024,
+    "text": "And we know what index object is. Index is all of those labels, right?",
+    "start_ms": 1445024,
+    "end_ms": 1449586,
+    "duration_ms": 4562,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1449.586,
+    "text": "And we saw that how we can create the index automatically.",
+    "start_ms": 1449586,
+    "end_ms": 1453016,
+    "duration_ms": 3430,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1453.016,
+    "text": "And it will automatically tag up with those numerical values.",
+    "start_ms": 1453016,
+    "end_ms": 1455746,
+    "duration_ms": 2730,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1455.746,
+    "text": "But what if I want a custom index value? If I want to custom index value, what I'll do is I'll say that Get all of these values.",
+    "start_ms": 1455746,
+    "end_ms": 1465960,
+    "duration_ms": 10214,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1465.96,
+    "text": "This is the constructor for creating series object i'm gonna tell that okay get all of these values negative one ten and two and then i'm also saying that But the index that you want to tag each one of these values with is that for negative one, I want you to tag it with a for 10, I want you to tag it with b and for two, I want you to tag it with c.",
+    "start_ms": 1465960,
+    "end_ms": 1489768,
+    "duration_ms": 23808,
+    "word_count": 77,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1489.768,
+    "text": "And that's what I'll see on the right hand side here.",
+    "start_ms": 1489768,
+    "end_ms": 1492449,
+    "duration_ms": 2681,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1492.449,
+    "text": "So there is a control that if you want to provide your own index, you can provide your own index as well.",
+    "start_ms": 1492449,
+    "end_ms": 1504888,
+    "duration_ms": 12439,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1504.676,
+    "text": "of all of those labels or the values in the index object.",
+    "start_ms": 1504676,
+    "end_ms": 1508468,
+    "duration_ms": 3792,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1508.468,
+    "text": "And I can also go ahead and change the index object later on.",
+    "start_ms": 1508468,
+    "end_ms": 1512931,
+    "duration_ms": 4463,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1512.931,
+    "text": "Say that you created the index object or a serious object with a specific index.",
+    "start_ms": 1512931,
+    "end_ms": 1518472,
+    "duration_ms": 5541,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1518.472,
+    "text": "You change your mind. You might want to go back and change that value.",
+    "start_ms": 1518472,
+    "end_ms": 1523183,
+    "duration_ms": 4711,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1523.183,
+    "text": "It's just attribute that you're resetting. So I'm going to say that, okay, this is a stud index.",
+    "start_ms": 1523183,
+    "end_ms": 1529107,
+    "duration_ms": 5924,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1529.107,
+    "text": "Now I change my mind and go ahead and change the value to be first, second and third.",
+    "start_ms": 1529107,
+    "end_ms": 1535331,
+    "duration_ms": 6224,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1535.331,
+    "text": "So the index is now changing to first, second and third.",
+    "start_ms": 1535331,
+    "end_ms": 1539126,
+    "duration_ms": 3795,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1539.126,
+    "text": "And then the values remain the state negative one, ten, two, which is what I had before as well.",
+    "start_ms": 1539126,
+    "end_ms": 1544420,
+    "duration_ms": 5294,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1544.42,
+    "text": "Again, if I go ahead and get the stud index, the changes are reflected, so I I should be able to have access to what I want it.",
+    "start_ms": 1544420,
+    "end_ms": 1552336,
+    "duration_ms": 7916,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1553.56,
+    "text": "Any questions so far? Questions? Great question. So I forgot to mention that here because my values were integer, it was automatically labeling that as in 64 and it's not integers in 64 bit.",
+    "start_ms": 1553560,
+    "end_ms": 1577288,
+    "duration_ms": 23728,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1577.288,
+    "text": "And that's how pandas is implemented. But anything other than primitive types, integer float, everything else is going to be tagged as objects and you'll keep seeing object object over and over again.",
+    "start_ms": 1577288,
+    "end_ms": 1589688,
+    "duration_ms": 12400,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1589.688,
+    "text": "So most of the time, it is not numerical value and it's objects.",
+    "start_ms": 1589688,
+    "end_ms": 1594368,
+    "duration_ms": 4680,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1594.368,
+    "text": "And a lot of time, if you, for example, don't do the loading of the data properly, it will even load the integer values or full load values as object, then you need to cast that.",
+    "start_ms": 1594368,
+    "end_ms": 1606207,
+    "duration_ms": 11839,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1606.207,
+    "text": "We're going to talk about how we can cast the types in the next couple of lectures.",
+    "start_ms": 1606207,
+    "end_ms": 1610488,
+    "duration_ms": 4281,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1610.488,
+    "text": "Good question. Let's keep all of moving all of the questions on the slider, because our TAs, we should be able to respond pretty quickly.",
+    "start_ms": 1610488,
+    "end_ms": 1618048,
+    "duration_ms": 7560,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1618.048,
+    "text": "I have 50 something it's nice to go, exciting. But let's get to it.",
+    "start_ms": 1618048,
+    "end_ms": 1622728,
+    "duration_ms": 4680,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1622.728,
+    "text": "So if I want to go ahead and make a selection, so we created a serious object, now is the time that we want to use it.",
+    "start_ms": 1622728,
+    "end_ms": 1630567,
+    "duration_ms": 7839,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1630.567,
+    "text": "And we want to select a number of values in the serious object.",
+    "start_ms": 1630567,
+    "end_ms": 1636648,
+    "duration_ms": 6081,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1636.648,
+    "text": "So there are three different ways that I can do it.",
+    "start_ms": 1636648,
+    "end_ms": 1639168,
+    "duration_ms": 2520,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1639.168,
+    "text": "I can say that, okay, I'm going to get access to the element that I want using its label.",
+    "start_ms": 1639168,
+    "end_ms": 1645727,
+    "duration_ms": 6559,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1645.728,
+    "text": "And I only have a single label that I want to use or extract a single value.",
+    "start_ms": 1645728,
+    "end_ms": 1650728,
+    "duration_ms": 5000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1650.728,
+    "text": "You provide that single label, and it should be able to give you that.",
+    "start_ms": 1650728,
+    "end_ms": 1654608,
+    "duration_ms": 3880,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1654.608,
+    "text": "So the way that we'll do it is that, OK, we created this series object.",
+    "start_ms": 1654608,
+    "end_ms": 1658008,
+    "duration_ms": 3400,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1658.008,
+    "text": "You can verify that the series object that I have has values negative.",
+    "start_ms": 1658008,
+    "end_ms": 1662888,
+    "duration_ms": 4880,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1663.192,
+    "text": "4-0-2-0-6, 4-0-2-0-6, and then it has all of those labeled ABC&D and then ABC&D are all there.",
+    "start_ms": 1663192,
+    "end_ms": 1671752,
+    "duration_ms": 8560,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1671.752,
+    "text": "So if I want to go ahead and say that, oh, I want to get the value that corresponds to label A.",
+    "start_ms": 1671752,
+    "end_ms": 1678472,
+    "duration_ms": 6720,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1679.112,
+    "text": "What it will do is it will go ahead and say that, think about labeled as the keys in the dictionary that you'll use them in order to look up the value, right?",
+    "start_ms": 1679112,
+    "end_ms": 1688857,
+    "duration_ms": 9745,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1688.857,
+    "text": "So I'm getting the key, I have the key A, And then I'll say that, okay, what is the value that corresponds to A and the values for, and it will give me four.",
+    "start_ms": 1688857,
+    "end_ms": 1700087,
+    "duration_ms": 11230,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1700.087,
+    "text": "And that's the case that I only want one single value to be extracted.",
+    "start_ms": 1700087,
+    "end_ms": 1708711,
+    "duration_ms": 8624,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1708.47,
+    "text": "the label for all of those values, for all of those values that I want to extract as a list, and then I will be able to extract all of that for me.",
+    "start_ms": 1708470,
+    "end_ms": 1718500,
+    "duration_ms": 10030,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1718.776,
+    "text": "So that's a list of labels. So with a list of labels here, I would say that, okay, I want the values that correspond to A and C.",
+    "start_ms": 1718776,
+    "end_ms": 1726916,
+    "duration_ms": 8140,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1726.916,
+    "text": "What are those values? So let's take a look. A should give me four, and then C should give me zero.",
+    "start_ms": 1726916,
+    "end_ms": 1733816,
+    "duration_ms": 6900,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1733.816,
+    "text": "So there's one way that we could say that, okay, give four and zero and whatever order that you want.",
+    "start_ms": 1733816,
+    "end_ms": 1738816,
+    "duration_ms": 5000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1738.816,
+    "text": "But then later on, it will be hard for us to figure out whether four was corresponding to the key C or four was corresponding to key A.",
+    "start_ms": 1738816,
+    "end_ms": 1747296,
+    "duration_ms": 8480,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1747.296,
+    "text": "And that's why every time that we have a list of labels that we're extracting the value for, we should return also the corresponding labels as well so that it's distinguishable, that what is for corresponding to and what is zero corresponding to and we can make a distinction between them.",
+    "start_ms": 1747296,
+    "end_ms": 1765936,
+    "duration_ms": 18640,
+    "word_count": 51,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1765.936,
+    "text": "So therefore, In that specific case, what we'll do is we'll pass this entire set of values.",
+    "start_ms": 1765936,
+    "end_ms": 1772632,
+    "duration_ms": 6696,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1772.632,
+    "text": "And for me to pass the labels together with the values...",
+    "start_ms": 1772632,
+    "end_ms": 1776472,
+    "duration_ms": 3840,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1776.92,
+    "text": "What is that data structure look like? That is a serious object, right?",
+    "start_ms": 1776920,
+    "end_ms": 1783528,
+    "duration_ms": 6608,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1784.472,
+    "text": "So a data type that has labels and it has values and then the resulting data type is going to be serious.",
+    "start_ms": 1784472,
+    "end_ms": 1793124,
+    "duration_ms": 8652,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1793.304,
+    "text": "What I want you when initially in the lecture I said that I want you to make the logic for yourself about why things happen in a certain way this is one of them.",
+    "start_ms": 1793304,
+    "end_ms": 1802324,
+    "duration_ms": 9020,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1802.424,
+    "text": "So why was the output type a serious object? This is because I needed to distinguish between the values that correspond to those different, different keys or different labels.",
+    "start_ms": 1802424,
+    "end_ms": 1812204,
+    "duration_ms": 9780,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1812.204,
+    "text": "So that's why the return type was a serious object.",
+    "start_ms": 1812204,
+    "end_ms": 1815604,
+    "duration_ms": 3400,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1815.604,
+    "text": "And the serious data structure was the only thing that could basically perform exactly what I wanted.",
+    "start_ms": 1815604,
+    "end_ms": 1821563,
+    "duration_ms": 5959,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1821.563,
+    "text": "Have indexed, have the value so I can index further into it.",
+    "start_ms": 1821563,
+    "end_ms": 1826524,
+    "duration_ms": 4961,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1826.524,
+    "text": "But when I had only one single label, single label, you just have the values.",
+    "start_ms": 1826524,
+    "end_ms": 1830884,
+    "duration_ms": 4360,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1830.884,
+    "text": "So you're going to get the data type to be the data type of that value, which was integer.",
+    "start_ms": 1830884,
+    "end_ms": 1835604,
+    "duration_ms": 4720,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1836.152,
+    "text": "So the last one is a little bit more complicated.",
+    "start_ms": 1836152,
+    "end_ms": 1839752,
+    "duration_ms": 3600,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1839.752,
+    "text": "So the last one is that we're saying that instead of us providing a list of labels, what I want to do is I want to say that I have a condition.",
+    "start_ms": 1839752,
+    "end_ms": 1849152,
+    "duration_ms": 9400,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1849.152,
+    "text": "My condition is that I want to, for example, extract all of the values that are greater than zero.",
+    "start_ms": 1849152,
+    "end_ms": 1854552,
+    "duration_ms": 5400,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1854.552,
+    "text": "But I don't want to go ahead and manually inspect and then extract the labels and provide you with the labels.",
+    "start_ms": 1854552,
+    "end_ms": 1860752,
+    "duration_ms": 6200,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1860.752,
+    "text": "The way that we can do that is by... a filtering condition or that we will write a bully an expression that will tag true false values to each one of those rows and then we'll use those true false values in order to filter the values in the uh in the series object that we had any road that corresponds to true is going to be uh participating in the output any road that is false means that it doesn't meet the condition and then it's not going to be in the output.",
+    "start_ms": 1860752,
+    "end_ms": 1892936,
+    "duration_ms": 32184,
+    "word_count": 94,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1892.784,
+    "text": "it's a two step process. The first step as I said is that we'll write a Boolean condition or a Boolean expression that will create all of those true false values that correspond to each one of those rows.",
+    "start_ms": 1892784,
+    "end_ms": 1904972,
+    "duration_ms": 12188,
+    "word_count": 39,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1904.972,
+    "text": "And then what we'll do is we'll use those true false values in order to index into the series object.",
+    "start_ms": 1904972,
+    "end_ms": 1911472,
+    "duration_ms": 6500,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1911.64,
+    "text": "That's a lot of words. Let's see how that works in practice.",
+    "start_ms": 1911640,
+    "end_ms": 1915640,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1915.64,
+    "text": "My condition is that I want to extract all of the values that are greater than zero.",
+    "start_ms": 1915640,
+    "end_ms": 1920640,
+    "duration_ms": 5000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1921.272,
+    "text": "How do I do it? First step, write the Boolean condition.",
+    "start_ms": 1921272,
+    "end_ms": 1924605,
+    "duration_ms": 3333,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1924.605,
+    "text": "My Boolean condition is that I'm going to say that I want all of the S values that are greater than zero.",
+    "start_ms": 1924605,
+    "end_ms": 1931272,
+    "duration_ms": 6667,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1931.512,
+    "text": "Right, simple as that. When we say, hand does runs everything in a vectorized operation, that's what we meant.",
+    "start_ms": 1931512,
+    "end_ms": 1939312,
+    "duration_ms": 7800,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1939.312,
+    "text": "Right? We say S greater than 0, it knows that it's a vector, it will go ahead and apply it to all of the rows, without me explicitly looping over all of the values.",
+    "start_ms": 1939312,
+    "end_ms": 1948612,
+    "duration_ms": 9300,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1948.612,
+    "text": "That's the beauty of doing everything in serious object or in data free.",
+    "start_ms": 1948612,
+    "end_ms": 1954112,
+    "duration_ms": 5500,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1954.488,
+    "text": "So I have the labels I have true false conditions.",
+    "start_ms": 1954488,
+    "end_ms": 1957688,
+    "duration_ms": 3200,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1957.688,
+    "text": "So what happens next? I can use these true false conditions or these values in order to index into the actual thing.",
+    "start_ms": 1957688,
+    "end_ms": 1965608,
+    "duration_ms": 7920,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1965.608,
+    "text": "By indexing into actual thing, but I mean is that I'll go ahead and say that, okay, A, the corresponding values equal to true.",
+    "start_ms": 1965608,
+    "end_ms": 1974408,
+    "duration_ms": 8800,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1974.408,
+    "text": "So, A is going to pass, is going to exist in the output.",
+    "start_ms": 1974408,
+    "end_ms": 1978328,
+    "duration_ms": 3920,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1978.328,
+    "text": "And you can verify that the value is greater and zero, so obviously everything checks out.",
+    "start_ms": 1978328,
+    "end_ms": 1983688,
+    "duration_ms": 5360,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1983.688,
+    "text": "So D is also saying that the corresponding values true, and we can verify it, it's greater than zero.",
+    "start_ms": 1983688,
+    "end_ms": 1991527,
+    "duration_ms": 7839,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1991.527,
+    "text": "So these are the two rows that are going to, or two values that are going to be in the output.",
+    "start_ms": 1991527,
+    "end_ms": 1996968,
+    "duration_ms": 5441,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 1996.968,
+    "text": "On the other hand, I have false corresponding to B and false corresponding to C, and then we can see that these two rows are not greater than zero.",
+    "start_ms": 1996968,
+    "end_ms": 2005968,
+    "duration_ms": 9000,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2005.968,
+    "text": "So they're not going to be participating in the output, meaning that these two are not going to pass in the output, and these two are going to pass in the output.",
+    "start_ms": 2005968,
+    "end_ms": 2015167,
+    "duration_ms": 9199,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2015.167,
+    "text": "And the way that we'll do it is that we will say that.",
+    "start_ms": 2015167,
+    "end_ms": 2017607,
+    "duration_ms": 2440,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2017.656,
+    "text": "All of these True False values are going to be used as a filter.",
+    "start_ms": 2017656,
+    "end_ms": 2021656,
+    "duration_ms": 4000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2022.04,
+    "text": "That is going to filter S so you see that S is square bracket those conditions inside to index it that's how we'll do it and the output obviously is going to be a serious object because I have more than More than one road to extract and that will basically give me a serious object in the output.",
+    "start_ms": 2022040,
+    "end_ms": 2042952,
+    "duration_ms": 20912,
+    "word_count": 59,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2043.928,
+    "text": "Okay, that was a lot of thing that we've been over.",
+    "start_ms": 2043928,
+    "end_ms": 2047594,
+    "duration_ms": 3666,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2047.594,
+    "text": "Let's go over some. demo wrap up everything that we've seen so far about.",
+    "start_ms": 2047594,
+    "end_ms": 2054840,
+    "duration_ms": 7246,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2056.536,
+    "text": "A serious object. Cool. Wonderful. So what I'm doing is that, okay, I'm going to import pandas as PD, and this is what you'd seen already.",
+    "start_ms": 2056536,
+    "end_ms": 2071192,
+    "duration_ms": 14656,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2071.192,
+    "text": "So we have pandas, PD, that's good. Everything else that I'll use is, I'll use the PD-L as in order to get access to all of the functionalities that are available in pandas.",
+    "start_ms": 2071192,
+    "end_ms": 2082282,
+    "duration_ms": 11090,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2082.282,
+    "text": "The first thing is that in order to create a a series object, we thought that I can just directly call the constructor series of pandas and then create one object.",
+    "start_ms": 2082282,
+    "end_ms": 2093792,
+    "duration_ms": 11510,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2093.792,
+    "text": "So I'm saying that PD. Docs. then I need to provide a bunch of values.",
+    "start_ms": 2093792,
+    "end_ms": 2099670,
+    "duration_ms": 5878,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2099.67,
+    "text": "So let's assume that I have my own values. If you have a list you can provide that list or that like a variable that has a list into this constructor as well.",
+    "start_ms": 2099670,
+    "end_ms": 2109568,
+    "duration_ms": 9898,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2109.568,
+    "text": "So in this case, I would say that I'm going to say first...",
+    "start_ms": 2109568,
+    "end_ms": 2113568,
+    "duration_ms": 4000,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2114.488,
+    "text": "second and say for example third as all of these values that I'm storing and you can see that the output is exactly what we expect that it automatically tacked or assigned label to each one of those values 012 and then first second and third are there if I use the if I call attribute values it will give me all of my attributes as first second and third if I call as that index I'm getting that range index object that is automatically created a starting from 0 all the way to tree, not including tree with the step size 1.",
+    "start_ms": 2114488,
+    "end_ms": 2151192,
+    "duration_ms": 36704,
+    "word_count": 103,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2152.248,
+    "text": "I can go ahead and say that I want to create a series object with an index.",
+    "start_ms": 2152248,
+    "end_ms": 2157048,
+    "duration_ms": 4800,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2157.048,
+    "text": "I don't want that automatic indexing that was used before.",
+    "start_ms": 2157048,
+    "end_ms": 2160968,
+    "duration_ms": 3920,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2160.968,
+    "text": "So I would say that go ahead and create this series object for me.",
+    "start_ms": 2160968,
+    "end_ms": 2165768,
+    "duration_ms": 4800,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2166.104,
+    "text": "and i'll go ahead and copy paste these values that we had over so we have the values right but now i would say that i want also the index to be provided by me either you can just automatically type it here we can provide it using a val using a list object that you have somehow um so here i would say that my um my index is going to be 0123 but sorry one to 3 because that makes more sense if i'm thinking about first second and third Right.",
+    "start_ms": 2166104,
+    "end_ms": 2197554,
+    "duration_ms": 31450,
+    "word_count": 93,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2197.554,
+    "text": "And then if I go ahead and take a look, you will see that all of these changes are created or this object is created.",
+    "start_ms": 2197554,
+    "end_ms": 2205016,
+    "duration_ms": 7462,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2205.216,
+    "text": "Estad values tell me tells me that my values are still for a second and third and s dot index is now showing me that my Index value is whatever I created.",
+    "start_ms": 2205216,
+    "end_ms": 2215848,
+    "duration_ms": 10632,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2215.848,
+    "text": "It's an index object with a list of values one two three as opposed to range index right?",
+    "start_ms": 2215848,
+    "end_ms": 2221848,
+    "duration_ms": 6000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2221.848,
+    "text": "That's the difference between this one here that has index with an array and this one right?",
+    "start_ms": 2221848,
+    "end_ms": 2228248,
+    "duration_ms": 6400,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2228.824,
+    "text": "Here. Um, where was that? Ranging next. index instead of index.",
+    "start_ms": 2228824,
+    "end_ms": 2238888,
+    "duration_ms": 10064,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2239.544,
+    "text": "Alright, cool. What if I want to go ahead and change the index?",
+    "start_ms": 2239544,
+    "end_ms": 2243905,
+    "duration_ms": 4361,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2243.905,
+    "text": "I would say that, oh, I don't want to have my index to be 0 to be 1 to 3, but I want my index to be something else.",
+    "start_ms": 2243905,
+    "end_ms": 2253636,
+    "duration_ms": 9731,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2253.636,
+    "text": "I'll basically a real sign this attribute and I'll say that, okay, my list right now is going to be my index right now is going to be a b and c instead of.",
+    "start_ms": 2253636,
+    "end_ms": 2265044,
+    "duration_ms": 11408,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2265.272,
+    "text": "Whatever I had before I was one, two, three. And now you would see that I have ABC for a second and third.",
+    "start_ms": 2265272,
+    "end_ms": 2270272,
+    "duration_ms": 5000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2270.272,
+    "text": "And that's how we can do it. Here, kind of summarizing everything that we've seen in the selection, right?",
+    "start_ms": 2270272,
+    "end_ms": 2277272,
+    "duration_ms": 7000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2277.272,
+    "text": "We create a series objects. So here, the series object is created by all of these values.",
+    "start_ms": 2277272,
+    "end_ms": 2283272,
+    "duration_ms": 6000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2283.272,
+    "text": "Index values are ABC and D. Taking a look, it looks something like this.",
+    "start_ms": 2283272,
+    "end_ms": 2289272,
+    "duration_ms": 6000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2289.272,
+    "text": "You remember that we could do selection by only a single label.",
+    "start_ms": 2289272,
+    "end_ms": 2294272,
+    "duration_ms": 5000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2294.272,
+    "text": "So if I use a single label, I will be able to get only the value corresponding to that label.",
+    "start_ms": 2294272,
+    "end_ms": 2300272,
+    "duration_ms": 6000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2300.272,
+    "text": "So you take a look at the corresponding value 6.",
+    "start_ms": 2300272,
+    "end_ms": 2303129,
+    "duration_ms": 2857,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2303.129,
+    "text": "So I got 6. If I go ahead and request for CND, you're seeing that I'm expecting to get the filtered version of this series object with the label CND and the values 1 and 6.",
+    "start_ms": 2303129,
+    "end_ms": 2316272,
+    "duration_ms": 13143,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2316.272,
+    "text": "So that's what's happening here as well. So I want to try a different filtering condition.",
+    "start_ms": 2316272,
+    "end_ms": 2322248,
+    "duration_ms": 5976,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2322.248,
+    "text": "So here I would say that instead of filtering the values based on the values being greater than zero, I want to filter values that are even, right?",
+    "start_ms": 2322248,
+    "end_ms": 2331128,
+    "duration_ms": 8880,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2331.128,
+    "text": "I want to check whether the remainder of each one of those values by two is equal to zero or not.",
+    "start_ms": 2331128,
+    "end_ms": 2336408,
+    "duration_ms": 5280,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2337.048,
+    "text": "So remember that there was a two-step process. The first step was to write the Boolean expression.",
+    "start_ms": 2337048,
+    "end_ms": 2344008,
+    "duration_ms": 6960,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2344.008,
+    "text": "So I'm going to just write a Boolean expression. No, that's...",
+    "start_ms": 2344008,
+    "end_ms": 2347648,
+    "duration_ms": 3640,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2348.248,
+    "text": "Pan does under the hood is going to apply it in a vectorized way to all of the rows so I don't need to go ahead and write a loop so here I would say that So the name was s, right?",
+    "start_ms": 2348248,
+    "end_ms": 2360888,
+    "duration_ms": 12640,
+    "word_count": 42,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2360.888,
+    "text": "So the remainder of values by 2 should be equal to 0 for all of those values to be to be even right and then the result i'll take you like it says that the first one and last one are even and then the middle two are odd numbers uh kind of confirming that even numbers and then odd numbers in the middle which makes sense so what i'll do next is i'll say that okay i'm going to index into s using this condition even that I created.",
+    "start_ms": 2360888,
+    "end_ms": 2398416,
+    "duration_ms": 37528,
+    "word_count": 90,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2399.736,
+    "text": "and then take a look. was able to like filter that for me.",
+    "start_ms": 2399736,
+    "end_ms": 2403944,
+    "duration_ms": 4208,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2405.88,
+    "text": "So that's kind of a summary, now is your turn.",
+    "start_ms": 2405880,
+    "end_ms": 2408880,
+    "duration_ms": 3000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2408.88,
+    "text": "Let's see if this, we have the same understanding of how serious objects work.",
+    "start_ms": 2408880,
+    "end_ms": 2415880,
+    "duration_ms": 7000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2417.528,
+    "text": "It's a love it. I think it's small so I'll go ahead and show you this version.",
+    "start_ms": 2417528,
+    "end_ms": 2424248,
+    "duration_ms": 6720,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2425.144,
+    "text": "This is a question. You want to lock in? This is the Kira Cut.",
+    "start_ms": 2425144,
+    "end_ms": 2454160,
+    "duration_ms": 29016,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2476.632,
+    "text": "get the range index object. I'll get an array like object.",
+    "start_ms": 2476632,
+    "end_ms": 2483302,
+    "duration_ms": 6670,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2483.302,
+    "text": "So anything that's array like would work. Okay, so we have a constructor right there.",
+    "start_ms": 2483302,
+    "end_ms": 2491552,
+    "duration_ms": 8250,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2491.552,
+    "text": "So it's cleared over creating a series object. We have two sets of values, four, five and six, and then one, two, and three, with the strings.",
+    "start_ms": 2491552,
+    "end_ms": 2500752,
+    "duration_ms": 9200,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2500.752,
+    "text": "Which one is our values? Four, five, and six. Raise your hand.",
+    "start_ms": 2500752,
+    "end_ms": 2505592,
+    "duration_ms": 4840,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2507.192,
+    "text": "One, two, three, raise your hand. How is everybody else doing?",
+    "start_ms": 2507192,
+    "end_ms": 2513608,
+    "duration_ms": 6416,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2514.392,
+    "text": "Okay, so the first set of values that we're passing were values, right?",
+    "start_ms": 2514392,
+    "end_ms": 2520712,
+    "duration_ms": 6320,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2520.712,
+    "text": "And then the second set of values that we're passing has the argument label of index.",
+    "start_ms": 2520712,
+    "end_ms": 2526632,
+    "duration_ms": 5920,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2526.632,
+    "text": "So the second set is actually index. So what I'm expecting is that I have a data frame.",
+    "start_ms": 2526632,
+    "end_ms": 2533192,
+    "duration_ms": 6560,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2533.192,
+    "text": "If I run this for you, I have a data frame that looks like this.",
+    "start_ms": 2533192,
+    "end_ms": 2537706,
+    "duration_ms": 4514,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2537.706,
+    "text": "One, two, three are my index values are labels and then 4, 5, and 6 are the actual values that I have.",
+    "start_ms": 2537706,
+    "end_ms": 2544672,
+    "duration_ms": 6966,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2545.048,
+    "text": "So what happens if I- Do one filtering condition based on example being greater than four?",
+    "start_ms": 2545048,
+    "end_ms": 2553012,
+    "duration_ms": 7964,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2553.752,
+    "text": "Right. If I do example greater than 4, which one of those rows do you think is going to last?",
+    "start_ms": 2553752,
+    "end_ms": 2561192,
+    "duration_ms": 7440,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2561.192,
+    "text": "First row, raise your hand. Second row is going to remain and then the third row.",
+    "start_ms": 2561192,
+    "end_ms": 2568280,
+    "duration_ms": 7088,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2569.048,
+    "text": "Yeah keep those hands up. Yes. Two and three. Those are the roads that are going to remain because those are the ones that are that meet the condition of example greater than four.",
+    "start_ms": 2569048,
+    "end_ms": 2579860,
+    "duration_ms": 10812,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2579.86,
+    "text": "So I'll have a serious object. So if I go ahead and create.",
+    "start_ms": 2579860,
+    "end_ms": 2584368,
+    "duration_ms": 4508,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2585.464,
+    "text": "One right here. That basically says... Oops There's that um...",
+    "start_ms": 2585464,
+    "end_ms": 2595016,
+    "duration_ms": 9552,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2598.904,
+    "text": "This, what we'll see is that I have a series object with those values 5 and 6 on the corresponding labels and all we're doing afterwards is adding a little bit of complexity and just asking you for the values and thought values is going to give you 5 and 6, which is what we're seeing 96% of your respond.",
+    "start_ms": 2598904,
+    "end_ms": 2617904,
+    "duration_ms": 19000,
+    "word_count": 60,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2617.904,
+    "text": "Okay, 836. This is a good number so I can move on.",
+    "start_ms": 2617904,
+    "end_ms": 2621904,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2621.904,
+    "text": "So this is kind of a wrap-up of series object.",
+    "start_ms": 2621904,
+    "end_ms": 2625944,
+    "duration_ms": 4040,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2625.944,
+    "text": "So then the next thing that we want to talk about is how can we combine all of these series objects in order to create a data frame.",
+    "start_ms": 2625944,
+    "end_ms": 2632184,
+    "duration_ms": 6240,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2632.184,
+    "text": "So in order to create a data frame, you think about having a series object with the index, those index values that we had in the election, they were automatically created, they're starting from 0 all the way to 181.",
+    "start_ms": 2632184,
+    "end_ms": 2644384,
+    "duration_ms": 12200,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2644.384,
+    "text": "And then the name of the first column or the first series was here, I'll keep combining with the candidate series, I'll keep combining it with all of the other columns that we have all the way to the point that we create this 2D structure.",
+    "start_ms": 2644384,
+    "end_ms": 2660624,
+    "duration_ms": 16240,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2660.624,
+    "text": "What I want you to notice is that each one of these series object, each one of them actually had...",
+    "start_ms": 2660624,
+    "end_ms": 2666544,
+    "duration_ms": 5920,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2667.192,
+    "text": "And index right and these index values were the same or this index object or the values in that index object were shared between all of those series objects and that's why we could combine them together after we combine all of those columns together now we have that same index.",
+    "start_ms": 2667192,
+    "end_ms": 2685792,
+    "duration_ms": 18600,
+    "word_count": 51,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2685.792,
+    "text": "refer to as the index of this entire data frame so that we can distinguish between different rows using those labels.",
+    "start_ms": 2685792,
+    "end_ms": 2694932,
+    "duration_ms": 9140,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2694.932,
+    "text": "And then what you're seeing is that for each one of these columns that we had, we had the name.",
+    "start_ms": 2694932,
+    "end_ms": 2700272,
+    "duration_ms": 5340,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2700.272,
+    "text": "So the name is going to appear as the column label.",
+    "start_ms": 2700272,
+    "end_ms": 2703672,
+    "duration_ms": 3400,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2703.672,
+    "text": "So the first series object had the name year or the name of that series object was year.",
+    "start_ms": 2703672,
+    "end_ms": 2709832,
+    "duration_ms": 6160,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2709.832,
+    "text": "So the label for the first column is going to be here.",
+    "start_ms": 2709832,
+    "end_ms": 2712672,
+    "duration_ms": 2840,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2712.672,
+    "text": "the label, the name for the second column is candidate, so the label for the second column is going to be candidate, so on and so forth.",
+    "start_ms": 2712672,
+    "end_ms": 2719071,
+    "duration_ms": 6399,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2719.071,
+    "text": "And that's how data frame is created. So again, think about data frame as this 2D structure.",
+    "start_ms": 2719071,
+    "end_ms": 2724511,
+    "duration_ms": 5440,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2724.511,
+    "text": "It has two sets of labels. It has labels for the columns.",
+    "start_ms": 2724511,
+    "end_ms": 2728672,
+    "duration_ms": 4161,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2728.672,
+    "text": "It has labels for the rows, and then we'll work with those labels in order to get access to individual elements.",
+    "start_ms": 2728672,
+    "end_ms": 2734512,
+    "duration_ms": 5840,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2735.352,
+    "text": "So with that simple explanation and now I want to go ahead and create data frame.",
+    "start_ms": 2735352,
+    "end_ms": 2739752,
+    "duration_ms": 4400,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2739.752,
+    "text": "So creating data frame is going to be. It can be can be happening in different ways there are different syntax and you don't actually need to memorize all of them and in practice You're not going to manually create data frame a lot most of the time we're gonna give you a CSV file or spreadsheet You will load that automatically so you're not manually creating it, but it's good to know how I can be created So, data frame also has a constructor data frame, right?",
+    "start_ms": 2739752,
+    "end_ms": 2768008,
+    "duration_ms": 28256,
+    "word_count": 88,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2768.008,
+    "text": "It also has a bunch of arguments that we can pass.",
+    "start_ms": 2768008,
+    "end_ms": 2770808,
+    "duration_ms": 2800,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2770.808,
+    "text": "The arguments that we pass, the first one is data exactly similar to series.",
+    "start_ms": 2770808,
+    "end_ms": 2775848,
+    "duration_ms": 5040,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2775.848,
+    "text": "The second one is index. Again, similar to the series, it's not a required argument or parameter that you need to pass because if you don't provide it, it will automatically label the rows or create the index object using the RENGE index starting from zero all the way.",
+    "start_ms": 2775848,
+    "end_ms": 2793527,
+    "duration_ms": 17679,
+    "word_count": 49,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2793.527,
+    "text": "And then here you're also providing columns, which columns do you want to create or whether they're labels for your columns.",
+    "start_ms": 2793527,
+    "end_ms": 2800648,
+    "duration_ms": 7121,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2800.648,
+    "text": "If your data does not have labels, and then this way you can provide labels or names for each one of those columns so that your data frame is going to be more readable for you.",
+    "start_ms": 2800648,
+    "end_ms": 2810928,
+    "duration_ms": 10280,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2811.64,
+    "text": "There are different ways to create it, as I said.",
+    "start_ms": 2811640,
+    "end_ms": 2814306,
+    "duration_ms": 2666,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2814.306,
+    "text": "The most useful one and the one that you will see most is going to be using a CSV file.",
+    "start_ms": 2814306,
+    "end_ms": 2819640,
+    "duration_ms": 5334,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2819.64,
+    "text": "But there are also different manual ways of creating a data frame.",
+    "start_ms": 2819640,
+    "end_ms": 2823640,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2824.216,
+    "text": "How can we create a data from using CSV file?",
+    "start_ms": 2824216,
+    "end_ms": 2827816,
+    "duration_ms": 3600,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2827.816,
+    "text": "There is a function called the read underscore CSV. And you should have your data handy.",
+    "start_ms": 2827816,
+    "end_ms": 2834416,
+    "duration_ms": 6600,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2834.416,
+    "text": "And then you should pass the path to the data to this read underscore CSV.",
+    "start_ms": 2834416,
+    "end_ms": 2841416,
+    "duration_ms": 7000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2841.416,
+    "text": "So here my data is in data folder in elections underscore CSV.",
+    "start_ms": 2841416,
+    "end_ms": 2847416,
+    "duration_ms": 6000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2847.416,
+    "text": "So we can verify that. You also have access to that.",
+    "start_ms": 2847416,
+    "end_ms": 2850416,
+    "duration_ms": 3000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2850.416,
+    "text": "There is a data folder. There is elections.csv that we should be able to read the data.",
+    "start_ms": 2850416,
+    "end_ms": 2856136,
+    "duration_ms": 5720,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2856.136,
+    "text": "And then automatically all the data is going to be uploaded here.",
+    "start_ms": 2856136,
+    "end_ms": 2859816,
+    "duration_ms": 3680,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2859.816,
+    "text": "Right? And you have a data frame. Nice and ready to go.",
+    "start_ms": 2859816,
+    "end_ms": 2862616,
+    "duration_ms": 2800,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2862.616,
+    "text": "Elections is of type now data frame. I could also provide index.",
+    "start_ms": 2862616,
+    "end_ms": 2868709,
+    "duration_ms": 6093,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2868.709,
+    "text": "Remember that the first argument was data, the second argument was index, that was optional.",
+    "start_ms": 2868709,
+    "end_ms": 2875084,
+    "duration_ms": 6375,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2875.084,
+    "text": "But you could say that, okay, of all of the columns that I have, I want to use one of them as an index, as opposed to automatically numbering each one of the rows.",
+    "start_ms": 2875084,
+    "end_ms": 2885084,
+    "duration_ms": 10000,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2885.084,
+    "text": "So in this case, we're saying that the index column is equal to year.",
+    "start_ms": 2885084,
+    "end_ms": 2889584,
+    "duration_ms": 4500,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2890.072,
+    "text": "And then that's why the year right now is moved to the left, right?",
+    "start_ms": 2890072,
+    "end_ms": 2895072,
+    "duration_ms": 5000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2895.072,
+    "text": "And all of those year values are bolded. So having a bold value to the left of the data firm at the top of the data firm should tell you that they're labels.",
+    "start_ms": 2895072,
+    "end_ms": 2905072,
+    "duration_ms": 10000,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2905.072,
+    "text": "And now year is a label. Year is an index.",
+    "start_ms": 2905072,
+    "end_ms": 2910072,
+    "duration_ms": 5000,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2910.072,
+    "text": "There are different ways that we can set index, reset index.",
+    "start_ms": 2910072,
+    "end_ms": 2914072,
+    "duration_ms": 4000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2914.072,
+    "text": "So let's move year back to the data frame. If we want to use it later on, and we're going to see that next.",
+    "start_ms": 2914072,
+    "end_ms": 2919072,
+    "duration_ms": 5000,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2919.072,
+    "text": "you So. The second part or the second way of creating a data frame is using a list with column names if you want to provide column names as well.",
+    "start_ms": 2919072,
+    "end_ms": 2930816,
+    "duration_ms": 11744,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2930.816,
+    "text": "So for example, if I provide this is very similar to what we had as a series, I would say that okay, I'm creating a data frame object calling the constructor and then I'll say that the values that I want to store is one, two and three.",
+    "start_ms": 2930816,
+    "end_ms": 2943816,
+    "duration_ms": 13000,
+    "word_count": 48,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2944.376,
+    "text": "So we did exactly the same thing with series object.",
+    "start_ms": 2944376,
+    "end_ms": 2947176,
+    "duration_ms": 2800,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2947.176,
+    "text": "This time I'm saying that go ahead and name this column as numbers so that it's not like blank.",
+    "start_ms": 2947176,
+    "end_ms": 2955416,
+    "duration_ms": 8240,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2955.416,
+    "text": "If you don't name it, it will give you the name zero.",
+    "start_ms": 2955416,
+    "end_ms": 2959416,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2959.416,
+    "text": "So column zero does not have any meaning. You just want to have a description of what attribute you're restoring in that column.",
+    "start_ms": 2959416,
+    "end_ms": 2966536,
+    "duration_ms": 7120,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2966.536,
+    "text": "So that's why most of the time we would provide a thing for a mission about columns.",
+    "start_ms": 2966536,
+    "end_ms": 2970216,
+    "duration_ms": 3680,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2970.216,
+    "text": "So I'm saying that columns is equal to numbers and then we move on.",
+    "start_ms": 2970216,
+    "end_ms": 2973976,
+    "duration_ms": 3760,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2973.976,
+    "text": "So this is a one column data frame, right? You see how it's nicely structured as opposed to if this was a series object, if I was going to print it, it would be like in that veer shape format.",
+    "start_ms": 2973976,
+    "end_ms": 2985576,
+    "duration_ms": 11600,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2986.216,
+    "text": "But here you're seeing that in kind of a table format.",
+    "start_ms": 2986216,
+    "end_ms": 2989896,
+    "duration_ms": 3680,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 2990.776,
+    "text": "What if I have multiple columns? If I have multiple columns, I need to move beyond a one-dimensional list and go into two-dimensional lists.",
+    "start_ms": 2990776,
+    "end_ms": 3000687,
+    "duration_ms": 9911,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3000.687,
+    "text": "So you think about what the list that we had here, right?",
+    "start_ms": 3000687,
+    "end_ms": 3005584,
+    "duration_ms": 4897,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3005.584,
+    "text": "So the list that I had here, each this outer list, was basically going over different rows.",
+    "start_ms": 3005584,
+    "end_ms": 3012328,
+    "duration_ms": 6744,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3012.328,
+    "text": "Each one of those elements, they were referring to different rows that I had.",
+    "start_ms": 3012328,
+    "end_ms": 3016136,
+    "duration_ms": 3808,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3016.536,
+    "text": "Here is also the same thing. The outer kind of list is going over rows and the inner list, which I have here, is each one of those Actually the...",
+    "start_ms": 3016536,
+    "end_ms": 3031336,
+    "duration_ms": 14800,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3032.312,
+    "text": "The other way around. So that was the first column and then here I have um each one of those rows.",
+    "start_ms": 3032312,
+    "end_ms": 3042528,
+    "duration_ms": 10216,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3042.528,
+    "text": "So you're referring to if you're taking a look at one and one, here is one row, and then here this is also row two, and then what you're seeing is here that I'm collecting, all of them stacking them over into that column.",
+    "start_ms": 3042528,
+    "end_ms": 3058774,
+    "duration_ms": 16246,
+    "word_count": 44,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3058.774,
+    "text": "And exactly that's what's happening here is that these ones are being stacked.",
+    "start_ms": 3058774,
+    "end_ms": 3064424,
+    "duration_ms": 5650,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3067.064,
+    "text": "in one column. So that's kind of the structure if you want to keep adding columns.",
+    "start_ms": 3067064,
+    "end_ms": 3074392,
+    "duration_ms": 7328,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3074.392,
+    "text": "What's happening is that you will still have a 2D structure list.",
+    "start_ms": 3074392,
+    "end_ms": 3079392,
+    "duration_ms": 5000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3079.392,
+    "text": "And each one of those inner inner lists are going to be referring to that entire road that you had.",
+    "start_ms": 3079392,
+    "end_ms": 3086392,
+    "duration_ms": 7000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3086.392,
+    "text": "So the number of elements that you will put in the inner list is going to increase.",
+    "start_ms": 3086392,
+    "end_ms": 3089392,
+    "duration_ms": 3000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3089.392,
+    "text": "But then the structure is still going to be this 2D structure of having one inner list and one outer list as well.",
+    "start_ms": 3089392,
+    "end_ms": 3097392,
+    "duration_ms": 8000,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3097.392,
+    "text": "So here what I'm saying is that because each one of these in your list have the dimension of two, I have two columns and therefore I'm providing the name for them that the columns are now number.",
+    "start_ms": 3097392,
+    "end_ms": 3108112,
+    "duration_ms": 10720,
+    "word_count": 38,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3108.112,
+    "text": "So you're seeing here and then the description is going to be the label for the second column.",
+    "start_ms": 3108112,
+    "end_ms": 3113312,
+    "duration_ms": 5200,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3113.792,
+    "text": "You're seeing that I didn't provide index. So that's why the index that was created is automatically labeled as zero and one and automatically created using a list.",
+    "start_ms": 3113792,
+    "end_ms": 3123472,
+    "duration_ms": 9680,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3124.344,
+    "text": "So that's the second way. The third way is using dictionary and it's much easier.",
+    "start_ms": 3124344,
+    "end_ms": 3130677,
+    "duration_ms": 6333,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3130.677,
+    "text": "Again, think about... The columns being... is stored in a dictionary like a structure where the name of the column is the key and the values that are stored in that column are the values right if you think about the entire data structure as a dictionary that way that you have all of the keys hanging from the top and then all of the values are kind of connected to those keys, then this is one way of thinking about data frame and then you can create a data frame like that.",
+    "start_ms": 3130677,
+    "end_ms": 3161800,
+    "duration_ms": 31123,
+    "word_count": 93,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3161.772,
+    "text": "want to create a data frame like this, so you would see that my data frame has two columns, fruit and price.",
+    "start_ms": 3161772,
+    "end_ms": 3168072,
+    "duration_ms": 6300,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3168.072,
+    "text": "So what I can think about is that I have a dictionary, so this is the reference to the dictionary, with two keys and one key's fruit, one key's price.",
+    "start_ms": 3168072,
+    "end_ms": 3178848,
+    "duration_ms": 10776,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3178.848,
+    "text": "So you see that one key's fruit, one key's price, and the values that are associated to fruit and the price are going to be listed in a list and talk to that a specific key.",
+    "start_ms": 3178848,
+    "end_ms": 3191464,
+    "duration_ms": 12616,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3192.184,
+    "text": "So that's very simple right that's the reason that we want to have all of those labels because we want to keep referring to stuff in our table using some kind of a dictionary like key value format right so this is one way of thinking about what our columns look like.",
+    "start_ms": 3192184,
+    "end_ms": 3207504,
+    "duration_ms": 15320,
+    "word_count": 52,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3208.184,
+    "text": "If you want it to actually provide a list of each one of those rows, so here you have a list of row one and then row two, then you need to actually do for each one of the rows.",
+    "start_ms": 3208184,
+    "end_ms": 3219480,
+    "duration_ms": 11296,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3219.48,
+    "text": "You need to say that, okay, for the fruit column, it's a strawberry, for the price column, it's 5.49, right?",
+    "start_ms": 3219480,
+    "end_ms": 3224740,
+    "duration_ms": 5260,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3224.74,
+    "text": "So you can do that. I'll do it's not super easy, but again, you can see that the structure is exactly the same.",
+    "start_ms": 3224740,
+    "end_ms": 3232448,
+    "duration_ms": 7708,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3232.448,
+    "text": "If you're iterating over rows, you need to keep saying that for this row, What is the fruit?",
+    "start_ms": 3232448,
+    "end_ms": 3237753,
+    "duration_ms": 5305,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3237.753,
+    "text": "What is the price for the second robot? What is the fruit?",
+    "start_ms": 3237753,
+    "end_ms": 3240060,
+    "duration_ms": 2307,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3240.06,
+    "text": "What is the price and so on and so forth?",
+    "start_ms": 3240060,
+    "end_ms": 3241984,
+    "duration_ms": 1924,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3242.84,
+    "text": "So, the dictionary is out of the way. The second most common way of creating a data frame is using series because naturally we talked about data frame as being a collection of series.",
+    "start_ms": 3242840,
+    "end_ms": 3254840,
+    "duration_ms": 12000,
+    "word_count": 34,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3254.84,
+    "text": "Being more accurate by collection, I mean a key value pair.",
+    "start_ms": 3254840,
+    "end_ms": 3260840,
+    "duration_ms": 6000,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3260.84,
+    "text": "So we have keys being each one of those column names and then values being a series object.",
+    "start_ms": 3260840,
+    "end_ms": 3266840,
+    "duration_ms": 6000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3266.84,
+    "text": "So what I can do here is that I can say that, oh, I want a two column data frame.",
+    "start_ms": 3266840,
+    "end_ms": 3272840,
+    "duration_ms": 6000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3272.84,
+    "text": "So one column has a name A column, one column has a name B column.",
+    "start_ms": 3272840,
+    "end_ms": 3277840,
+    "duration_ms": 5000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3277.84,
+    "text": "So I'm going to go ahead and create a data frame using a dictionary, right?",
+    "start_ms": 3277840,
+    "end_ms": 3283840,
+    "duration_ms": 6000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3283.84,
+    "text": "And my dictionary has two columns and two keys. But what are the values?",
+    "start_ms": 3283840,
+    "end_ms": 3289976,
+    "duration_ms": 6136,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3289.976,
+    "text": "The values that you're seeing here is each one of them is a serious object.",
+    "start_ms": 3289976,
+    "end_ms": 3294016,
+    "duration_ms": 4040,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3294.016,
+    "text": "So this is a serious object which is created right here, which we know how to create it.",
+    "start_ms": 3294016,
+    "end_ms": 3299736,
+    "duration_ms": 5720,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3300.184,
+    "text": "Right, and then the values that are associated with B column are also coming from this s underscore B series object.",
+    "start_ms": 3300184,
+    "end_ms": 3307604,
+    "duration_ms": 7420,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3307.604,
+    "text": "You can see that the values are B1B2B3 and the index is R1R2R3.",
+    "start_ms": 3307604,
+    "end_ms": 3312844,
+    "duration_ms": 5240,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3312.844,
+    "text": "The trick here is that if you're Using multiple series in order to combine them in order to create a data frame they need to have matching index and that's why the matching index right here is actually R1 R2R3 they both have R1 R2R3 and that's what's going to show up here R1 R2R3 Cool.",
+    "start_ms": 3312844,
+    "end_ms": 3333228,
+    "duration_ms": 20384,
+    "word_count": 56,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3334.296,
+    "text": "Okay, so now everything about labels how series was created and how data frame is created and how we can think about a series using a collect a data frame as a collection of series and then how everything is key value pair and that's how you can think about key value pair in the colons key value pair in the rose is going to.",
+    "start_ms": 3334296,
+    "end_ms": 3354296,
+    "duration_ms": 20000,
+    "word_count": 65,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3354.84,
+    "text": "Help you in order to make sense of any error that you're getting or any time that you want to load the data filter data you have everything that you need.",
+    "start_ms": 3354840,
+    "end_ms": 3362340,
+    "duration_ms": 7500,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3362.84,
+    "text": "Tiny bit at the bottom here. You're seeing that if I have a series object and I want to turn it into a data frame, I can just directly pass it to the data frame constructor and it will turn it into a series object for me or I can directly say series dot two frame.",
+    "start_ms": 3362840,
+    "end_ms": 3382840,
+    "duration_ms": 20000,
+    "word_count": 56,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3382.84,
+    "text": "That's a function that we have in order to turn a series object into a data frame.",
+    "start_ms": 3382840,
+    "end_ms": 3387840,
+    "duration_ms": 5000,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3388.152,
+    "text": "Right, so that's one of the questions that was asked about how we can turn it into Turn one to another.",
+    "start_ms": 3388152,
+    "end_ms": 3395285,
+    "duration_ms": 7133,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3395.285,
+    "text": "That's also one way. Notice here that I didn't provide the columns name, right?",
+    "start_ms": 3395285,
+    "end_ms": 3401072,
+    "duration_ms": 5787,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3401.072,
+    "text": "So the columns attribute does not exist every time that I'm creating this data frame.",
+    "start_ms": 3401072,
+    "end_ms": 3405376,
+    "duration_ms": 4304,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3405.376,
+    "text": "That's why I have this weird label of zero automatically labeled for the first column.",
+    "start_ms": 3405376,
+    "end_ms": 3410912,
+    "duration_ms": 5536,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3410.912,
+    "text": "So if you don't do that all of the columns are going to also automatically label this starting from zero all the way to however many columns that you have.",
+    "start_ms": 3410912,
+    "end_ms": 3418612,
+    "duration_ms": 7700,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3420.696,
+    "text": "Cool. So we talked about index. So the last piece is that we talked about index.",
+    "start_ms": 3420696,
+    "end_ms": 3426456,
+    "duration_ms": 5760,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3426.456,
+    "text": "We had seen different types of index objects that we could create.",
+    "start_ms": 3426456,
+    "end_ms": 3429536,
+    "duration_ms": 3080,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3430.056,
+    "text": "We know that index can be non numeric in a sense that I created.",
+    "start_ms": 3430056,
+    "end_ms": 3435296,
+    "duration_ms": 5240,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3435.736,
+    "text": "I can go ahead and say that, okay, load elections that CSV and then go ahead and create the index column to be the candidate and then it can create the candidate as the index.",
+    "start_ms": 3435736,
+    "end_ms": 3447536,
+    "duration_ms": 11800,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3447.536,
+    "text": "So this is an easy way that if you want to index into a data frame and get all the times that for example is sort of in candidate one friend for presidency and then count how many times it was you can directly use that using this key value kind of structure that we have.",
+    "start_ms": 3447536,
+    "end_ms": 3462536,
+    "duration_ms": 15000,
+    "word_count": 56,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3462.536,
+    "text": "One more thing is that the index does not necessarily need to be unique.",
+    "start_ms": 3462536,
+    "end_ms": 3469976,
+    "duration_ms": 7440,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3469.976,
+    "text": "So in this specific case, in the left-hand side, you're seeing that all of the index values are starting from zero all the way to whatever, and they're numeric, they're unique.",
+    "start_ms": 3469976,
+    "end_ms": 3479656,
+    "duration_ms": 9680,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3479.656,
+    "text": "But in the case that I had year as the index, which we experimented with once, you're seeing that I have multiple different candidates running for presidency in one specific year.",
+    "start_ms": 3479656,
+    "end_ms": 3490296,
+    "duration_ms": 10640,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3490.296,
+    "text": "for I have non-unique index values. And that's fine. Every time that I index into, like for example, extracting all the rows for 2008, it will give me all of those, right?",
+    "start_ms": 3490296,
+    "end_ms": 3503095,
+    "duration_ms": 12799,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3504.056,
+    "text": "Although they're not unique. One thing that we can do is we can modify index.",
+    "start_ms": 3504056,
+    "end_ms": 3510735,
+    "duration_ms": 6679,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3510.735,
+    "text": "So we could say that, okay, you loaded the data frame in a certain way or created the data frame in a certain way.",
+    "start_ms": 3510735,
+    "end_ms": 3515936,
+    "duration_ms": 5201,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3515.936,
+    "text": "Now I changed my mind. I wanna use my own value.",
+    "start_ms": 3515936,
+    "end_ms": 3519016,
+    "duration_ms": 3080,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3519.016,
+    "text": "So now I want to move the year or candidate back to the data frame and be able to actually use it and treat it as a feature.",
+    "start_ms": 3519016,
+    "end_ms": 3526416,
+    "duration_ms": 7400,
+    "word_count": 28,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3526.416,
+    "text": "We could do that. We could basically say that every time that we want to set the index, we can just call dot set index.",
+    "start_ms": 3526416,
+    "end_ms": 3533535,
+    "duration_ms": 7119,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3533.535,
+    "text": "We can just provide which column now needs to be indexed.",
+    "start_ms": 3533535,
+    "end_ms": 3537175,
+    "duration_ms": 3640,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3537.175,
+    "text": "If we go ahead and take a look at the result, you're seeing that now parties, all bolt faces, both face, and then you can kind of see that.",
+    "start_ms": 3537175,
+    "end_ms": 3545976,
+    "duration_ms": 8801,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3545.976,
+    "text": "It's now indexed. I can go ahead and reset the index.",
+    "start_ms": 3545976,
+    "end_ms": 3550115,
+    "duration_ms": 4139,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3550.115,
+    "text": "When I say reset index, this means that put part of it back to where it was.",
+    "start_ms": 3550115,
+    "end_ms": 3555256,
+    "duration_ms": 5141,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3555.256,
+    "text": "It will keep the ordering. It will remember where it was in the sequence of those columns that it had.",
+    "start_ms": 3555256,
+    "end_ms": 3560136,
+    "duration_ms": 4880,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3560.136,
+    "text": "And then it will automatically create all of these. Automatic in the indices that I had from before, right?",
+    "start_ms": 3560136,
+    "end_ms": 3568792,
+    "duration_ms": 8656,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3568.792,
+    "text": "So every time you can set it, you can reset it, you can change your mind.",
+    "start_ms": 3568792,
+    "end_ms": 3572792,
+    "duration_ms": 4000,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3572.792,
+    "text": "There is flexibility into how to use Index object in a data frame.",
+    "start_ms": 3572792,
+    "end_ms": 3579976,
+    "duration_ms": 7184,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3581.056,
+    "text": "We said that index values does not need to be unique.",
+    "start_ms": 3581056,
+    "end_ms": 3584664,
+    "duration_ms": 3608,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3584.664,
+    "text": "They can be numeric They can be non numeric, but for column names, we usually want them to be unique And we just want to make sure that if we have an attribute for candidate or refers to the candidate name We don't have to candidate column and there might be a chance that the values corresponding to a certain row in those different columns are going to be different and that can be problematic, right?",
+    "start_ms": 3584664,
+    "end_ms": 3609021,
+    "duration_ms": 24357,
+    "word_count": 76,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3609.021,
+    "text": "So a lot of times we we want the column names to be unique so that a single source of information is available in each one of the given columns that we have.",
+    "start_ms": 3609021,
+    "end_ms": 3620016,
+    "duration_ms": 10995,
+    "word_count": 33,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3621.336,
+    "text": "So, we... I have seen that this index how we can create a data frame, how we can set the index.",
+    "start_ms": 3621336,
+    "end_ms": 3628680,
+    "duration_ms": 7344,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3628.68,
+    "text": "So here in this case, I created, I set the index to be party.",
+    "start_ms": 3628680,
+    "end_ms": 3633800,
+    "duration_ms": 5120,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3633.8,
+    "text": "I can go ahead and check the index. The index object for me is now going to be all of these party values that you're seeing.",
+    "start_ms": 3633800,
+    "end_ms": 3641480,
+    "duration_ms": 7680,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3641.48,
+    "text": "It tells me that the data type is object. The name is party.",
+    "start_ms": 3641480,
+    "end_ms": 3644360,
+    "duration_ms": 2880,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3644.36,
+    "text": "The length is 182, which we're expecting. I can go ahead and get access to columns.",
+    "start_ms": 3644360,
+    "end_ms": 3649800,
+    "duration_ms": 5440,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3649.8,
+    "text": "These are attributes that are available on a data frame.",
+    "start_ms": 3649800,
+    "end_ms": 3652920,
+    "duration_ms": 3120,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3652.92,
+    "text": "Remember that in series object we had index and we had values.",
+    "start_ms": 3652920,
+    "end_ms": 3657240,
+    "duration_ms": 4320,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3657.24,
+    "text": "So here we have index, we have columns, and then additionally we have shape.",
+    "start_ms": 3657240,
+    "end_ms": 3662120,
+    "duration_ms": 4880,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3662.12,
+    "text": "So for columns here, it just gives you the labels for the columns.",
+    "start_ms": 3662120,
+    "end_ms": 3666680,
+    "duration_ms": 4560,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3666.68,
+    "text": "And you're seeing that all of those labels are stored together in an index object.",
+    "start_ms": 3666680,
+    "end_ms": 3671560,
+    "duration_ms": 4880,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3671.56,
+    "text": "Still we have one index referring to column labels, one index referring to row labels and so on.",
+    "start_ms": 3671560,
+    "end_ms": 3677720,
+    "duration_ms": 6160,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3678.264,
+    "text": "And then the shape is going to tell you how many rows you have, how many columns you have.",
+    "start_ms": 3678264,
+    "end_ms": 3681944,
+    "duration_ms": 3680,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3681.944,
+    "text": "The first element is a number of rows. The second element is the number of columns.",
+    "start_ms": 3681944,
+    "end_ms": 3685864,
+    "duration_ms": 3920,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3685.864,
+    "text": "This is going to be really important if you want to take a look at how many entries you have, how big your data set is and if your data set is complete or is just in a snapshot of a data set that you wish for.",
+    "start_ms": 3685864,
+    "end_ms": 3696088,
+    "duration_ms": 10224,
+    "word_count": 47,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3696.088,
+    "text": "So these are the things that you can take a look.",
+    "start_ms": 3696088,
+    "end_ms": 3699064,
+    "duration_ms": 2976,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3700.632,
+    "text": "Okay, so kind of putting everything together. So this is where done with all the data structures that we wanted to see.",
+    "start_ms": 3700632,
+    "end_ms": 3708032,
+    "duration_ms": 7400,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3708.032,
+    "text": "We have a data frame that's a collection of series.",
+    "start_ms": 3708032,
+    "end_ms": 3711832,
+    "duration_ms": 3800,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3711.832,
+    "text": "All of these series objects have a shared index and that shared index is the single index that the data frame has for all of their rows.",
+    "start_ms": 3711832,
+    "end_ms": 3720932,
+    "duration_ms": 9100,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3720.932,
+    "text": "And this is how all of these treated data structures are connected to each other.",
+    "start_ms": 3720932,
+    "end_ms": 3725632,
+    "duration_ms": 4700,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3726.2,
+    "text": "So let's take a look at this question. This is the second slide of poll.",
+    "start_ms": 3726200,
+    "end_ms": 3730040,
+    "duration_ms": 3840,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3730.04,
+    "text": "We're creating a data frame and we want to take a look at how this data frame is structured and what are the columns.",
+    "start_ms": 3730040,
+    "end_ms": 3737960,
+    "duration_ms": 7920,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3767.992,
+    "text": "I'm going to go back to here. and just go ahead and load the selections data frame.",
+    "start_ms": 3767992,
+    "end_ms": 3776496,
+    "duration_ms": 8504,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3776.952,
+    "text": "Um... So that we are... So we're seeing this election's data frame here.",
+    "start_ms": 3776952,
+    "end_ms": 3793168,
+    "duration_ms": 16216,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3793.168,
+    "text": "We could basically also say that, okay, in addition to also creating this data frame, I can go ahead, oops, I can go ahead and say that, go ahead and use index column to be equal to say the candidate column.",
+    "start_ms": 3793168,
+    "end_ms": 3811168,
+    "duration_ms": 18000,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3811.168,
+    "text": "This is what we'd seen. Um So now the candidate is all bold face.",
+    "start_ms": 3811168,
+    "end_ms": 3818320,
+    "duration_ms": 7152,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3818.32,
+    "text": "I can go ahead and say that. Go ahead. and let me erase this.",
+    "start_ms": 3818320,
+    "end_ms": 3827097,
+    "duration_ms": 8777,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3827.097,
+    "text": "I can reset the index. I can say that elections dot reset index.",
+    "start_ms": 3827097,
+    "end_ms": 3832760,
+    "duration_ms": 5663,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3834.296,
+    "text": "and then go ahead and see the result. So before I show you this slider result, I want you to take a look at this.",
+    "start_ms": 3834296,
+    "end_ms": 3841808,
+    "duration_ms": 7512,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3841.808,
+    "text": "I said that... Index to be candidate. I went ahead and said that reset the index.",
+    "start_ms": 3841808,
+    "end_ms": 3848860,
+    "duration_ms": 7052,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3848.86,
+    "text": "I'm expecting it. The candidate pops back to the normal columns and then I get the automatic index thing, but that didn't happen.",
+    "start_ms": 3848860,
+    "end_ms": 3855904,
+    "duration_ms": 7044,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3856.376,
+    "text": "Why? It didn't happen is that Pandas has guardrails around making sure that you know what you're doing, right?",
+    "start_ms": 3856376,
+    "end_ms": 3864104,
+    "duration_ms": 7728,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3864.104,
+    "text": "So when you say that reset index, it will create a separate object.",
+    "start_ms": 3864104,
+    "end_ms": 3867704,
+    "duration_ms": 3600,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3867.704,
+    "text": "It will not change your original data frame object that you had.",
+    "start_ms": 3867704,
+    "end_ms": 3871704,
+    "duration_ms": 4000,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3872.264,
+    "text": "Unless you specifically say in place equal to true, kind of showing that I know what I'm doing, I want to make the changes in the same variable and the same variable be changed and then it will basically do that for you.",
+    "start_ms": 3872264,
+    "end_ms": 3885864,
+    "duration_ms": 13600,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3885.864,
+    "text": "The alternative way was that if I didn't have this or I didn't want to do this, I could just directly say that whatever new kind of change or the copy that you get, read a stored actually in the elections data frames.",
+    "start_ms": 3885864,
+    "end_ms": 3901744,
+    "duration_ms": 15880,
+    "word_count": 43,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3903.224,
+    "text": "permanent so that's kind of a trick about setting index and resetting index it creates a copy and you need to make sure that the changes are permanent for you.",
+    "start_ms": 3903224,
+    "end_ms": 3912724,
+    "duration_ms": 9500,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3913.24,
+    "text": "So we had seen index here, now it's been back to the range index, the columns, the shape, and this is our slide exercise.",
+    "start_ms": 3913240,
+    "end_ms": 3922200,
+    "duration_ms": 8960,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3922.2,
+    "text": "So what we said that we're creating is that we're creating a a data frame.",
+    "start_ms": 3922200,
+    "end_ms": 3926813,
+    "duration_ms": 4613,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3926.813,
+    "text": "Remember that we're using this dictionary. kind of structure of creating a data frame.",
+    "start_ms": 3926813,
+    "end_ms": 3932610,
+    "duration_ms": 5797,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3932.61,
+    "text": "We're saying that there is one key referring to the first column with C1.",
+    "start_ms": 3932610,
+    "end_ms": 3937445,
+    "duration_ms": 4835,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3937.445,
+    "text": "So that's the column C1 and then another key referring to the second column C2 and then the corresponding values are 1, 2, 3, 4 and then 2, 4, 6 and 8 in the second column.",
+    "start_ms": 3937445,
+    "end_ms": 3950544,
+    "duration_ms": 13099,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3950.435,
+    "text": "data frame. If I go ahead and get dot columns, it will just give me the labels for those columns as an index object.",
+    "start_ms": 3950435,
+    "end_ms": 3957417,
+    "duration_ms": 6982,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3957.417,
+    "text": "So if I go ahead. and on comment this you'll see that there's an index object which has c1 and c2 and then c1 and c2 should be picked by most of you which is right.",
+    "start_ms": 3957417,
+    "end_ms": 3970272,
+    "duration_ms": 12855,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3970.712,
+    "text": "Okay, so that's kind of a wrap up over what we talked about in...",
+    "start_ms": 3970712,
+    "end_ms": 3976712,
+    "duration_ms": 6000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3977.784,
+    "text": "in creating data frames. So again, as you've seen, there are all of these different ways that I created DataFrame series set the index, reset the index and whatnot.",
+    "start_ms": 3977784,
+    "end_ms": 3989784,
+    "duration_ms": 12000,
+    "word_count": 29,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3989.784,
+    "text": "You can imagine that this API stands for Application Programming Interface for Pandas is huge.",
+    "start_ms": 3989784,
+    "end_ms": 3996784,
+    "duration_ms": 7000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 3996.784,
+    "text": "We're not going to go over all of it. We're going to go over just some of it.",
+    "start_ms": 3996784,
+    "end_ms": 4000784,
+    "duration_ms": 4000,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4000.784,
+    "text": "If you want to take a look at the official documentation for pandas, It's available online.",
+    "start_ms": 4000784,
+    "end_ms": 4006264,
+    "duration_ms": 5480,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4006.264,
+    "text": "It has a good description of all the arguments for different functions, and then it always has a lot of examples that you can go over.",
+    "start_ms": 4006264,
+    "end_ms": 4013744,
+    "duration_ms": 7480,
+    "word_count": 26,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4013.744,
+    "text": "Again, there is this translation kind of notebook that we also have, so you can go ahead and take a look at that.",
+    "start_ms": 4013744,
+    "end_ms": 4021224,
+    "duration_ms": 7480,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4021.224,
+    "text": "But again, what we're hopeful for you to do is to do your own searching and Googling and taking a look at the Stackoverflowreading.api documentation in order to do labs on homework so that he gets used to the syntax.",
+    "start_ms": 4021224,
+    "end_ms": 4037044,
+    "duration_ms": 15820,
+    "word_count": 40,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4037.044,
+    "text": "We usually give five minutes break, but we're slightly over time.",
+    "start_ms": 4037044,
+    "end_ms": 4041644,
+    "duration_ms": 4600,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4041.644,
+    "text": "So I'm going to actually keep going and not give you the five minute break, but know that every lecture has this five minute break in the middle that will give you some time to stretch.",
+    "start_ms": 4041644,
+    "end_ms": 4052724,
+    "duration_ms": 11080,
+    "word_count": 36,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4053.336,
+    "text": "So at this. Okay, is that a force kind of stretch?",
+    "start_ms": 4053336,
+    "end_ms": 4057368,
+    "duration_ms": 4032,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4057.368,
+    "text": "Okay, two minutes. Let's take two minutes. We're gonna come back.",
+    "start_ms": 4057368,
+    "end_ms": 4060888,
+    "duration_ms": 3520,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4104.568,
+    "text": "Thank you. Okay, we're starting in 15 seconds. Grab your seats.",
+    "start_ms": 4104568,
+    "end_ms": 4118853,
+    "duration_ms": 14285,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4118.853,
+    "text": "All respond to your question afterwards. 10 9 Hey! 7 Thanks.",
+    "start_ms": 4118853,
+    "end_ms": 4127820,
+    "duration_ms": 8967,
+    "word_count": 11,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4128.76,
+    "text": "Bye. 4 Three. 2 and 1. So the next piece I promise you is interesting, but again, because you know the logic is going to be very quick and very easy.",
+    "start_ms": 4128760,
+    "end_ms": 4141952,
+    "duration_ms": 13192,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4141.952,
+    "text": "So we're going to talk about how we can do data extraction.",
+    "start_ms": 4141952,
+    "end_ms": 4145469,
+    "duration_ms": 3517,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4145.469,
+    "text": "So we're going to basically be able to do data extraction in order to select a number of columns, a number of rows, and then be able to just take a look at a snapshot of a data frame or a serious object that you have.",
+    "start_ms": 4145469,
+    "end_ms": 4158952,
+    "duration_ms": 13483,
+    "word_count": 46,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4158.952,
+    "text": "There are different ways, different common ways for us to extract the data.",
+    "start_ms": 4158952,
+    "end_ms": 4163072,
+    "duration_ms": 4120,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4163.072,
+    "text": "There's one way that we can, once I hand you a data, you can take a look at the first few rows or the last few rows.",
+    "start_ms": 4163072,
+    "end_ms": 4170712,
+    "duration_ms": 7640,
+    "word_count": 27,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4170.712,
+    "text": "So looking at the top rows or the bottom rows is the usual thing that you would do in order to make sense of, OK, what are the column labels, whether those values looking like, do I need to do any data cleaning or whatnot?",
+    "start_ms": 4170712,
+    "end_ms": 4182352,
+    "duration_ms": 11640,
+    "word_count": 45,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4182.352,
+    "text": "We'll keep using it a lot, just to take a look at the top part or the bottom part of the data set.",
+    "start_ms": 4182352,
+    "end_ms": 4190032,
+    "duration_ms": 7680,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4190.032,
+    "text": "There are different ways to do data extraction using labels.",
+    "start_ms": 4190032,
+    "end_ms": 4194272,
+    "duration_ms": 4240,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4194.272,
+    "text": "So you might be asking why did I bother about labels a lot because they can be used for data extraction.",
+    "start_ms": 4194272,
+    "end_ms": 4201192,
+    "duration_ms": 6920,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4201.192,
+    "text": "We might want to also use integer positions in order to figure out how to extract the data.",
+    "start_ms": 4201192,
+    "end_ms": 4208711,
+    "duration_ms": 7519,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4208.711,
+    "text": "That's also another way that we can extract the data.",
+    "start_ms": 4208711,
+    "end_ms": 4211832,
+    "duration_ms": 3121,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4212.088,
+    "text": "But take a look at the first piece. Just taking a look at the top part of the data frame or the bottom part of the part of the data frame, we can use .head or .tail in order to get take a look at the top part or the bottom part of the of the data frame.",
+    "start_ms": 4212088,
+    "end_ms": 4229629,
+    "duration_ms": 17541,
+    "word_count": 58,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4229.629,
+    "text": "If we provide this end as an argument, it will get you n number of rows.",
+    "start_ms": 4229629,
+    "end_ms": 4234834,
+    "duration_ms": 5205,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4234.834,
+    "text": "Whether that be the top rows or the bottom rows, it will get you n number of rows.",
+    "start_ms": 4234834,
+    "end_ms": 4240608,
+    "duration_ms": 5774,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4240.608,
+    "text": "If we don't provide that number, the default value is going to be the default n is equal to five.",
+    "start_ms": 4240608,
+    "end_ms": 4248448,
+    "duration_ms": 7840,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4248.448,
+    "text": "We're always taking a look at the top five. So for example, in this case, if I have elections, if I go ahead and say dot head five, or just say dot head, it will give me the top five rows.",
+    "start_ms": 4248448,
+    "end_ms": 4259568,
+    "duration_ms": 11120,
+    "word_count": 41,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4259.568,
+    "text": "If I take a look at dot tail five or dot tail, it will give me the last five rows.",
+    "start_ms": 4259568,
+    "end_ms": 4265128,
+    "duration_ms": 5560,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4265.128,
+    "text": "and I should be able to just generally take a look at, okay, does it have labels, what is index, what is column labels, how does the data look like?",
+    "start_ms": 4265128,
+    "end_ms": 4273607,
+    "duration_ms": 8479,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4273.607,
+    "text": "That's a normal thing that we will always do when we have a new data set in our pile.",
+    "start_ms": 4273607,
+    "end_ms": 4279848,
+    "duration_ms": 6241,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4280.664,
+    "text": "Using label-based extraction. Remember, I said I have column labels, I have row labels, and by this time you should be tired of me keep repeating that labels are very important.",
+    "start_ms": 4280664,
+    "end_ms": 4292104,
+    "duration_ms": 11440,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4292.104,
+    "text": "They are very important because we can locate a part of a data frame using those labels.",
+    "start_ms": 4292104,
+    "end_ms": 4298904,
+    "duration_ms": 6800,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4298.904,
+    "text": "So the function that we'll do that for us is called the lock.",
+    "start_ms": 4298904,
+    "end_ms": 4304104,
+    "duration_ms": 5200,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4304.104,
+    "text": "This is an operator that uses a score brackets. it will get a number of row labels and it will get a number of column labels and it will be able to extract or give us the numbers those rows or those columns at that specific intersection for us.",
+    "start_ms": 4304104,
+    "end_ms": 4323125,
+    "duration_ms": 19021,
+    "word_count": 49,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4323.125,
+    "text": "So lock this L refers to label-based extraction. We're doing extraction based on the label.",
+    "start_ms": 4323125,
+    "end_ms": 4330168,
+    "duration_ms": 7043,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4330.168,
+    "text": "So there are different ways that we can do it.",
+    "start_ms": 4330168,
+    "end_ms": 4332768,
+    "duration_ms": 2600,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4332.768,
+    "text": "So for example, here the labels, you already know that these are my labels for the rows and the labels for the columns, all of those bold face text that I have.",
+    "start_ms": 4332768,
+    "end_ms": 4342568,
+    "duration_ms": 9800,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4342.904,
+    "text": "The arguments that can be passed to the lock operator could be a list, could be a slice, or could be a single value.",
+    "start_ms": 4342904,
+    "end_ms": 4350904,
+    "duration_ms": 8000,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4350.904,
+    "text": "So let's take a look at that together. So if I say that I'm providing a list of labels for the rows.",
+    "start_ms": 4350904,
+    "end_ms": 4359204,
+    "duration_ms": 8300,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4359.204,
+    "text": "Here's label 87, 25 and 179. It will give me exactly those rows, 87, 25 and 179.",
+    "start_ms": 4359204,
+    "end_ms": 4367404,
+    "duration_ms": 8200,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4367.404,
+    "text": "Right? And then the list for the columns here, what you're seeing is that I'm asking only for the year column candidate column and result column and I'm only getting those values.",
+    "start_ms": 4367404,
+    "end_ms": 4379904,
+    "duration_ms": 12500,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4379.904,
+    "text": "So it will basically indexing filtering for the columns, filtering for the rows and only looking at that intersection.",
+    "start_ms": 4379904,
+    "end_ms": 4385904,
+    "duration_ms": 6000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4385.904,
+    "text": "Notice that the first argument here is row labels, second argument is column labels.",
+    "start_ms": 4385904,
+    "end_ms": 4392904,
+    "duration_ms": 7000,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4392.904,
+    "text": "So row labels is always important. You have to always provide row labels in whatever format that you want.",
+    "start_ms": 4392904,
+    "end_ms": 4399904,
+    "duration_ms": 7000,
+    "word_count": 19,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4399.904,
+    "text": "But the column labels are optional. If you don't provide column labels, it will give you all of the columns.",
+    "start_ms": 4399904,
+    "end_ms": 4404904,
+    "duration_ms": 5000,
+    "word_count": 20,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4404.904,
+    "text": "It mostly assumes that you're filtering under rows, but you're not necessarily filtering under columns.",
+    "start_ms": 4404904,
+    "end_ms": 4410904,
+    "duration_ms": 6000,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4410.904,
+    "text": "What happens if you have mismatch ordering or if you provide only one list, but that list is your column list.",
+    "start_ms": 4410904,
+    "end_ms": 4418904,
+    "duration_ms": 8000,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4418.904,
+    "text": "is your column list instead of rule list, it will give you key error.",
+    "start_ms": 4418904,
+    "end_ms": 4423352,
+    "duration_ms": 4448,
+    "word_count": 14,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4423.352,
+    "text": "Key error for you who know dictionary is that it says that, oh, I can't find this key in this dictionary is structured.",
+    "start_ms": 4423352,
+    "end_ms": 4429819,
+    "duration_ms": 6467,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4429.819,
+    "text": "And every time you should know that, okay, you index into a wrong label set and that's kind of an indication of that.",
+    "start_ms": 4429819,
+    "end_ms": 4438544,
+    "duration_ms": 8725,
+    "word_count": 23,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4438.39,
+    "text": "these rows and these columns and we're good to go.",
+    "start_ms": 4438390,
+    "end_ms": 4441160,
+    "duration_ms": 2770,
+    "word_count": 10,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4441.16,
+    "text": "I can also do extraction based on the slice. So a slice means that I can provide a lower bound and an upper bound or upper bound of a wrench.",
+    "start_ms": 4441160,
+    "end_ms": 4451160,
+    "duration_ms": 10000,
+    "word_count": 30,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4451.16,
+    "text": "And I would say that instead of me typing all of those row labels or column labels, give me all of these columns starting from popular vote all the way to percentage.",
+    "start_ms": 4451160,
+    "end_ms": 4463460,
+    "duration_ms": 12300,
+    "word_count": 32,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4463.8,
+    "text": "And this is... kind of bolded and remember it inclusive of the right hand side.",
+    "start_ms": 4463800,
+    "end_ms": 4469730,
+    "duration_ms": 5930,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4469.73,
+    "text": "This is the only time that there's something that's not high-time convention, right?",
+    "start_ms": 4469730,
+    "end_ms": 4474626,
+    "duration_ms": 4896,
+    "word_count": 13,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4474.626,
+    "text": "So it goes all the way to percentage and inclusive of percentage and that's how we're getting all of those columns.",
+    "start_ms": 4474626,
+    "end_ms": 4481699,
+    "duration_ms": 7073,
+    "word_count": 21,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4481.699,
+    "text": "So the real labels are provided using a list, they're good to go, we've seen them before and then the column labels are provided using business lives, which is inclusive of the right hand side.",
+    "start_ms": 4481699,
+    "end_ms": 4495224,
+    "duration_ms": 13525,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4495.224,
+    "text": "You know that if I don't provide the lower bound, that means that it starts from the beginning.",
+    "start_ms": 4495224,
+    "end_ms": 4499184,
+    "duration_ms": 3960,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4499.184,
+    "text": "If I don't provide the upper bound, that means I go all the way to the end.",
+    "start_ms": 4499184,
+    "end_ms": 4502624,
+    "duration_ms": 3440,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4502.624,
+    "text": "If I don't provide any of them, that means get all, right?",
+    "start_ms": 4502624,
+    "end_ms": 4506864,
+    "duration_ms": 4240,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4506.864,
+    "text": "Remember that I said the alveys want to have... The row labels be there if you want to extract all the row labels but you don't want to enumerate over it just put a column It will get all of those rows for you and then you just bother with like how many columns that you want and whether the labels for the columns Um that you want to provide and that's what we're doing here We're saying that I'm giving you Callin for all of the rows That's the rows that I want to extract but for the columns.",
+    "start_ms": 4506864,
+    "end_ms": 4534721,
+    "duration_ms": 27857,
+    "word_count": 100,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4534.721,
+    "text": "I want only these three columns that we're extracting When you're seeing ellipses, that means that it's just a summary of a data frame.",
+    "start_ms": 4534721,
+    "end_ms": 4542664,
+    "duration_ms": 7943,
+    "word_count": 24,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4542.664,
+    "text": "It's not showing all of that. It basically says that I wanted to show you that there is this much entry, but then I didn't want you to scroll over all of the 182 rows.",
+    "start_ms": 4542664,
+    "end_ms": 4553664,
+    "duration_ms": 11000,
+    "word_count": 35,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4553.664,
+    "text": "So there is more rows that are filtered out or not shown in the output.",
+    "start_ms": 4553664,
+    "end_ms": 4558384,
+    "duration_ms": 4720,
+    "word_count": 15,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4559.096,
+    "text": "If I do the same thing for the columns, I would say that, okay, I have these row labels, 84, 87, 25, and 179, and the columns, I want all of them, it will basically do something like this, where I have all of the columns and for a number of rows.",
+    "start_ms": 4559096,
+    "end_ms": 4577651,
+    "duration_ms": 18555,
+    "word_count": 52,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4577.651,
+    "text": "I could have chosen to not provide the second argument, and it would have been okay, right?",
+    "start_ms": 4577651,
+    "end_ms": 4583726,
+    "duration_ms": 6075,
+    "word_count": 17,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4583.726,
+    "text": "Because only the rows are mandatory, but the columns are not mandatory.",
+    "start_ms": 4583726,
+    "end_ms": 4587948,
+    "duration_ms": 4222,
+    "word_count": 12,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4587.948,
+    "text": "If you don't provide the second argument, it will just give you all of them, right?",
+    "start_ms": 4587948,
+    "end_ms": 4593091,
+    "duration_ms": 5143,
+    "word_count": 16,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4593.091,
+    "text": "But I could not skip this colon here if I wanted to get all of the rows, right?",
+    "start_ms": 4593091,
+    "end_ms": 4598397,
+    "duration_ms": 5306,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4598.397,
+    "text": "If you were to skip it... And you just provided the air candidate result it would just assume that the air candidate result our labels for the rose it tries to index it can find those keys will give you a key error so this would be incorrect if you skip that So, the single value means that, okay, I have a single column or a single row that I want to extract.",
+    "start_ms": 4598397,
+    "end_ms": 4621592,
+    "duration_ms": 23195,
+    "word_count": 73,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4621.592,
+    "text": "So if I go ahead and say for all of these rows, get me only the single column.",
+    "start_ms": 4621592,
+    "end_ms": 4627032,
+    "duration_ms": 5440,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4627.544,
+    "text": "I can get that. would be the return type? What is the return type of a single column?",
+    "start_ms": 4627544,
+    "end_ms": 4634792,
+    "duration_ms": 7248,
+    "word_count": 18,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4635.832,
+    "text": "series. Thank you. So I have a series object, but it's just a filtered version of that series object that corresponds to that column, right?",
+    "start_ms": 4635832,
+    "end_ms": 4642701,
+    "duration_ms": 6869,
+    "word_count": 25,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4642.701,
+    "text": "And that's okay. If I provided most of those row index and also row label and column label as single values, I would just be able to get that single entry at that intersection, which in this case is going to be Andrew Jackson.",
+    "start_ms": 4642701,
+    "end_ms": 4657578,
+    "duration_ms": 14877,
+    "word_count": 44,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4657.578,
+    "text": "We're looking at the first row and then the name of the candidate in that column, so we'll give me Andrew Jackson.",
+    "start_ms": 4657578,
+    "end_ms": 4664612,
+    "duration_ms": 7034,
+    "word_count": 22,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4664.612,
+    "text": "So this is label-based extraction. We're going to come back, promise you on Thursday, and we're going to talk about integer-based extraction and different types of extraction in the next lecture.",
+    "start_ms": 4664612,
+    "end_ms": 4676154,
+    "duration_ms": 11542,
+    "word_count": 31,
+    "avg_confidence": 90
+  },
+  {
+    "timestamp": 4676.154,
+    "text": "Thank you all for coming along. I'll see you back on Thursday.",
+    "start_ms": 4676154,
+    "end_ms": 4680752,
+    "duration_ms": 4598,
+    "word_count": 12,
+    "avg_confidence": 90
+  }
+]
